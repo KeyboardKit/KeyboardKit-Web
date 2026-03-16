@@ -18,7 +18,7 @@ terms: /pro/terms
 
 ## Pricing
 
-The Basic, Silver & Gold tiers are for indies, startups and small businesses. Companies with $10M+ in annual revenue and apps with $1M+ in annual revenue need a [business license](#business-licenses).
+The Basic, Silver & Gold tiers are for indies, startups and small businesses. Companies with $10M+ in annual revenue and apps with $1M+ in annual revenue need a [business license]({{site.urls.business}}).
 
 {% include licenses/feature-table.html tiers=site.data.tiers %}
 
@@ -30,7 +30,7 @@ The standard [Terms & Conditions]({{page.terms}}) apply to all standard tiers. [
 
 ## Gold Licenses
 
-Yearly Gold licenses and [above]({{site.urls.business-licenses}}) include a license file that lets you validate your KeyboardKit license directly on device. [Contact us]({{site.urls.email}}) to discuss the benefits of a yearly Gold license.
+Yearly Gold licenses and [above]({{site.urls.business}}) include a license file that lets you validate your KeyboardKit license directly on device. [Contact us]({{site.urls.email}}) to discuss the benefits of a yearly Gold license.
 
 
 <a name="features" />

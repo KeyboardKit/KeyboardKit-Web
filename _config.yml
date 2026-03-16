@@ -35,7 +35,7 @@ urls:
   email-custom-terms: mailto:info@keyboardkit.com?subject=Custom%20Terms
   rss:        https://keyboardkit.com/feed.xml
 
-  business-licenses: /pro/business-licenses
+  business: /pro/business-licenses
   software-escrow: /features/escrow
 
   appstore:   https://itunes.apple.com/app/keyboardkit/id1568444977

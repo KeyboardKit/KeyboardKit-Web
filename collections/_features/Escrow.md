@@ -5,8 +5,7 @@ hero:
   emoji: 📦
 ---
 
-[KeyboardKit Pro Business+ Licenses]({{site.urls.business-licenses}}) includes Software Escrow, which provides an additional layer of security and continuity for companies that depend on KeyboardKit Pro.
-
+[KeyboardKit Pro Business+ Licenses]({{site.urls.business}}) includes Software Escrow, which provides an additional layer of security and continuity for companies that depend on KeyboardKit Pro.
 
 
 ## What is Software Escrow?
@@ -20,6 +19,6 @@ With a proper software escrow agreement in place, the licensee get access to the
 
 ## KeyboardKit Pro Software Escrow
 
-KeyboardKit recognizes that businesses that choose KeyboardKit Pro make a strategic decision that deserves proper protection, and therefore include Software Escrow as part of the [Business+ Plan]({{site.urls.business-licenses}}).
+KeyboardKit recognizes that businesses that choose KeyboardKit Pro make a strategic decision that deserves proper protection, and therefore include Software Escrow as part of the [Business+ Plan]({{site.urls.business}}).
 
-Ready to protect your product with secure software escrow? [Sign up for a Business+]({{site.urls.business-licenses}}) license today!
+Ready to protect your product with secure software escrow? [Sign up for a Business+]({{site.urls.business}}) license today!
