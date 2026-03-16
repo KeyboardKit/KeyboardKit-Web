@@ -1,0 +1,27 @@
+- name: Business
+  price: 10k
+  description: For formal agreements and flexible billing options.
+  features:
+    - Additional Apps
+    - Standard Terms
+    - Signed Agreement
+    - Multiplatform Builds
+
+- name: Business+
+  price: 25k
+  description: For source code protection and renewal flexibility.
+  features:
+    - Everything in Business
+    - Custom Billing & Terms
+    - Software Escrow
+    - Expiration Grace
+
+- name: Enterprise
+  price: 50k
+  price-from: 1
+  description: For high-impact use, dedicated support and custom SLAs.
+  features:
+    - Everything in Business+
+    - High Volume
+    - High Impact
+    - Custom SLA

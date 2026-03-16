@@ -1,3 +1,7 @@
+.tier {
+  text-align: center;
+}
+
 .tier.free, .tier.basic, .tier.standard {
   background-color: white;
 
@@ -42,23 +46,73 @@
   }
 }
 
+.business-tiers {
 
-.tier.box {
-  padding: 20px;
-  
-  text-align: center;
-
-  h3 { 
-    margin-top: 0px; 
-    font-size: 1.1em;
+  &.col3 {
+    @media (max-width: 800px) {
+      grid-template-columns: 1fr;
+    }
   }
 
-  div {
-    margin: 5px 0;
-  }
+  .tier {
+    padding: 20px;
+    text-align: left;
+    background-color: #ffffff88;
+    font-size: 0.75em;
 
-  .cta {
-    margin-top: 25px;
-    margin-bottom: 0px;
+    h3 { 
+      margin-top: 0px; 
+      margin-bottom: 20px;
+      font-size: 1em;
+      background-color: #EAF3FD;
+      border: solid 1px #D8E7FB;
+      border-radius: 10px;
+      color: #4589EC;
+      display: inline-flex;
+      padding: 5px;
+    }
+
+    .price {
+      color: $foreground-secondary;
+
+      .pre {
+        color: $foreground;
+        font-size: 2em;
+        font-weight: 500;
+      }
+    }
+
+    .description {
+      color: $foreground-secondary;
+      font-size: 1.05em;
+    }
+
+    .features {
+      margin: 20px 0;
+
+      h4 {
+        color: $foreground-secondary;
+        margin-bottom: 5px;
+      }
+
+      ul {
+        list-style: none;
+        padding-left: 0;
+        margin-left: 0;
+
+        li {
+          margin-bottom: 3px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+
+    .cta {
+      margin: 40px 0 0 0;
+      display: block;
+    }
   }
 }
