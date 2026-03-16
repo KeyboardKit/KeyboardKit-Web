@@ -5,6 +5,14 @@
   border: 1px solid rgba(255,255,255,0.8);
   box-shadow: 0 4px 24px rgba(0,0,0,0.12);
 
+  a:hover & {
+    box-shadow: 0 4px 24px rgba(0,0,0,0.22);
+  }
+
+  &.promo { background: rgba(40, 200, 100, 0.15); }
+  &.warning { background: rgba(255, 193, 7, 0.15); }
+  &.alert { background: rgba(220, 53, 69, 0.15); }
+
   .tag {
     position: absolute;
     bottom: 8px;
@@ -15,18 +23,15 @@
   }
 }
 
-a:hover .glass {
-  box-shadow: 0 4px 24px rgba(0,0,0,0.22);
-}
-
-.glass.promo { background: rgba(40, 200, 100, 0.15); }
-.glass.warning { background: rgba(255, 193, 7, 0.15); }
-.glass.alert { background: rgba(220, 53, 69, 0.15); }
-
 .glass-message {
-  margin: 50px 0;
+  margin: 50px;
+  padding: 0 20px;
   font-size: 0.8em;
   text-align: center;
+
+  &.below-hero {
+    margin: 75px 0;
+  }
 
   .glass {
     padding: 10px;
@@ -35,31 +40,27 @@ a:hover .glass {
   }
 }
 
-.glass-message.below-hero {
-  margin: 75px 0;
-}
-
 .glass-background {
   position: relative;
   z-index: 1;
-}
 
-.glass-background::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: .6;
-  z-index: -1;
-  background: url('/assets/glass/bg1.jpg');
-  background-position: center;
-  background-size: 100% 100%; /* Stretch image to exactly fill panel */
-  background-repeat: no-repeat;
-}
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .6;
+    z-index: -1;
+    background: url('/assets/glass/bg1.jpg');
+    background-position: center;
+    background-size: 100% 100%; /* Stretch image to exactly fill panel */
+    background-repeat: no-repeat;
+  }
 
-.glass-background.bg1::before { background-image: url('/assets/glass/bg1.jpg'); }
-.glass-background.bg2::before { background-image: url('/assets/glass/bg2.jpg'); }
-.glass-background.bg3::before { background-image: url('/assets/glass/bg3.jpg'); }
-.glass-background.bg4::before { background-image: url('/assets/glass/bg4.jpg'); }
+  &.bg1::before { background-image: url('/assets/glass/bg1.jpg'); }
+  &.bg2::before { background-image: url('/assets/glass/bg2.jpg'); }
+  &.bg3::before { background-image: url('/assets/glass/bg3.jpg'); }
+  &.bg4::before { background-image: url('/assets/glass/bg4.jpg'); }
+}
