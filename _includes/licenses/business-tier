@@ -8,7 +8,7 @@ Business tier license box for displaying pricing and features.
   - features: (required) Array of feature strings
 {% endcomment %}
 
-<div class="rounded glass tier">
+<div class="rounded glass tier slide-in delay-{{include.delay}}">
   <h3>{{ include.name }}</h3>
   <div class="price">
     <span class="pre">${{ include.price }}</span>

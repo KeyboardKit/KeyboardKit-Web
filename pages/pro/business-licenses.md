@@ -25,7 +25,8 @@ description: KeyboardKit has business licenses for larger companies and apps.
      price=tier.price
      price-from=tier.price-from
      description=tier.description
-     features=tier.features %}
+     features=tier.features
+     delay=forloop.index0 %}
   {% endfor %}
 </div>
 
