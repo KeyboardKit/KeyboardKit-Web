@@ -1,0 +1,27 @@
+.info-table {
+
+  margin: 40px 0;
+  font-size: 0.85em;
+
+  div {
+    padding: 10px;
+
+    &:nth-child(even) {
+      background-color: $feature-table-even-row-color;
+    }
+  }
+
+  a {
+    font-weight: normal;
+    text-decoration: underline;
+  }
+
+  .cta {
+    text-decoration: none;
+  }
+
+  h3 {
+    margin: 0 0 5px 0 !important;
+    font-size: 0.9em;
+  }
+}

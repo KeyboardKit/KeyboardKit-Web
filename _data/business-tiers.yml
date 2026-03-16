@@ -1,5 +1,7 @@
 - name: Business
   price: 10k
+  header: Business Offering
+  header-class: placeholder
   description: For formal agreements and flexible billing options.
   features:
     - Additional Apps
@@ -9,6 +11,8 @@
 
 - name: Business+
   price: 25k
+  header: Critical Protection
+  header-class: orange
   description: For source code protection and renewal flexibility.
   features:
     - Everything in Business
@@ -19,6 +23,8 @@
 - name: Enterprise
   price: 50k
   price-from: 1
+  header: High Impact
+  header-class: placeholder
   description: For high-impact use, dedicated support and custom SLAs.
   features:
     - Everything in Business+

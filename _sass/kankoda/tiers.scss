@@ -45,3 +45,89 @@
     background-color: white;
   }
 }
+
+
+.tier.box-header {
+  color: white;
+  background-color: $tier-tag-blue-bg;
+  border: solid 1px $tier-tag-blue-border;
+  border-radius: 20px 20px 0 0;
+  color: $tier-tag-blue-text;
+  font-size: 0.7em;
+  font-weight: 500;
+  padding: 7px;
+  padding-bottom: 15px;
+  margin-bottom: -10px;
+
+  &.orange { 
+    background-color: $tier-tag-orange-bg;
+    border-color: $tier-tag-orange-border;
+    color: $tier-tag-orange-text;
+  }
+
+  &.placeholder { 
+    opacity: 0;
+  }
+}
+
+.tier.box {
+  padding: 20px;
+  text-align: left;
+  background-color: #ffffff88;
+  font-size: 0.75em;
+
+  h3 { 
+    margin-top: 0px; 
+    margin-bottom: 20px;
+    font-size: 1em;
+    background-color: $tier-tag-blue-bg;
+    border: solid 1px $tier-tag-blue-border;
+    border-radius: 10px;
+    color: $tier-tag-blue-text;
+    display: inline-flex;
+    padding: 5px;
+  }
+
+  .price {
+    color: $foreground-secondary;
+
+    .pre {
+      color: $foreground;
+      font-size: 2em;
+      font-weight: 500;
+    }
+  }
+
+  .description {
+    color: $foreground-secondary;
+    font-size: 1.05em;
+  }
+
+  .features {
+    margin: 20px 0;
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+      margin-left: 0;
+
+      li {
+        margin-bottom: 3px;
+
+        &:before {
+          content: '›';
+          margin-right: 8px;
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .cta {
+    margin: 40px 0 0 0;
+    display: block;
+  }
+}
