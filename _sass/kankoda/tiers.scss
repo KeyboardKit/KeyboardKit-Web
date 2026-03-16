@@ -103,6 +103,11 @@
         li {
           margin-bottom: 3px;
 
+          &:before {
+            content: '›';
+            margin-right: 8px;
+          }
+
           &:last-child {
             margin-bottom: 0;
           }
