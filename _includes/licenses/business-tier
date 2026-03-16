@@ -19,7 +19,6 @@ Business tier license box for displaying pricing and features.
     {{ include.description }}
   </div>
   <div class="features">
-    <h4>Features</h4>
     <ul>
     {% for feature in include.features %}
       <li>{{ feature }}</li>
