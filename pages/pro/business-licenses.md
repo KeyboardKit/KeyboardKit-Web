@@ -16,7 +16,7 @@ hero:
 description: KeyboardKit Pro has business licenses for larger companies and apps.
 ---
 
-[KeyboardKit Pro](/pro) requires a business license if your company has $10M+ in annual revenue, or if your app has $1M+ in annual revenue.
+[KeyboardKit Pro](/pro) requires a business license for companies with $10M+ in annual revenue or apps with $1M+ in annual revenue.
 
 
 ## Plans

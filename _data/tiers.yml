@@ -6,17 +6,17 @@
 
 - name: Silver
   price_month: 150
-  price_year: 1500
+  price_year: "1.500"
   cta: Sign Up
   url: https://kankoda.gumroad.com/l/keyboardkitpro
 
 - name: Gold
   price_month: 500
-  price_year: 5000
+  price_year: "5.000"
   cta: Sign Up
   url: https://kankoda.gumroad.com/l/keyboardkitpro
 
 - name: Business
-  cta: Contact
+  cta: Read More
   subtitle: Let's talk
-  url: mailto:info@keyboardkit.com?subject=Custom%20Plan
+  url: /pro/business-licenses

@@ -30,16 +30,7 @@ The standard [Terms & Conditions]({{page.terms}}) apply to all standard tiers. [
 
 ## Gold Licenses
 
-Yearly Gold licenses and above include a license file that lets you validate your KeyboardKit license directly on device. [Contact us]({{site.urls.email-custom-plan}}) to discuss the benefits of a yearly Gold license.
-
-
-## Business Licenses
-
-KeyboardKit Pro requires a [business license]({{site.urls.business-licenses}}) if your company has $10M+ in annual revenue, or if your app has $1M+ in annual revenue. Our business plans include critical business features like signed agreements, custom terms & billing, [software escrow]({{site.urls.software-escrow}}), expiration grace, custom SLAs, etc.
-
-<div class="cta">
-  <a href="{{site.urls.business-licenses}}">Read more</a>
-</div>
+Yearly Gold licenses and [above]({{site.urls.business-licenses}}) include a license file that lets you validate your KeyboardKit license directly on device. [Contact us]({{site.urls.email}}) to discuss the benefits of a yearly Gold license.
 
 
 <a name="features" />

@@ -11,9 +11,10 @@
             <p class="subtitle">or ${{tier.price_year}}/year</p>
             {% else %}
             <p>&nbsp;</p>
-            <p class="subtitle">&nbsp;</p>
+            <p class="subtitle">
+                {{tier.subtitle}}
+            </p>
             {% endif %}
-
             {% if tier.cta %}
             <a href="{{tier.url}}" class="cta">
                 {{tier.cta}}
