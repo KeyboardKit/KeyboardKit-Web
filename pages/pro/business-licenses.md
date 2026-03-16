@@ -20,7 +20,7 @@ description: KeyboardKit has business licenses for larger companies and apps.
 
 <div class="grid col3 business-tiers">
   {% for tier in site.data.business-tiers %}
-  {% include licenses/business-tier
+  {% include kankoda/licenses/business-tier
      name=tier.name
      price=tier.price
      price-from=tier.price-from
@@ -31,33 +31,15 @@ description: KeyboardKit has business licenses for larger companies and apps.
 </div>
 
 
+## Features
+
 Our business licenses provide business-critical support tailored to your organization's needs, such as legal and procurement flexibility, risk management, and dedicated technical support.
 
-
-### Additional Apps & Products
-
-Include additional apps at a discounted price in a single business license.
-
-### Custom Billing
-
-Customize your billing method, billing cadence, etc.
-
-### Custom SLA
-
-Customize your SLA and support level to fit your high-impact needs.
-
-### Custom Terms
-
-Customize your license terms to cater to specific business and legal requirements.
-
-### Expiration Grace Period
-
-Include an expiration grace period to provide a more flexible license expiration behavior.
-
-### Multi-platform Support
-
-Request tailored multi-platform builds of certain SDK versions for any supported platforms.
-
-### Software Escrow
-
-<a href="{{site.urls.software-escrow}}">Software Escrow</a> lets you access the SDK source code in case anything happens to KeyboardKit.
+<div class="rounded glass business-features slide-in">
+  {% for feature in site.data.business-features %}
+  <div>
+    <h3>{{ feature.name }}</h3>
+    {{ feature.description }}
+  </div>
+  {% endfor %}
+</div>
