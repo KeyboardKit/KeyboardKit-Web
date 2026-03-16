@@ -2,18 +2,18 @@
   price: 10k
   header: Business Offering
   header-class: placeholder
-  description: For formal agreements and flexible billing options.
+  description: For formal agreements, discounts, and multi-platform support.
   features:
-    - Additional Apps
     - Standard Terms
     - Signed Agreement
-    - Multiplatform Builds
+    - Multi-platform Builds
+    - Additional App Discounts
 
 - name: Business+
   price: 25k
   header: Critical Protection
   header-class: orange
-  description: For source code protection and renewal flexibility.
+  description: For custom terms, source code protection and renewal flexibility.
   features:
     - Everything in Business
     - Custom Billing & Terms

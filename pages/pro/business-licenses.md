@@ -18,7 +18,7 @@ description: KeyboardKit has business licenses for larger companies and apps.
 [KeyboardKit](/pro) requires a business license for companies with $10M+ in annual revenue or apps with $1M+ in annual revenue.
 
 
-<div class="grid col3">
+<div class="grid col3 tiers">
   {% for tier in site.data.business-tiers %}
   {% include kankoda/licenses/tier-box
      name=tier.name

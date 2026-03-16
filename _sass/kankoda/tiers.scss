@@ -1,3 +1,14 @@
+.tiers.col3 {
+
+  @media (max-width: 1000px) {
+    grid-template-columns: 1fr;
+
+    .box-header.placeholder {
+      display: none;
+    }
+  }
+}
+
 .tier {
   text-align: center;
 }
@@ -46,7 +57,6 @@
   }
 }
 
-
 .tier.box-header {
   color: white;
   background-color: $tier-tag-blue-bg;
@@ -59,13 +69,13 @@
   padding-bottom: 15px;
   margin-bottom: -10px;
 
-  &.orange { 
+  &.orange {
     background-color: $tier-tag-orange-bg;
     border-color: $tier-tag-orange-border;
     color: $tier-tag-orange-text;
   }
 
-  &.placeholder { 
+  &.placeholder {
     opacity: 0;
   }
 }
