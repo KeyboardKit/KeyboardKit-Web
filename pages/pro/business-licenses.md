@@ -33,7 +33,7 @@ description: KeyboardKit has business licenses for larger companies and apps.
 
 ## Features
 
-Our business licenses provide business-critical support tailored to your organization's needs, such as legal and procurement flexibility, risk management, and dedicated technical support.
+Our business licenses provide support tailored to your legal, technical, and procurement needs.
 
 <div class="rounded glass business-features slide-in">
   {% for feature in site.data.business-features %}
