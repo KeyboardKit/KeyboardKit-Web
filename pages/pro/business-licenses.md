@@ -37,9 +37,14 @@ Our business licenses provide business-critical support tailored to your organiz
 
 <div class="rounded glass business-features slide-in">
   {% for feature in site.data.business-features %}
-  <div>
-    <h3>{{ feature.name }}</h3>
-    {{ feature.description }}
+  <div style="display: flex; align-items: center; justify-content: space-between;">
+    <div>
+      <h3>{{ feature.name }}</h3>
+      {{ feature.description }}
+    </div>
+    {% if feature.url %}
+    <a href="{{ feature.url }}" class="cta">Read more</a>
+    {% endif %}
   </div>
   {% endfor %}
 </div>

@@ -11,11 +11,12 @@
   description: Customize your license terms to cater to specific business and legal requirements.
 
 - name: Expiration Grace Period
-  description: Include an expiration grace period to provide a more flexible license expiration behavior.
+  description: An expiration grace period provides a more flexible license expiration.
 
 - name: Multi-platform Support
-  description: Request tailored multi-platform builds of certain SDK versions for any supported platforms.
+  description: Request tailored multi-platform builds of certain SDK versions.
+  url: /features/platforms
 
 - name: Software Escrow
   description: Get access the SDK source code in case anything happens to KeyboardKit.
-  url: site.urls.software-escrow
+  url: /features/escrow
