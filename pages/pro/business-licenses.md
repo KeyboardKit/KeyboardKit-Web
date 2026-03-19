@@ -20,17 +20,7 @@ description: KeyboardKit has business licenses for larger companies and apps.
 
 
 <div class="grid col3 tiers">
-  {% for tier in site.data.business-tiers %}
-  {% include kankoda/licenses/tier-box
-     name=tier.name
-     header=tier.header
-     header-class=tier.header-class
-     price=tier.price
-     price-from=tier.price-from
-     description=tier.description
-     features=tier.features
-     delay=forloop.index0 %}
-  {% endfor %}
+  {% include kankoda/licenses/tier-boxes tiers=site.data.business-tiers %}
 </div>
 
 

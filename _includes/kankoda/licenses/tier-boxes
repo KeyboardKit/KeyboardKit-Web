@@ -1,0 +1,11 @@
+{% for tier in include.tiers %}
+{% include kankoda/licenses/tier-box
+    name=tier.name
+    header=tier.header
+    header-class=tier.header-class
+    price=tier.price
+    price-from=tier.price-from
+    description=tier.description
+    features=tier.features
+    delay=forloop.index0 %}
+{% endfor %}
