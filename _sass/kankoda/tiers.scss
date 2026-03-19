@@ -1,65 +1,50 @@
-.tiers.col3 {
+.tier {
+  text-align: center;
+  background-color: #ffffff55;
 
-  @media (max-width: 1000px) {
-    grid-template-columns: 1fr;
+  .cta:hover {
+      text-decoration: none;
+    }
 
-    .box-header.placeholder {
-      display: none;
+  &.free, &.basic, &.standard {
+    .cta {
+      background-color: black;
+    }
+  }
+
+  &.silver, &.starter {
+    background-color: rgba(100, 100, 100, 0.1);
+    .cta {
+      background-color: black;
+    }
+  }
+
+  &.gold, &.pro {
+    background-color: rgba(255, 215, 0, 0.4);
+
+    .cta {
+      color: black !important;
+      background-color: gold;
+    }
+
+    .cta:hover {
+      box-shadow: 2px 3px 5px $shadow;
+    }
+  }
+
+  &.custom, &.business {
+    background-color: rgba(0, 0, 25, 0.8);
+    color: white;
+
+    .cta {
+      color: black !important;
+      background-color: white;
     }
   }
 }
 
-.tier {
-  text-align: center;
-}
-
-.tier.free, .tier.basic, .tier.standard {
-  background-color: white;
-
-  .cta {
-    color: white;
-    background-color: black;
-  }
-}
-
-.tier.silver, .tier.starter {
-  background-color: rgba(100, 100, 100, 0.1);
-
-  .cta {
-    color: white;
-    background-color: black;
-  }
-}
-
-.tier.gold, .tier.pro {
-  border: solid 1px gold;
-  background-color: rgba(255, 215, 0, 0.4);
-
-  .cta {
-    color: black !important;
-    background-color: gold;
-  }
-
-  .cta:hover {
-    text-decoration: none;
-    box-shadow: 1px 2px 2px $shadow;
-  }
-}
-
-.tier.custom, .tier.business {
-  border: solid 1px #334;
-  background-color: rgba(0, 0, 25, 0.8);
-  color: white;
-
-  .cta {
-    color: black !important;
-    background-color: white;
-  }
-}
-
 .tier.box-header {
-  color: white;
-  background-color: $tier-tag-blue-bg;
+  background: $tier-tag-blue-bg;
   border: solid 1px $tier-tag-blue-border;
   border-radius: 20px 20px 0 0;
   color: $tier-tag-blue-text;
@@ -70,7 +55,7 @@
   margin-bottom: -10px;
 
   &.orange {
-    background-color: $tier-tag-orange-bg;
+    background: $tier-tag-orange-bg;
     border-color: $tier-tag-orange-border;
     color: $tier-tag-orange-text;
   }
@@ -139,5 +124,16 @@
   .cta {
     margin: 40px 0 0 0;
     display: block;
+  }
+}
+
+.tiers.col3 {
+
+  @media (max-width: 1000px) {
+    grid-template-columns: 1fr;
+
+    .box-header.placeholder {
+      display: none;
+    }
   }
 }
