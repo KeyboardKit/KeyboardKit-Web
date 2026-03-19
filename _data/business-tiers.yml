@@ -23,7 +23,7 @@
 - name: Enterprise
   price: 50k
   price-from: 1
-  header: Our Best Value
+  header: Our Best Plan
   description: For high-impact use, dedicated support and custom SLAs.
   features:
     - Everything in Business+

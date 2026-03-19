@@ -6,7 +6,7 @@ permalink: /blog
 page-class: glass-background bg4 paper
 
 top-message:
-  text: Host application problems discovered in iOS 26.4 beta.
+  text: Host application problems discovered in iOS 26.4 RC.
   type: warning
   link:
     text: Read more
