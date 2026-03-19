@@ -1,6 +1,6 @@
 <a class="logo" href="/">
   {%- if site.header_image -%}
-  <img src="{{ site.header_image }}" alt="{{site.title}} icon/logo" title="{{site.title}} home page" class="{{site.header_image_type}}" />
+  <img src="{{ site.header_image }}" alt="{{site.title}} icon/logo" title="{{site.title}} home page" class="{{site.header_image_type}} scale" />
   {%- elsif site.header_logo_text -%}
   <span>{{ site.header_logo_text }}</span>
   {%- endif -%}

@@ -2,9 +2,10 @@
 id: pro-custom
 title: Business Licenses
 layout: page
-permalink: /pro/business-licenses
+permalink: /business-licenses
 
 redirect_from: 
+  - pro/business-licenses
   - pro/custom-licenses
 
 image: /assets/headers/business-licenses.jpg

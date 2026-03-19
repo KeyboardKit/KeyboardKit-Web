@@ -1,30 +1,23 @@
 .site-header {
   min-height: 0px;
 	border: 0 !important;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  font-size: 0.8em;
+  padding: 20px 0;
 
   a {
     font-weight: 600;
   }
 
-  .row {
-    align-items: center;
-    min-height: 40px;
-  }
+  .logo {
 
-  .logo img {
-    max-height: 25px;
-    margin-top: -5px;
-  }
+    img {
+      max-height: 25px;
+      margin-top: -5px;
 
-  .logo img.icon {
-    max-height: 50px;
-  }
-
-  .logo:hover {
-    transform: none;
-    transform: scale(1.04);
+      &.icon {
+        max-height: 50px;
+      }
+    }
   }
 
   .column:nth-of-type(1) {
@@ -37,10 +30,6 @@
     text-align: right;
   }
 
-  .menu {
-    font-size: 0.8em;
-  }
-
   .pricing {
     background-color: gold;
     padding: 5px 10px;
@@ -48,66 +37,98 @@
   }
 }
 
-.glass-background .site-footer {
-  background: white;
-}
-
 .site-footer {
   margin-top: 0px;
   border: 0 !important;
-  background: linear-gradient($texture-overlay, $texture-overlay), $footer-background;
+  background: $footer-background;
 
   padding-top: 0px;
   text-align: center;
 
-  ul + p { 
-    margin: 20px; 
-  }
-
-  .row {
-    flex-wrap: wrap;
+  hr {
+    border: solid 0.5px $border;
     margin-bottom: 50px;
   }
 
   .column {
-    opacity: 0.75;
-    flex-basis: 20%;
-    font-size: smaller;
-    
-    p {
-      margin-top: 30px;
-      margin-bottom: 10px;
-      font-weight: 600;
+    font-size: 0.85em;
+
+    .footer-toggle {
+      margin-bottom: 13px;
+      font-weight: 500;
     }
 
-    p:first-of-type {
-      margin-top: 0px;
-    }
+    .footer-content {
+      display: flex;
+      flex-direction: column;
 
-    a, div {
-      font-weight: normal;
-      margin-bottom: 5px;
-      min-height: 10px;
-    }
-
-    a:hover, a:visited:hover {
-      transform: translateX(2px);
+      a {
+        font-size: 0.95em;
+        font-weight: normal;
+        margin-bottom: 10px;
+        &:hover, &:visited:hover {
+          transform: translateX(2px);
+        }
+      }
     }
   }
 
   .copyright {
-    text-align: center;
+    font-size: smaller;
+    margin-top: 50px;
   }
 
   @media (max-width: 800px) {
     .row {
+      flex-direction: column;
       margin-left: 10px;
       margin-bottom: 0px;
     }
 
-    .column { 
-      flex-basis: 100%;
-      margin-bottom: 30px;
+    .column {
+      width: 100%;
+      margin-bottom: 0;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .column p.footer-toggle {
+      cursor: pointer;
+      font-weight: normal;
+      position: relative;
+      padding: 15px 0;
+      margin: 0 !important;
+      user-select: none;
+    }
+
+    .column p.footer-toggle::after {
+      content: '';
+      display: block;
+      position: absolute;
+      right: 0;
+      width: 6px;
+      height: 6px;
+      border-right: 1px solid currentColor;
+      border-bottom: 1px solid currentColor;
+      transform: rotate(45deg);
+      transition: transform 0.3s ease;
+      top: 50%;
+      margin-top: -4px;
+    }
+
+    .column.expanded p.footer-toggle::after {
+      transform: rotate(-135deg);
+      margin-top: -2px;
+    }
+
+    .column .footer-content {
+      display: none;
+    }
+
+    .column.expanded .footer-content {
+      display: flex;
+      flex-direction: column;
+      padding-left: 10px;
+      padding-bottom: 15px;
     }
   }
 }

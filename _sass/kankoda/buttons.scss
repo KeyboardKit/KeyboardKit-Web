@@ -9,7 +9,6 @@ div.cta {
 .cta a, a.cta {
   color: $cta-foreground;
   background-color: $cta-background;
-  border-color: $cta-border;
   border-radius: 100px;
   display: inline-block;
   font-weight: 600;
@@ -17,19 +16,20 @@ div.cta {
   min-width: 100px;
   padding: 10px 20px;
   margin: 0 10px;
-  text-decoration: none;
+
+  &:hover, &:visited {
+    color: $cta-foreground !important;
+  }
 }
 
-.cta a:hover, a.cta:hover, .cta a:visited, a.cta:visited {
-  color: $cta-foreground !important;
-}
-
-a.cta.secondary, a.cta.secondary:hover, a.cta.secondary:visited,
-.cta a.secondary, .cta a.secondary:hover, .cta a.secondary:visited
- {
+.cta a.secondary {
   color: $cta-background !important;
   background-color: $cta-foreground;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
+
+  &:hover, &:visited {
+    color: $cta-background !important;
+  }
 }
 
 

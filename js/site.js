@@ -14,6 +14,16 @@ function scrollToTop() {
   scrollToOffset(0);
 }
 
+// Footer mobile accordion
+
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.footer-toggle').forEach(function(toggle) {
+    toggle.addEventListener('click', function() {
+      const column = this.parentElement;
+      column.classList.toggle('expanded');
+    });
+  });
+});
 
 // Tags
 

@@ -9,6 +9,7 @@
   url:    /features/localization
   text:   KeyboardKit supports <b>75 locales</b>, with localized assets & layouts.
   docs:   https://keyboardkit.github.io/KeyboardKit/documentation/keyboardkit/localization-article
+  tags:   pro
 
 - title:  Keyboard View
   emoji:  ⌨️

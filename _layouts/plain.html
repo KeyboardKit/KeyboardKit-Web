@@ -5,9 +5,7 @@
   <body class="{{page.id}} {{page.page-class}}"> 
     
     <!-- Header -->
-    <header class="site-header" role="banner">
-      {% include kankoda/site/header %}
-    </header>
+    {% include kankoda/site/header %}
 
     <!-- Top Message -->
     {% if page.top-message %}
@@ -31,6 +29,6 @@
     </main>
 
     <!-- Footer -->
-    {% include kankoda/site/footer %}
+    {% include site/footer %}
   </body>
 </html>

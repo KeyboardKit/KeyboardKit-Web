@@ -35,7 +35,7 @@ urls:
   email-custom-terms: mailto:info@keyboardkit.com?subject=Custom%20Terms
   rss:        https://keyboardkit.com/feed.xml
 
-  business:   /pro/business-licenses
+  business:   /business-licenses
   escrow:     /features/escrow
 
   appstore:   https://itunes.apple.com/app/keyboardkit/id1568444977
@@ -44,6 +44,7 @@ urls:
   docs:       https://docs.keyboardkit.com
   github:     https://github.com/KeyboardKit/KeyboardKit
   gumroad:    https://kankoda.gumroad.com/l/keyboardkitpro
+  issues:     https://github.com/KeyboardKit/KeyboardKit/issues
   mastodon:   https://techhub.social/@keyboardkit
   newsletter: https://kankoda.gumroad.com/subscribe
   pricing:    /pricing
@@ -73,8 +74,6 @@ footer:
     - index.html
     - pages/about/about.md
     - pages/features.md
-    - pages/pricing.md
-    - pages/pro/business-licenses.md
     - pages/app/app.md
     - pages/case-studies.md
     - pages/documentation.md
