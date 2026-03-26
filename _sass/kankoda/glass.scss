@@ -9,9 +9,13 @@
     box-shadow: 0 4px 24px rgba(0,0,0,0.22);
   }
 
-  &.promo { background: rgba(40, 200, 100, 0.15); }
   &.warning { background: rgba(255, 193, 7, 0.15); }
   &.alert { background: rgba(220, 53, 69, 0.15); }
+  &.blue { background: rgba(173, 216, 230, 0.15); }
+  &.purple { background: rgba(216, 191, 216, 0.15); }
+  &.pink { background: rgba(255, 182, 193, 0.15); }
+  &.orange { background: rgba(255, 200, 124, 0.15); }
+  &.dark { background: rgba(0, 0, 0, 0.15); }
 
   .tag {
     position: absolute;
@@ -23,8 +27,18 @@
   }
 }
 
+.glass.panel {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  h3 { margin: 0; }
+  .cta { 
+    margin-top: 50px !important; 
+    margin-bottom: 0 !important; 
+  }
+}
+
 .glass-message {
-  margin: 50px 0;
+  margin: 35px 0;
   padding: 0 20px;
   font-size: 0.8em;
   text-align: center;

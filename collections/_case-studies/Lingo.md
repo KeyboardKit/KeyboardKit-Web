@@ -24,10 +24,10 @@ Whether you’re chatting with friends, crafting professional emails, or posting
 
 Lingo combines fast translation, intuitive design, and broad compatibility. It works across all apps, including WhatsApp, Instagram, and Gmail, making it the perfect tool for global communication. The keyboard is customizable, adapting to your preferences for a seamless and personal experience.
 
-<div class="grid col3">
-    <div class="col"><img src="{{page.assets}}screenshot1.png"></div>
-    <div class="col"><img src="{{page.assets}}screenshot2.png"></div>
-    <div class="col"><img src="{{page.assets}}screenshot3.png"></div>
+<div class="grid col3 slide-in portrait screenshots">
+    <img src="{{page.assets}}screenshot1.png" />
+    <img src="{{page.assets}}screenshot2.png" />
+    <img src="{{page.assets}}screenshot3.png" />
 </div>
 
 

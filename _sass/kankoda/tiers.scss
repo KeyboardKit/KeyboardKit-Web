@@ -23,8 +23,8 @@
     background-color: rgba(255, 215, 0, 0.4);
 
     .cta {
-      color: black !important;
-      background-color: gold;
+      color: $tag-gold-text !important;
+      background-color: $tag-gold-bg;
     }
 
     .cta:hover {
@@ -44,10 +44,10 @@
 }
 
 .tier.box-header {
-  background: $tier-tag-blue-bg;
-  border: solid 1px $tier-tag-blue-border;
+  background: $tag-blue-bg;
+  border: solid 1px $tag-blue-border;
   border-radius: 20px 20px 0 0;
-  color: $tier-tag-blue-text;
+  color: $tag-blue-text;
   font-size: 0.7em;
   font-weight: 500;
   padding: 7px;
@@ -55,9 +55,9 @@
   margin-bottom: -10px;
 
   &.orange {
-    background: $tier-tag-orange-bg;
-    border-color: $tier-tag-orange-border;
-    color: $tier-tag-orange-text;
+    background: $tag-orange-bg;
+    border-color: $tag-orange-border;
+    color: $tag-orange-text;
   }
 
   &.placeholder {
@@ -75,10 +75,10 @@
     margin-top: 0px; 
     margin-bottom: 20px;
     font-size: 1em;
-    background-color: $tier-tag-blue-bg;
-    border: solid 1px $tier-tag-blue-border;
+    background-color: $tag-blue-bg;
+    border: solid 1px $tag-blue-border;
     border-radius: 10px;
-    color: $tier-tag-blue-text;
+    color: $tag-blue-text;
     display: inline-flex;
     padding: 5px;
   }

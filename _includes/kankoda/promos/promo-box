@@ -1,37 +1,44 @@
 {% comment %}
 Promo box for displaying features with title, image, description, and CTAs.
   Parameters:
-  - title: (required) The heading text for the feature box
+  - title: A heading text for the feature box
+  - title-class: A heading text CSS class
+  - large-title: A large heading text for the feature box
   - image: (required) The image source path
+  - image-class: The image CSS class
   - text: (required) The descriptive text/content
-  - class: (optional) Optional css class (e.g., "slide-in delay-1")
-  - hr: (optional) Show horizontal rule (1 or 0, defaults to 1)
-  - hr-class: (optional) CSS class for the horizontal rule
-  - cta_link: (optional) The URL for a secondary call-to-action button
-  - cta_text: (optional) Custom text for a secondary CTA button (defaults to "Learn more" if not provided)
-  - cta_primary_link: (optional) The URL for a primary call-to-action button
-  - cta_primary_text: (optional) Custom text for a primary CTA button (required if cta_primary_link is set)
+  - class: Optional css class (e.g., "slide-in delay-1")
+  - hr: Show horizontal rule (1 or 0, defaults to 1)
+  - hr-class: CSS class for the horizontal rule
+  - cta: Custom text for a CTA button
+  - cta-class: The CSS class for a CTA button
+  - cta-link: The URL for a CTA button
+  - cta2: Custom text for a second CTA button
+  - cta-class: The CSS class for a second CTA button
+  - cta2-link: The URL for a second CTA button
 {% endcomment %}
 
 <div class="promo-box{% if include.class %} {{include.class}}{% endif %}">
-  <h3>{{ include.title }}</h3>
+  {% if include.title %}
+  <h3 class="{{include.title-class}}">{{ include.title }}</h3>
+  {% endif %}
   {% if include.hr or include.class contains "with-separator" %}
   <hr class="{% if include.hr-class %}{{ include.hr-class }}{% endif %}" />
   {% endif %}
-  <img src="{{ include.image }}" alt="{{ include.title }} feature" />
+  <img src="{{ include.image }}" alt="{{ include.title }} feature" class="{{include.image-class}}" />
   <p>
     {{ include.text }}
   </p>
-  {% if include.cta_link or include.cta_primary_link %}
+  {% if include.cta-link or include.cta2_link %}
   <div class="cta">
-    {% if include.cta_link %}
-    <a class="secondary" href="{{ include.cta_link }}">
-      {% if include.cta_text %}{{ include.cta_text }}{% else %}Learn more{% endif %}
+    {% if include.cta-link %}
+    <a class="{{ include.cta-class | default: 'secondary' }}" href="{{ include.cta-link }}">
+      {{ include.cta | default:"Learn more" }}
     </a>
     {% endif %}
-    {% if include.cta_primary_link %}
-    <a href="{{ include.cta_primary_link }}">
-      {{ include.cta_primary_text }}
+    {% if include.cta2-link %}
+    <a class="{{ include.cta2-class | default: 'primary' }}" href="{{ include.cta2-link }}">
+      {{ include.cta2 }}
     </a>
     {% endif %}
   </div>

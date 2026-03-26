@@ -17,12 +17,21 @@
   <p>{{page.hero.description | default: page.description }}</p>
 
   {% if page.hero.image %}
-  <section class="image paper wrapper {{page.hero.image-class}}">
+  <div class="image paper wrapper {{page.hero.image-class}}">
     {% if page.hero.image-divider %}
     <hr />
     {% endif %}
     <img src="{{page.hero.image}}" alt="Hero image for {{page.id}} page" class="hero-image slide-in {{page.hero.image-class}}" />
-  </section>
+  </div>
+  {% endif %}
+
+  {% if page.hero.cta %}
+  <div class="cta">
+    <a href="{{page.hero.cta.url}}" class="{{page.hero.cta.class}}">{{page.hero.cta.title}}</a>
+    {% if page.hero.cta2 %}
+    <a href="{{page.hero.cta2.url}}" class="{{page.hero.cta2.class}}">{{page.hero.cta2.title}}</a>
+    {% endif %}
+  </div>
   {% endif %}
 
 </section>

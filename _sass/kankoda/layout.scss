@@ -37,6 +37,15 @@ section + section {
   }
 }
 
+article {
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 article + .grid {
   margin-top: 60px;
 }

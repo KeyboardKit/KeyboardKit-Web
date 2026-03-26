@@ -5,7 +5,7 @@ title: GIF AI Keyboard - Generate Custom GIFs
 image:  /assets/case-studies/gif-ai/header.jpg
 assets: /assets/case-studies/gif-ai/
 
-featured: 0
+featured: 1
 
 appstore: https://apps.apple.com/us/app/gif-ai-keyboard/id6748157345
 developer: Damiaan Twelker
@@ -23,10 +23,10 @@ Say hi to [GIF AI Keyboard]({{page.appstore}}) - an innovative keyboard that let
 
 Are you picturing a funny situation in your mind, and want to share it with your peers? A GIF says more than a 1 000 words. Switch the keyboard, type your prompt, drop the GIF, and share the joy.
 
-<div class="grid col3">
-    <div class="col"><img src="{{page.assets}}screenshot-1.jpg"></div>
-    <div class="col"><img src="{{page.assets}}screenshot-2.jpg"></div>
-    <div class="col"><img src="{{page.assets}}screenshot-3.jpg"></div>
+<div class="grid col3 slide-in portrait screenshots">
+    <img src="{{page.assets}}screenshot-1.jpg">
+    <img src="{{page.assets}}screenshot-2.jpg">
+    <img src="{{page.assets}}screenshot-3.jpg">
 </div>
 
 The concept is simple yet powerful. Instead of searching through lists of standard, pre-made GIFs, you can generate exactly what you're imagining, using generative AI. You can then drop the result directly into the conversation. It's that simple.

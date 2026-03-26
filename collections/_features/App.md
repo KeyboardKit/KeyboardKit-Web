@@ -39,14 +39,14 @@ You can then use the value to set up your main app and keyboard extension to use
 
 KeyboardKit Pro unlocks a ``HomeScreen`` template that can be used as the main app root view, as well as a `Keyboard.SettingsScreen`, `Keyboard.LocaleSettingsScreen`, etc.:
 
-<div class="grid col2">
+<div class="grid screenshots">
     <span><img src="{{page.assets}}app-homescreen.jpg" /></span>
     <span><img src="{{page.assets}}app-settings.jpg" /></span>
 </div>
 
 Most features have their own settings screens that can be used in the main app and the keyboard:
 
-<div class="grid col2">
+<div class="grid screenshots">
     <span><img src="{{page.assets}}autocomplete-settingsscreen.jpg" /></span>
     <span><img src="{{page.assets}}fonts-settingsscreen.jpg" /></span>
 </div>

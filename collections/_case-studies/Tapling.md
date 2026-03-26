@@ -5,7 +5,7 @@ title: Tapling - Type with Bongo Cat
 image:  /assets/case-studies/tapling/header.jpg
 assets: /assets/case-studies/tapling/
 
-featured: 0
+featured: 1
 
 appstore: https://apps.apple.com/us/app/tapling-type-with-bongo-cat/id6756097345
 website:  https://tapling.app
@@ -22,10 +22,10 @@ Meet [Tapling]({{page.website}}) - a small companion that lives in your keyboard
 
 [Tapling]({{page.website}}) is a small companion that lives in your keyboard’s suggestion bar and taps along while you type. As you type you earn keycaps that can unlock items like furs, hats, and faces for your Tapling.
 
-<div class="grid col3">
-    <div class="col"><img src="{{page.assets}}screenshot-1.png"></div>
-    <div class="col"><img src="{{page.assets}}screenshot-2.png"></div>
-    <div class="col"><img src="{{page.assets}}screenshot-3.png"></div>
+<div class="grid col3 slide-in portrait screenshots">
+    <img src="{{page.assets}}screenshot-1.png" />
+    <img src="{{page.assets}}screenshot-2.png" />
+    <img src="{{page.assets}}screenshot-3.png" />
 </div>
 
 The idea is simple. Type normally and Tapling quietly keeps you company. Every keystroke counts. 

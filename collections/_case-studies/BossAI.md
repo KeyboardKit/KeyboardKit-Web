@@ -22,10 +22,10 @@ Meet [BossAI]({{page.website}}) - a voice-first AI keyboard that transforms how 
 
 [BossAI]({{page.website}}) is a voice-first AI keyboard with two powerful modes that work in every app with a text field - Mail, Slack, WhatsApp, LinkedIn, code editors, and more.
 
-<div class="grid col3">
-    <div class="col"><img src="{{page.assets}}screenshot-1.webp"></div>
-    <div class="col"><img src="{{page.assets}}screenshot-2.webp"></div>
-    <div class="col"><img src="{{page.assets}}screenshot-3.webp"></div>
+<div class="grid col3 slide-in portrait screenshots">
+    <img src="{{page.assets}}screenshot-1.webp" />
+    <img src="{{page.assets}}screenshot-2.webp" />
+    <img src="{{page.assets}}screenshot-3.webp" />
 </div>
 
 **Dictation** lets you speak naturally and get polished, context-aware text back. BossAI removes filler words, fixes grammar, and matches tone to the app you're in. Type at 180 wpm without editing.

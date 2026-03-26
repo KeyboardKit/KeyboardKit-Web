@@ -35,7 +35,7 @@ Encouraged by friends and family, Thomas decided to create a commercial version 
 
 > Daniel, the creator of KeyboardKit, was incredibly supportive and responsive, even accommodating special requests when I purchased the Gold License.
 
-![JustType screenshots]({{page.assets}}promo_image.png)
+![JustType screenshots]({{page.assets}}promo_image.png){:class="limited-width"}
 
 [JustType]({{page.appstore}}) was released in Q4 2024, and will be free until at least December 31. It will always be free for the dyslexia community, ensuring accessibility while remaining affordable for everyone else. For more information, see [this]({{page.youtube-1}}), [this]({{page.youtube-2}}), and [this]({{page.youtube-3}}) promo video.
 

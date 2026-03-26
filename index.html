@@ -11,23 +11,30 @@ hero:
   eyebrow: KeyboardKit
   title: Create amazing custom keyboards
   image: /assets/feature-promos/plain-blueprint-split.png
-  description: KeyboardKit lets you create custom keyboard apps for all Apple platforms, using modern technologies like Swift & SwiftUI.
+  cta:
+    title: Get Started
+    class: secondary
+    url: https://github.com/keyboardkit/keyboardkit
+  cta2:
+    title: Pro Features
+    class: gold
+    url: /pro
+  
+  message:
+    text: Host application problems discovered in iOS 26.4.
+    type: warning
+    link:
+      text: Read more
+      url: /blog/2026/03/02/ios-26-4-host-application-bundle-id-bug
 
-hero-message:
-  text: Host application problems discovered in iOS 26.4 RC.
-  type: warning
-  link:
-    text: Read more
-    url: /blog/2026/03/02/ios-26-4-host-application-bundle-id-bug
-
-description: KeyboardKit lets you create custom keyboard apps for all Apple platforms, using modern technologies like Swift & SwiftUI.
+description: The KeyboardKit SDK lets you create amazing custom keyboards for Apple platforms, using modern technologies like Swift & SwiftUI.
 ---
 
 <div class="home-content paper">
   <section class="wrapper wide slide-in">
     <h2>What is a Custom Keyboard?</h2>
     <p>
-      A custom keyboard replaces the native iOS keyboard and can provide unique <a href="features">features</a>, specialized <a href="features/layout">layouts</a>, extended <a href="features/localization">language support</a>, powerful <a href="features/ai">AI tools</a>, and personalized experiences.
+      A custom keyboard can replace the native iOS keyboard and provide unique <a href="features">features</a>, specialized <a href="features/layout">layouts</a>, extended <a href="features/localization">language support</a>, powerful <a href="features/ai">AI tools</a>, and personalized experiences.
     </p>
     <div class="cta">
       <a class="secondary" href="about">
@@ -39,64 +46,41 @@ description: KeyboardKit lets you create custom keyboard apps for all Apple plat
   <section class="wrapper wide">
     <h2>KeyboardKit - Native Feel, Unlimited Potential</h2>
     <p>
-      KeyboardKit lets you build custom keyboards that look and feel native, but where all <a href="features">features</a> and every aspect of the keyboard can be customized - giving you complete creative freedom.
+      KeyboardKit SDK lets you build custom keyboards that look and feel native, but where every aspect of the keyboard can be customized - giving you complete creative freedom.
     </p>
-    <div class="cta">
-      <a class="secondary" href="/features">
-        Core Features
-      </a>
-      <a class="cta gold" href="/pro">
-        KeyboardKit Pro
-      </a>
-    </div>
     <div class="grid col2">
       {% include kankoda/promos/promo-box
          title="Native Features"
          image="/assets/feature-promos/keyboardview.png"
          text="KeyboardKit mimics many native features and has a keyboard view that renders a native-looking keyboard."
          class="slide-in with-separator"
-         cta_link="features/essentials"
-         cta_text="Learn more"
+         cta="Learn more"
+         cta-link="features/essentials"
+      %}
+      {% include kankoda/promos/promo-box
+         title="👑 KeyboardKit Pro"
+         image="/assets/feature-promos/autocomplete.png"
+         text="KeyboardKit Pro unlocks pro features like autocomplete, dictation, fonts, etc."
+         class="slide-in with-separator"
+         cta="Get Pro"
+         cta-class="gold"
+         cta-link="features/autocomplete"
       %}
       {% include kankoda/promos/promo-box
          title="Fully Customizable"
          image="/assets/feature-promos/blueprint.png"
-         text="KeyboardKit lets you customize all parts of the keyboard - everything from layout, keys, and styles to how it behaves."
+         text="KeyboardKit lets you customize all parts of the keyboard - everything from layout and styles to how it behaves."
          class="slide-in with-separator"
-         cta_link="features/essentials"
-         cta_text="Learn more"
-      %}
-      {% include kankoda/promos/promo-box
-         title="Localized"
-         image="/assets/feature-promos/localization.png"
-         text="KeyboardKit supports 75 locales and language-specific layouts and input methods, like Vietnamese."
-         class="slide-in with-separator"
-         cta_link="features/localization"
-         cta_text="Learn more"
+         cta="Learn more"
+         cta-link="features/essentials"
       %}
       {% include kankoda/promos/promo-box
          title="AI Powered"
          image="/assets/feature-promos/ai.png"
          text="KeyboardKit can read the full document content and lets you prompt directly within the keyboard."
          class="slide-in with-separator"
-         cta_link="features/ai"
-         cta_text="Learn more"
-      %}
-      {% include kankoda/promos/promo-box
-         title="Autocomplete"
-         image="/assets/feature-promos/autocomplete.png"
-         text="Autocomplete suggestions help users type faster and more accurately with intelligent predictions."
-         class="slide-in with-separator"
-         cta_link="features/autocomplete"
-         cta_text="Learn more"
-      %}
-      {% include kankoda/promos/promo-box
-         title="Dictation"
-         image="/assets/feature-promos/dictation.png"
-         text="Voice-to-text dictation provides hands-free typing and makes it possible to implement voice commands."
-         class="slide-in with-separator"
-         cta_link="features/dictation"
-         cta_text="Learn more"
+         cta="Learn more"
+         cta-link="features/ai"
       %}
     </div>
   </section>
@@ -117,12 +101,25 @@ description: KeyboardKit lets you create custom keyboard apps for all Apple plat
   </section>
 
   <section class="wrapper wide slide-in">
+    {% include kankoda/promos/promo-box
+        image="/assets/feature-promos/localization.png"
+        title="Supports 75 locales"
+        text="KeyboardKit supports 75 locales and language-specific layouts and input methods, like Vietnamese."
+        class="rounded blue glass panel slide-in"
+        cta="Learn more"
+        cta-link="features/localization"
+        cta2="Locales"
+        cta2-link="locales"
+    %}
+  </section>
+
+  <!--<section class="wrapper wide slide-in">
     <h2>Go Further</h2>
     <p>
       KeyboardKit Pro unlocks premium features like fully localized keyboards, powerful autocomplete, AI capabilities, dictation, themes, and much more. Take your keyboard to the next level.
     </p>
     {% include kankoda/grids/features features=site.data.home-features %}
-  </section>
+  </section>-->
 
   <section class="wrapper wide slide-in">
     <h2>Latest News</h2>
@@ -168,6 +165,21 @@ description: KeyboardKit lets you create custom keyboard apps for all Apple plat
         See all case studies
       </a>
     </div>
+  </section>
+
+  <section class="wrapper wide slide-in">
+    {% include kankoda/promos/promo-box
+        title="On the App Store!"
+        image="/assets/icon/icon-header.png"
+        image-class="small"
+        text="The KeyboardKit app lets you try all KeyboardKit features directly on your phone."
+        class="rounded dark glass panel slide-in"
+        cta="Learn More"
+        cta-link="/app"
+        cta2="App Store"
+        cta2-class="black"
+        cta2-link=site.urls.appstore
+    %}
   </section>
 
   <section class="wrapper wide slide-in">

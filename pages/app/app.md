@@ -18,11 +18,10 @@ The [KeyboardKit app]({{site.urls.appstore}}) lets you use a KeyboardKit directl
 
 The KeyboardKit app uses [KeyboardKit Pro](/pro) to support many [pro](/pro) features. It comes with many pre-defined [themes](/pro/themes) and lets you create custom themes that you can share with others.
 
-<div class="grid col4">
-    <span><img src="{{page.assets}}keyboardkit-1.jpg" /></span>
-    <span><img src="{{page.assets}}keyboardkit-3.jpg" /></span>
-    <span><img src="{{page.assets}}keyboardkit-4.jpg" /></span>
-    <span><img src="{{page.assets}}keyboardkit-2.jpg" /></span>
+<div class="grid col3 slide-in portrait screenshots">
+    <img src="{{page.assets}}keyboardkit-1.jpg" />
+    <img src="{{page.assets}}keyboardkit-4.jpg" />
+    <img src="{{page.assets}}keyboardkit-2.jpg" />
 </div>
 
 For information on how the app collects and uses data (it doesn't), you find the privacy policy [here](/app/privacy-policy).

@@ -19,9 +19,9 @@
       {% include kankoda/site/hero %}
 
       <!-- Below Hero Message -->
-      {% if page.hero-message %}
+      {% if page.hero.message %}
       <section class="glass-message below-hero">
-        {% include kankoda/glass/message message=page.hero-message %}
+        {% include kankoda/glass/message message=page.hero.message %}
       </section>
       {% endif %}
     

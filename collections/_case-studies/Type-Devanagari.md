@@ -23,7 +23,7 @@ The built-in keyboard was very difficult to use and required a whole new system 
 
 This is when Natasha got the idea to build a Sanskrit keyboard, using a standard English keyboard layout, with a few extra characters inspired by the IAST roman script for Devanagari.
 
-![Type Devanagari screenshots]({{page.assets}}screenshots.jpg){:class="plain"}
+![Type Devanagari screenshots]({{page.assets}}screenshots.jpg){:class="rounded"}
 
 > KeyboardKit made implementing this keyboard very simple and quick! Thank you.
 
