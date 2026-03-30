@@ -28,11 +28,6 @@ The Basic, Silver & Gold tiers are for indies, startups and small businesses. Co
 The standard [Terms & Conditions]({{page.terms}}) apply to all standard tiers. [Contact us]({{site.urls.email-custom-terms}}) to discuss custom terms.
 
 
-## Gold Licenses
-
-Yearly Gold licenses and [above]({{site.urls.business}}) include a license file that lets you validate your KeyboardKit license directly on device. [Contact us]({{site.urls.email}}) to discuss the benefits of a yearly Gold license.
-
-
 <a name="features" />
 
 {% include features-footer.html %}
