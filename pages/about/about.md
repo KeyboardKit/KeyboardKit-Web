@@ -52,7 +52,7 @@ KeyboardKit is completely free to start using. You can upgrade to [KeyboardKit P
 
 ## Who uses KeyboardKit?
 
-With over 1,7k stars on [GitHub]({{site.urls.github}}), KeyboardKit is one of the most popular custom keyboard SDK. It's used by enterprises, companies, startups, universities and indies, who all use it for amazing things.
+With over 1,8k stars on [GitHub]({{site.urls.github}}), KeyboardKit is one of the most popular custom keyboard SDK. It's used by enterprises, companies, startups, universities and indies, who all use it for amazing things.
 
 Please see some of the [case studies](/case-studies) for inspiration. Feel free to [reach out](mailto:{{site.email}}) if you want us to share your story and feature your company and product.
 
@@ -60,5 +60,3 @@ Please see some of the [case studies](/case-studies) for inspiration. Feel free 
 ## Who are we?
 
 KeyboardKit is developed by [Kankoda](https://kankoda.com) in [Stockholm, Sweden]({{page.stockholm}}). We are experts in Swift and SwiftUI and create apps and SDKs for all major Apple platforms.
-
-Don't hesitate to [reach out](mailto:{{site.email}}) if you need help with anything or want to build something amazing.

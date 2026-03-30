@@ -1,5 +1,5 @@
 ---
-title: Platform Support
+title: Multi-platform Support
 
 hero:
   emoji: 🖥️
@@ -11,18 +11,21 @@ description: KeyboardKit Pro support all major Apple platforms
 
 ## Multi-Platform Support
 
-While KeyboardKit supports iOS, [KeyboardKit Pro][Pro] supports *all* major Apple platforms (iOS, macOS, tvOS, watchOS, visionOS) and can be used to create keyboard-oriented apps on all platforms.
+While KeyboardKit supports iOS, [KeyboardKit Pro][Pro] supports *all* major Apple platforms (iOS, macOS, tvOS, watchOS, visionOS) and can be used to create keyboard-related apps on all platforms.
 
 Even if a custom keyboard makes little sense on the laptop, watch, or TV, you can use KeyboardKit to extend your product offering and create companion apps for your custom keyboard.
 
-Since KeyboardKit Pro must be explicitly built for each platform, we only provide on-demand builds for specific versions to [Business][Pro] customers who [reach out]({{site.urls.email}}) to us regarding this.
+
+## How to access multi-platfom builds
+
+Multi-platform builds are not enabled by default, since this would make the binary very large. Since most developers only need iOS support, this is the default build configuration.
+
+We therefore provide on-demand builds of KeyboardKit to [Business license](/business-licenses) customers who [reach out]({{site.urls.email}}) to us and request a certain build configuration for a certain version.
 
 
 ## Android
 
-Although Android support hasn't been requested that much in the past, more companies are asking for this as a way to use the same keyboard engine on both platforms.
-
-We have so far been focused on making KeyboardKit the best it can be for Swift and SwiftUI, but are investigating what it would involve to also support Android.
+Although Android support hasn't been requested that much previously, it's increasingly requested. We are therefore investigating what it would take to port the SDK to Android.
 
 Please [reach out]({{site.urls.email}}) if you need Android support, or if you'd be willing to invest in making this happen.
 

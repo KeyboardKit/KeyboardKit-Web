@@ -24,7 +24,7 @@ description: KeyboardKit has business licenses for larger companies and apps.
 </div>
 
 
-## Features
+## More Information
 
 Our business licenses provide support tailored to your legal, technical, and procurement needs.
 

@@ -18,22 +18,22 @@ description: KeyboardKit Pro has custom support levels for larger organizations
 
 ### GitHub Issues
 
-All license customers can use [GitHub Issues]({{site.urls.github}}/issues) to get help with problems, request features, discuss etc. This is also where the product roadmap is managed and future versions are planned.
+[All license](/pro) customers can use [GitHub Issues]({{site.urls.github}}/issues) to report bugs, request features, discuss things, etc. This is also where the product roadmap is managed and future versions are planned.
 
 
-### E-mail Support
+### Email Support
 
-Silver, Gold and Custom license customers can reach out over e-mail at any time to get help with problems, ask questions, schedule paid support, etc.
+[Silver license](/pro) customers and above can reach out over email at any time to get help with problems, ask questions, schedule paid support, etc.
 
 
 ### Prioritized Support
 
-Gold license customers have prioritized support, which means that their needs will be considered and prioritized when planning bug fixes and future releases.
+[Gold license](/pro) customers and above have prioritized support. Their specific needs will be considered when planning bug fixes and future releases.
 
 
 ### Dedicated Support
 
-Custom license customers can customize the support level to fit their needs, include a custom set of included support tickets, schedule recurring support activites, pay for recurring support, etc.
+[Business license](/business-licenses) customers can customize the support level to fit their needs, schedule recurring support activites, request custom SLAs, etc.
 
 
 <a name="communication">
@@ -42,12 +42,12 @@ Custom license customers can customize the support level to fit their needs, inc
 
 ### Onboarding Call
 
-Gold customers have the option to connect over an initial onboarding call, where we'll discuss your needs and help you get started.
+[Gold license](/pro) customers and above have the option to connect over an onboarding call, where we'll discuss your needs and help you get started.
 
 
 ### Monthly Call
 
-Gold customers have the option to opt-in to a monthly call, where we keep track of your project, discuss any problems or questions that you may have, etc.
+[Business license](/pro) customers and above have the option to schedule a monthly call, where we keep track of your project, discuss any problems or questions that you may have, etc.
 
 
 ### Reddit
@@ -55,6 +55,6 @@ Gold customers have the option to opt-in to a monthly call, where we keep track 
 All license customers are welcome to join the [KeyboardKit subreddit]({{site.urls.reddit}}), which is where discussions about the KeyboardKit SDK takes place.
 
 
-### Discord Server
+### Discord
 
-The KeyboardKit Discord server is available to all Gold and Business customers, and offers public and private, company-specific channels.
+All license customers are welcome to join the KeyboardKit Discord, which offers public and private, company-specific channels. The invite link is in your license confirmation material.
