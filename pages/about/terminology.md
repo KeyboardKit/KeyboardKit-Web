@@ -6,7 +6,7 @@ permalink: /terminology
 redirect_from: /about/terminology
 
 hero:
-  icon: /assets/heros/icon.png
+  icon: /assets/icon/icon.png
   icon-class: plain
 
 description: This page describes some common terminology that is involved with custom iOS keyboard.

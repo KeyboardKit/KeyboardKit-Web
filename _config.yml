@@ -22,7 +22,7 @@ mastodon_username: keyboardkit@techhub.social
 twitter_username: keyboardkitsdk
 
 assets: /assets/
-header_image: /assets/icon/icon-header.png
+header_image: /assets/icon/header.png
 header_image_type: icon
 
 locales:

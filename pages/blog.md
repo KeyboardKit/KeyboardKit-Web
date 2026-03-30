@@ -3,7 +3,7 @@ layout: blog
 title: Blog
 permalink: /blog
 
-page-class: glass-background bg4 paper
+page-class: glass-background bg4
 
 top-message:
   text: Host application problems discovered in iOS 26.4.
@@ -18,7 +18,7 @@ top-message:
   {% include kankoda/search/searchbar class="glass prominent" %}
 </div>
 
-<div class="blog list">
+<div class="blog list paper">
   {%- include kankoda/tags/list tags=site.tags firstmost="releases,pro" class="collapsed" -%}
   {% include kankoda/tags/list-toggle %}
   

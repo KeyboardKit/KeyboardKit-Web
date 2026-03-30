@@ -6,7 +6,7 @@ permalink: /pro
 
 hero:
   title: KeyboardKit Pro
-  icon: /assets/heros/pro.png
+  icon: /assets/icon/pro.png
   icon-class: plain large
   description: KeyboardKit Pro unlocks critical <a href="#features">pro features</a> like 70+ languages, on-device autocomplete & autocorrect, AI support, dictation, emojis, themes, and <a href="#features">much more</a>.
 

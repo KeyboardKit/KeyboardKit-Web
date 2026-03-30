@@ -5,7 +5,7 @@ layout: page
 permalink: /pro/support
 
 hero:
-  icon: /assets/heros/pro.png
+  icon: /assets/icon/pro.png
   icon-class: plain
 
 description: KeyboardKit Pro has custom support levels for larger organizations

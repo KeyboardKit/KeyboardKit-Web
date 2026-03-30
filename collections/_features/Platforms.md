@@ -2,7 +2,7 @@
 title: Platform Support
 
 hero:
-  icon: /assets/heros/pro.png
+  emoji: 🖥️
   icon-class: plain
 
 description: KeyboardKit Pro support all major Apple platforms
