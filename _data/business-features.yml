@@ -13,9 +13,17 @@
 - name: Expiration Grace Period
   description: An expiration grace period provides a more flexible license expiration.
 
+- name: License File
+  description: Business licenses are delivered on file and are validated on-device.
+  url: /pro/license-validation
+
 - name: Multi-platform Support
   description: Request tailored multi-platform builds of certain SDK versions.
   url: /features/platforms
+
+- name: On-Device License Validation
+  description: Business licenses are delivered on file and are validated on-device.
+  url: /pro/license-validation
 
 - name: Software Escrow
   description: Get access the SDK source code in case anything happens to KeyboardKit.

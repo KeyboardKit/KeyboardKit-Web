@@ -24,9 +24,9 @@ description: KeyboardKit has business licenses for larger companies and apps.
 </div>
 
 
-## More Information
+## Features
 
-Our business licenses provide support tailored to your legal, technical, and procurement needs.
+Our business plans include all [pro features](/pro) and add business-critical support for larger companies, tailored to your legal, technical, and procurement needs.
 
 <div class="rounded glass info-table slide-in">
   {% for feature in site.data.business-features %}

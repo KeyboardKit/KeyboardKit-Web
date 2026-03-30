@@ -18,7 +18,7 @@ terms: /pro/terms
 
 ## Pricing
 
-The Basic, Silver & Gold tiers are for indies, startups and small businesses. Companies with $10M+ in annual revenue and apps with $1M+ in annual revenue need a [business license]({{site.urls.business}}).
+The standard tiers are for indies, startups and small businesses. Companies with $10M+ in annual revenue and apps with $1M+ in annual revenue need a [business license]({{site.urls.business}}).
 
 {% include licenses/feature-table.html tiers=site.data.tiers %}
 
