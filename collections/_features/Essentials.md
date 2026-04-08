@@ -4,7 +4,7 @@ description: Essential keyboard features
 hero:
   emoji: 🌱
 
-keyboard-view: /features/essential-keyboardview
+keyboard-view: /features/essentials-keyboardview
 ---
 
 KeyboardKit extends Apple's very imited native keyboard APIs with a lot more features than what is otherwise available.
@@ -13,16 +13,31 @@ KeyboardKit lets you create a fully customizable [custom keyboard](/terminology)
 
 ## Core Features
 
-KeyboardKit has essential features & views, and a [KeyboardView]({{page.keyboardview}}) that mimics the native keyboard.
+KeyboardKit has essential features & views, and a [KeyboardView]({{page.keyboard-view}}) that mimics the native keyboard.
 
 <div class="grid col2">
     <span><img src="{{page.assets}}keyboardview-english-callout.jpg" /></span>
     <span><img src="{{page.assets}}keyboardview-swedish-theme.jpg" /></span>
 </div>
 
-KeyboardKit has a `KeyboardInputViewController` that extends the native input controller with more features, a `KeyboardApp` that can configure your app, and a `KeyboardAppView` to set up the main app.
+The KeyboardKit `KeyboardInputViewController` extends the native `UIInputViewController` with more features, and the `KeyboardAppView` can be used to set up the main app with keyboard integrations.
 
-KeyboardKit has a separate namespace for each feature, like `autocomplete`, `emojis`, `feedback`, etc. Each namespace has its own observable state, settings, services, etc.
+KeyboardKit has separate feature namespaces, like `Keyboard`, `Autocomplete`, `Emojis`, `Feedback`, etc. Each namespace has its own observable state, settings, services, etc.
+
+
+## Keyboard Engine
+
+The `Keyboard` namespace contains essential keyboard utilities like `State` and `Services`, models like `AutocapitalizationType`, `Diacritic` and `Gesture`, and views like `Button`, `NextKeyboardButton`.
+
+The `Keyboard` namespace is designed to provide you with all the tools needed for the core keyboard engine, while the other namespaces provide specific features on top of this engine.
+
+
+## Keyboard Gestures
+
+The native iOS keyboard has more gestures than you may think. Keys can be pressed, released, and long pressed, space can be dragged to move the cursor, shift can be double tapped, etc.
+
+KeyboardKit lets you handle complex gestures with very little code and has a drag gesture handlers that can handle various gestures, like using space to move the input cursor.
+
 
 ## 👑 KeyboardKit Pro
 

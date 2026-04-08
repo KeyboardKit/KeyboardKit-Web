@@ -64,7 +64,6 @@ google-analytics:
 
 header:
   pages:
-    - pages/github.md
     - pages/features.md
     - pages/blog.md
     - pages/pricing.md

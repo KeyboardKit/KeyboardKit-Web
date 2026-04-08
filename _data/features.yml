@@ -1,21 +1,21 @@
 - title:  Essentials
   emoji:  🌱
   url:    /features/essentials
-  text:   KeyboardKit comes with essential models, features & views.
+  text:   KeyboardKit comes with essential models, features and views.
   docs:   https://keyboardkit.github.io/KeyboardKit/documentation/keyboardkit/essentials-article
-
-- title:  Languages
-  emoji:  🌐
-  url:    /features/localization
-  text:   KeyboardKit supports <b>75 locales</b>, with localized assets & layouts.
-  docs:   https://keyboardkit.github.io/KeyboardKit/documentation/keyboardkit/localization-article
-  tags:   pro
 
 - title:  Keyboard View
   emoji:  ⌨️
   url:    /features/essentials-keyboardview
   text:   KeyboardKit has a native-looking, customizable keyboard view.
   docs:   https://keyboardkit.github.io/KeyboardKit/documentation/keyboardkit/essentials-keyboardview
+
+- title:  Languages
+  emoji:  🌐
+  url:    /features/localization
+  text:   KeyboardKit supports <b>75 locales</b>, with localized assets and layouts.
+  docs:   https://keyboardkit.github.io/KeyboardKit/documentation/keyboardkit/localization-article
+  tags:   pro
 
 - title:  Actions
   emoji:  💥
@@ -90,13 +90,6 @@
   text:   KeyboardKit Pro lets you type with custom unicode fonts.
   docs:   https://keyboardkit.github.io/KeyboardKit/documentation/keyboardkit/fonts-article
   tags:   pro
-
-
-- title:  Gestures
-  emoji:  👆
-  url:    /features/gestures
-  text:   KeyboardKit can trigger & handle rich keyboard gestures.
-  docs:   https://keyboardkit.github.io/KeyboardKit/documentation/keyboardkit/gestures-article
 
 - title:  Host Application
   emoji:  🏠

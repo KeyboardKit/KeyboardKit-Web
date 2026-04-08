@@ -7,14 +7,16 @@ hero:
 
 KeyboardKit has a ``KeyboardView`` that lets you mimic a native iOS keyboard with a few lines of code.
 
+## Native Look - Fully Customizable
+
+The `KeyboardView` automatically applies all configurations and settings from the environment, and applies native-like gestures and callouts to all its keys.
+
 <div class="grid col2">
     <div><img alt="An English KeyboardView" src="{{page.assets}}keyboardview-english.jpg" /></div>
     <div><img alt="A styled KeyboardView" src="{{page.assets}}keyboardview-swedish-theme.jpg" /></div>
 </div>
 
-The `KeyboardView` automatically applies all configs and settings from the environment, and applies gestures and callouts to its keys.
-
-The keyboard view is highly customizable and lets you use custom views, styles, and themes for any part of the keyboard. You can also customize the keyboard layout, callout actions, etc.
+The `KeyboardView` is highly customizable and lets you use custom layouts, callouts, views, styles, and themes for any part of the keyboard.
 
 ## 👑 KeyboardKit Pro
 

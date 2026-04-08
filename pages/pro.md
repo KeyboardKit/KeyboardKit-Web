@@ -6,11 +6,11 @@ permalink: /pro
 
 hero:
   title: KeyboardKit Pro
-  icon: /assets/icon/pro.png
+  icon: /assets/icon/pro-shadow.png
   icon-class: plain large
-  description: KeyboardKit Pro unlocks critical <a href="#features">pro features</a> like 70+ languages, on-device autocomplete & autocorrect, AI support, dictation, emojis, themes, and <a href="#features">much more</a>.
+  description: KeyboardKit Pro unlocks critical <a href="#features">pro features</a> like 75 languages, on-device autocomplete, AI support, dictation, emojis, themes, and <a href="#features">much more</a>.
 
-description: KeyboardKit Pro unlocks critical pro features, like 70+ languages, on-device autocomplete & autocorrect, AI support, dictation, emojis, themes, and much more.
+description: KeyboardKit Pro unlocks critical pro features, like 75 languages, on-device autocomplete, AI support, dictation, emojis, themes, and much more.
 
 custom-license-email: mailto:info@keyboardkit.com?subject=KeyboardKit%20Pro%20-%20Custom%20Plan
 terms: /pro/terms
