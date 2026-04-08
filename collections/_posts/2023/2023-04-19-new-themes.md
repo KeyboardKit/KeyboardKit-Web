@@ -3,7 +3,7 @@ title:  New Themes and Styles
 date:   2023-04-19 06:00:00 +0100
 tags:   pro styling themes
 
-image:  /assets/headers/icon-pro.jpg
+image:  /assets/headers/pro.jpg
 assets: /assets/themes/
 image-width: 350px
 

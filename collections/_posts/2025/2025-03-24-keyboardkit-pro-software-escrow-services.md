@@ -4,7 +4,7 @@ date:   2025-03-24 08:00:00 +0100
 tags:   features enterprise escrow
 
 image-show: 0
-image: /assets/headers/features/escrow.jpg
+image: /assets/headers/software-escrow.jpg
 ---
 
 The KeyboardKit Pro Enterprise Plan now comes with software escrow services, which provide an additional layer of security and continuity for software that relies on KeyboardKit Pro.

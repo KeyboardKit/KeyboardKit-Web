@@ -3,7 +3,7 @@ title:  Next Word Prediction
 date:   2024-12-03 06:00:00 +0100
 tags:   ai autocomplete
 
-image:  /assets/headers/features/next-word-prediction.jpg
+image:  /assets/headers/next-word-prediction.jpg
 assets: /assets/blog/24/1203/
 
 tweet: https://x.com/keyboardkitsdk/status/1863901152623890558

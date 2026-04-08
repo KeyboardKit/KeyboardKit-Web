@@ -3,7 +3,7 @@ title:  KeyboardKit app 2.1 is out
 date:   2023-08-20 08:00:00 +0100
 tags:   releases app
 
-image:  /assets/headers/announcement.jpg
+image:  /assets/headers/app.jpg
 
 release: https://github.com/KeyboardKit/KeyboardKit/releases/tag/7.8.0
 ---

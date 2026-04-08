@@ -3,7 +3,7 @@ title:  Exciting news about the KeyboardKit Pro license model
 date:   2023-10-25 08:00:00 +0100
 tags:   pro licenses
 
-image:  /assets/headers/icon-pro.jpg
+image:  /assets/headers/pro.jpg
 ---
 
 KeyboardKit 8 will make some really exciting changes to the KeyboardKit Pro license model, that will make it possible to finally offer immediate license activation, free trials, and a monthly plan.

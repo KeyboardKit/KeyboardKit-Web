@@ -3,7 +3,7 @@ title:  KeyboardKit Pro can now get all text from the proxy
 date:   2022-10-05 06:00:00 +0100
 tags:   releases pro proxy
 
-image:  /assets/headers/icon-pro.jpg
+image:  /assets/headers/pro.jpg
 
 article: https://keyboardkit.github.io/KeyboardKitPro/documentation/keyboardkitpro/pro-document-proxy-extensions
 ---

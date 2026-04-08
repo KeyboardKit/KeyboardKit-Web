@@ -3,7 +3,7 @@ title:  Dictation navigation change is reverted
 date:   2023-11-29 06:00:00 +0100
 tags:   dictation navigation
 
-image:  /assets/headers/icon-pro.jpg
+image:  /assets/headers/pro.jpg
 ---
 
 A change that was introducted to make the dictation back navigation work again, is being reverted.

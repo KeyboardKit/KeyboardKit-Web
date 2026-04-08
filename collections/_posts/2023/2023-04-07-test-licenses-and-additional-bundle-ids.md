@@ -3,7 +3,7 @@ title:  Test licenses and additional bundle IDs
 date:   2023-04-07 06:00:00 +0100
 tags:   pro licenses
 
-image:  /assets/headers/icon-pro.jpg
+image:  /assets/headers/pro.jpg
 
 tweet:  https://twitter.com/GetKeyboardKit/status/1644240205409316864?s=20
 toot:   https://techhub.social/@keyboardkit/110156343564099701

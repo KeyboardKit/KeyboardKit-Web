@@ -3,7 +3,7 @@ title:  Black Week Deal
 date:   2023-11-20 12:00:00 +0100
 tags:   pro
 
-image:  /assets/headers/icon-pro.jpg
+image:  /assets/headers/pro.jpg
 
 url: https://kankoda.gumroad.com/l/keyboardkitpro
 ---
