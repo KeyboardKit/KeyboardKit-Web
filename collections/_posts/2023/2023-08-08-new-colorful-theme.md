@@ -19,13 +19,13 @@ The `Colorful` theme can define an overall color, and has customizable foregroun
 
 Colorful comes with a bunch of color-specific style variations like `.green`,  `.purple` and `.red`. All in all, the Colorful theme has 8 style variations.
 
-![Colorful Black]({{page.assets}}colorful-black.jpg){:width="{{page.image-width}}" class="theme"}
-![Colorful blue]({{page.assets}}colorful-blue.jpg){:width="{{page.image-width}}" class="theme"}
-![Colorful green]({{page.assets}}colorful-green.jpg){:width="{{page.image-width}}" class="theme"}
-![Colorful orange]({{page.assets}}colorful-orange.jpg){:width="{{page.image-width}}" class="theme"}
-![Colorful pink]({{page.assets}}colorful-pink.jpg){:width="{{page.image-width}}" class="theme"}
-![Colorful purple]({{page.assets}}colorful-purple.jpg){:width="{{page.image-width}}" class="theme"}
-![Colorful red]({{page.assets}}colorful-red.jpg){:width="{{page.image-width}}" class="theme"}
-![Colorful white]({{page.assets}}colorful-white.jpg){:width="{{page.image-width}}" class="theme"}
+![Colorful Black]({{page.assets}}colorful-black.jpg)
+![Colorful blue]({{page.assets}}colorful-blue.jpg)
+![Colorful green]({{page.assets}}colorful-green.jpg)
+![Colorful orange]({{page.assets}}colorful-orange.jpg)
+![Colorful pink]({{page.assets}}colorful-pink.jpg)
+![Colorful purple]({{page.assets}}colorful-purple.jpg)
+![Colorful red]({{page.assets}}colorful-red.jpg)
+![Colorful white]({{page.assets}}colorful-white.jpg)
 
 Colorful will be available in KeyboardKit 7.9, which is released later this week.

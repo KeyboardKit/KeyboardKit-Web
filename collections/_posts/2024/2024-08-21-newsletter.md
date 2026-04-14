@@ -10,6 +10,4 @@ Even though this website and our social media channels are often updated with ne
 
 The [KeyboardKit Newsletter]({{site.urls.newsletter}}) is managed through [Gumroad]({{site.urls.gumroad}}) and is used to send periodic updates about our products, information about sales and discounts, etc.
 
-{% include kankoda/widgets/newsletter padding=50 %} 
-
 So sign up today, and we'll update you when something significant happens.

@@ -30,4 +30,4 @@ The standard [Terms & Conditions]({{page.terms}}) apply to all standard tiers. [
 
 <a name="features" />
 
-{% include features-footer.html %}
+TODO: Features

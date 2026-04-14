@@ -31,7 +31,7 @@ With Gurray, just type your thoughts in English. As you type, Gurray intelligent
 
 Gurray was built to match native iOS and Android keyboard standards, and uses KeyboardKit for the iOS keyboard. It's free and integrates support for the WCC LP countries and communities.
 
-![Gurray marketing banner]({{page.assets}}banner.jpg){:class="rounded limited-width"}
+![Gurray marketing banner]({{page.assets}}banner.jpg)
 
 Enabling communication between people is a key focus for KeyboardKit, so it's amazing to see Gurray launch with focus on indigenous communication among the Australian communities.
 

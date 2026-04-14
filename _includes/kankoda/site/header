@@ -1,21 +1,3 @@
-<header class="site-header" role="banner">
-  <div class="wrapper wide">
-    {% if site.header_axis == "vertical" %}
-    <div class="center-content">
-      <p>
-        {% include kankoda/site/header-logo %}
-      </p>
-      {% include kankoda/site/header-links %}
-    </div>
-    {% else %}  
-    <div class="row">
-      <div class="column">
-        {% include kankoda/site/header-logo %}
-      </div>
-      <div class="column">
-        {% include kankoda/site/header-links %}
-      </div>
-    </div>
-    {% endif %}
-  </div>
+<header role="banner">
+  HEADER
 </header>

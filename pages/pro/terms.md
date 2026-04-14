@@ -11,4 +11,4 @@ redirect_from:
 description: Standard License Terms & Conditions
 ---
 
-{% include kankoda/licenses/terms.md product="KeyboardKit Pro" url="/pro" privacy-url="/privacy" %}
+TODO: TERMS

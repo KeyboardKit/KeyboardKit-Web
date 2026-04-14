@@ -1,1 +1,0 @@
-{%- assign sdk = site.data.sdks | where:"name", include.name | first -%}

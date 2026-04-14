@@ -1,6 +1,0 @@
-<script rel="javascript">
-  let tag = window.location.hash.substring(1);
-  if (tag.length) {
-      showTag(tag);
-  }
-</script>

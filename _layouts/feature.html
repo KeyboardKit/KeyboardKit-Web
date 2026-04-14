@@ -2,15 +2,12 @@
 layout: plain
 ---
 
-{%- assign features = site.data.features -%}
-{%- assign feature = features | where:"title", page.title | first -%}
+{%- assign feature = site.data.features | where:"title", page.title | first -%}
 
-<main class="page-content feature" aria-label="Content">
+<main aria-label="Content">
   <div class="wrapper">
-    <article class="paper">
-      <p>
-        {% include kankoda/buttons/back url="/features" title="Back to Features" %}
-      </p>
+    <article>
+      TODO: Feature
 
       {{ content }}
 
@@ -23,7 +20,7 @@ layout: plain
 
       <hr />
 
-      {% include features-footer.html %}
+      TODO: Features Footer
     </article>
   </div>
 </main>

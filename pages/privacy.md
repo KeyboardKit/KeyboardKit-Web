@@ -10,4 +10,4 @@ redirect_from:
 description: KeyboardKit Pro Privacy Policy
 ---
 
-{% include kankoda/sdks/privacy-policy name="KeyboardKit" url="/pro" %}
+TODO: SDK Privacy

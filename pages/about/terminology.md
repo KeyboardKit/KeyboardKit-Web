@@ -16,7 +16,7 @@ sponsor: https://github.com/sponsors/danielsaidi
 stockholm: https://www.google.com/maps/place/Stockholm,+Sweden/@59.3262131,17.8172499,11z/data=!3m1!4b1!4m6!3m5!1s0x465f763119640bcb:0xa80d27d3679d7766!8m2!3d59.3293235!4d18.0685808!16zL20vMDZteHM
 ---
 
-<p>{% include kankoda/buttons/back url="/about" title="About" %}</p>
+ABOUT BACK
 
 
 This page will help you understand key concepts when developing custom iOS keyboard extensions.

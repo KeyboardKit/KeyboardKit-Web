@@ -58,5 +58,3 @@ Instead of starting from a blank canvas, KeyboardKit provided the base structure
 ## Give it a try
 
 Download [Tapling]({{page.website}}) from the [App Store]({{page.appstore}}) to experience what it's like to type with a cute companion keeping you company.
-
-{% include kankoda/buttons/app-store image-class="plain" url=page.appstore %}

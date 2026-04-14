@@ -13,18 +13,17 @@ top-message:
     url: /blog/2026/03/02/ios-26-4-host-application-bundle-id-bug
 ---
 
-<div class="searchbar-header">
+<div>
   <h1>Blog</h1>
-  {% include kankoda/search/searchbar class="glass prominent" %}
+  TODO: SEARCHBAR
 </div>
 
-<div class="blog list paper">
-  {%- include kankoda/tags/list tags=site.tags firstmost="releases,pro" class="collapsed" -%}
-  {% include kankoda/tags/list-toggle %}
+<div>
+  TODO TAGS LIST
+  TODO TAGS TOGGLE
   
   <a name="tag-item-list"></a>
     {% for post in site.posts %}
-      {% include kankoda/blog/list-item post=post %}
+      BLOG LIST ITEM
     {% endfor %}
-    {%- include kankoda/tags/scripts -%}
 </div>

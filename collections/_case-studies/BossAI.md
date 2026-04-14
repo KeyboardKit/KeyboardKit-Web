@@ -62,5 +62,3 @@ The Hyathi team could dedicate their expertise to what makes BossAI different, a
 ## Give it a try
 
 Download [BossAI]({{page.website}}) from the [App Store]({{page.appstore}}) today to experience their vision of voice-first communication. Stop typing your thoughts - speak them. Let AI handle the rest.
-
-{% include kankoda/buttons/app-store image-class="plain" url=page.appstore %}

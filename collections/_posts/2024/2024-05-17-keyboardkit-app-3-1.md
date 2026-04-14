@@ -20,5 +20,3 @@ The rest of the app has been redesigned and cleaned up a bit as well. For instan
 The new iPad Pro layout has been added to all locales. This means that you can enjoy the iPad Pro typing experience even if you are on an older iPad device.
 
 We hope you like this new version of the KeyboardKit app!
-
-{% include kankoda/buttons/app-store image-class="plain" %}

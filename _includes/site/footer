@@ -1,4 +1,4 @@
-<footer class="site-footer">
+<footer>
   <hr />
   <data class="u-url" href="{{ "/" | relative_url }}"></data>
   <div class="wrapper">

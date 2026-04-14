@@ -10,8 +10,6 @@ description: >-
 url: https://keyboardkit.com
 email: info@keyboardkit.com
 
-is_lib: 1
-
 copyright_year: 2016-2026
 copyright_owner: Kankoda Sweden AB
 copyright_url: https://kankoda.com
@@ -56,11 +54,6 @@ urls:
 
 google-analytics:
   measurement-id: G-XJ0HPZDSM3
-
-# header:
-#  banner:
-#    text: 👑 Cyber Monday Discount - Save 50% on KeyboardKit Pro! 👑
-#    url:  /blog/2024/12/02/cyber-monday
 
 header:
   pages:
@@ -111,7 +104,6 @@ defaults:
     values:
       layout: page
       image: /assets/headers/keyboardkit.jpg
-      page-class: glass-background bg1
   -
     scope:
       type: "case-studies"

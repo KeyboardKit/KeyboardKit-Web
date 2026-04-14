@@ -1,7 +1,0 @@
-{% assign placeholder = include.placeholder | default: "Search..." %}
-
-<div class="searchbar">
-  <label for="searchbar" class="visually-hidden">Search blog</label>
-  <input id="searchbar" class="{{include.class}}" type="search" placeholder="{{placeholder}}" autocomplete="off" />
-  <button id="searchbar-clear" type="button" aria-label="Clear search" hidden>✕</button>
-</div>

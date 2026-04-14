@@ -1,6 +1,0 @@
-<div class="glass wrapper{% if include.message.type %} {{ include.message.type }}{% endif %}">
-  {{ include.message.text }}
-  {% if include.message.link %}
-  <a href="{{ include.message.link.url }}">{{ include.message.link.text }}</a>
-  {% endif %}
-</div>

@@ -1,9 +1,0 @@
-{%- assign tags = include.tags -%}
-
-{% assign classes = '' %}
-{% for tag in tags %}
-    {% assign classes = classes | append: 'tag-' | append: tag | append: ' ' %}
-{% endfor%}
-{% assign classes = classes | remove_last: ' ' %}
-
-{{classes}}

@@ -14,7 +14,7 @@ This amazing deal is valid through November, and works with the Basic, Silver, *
 
 Enter the following discount code in the [checkout flow]({{site.urls.gumroad}}), to apply the discount to your Pro purchase:
 
-<div class="box pro">
+<div class="glass">
   BLACK-FRIDAY-2025
 </div>
 

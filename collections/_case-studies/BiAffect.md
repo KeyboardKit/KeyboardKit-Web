@@ -51,7 +51,7 @@ This shift in the way we communicate means that our keyboards are now central to
 
 BiAffect is based on the premise that typing patterns - how we interact with our keyboards - can reveal information about our mental and emotional states. By continuously analyzing keystroke dynamics, it can detect subtle changes that may indicate mood shifts or cognitive fluctuations.
 
-![Core Keystroke Dynamics Feature]({{page.assets}}dynamics.jpg){:class="limited-width"}
+![Core Keystroke Dynamics Feature]({{page.assets}}dynamics.jpg)
 
 
 ### Typing Speed
@@ -76,7 +76,7 @@ Key hold time, which refers to the duration a key is pressed, can provide insigh
 
 In addition to keystroke dynamics, BiAffect also incorporates accelerometer data from the user’s smartphone. This data helps capture physical movements and phone orientation information that can provide important context about the kinds of activities the user was engaged in.
 
-![Accelerometer]({{page.assets}}accelerometer.jpg){:class="limited-width"}
+![Accelerometer]({{page.assets}}accelerometer.jpg)
 
 Some information that can be derived from accelerometer data is whether users were walking, standing, laying down, in a moving vehicle, etc. while typing on their phone
 
@@ -112,8 +112,6 @@ The BiAffect keyboard plays a crucial role in this task, integrating seamlessly 
 ## Download
 
 [Download BiAffect]({{page.biaffect}}) today, to see how its pioneering use of keystroke dynamics can enhance your understanding of mental health.
-
-{% include kankoda/buttons/app-store image-class="plain" url=page.appstore %}
 
 
 ## Go Further

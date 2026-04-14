@@ -1,29 +1,20 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
-  {% include kankoda/site/head %}
+  {% include kankoda/site/head-tag %}
 
-  <body class="{{page.id}} {{page.page-class}}"> 
+  <body> 
     
     <!-- Header -->
     {% include kankoda/site/header %}
 
     <!-- Top Message -->
-    {% if page.top-message %}
-    <section class="glass-message">
-      {% include kankoda/glass/message message=page.top-message %}
-    </section>
-    {% endif %}
+
 
     <!-- Content -->
-    <main class="page-content" aria-label="Content">
-      {% include kankoda/site/hero %}
+    <main aria-label="Content">
+      HERO
 
       <!-- Below Hero Message -->
-      {% if page.hero.message %}
-      <section class="glass-message below-hero">
-        {% include kankoda/glass/message message=page.hero.message %}
-      </section>
-      {% endif %}
     
       {{ content }}
     </main>

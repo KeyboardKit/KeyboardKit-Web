@@ -23,7 +23,7 @@ Say hi to [GIF AI Keyboard]({{page.appstore}}) - an innovative keyboard that let
 
 Are you picturing a funny situation in your mind, and want to share it with your peers? A GIF says more than a 1 000 words. Switch the keyboard, type your prompt, drop the GIF, and share the joy.
 
-<div class="grid col3 slide-in portrait screenshots">
+<div class="grid col3 slide-in">
     <img src="{{page.assets}}screenshot-1.jpg">
     <img src="{{page.assets}}screenshot-2.jpg">
     <img src="{{page.assets}}screenshot-3.jpg">
@@ -38,7 +38,7 @@ GIF AI's GIFs are generated fast enough to keep conversations flowing naturally.
 
 The journey to building [GIF AI Keyboard]({{page.appstore}}) is a story of patience, inspiration, and perfect timing.
 
-Developer [{{page.developer}}]({{page.developer-url}}) first conceived the idea of GIF AI in the summer of 2024 while living in Porto with his girlfriend. The creative environment of Portugal, combined with the inspiration from other indie makers in Portugal like [Pieter Levels]({{https://x.com/levelsio}}), sparked a wave of enthusiasm for the project.
+Developer [{{page.developer}}]({{page.developer-url}}) first conceived the idea of GIF AI in the summer of 2024 while living in Porto with his girlfriend. The creative environment of Portugal, combined with the inspiration from other indie makers in Portugal like [Pieter Levels](https://x.com/levelsio), sparked a wave of enthusiasm for the project.
 
 > Generative AI was up and coming and I've always been a fan of using AI to spread joy, while taking into account some safety factors such as not making fun at the expense of others. I thought, what if you could create a custom tailored GIF right from within your favorite messaging app? It would increase engagement on the conversation and who doesn't want to have a laugh with their peers. - Damiaan Twelker
 
@@ -68,5 +68,3 @@ GIF AI Keyboard shares GIF data between the keyboard extension and the main app,
 ## Give it a try
 
 Download [GIF AI Keyboard]({{page.appstore}}) from the App Store today and start generating custom GIFs that perfectly capture what you want to say. Transform your conversations from ordinary to extraordinary, one AI-generated GIF at a time.
-
-{% include kankoda/buttons/app-store image-class="plain" url=page.appstore %}

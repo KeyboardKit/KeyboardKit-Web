@@ -24,4 +24,4 @@ KeyboardKit supports [{{site.locales.count}} languages](/locales).
 
 See [this page](/locales) for a full list of the exact languages that KeyboardKit supports.
 
-{% include features-footer.html %}
+TODO: Features

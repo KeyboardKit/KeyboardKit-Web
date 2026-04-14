@@ -2,11 +2,8 @@
 layout: plain
 ---
 
-<main class="page-content" aria-label="Content">
-  <div class="wrapper">
-    {%- if page.image-show == 1 -%}
-    <img src="{{ page.image }}" alt="{{ page.title }}" />
-    {%- endif -%}
+<main aria-label="Content">
+  <div class="wrapper wide">
     {{ content }}
   </div>
 </main>

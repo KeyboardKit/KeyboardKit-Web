@@ -1,7 +1,5 @@
 - name: Business
   price: 10k
-  header: Business Offering
-  header-class: placeholder
   description: For formal agreements, discounts, and multi-platform support.
   features:
     - Standard Terms
@@ -11,8 +9,6 @@
 
 - name: Business+
   price: 25k
-  header: Critical Protection
-  header-class: orange
   description: For custom terms, source code protection and renewal flexibility.
   features:
     - Everything in Business
@@ -22,8 +18,6 @@
 
 - name: Enterprise
   price: 50k
-  price-from: 1
-  header: Our Best Plan
   description: For high-impact use, dedicated support and custom SLAs.
   features:
     - Everything in Business+

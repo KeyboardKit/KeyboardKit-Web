@@ -1,5 +1,0 @@
-<section class="app-store-button noselect" style="text-align: center;">
-  <a href="{{ include.url || default: site.urls.appstore }}">
-    <img src="/assets/app-store.png" alt="App Store badge" title="Download on the App Store" class="{{ include.image-class }}" />
-  </a>
-</section>

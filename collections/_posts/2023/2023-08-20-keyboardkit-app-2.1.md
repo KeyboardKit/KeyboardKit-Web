@@ -12,11 +12,7 @@ A new version of the KeyboardKit app is out! It adds a bunch of new features, su
 
 ![KeyboardKit logo]({{page.image}})
 
-This version adds a brand new theme - Colorful - which comes with a bunch of pre-defined styles: 
-
-{% include kankoda/grids/screenshots folder="themes" images="colorful-black,colorful-blue,colorful-green" %}
-
-{% include kankoda/grids/screenshots folder="themes" images="colorful-purple,colorful-red,colorful-white" %}
+This version adds a brand new theme - Colorful - which comes with a bunch of pre-defined styles.
 
 Other than that, the Keyboard Settings screen has more options, as well as a new keyboard header preview that shows you the result of your configuration. There are also some behavior adjustments that make the keyboard behave even more like the native keyboards.
 
