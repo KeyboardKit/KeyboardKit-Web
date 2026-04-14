@@ -1,0 +1,10 @@
+// Apply light/dark mode to all content
+body {
+  background-color: $color-background;
+  color: $color-text;
+
+  @media (prefers-color-scheme: dark) {
+    background-color: $color-background-dark;
+    color: $color-text-dark;
+  }
+}
