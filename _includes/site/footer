@@ -1,7 +1,7 @@
 <footer>
   <hr />
   <data class="u-url" href="{{ "/" | relative_url }}"></data>
-  <div class="wrapper">
+  <div class="wrapper wide">
     <div class="row">
       {%- assign pages = site.pages -%}
       {%- assign paths_site = site.footer_pages_sitemap -%}

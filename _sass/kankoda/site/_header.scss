@@ -1,0 +1,95 @@
+header[role="banner"] {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  transition: box-shadow 0.3s ease;
+
+  // When scrolled, add background and shadow
+  &.scrolled {
+    background-color: var(--color-background);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+    @media (prefers-color-scheme: dark) {
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    transition: padding 0.3s ease;
+  }
+
+  // Logo/Brand
+  .header-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--color-text);
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  // Navigation
+  nav {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+
+    a {
+      text-decoration: none;
+      color: var(--color-text);
+      font-weight: 500;
+      transition: opacity 0.2s ease;
+
+      &:hover {
+        opacity: 0.7;
+      }
+
+      &.active {
+        border-bottom: 2px solid var(--color-text);
+      }
+    }
+  }
+
+  // Mobile menu toggle (for future implementation)
+  .menu-toggle {
+    display: none;
+
+    @media (max-width: 768px) {
+      display: block;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0.5rem;
+      color: var(--color-text);
+    }
+  }
+
+  // Responsive navigation
+  @media (max-width: 768px) {
+    nav {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background-color: var(--color-background);
+      flex-direction: column;
+      padding: 1rem 2rem;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+      &.open {
+        display: flex;
+      }
+    }
+  }
+}
+
+// No padding needed for sticky positioning (unlike fixed)

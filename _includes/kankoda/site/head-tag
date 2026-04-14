@@ -49,6 +49,7 @@
   <link rel="manifest" href="/assets/favicons/site.webmanifest">
 
   <!-- Scripts -->
+  <script src="{{ "/assets/site.js" | relative_url }}" defer></script>
 
   {% if page.title %}
   <!-- Social -->
