@@ -1,5 +1,18 @@
 <header role="banner">
   <div class="wrapper wide">
-  HEADER
+    <a href="/" class="header-brand">{{ site.header.title }}</a>
+
+    <button class="menu-toggle" aria-label="Toggle menu">
+      <span class="menu-icon"></span>
+    </button>
+
+    <nav>
+      {% for page_path in site.header.pages %}
+        {% assign page = site.pages | where: "path", page_path | first %}
+        {% if page.title %}
+          <a href="{{ page.url | relative_url }}" {% if page.url == page.url %}class="{% if page.url == page.url %}active{% endif %}"{% endif %}>{{ page.title }}</a>
+        {% endif %}
+      {% endfor %}
+    </nav>
   </div>
 </header>

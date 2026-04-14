@@ -56,10 +56,10 @@ google-analytics:
   measurement-id: G-XJ0HPZDSM3
 
 header:
+  title: KeyboardKit
   pages:
     - pages/features.md
     - pages/blog.md
-    - pages/pricing.md
 
 footer:
   sitemap:

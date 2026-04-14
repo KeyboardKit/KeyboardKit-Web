@@ -22,11 +22,12 @@ header[role="banner"] {
     justify-content: space-between;
     padding: 1rem 2rem;
     transition: padding 0.3s ease;
+    position: relative;
   }
 
   // Logo/Brand
   .header-brand {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: bold;
     text-decoration: none;
     color: var(--color-text);
@@ -41,6 +42,7 @@ header[role="banner"] {
     display: flex;
     gap: 2rem;
     align-items: center;
+    margin-left: auto;
 
     a {
       text-decoration: none;
@@ -58,22 +60,62 @@ header[role="banner"] {
     }
   }
 
-  // Mobile menu toggle (for future implementation)
+  // Mobile menu toggle
   .menu-toggle {
     display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    color: var(--color-text);
+    margin-left: auto;
 
-    @media (max-width: 768px) {
+    @media (max-width: 700px) {
       display: block;
-      background: none;
-      border: none;
-      cursor: pointer;
-      padding: 0.5rem;
-      color: var(--color-text);
+    }
+
+    .menu-icon {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background-color: var(--color-text);
+      position: relative;
+      transition: background-color 0.2s ease;
+
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        width: 24px;
+        height: 2px;
+        background-color: var(--color-text);
+        transition: transform 0.2s ease;
+      }
+
+      &::before {
+        top: -8px;
+      }
+
+      &::after {
+        top: 8px;
+      }
+    }
+
+    &.active .menu-icon {
+      background-color: transparent;
+
+      &::before {
+        transform: rotate(45deg) translateY(8px);
+      }
+
+      &::after {
+        transform: rotate(-45deg) translateY(-8px);
+      }
     }
   }
 
   // Responsive navigation
-  @media (max-width: 768px) {
+  @media (max-width: 700px) {
     nav {
       display: none;
       position: absolute;
@@ -84,9 +126,18 @@ header[role="banner"] {
       flex-direction: column;
       padding: 1rem 2rem;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      gap: 1rem;
+
+      @media (prefers-color-scheme: dark) {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      }
 
       &.open {
         display: flex;
+      }
+
+      a {
+        padding: 0.5rem 0;
       }
     }
   }
