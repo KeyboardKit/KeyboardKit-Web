@@ -16,6 +16,10 @@ header[role="banner"] {
     }
   }
 
+  a {
+    color: var(--color-text);
+  }
+
   .wrapper {
     display: flex;
     align-items: center;
@@ -30,11 +34,6 @@ header[role="banner"] {
     font-size: 1.2rem;
     font-weight: bold;
     text-decoration: none;
-    color: var(--color-text);
-
-    &:hover {
-      opacity: 0.8;
-    }
   }
 
   // Navigation
@@ -46,16 +45,10 @@ header[role="banner"] {
 
     a {
       text-decoration: none;
-      color: var(--color-text);
       font-weight: 500;
-      transition: opacity 0.2s ease;
 
       &:hover {
-        opacity: 0.7;
-      }
-
-      &.active {
-        border-bottom: 2px solid var(--color-text);
+        text-decoration: underline;
       }
     }
   }

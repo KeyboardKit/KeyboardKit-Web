@@ -3,12 +3,20 @@
   // Light mode (default)
   --color-background: #FFFFFF;
   --color-text: #000000;
+  --color-border: rgba(0, 0, 0, 0.1);
+
+  --opacity-secondary: 0.7;
+
+  --duration-accordion: 0.3s;
+  --duration-link: 0.2s;
 }
 
 // Dark mode
 @media (prefers-color-scheme: dark) {
-  // :root {
-  //   --color-background: #1C1C1E;  // Soft dark background
-  //   --color-text: #FFFFFF;
-  // }
+  :root {
+    --color-background: #1C1C1E;  // Soft dark background
+    --color-text: #FFFFFF;
+
+    --color-border: rgba(255, 255, 255, 0.1);
+  }
 }
