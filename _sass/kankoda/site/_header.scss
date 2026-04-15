@@ -4,6 +4,7 @@ header[role="banner"] {
   left: 0;
   right: 0;
   z-index: 1000;
+  font-size: 0.95em;
   transition: box-shadow 0.3s ease;
 
   // When scrolled, add background and shadow
@@ -24,7 +25,8 @@ header[role="banner"] {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     transition: padding 0.3s ease;
     position: relative;
   }
