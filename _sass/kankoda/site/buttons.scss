@@ -1,0 +1,52 @@
+a.cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.9rem 1.4rem;
+  border: 1px solid #111;
+  border-radius: 999px;
+  background: #111;
+  color: #fff !important;
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1;
+  text-decoration: none;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background-color 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
+  transform-origin: center;
+}
+
+a.cta + a.cta {
+  margin-left: 0.75rem;
+}
+
+a.cta:hover {
+  transform: scale(1.04);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
+}
+
+a.cta:focus-visible {
+  outline: 2px solid rgba(17, 17, 17, 0.35);
+  outline-offset: 3px;
+}
+
+a.cta.secondary {
+  background: #fff;
+  border-color: rgba(17, 17, 17, 0.12);
+  color: #111 !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  a.cta {
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+  }
+
+  a.cta:hover {
+    transform: none;
+  }
+}

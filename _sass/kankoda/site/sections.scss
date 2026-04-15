@@ -38,14 +38,41 @@ section.hero {
 
   p {
     font-weight: 300;
-    margin: 0 auto;
+    margin: 2em auto;
     max-width: 38rem;
+  }
+
+  a.cta {
+    padding: 1.05rem 1.75rem;
+    font-size: 1.05rem;
   }
 }
 
 // Showcase
 
 section.showcase {
+  padding: clamp(4rem, 8vw, 7rem) 0;
+  text-align: center;
 
-  
+  .wrapper {
+    display: grid;
+    gap: 2rem;
+    justify-items: center;
+  }
+
+  h2 {
+    font-size: clamp(2rem, 4vw, 3.25rem);
+    line-height: 1;
+    margin: 0;
+  }
+
+  h3 {
+    font-size: clamp(1.35rem, 2vw, 1.75rem);
+  }
+
+  .grid {
+    width: 100%;
+    align-items: stretch;
+    justify-content: center;
+  }
 }

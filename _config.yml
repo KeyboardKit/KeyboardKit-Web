@@ -60,6 +60,7 @@ header:
   pages:
     - pages/features.md
     - pages/blog.md
+    - pages/pricing.md
 
 footer:
   sitemap:
