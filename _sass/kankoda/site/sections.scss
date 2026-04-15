@@ -75,4 +75,13 @@ section.showcase {
     align-items: stretch;
     justify-content: center;
   }
+
+  &.dark {
+    background: var(--color-background-dark);
+    color: var(--color-text-dark);
+  }
+
+  &.dark a:not(.cta):not(.glass) {
+    color: var(--color-text-dark) !important;
+  }
 }
