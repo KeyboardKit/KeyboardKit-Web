@@ -37,7 +37,29 @@ section.glass::after {
 }
 
 section.light {
-  
+  color: var(--color-text-light);
+  background-color: rgba(255, 255, 255, 0.92);
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.76), rgba(255, 255, 255, 0.76));
+}
+
+section.light.blue {
+  background-color: var(--glass-blue);
+}
+
+section.light.green {
+  background-color: var(--glass-green);
+}
+
+section.light.yellow {
+  background-color: var(--glass-yellow);
+}
+
+section.light.red {
+  background-color: var(--glass-red);
+}
+
+section.light.purple {
+  background-color: var(--glass-purple);
 }
 
 section.glass > * {
