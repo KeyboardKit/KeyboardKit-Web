@@ -1,7 +1,7 @@
 // Hero
 
 section.hero {
-  min-height: 100vh;
+  min-height: calc(100vh - var(--header-height, 60px));
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -46,6 +46,36 @@ section.hero {
   a.cta {
     padding: 1.05rem 1.75rem;
     font-size: 1.05rem;
+  }
+
+  .content-chevron {
+    position: absolute;
+    left: 50%;
+    bottom: 2rem;
+    width: 2.25rem;
+    height: 2.25rem;
+    transform: translateX(-50%);
+    opacity: 0.7;
+    transition:
+      transform var(--duration-link) ease,
+      opacity var(--duration-link) ease;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 0.9rem;
+      height: 0.9rem;
+      border-right: 2px solid currentColor;
+      border-bottom: 2px solid currentColor;
+      transform: translate(-50%, -65%) rotate(45deg);
+    }
+
+    &:hover {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0.2rem);
+    }
   }
 }
 
