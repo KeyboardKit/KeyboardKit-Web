@@ -6,6 +6,11 @@ header[role="banner"] {
   z-index: 1000;
   font-size: 0.95em;
   transition: box-shadow 0.3s ease;
+  --header-height: 60px;
+
+  @media (max-width: 700px) {
+    --header-height: 50px;
+  }
 
   // When scrolled, add background and shadow
   &.scrolled {
