@@ -1,6 +1,10 @@
 <header role="banner">
   <div class="wrapper wide">
-    <a href="/" class="header-brand">{{ site.header.title }}</a>
+    {% if site.header.icon %}
+      <a class="brand-icon" href="/"><img src="{{site.header.icon}}" width="25" /></a>
+    {% endif %}
+    
+    <a href="/" class="brand">{{ site.header.title }}</a>
 
     <button class="menu-toggle" aria-label="Toggle menu">
       <div class="menu-icon">

@@ -32,8 +32,15 @@ header[role="banner"] {
     position: relative;
   }
 
+  // Icon
+  .brand-icon {
+    width: 27px;
+    height: 27px;
+    margin-right: 1em;
+  }
+
   // Logo/Brand
-  .header-brand {
+  .brand {
     font-size: 1.2rem;
     font-weight: bold;
     text-decoration: none;
