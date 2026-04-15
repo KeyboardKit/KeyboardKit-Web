@@ -120,6 +120,17 @@ section.showcase {
     justify-content: center;
   }
 
+  > .wrapper > article {
+    display: grid;
+    gap: 2rem;
+    justify-items: center;
+    width: 100%;
+  }
+
+  > .wrapper > article + article {
+    margin-top: calc(clamp(5rem, 8vw, 7rem) - 2rem);
+  }
+
   &.dark {
     background: var(--color-bg-dark);
     color: var(--color-text-dark);
