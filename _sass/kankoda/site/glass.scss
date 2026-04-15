@@ -1,55 +1,18 @@
-// Glass Section
-
-section.glass {
-  position: relative;
-  overflow: hidden;
-  isolation: isolate;
-  background: linear-gradient(135deg, rgba(244, 248, 255, 0.96), rgba(255, 245, 234, 0.92));
-}
-
-section.glass::before,
-section.glass::after {
-  content: "";
-  pointer-events: none;
-  position: absolute;
-  inset: 0;
-}
-
-section.glass::before {
-  inset: -18%;
-  background:
-    radial-gradient(circle at 18% 30%, var(--glass-blue-bg) 0, rgba(166, 205, 255, 0) 30%),
-    radial-gradient(circle at 76% 18%, var(--glass-green-bg) 0, rgba(203, 236, 175, 0) 28%),
-    radial-gradient(circle at 86% 56%, var(--glass-yellow-bg) 0, rgba(255, 232, 160, 0) 30%),
-    radial-gradient(circle at 54% 86%, var(--glass-red-bg) 0, rgba(255, 198, 205, 0) 28%),
-    radial-gradient(circle at 26% 82%, var(--glass-purple-bg) 0, rgba(212, 202, 255, 0) 32%);
-  filter: blur(72px);
-  opacity: 0.95;
-  transform: translate3d(0, 0, 0);
-}
-
-section.glass::after {
-  background:
-    linear-gradient(115deg, rgba(255, 255, 255, 0.5) 14%, rgba(255, 255, 255, 0) 42%, rgba(255, 255, 255, 0.26) 70%, rgba(255, 255, 255, 0) 100%),
-    radial-gradient(circle at center, rgba(255, 255, 255, 0.32) 0, rgba(255, 255, 255, 0) 52%);
-  mix-blend-mode: screen;
-  opacity: 0.75;
-}
-
-section.glass > * {
-  position: relative;
-  z-index: 1;
-}
-
-
 // Glass Components
 
-a.glass, div.glass, span.glass {
+a.glass, div.glass, span.glass, .tag.glass {
+  border: 1px solid var(--color-border-glass);
+  box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+}
+
+section.glass, section.glow {
+  border-top: 1px solid var(--color-border-glass);
+}
+
+a.glass, div.glass, section.glass, span.glass {
   background: rgba(255,255,255,0.1);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px); // For Safari support
-  border: 1px solid rgba(255,255,255,0.8) !important;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.12);
 
   &.blue,
   &.green,
@@ -66,6 +29,30 @@ a.glass, div.glass, span.glass {
   &.orange { background-color: var(--glass-orange-bg); }
   &.red { background-color: var(--glass-red-bg); }
   &.purple { background-color: var(--glass-purple-bg); }
+}
+
+section.glass {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+section.glass::before {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(120deg, rgba(255, 255, 255, 0.32) 0%, rgba(255, 255, 255, 0.12) 18%, rgba(255, 255, 255, 0) 42%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.24) 0%, rgba(255, 255, 255, 0.08) 16%, rgba(255, 255, 255, 0) 34%),
+    radial-gradient(circle at 18% 0%, rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0) 28%);
+  opacity: 0.8;
+  mix-blend-mode: screen;
+}
+
+section.glass > * {
+  position: relative;
+  z-index: 1;
 }
 
 .icon-badge.glass, .tag.glass {
