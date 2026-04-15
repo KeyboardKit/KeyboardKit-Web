@@ -1,0 +1,9 @@
+<div class="badge{% if include.color %} {{ include.color }}{% endif %}{% if include.class %} {{ include.class }}{% endif %}">
+  {% include components/icon
+    name=include.name
+    class=include.icon_class
+    width=include.width
+    height=include.height
+    label=include.label
+  %}
+</div>

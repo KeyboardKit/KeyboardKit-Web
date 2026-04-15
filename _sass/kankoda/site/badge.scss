@@ -1,0 +1,42 @@
+.badge {
+  --badge-icon-size: 2.25rem;
+  --badge-padding: 0.5rem;
+  --badge-bg: rgba(255, 255, 255, 0.65);
+  --badge-fg: rgba(0, 0, 0, 0.42);
+
+  display: grid;
+  place-items: center;
+  width: calc(var(--badge-icon-size) + (var(--badge-padding) * 2));
+  height: calc(var(--badge-icon-size) + (var(--badge-padding) * 2));
+  margin-inline: auto;
+  border-radius: 50%;
+  background: var(--badge-bg);
+  color: var(--badge-fg);
+  line-height: 0;
+  overflow: hidden;
+
+  &.blue {
+    --badge-bg: var(--glass-blue);
+    --badge-fg: #1770c9;
+  }
+
+  &.green {
+    --badge-bg: var(--glass-green);
+    --badge-fg: #2c8a59;
+  }
+
+  &.purple {
+    --badge-bg: var(--glass-purple);
+    --badge-fg: #5b43dd;
+  }
+
+  &.red {
+    --badge-bg: var(--glass-red);
+    --badge-fg: #d81b60;
+  }
+
+  &.yellow {
+    --badge-bg: var(--glass-yellow);
+    --badge-fg: #b86a00;
+  }
+}

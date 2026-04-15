@@ -36,32 +36,6 @@ section.glass::after {
   opacity: 0.75;
 }
 
-section.light {
-  color: var(--color-text-light);
-  background-color: rgba(255, 255, 255, 0.92);
-  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.76), rgba(255, 255, 255, 0.76));
-}
-
-section.light.blue {
-  background-color: var(--glass-blue);
-}
-
-section.light.green {
-  background-color: var(--glass-green);
-}
-
-section.light.yellow {
-  background-color: var(--glass-yellow);
-}
-
-section.light.red {
-  background-color: var(--glass-red);
-}
-
-section.light.purple {
-  background-color: var(--glass-purple);
-}
-
 section.glass > * {
   position: relative;
   z-index: 1;
@@ -76,14 +50,6 @@ a.glass, div.glass {
   -webkit-backdrop-filter: blur(8px); // For Safari support
   border: 1px solid rgba(255,255,255,0.8);
   box-shadow: 0 4px 24px rgba(0,0,0,0.12);
-
-  &.warning { background: rgba(255, 193, 7, 0.15); }
-  &.alert { background: rgba(220, 53, 69, 0.15); }
-  &.blue { background: rgba(173, 216, 230, 0.15); }
-  &.purple { background: rgba(216, 191, 216, 0.15); }
-  &.pink { background: rgba(255, 182, 193, 0.15); }
-  &.orange { background: rgba(255, 200, 124, 0.15); }
-  &.dark { background: rgba(0, 0, 0, 0.15); }
 }
 
 
@@ -162,5 +128,11 @@ div.glass {
 
   a:hover & {
     box-shadow: 0 4px 24px rgba(0,0,0,0.22);
+  }
+
+  > .badge:first-child {
+    margin-bottom: 1.25rem;
+    font-size: 1.8em;
+    padding: 0.1em;
   }
 }
