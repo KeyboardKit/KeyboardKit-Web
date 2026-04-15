@@ -44,18 +44,13 @@ section.glass > * {
 
 // Glass Container
 
+a.glass,
 div.glass {
   background: rgba(255,255,255,0.1);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px); // For Safari support
   border: 1px solid rgba(255,255,255,0.8);
-  border-radius: 20px;
   box-shadow: 0 4px 24px rgba(0,0,0,0.12);
-  padding: clamp(1.25rem, 3vw, 2rem);
-
-  a:hover & {
-    box-shadow: 0 4px 24px rgba(0,0,0,0.22);
-  }
 
   &.warning { background: rgba(255, 193, 7, 0.15); }
   &.alert { background: rgba(220, 53, 69, 0.15); }
@@ -64,4 +59,30 @@ div.glass {
   &.pink { background: rgba(255, 182, 193, 0.15); }
   &.orange { background: rgba(255, 200, 124, 0.15); }
   &.dark { background: rgba(0, 0, 0, 0.15); }
+}
+
+a.glass {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.85rem 1.15rem;
+  border-radius: 10px;
+  line-height: 1;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transform-origin: center;
+}
+
+a.glass:hover {
+  transform: scale(1.04);
+  box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+}
+
+div.glass {
+  border-radius: 20px;
+  padding: clamp(1.25rem, 3vw, 2rem);
+
+  a:hover & {
+    box-shadow: 0 4px 24px rgba(0,0,0,0.22);
+  }
 }
