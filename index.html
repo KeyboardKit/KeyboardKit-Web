@@ -60,14 +60,14 @@ description: The KeyboardKit SDK lets you create amazing custom keyboards for Ap
     <h2>Choose the path that fits you.</h2>
     <p>KeyboardKit is free to start using and scales with your needs.</p>
     <div class="grid col2">
-      <div class="glass scale-in">
+      <div class="glass scale">
         <h3>Individual & Startups</h3>
         <p>For solo developers, freelancers, or small teams. Flexible subscription plans with continuous updates.</p>
         <a class="large cta" href="/pricing">View Pricing</a>
       </div>
-      <div class="glass scale-in">
+      <div class="glass scale">
         <h3>Business & Organization</h3>
-        <p>For established companies requiring legal security, invoice billing, escrow, and priority support.</p>
+        <p>For established companies requiring legal security, invoice billing, software escrow, and priority support.</p>
         <a class="large cta" href="/business">Business Plans</a>
       </div>
     </div>
@@ -127,5 +127,22 @@ description: The KeyboardKit SDK lets you create amazing custom keyboards for Ap
       <p>Subscribe to our <a href="{{site.urls.newsletter}}">newsletter</a> for periodic updates.
       {% include kankoda/gumroad/newsletter %}
     </div>
+  </div>
+</section>
+
+<a name="content"></a>
+<section class="showcase yellow glass">
+  <div class="wrapper wide slide-in">
+    <article>
+      <h2>Latest News</h2>
+        <p>Follow the <a href="{{site.urls.blog}}">KeyboardKit Blog</a> for news & updates.
+      <div class="grid col2">
+        {% for post in site.posts limit:2 %}
+        <a href="{{post.url}}" title="{{post.title}}" class="scale rounded">
+          <img src="{{post.image}}" alt="{{post.title}}" />
+        </a>
+        {% endfor %}
+      </div>
+    </article>
   </div>
 </section>
