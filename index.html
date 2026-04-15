@@ -22,9 +22,9 @@ description: The KeyboardKit SDK lets you create amazing custom keyboards for Ap
     </div>
     <div class="metric-item-container">
       <div class="grid col3">
-        {% include components/metric-item value="100k+" label="Active Users" %}
-        {% include components/metric-item value="75" label="Supported Locales" %}
-        {% include components/metric-item value="1.8k+" label="Stars on GitHub" %}
+        {% include kankoda/components/metric-item value="100k+" label="Active Users" %}
+        {% include kankoda/components/metric-item value="75" label="Supported Locales" %}
+        {% include kankoda/components/metric-item value="1.8k+" label="Stars on GitHub" %}
       </div>
     </div>
   </div>
@@ -82,65 +82,58 @@ description: The KeyboardKit SDK lets you create amazing custom keyboards for Ap
       <p>A custom keyboard can replace the native software keyboard, and lets users use your app's unique features in any app that support typing and pasting.</p>
       <a href="/about" class="cta">Learn more</a>
     </article>
+
     <article>
       <h2>Why Choose KeyboardKit?</h2>
       <p>KeyboardKit is the top choice for developers building custom keyboards.</p>
       <div class="grid col4">
         <div class="glass">
-          {% include components/icon-badge color="orange" name="lucide:zap" %}
+          {% include kankoda/components/icon-badge color="orange" name="lucide:zap" %}
           <h4>Lightning Fast</h4>
           <div>Minimal latency for instant user feedback.</div>
         </div>
         <div class="glass">
-          {% include components/icon-badge color="green" name="lucide:shield" %}
+          {% include kankoda/components/icon-badge color="green" name="lucide:shield" %}
           <h4>Secure & Private</h4>
           <div>On-device processing ensures user & data privacy.</div>
         </div>
         <div class="glass">
-          {% include components/icon-badge color="blue" name="lucide:globe" %}
+          {% include kankoda/components/icon-badge color="blue" name="lucide:globe" %}
           <h4>Multi-language</h4>
           <div>Support for <a href="/features/localization">{{site.locales.count}} locales</a> and fully localized features.</div>
         </div>
         <div class="glass">
-          {% include components/icon-badge color="purple" name="lucide:tablet-smartphone" %}
+          {% include kankoda/components/icon-badge color="purple" name="lucide:tablet-smartphone" %}
           <h4>Swift & SwiftUI</h4>
           <div>Native iOS support following Apple's design guidelines.</div>
         </div>
       </div>
     </article>
-  </div>
-</section>
-
-<a name="content"></a>
-<section class="showcase purple glass">
-  <div class="wrapper slide-in grid col2">
-    <div>
-      <h3>Follow Us</h3>
-      <p>Follow us on <a href="{{site.urls.bluesky}}">Bluesky</a> and <a href="{{site.urls.mastodon}}">Mastodon</a> for the latest news.
-      <div class="icon-group">
-        <a href="{{site.urls.bluesky}}">{% include components/icon name="bi:bluesky" %}</a>
-        <a href="{{site.urls.mastodon}}">{% include components/icon name="bi:mastodon" %}</a>
+    
+    <article>
+      <div class="slide-in grid col2">
+        <div>
+          <h3>Follow Us</h3>
+          <p>Follow us on <a href="{{site.urls.bluesky}}">Bluesky</a> and <a href="{{site.urls.mastodon}}">Mastodon</a> for the latest news.
+          <div class="icon-group">
+            <a href="{{site.urls.bluesky}}">{% include kankoda/components/icon name="bi:bluesky" %}</a>
+            <a href="{{site.urls.mastodon}}">{% include kankoda/components/icon name="bi:mastodon" %}</a>
+          </div>
+        </div>
+        <div>
+          <h3>Newsletter</h3>
+          <p>Subscribe to our <a href="{{site.urls.newsletter}}">newsletter</a> for periodic updates.
+          {% include kankoda/gumroad/newsletter %}
+        </div>
       </div>
-    </div>
-    <div>
-      <h3>Newsletter</h3>
-      <p>Subscribe to our <a href="{{site.urls.newsletter}}">newsletter</a> for periodic updates.
-      {% include kankoda/gumroad/newsletter %}
-    </div>
-  </div>
-</section>
+    </article>
 
-<a name="content"></a>
-<section class="showcase yellow glass">
-  <div class="wrapper wide slide-in">
     <article>
       <h2>Latest News</h2>
         <p>Follow the <a href="{{site.urls.blog}}">KeyboardKit Blog</a> for news & updates.
       <div class="grid col2">
         {% for post in site.posts limit:2 %}
-        <a href="{{post.url}}" title="{{post.title}}" class="scale rounded">
-          <img src="{{post.image}}" alt="{{post.title}}" />
-        </a>
+          {% include kankoda/components/image-link item=post %}
         {% endfor %}
       </div>
     </article>

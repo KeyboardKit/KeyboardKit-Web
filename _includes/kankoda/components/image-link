@@ -1,0 +1,3 @@
+<a href="{{include.item.url}}" title="{{include.item.title}}" class="rounded image-link scale">
+  <img src="{{include.item.image}}" alt="{{include.item.title}}" />
+</a>
