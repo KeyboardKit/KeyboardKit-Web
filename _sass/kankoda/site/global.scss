@@ -11,6 +11,9 @@ body {
 
 a {
   color: var(--color-text) !important;
+  text-decoration: underline;
+  text-underline-offset: 0.12em;
+  text-decoration-thickness: 0.08em;
 }
 
 // Headings

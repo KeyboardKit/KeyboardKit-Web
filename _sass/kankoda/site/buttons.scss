@@ -27,7 +27,10 @@ a.cta.large {
   font-size: 1.15rem;
 }
 
-a + a {
+a.cta + a.cta,
+a.cta + a.glass,
+a.glass + a.cta,
+a.glass + a.glass {
   margin-left: 0.75rem;
 }
 
