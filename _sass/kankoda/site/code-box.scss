@@ -1,0 +1,259 @@
+$code-box-title-height: 3.35rem;
+
+$code-box-bg: #18192d;
+$code-box-topbar: #26273b;
+$code-box-border: rgba(255, 255, 255, 0.08);
+$code-box-text: #eef2ff;
+$code-box-muted: #8f93b4;
+$code-box-shadow: 0 26px 60px rgba(7, 8, 20, 0.42);
+
+div.highlighter-rouge,
+figure.highlight {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  justify-self: stretch;
+  position: relative;
+  margin: 2rem 0;
+  padding-top: $code-box-title-height;
+  overflow: hidden;
+  border-radius: 1.75rem;
+  background: linear-gradient(
+    180deg,
+    $code-box-topbar 0,
+    $code-box-topbar $code-box-title-height,
+    $code-box-bg $code-box-title-height,
+    $code-box-bg 100%
+  );
+  box-shadow: $code-box-shadow;
+  text-align: left;
+}
+
+div.highlighter-rouge::before,
+figure.highlight::before {
+  content: "";
+  position: absolute;
+  top: calc(($code-box-title-height - 1rem) / 2);
+  left: 1.35rem;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background: #ff6b5e;
+  box-shadow:
+    1.55rem 0 0 #ffc64d,
+    3.1rem 0 0 #67d35f;
+}
+
+div.highlighter-rouge::after,
+figure.highlight::after {
+  content: attr(data-language);
+  position: absolute;
+  top: calc($code-box-title-height / 2);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgba(238, 242, 255, 0.46);
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  pointer-events: none;
+}
+
+div.highlighter-rouge > .highlight,
+figure.highlight > .highlight,
+figure.highlight > pre {
+  position: relative;
+  z-index: 1;
+  margin-top: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+div.highlighter-rouge pre.highlight,
+div.highlighter-rouge .highlight pre,
+figure.highlight pre {
+  margin: 0;
+  padding: 1.7rem 1.9rem 1.9rem;
+  overflow-x: auto;
+  border: 0;
+  border-radius: 0;
+  background: transparent !important;
+  color: $code-box-text;
+  font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Monaco, Consolas, Liberation Mono, monospace;
+  font-size: 1rem;
+  line-height: 1.75;
+  box-shadow: none;
+}
+
+div.highlighter-rouge code,
+figure.highlight code {
+  display: block;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent !important;
+  color: inherit;
+  font-family: inherit;
+  white-space: pre;
+  box-shadow: none;
+}
+
+div.highlighter-rouge pre::-webkit-scrollbar,
+figure.highlight pre::-webkit-scrollbar {
+  height: 10px;
+}
+
+div.highlighter-rouge pre::-webkit-scrollbar-thumb,
+figure.highlight pre::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.14);
+}
+
+div.highlighter-rouge .hll,
+figure.highlight .hll { background-color: rgba(255, 255, 255, 0.08); }
+div.highlighter-rouge .c,
+div.highlighter-rouge .c1,
+div.highlighter-rouge .cm,
+div.highlighter-rouge .cp,
+div.highlighter-rouge .cs,
+figure.highlight .c,
+figure.highlight .c1,
+figure.highlight .cm,
+figure.highlight .cp,
+figure.highlight .cs { color: #8f93b4; }
+div.highlighter-rouge .err,
+figure.highlight .err { color: #ff8d92; }
+div.highlighter-rouge .gd,
+figure.highlight .gd { color: #ff8d92; }
+div.highlighter-rouge .gi,
+figure.highlight .gi { color: #7ef0a4; }
+div.highlighter-rouge .k,
+div.highlighter-rouge .kc,
+div.highlighter-rouge .kd,
+div.highlighter-rouge .kn,
+div.highlighter-rouge .kp,
+div.highlighter-rouge .kr,
+div.highlighter-rouge .kt,
+figure.highlight .k,
+figure.highlight .kc,
+figure.highlight .kd,
+figure.highlight .kn,
+figure.highlight .kp,
+figure.highlight .kr,
+figure.highlight .kt { color: #c5b4ff; }
+div.highlighter-rouge .m,
+div.highlighter-rouge .mb,
+div.highlighter-rouge .mf,
+div.highlighter-rouge .mh,
+div.highlighter-rouge .mi,
+div.highlighter-rouge .mo,
+figure.highlight .m,
+figure.highlight .mb,
+figure.highlight .mf,
+figure.highlight .mh,
+figure.highlight .mi,
+figure.highlight .mo { color: #ffb86b; }
+div.highlighter-rouge .na,
+div.highlighter-rouge .nb,
+div.highlighter-rouge .bp,
+figure.highlight .na,
+figure.highlight .nb,
+figure.highlight .bp { color: #88e1ff; }
+div.highlighter-rouge .nc,
+div.highlighter-rouge .nd,
+div.highlighter-rouge .ne,
+div.highlighter-rouge .nf,
+div.highlighter-rouge .fm,
+figure.highlight .nc,
+figure.highlight .nd,
+figure.highlight .ne,
+figure.highlight .nf,
+figure.highlight .fm { color: #8ab4ff; }
+div.highlighter-rouge .nl,
+div.highlighter-rouge .nn,
+div.highlighter-rouge .nt,
+div.highlighter-rouge .nv,
+div.highlighter-rouge .vc,
+div.highlighter-rouge .vg,
+div.highlighter-rouge .vi,
+figure.highlight .nl,
+figure.highlight .nn,
+figure.highlight .nt,
+figure.highlight .nv,
+figure.highlight .vc,
+figure.highlight .vg,
+figure.highlight .vi { color: #9bd2ff; }
+div.highlighter-rouge .o,
+div.highlighter-rouge .ow,
+div.highlighter-rouge .p,
+figure.highlight .o,
+figure.highlight .ow,
+figure.highlight .p { color: #d8dcef; }
+div.highlighter-rouge .s,
+div.highlighter-rouge .s1,
+div.highlighter-rouge .s2,
+div.highlighter-rouge .sb,
+div.highlighter-rouge .sc,
+div.highlighter-rouge .sd,
+div.highlighter-rouge .se,
+div.highlighter-rouge .sh,
+div.highlighter-rouge .si,
+div.highlighter-rouge .sr,
+div.highlighter-rouge .ss,
+div.highlighter-rouge .sx,
+figure.highlight .s,
+figure.highlight .s1,
+figure.highlight .s2,
+figure.highlight .sb,
+figure.highlight .sc,
+figure.highlight .sd,
+figure.highlight .se,
+figure.highlight .sh,
+figure.highlight .si,
+figure.highlight .sr,
+figure.highlight .ss,
+figure.highlight .sx { color: #ffd39b; }
+div.highlighter-rouge .w,
+figure.highlight .w { color: rgba(238, 242, 255, 0.9); }
+div.highlighter-rouge .gp,
+div.highlighter-rouge .gh,
+figure.highlight .gp,
+figure.highlight .gh { color: #7ef0a4; }
+
+p code.highlighter-rouge,
+li code.highlighter-rouge,
+h1 code.highlighter-rouge,
+h2 code.highlighter-rouge,
+h3 code.highlighter-rouge,
+h4 code.highlighter-rouge,
+h5 code.highlighter-rouge,
+h6 code.highlighter-rouge,
+td code.highlighter-rouge {
+  padding: 0.18rem 0.45rem;
+  border: 1px solid rgba(24, 25, 45, 0.08);
+  border-radius: 0.5rem;
+  background: rgba(24, 25, 45, 0.06);
+  font-size: 0.92em;
+}
+
+@media (max-width: 700px) {
+  div.highlighter-rouge,
+  figure.highlight {
+    border-radius: 1.25rem;
+  }
+
+  div.highlighter-rouge::after,
+  figure.highlight::after {
+    top: 1.15rem;
+    left: auto;
+    right: 1.25rem;
+    transform: none;
+    font-size: 0.85rem;
+  }
+
+  div.highlighter-rouge pre.highlight,
+  div.highlighter-rouge .highlight pre,
+  figure.highlight pre {
+    padding: 1.35rem 1.25rem 1.45rem;
+    font-size: 0.94rem;
+  }
+}

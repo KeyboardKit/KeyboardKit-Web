@@ -14,4 +14,5 @@ Example:
 {% include_relative js/header.js %}
 {% include_relative js/mobile-menu.js %}
 {% include_relative js/footer.js %}
+{% include_relative js/code-box.js %}
 {% include_relative js/slide-in.js %}
