@@ -1,0 +1,18 @@
+.grid { 
+  display: grid; 
+  grid-column-gap: var(--grid-gap);
+  grid-row-gap: var(--grid-gap);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+
+  &.col1 { grid-template-columns: repeat(1, 1fr); }
+  &.col2 { grid-template-columns: repeat(2, 1fr); }
+  &.col3 { grid-template-columns: repeat(3, 1fr); }
+  &.col4 { grid-template-columns: repeat(4, 1fr); }
+  &.col5 { grid-template-columns: repeat(5, 1fr); }
+
+  @media (max-width: 600px) {
+    &.col2, &.col3, &.col4 { 
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}

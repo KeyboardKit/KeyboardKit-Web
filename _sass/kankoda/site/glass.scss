@@ -1,3 +1,5 @@
+// Glass Section
+
 section.glass {
   position: relative;
   overflow: hidden;
@@ -39,16 +41,26 @@ section.glass > * {
   z-index: 1;
 }
 
-@media (prefers-color-scheme: dark) {
-  section.glass {
-    background: linear-gradient(135deg, rgba(30, 34, 44, 0.96), rgba(40, 34, 36, 0.94));
+
+// Glass Container
+
+div.glass {
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px); // For Safari support
+  border: 1px solid rgba(255,255,255,0.8);
+  border-radius: 20px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+
+  a:hover & {
+    box-shadow: 0 4px 24px rgba(0,0,0,0.22);
   }
 
-  section.glass::before {
-    opacity: 0.72;
-  }
-
-  section.glass::after {
-    opacity: 0.3;
-  }
+  &.warning { background: rgba(255, 193, 7, 0.15); }
+  &.alert { background: rgba(220, 53, 69, 0.15); }
+  &.blue { background: rgba(173, 216, 230, 0.15); }
+  &.purple { background: rgba(216, 191, 216, 0.15); }
+  &.pink { background: rgba(255, 182, 193, 0.15); }
+  &.orange { background: rgba(255, 200, 124, 0.15); }
+  &.dark { background: rgba(0, 0, 0, 0.15); }
 }
