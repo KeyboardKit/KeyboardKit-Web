@@ -44,12 +44,34 @@ section.glass > * {
 
 // Glass Components
 
-a.glass, div.glass {
+.tag.glass,
+a.glass,
+div.glass {
   background: rgba(255,255,255,0.1);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px); // For Safari support
   border: 1px solid rgba(255,255,255,0.8);
   box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+
+  &.blue,
+  &.green,
+  &.yellow,
+  &.orange,
+  &.red,
+  &.purple {
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.76), rgba(255, 255, 255, 0.76));
+  }
+
+  &.blue { background-color: var(--glass-blue); }
+  &.green { background-color: var(--glass-green); }
+  &.yellow { background-color: var(--glass-yellow); }
+  &.orange { background-color: var(--glass-orange); }
+  &.red { background-color: var(--glass-red); }
+  &.purple { background-color: var(--glass-purple); }
+}
+
+.tag.glass {
+  color: var(--color-text) !important;
 }
 
 
@@ -116,6 +138,11 @@ a.glass {
 
 .dark div.glass {
   border-color: var(--color-border-dark);
+}
+
+.dark .tag.glass {
+  border-color: var(--color-border-dark);
+  color: var(--color-text-dark) !important;
 }
 
 div.glass {

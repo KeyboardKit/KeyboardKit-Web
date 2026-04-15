@@ -39,4 +39,9 @@
     --badge-bg: var(--glass-yellow);
     --badge-fg: #b86a00;
   }
+
+  &.orange {
+    --badge-bg: var(--glass-orange);
+    --badge-fg: #c96a17;
+  }
 }
