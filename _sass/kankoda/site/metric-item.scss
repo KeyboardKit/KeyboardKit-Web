@@ -1,0 +1,28 @@
+.metric-item-container {
+  margin: 5rem 0;
+}
+
+.metric-item {
+  display: grid;
+  gap: 0.4rem;
+  justify-items: center;
+  text-align: center;
+}
+
+.metric-item-value {
+  color: inherit;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+}
+
+.metric-item-label {
+  color: inherit;
+  opacity: 0.68;
+  font-size: 0.85rem;
+  font-weight: 600;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}

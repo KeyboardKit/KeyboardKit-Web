@@ -40,7 +40,6 @@ section.hero {
   p {
     font-weight: 300;
     margin: 2em auto;
-    max-width: 38rem;
   }
 
   a.cta {
@@ -79,10 +78,18 @@ section.hero {
   }
 }
 
+// Content
+
+section.hero, section.showcase {
+  p {
+    max-width: 38rem;
+  }
+}
+
 // Showcase
 
 section.showcase {
-  padding: clamp(4rem, 8vw, 7rem) 0;
+  padding: clamp(5rem, 8vw, 7rem) 0 clamp(4rem, 7vw, 6rem);
   text-align: center;
 
   .wrapper {
@@ -99,6 +106,12 @@ section.showcase {
 
   h3 {
     font-size: clamp(1.35rem, 2vw, 1.75rem);
+  }
+
+  img.promo {
+    padding: 1.5rem 0;
+    max-height: 28rem;
+    width: auto;
   }
 
   .grid {
