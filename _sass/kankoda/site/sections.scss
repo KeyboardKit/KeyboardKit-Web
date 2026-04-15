@@ -16,10 +16,6 @@ section.hero {
   // Subtle background color for inspection
   background-color: rgba(0, 120, 255, 0.03);
 
-  @media (prefers-color-scheme: dark) {
-    background-color: rgba(0, 120, 255, 0.05);
-  }
-
   @media (max-width: 700px) {
     --header-height: 50px;
   }
@@ -77,11 +73,20 @@ section.showcase {
   }
 
   &.dark {
-    background: var(--color-background-dark);
+    background: var(--color-bg-dark);
     color: var(--color-text-dark);
   }
 
   &.dark a:not(.cta):not(.glass) {
     color: var(--color-text-dark) !important;
+  }
+
+  &.dark.blue {
+    background: var(--color-bg-dark-blue);
+    color: var(--color-text-dark);
+
+    > .wrapper p {
+      opacity: 0.6;
+    }
   }
 }

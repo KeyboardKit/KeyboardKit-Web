@@ -4,30 +4,30 @@ a.cta {
   justify-content: center;
   gap: 0.5rem;
   padding: 0.9rem 1.4rem;
-  border: 1px solid #111;
-  border-radius: 999px;
-  background: #111;
-  color: #fff !important;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-pill);
+  background: var(--color-bg-dark);
+  color: var(--color-text-dark) !important;
   font-size: 0.95rem;
   font-weight: 700;
   line-height: 1;
   text-decoration: none;
   transition:
-    transform 0.2s ease,
-    box-shadow 0.2s ease,
-    background-color 0.2s ease,
-    color 0.2s ease,
-    border-color 0.2s ease;
+    transform var(--duration-link) ease,
+    box-shadow var(--duration-link) ease,
+    background-color var(--duration-link) ease,
+    color var(--duration-link) ease,
+    border-color var(--duration-link) ease;
   transform-origin: center;
 }
 
-a.cta + a.cta {
+a + a {
   margin-left: 0.75rem;
 }
 
 a.cta:hover {
   transform: scale(1.04);
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 4px 24px var(--color-shadow);
 }
 
 a.cta:focus-visible {
@@ -36,9 +36,9 @@ a.cta:focus-visible {
 }
 
 a.cta.secondary {
-  background: #fff;
-  border-color: rgba(17, 17, 17, 0.12);
-  color: #111 !important;
+  background: var(--color-bg);
+  border-color: var(--color-border);
+  color: var(--color-text) !important;
 }
 
 @media (prefers-reduced-motion: reduce) {

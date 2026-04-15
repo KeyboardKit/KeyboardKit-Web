@@ -1,19 +1,23 @@
 // Light/Dark Mode Foundation
 :root {
   // Light mode (default)
-  --color-background-light: #FFFFFF;
-  --color-background-dark: #1C1C1E;
+  --color-bg-light: #FFFFFF;
+  --color-bg-dark: #1C1C1E;
+  --color-bg-dark-blue: #080a18;
   --color-text-light: #000000;
   --color-text-dark: #FFFFFF;
 
-  --color-background: var(--color-background-light);
+  --color-bg: var(--color-bg-light);
   --color-text: var(--color-text-light);
   --color-border: rgba(0, 0, 0, 0.1);
+  --color-shadow: rgba(0, 0, 0, 0.12);
 
   --opacity-secondary: 0.7;
 
+  --radius-pill: 999px;
+
   --duration-accordion: 0.3s;
-  --duration-link: 0.2s;
+  --duration-link: 0.4s;
 
   --grid-gap: 20px;
 }
@@ -22,7 +26,7 @@
 // Dark mode
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-background: var(--color-background-dark);
+    --color-bg: var(--color-bg-dark);
     --color-text: var(--color-text-dark);
 
     --color-border: rgba(255, 255, 255, 0.1);

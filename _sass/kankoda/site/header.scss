@@ -15,7 +15,7 @@ header[role="banner"] {
 
   // When scrolled, add background and shadow
   &.scrolled {
-    background-color: var(--color-background);
+    background-color: var(--color-bg);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 
     @media (prefers-color-scheme: dark) {
@@ -129,7 +129,7 @@ header[role="banner"] {
       top: 100%;
       left: 0;
       right: 0;
-      background-color: var(--color-background);
+      background-color: var(--color-bg);
       flex-direction: column;
       padding: 1rem 2rem;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);

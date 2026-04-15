@@ -44,8 +44,7 @@ section.glass > * {
 
 // Glass Container
 
-a.glass,
-div.glass {
+a.glass, div.glass {
   background: rgba(255,255,255,0.1);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px); // For Safari support
@@ -71,18 +70,18 @@ a.glass {
   text-decoration: none;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   transform-origin: center;
-}
 
-a.glass:hover {
-  transform: scale(1.04);
-  box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+  &:hover {
+    transform: scale(1.04);
+    box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+  }
 }
 
 div.glass {
   border-radius: 20px;
   padding: clamp(1.25rem, 3vw, 2rem);
 
-  a.cta {
+  a.cta, a.glass {
     margin-top: 0.85rem;
   }
 
