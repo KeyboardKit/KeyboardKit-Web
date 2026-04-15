@@ -7,6 +7,7 @@ header[role="banner"] {
   font-size: 0.95em;
   transition: box-shadow 0.3s ease;
   --header-height: 60px;
+  height: var(--header-height);
 
   @media (max-width: 700px) {
     --header-height: 50px;
@@ -30,8 +31,7 @@ header[role="banner"] {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    height: var(--header-height);
     transition: padding 0.3s ease;
     position: relative;
   }
@@ -77,39 +77,46 @@ header[role="banner"] {
     .menu-icon {
       display: block;
       width: 24px;
-      height: 2px;
-      background-color: var(--color-text);
+      height: 18px;
       position: relative;
-      transition: background-color 0.2s ease;
 
-      &::before,
-      &::after {
-        content: '';
+      span {
+        display: block;
         position: absolute;
-        width: 24px;
+        width: 100%;
         height: 2px;
         background-color: var(--color-text);
-        transition: transform 0.2s ease;
-      }
+        transition: all 0.3s ease;
 
-      &::before {
-        top: -8px;
-      }
+        &:nth-child(1) {
+          top: 0;
+        }
 
-      &::after {
-        top: 8px;
+        &:nth-child(2) {
+          top: 8px;
+        }
+
+        &:nth-child(3) {
+          top: 16px;
+        }
       }
     }
 
     &.active .menu-icon {
-      background-color: transparent;
+      span {
+        &:nth-child(1) {
+          top: 8px;
+          transform: rotate(45deg);
+        }
 
-      &::before {
-        transform: rotate(45deg) translateY(8px);
-      }
+        &:nth-child(2) {
+          opacity: 0;
+        }
 
-      &::after {
-        transform: rotate(-45deg) translateY(-8px);
+        &:nth-child(3) {
+          top: 8px;
+          transform: rotate(-45deg);
+        }
       }
     }
   }

@@ -3,7 +3,11 @@
     <a href="/" class="header-brand">{{ site.header.title }}</a>
 
     <button class="menu-toggle" aria-label="Toggle menu">
-      <span class="menu-icon"></span>
+      <div class="menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </button>
 
     <nav>
