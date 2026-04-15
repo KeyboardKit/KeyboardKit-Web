@@ -1,4 +1,8 @@
 // Apply light/dark mode to all content
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--color-bg);
   color: var(--color-text);
