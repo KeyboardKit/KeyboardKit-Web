@@ -18,11 +18,11 @@ section.glass::after {
 section.glass::before {
   inset: -18%;
   background:
-    radial-gradient(circle at 18% 30%, var(--glass-blue) 0, rgba(166, 205, 255, 0) 30%),
-    radial-gradient(circle at 76% 18%, var(--glass-green) 0, rgba(203, 236, 175, 0) 28%),
-    radial-gradient(circle at 86% 56%, var(--glass-yellow) 0, rgba(255, 232, 160, 0) 30%),
-    radial-gradient(circle at 54% 86%, var(--glass-red) 0, rgba(255, 198, 205, 0) 28%),
-    radial-gradient(circle at 26% 82%, var(--glass-purple) 0, rgba(212, 202, 255, 0) 32%);
+    radial-gradient(circle at 18% 30%, var(--glass-blue-bg) 0, rgba(166, 205, 255, 0) 30%),
+    radial-gradient(circle at 76% 18%, var(--glass-green-bg) 0, rgba(203, 236, 175, 0) 28%),
+    radial-gradient(circle at 86% 56%, var(--glass-yellow-bg) 0, rgba(255, 232, 160, 0) 30%),
+    radial-gradient(circle at 54% 86%, var(--glass-red-bg) 0, rgba(255, 198, 205, 0) 28%),
+    radial-gradient(circle at 26% 82%, var(--glass-purple-bg) 0, rgba(212, 202, 255, 0) 32%);
   filter: blur(72px);
   opacity: 0.95;
   transform: translate3d(0, 0, 0);
@@ -44,13 +44,11 @@ section.glass > * {
 
 // Glass Components
 
-.tag.glass,
-a.glass,
-div.glass {
+a.glass, div.glass, span.glass {
   background: rgba(255,255,255,0.1);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px); // For Safari support
-  border: 1px solid rgba(255,255,255,0.8);
+  border: 1px solid rgba(255,255,255,0.8) !important;
   box-shadow: 0 4px 24px rgba(0,0,0,0.12);
 
   &.blue,
@@ -59,19 +57,26 @@ div.glass {
   &.orange,
   &.red,
   &.purple {
-    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.76), rgba(255, 255, 255, 0.76));
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.68), rgba(255, 255, 255, 0.68));
   }
 
-  &.blue { background-color: var(--glass-blue); }
-  &.green { background-color: var(--glass-green); }
-  &.yellow { background-color: var(--glass-yellow); }
-  &.orange { background-color: var(--glass-orange); }
-  &.red { background-color: var(--glass-red); }
-  &.purple { background-color: var(--glass-purple); }
+  &.blue { background-color: var(--glass-blue-bg); }
+  &.green { background-color: var(--glass-green-bg); }
+  &.yellow { background-color: var(--glass-yellow-bg); }
+  &.orange { background-color: var(--glass-orange-bg); }
+  &.red { background-color: var(--glass-red-bg); }
+  &.purple { background-color: var(--glass-purple-bg); }
 }
 
-.tag.glass {
+.badge.glass, .tag.glass {
   color: var(--color-text) !important;
+
+  &.blue { color: var(--glass-blue-text) !important; }
+  &.green { color: var(--glass-green-text) !important; }
+  &.yellow { color: var(--glass-yellow-text) !important; }
+  &.orange { color: var(--glass-orange-text) !important; }
+  &.red { color: var(--glass-red-text) !important; }
+  &.purple { color: var(--glass-purple-text) !important; }
 }
 
 
