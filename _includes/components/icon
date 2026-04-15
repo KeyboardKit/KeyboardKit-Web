@@ -1,4 +1,4 @@
-<!-- Icon sets: https://icon-sets.iconify.design/ -->
+{% comment %}Icon sets: https://icon-sets.iconify.design {% endcomment %}
 <iconify-icon
   icon="{{ include.name }}"
   {% if include.class %}class="{{ include.class }}"{% endif %}

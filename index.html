@@ -89,24 +89,43 @@ description: The KeyboardKit SDK lets you create amazing custom keyboards for Ap
         <div class="glass">
           {% include components/icon-badge color="orange" name="lucide:zap" %}
           <h4>Lightning Fast</h4>
-          <div>Optimized performance with minimal latency for instant user feedback.</div>
+          <div>Minimal latency for instant user feedback.</div>
         </div>
         <div class="glass">
           {% include components/icon-badge color="green" name="lucide:shield" %}
           <h4>Secure & Private</h4>
-          <div>On-device processing ensures user privacy and data security.</div>
+          <div>On-device processing ensures user & data privacy.</div>
         </div>
         <div class="glass">
           {% include components/icon-badge color="blue" name="lucide:globe" %}
           <h4>Multi-language</h4>
-          <div>Support for <a href="/features/localization">{{site.locales.count}} locales</a>, with localized keyboard layouts and callout actions.</div>
+          <div>Support for <a href="/features/localization">{{site.locales.count}} locales</a> and fully localized features.</div>
         </div>
         <div class="glass">
           {% include components/icon-badge color="purple" name="lucide:tablet-smartphone" %}
           <h4>Swift & SwiftUI</h4>
-          <div>Native iOS integration following Apple's design guidelines.</div>
+          <div>Native iOS support following Apple's design guidelines.</div>
         </div>
       </div>
     </article>
+  </div>
+</section>
+
+<a name="content"></a>
+<section class="showcase light purple">
+  <div class="wrapper slide-in grid col2">
+    <div>
+      <h3>Follow Us</h3>
+      <p>Follow us on <a href="{{site.urls.bluesky}}">Bluesky</a> and <a href="{{site.urls.mastodon}}">Mastodon</a> for the latest news.
+      <div class="icon-group">
+        <a href="{{site.urls.bluesky}}">{% include components/icon name="bi:bluesky" %}</a>
+        <a href="{{site.urls.mastodon}}">{% include components/icon name="bi:mastodon" %}</a>
+      </div>
+    </div>
+    <div>
+      <h3>Newsletter</h3>
+      <p>Subscribe to our <a href="{{site.urls.newsletter}}">newsletter</a> for periodic updates.
+      {% include kankoda/gumroad/newsletter %}
+    </div>
   </div>
 </section>
