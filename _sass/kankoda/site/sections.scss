@@ -1,3 +1,20 @@
+// Typography
+
+section {
+  &.hero, &.showcase {
+    a {
+      text-decoration-thickness: from-font;
+    }
+    
+    p {
+      max-width: 40rem;
+      font-size: 1.2em;
+      font-weight: 300;
+    }
+  }
+}
+
+
 // Hero
 
 section.hero {
@@ -38,7 +55,6 @@ section.hero {
   }
 
   p {
-    font-weight: 300;
     margin: 2em auto;
   }
 
@@ -120,15 +136,6 @@ section.glow::after {
 section.glow > * {
   position: relative;
   z-index: 1;
-}
-
-
-// Content
-
-section.hero, section.showcase {
-  p {
-    max-width: 38rem;
-  }
 }
 
 

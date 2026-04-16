@@ -33,8 +33,9 @@ urls:
   email-custom-terms: mailto:info@keyboardkit.com?subject=Custom%20Terms
   rss:        https://keyboardkit.com/feed.xml
 
-  business:   /business-licenses
-  escrow:     /features/escrow
+  business:     /business-licenses
+  case-studies: /case-studies
+  escrow:       /features/escrow
 
   appstore:   https://itunes.apple.com/app/keyboardkit/id1568444977
   blog:       /blog

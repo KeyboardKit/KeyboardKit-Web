@@ -109,6 +109,16 @@ description: The KeyboardKit SDK lets you create amazing custom keyboards for Ap
         </div>
       </div>
     </article>
+
+    <article>
+      <h2>Latest News</h2>
+      <p>Follow the <a href="{{site.urls.blog}}">KeyboardKit Blog</a> for news & updates.</p>
+      <div class="grid col2">
+        {% for post in site.posts limit:2 %}
+          {% include kankoda/components/image-link item=post %}
+        {% endfor %}
+      </div>
+    </article>
     
     <article>
       <div class="slide-in grid col2">
@@ -122,20 +132,31 @@ description: The KeyboardKit SDK lets you create amazing custom keyboards for Ap
         </div>
         <div>
           <h3>Newsletter</h3>
-          <p>Subscribe to our <a href="{{site.urls.newsletter}}">newsletter</a> for periodic updates.
+          <p>Subscribe to our <a href="{{site.urls.newsletter}}">newsletter</a> for periodic updates.</p>
           {% include kankoda/gumroad/newsletter %}
         </div>
       </div>
     </article>
 
     <article>
-      <h2>Latest News</h2>
-        <p>Follow the <a href="{{site.urls.blog}}">KeyboardKit Blog</a> for news & updates.
+      <h2>Success Stories</h2>
+      <p>See our <a href="{{site.urls.case-studies}}">case studies</a> for stories on great keyboard apps built with KeyboardKit.</p>
       <div class="grid col2">
-        {% for post in site.posts limit:2 %}
-          {% include kankoda/components/image-link item=post %}
+        {% for study in site.case-studies limit:4 %}
+          {% include kankoda/components/image-link item=study %}
         {% endfor %}
       </div>
     </article>
+  </div>
+</section>
+
+<section class="showcase dark blue">
+  <div class="wrapper wide slide-in">
+    <h2>Ready to Build Your Keyboard?</h2>
+    <p>Join thousands of developers creating amazing keyboard experiences with KeyboardKit. Start building today!</p>
+    <div>
+      <a href="{{site.urls.github}}" class="glass">Install from GitHub</a>
+      <a href="{{site.urls.docs}}" class="glass secondary">Documentation</a>
+    </div>
   </div>
 </section>
