@@ -1,0 +1,77 @@
+// Mobile carousel
+//
+// Add `.mobile-carousel` to any `.grid` to let it keep card widths and
+// switch to a horizontal scroll carousel when its container gets too narrow.
+
+@supports (container-type: inline-size) {
+  @mixin mobile-carousel-active {
+    display: grid;
+    grid-auto-columns: minmax(min(100%, var(--mobile-carousel-item-width)), var(--mobile-carousel-item-width));
+    grid-auto-flow: column;
+    grid-template-columns: none;
+    justify-content: start;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    padding:
+      var(--mobile-carousel-shadow-space)
+      var(--mobile-carousel-shadow-space)
+      calc(var(--mobile-carousel-shadow-space) + var(--mobile-carousel-padding-bottom));
+    margin: calc(-1 * var(--mobile-carousel-shadow-space));
+    scroll-snap-type: x proximity;
+    scroll-padding-inline: var(--mobile-carousel-shadow-space);
+    -webkit-overflow-scrolling: touch;
+
+    > * {
+      scroll-snap-align: start;
+    }
+  }
+
+  :where(article, div, main, section):has(> .mobile-carousel) {
+    container-type: inline-size;
+    container-name: mobile-carousel;
+  }
+
+  .grid.mobile-carousel {
+    --mobile-carousel-item-width: 17rem;
+    --mobile-carousel-padding-bottom: 0.75rem;
+    --mobile-carousel-shadow-space: 1.5rem;
+  }
+
+  @container mobile-carousel (max-width: 90rem) {
+    .grid.mobile-carousel.col5 {
+      @include mobile-carousel-active;
+    }
+  }
+
+  @container mobile-carousel (max-width: 72rem) {
+    .grid.mobile-carousel.col4 {
+      @include mobile-carousel-active;
+    }
+  }
+
+  @container mobile-carousel (max-width: 54rem) {
+    .grid.mobile-carousel.col3 {
+      @include mobile-carousel-active;
+    }
+  }
+
+  @container mobile-carousel (max-width: 36rem) {
+    .grid.mobile-carousel.col2 {
+      @include mobile-carousel-active;
+    }
+  }
+
+  .grid.mobile-carousel {
+    scrollbar-color: rgba(0, 0, 0, 0.18) transparent;
+    scrollbar-width: thin;
+  }
+
+  .grid.mobile-carousel::-webkit-scrollbar {
+    height: 0.45rem;
+  }
+
+  .grid.mobile-carousel::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.18);
+    border-radius: 999px;
+  }
+}
