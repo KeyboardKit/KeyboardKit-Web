@@ -6,6 +6,11 @@ image:  /assets/case-studies/biaffect/header.jpg
 assets: /assets/case-studies/biaffect/article/
 
 featured: 1
+card:
+  text: A medical keyboard that tracks mental health through keystroke dynamics.
+  bullets: 
+    - Mental Health
+    - Keylogger
 
 alex:       https://www.linkedin.com/in/alex-leow-614849a/ 
 andrew:     https://www.linkedin.com/in/drepaparella/

@@ -1,0 +1,16 @@
+// Image Link
+
+.image-link {
+  border: 1px solid rgba(255,255,255,0.4);
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.12),
+    0 12px 24px rgba(0,0,0,0.12);
+  transition: box-shadow var(--duration-link) ease;
+}
+
+.image-link.scale:hover,
+.image-link.scale:focus-within {
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.12),
+    0 18px 36px rgba(0,0,0,0.18);
+}

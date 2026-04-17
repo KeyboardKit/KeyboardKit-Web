@@ -10,7 +10,7 @@
   &.col4 { grid-template-columns: repeat(4, 1fr); }
   &.col5 { grid-template-columns: repeat(5, 1fr); }
 
-  @media (max-width: 600px) {
+  @media (max-width: 750px) {
     &.col2, &.col3, &.col4 { 
       grid-template-columns: repeat(1, 1fr);
     }

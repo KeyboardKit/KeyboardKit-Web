@@ -1,0 +1,16 @@
+<div class="glass image-card scale">
+  <a href="{{ include.item.url | default: include.url }}" title="{{ include.title | default: include.item.title }}">
+    <img src="{{include.item.image}}" />
+    <div class="content">
+      <h4>{{item.name}}</h4>
+      <p>{{item.card.text}}</p>
+      <div class="bullets">
+        <ul>
+          {% for item in include.item.card.bullets %}
+          <li>{{item}}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </a>
+</div>

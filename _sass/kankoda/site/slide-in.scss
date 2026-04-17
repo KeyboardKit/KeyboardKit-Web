@@ -22,10 +22,6 @@
   transform: translate3d(0, 0, 0);
 }
 
-.slide-in a.cta:hover {
-  transform: none;
-}
-
 @media (prefers-reduced-motion: reduce) {
   .slide-in {
     transition: none;

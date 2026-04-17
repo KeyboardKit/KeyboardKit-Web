@@ -11,9 +11,9 @@ description: The KeyboardKit SDK lets you create amazing custom keyboards for Ap
 ---
 
 <section class="hero glow">
-  <div class="wrapper">
-    <div class="orange glass tag">Trusted by companies worldwide</div>
-    <h1>Build your own custom keyboard.</h1>
+  <div class="wrapper wide">
+    <div class="green glass tag">Trusted by companies worldwide</div>
+    <h1>Build your own<br />custom iOS keyboard.</h1>
     <h2>The leading Swift and SwiftUI custom keyboard framework.</h2>
     <p>{{ page.description }}</p>
     <div>
@@ -21,11 +21,9 @@ description: The KeyboardKit SDK lets you create amazing custom keyboards for Ap
       <a href="#content" class="cta secondary">Learn More</a>
     </div>
     <div class="metric-item-container">
-      <div class="grid col3">
-        {% include kankoda/components/metric-item value="100k+" label="Active Users" %}
-        {% include kankoda/components/metric-item value="75" label="Supported Locales" %}
-        {% include kankoda/components/metric-item value="1.8k+" label="Stars on GitHub" %}
-      </div>
+      {% include kankoda/components/metric-item value="100k+" label="Active Users" %}
+      {% include kankoda/components/metric-item value="75" label="Supported Locales" %}
+      {% include kankoda/components/metric-item value="1.8k+" label="Stars on GitHub" %}
     </div>
   </div>
   <a href="#get-started" class="content-chevron" aria-label="Scroll to get started"></a>
@@ -76,78 +74,78 @@ description: The KeyboardKit SDK lets you create amazing custom keyboards for Ap
 
 <a name="content"></a>
 <section class="showcase glow">
-  <div class="wrapper wide slide-in">
-    <article>
-      <h2>What is a Custom Keyboard?</h2>
-      <p>A custom keyboard can replace the native software keyboard, and lets users use your app's unique features in any app that support typing and pasting.</p>
-      <a href="/about" class="cta">Learn more</a>
-    </article>
+  <a name="what-is"></a>
+  <article class="wrapper slide-in">
+    <h2>What is a Custom Keyboard?</h2>
+    <p>A custom keyboard can replace the native software keyboard, and lets users use your app's unique features in any app that support typing and pasting.</p>
+    <a href="/about" class="cta">Learn more</a>
+  </article>
 
-    <article>
-      <h2>Why Choose KeyboardKit?</h2>
-      <p>KeyboardKit is the top choice for developers building custom keyboards.</p>
-      <div class="grid col4">
-        <div class="glass">
-          {% include kankoda/components/icon-badge color="orange" name="lucide:zap" %}
-          <h4>Lightning Fast</h4>
-          <div>Minimal latency for instant user feedback.</div>
-        </div>
-        <div class="glass">
-          {% include kankoda/components/icon-badge color="green" name="lucide:shield" %}
-          <h4>Secure & Private</h4>
-          <div>On-device processing ensures user & data privacy.</div>
-        </div>
-        <div class="glass">
-          {% include kankoda/components/icon-badge color="blue" name="lucide:globe" %}
-          <h4>Multi-language</h4>
-          <div>Support for <a href="/features/localization">{{site.locales.count}} locales</a> and fully localized features.</div>
-        </div>
-        <div class="glass">
-          {% include kankoda/components/icon-badge color="purple" name="lucide:tablet-smartphone" %}
-          <h4>Swift & SwiftUI</h4>
-          <div>Native iOS support following Apple's design guidelines.</div>
-        </div>
+  <article class="wrapper wide slide-in">
+    <h2>Why Choose KeyboardKit?</h2>
+    <p>KeyboardKit is the top choice for developers building custom keyboards.</p>
+    <div class="grid col4">
+      <div class="glass">
+        {% include kankoda/components/icon-badge color="orange" name="lucide:zap" %}
+        <h4>Lightning Fast</h4>
+        <div>Minimal latency for instant user feedback.</div>
       </div>
-    </article>
+      <div class="glass">
+        {% include kankoda/components/icon-badge color="green" name="lucide:shield" %}
+        <h4>Secure & Private</h4>
+        <div>On-device processing ensures user & data privacy.</div>
+      </div>
+      <div class="glass">
+        {% include kankoda/components/icon-badge color="blue" name="lucide:globe" %}
+        <h4>Multi-language</h4>
+        <div>Support for <a href="/features/localization">{{site.locales.count}} locales</a> and fully localized features.</div>
+      </div>
+      <div class="glass">
+        {% include kankoda/components/icon-badge color="purple" name="lucide:tablet-smartphone" %}
+        <h4>Swift & SwiftUI</h4>
+        <div>Native iOS support following Apple's design guidelines.</div>
+      </div>
+    </div>
+  </article>
 
-    <article>
-      <h2>Latest News</h2>
-      <p>Follow the <a href="{{site.urls.blog}}">KeyboardKit Blog</a> for news & updates.</p>
-      <div class="grid col2">
-        {% for post in site.posts limit:2 %}
-          {% include kankoda/components/image-link item=post %}
-        {% endfor %}
-      </div>
-    </article>
-    
-    <article>
-      <div class="slide-in grid col2">
-        <div>
-          <h3>Follow Us</h3>
-          <p>Follow us on <a href="{{site.urls.bluesky}}">Bluesky</a> and <a href="{{site.urls.mastodon}}">Mastodon</a> for the latest news.
-          <div class="icon-group">
-            <a href="{{site.urls.bluesky}}">{% include kankoda/components/icon name="bi:bluesky" %}</a>
-            <a href="{{site.urls.mastodon}}">{% include kankoda/components/icon name="bi:mastodon" %}</a>
-          </div>
-        </div>
-        <div>
-          <h3>Newsletter</h3>
-          <p>Subscribe to our <a href="{{site.urls.newsletter}}">newsletter</a> for periodic updates.</p>
-          {% include kankoda/gumroad/newsletter %}
+  <article class="wrapper wide slide-in">
+    <h2>Success Stories</h2>
+    <p>See how developers build successful keyboard apps with KeyboardKit.</p>
+    <div class="grid col2">
+      {% for item in site.case-studies limit:2 %}
+        {% include kankoda/components/image-card item=item %}
+      {% endfor %}
+    </div>
+    <a href="/case-studies" class="cta">See more case studies</a>
+  </article>
+  
+  <article class="wrapper wide slide-in">
+    <div class="slide-in grid col2">
+      <div>
+        <h3>Follow Us</h3>
+        <p>Follow us on <a href="{{site.urls.bluesky}}">Bluesky</a> and <a href="{{site.urls.mastodon}}">Mastodon</a> for the latest news.
+        <div class="icon-group">
+          <a href="{{site.urls.bluesky}}">{% include kankoda/components/icon name="bi:bluesky" %}</a>
+          <a href="{{site.urls.mastodon}}">{% include kankoda/components/icon name="bi:mastodon" %}</a>
         </div>
       </div>
-    </article>
+      <div>
+        <h3>Newsletter</h3>
+        <p>Subscribe to our <a href="{{site.urls.newsletter}}">newsletter</a> for periodic updates.</p>
+        {% include kankoda/gumroad/newsletter %}
+      </div>
+    </div>
+  </article>
 
-    <article>
-      <h2>Success Stories</h2>
-      <p>See our <a href="{{site.urls.case-studies}}">case studies</a> for stories on great keyboard apps built with KeyboardKit.</p>
-      <div class="grid col2">
-        {% for study in site.case-studies limit:4 %}
-          {% include kankoda/components/image-link item=study %}
-        {% endfor %}
-      </div>
-    </article>
-  </div>
+  <article class="wrapper wide slide-in">
+    <h2>Latest News</h2>
+    <p>Follow the <a href="{{site.urls.blog}}">KeyboardKit Blog</a> for news & updates.</p>
+    <div class="grid col2">
+      {% for post in site.posts limit:2 %}
+        {% include kankoda/components/image-link item=post %}
+      {% endfor %}
+    </div>
+  </article>
 </section>
 
 <section class="showcase dark blue">
@@ -156,6 +154,7 @@ description: The KeyboardKit SDK lets you create amazing custom keyboards for Ap
     <p>Join thousands of developers creating amazing keyboard experiences with KeyboardKit. Start building today!</p>
     <div>
       <a href="{{site.urls.github}}" class="glass">Install from GitHub</a>
+      <a href="/pro" class="orange glass">Get Pro</a>
       <a href="{{site.urls.docs}}" class="glass secondary">Documentation</a>
     </div>
   </div>

@@ -30,31 +30,6 @@ a.glass, div.glass, section.glass, span.glass {
   &.red { background-color: var(--glass-red-bg); }
   &.purple { background-color: var(--glass-purple-bg); }
 }
-
-section.glass {
-  position: relative;
-  overflow: hidden;
-  isolation: isolate;
-}
-
-section.glass::before {
-  content: "";
-  pointer-events: none;
-  position: absolute;
-  inset: 0;
-  background:
-    linear-gradient(120deg, rgba(255, 255, 255, 0.32) 0%, rgba(255, 255, 255, 0.12) 18%, rgba(255, 255, 255, 0) 42%),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.24) 0%, rgba(255, 255, 255, 0.08) 16%, rgba(255, 255, 255, 0) 34%),
-    radial-gradient(circle at 18% 0%, rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0) 28%);
-  opacity: 0.8;
-  mix-blend-mode: screen;
-}
-
-section.glass > * {
-  position: relative;
-  z-index: 1;
-}
-
 .icon-badge.glass, .tag.glass {
   color: var(--color-text) !important;
 
@@ -101,6 +76,11 @@ a.glass {
     0 14px 32px rgba(0,0,0,0.28);
   color: rgba(255,255,255,0.94) !important;
 
+  &.orange {
+    background-color: orange;
+    background-blend-mode: color-burn;
+  }
+
   &:hover {
     background: linear-gradient(180deg, rgba(255,255,255,0.27), rgba(255,255,255,0.17));
     border-color: rgba(255,255,255,0.32);
@@ -128,17 +108,9 @@ a.glass {
 
 // Glass Container
 
-.dark div.glass {
-  border-color: var(--color-border-dark);
-}
-
-.dark .tag.glass {
-  border-color: var(--color-border-dark);
-  color: var(--color-text-dark) !important;
-}
-
 div.glass {
   border-radius: var(--radius-glass-panel);
+  overflow: hidden;
   padding: clamp(1.25rem, 3vw, 2rem);
 
   a.cta, a.glass {
@@ -152,4 +124,19 @@ div.glass {
   > .icon-badge:first-child {
     margin-bottom: 1.25rem;
   }
+
+  &.no-padding {
+    padding: 0;
+  }
+}
+
+// Dark Glass
+
+.dark div.glass {
+  border-color: var(--color-border-dark);
+}
+
+.dark .tag.glass {
+  border-color: var(--color-border-dark);
+  color: var(--color-text-dark) !important;
 }

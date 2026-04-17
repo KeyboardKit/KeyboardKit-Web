@@ -6,6 +6,8 @@ image:  /assets/case-studies/lingo/header.jpg
 assets: /assets/case-studies/lingo/article/
 
 featured: 0
+card:
+  text: A cutting-edge keyboard app that makes global communication effortless.
 
 appstore: https://apps.apple.com/de/app/translator-keyboard-lingo/id6670622037?l=en-GB
 company:  https://cranberry.app

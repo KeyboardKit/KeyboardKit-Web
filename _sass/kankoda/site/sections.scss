@@ -44,7 +44,7 @@ section.hero {
 
   h1 {
     font-size: clamp(3.5rem, 8vw, 6rem);
-    line-height: 0.95;
+    line-height: 1.08;
     margin-bottom: 1.5rem;
   }
 
@@ -145,9 +145,19 @@ section.showcase {
   padding: clamp(5rem, 8vw, 7rem) 0 clamp(4rem, 7vw, 6rem);
   text-align: center;
 
+  article {
+    > p {
+      margin-bottom: 0;
+    }
+  }
+
+  article + article {
+    margin-top: calc(clamp(5rem, 8vw, 7rem) - 2rem) !important;
+  }
+
   .wrapper {
     display: grid;
-    gap: 2rem;
+    gap: 2.3rem;
     justify-items: center;
   }
 
@@ -171,17 +181,6 @@ section.showcase {
     width: 100%;
     align-items: stretch;
     justify-content: center;
-  }
-
-  > .wrapper > article {
-    display: grid;
-    gap: 2rem;
-    justify-items: center;
-    width: 100%;
-  }
-
-  > .wrapper > article + article {
-    margin-top: calc(clamp(5rem, 8vw, 7rem) - 2rem);
   }
 
   &.dark {
