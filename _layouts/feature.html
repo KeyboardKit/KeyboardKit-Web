@@ -4,23 +4,21 @@ layout: plain
 
 {%- assign feature = site.data.features | where:"title", page.title | first -%}
 
-<main aria-label="Content">
-  <div class="wrapper wide">
-    <article>
-      TODO: Feature
+<div class="wrapper wide">
+  <article>
+    TODO: Feature
 
-      {{ content }}
+    {{ content }}
 
-      {% if feature.docs %}
-      <h2>Documentation</h2>
-      <p>
-        The information on this page is shortened to be easier to overview. For more information, see the <a href="{{site.urls.docs}}">online KeyboardKit documentation</a>.
-      </p>
-      {% endif %}
+    {% if feature.docs %}
+    <h2>Documentation</h2>
+    <p>
+      The information on this page is shortened to be easier to overview. For more information, see the <a href="{{site.urls.docs}}">online KeyboardKit documentation</a>.
+    </p>
+    {% endif %}
 
-      <hr />
+    <hr />
 
-      TODO: Features Footer
-    </article>
-  </div>
-</main>
+    TODO: Features Footer
+  </article>
+</div>

@@ -1,32 +1,34 @@
 ---
-layout: default
+layout: plain
 ---
 
-<article itemscope itemtype="http://schema.org/BlogPosting">
+<div class="wrapper wide">
+  <article itemscope itemtype="http://schema.org/BlogPosting">
   
-  LINK TO BLOG
+    LINK TO BLOG
 
-  {% assign url_bluesky = page.bsky | default: site.urls.bluesky %}  
-  {% assign url_mastodon = page.toot | default: site.urls.mastodon %}  
-  {% assign url_twitter = page.tweet | default: site.urls.twitter %}  
-  
-  <h1>
-    {{ page.title | escape }}
-  </h1>
+    {% assign url_bluesky = page.bsky | default: site.urls.bluesky %}  
+    {% assign url_mastodon = page.toot | default: site.urls.mastodon %}  
+    {% assign url_twitter = page.tweet | default: site.urls.twitter %}  
+    
+    <h1>
+      {{ page.title | escape }}
+    </h1>
 
-  DATE TITLE
+    DATE TITLE
 
-  <div>
-    {{ content }}
-  </div>
+    <div>
+      {{ content }}
+    </div>
 
-  <h2>Discussions & More</h2>
-  <p>
-    If you found this interesting, please share your thoughts on 
-    <a href="{{url_bluesky}}">Bluesky</a> and
-    <a href="{{url_mastodon}}">Mastodon</a>.
-    Make sure to follow to be notified when new content is published.
-  </p>
+    <h2>Discussions & More</h2>
+    <p>
+      If you found this interesting, please share your thoughts on 
+      <a href="{{url_bluesky}}">Bluesky</a> and
+      <a href="{{url_mastodon}}">Mastodon</a>.
+      Make sure to follow to be notified when new content is published.
+    </p>
 
-  <a href="{{page.url | relative_url}}" hidden></a>
-</article>
+    <a href="{{page.url | relative_url}}" hidden></a>
+  </article>
+</div>

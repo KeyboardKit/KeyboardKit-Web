@@ -88,22 +88,22 @@ description: The KeyboardKit SDK lets you create amazing custom keyboards for Ap
       <div class="glass">
         {% include kankoda/components/icon-badge color="orange" name="lucide:zap" %}
         <h4>Lightning Fast</h4>
-        <div>Minimal latency for instant user feedback.</div>
+        <p>Minimal latency for instant user feedback.</p>
       </div>
       <div class="glass">
         {% include kankoda/components/icon-badge color="green" name="lucide:shield" %}
         <h4>Secure & Private</h4>
-        <div>On-device processing ensures user & data privacy.</div>
+        <p>On-device processing ensures user & data privacy.</p>
       </div>
       <div class="glass">
         {% include kankoda/components/icon-badge color="blue" name="lucide:globe" %}
         <h4>Multi-language</h4>
-        <div>Support for <a href="/features/localization">{{site.locales.count}} locales</a> and fully localized features.</div>
+        <p>Support for <a href="/features/localization">{{site.locales.count}} locales</a> and fully localized features.</p>
       </div>
       <div class="glass">
         {% include kankoda/components/icon-badge color="purple" name="lucide:tablet-smartphone" %}
         <h4>Swift & SwiftUI</h4>
-        <div>Native iOS support following Apple's design guidelines.</div>
+        <p>Native iOS following Apple's design guidelines.</p>
       </div>
     </div>
   </article>
@@ -149,13 +149,5 @@ description: The KeyboardKit SDK lets you create amazing custom keyboards for Ap
 </section>
 
 <section class="showcase dark blue">
-  <div class="wrapper wide slide-in">
-    <h2>Ready to Build Your Keyboard?</h2>
-    <p>Join thousands of developers creating amazing keyboard experiences with KeyboardKit. Start building today!</p>
-    <div>
-      <a href="{{site.urls.github}}" class="glass">Install from GitHub</a>
-      <a href="/pro" class="orange glass">Get Pro</a>
-      <a href="{{site.urls.docs}}" class="glass secondary">Documentation</a>
-    </div>
-  </div>
+  {% include sections/ready-to-build %}
 </section>
