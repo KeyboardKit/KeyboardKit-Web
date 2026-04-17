@@ -6,6 +6,11 @@ image:  /assets/case-studies/just-type/header.jpg
 assets: /assets/case-studies/just-type/article/
 
 featured: 0
+card:
+  text: An AI-powered keyboard that fixes typos, grammar, translations, and tone with a single tap.
+  bullets:
+    - Typing
+    - AI Proofreading
 
 appstore: https://apps.apple.com/se/app/justtype-ai-keyboard/id6590604907
 youtube-1: https://www.youtube.com/watch?v=vvnDaSA8o80

@@ -7,7 +7,10 @@ assets: /assets/case-studies/lingo/article/
 
 featured: 0
 card:
-  text: A cutting-edge keyboard app that makes global communication effortless.
+  text: A translation keyboard that lets you write and translate messages in real time across apps.
+  bullets:
+    - Translations
+    - Communication
 
 appstore: https://apps.apple.com/de/app/translator-keyboard-lingo/id6670622037?l=en-GB
 company:  https://cranberry.app

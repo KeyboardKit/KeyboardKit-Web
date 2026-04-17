@@ -6,6 +6,11 @@ image:  /assets/case-studies/gurray/header.jpg
 assets: /assets/case-studies/gurray/article/
 
 featured: 0
+card:
+  text: A keyboard that enables translations between several Australian indigenous languages.
+  bullets:
+    - Languages
+    - Indigenous
 
 wcclp:      https://wcclp.com.au
 appstore:   https://apps.apple.com/au/app/gurray/id1513495735

@@ -111,8 +111,8 @@ description: The KeyboardKit SDK lets you create amazing custom keyboards for Ap
   <article class="wrapper wide slide-in">
     <h2>Success Stories</h2>
     <p>See how developers build successful keyboard apps with KeyboardKit.</p>
-    <div class="grid col2">
-      {% for item in site.case-studies limit:2 %}
+    <div class="grid col3">
+      {% for item in site.case-studies limit:3 | where: "featured", 1 %}
         {% include kankoda/components/image-card item=item %}
       {% endfor %}
     </div>

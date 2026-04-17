@@ -6,6 +6,11 @@ image:  /assets/case-studies/boss-ai/header.jpg
 assets: /assets/case-studies/boss-ai/
 
 featured: 1
+card:
+  text: A voice-first AI keyboard that dictates polished text and writes replies from screen context.
+  bullets:
+    - Voice AI
+    - Dictation
 
 appstore: https://apps.apple.com/us/app/boss-ai-voice-first-keyboard/id6738732843
 website:  https://bossai.tech

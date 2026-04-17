@@ -4,6 +4,11 @@ title: Hayatar - Armenian Keyboard
 
 image:  /assets/case-studies/hayatar/header.jpg
 assets: /assets/case-studies/hayatar/article/
+card:
+  text: An Armenian keyboard built for native typing habits, with rich customizations and iCloud sync.
+  bullets:
+    - Languages
+    - Armenian
 
 appstore: https://hayatar.fperson.dev
 twitter:  https://twitter.com/_fperson

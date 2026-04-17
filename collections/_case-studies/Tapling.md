@@ -6,6 +6,11 @@ image:  /assets/case-studies/tapling/header.jpg
 assets: /assets/case-studies/tapling/
 
 featured: 1
+card:
+  text: A cozy keyboard companion that taps along as you type and lets you unlock fun cosmetic rewards.
+  bullets:
+    - Cozy
+    - Typing Companion
 
 appstore: https://apps.apple.com/us/app/tapling-type-with-bongo-cat/id6756097345
 website:  https://tapling.app

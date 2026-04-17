@@ -4,6 +4,11 @@ title: Type Devanagari - Sanskrit Keyboard
 
 image:  /assets/case-studies/type-devanagari/header.jpg
 assets: /assets/case-studies/type-devanagari/article/
+card:
+  text: A Sanskrit keyboard that makes Devanagari typing faster with a familiar romanized layout.
+  bullets:
+    - Languages
+    - Sanskrit & Devanagari
 
 appstore: https://apps.apple.com/us/app/type-devanagari/id6450332512
 twitter:  https://twitter.com/NatashaTheRobot

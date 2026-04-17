@@ -6,6 +6,11 @@ image:  /assets/case-studies/gif-ai/header.jpg
 assets: /assets/case-studies/gif-ai/
 
 featured: 1
+card:
+  text: An AI-powered keyboard that lets you generate custom GIFs in real time, without leaving your chat.
+  bullets:
+    - GIFs
+    - Gen AI
 
 appstore: https://apps.apple.com/us/app/gif-ai-keyboard/id6748157345
 developer: Damiaan Twelker
