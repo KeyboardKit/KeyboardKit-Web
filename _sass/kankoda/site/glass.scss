@@ -1,9 +1,12 @@
-// Glass Components
+// Elements
 
 a.glass, div.glass, .tag.glass {
   border: 1px solid var(--color-border-glass);
   box-shadow: 0 4px 24px rgba(0,0,0,0.12);
 }
+
+
+// Shapes
 
 section.glass, section.glow {
   border-top: 1px solid var(--color-border-glass);
@@ -30,6 +33,24 @@ a.glass, div.glass, section.glass {
   &.red { background-color: var(--glass-red-bg); }
   &.purple { background-color: var(--glass-purple-bg); }
 }
+
+
+// Content
+
+.icon-badge.glass, .tag.glass, span.glass {
+  color: var(--color-text) !important;
+
+  &.blue { color: var(--glass-blue-text) !important; }
+  &.green { color: var(--glass-green-text) !important; }
+  &.yellow { color: var(--glass-yellow-text) !important; }
+  &.orange { color: var(--glass-orange-text) !important; }
+  &.red { color: var(--glass-red-text) !important; }
+  &.purple { color: var(--glass-purple-text) !important; }
+}
+
+
+// Text
+
 .icon-badge.glass, .tag.glass, span.glass {
   color: var(--color-text) !important;
 
@@ -111,7 +132,7 @@ a.glass {
   }
 }
 
-// Glass Container
+// Container
 
 div.glass {
   border-radius: var(--radius-glass-panel);
@@ -133,15 +154,13 @@ div.glass {
   &.no-padding {
     padding: 0;
   }
-}
 
-// Dark Glass
+  &.dark {
+    border-color: var(--color-border-dark);
 
-.dark div.glass {
-  border-color: var(--color-border-dark);
-}
-
-.dark .tag.glass {
-  border-color: var(--color-border-dark);
-  color: var(--color-text-dark) !important;
+    .tag.glass {
+      border-color: var(--color-border-dark);
+      color: var(--color-text-dark) !important;
+    }
+  }
 }
