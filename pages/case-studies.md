@@ -11,7 +11,7 @@ image: /assets/headers/case-studies.jpg
 <article class="page-content wrapper wide">
   <h1>
     KeyboardKit
-    <span class="purple line">Case Studies & Success Stories</span>
+    <span class="purple glass line">Case Studies & Success Stories</span>
   </h1>
   <h2>
     Below are case studies of some apps & products that use KeyboardKit to build their keyboards.

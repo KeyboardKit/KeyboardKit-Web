@@ -1,6 +1,6 @@
 // Glass Components
 
-a.glass, div.glass, span.glass, .tag.glass {
+a.glass, div.glass, .tag.glass {
   border: 1px solid var(--color-border-glass);
   box-shadow: 0 4px 24px rgba(0,0,0,0.12);
 }
@@ -9,7 +9,7 @@ section.glass, section.glow {
   border-top: 1px solid var(--color-border-glass);
 }
 
-a.glass, div.glass, section.glass, span.glass {
+a.glass, div.glass, section.glass {
   background: rgba(255,255,255,0.1);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px); // For Safari support
@@ -30,7 +30,7 @@ a.glass, div.glass, section.glass, span.glass {
   &.red { background-color: var(--glass-red-bg); }
   &.purple { background-color: var(--glass-purple-bg); }
 }
-.icon-badge.glass, .tag.glass {
+.icon-badge.glass, .tag.glass, span.glass {
   color: var(--color-text) !important;
 
   &.blue { color: var(--glass-blue-text) !important; }
@@ -42,7 +42,7 @@ a.glass, div.glass, section.glass, span.glass {
 }
 
 
-// Glass Button
+// Button
 
 a.glass {
   display: inline-flex;
