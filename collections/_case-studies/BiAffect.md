@@ -1,6 +1,7 @@
 ---
 name:  BiAffect
-title: BiAffect - Track mental health through keystroke dynamics
+title: BiAffect
+subtitle: Track mental health through keystroke dynamics
 
 image:  /assets/case-studies/biaffect/header.jpg
 assets: /assets/case-studies/biaffect/article/
@@ -90,21 +91,21 @@ Some information that can be derived from accelerometer data is whether users we
 
 The extracted features from keystroke dynamics and accelerometer data are fed into BiAffect's machine learning models. BiAffect uses a combination of supervised and unsupervised learning techniques to identify patterns in the data.
 
-Supervised learning models are trained on labeled datasets, where the mood or cognitive state of the user is known, while unsupervised learning models can help uncover hidden structures in the data, providing insights into previously unknown patterns.
-
 ![Machine Learning Analysis]({{page.assets}}machine-learning.jpg)
+
+Supervised learning models are trained on labeled datasets, where the mood or cognitive state of the user is known, while unsupervised learning models can help uncover hidden structures in the data, providing insights into previously unknown patterns.
 
 
 ## Real-Time Monitoring and Feedback
 
 BiAffect provides a dashboard within the app where users can monitor their typing patterns and accelerometer data. This dashboard presents the analyzed data, helping users understand their mental health trends. 
 
-By examining changes in their keystroke dynamics and active task scores on activities such as a Go/No-Go Reaction Time test and Trailmaking test, users can gain valuable insights into their mental state and take proactive steps to manage their well-being.
-
-<div class="grid col2">
+<div class="images grid col2">
   <img src="{{page.assets}}keyboard-usage.jpg" alt="Keyboard Usage" />
   <img src="{{page.assets}}daily-keyboard-activity.jpg" alt="Daily keyboard activity" />
 </div>
+
+By examining changes in their keystroke dynamics and active task scores on activities such as a Go/No-Go Reaction Time test and Trailmaking test, users can gain valuable insights into their mental state and take proactive steps to manage their well-being.
 
 
 ## Conclusion

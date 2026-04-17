@@ -27,7 +27,7 @@ Meet [BossAI]({{page.website}}) - a voice-first AI keyboard that transforms how 
 
 [BossAI]({{page.website}}) is a voice-first AI keyboard with two powerful modes that work in every app with a text field - Mail, Slack, WhatsApp, LinkedIn, code editors, and more.
 
-<div class="grid col3 slide-in portrait screenshots">
+<div class="grid col3 slide-in images">
     <img src="{{page.assets}}screenshot-1.webp" />
     <img src="{{page.assets}}screenshot-2.webp" />
     <img src="{{page.assets}}screenshot-3.webp" />

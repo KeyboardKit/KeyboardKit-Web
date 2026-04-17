@@ -1,0 +1,9 @@
+<div class="wrapper wide slide-in">
+  <h2>Ready to Build Your Keyboard?</h2>
+  <p>Join thousands of developers creating amazing keyboard experiences with KeyboardKit. Start building today!</p>
+  <div>
+    <a href="{{site.urls.github}}" class="glass">Install</a>
+    <a href="{{site.urls.docs}}" class="glass">Docs</a>
+    <a href="/pro" class="orange glass">Upgrade</a>
+  </div>
+</div>

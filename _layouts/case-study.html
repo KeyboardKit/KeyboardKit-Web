@@ -2,16 +2,25 @@
 layout: plain
 ---
 
-<div class="wrapper wide">
-  <article>
-    TODO BACK BUTTON
-
-    <h1>{{ page.title }}</h1>
+<article class="page-content wrapper wide">
+  <h1>{{page.title}}</h1>
+  <h2 class="subtitle purple glass">{{page.subtitle}}</h2>
+  
+  <p>
     {{ content }}
+  </p>
+</article>
 
-    <hr />
-
-    <h2>Read more</h2>
-    TODO: Case Studies
+<section class="purple glass showcase">
+  <article class="wrapper wide">
+    <h1>More Case Studies</h1>
+    <p>
+      See <a href="/case-studies">this page</a> for more case studies.
+    </p>
+    <div class="grid col3">
+      {% for item in site.case-studies limit:3 | where: "featured", 1 %}
+        {% include kankoda/components/image-card item=item %}
+      {% endfor %}
+    </div>
   </article>
-</div>
+</section>

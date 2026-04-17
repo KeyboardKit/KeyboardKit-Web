@@ -49,21 +49,23 @@ a.glass, div.glass, section.glass {
 
 // Text
 
-span.glass {
-  color: var(--color-text);
+h1, h2, span {
+  &.glass {
+    color: var(--color-text);
 
-  &.blue, &.green, &.yellow, &.orange, &.red, &.purple {
-    color: transparent !important;
-    -webkit-background-clip: text;
-    background-clip: text;
+    &.blue, &.green, &.yellow, &.orange, &.red, &.purple {
+      color: transparent !important;
+      -webkit-background-clip: text;
+      background-clip: text;
+    }
+
+    &.blue { background-image: linear-gradient(180deg, color-mix(in srgb, var(--glass-blue-text) 60%, white), var(--glass-blue-text)); }
+    &.green { background-image: linear-gradient(180deg, color-mix(in srgb, var(--glass-green-text) 60%, white), var(--glass-green-text)); }
+    &.yellow { background-image: linear-gradient(180deg, color-mix(in srgb, var(--glass-yellow-text) 60%, white), var(--glass-yellow-text)); }
+    &.orange { background-image: linear-gradient(180deg, color-mix(in srgb, var(--glass-orange-text) 60%, white), var(--glass-orange-text)); }
+    &.red { background-image: linear-gradient(180deg, color-mix(in srgb, var(--glass-red-text) 60%, white), var(--glass-red-text)); }
+    &.purple { background-image: linear-gradient(180deg, color-mix(in srgb, var(--glass-purple-text) 60%, white), var(--glass-purple-text)); }
   }
-
-  &.blue { background-image: linear-gradient(180deg, color-mix(in srgb, var(--glass-blue-text) 60%, white), var(--glass-blue-text)); }
-  &.green { background-image: linear-gradient(180deg, color-mix(in srgb, var(--glass-green-text) 60%, white), var(--glass-green-text)); }
-  &.yellow { background-image: linear-gradient(180deg, color-mix(in srgb, var(--glass-yellow-text) 60%, white), var(--glass-yellow-text)); }
-  &.orange { background-image: linear-gradient(180deg, color-mix(in srgb, var(--glass-orange-text) 60%, white), var(--glass-orange-text)); }
-  &.red { background-image: linear-gradient(180deg, color-mix(in srgb, var(--glass-red-text) 60%, white), var(--glass-red-text)); }
-  &.purple { background-image: linear-gradient(180deg, color-mix(in srgb, var(--glass-purple-text) 60%, white), var(--glass-purple-text)); }
 }
 
 
