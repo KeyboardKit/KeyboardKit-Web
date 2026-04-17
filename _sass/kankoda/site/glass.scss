@@ -37,9 +37,7 @@ a.glass, div.glass, section.glass {
 
 // Content
 
-.icon-badge.glass, .tag.glass, span.glass {
-  color: var(--color-text) !important;
-
+.icon-badge.glass, .tag.glass {
   &.blue { color: var(--glass-blue-text) !important; }
   &.green { color: var(--glass-green-text) !important; }
   &.yellow { color: var(--glass-yellow-text) !important; }
@@ -51,15 +49,21 @@ a.glass, div.glass, section.glass {
 
 // Text
 
-.icon-badge.glass, .tag.glass, span.glass {
-  color: var(--color-text) !important;
+span.glass {
+  color: var(--color-text);
 
-  &.blue { color: var(--glass-blue-text) !important; }
-  &.green { color: var(--glass-green-text) !important; }
-  &.yellow { color: var(--glass-yellow-text) !important; }
-  &.orange { color: var(--glass-orange-text) !important; }
-  &.red { color: var(--glass-red-text) !important; }
-  &.purple { color: var(--glass-purple-text) !important; }
+  &.blue, &.green, &.yellow, &.orange, &.red, &.purple {
+    color: transparent !important;
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+
+  &.blue { background-image: linear-gradient(180deg, color-mix(in srgb, var(--glass-blue-text) 60%, white), var(--glass-blue-text)); }
+  &.green { background-image: linear-gradient(180deg, color-mix(in srgb, var(--glass-green-text) 60%, white), var(--glass-green-text)); }
+  &.yellow { background-image: linear-gradient(180deg, color-mix(in srgb, var(--glass-yellow-text) 60%, white), var(--glass-yellow-text)); }
+  &.orange { background-image: linear-gradient(180deg, color-mix(in srgb, var(--glass-orange-text) 60%, white), var(--glass-orange-text)); }
+  &.red { background-image: linear-gradient(180deg, color-mix(in srgb, var(--glass-red-text) 60%, white), var(--glass-red-text)); }
+  &.purple { background-image: linear-gradient(180deg, color-mix(in srgb, var(--glass-purple-text) 60%, white), var(--glass-purple-text)); }
 }
 
 
