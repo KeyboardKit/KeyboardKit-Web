@@ -3,16 +3,17 @@
   {% include kankoda/site/head-tag %}
 
   <body> 
-    
-    <!-- Header -->
-    {% include kankoda/site/header %}
+    <div {% if page.page-class %}class="{{ page.page-class }}"{% endif %}>
+      <!-- Header -->
+      {% include kankoda/site/header %}
 
-    <!-- Top Message -->
+      <!-- Top Message -->
 
-    <!-- Content -->
-    <main aria-label="Content">
-      {{ content }}
-    </main>
+      <!-- Content -->
+      <main aria-label="Content">
+        {{ content }}
+      </main>
+    </div>
 
     <!-- Footer -->
     {% include site/footer %}

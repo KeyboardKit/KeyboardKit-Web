@@ -3,7 +3,7 @@ layout: page
 title: Case Studies
 permalink: /case-studies
 
-page-class: glass-background bg4
+page-class: glow
 
 image: /assets/headers/case-studies.jpg
 ---
