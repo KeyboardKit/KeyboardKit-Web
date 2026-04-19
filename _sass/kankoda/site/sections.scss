@@ -14,7 +14,7 @@ section {
 // Hero
 
 section.hero {
-  min-height: calc(100vh - var(--header-height, 60px));
+  min-height: calc(100vh - 2 * var(--header-height, 60px));
   display: flex;
   flex-direction: column;
   justify-content: center;

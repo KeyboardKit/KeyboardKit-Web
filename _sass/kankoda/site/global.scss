@@ -7,7 +7,6 @@ body {
   background-color: var(--color-bg);
   color: var(--color-text);
   font-family: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-  overflow-x: clip;
 }
 
 a {
@@ -70,11 +69,6 @@ h2 {
   }
 }
 
-
-// The page shell wraps the sticky header and content, so it must not clip them.
-body > div.page-shell {
-  overflow: visible;
-}
 
 
 // Content

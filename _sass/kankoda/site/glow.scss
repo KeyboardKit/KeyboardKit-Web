@@ -1,3 +1,37 @@
+body {
+  background: linear-gradient(135deg, rgba(244, 248, 255, 0.96), rgba(255, 245, 234, 0.92));
+  overflow-x: clip;
+
+  &::before,
+  &::after {
+    content: "";
+    pointer-events: none;
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+  }
+
+  &::before {
+    background:
+      radial-gradient(circle at 18% 30%, var(--glass-blue-bg) 0, rgba(166, 205, 255, 0) 30%),
+      radial-gradient(circle at 76% 18%, var(--glass-green-bg) 0, rgba(203, 236, 175, 0) 28%),
+      radial-gradient(circle at 86% 56%, var(--glass-yellow-bg) 0, rgba(255, 232, 160, 0) 30%),
+      radial-gradient(circle at 54% 86%, var(--glass-red-bg) 0, rgba(255, 198, 205, 0) 28%),
+      radial-gradient(circle at 26% 82%, var(--glass-purple-bg) 0, rgba(212, 202, 255, 0) 32%);
+    filter: blur(72px);
+    opacity: 0.95;
+    transform: translate3d(0, 0, 0);
+  }
+
+  &::after {
+    background:
+      linear-gradient(115deg, rgba(255, 255, 255, 0.5) 14%, rgba(255, 255, 255, 0) 42%, rgba(255, 255, 255, 0.26) 70%, rgba(255, 255, 255, 0) 100%),
+      radial-gradient(circle at center, rgba(255, 255, 255, 0.32) 0, rgba(255, 255, 255, 0) 52%);
+    mix-blend-mode: screen;
+    opacity: 0.75;
+  }
+}
+
 section.glow,
 div.glow {
   position: relative;
