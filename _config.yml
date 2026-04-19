@@ -112,12 +112,14 @@ defaults:
       type: "case-studies"
     values:
       layout: side-menu-page
+      subtitle-color: purple
   -
     scope:
       type: "features"
     values:
       layout: feature
       assets: /assets/features/
+      subtitle-color: blue
   -
     scope:
       type: "posts"

@@ -1,6 +1,7 @@
 ---
 title: KeyboardKit
 subtitle: "Case Studies & Success Stories"
+subtitle-color: purple
 menu-title: Case Studies
 intro: Below are some apps & products that use KeyboardKit.
 permalink: /case-studies

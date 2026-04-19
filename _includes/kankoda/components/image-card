@@ -1,9 +1,16 @@
 <div class="glass image-card scale">
   <a href="{{ include.item.url | default: include.url }}" title="{{ include.title | default: include.item.title }}">
-    <img src="{{include.item.image}}" />
+    {% if include.item.image %}
+      <img src="{{include.item.image}}" />
+    {% endif %}
     <div class="content">
-      <h4>{{item.name}}</h4>
-      <p>{{item.card.text}}</p>
+      {% if include.item.icon %}
+        {% assign icon = include.item.icon %}
+        {% include kankoda/components/icon-badge name=icon.name color=icon.color %}
+      {% endif %}
+      <h4>{{include.item.name | default: include.item.title }}</h4>
+      <p>{{include.item.card.text | default: include.item.text}}</p>
+      {% if include.item.card.bullets %}
       <div class="bullets">
         <ul>
           {% for item in include.item.card.bullets %}
@@ -11,6 +18,7 @@
           {% endfor %}
         </ul>
       </div>
+      {% endif %}
     </div>
   </a>
 </div>
