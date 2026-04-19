@@ -84,10 +84,6 @@
   }
 
   .side-menu-nav {
-    position: static;
-  }
-
-  .side-menu-nav-section nav {
-    grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+    display: none;
   }
 }

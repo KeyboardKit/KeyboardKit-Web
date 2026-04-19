@@ -11,19 +11,3 @@ layout: side-menu
   {% endif %}
   {{ content }}
 </article>
-
-<section class="purple glass showcase">
-  <article>
-    <h1>More Case Studies</h1>
-    <p>
-      See <a href="/case-studies">this page</a> for more case studies.
-    </p>
-    <div class="grid col3">
-      {% for item in featured_case_studies %}
-        {% unless item.url == page.url %}
-          {% include kankoda/components/image-card item=item %}
-        {% endunless %}
-      {% endfor %}
-    </div>
-  </article>
-</section>
