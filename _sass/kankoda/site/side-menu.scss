@@ -25,6 +25,7 @@
   font-weight: 700;
   letter-spacing: 0.18em;
   opacity: 0.55;
+  padding-left: 0.95rem;
   text-transform: uppercase;
 }
 
@@ -42,30 +43,39 @@
 
   nav {
     display: grid;
-    gap: 0.45rem;
+    gap: 0.2rem;
   }
 
   a {
     display: block;
     padding: 0.75rem 0.95rem;
-    border: 1px solid rgba(255, 255, 255, 0.7);
+    border: 1px solid transparent;
     border-radius: 999px;
-    background: rgba(255, 255, 255, 0.42);
+    background: transparent;
+    box-shadow: none;
     color: var(--color-text) !important;
     font-weight: 600;
     line-height: 1.25;
     text-decoration: none;
+    opacity: 0.58;
     transition:
+      opacity var(--duration-link) ease,
       background-color var(--duration-link) ease,
       border-color var(--duration-link) ease,
       transform var(--duration-link) ease,
       box-shadow var(--duration-link) ease;
 
     &:hover {
-      background: rgba(255, 255, 255, 0.72);
-      border-color: rgba(255, 255, 255, 0.9);
-      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
-      transform: translateX(0.15rem);
+      opacity: 0.9;
+      background: rgba(255, 255, 255, 0.28);
+    }
+
+    &.is-active,
+    &[aria-current="true"] {
+      opacity: 1;
+      background: rgba(255, 255, 255, 0.56);
+      border-color: rgba(255, 255, 255, 0.72);
+      box-shadow: 0 8px 22px rgba(0, 0, 0, 0.06);
     }
   }
 }
