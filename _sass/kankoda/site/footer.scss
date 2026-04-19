@@ -1,4 +1,6 @@
 footer {
+  position: relative;
+  z-index: 1;
   font-size: 0.85em;
   padding: 2rem 0;
   background-color: var(--color-bg);

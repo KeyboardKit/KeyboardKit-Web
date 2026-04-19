@@ -7,6 +7,7 @@ body {
   background-color: var(--color-bg);
   color: var(--color-text);
   font-family: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  overflow-x: clip;
 }
 
 a {
@@ -68,12 +69,6 @@ h2 {
     max-width: var(--wrapper-width-wide);
   }
 }
-
-body > div.page-shell.glow {
-  overflow: visible;
-}
-
-
 
 // Content
 
