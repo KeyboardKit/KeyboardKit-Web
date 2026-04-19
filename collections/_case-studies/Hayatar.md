@@ -4,12 +4,7 @@ title: Hayatar - Armenian Keyboard
 
 image:  /assets/case-studies/hayatar/header.jpg
 assets: /assets/case-studies/hayatar/article/
-menu:
-  title: Case Study Sections
-  sections:
-    - title: Hayatar
-      items:
-        - title: Give it a try
+
 card:
   text: An Armenian keyboard built for native typing habits, with rich customizations and iCloud sync.
   bullets:
@@ -24,6 +19,8 @@ github:   https://github.com/_fperson
 Say hello to [Hayatar]({{page.appstore}}) - an Armenian keyboard built by Rotterdam-based [Arshak Aghakaryan]({{page.twitter}}), that aims to improve the Armenian typing experience.
 
 ![Hayatar Header Image]({{page.image}})
+
+## Background
 
 To Arshak Aghakaryan, the current state of typing in Armenian on iOS is not as great as it could be:
 

@@ -1,34 +1,59 @@
 ---
 layout: plain
+
+instructions: To customize the side menu, add a "menu" value to the front-matter, with "title" and "links"
 ---
 
 {% assign menu = page.menu %}
-{% assign menu_title = menu.title | default: "Page Sections" %}
-{% assign menu_sections = menu.sections %}
+{% assign menu_title = menu.title | default: "On This Page" %}
+{% assign page_links = menu.links %}
+{% assign page_content_lines = page.content | newline_to_br | split: '<br />' %}
+
+{% capture parsed_links %}
+  {% assign in_code_block = false %}
+  {% for raw_line in page_content_lines %}
+    {% assign line = raw_line | strip %}
+
+    {% if line contains "```" %}
+      {% if in_code_block %}
+        {% assign in_code_block = false %}
+      {% else %}
+        {% assign in_code_block = true %}
+      {% endif %}
+    {% endif %}
+
+    {% assign prefix = line | slice: 1, 3 %}
+    {% if in_code_block == false and prefix == "h2 " %}
+      {% assign title_md = line | remove_first: "## " | strip %}
+      {% assign title_text = title_md | markdownify | strip_html | strip %}
+      {% assign title_anchor = title_text | slugify %}
+      <a href="#{{ title_anchor }}">{{ title_text }}</a>
+    {% endif %}
+  {% endfor %}
+{% endcapture %}
+
+{% assign parsed_links = parsed_links | strip %}
 
 <section class="side-menu-layout">
   <div class="wrapper wide">
-    <div class="side-menu-layout-grid{% unless menu_sections %} no-menu{% endunless %}">
-      {% if menu_sections %}
+    <div class="side-menu-layout-grid">
       <aside class="side-menu-nav" aria-label="{{ menu_title }}">
         <div class="side-menu-nav-inner">
           <div class="side-menu-nav-title">{{ menu_title }}</div>
-          {% for section in menu_sections %}
           <section class="side-menu-nav-section">
-            {% if section.title %}
-            <h2>{{ section.title }}</h2>
-            {% endif %}
-            <nav aria-label="{{ section.title | default: menu_title }}">
-              {% for item in section.items %}
-              {% assign target = item.anchor | default: item.title | slugify %}
-              <a href="#{{ target }}">{{ item.title }}</a>
-              {% endfor %}
+              <nav aria-label="{{ menu_title }}">
+                {% if page_links %}
+                  {% for link in page_links %}
+                    {% assign anchor = link | slugify %}
+                    <a href="#{{ anchor }}">{{ link }}</a>
+                  {% endfor %}
+                {% else %}
+                  {{ parsed_links }}  
+                {% endif %}
             </nav>
           </section>
-          {% endfor %}
         </div>
       </aside>
-      {% endif %}
 
       <div class="side-menu-content">
         {{ content }}

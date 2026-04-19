@@ -6,12 +6,7 @@ image:  /assets/case-studies/just-type/header.jpg
 assets: /assets/case-studies/just-type/article/
 
 featured: 0
-menu:
-  title: Case Study Sections
-  sections:
-    - title: JustType
-      items:
-        - title: Give it a try
+
 card:
   text: An AI-powered keyboard that fixes typos, grammar, translations, and tone with a single tap.
   bullets:

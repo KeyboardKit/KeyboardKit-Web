@@ -7,10 +7,6 @@
   grid-template-columns: minmax(15rem, 18rem) minmax(0, 1fr);
   gap: clamp(2rem, 4vw, 4rem);
   align-items: start;
-
-  &.no-menu {
-    grid-template-columns: minmax(0, 1fr);
-  }
 }
 
 .side-menu-nav {

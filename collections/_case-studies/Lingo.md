@@ -6,14 +6,7 @@ image:  /assets/case-studies/lingo/header.jpg
 assets: /assets/case-studies/lingo/article/
 
 featured: 0
-menu:
-  title: Case Study Sections
-  sections:
-    - title: Lingo
-      items:
-        - title: What is Lingo?
-        - title: Implementing the Keyboard
-        - title: Give it a try
+
 card:
   text: A translation keyboard that lets you write and translate messages in real time across apps.
   bullets:

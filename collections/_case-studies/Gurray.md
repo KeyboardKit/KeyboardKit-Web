@@ -6,12 +6,7 @@ image:  /assets/case-studies/gurray/header.jpg
 assets: /assets/case-studies/gurray/article/
 
 featured: 0
-menu:
-  title: Case Study Sections
-  sections:
-    - title: Gurray
-      items:
-        - title: Give it a try
+
 card:
   text: A keyboard that enables translations between several Australian indigenous languages.
   bullets:

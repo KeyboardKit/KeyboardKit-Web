@@ -7,19 +7,7 @@ image:  /assets/case-studies/biaffect/header.jpg
 assets: /assets/case-studies/biaffect/article/
 
 featured: 1
-menu:
-  title: Case Study Sections
-  sections:
-    - title: BiAffect
-      items:
-        - title: A Fitbit for the brain
-        - title: Leveraging Keystroke Dynamics for Mental Health
-        - title: Accelerometer Data
-        - title: Machine Learning Analysis
-        - title: Real-Time Monitoring and Feedback
-        - title: Conclusion
-        - title: Download
-        - title: Go Further
+
 card:
   text: A medical keyboard that tracks mental health through keystroke dynamics.
   bullets: 
@@ -53,7 +41,7 @@ Psychiatry, Biomedical Engineering, & Computer Science at the University of Illi
 engineer [Shannon Young]({{page.shannon}}), and research specialist [Faraz Hussain]({{page.faraz}}). 
 
 
-## A Fitbit for the brain
+## A Fitbit for the Brain
 
 BiAffect aims to provide unique insights into mental health through the analysis of typing dynamics on smartphones. Similar to how a Fitbit helps track physical fitness, BiAffect can track mental and emotional health — like a Fitbit for the brain. Its mission is to offer a non-intrusive, continuous way of monitoring mood and cognitive changes by analyzing how people interact with their keyboards.
 

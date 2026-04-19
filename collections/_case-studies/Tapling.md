@@ -6,15 +6,7 @@ image:  /assets/case-studies/tapling/header.jpg
 assets: /assets/case-studies/tapling/
 
 featured: 1
-menu:
-  title: Case Study Sections
-  sections:
-    - title: Tapling
-      items:
-        - title: What Tapling Does?
-        - title: The Story Behind Tapling
-        - title: Building the Keyboard
-        - title: Give it a try
+
 card:
   text: A cozy keyboard companion that taps along as you type and lets you unlock fun cosmetic rewards.
   bullets:
