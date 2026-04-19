@@ -1,6 +1,7 @@
 ---
 name:  Tapling
-title: Tapling - Type with Bongo Cat
+title: Tapling
+subtitle: Type with Bongo Cat
 
 image:  /assets/case-studies/tapling/header.jpg
 assets: /assets/case-studies/tapling/
@@ -24,26 +25,26 @@ Meet [Tapling]({{page.website}}) - a small companion that lives in your keyboard
 ![Tapling Header Image]({{page.image}})
 
 
-## What Tapling Does?
+## What is Tapling?
 
 [Tapling]({{page.website}}) is a small companion that lives in your keyboard’s suggestion bar and taps along while you type. As you type you earn keycaps that can unlock items like furs, hats, and faces for your Tapling.
 
-<div class="grid col3 slide-in portrait screenshots">
+<div class="grid col3 slide-in images">
     <img src="{{page.assets}}screenshot-1.png" />
     <img src="{{page.assets}}screenshot-2.png" />
     <img src="{{page.assets}}screenshot-3.png" />
 </div>
 
-The idea is simple. Type normally and Tapling quietly keeps you company. Every keystroke counts. 
+The idea with Tapling is simple. Type normally and Tapling quietly keeps you company. Every keystroke counts. 
 
 
-## The Story Behind Tapling
+## The Story Behind the App
 
 The idea started when Tapling's creator [Benno]({{page.developer}}) came across the [Bongo Cat]({{page.bongo}}) typing companion game on Steam.
 
 > I liked the idea of a small companion reacting while you type and slowly collecting cosmetics. It turns everyday typing into a small cozy experience.
 
-Since the game is made for desktop computers, and primarily Windows, Benno started wondering how something similar could exist on the iPhone. Since most people always have their phone with them, the keyboard felt like the natural place for a companion like this.
+Since the game is made for desktop, and primarily Windows, Benno started wondering how something similar could exist on the iPhone. Since most people always have a phone with them, the keyboard felt like the natural place for a companion like this.
 
 [Tapling]({{page.website}}) is the result. It's a small character that lives in the keyboard’s suggestion bar and taps along quietly while you type. It's present whenever you type, but never interrupts what you're doing.
 
@@ -52,15 +53,13 @@ Since the game is made for desktop computers, and primarily Windows, Benno start
 
 Since Apple doesn't let you add UI elements like Tapling to the system keyboard, the only option is to build a full custom keyboard extension.
 
-This involves a lot of work, to mimic the system keyboard and recreating many features that users expect from a normal keyboard such as layouts, gestures, autocomplete, and autocorrect.
+Benno used KeyboardKit to mimic the native keyboard and recreate many features that users expect, such as layouts, gestures, and autocomplete.
 
-KeyboardKit provided the foundation for this. 
-
-> I used KeyboardKit as the base and extended it with the features I needed. This made it possible to focus on the Tapling experience instead of building keyboard fundamentals.
+> Using KeyboardKit as a base and extending it with the features I needed, made it possible to focus on the Tapling experience instead of the keyboard fundamentals.
 
 Instead of starting from a blank canvas, KeyboardKit provided the base structure needed to build a custom keyboard with SwiftUI, and to let Benno focus on what makes his keyboard unique.
 
 
-## Give it a try
+## Download
 
-Download [Tapling]({{page.website}}) from the [App Store]({{page.appstore}}) to experience what it's like to type with a cute companion keeping you company.
+Download [Tapling]({{page.website}}) from the [App Store]({{page.appstore}}) to experience what it's like to type with a cozy companion by your side.

@@ -1,6 +1,7 @@
 ---
 name:  GIF AI Keyboard
-title: GIF AI Keyboard - Generate Custom GIFs
+title: GIF AI Keyboard
+subtitle: Generate Custom GIFs
 
 image:  /assets/case-studies/gif-ai/header.jpg
 assets: /assets/case-studies/gif-ai/
@@ -28,7 +29,7 @@ Say hi to [GIF AI Keyboard]({{page.appstore}}) - an innovative keyboard that let
 
 Are you picturing a funny situation in your mind, and want to share it with your peers? A GIF says more than a 1 000 words. Switch the keyboard, type your prompt, drop the GIF, and share the joy.
 
-<div class="grid col3 slide-in">
+<div class="grid col3 slide-in images">
     <img src="{{page.assets}}screenshot-1.jpg">
     <img src="{{page.assets}}screenshot-2.jpg">
     <img src="{{page.assets}}screenshot-3.jpg">
@@ -39,7 +40,7 @@ The concept is simple yet powerful. Instead of searching through lists of standa
 GIF AI's GIFs are generated fast enough to keep conversations flowing naturally. Everything happens directly in the keyboard, without ever leaving your messaging app
 
 
-## The Story Behind GIF AI Keyboard
+## The Story Behind the App
 
 The journey to building [GIF AI Keyboard]({{page.appstore}}) is a story of patience, inspiration, and perfect timing.
 
@@ -65,11 +66,11 @@ Rather than spending months (or years) building a robust keyboard implementation
 GIF AI Keyboard shares GIF data between the keyboard extension and the main app, to let users generate images wherever it feels more natural. The result is a robust custom iOS keyboard that brings a unique and fun touch to the chat experience.
 
 
-## AI with Joy and Responsibility
+## Conclusion
 
 [GIF AI Keyboard]({{page.appstore}}) represents a thoughtful approach to generative AI - one that prioritizes spreading joy while maintaining safety and social responsibility. The app is designed to enhance conversations and bring laughter, without enabling content that makes fun at the expense of others.
 
 
-## Give it a try
+## Download
 
 Download [GIF AI Keyboard]({{page.appstore}}) from the App Store today and start generating custom GIFs that perfectly capture what you want to say. Transform your conversations from ordinary to extraordinary, one AI-generated GIF at a time.

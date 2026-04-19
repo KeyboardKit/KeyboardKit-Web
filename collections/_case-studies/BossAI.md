@@ -1,6 +1,7 @@
 ---
 name:  BossAI
-title: BossAI - Voice-First AI Keyboard
+title: BossAI
+subtitle: Voice-First AI Keyboard
 
 image:  /assets/case-studies/boss-ai/header.jpg
 assets: /assets/case-studies/boss-ai/
@@ -39,7 +40,7 @@ Meet [BossAI]({{page.website}}) - a voice-first AI keyboard that transforms how 
 **Boss Mode** takes it further. Speak a command, and BossAI reads your screen, understands context, and writes the response. No screenshots. No hassle. Just switch to the BossAI keyboard and speak.
 
 
-## The Story Behind BossAI
+## The Story Behind the App
 
 [Hyathi Technologies]({{page.developer-url}}) has spent years building AI and cybersecurity products for global clients. The team shipped AI daily. But internally, they found their hours burned by typing, not thinking.
 
@@ -65,6 +66,6 @@ Rather than reinventing keyboard fundamentals, KeyboardKit provided an infrastru
 The Hyathi team could dedicate their expertise to what makes BossAI different, and add that on top of the keyboard engine. [BossAI]({{page.website}}) is now live on the App Store.
 
 
-## Give it a try
+## Download
 
 Download [BossAI]({{page.website}}) from the [App Store]({{page.appstore}}) today to experience their vision of voice-first communication. Stop typing your thoughts - speak them. Let AI handle the rest.

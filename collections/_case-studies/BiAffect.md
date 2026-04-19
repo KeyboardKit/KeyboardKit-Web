@@ -26,15 +26,19 @@ shannon:    https://www.linkedin.com/in/shannonyoung/
 theja:      https://theja.org
 wsj:        https://www.wsj.com/articles/can-typos-give-insight-into-your-mental-health-1539270001
 
+appstore: https://apps.apple.com/us/app/biaffect3/id6451423106
 podcast_apple: https://podcasts.apple.com/se/podcast/223-new-technology-transforming-bipolar-care/id1497723824?i=1000674751237&l=en-GB
 podcast_spotify: https://open.spotify.com/episode/0Dw4Ug7PBzeXLD7pAE174x?si=aa6af63493c74146&nd=1&dlsi=383cb82c81b4431a
 ---
 
-Say hello to [BiAffect]({{page.biaffect}}) - a medical keyboard that tracks mental health through keystroke dynamics and proud winner of the [Mood Challenge For ResearchKit]({{page.mood}}).
+Say hello to [BiAffect]({{page.biaffect}}) - a medical keyboard that tracks mental health through keystroke dynamics and the proud winner of the [Mood Challenge For ResearchKit]({{page.mood}}) award.
 
 ![BiAffect Header Image]({{page.image}})
 
 The BiAffect team has been extensively covered for their cutting-edge work, for instance in the [Wall Street Journal]({{page.wsj}}), [Rolling Stone]({{page.rollingstone}}), and [IEEE Spectrum]({{page.ieee}}). This post will focus on how the app leverages keystroke dynamics, along with accelerometer data, to gain meaningful insights into mental health.
+
+
+## Background
 
 BiAffect began life as the prize winning entry to the [Mood Challenge For ResearchKit]({{page.mood}}). The team is led by [Alex Leow]({{page.alex}}), MD, PhD, Professor in
 Psychiatry, Biomedical Engineering, & Computer Science at the University of Illinois at Chicago, senior AI/ML/MLOps expert [Theja Tulabandhula]({{page.theja}}), PhD, AI researcher and software engineer [Andrew Paparella]({{page.andrew}}), senior software
@@ -54,7 +58,7 @@ With the increasing preference for texting over talking, our phones have become 
 This shift in the way we communicate means that our keyboards are now central to how we express ourselves and connect with others. By analyzing typing patterns, we can uncover valuable insights into our mental and emotional states, making it possible to track our well-being in meaningful ways.
 
 
-## Leveraging Keystroke Dynamics for Mental Health
+## Leveraging Keystroke Dynamics
 
 BiAffect is based on the premise that typing patterns - how we interact with our keyboards - can reveal information about our mental and emotional states. By continuously analyzing keystroke dynamics, it can detect subtle changes that may indicate mood shifts or cognitive fluctuations.
 
@@ -97,7 +101,7 @@ The extracted features from keystroke dynamics and accelerometer data are fed in
 Supervised learning models are trained on labeled datasets, where the mood or cognitive state of the user is known, while unsupervised learning models can help uncover hidden structures in the data, providing insights into previously unknown patterns.
 
 
-## Real-Time Monitoring and Feedback
+## Real-Time Monitoring
 
 BiAffect provides a dashboard within the app where users can monitor their typing patterns and accelerometer data. This dashboard presents the analyzed data, helping users understand their mental health trends. 
 
@@ -111,18 +115,14 @@ By examining changes in their keystroke dynamics and active task scores on activ
 
 ## Conclusion
 
-BiAffect is committed to advancing mental health monitoring through innovative technology. By leveraging various keystroke dynamics such as typing speed, flight time, error rates, key hold time, along with accelerometer data and active tasks, it provides valuable insights into mental health. 
+BiAffect is committed to advancing mental health monitoring through innovative technology. By leveraging various keystroke dynamics like typing speed, flight time, error rates, key hold time, along with accelerometer data and active tasks, it provides valuable insights into mental health. 
 
 The BiAffect keyboard plays a crucial role in this task, integrating seamlessly with the app to capture and analyze metrics with precision & efficiency. By continuing to refine the algorithms and expand the feature set, BiAffect aims to make it an indispensable resource for mental health management.
+
+This article is an adjusted version of a text written by the creators of BiAffect. For more information, links, etc. [read the full, original article here]({{page.article}}). You can also listen to the very interesting [Live Well Bipolar podcast episode]({{page.podcast_apple}}) ([Spotify]({{page.podcast_spotify}})), where the BiAffect team talks about how they approached this topic, and how they implement many features on top of the keylogger to provide extended insights while protecting your personal information.
+
 
 
 ## Download
 
-[Download BiAffect]({{page.biaffect}}) today, to see how its pioneering use of keystroke dynamics can enhance your understanding of mental health.
-
-
-## Go Further
-
-This article is an adjusted version of a text written by the creators of BiAffect. For more information, links, etc. [read the full, original article here]({{page.article}}).
-
-You can also listen to the very interesting [Live Well Bipolar podcast episode]({{page.podcast_apple}}) ([Spotify]({{page.podcast_spotify}})), where the BiAffect team talks about how they approached this topic, and how they implement many features on top of the keylogger to provide extended insights while protecting your personal information.
+[Download BiAffect]({{page.appstore}}) from the App Store today, to see how its pioneering use of keystroke dynamics can enhance your understanding of mental health.

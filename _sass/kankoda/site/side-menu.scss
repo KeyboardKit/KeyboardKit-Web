@@ -83,6 +83,10 @@
 .side-menu-content {
   min-width: 0;
 
+  article {
+    padding-top: 0;
+  }
+
   h2[id] {
     scroll-margin-top: calc(var(--header-height, 60px) + 1.5rem);
   }
