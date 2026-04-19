@@ -2,8 +2,11 @@
 layout: plain
 ---
 
-<div class="wrapper wide">
-  <article class="page-content">
-    {{ content }}
-  </article>
-</div>
+<article class="page-content wrapper wide">
+  {% include kankoda/site/page-top %}
+  {{ content }}
+</article>
+
+<section class="dark blue showcase">
+  {% include sections/ready-to-build %}
+</section>

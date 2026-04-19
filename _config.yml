@@ -111,7 +111,7 @@ defaults:
     scope:
       type: "case-studies"
     values:
-      layout: case-study
+      layout: side-menu-page
   -
     scope:
       type: "features"
@@ -125,7 +125,6 @@ defaults:
       layout: post
       author: danielsaidi
       image:  /assets/headers/blog.jpg
-      page-class: glass-background bg1
 
 exclude:
   - Gemfile

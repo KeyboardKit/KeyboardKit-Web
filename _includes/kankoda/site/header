@@ -15,12 +15,13 @@
     </button>
 
     <nav>
-      {% for page_path in site.header.pages %}
-        {% assign page = site.pages | where: "path", page_path | first %}
-        {% if page.title %}
-          <a href="{{ page.url | relative_url }}" {% if page.url == page.url %}class="{% if page.url == page.url %}active{% endif %}"{% endif %}>{{ page.title }}</a>
-        {% endif %}
-      {% endfor %}
+      {%- for path in site.header.pages -%}
+        {%- assign current-page = site.pages | where: "path", path | first -%}
+        {%- assign title = current-page.menu-title | default: current-page.title -%}
+        {%- if title -%}
+          <a href="{{ current-page.url | relative_url }}">{{ title | escape }}</a>
+        {%- endif -%}
+      {%- endfor -%}
     </nav>
   </div>
 </header>

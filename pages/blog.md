@@ -3,8 +3,6 @@ layout: blog
 title: Blog
 permalink: /blog
 
-page-class: glass-background bg4
-
 top-message:
   text: Host application problems discovered in iOS 26.4.
   type: warning

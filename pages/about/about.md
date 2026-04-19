@@ -4,8 +4,6 @@ title: About
 layout: page
 permalink: /about
 
-page-class: glass-background bg2
-
 hero:
   icon: /assets/icon/icon.png
   icon-class: plain
