@@ -6,6 +6,16 @@ image:  /assets/case-studies/gif-ai/header.jpg
 assets: /assets/case-studies/gif-ai/
 
 featured: 1
+menu:
+  title: Case Study Sections
+  sections:
+    - title: GIF AI Keyboard
+      items:
+        - title: What is GIF AI Keyboard?
+        - title: The Story Behind GIF AI Keyboard
+        - title: Implementing the Keyboard
+        - title: AI with Joy and Responsibility
+        - title: Give it a try
 card:
   text: An AI-powered keyboard that lets you generate custom GIFs in real time, without leaving your chat.
   bullets:

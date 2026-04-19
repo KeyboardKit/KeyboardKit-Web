@@ -4,6 +4,12 @@ title: Hayatar - Armenian Keyboard
 
 image:  /assets/case-studies/hayatar/header.jpg
 assets: /assets/case-studies/hayatar/article/
+menu:
+  title: Case Study Sections
+  sections:
+    - title: Hayatar
+      items:
+        - title: Give it a try
 card:
   text: An Armenian keyboard built for native typing habits, with rich customizations and iCloud sync.
   bullets:

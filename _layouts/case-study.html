@@ -1,25 +1,28 @@
 ---
-layout: plain
+layout: side-menu
 ---
 
-<article class="page-content wrapper wide">
+{% assign featured_case_studies = site.case-studies | where: "featured", 1 %}
+
+<article class="page-content">
   <h1>{{page.title}}</h1>
+  {% if page.subtitle %}
   <h2 class="subtitle purple glass">{{page.subtitle}}</h2>
-  
-  <p>
-    {{ content }}
-  </p>
+  {% endif %}
+  {{ content }}
 </article>
 
 <section class="purple glass showcase">
-  <article class="wrapper wide">
+  <article>
     <h1>More Case Studies</h1>
     <p>
       See <a href="/case-studies">this page</a> for more case studies.
     </p>
     <div class="grid col3">
-      {% for item in site.case-studies limit:3 | where: "featured", 1 %}
-        {% include kankoda/components/image-card item=item %}
+      {% for item in featured_case_studies %}
+        {% unless item.url == page.url %}
+          {% include kankoda/components/image-card item=item %}
+        {% endunless %}
       {% endfor %}
     </div>
   </article>

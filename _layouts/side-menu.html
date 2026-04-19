@@ -1,0 +1,42 @@
+---
+layout: plain
+---
+
+{% assign menu = page.menu %}
+{% assign menu_title = menu.title | default: "Page Sections" %}
+{% assign menu_sections = menu.sections %}
+
+<section class="side-menu-layout">
+  <div class="wrapper wide">
+    <div class="side-menu-layout-grid{% unless menu_sections %} no-menu{% endunless %}">
+      {% if menu_sections %}
+      <aside class="side-menu-nav" aria-label="{{ menu_title }}">
+        <div class="side-menu-nav-inner">
+          <div class="side-menu-nav-title">{{ menu_title }}</div>
+          {% for section in menu_sections %}
+          <section class="side-menu-nav-section">
+            {% if section.title %}
+            <h2>{{ section.title }}</h2>
+            {% endif %}
+            <nav aria-label="{{ section.title | default: menu_title }}">
+              {% for item in section.items %}
+              {% assign target = item.anchor | default: item.title | slugify %}
+              <a href="#{{ target }}">{{ item.title }}</a>
+              {% endfor %}
+            </nav>
+          </section>
+          {% endfor %}
+        </div>
+      </aside>
+      {% endif %}
+
+      <div class="side-menu-content">
+        {{ content }}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="dark blue showcase">
+  gueh
+</section>

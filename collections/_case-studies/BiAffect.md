@@ -7,6 +7,19 @@ image:  /assets/case-studies/biaffect/header.jpg
 assets: /assets/case-studies/biaffect/article/
 
 featured: 1
+menu:
+  title: Case Study Sections
+  sections:
+    - title: BiAffect
+      items:
+        - title: A Fitbit for the brain
+        - title: Leveraging Keystroke Dynamics for Mental Health
+        - title: Accelerometer Data
+        - title: Machine Learning Analysis
+        - title: Real-Time Monitoring and Feedback
+        - title: Conclusion
+        - title: Download
+        - title: Go Further
 card:
   text: A medical keyboard that tracks mental health through keystroke dynamics.
   bullets: 

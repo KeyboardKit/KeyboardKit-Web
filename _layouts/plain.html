@@ -2,8 +2,8 @@
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
   {% include kankoda/site/head-tag %}
 
-  <body> 
-    <div {% if page.page-class %}class="{{ page.page-class }}"{% endif %}>
+  <body>
+    <div class="page-shell{% if page.page-class %} {{ page.page-class }}{% endif %}">
       <!-- Header -->
       {% include kankoda/site/header %}
 

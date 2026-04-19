@@ -6,6 +6,17 @@ image:  /assets/case-studies/boss-ai/header.jpg
 assets: /assets/case-studies/boss-ai/
 
 featured: 1
+
+menu:
+  title: Case Study Sections
+  sections:
+    - title: BossAI
+      items:
+        - title: What is BossAI?
+        - title: The Story Behind BossAI
+        - title: Implementing the Keyboard
+        - title: Give it a try
+
 card:
   text: A voice-first AI keyboard that dictates polished text and writes replies from screen context.
   bullets:

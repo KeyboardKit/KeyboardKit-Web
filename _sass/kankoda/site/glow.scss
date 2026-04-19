@@ -11,6 +11,7 @@ div.glow {
     pointer-events: none;
     position: absolute;
     inset: 0;
+    z-index: -1;
   }
 
   &::before {
@@ -33,10 +34,4 @@ div.glow {
     mix-blend-mode: screen;
     opacity: 0.75;
   }
-}
-
-section.glow > *,
-div.glow > * {
-  position: relative;
-  z-index: 1;
 }

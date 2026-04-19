@@ -4,6 +4,12 @@ title: Type Devanagari - Sanskrit Keyboard
 
 image:  /assets/case-studies/type-devanagari/header.jpg
 assets: /assets/case-studies/type-devanagari/article/
+menu:
+  title: Case Study Sections
+  sections:
+    - title: Type Devanagari
+      items:
+        - title: Give it a try
 card:
   text: A Sanskrit keyboard that makes Devanagari typing faster with a familiar romanized layout.
   bullets:
