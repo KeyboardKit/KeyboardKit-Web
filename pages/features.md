@@ -1,8 +1,9 @@
 ---
-title: KeyboardKit
-subtitle: Features & Capabilities
-subtitle-color: blue
-menu-title: Features
+eyebrow: KeyboardKit
+title: Features
+title-color: blue
+menu:
+  title: Features
 intro: KeyboardKit has many features.<br />Upgrade to <a href="/pro" class="pro">KeyboardKit Pro</a> to unlock powerful pro features.
 permalink: /features
 layout: side-menu-page

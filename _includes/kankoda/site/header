@@ -17,9 +17,8 @@
     <nav>
       {%- for path in site.header.pages -%}
         {%- assign current-page = site.pages | where: "path", path | first -%}
-        {%- assign title = current-page.menu-title | default: current-page.title -%}
-        {%- if title -%}
-          <a href="{{ current-page.url | relative_url }}">{{ title | escape }}</a>
+        {%- if current-page.title -%}
+          <a href="{{ current-page.url | relative_url }}">{{ current-page.title | escape }}</a>
         {%- endif -%}
       {%- endfor -%}
     </nav>
