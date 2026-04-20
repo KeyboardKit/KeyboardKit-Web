@@ -10,11 +10,16 @@ div.tag {
   border: 1px solid var(--color-bg-dark);
   border-radius: var(--radius-tag);
   background: var(--color-bg-dark);
-  color: var(--color-text-dark) !important;
+  color: var(--color-text-dark);
   font-size: 0.9rem;
-  font-weight: 700;
   line-height: 1;
   letter-spacing: 0.02em;
   text-decoration: none;
   white-space: nowrap;
+
+  &.pro {
+    color: var(--color-text) !important;
+    border-color: orange;
+    background: gold !important;
+  }
 }

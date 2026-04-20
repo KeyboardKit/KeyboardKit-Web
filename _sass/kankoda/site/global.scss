@@ -15,6 +15,10 @@ a {
   text-decoration: underline;
   text-underline-offset: 0.12em;
   text-decoration-thickness: from-font;
+
+  &.pro {
+    color: orange !important;
+  }
 }
 
 p {
