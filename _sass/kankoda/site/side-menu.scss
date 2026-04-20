@@ -10,6 +10,7 @@
 }
 
 .side-menu-nav {
+  overflow: visible;
   position: sticky;
   top: calc(var(--header-height, 60px) + 1.5rem);
   align-self: start;
@@ -17,7 +18,7 @@
 
 .side-menu-nav-inner {
   display: grid;
-  gap: 1.5rem;
+  gap: 0.55rem;
 }
 
 .side-menu-nav-title {
@@ -25,13 +26,48 @@
   font-weight: 700;
   letter-spacing: 0.18em;
   opacity: 0.55;
-  padding-left: 0.95rem;
   text-transform: uppercase;
 }
 
+a.side-menu-nav-title {
+  display: inline-block;
+  text-decoration: none;
+  transition: opacity var(--duration-link) ease;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.side-menu-back-link {
+  position: relative;
+  color: var(--color-text) !important;
+  opacity: 0.8;
+  margin-bottom: 2.3rem;
+  padding-left: 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -0.75rem;
+    top: 50%;
+    width: 0.38rem;
+    height: 0.38rem;
+    border-left: 2px solid currentColor;
+    border-bottom: 2px solid currentColor;
+    transform: translateY(-58%) rotate(45deg);
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
 .side-menu-nav-section {
+  --side-menu-pill-hang: 0.9rem;
+
   display: grid;
-  gap: 0.8rem;
+  gap: 0.45rem;
 
   h2 {
     font-size: 0.95rem;
@@ -46,9 +82,17 @@
     gap: 0.2rem;
   }
 
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
   a {
     display: block;
-    padding: 0.75rem 0.95rem;
+    position: relative;
+    z-index: 0;
+    padding: 0.75rem 0;
     border: 1px solid transparent;
     border-radius: 999px;
     background: transparent;
@@ -73,9 +117,20 @@
     &.is-active,
     &[aria-current="true"] {
       opacity: 1;
-      background: rgba(255, 255, 255, 0.56);
-      border-color: rgba(255, 255, 255, 0.72);
-      box-shadow: 0 8px 22px rgba(0, 0, 0, 0.06);
+
+      &::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: calc(var(--side-menu-pill-hang) * -1);
+        border: 1px solid rgba(255, 255, 255, 0.72);
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.56);
+        box-shadow: 0 8px 22px rgba(0, 0, 0, 0.06);
+      }
     }
   }
 }

@@ -1,68 +1,69 @@
 ---
 layout: plain
 
-instructions: To customize the side menu, add a "menu" value to the front-matter, with "title" and "links"
+instructions: To customize the side menu, add a "menu" value to the front-matter with an optional "title"
 ---
 
 {% assign menu = page.menu %}
 {% assign menu_title = menu.title | default: "On This Page" %}
-{% assign page_links = menu.links %}
+{% assign back_link = page["back-link"] %}
 {% assign page_content_lines = page.content | newline_to_br | split: '<br />' %}
-
-{% capture parsed_links %}
-  {% assign in_code_block = false %}
-  {% for raw_line in page_content_lines %}
-    {% assign line = raw_line | strip %}
-
-    {% if line contains "```" %}
-      {% if in_code_block %}
-        {% assign in_code_block = false %}
-      {% else %}
-        {% assign in_code_block = true %}
-      {% endif %}
-    {% endif %}
-
-    {% if in_code_block == false %}
-      {% assign prefix_h2 = line | slice: 1, 2 %}
-      {% assign prefix_md = line | slice: 0, 2 %}  
-      {% if prefix_h2 == "h2" %}
-        {% assign title_text = line | strip_html | strip %}
-        {% assign title_anchor = line | split: 'id="' | last | split: '"' | first %}
-        <a href="#{{ title_anchor }}">{{ title_text }}</a>
-      {% elsif prefix_md == "##" %}
-        {% assign title_md = line | remove_first: "## " | strip %}
-        {% assign title_text = title_md | markdownify | strip_html | strip %}
-        {% assign title_anchor = title_text | slugify %}
-        <a href="#{{ title_anchor }}">{{ title_text }}</a>
-      {% endif %}
-    {% endif %}
-  {% endfor %}
-{% endcapture %}
-
-{% assign parsed_links = parsed_links | strip %}
 
 <section class="side-menu-layout">
   <div class="wrapper wide">
     <div class="side-menu-layout-grid">
       <aside class="side-menu-nav" aria-label="{{ menu_title }}">
         <div class="side-menu-nav-inner">
+          {% if back_link and back_link.title and back_link.url %}
+            <a class="side-menu-nav-title side-menu-back-link" href="{{ back_link.url | relative_url }}">{{ back_link.title }}</a>
+          {% endif %}
+
           <div class="side-menu-nav-title">{{ menu_title }}</div>
           <section class="side-menu-nav-section">
-              <nav aria-label="{{ menu_title }}">
-                {% if page_links %}
-                  {% for link in page_links %}
-                    {% assign anchor = link | slugify %}
-                    <a href="#{{ anchor }}">{{ link }}</a>
-                  {% endfor %}
-                {% else %}
-                  {{ parsed_links }}  
-                {% endif %}
+            <nav aria-label="{{ menu_title }}">
+              <ul>
+                <li><a href="#page-top" data-side-menu-top="true">Top</a></li>
+                {% assign in_code_block = false %}
+                {% for raw_line in page_content_lines %}
+                  {% assign line = raw_line | strip %}
+
+                  {% if line contains "```" %}
+                    {% if in_code_block %}
+                      {% assign in_code_block = false %}
+                    {% else %}
+                      {% assign in_code_block = true %}
+                    {% endif %}
+                  {% endif %}
+
+                  {% if in_code_block == false %}
+                    {% assign prefix_h2 = line | slice: 1, 2 %}
+                    {% assign prefix_md = line | slice: 0, 2 %}
+
+                    {% if prefix_h2 == "h2" %}
+                      {% assign title_text = line | strip_html | strip %}
+                      {% assign title_anchor = line | split: 'id="' | last | split: '"' | first %}
+                      <li><a href="#{{ title_anchor }}">{{ title_text }}</a></li>
+                    {% elsif prefix_md == "##" %}
+                      {% assign title_md = line | remove_first: "## " | strip %}
+                      {% capture heading_md %}## {{ title_md }}{% endcapture %}
+                      {% assign heading_html = heading_md | markdownify | strip %}
+                      {% assign title_text = heading_html | strip_html | strip %}
+                      {% assign title_anchor = heading_html | split: 'id="' | last | split: '"' | first %}
+                      {% if title_anchor == heading_html %}
+                        {% assign title_anchor = title_text | slugify %}
+                      {% endif %}
+                      <li><a href="#{{ title_anchor }}">{{ title_text }}</a></li>
+                    {% endif %}
+                  {% endif %}
+                {% endfor %}
+              </ul>
             </nav>
           </section>
         </div>
       </aside>
 
       <div class="side-menu-content">
+        <div id="page-top" aria-hidden="true"></div>
         {{ content }}
       </div>
     </div>

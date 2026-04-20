@@ -112,6 +112,9 @@ defaults:
       type: "case-studies"
     values:
       layout: side-menu-page
+      back-link:
+        title: Case studies
+        url: /case-studies
       subtitle-color: purple
   -
     scope:

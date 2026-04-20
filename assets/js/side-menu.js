@@ -5,7 +5,9 @@
   if (!nav || !content) return;
 
   const links = Array.from(nav.querySelectorAll('a[href^="#"]'));
-  const headings = links
+  const topLink = nav.querySelector('[data-side-menu-top="true"]');
+  const headingLinks = links.filter((link) => link !== topLink);
+  const headings = headingLinks
     .map((link) => {
       const id = decodeURIComponent(link.getAttribute('href').slice(1));
       const heading = content.querySelector(`h2[id="${CSS.escape(id)}"]`);
@@ -13,7 +15,9 @@
     })
     .filter(Boolean);
 
-  if (!headings.length) return;
+  if (!topLink && !headings.length) return;
+
+  let activeLink = null;
 
   function currentOffset() {
     const header = document.querySelector('header[role="banner"]');
@@ -21,9 +25,12 @@
     return headerHeight + 32;
   }
 
-  function setActiveLink(activeLink) {
+  function setActiveLink(nextActiveLink) {
+    if (!nextActiveLink || nextActiveLink === activeLink) return;
+    activeLink = nextActiveLink;
+
     links.forEach((link) => {
-      const isActive = link === activeLink;
+      const isActive = link === nextActiveLink;
       link.classList.toggle('is-active', isActive);
       if (isActive) {
         link.setAttribute('aria-current', 'true');
@@ -33,20 +40,62 @@
     });
   }
 
+  function pageIsAtTop() {
+    return window.scrollY <= 4;
+  }
+
+  function pageIsAtBottom() {
+    return window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4;
+  }
+
   function updateActiveLink() {
     const offset = currentOffset();
+    if (pageIsAtTop()) {
+      setActiveLink(topLink || headings[0].link);
+      return;
+    }
+
+    if (!headings.length) {
+      setActiveLink(topLink);
+      return;
+    }
+
+    if (pageIsAtBottom()) {
+      setActiveLink(headings[headings.length - 1].link);
+      return;
+    }
+
+    const scrollPosition = window.scrollY + offset;
     let active = headings[0].link;
 
-    for (const item of headings) {
-      if (item.heading.getBoundingClientRect().top <= offset) {
-        active = item.link;
-      } else {
+    for (let index = 0; index < headings.length; index += 1) {
+      const current = headings[index];
+      const next = headings[index + 1];
+      const currentTop = current.heading.offsetTop;
+      const nextTop = next ? next.heading.offsetTop : Number.POSITIVE_INFINITY;
+      const sectionBoundary = next ? currentTop + ((nextTop - currentTop) / 2) : Number.POSITIVE_INFINITY;
+
+      if (scrollPosition < sectionBoundary) {
+        active = current.link;
         break;
       }
+
+      active = current.link;
     }
 
     setActiveLink(active);
   }
+
+  links.forEach((link) => {
+    link.addEventListener('click', (event) => {
+      if (link === topLink) {
+        event.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+
+      setActiveLink(link);
+    });
+  });
 
   updateActiveLink();
   window.addEventListener('scroll', updateActiveLink, { passive: true });

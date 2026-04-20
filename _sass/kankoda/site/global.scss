@@ -102,6 +102,8 @@ h2 {
 // Content
 
 .page-content {
+  --page-content-media-gap: 3em;
+
   padding-top: clamp(2rem, 4vw, 3.25rem);
   margin-bottom: clamp(2rem, 4vw, 3.25rem);
 
@@ -115,7 +117,8 @@ h2 {
     font-size: 1.2em;
   }
 
-  > p, > div.images {
+  > p,
+  > div.images {
     img {
       display: block;
       border-radius: var(--radius-glass-panel);
@@ -123,8 +126,13 @@ h2 {
     }
   }
 
-  p + p img, p + .images, p img + p, .images + p {
-    margin-top: 3em;
+  > p:has(> img:only-child),
+  > .images {
+    margin: var(--page-content-media-gap) 0;
+  }
+
+  > p:has(> img:only-child) img {
+    width: 100%;
   }
 
   .screenshots img {
