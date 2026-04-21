@@ -10,6 +10,8 @@ body {
   overflow-x: clip;
 }
 
+// Links
+
 a {
   color: var(--color-text) !important;
   text-decoration: underline;
@@ -21,14 +23,9 @@ a {
   }
 }
 
-p {
-  font-weight: 300;
-}
-
 // Headings
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   font-weight: 700;
 }
 
@@ -37,46 +34,13 @@ h1 {
   line-height: 0.98;
   margin-bottom: clamp(1.25rem, 2.5vw, 2rem);
 
-  .line {
-    display: block;
-    line-height: 1.2em;
+  &+h2 {
+    margin-top: -0.8em;
   }
 
-  &:has(+ h1) {
-    margin-bottom: clamp(0.25rem, 0.5vw, 0.5rem);
+  &+h3 {
+    margin-top: 0 !important;
   }
-
-  &:has(+ h2) {
-    margin-bottom: clamp(0.1rem, 0.25vw, 0.25rem);
-  }
-
-  &+ h1, &+ h2 {
-    margin-top: 0;
-    margin-bottom: clamp(1rem, 2vw, 1.5rem);
-
-    &+p,
-    &+h3 {
-      margin-top: 0 !important;
-      margin-bottom: clamp(1rem, 2vw, 1.5rem);
-    }
-
-    &+h3 {
-      max-width: 700px;
-      font-size: clamp(1.2rem, 2.2vw, 1.6rem);
-    }
-  }
-}
-
-.page-eyebrow {
-  font-family: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  font-size: clamp(1.2rem, 2.2vw, 1.6rem);
-  font-weight: 700;
-  line-height: 1.1;
-  max-width: 700px;
-}
-
-.page-eyebrow {
-  margin: 0 0 clamp(0.2rem, 0.4vw, 0.35rem);
 }
 
 h2 {
@@ -112,9 +76,22 @@ h2 {
     margin-top: clamp(2rem, 4vw, 3.5rem);
     margin-bottom: clamp(0.75rem, 1.5vw, 1.25rem);
   }
- 
+
+
   > p {
     font-size: 1.2em;
+    font-weight: 300;
+
+    &.page-eyebrow {
+      font-size: clamp(1.6rem, 3vw, 2.4rem);
+      font-weight: 700;
+      line-height: 1.1;
+      max-width: 700px;
+    }
+
+    &.page-eyebrow {
+      margin: 0 0 clamp(0.2rem, 0.4vw, 0.35rem);
+    }
   }
 
   > p,
