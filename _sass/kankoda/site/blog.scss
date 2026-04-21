@@ -43,6 +43,10 @@
   font-size: clamp(2rem, 4vw, 3rem);
 }
 
+.blog.page-content .blog-post-meta {
+  margin-bottom: clamp(1.5rem, 3vw, 2.5rem);
+}
+
 .blog-list {
   display: flex;
   flex-direction: column;
