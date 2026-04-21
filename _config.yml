@@ -112,17 +112,21 @@ defaults:
       type: "case-studies"
     values:
       layout: side-menu-page
+      subtitle-color: purple
       back-link:
         title: Case studies
         url: /case-studies
-      subtitle-color: purple
   -
     scope:
       type: "features"
     values:
       layout: feature
       assets: /assets/features/
+      eyebrow: Feature
       subtitle-color: blue
+      back-link:
+        title: Features
+        url: /features
   -
     scope:
       type: "posts"
