@@ -58,6 +58,19 @@ figure.highlight::after {
   pointer-events: none;
 }
 
+.page-content > div.highlighter-rouge,
+.page-content > figure.highlight {
+  margin-top: var(--page-content-media-gap);
+  margin-bottom: var(--page-content-media-gap);
+}
+
+div.highlighter-rouge > .highlight,
+.highlighter-rouge .highlight,
+figure.highlight > .highlight,
+figure.highlight > pre {
+  background: transparent !important;
+}
+
 div.highlighter-rouge > .highlight,
 figure.highlight > .highlight,
 figure.highlight > pre {
