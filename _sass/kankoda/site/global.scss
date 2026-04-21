@@ -66,8 +66,6 @@ h2 {
 // Content
 
 .page-content {
-  --page-content-media-gap: 3em;
-
   padding-top: clamp(2rem, 4vw, 3.25rem);
   margin-bottom: clamp(2rem, 4vw, 3.25rem);
 
@@ -107,5 +105,10 @@ h2 {
 
   > p:has(> img:only-child) img {
     width: 100%;
+  }
+
+  > p:has(> img:only-child) + p,
+  > .images + p {
+    margin-top: var(--page-content-media-gap);
   }
 }
