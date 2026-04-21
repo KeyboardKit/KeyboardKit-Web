@@ -17,3 +17,4 @@ Example:
 {% include_relative js/code-box.js %}
 {% include_relative js/slide-in.js %}
 {% include_relative js/side-menu.js %}
+{% include_relative js/blog.js %}

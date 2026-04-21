@@ -12,11 +12,21 @@ layout: side-menu-page
     {% endfor %}
   {% endfor %}
   {% assign unique_tags = all_tags | split: "," | sort %}
-
+  {% assign first_tags = page.tags.first | split: ", " %}
+  
   <div class="tags">
+    {% for tag in first_tags %}
+      {% assign tag = tag | strip %}
+      {% if tag != "" %}
+        <span class="tag {{ tag | slugify }}" data-tag="{{ tag }}">{{ tag }}</span>
+      {% endif %}
+    {% endfor %}
+    &nbsp;·&nbsp;
     {% for tag in unique_tags %}
       {% if tag != "" %}
-        <span class="tag">{{ tag }}</span>
+        {% unless first_tags contains tag %}
+          <span class="tag {{ tag | slugify }}" data-tag="{{ tag }}">{{ tag }}</span>
+        {% endunless %}
       {% endif %}
     {% endfor %}
   </div>
@@ -26,14 +36,14 @@ layout: side-menu-page
   {% for post in site.posts %}
     {% assign words = post.content | number_of_words %}
     {% assign read_time = words | divided_by: 200 | plus: 1 %}
-    <article class="blog-post">
+    <article class="blog-post" data-tags="{{ post.tags | join: ',' }}">
       <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
       <div class="blog-post-meta">
         <span class="blog-post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
         <span class="blog-post-read-time">{{ read_time }} min read</span>
         <div class="blog-post-tags">
           {% for tag in post.tags %}
-            <span class="tag">{{ tag }}</span>
+            <span class="tag {{ tag | slugify }}">{{ tag }}</span>
           {% endfor %}
         </div>
       </div>

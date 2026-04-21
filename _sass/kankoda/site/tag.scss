@@ -17,9 +17,13 @@ div.tag {
   text-decoration: none;
   white-space: nowrap;
 
-  &.pro {
-    color: var(--color-text) !important;
-    border-color: orange;
-    background: gold !important;
-  }
+  &.blue   { background: var(--glass-blue-bg);   border-color: var(--glass-blue-bg);   color: var(--glass-blue-text); }
+  &.green  { background: var(--glass-green-bg);  border-color: var(--glass-green-bg);  color: var(--glass-green-text); }
+  &.yellow { background: var(--glass-yellow-bg); border-color: var(--glass-yellow-bg); color: var(--glass-yellow-text); }
+  &.orange { background: var(--glass-orange-bg); border-color: var(--glass-orange-bg); color: var(--glass-orange-text); }
+  &.red    { background: var(--glass-red-bg);    border-color: var(--glass-red-bg);    color: var(--glass-red-text); }
+  &.purple { background: var(--glass-purple-bg); border-color: var(--glass-purple-bg); color: var(--glass-purple-text); }
+
+  &.pro { background: gold; border-color: orange; color: var(--color-text); }
+  &.releases  { background: var(--glass-blue-bg); border-color: var(--glass-blue-bg);   color: var(--glass-blue-text); }
 }

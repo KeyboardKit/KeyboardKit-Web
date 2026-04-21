@@ -1,4 +1,13 @@
 .blog {
+  .tags .tag {
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+
+    &.inactive {
+      opacity: var(--opacity-secondary);
+    }
+  }
+
   .tags {
     display: flex;
     flex-wrap: wrap;
@@ -28,7 +37,7 @@
     align-items: center;
     gap: 0.75rem;
     margin-bottom: 0.75rem;
-    opacity: var(--opacity-secondary);
+    color: rgba(0, 0, 0, var(--opacity-secondary));
   }
 
   &-date,
@@ -44,6 +53,7 @@
   &-tags::before {
     content: "·";
     white-space: nowrap;
+    margin-right: 0.4rem;
   }
 
   &-tags {
