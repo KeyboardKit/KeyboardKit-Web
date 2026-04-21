@@ -3,19 +3,19 @@
     margin-top: 1.75rem;
 
     input, button {
-        font-size: large;
-        padding: 10px 20px;
-        border-radius: 10px;
+        font-size: 1rem;
+        padding: 0.625rem 1.25rem;
+        border-radius: var(--radius-glass-link);
         border: solid 1px var(--color-border);
     }
 
     button {
-        color: white;
-        background-color: black;
+        color: var(--color-text-dark);
+        background-color: var(--color-bg-dark);
     }
-    
+
     button:active {
-        color: white;
+        color: var(--color-text-dark);
         background-color: #555;
     }
 }
@@ -24,7 +24,7 @@
 
     #gumroad-follow-form-embed {
         input, button {
-            font-size: small !important;
+            font-size: 0.875rem;
         }
     }
 }
