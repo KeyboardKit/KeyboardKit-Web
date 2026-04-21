@@ -38,6 +38,8 @@ KeyboardKit's core keyboard engine provides essential models, features and views
 
 ## System & Utilities
 
+KeyboardKit's system features add a native looking keyboard view and additional utilities.
+
 <div class="grid col3">
 {% for feature in system_features %}
   {% include kankoda/components/image-card item=feature %}
@@ -46,6 +48,8 @@ KeyboardKit's core keyboard engine provides essential models, features and views
 
 ## Intelligence & Text
 
+KeyboardKit's text & intelligence features improves the typing and text input capabilities.
+
 <div class="grid col3">
 {% for feature in intelligence_features %}
   {% include kankoda/components/image-card item=feature %}
@@ -53,6 +57,8 @@ KeyboardKit's core keyboard engine provides essential models, features and views
 </div>
 
 ## UI & Design
+
+KeyboardKit's UI & design features let you customize the keyboard and tailor it to your needs.
 
 <div class="grid col3">
 {% for feature in ui_features %}
