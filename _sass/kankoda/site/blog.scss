@@ -39,6 +39,10 @@
   }
 }
 
+.blog.page-content h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
 .blog-list {
   display: flex;
   flex-direction: column;

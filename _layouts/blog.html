@@ -38,19 +38,8 @@ layout: side-menu-page
 
 <section class="blog-list">
   {% for post in site.posts %}
-    {% assign words = post.content | number_of_words %}
-    {% assign read_time = words | divided_by: 200 | plus: 1 %}
     <article class="blog-post" data-tags="{{ post.tags | join: ',' }}" data-title="{{ post.title | downcase }}" data-excerpt="{{ post.excerpt | strip_html | downcase | truncatewords: 40 }}">
-      <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-      <div class="blog-post-meta">
-        <span class="blog-post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <span class="blog-post-read-time">{{ read_time }} min read</span>
-        <div class="blog-post-tags">
-          {% for tag in post.tags %}
-            <span class="tag {{ tag | slugify }}">{{ tag }}</span>
-          {% endfor %}
-        </div>
-      </div>
+      {% include kankoda/components/blog-header post=post %}
       <p class="blog-post-excerpt">{{ post.excerpt | strip_html | truncatewords: 40 }}</p>
     </article>
   {% endfor %}

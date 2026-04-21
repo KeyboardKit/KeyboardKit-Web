@@ -12,14 +12,12 @@ matt: https://matthewskiles.com
 
 KeyboardKit is getting a new icon! We're moving from a glowing keyboard key to an abstract design with two Ks on a gradient background that carries over from the old icon.
 
-![Post Image]({{page.image}})
-
 
 ## The previous icon
 
 The previous icon has been with us for a while. Designed by digital artist [Matthew Skiles]({{page.matt}}), it added a glass-like, glowing design to the original, plain keyboard key design.
 
-![Old Icon](/assets/icon-old/icon-header.png){:class="plain"}
+![Old Icon](/assets/icon-old/icon-header.png){:class="plain" width="350px"}
 
 While we absolutely loved this design, we have struggled with explaining what the A in the old icon stands for. All attempts to tweak it to better communicate KeyboardKit have been unsuccessful.
 

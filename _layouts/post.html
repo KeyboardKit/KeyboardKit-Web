@@ -1,34 +1,24 @@
 ---
-layout: plain
+layout: side-menu
 ---
 
-<div class="wrapper wide">
-  <article itemscope itemtype="http://schema.org/BlogPosting">
+<article class="blog page-content" itemscope itemtype="http://schema.org/BlogPosting">
   
-    LINK TO BLOG
+  {% include kankoda/components/blog-header post=page configuration="post" %}
 
-    {% assign url_bluesky = page.bsky | default: site.urls.bluesky %}  
-    {% assign url_mastodon = page.toot | default: site.urls.mastodon %}  
-    {% assign url_twitter = page.tweet | default: site.urls.twitter %}  
-    
-    <h1>
-      {{ page.title | escape }}
-    </h1>
+  {% assign url_bluesky = page.bsky | default: site.urls.bluesky %}  
+  {% assign url_mastodon = page.toot | default: site.urls.mastodon %}  
+  {% assign url_twitter = page.tweet | default: site.urls.twitter %}  
+  
+  {{ content }}
+  
+  <h2>Discussions & More</h2>
+  <p>
+    If you found this interesting, please share your thoughts on 
+    <a href="{{url_bluesky}}">Bluesky</a> and
+    <a href="{{url_mastodon}}">Mastodon</a>.
+    Make sure to follow to be notified when new content is published.
+  </p>
 
-    DATE TITLE
-
-    <div>
-      {{ content }}
-    </div>
-
-    <h2>Discussions & More</h2>
-    <p>
-      If you found this interesting, please share your thoughts on 
-      <a href="{{url_bluesky}}">Bluesky</a> and
-      <a href="{{url_mastodon}}">Mastodon</a>.
-      Make sure to follow to be notified when new content is published.
-    </p>
-
-    <a href="{{page.url | relative_url}}" hidden></a>
-  </article>
-</div>
+  <a href="{{page.url | relative_url}}" hidden></a>
+</article>

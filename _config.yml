@@ -138,6 +138,9 @@ defaults:
       layout: post
       author: danielsaidi
       image:  /assets/headers/blog.jpg
+      back-link:
+        title: Blog
+        url: /blog
 
 exclude:
   - Gemfile
