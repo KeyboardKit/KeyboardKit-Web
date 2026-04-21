@@ -8,9 +8,7 @@ image:  /assets/headers/app.jpg
 release: https://github.com/KeyboardKit/KeyboardKit/releases/tag/7.8.0
 ---
 
-A new version of the KeyboardKit app is out! It adds a bunch of new features, such as a new theme and new settings.
-
-![KeyboardKit logo]({{page.image}})
+A new version of the KeyboardKit app is out! It adds a bunch of new features, such as new themes and settings.
 
 This version adds a brand new theme - Colorful - which comes with a bunch of pre-defined styles.
 

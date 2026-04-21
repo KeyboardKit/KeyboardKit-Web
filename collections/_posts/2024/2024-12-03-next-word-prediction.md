@@ -15,8 +15,6 @@ release-pro: https://github.com/KeyboardKit/KeyboardKitPro/releases/tag/9.0.0
 
 KeyboardKit Pro 9 adds a feature that stopped working in iOS 16 - Next Word Prediction! Let's take a look at how it works, and how you can easily add next word prediction to your keyboard.
 
-![KeyboardKit logo]({{page.image}})
-
 
 ## Background
 
@@ -52,7 +50,7 @@ extension KeyboardApp {
 }
 ```
 
-You can also add a request to a `LocalAutocompleteService`, with the new `nextWordPredictionRequest` property. However, the app-based approach above is the recommended way.
+You can also add a `nextWordPredictionRequest` to a `LocalAutocompleteService`. However, the app-based approach above is the recommended way.
 
 
 ## Important Considerations

@@ -6,8 +6,6 @@ tags:   gestures
 
 KeyboardKit is getting a new gesture engine that will make the typing experience a lot closer to the one in native iOS keyboards. But have you ever considered what is involved in typing on a software keyboard? It's actually a complex combination of gestures and features. Let's take a closer look at it.
 
-![Icon badge]({{page.image}})
-
 Typing on a keyboard is not as trivial as it may seem, where it at first glance may seem like all you have to do is to handle key presses and the occasional long press.
 
 In reality, typing on a software keyboard involves a lot of gestures that have to play well together, as well as many sophisticated features that we may take for granted.

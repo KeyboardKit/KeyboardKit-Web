@@ -11,8 +11,6 @@ toot:   https://techhub.social/@keyboardkit/110491374338522086
 
 KeyboardKit 7.7 is out! This release provides a much better fast-typing experience by introducing a release outside tolerance, tweaks the emoji keyboards and has many other nice features and fixes.
 
-![KeyboardKit logo]({{page.image}})
-
 
 ## Fast typing
 

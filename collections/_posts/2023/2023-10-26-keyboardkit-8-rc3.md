@@ -9,8 +9,6 @@ release-pro: https://github.com/KeyboardKit/KeyboardKitPro/releases/tag/8.0-rc3
 
 KeyboardKit 8 RC 3 is out for public access! It adds more migration guides, makes system keyboard previews easier to use and makes the emoji keyboard resolve automatically even for custom views.
 
-![KeyboardKit logo]({{page.image}})
-
 
 ## Migration guides
 

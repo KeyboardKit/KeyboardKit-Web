@@ -12,8 +12,6 @@ release-pro: https://github.com/KeyboardKit/KeyboardKitPro/releases/tag/8.4.0
 
 KeyboardKit 8.4 is out. This version uses Swift 5.9, adds support for visionOS, drastically improves the docs, makes many emoji features open-source, introduces modifier-applied styles, and more. 
 
-![KeyboardKit logo]({{page.image}})
-
 Upgrading to Swift 5.9 brings new powers, such as the ability to use the latest documentation tools. As a direct result, the KeyboardKit documentation has been much improved.
 
 The documentation will now list components and related features in tab navigators, that same a lot of space. The new grid capabilities provides responsive grids for image galleries, etc.

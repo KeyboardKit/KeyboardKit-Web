@@ -15,7 +15,7 @@ The KeyboardKit Cyber Monday Deal is only valid today, and gets you KeyboardKit 
 
 Enter the following code in the Gumroad checkout flow, to apply the discount to your Pro purchase:
 
-<div class="glass">
+<div class="yellow glass">
   CYBER-MONDAY-2024
 </div>
 

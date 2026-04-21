@@ -11,8 +11,6 @@ tweet:  https://twitter.com/GetKeyboardKit/status/1633918412052221954?s=20
 
 KeyboardKit 7.1 is out! This minor release fixes a few bugs that were introduced in the 7.0 release, adds a brand new autocomplete experience, improves the locale picker context menu and makes it easier than ever to setup KeyboardKit.
 
-![Icon badge]({{page.image}})
-
 
 ## Simplified setup
 
@@ -43,7 +41,7 @@ The newl menu opens with a much smoother animation and keeps the keyboard visibl
 
 ## Bug fixes
 
-KeyboardKit 7.0 unfortunately had a line of code removed, that caused some iPad layouts to break. KeyboardKit 7.1 fixes this and tweaks a bunch of Pro layouts to match their native look even more.
+KeyboardKit 7.0 unfortunately had a code line removed, that caused some iPad layouts to break. KeyboardKit 7.1 fixes this and tweaks a bunch of Pro layouts to match their native look even more.
 
 
 ## Conclusion

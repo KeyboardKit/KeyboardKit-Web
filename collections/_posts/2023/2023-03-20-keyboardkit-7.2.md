@@ -15,8 +15,6 @@ post-autocomplete: /blog/2023/03/18/autocomplete-is-coming-to-macos
 
 KeyboardKit 7.2 is out, with many appearance and autocomplete news. It makes the KeyboardKit Pro autocomplete available on all platforms and make it easier than ever to style your keyboard.
 
-![KeyboardKit logo]({{page.image}})
-
 
 ## Autocomplete updates
 

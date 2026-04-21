@@ -8,8 +8,6 @@ article: /blog/2023/11/13/how-to-type-within-a-keyboard-extension
 
 This article discusses a crash that can occur whenever a text input in a custom keyboard extension receives focus in iOS 17.
 
-![KeyboardKit logo]({{page.image}})
-
 While typing into a text field within an iOS keyboard extension should be straightforward, it's quite tricky since you have to bypass the standard text document proxy to send the text to the input.
 
 [This article]({{page.article}}) explains how you can implement this, and how [KeyboardKit Pro](/pro) can solve it for you with its convenient `KeyboardTextField` and `KeyboardTextView` components.

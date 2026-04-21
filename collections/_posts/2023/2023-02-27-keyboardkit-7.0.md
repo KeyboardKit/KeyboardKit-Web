@@ -12,8 +12,6 @@ tweet:  https://twitter.com/GetKeyboardKit/status/1630191697698103296?s=20
 
 KeyboardKit 7.0 is out! This major release cleans up and streamlines the library and adds a bunch of new features and improvements that will help taking KeyboardKit to the next level.
 
-![Icon badge]({{page.image}})
-
 
 ## Ambitions, features and changes
 

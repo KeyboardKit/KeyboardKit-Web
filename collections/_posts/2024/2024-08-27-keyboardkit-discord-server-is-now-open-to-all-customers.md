@@ -16,4 +16,4 @@ Gold and Enterprise customers can also get a private, company-specific channel, 
 
 If you've purchased your license from the [Gumroad e-shop]({{site.urls.gumroad}}), you can access your Discord invite link directly from your purchase information.
 
-If you've purchased your license via KeyboardKit Sales, just [reach out]({{site.email_url}}?subject=Discord) to receive an invite link and a private channel.
+If you've purchased your license via KeyboardKit Sales, just [reach out]({{site.email_url}}?subject=Discord) to receive an invite and a private channel.

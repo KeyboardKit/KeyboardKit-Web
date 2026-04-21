@@ -1,7 +1,7 @@
 ---
 title:  KeyboardKit dSYMs are now available
 date:   2025-10-19 06:00:00 +0000
-tags:   releases
+tags:   releases dSYM
 
 assets: /assets/blog/25/1019/
 image:  /assets/blog/25/1019/image.jpg

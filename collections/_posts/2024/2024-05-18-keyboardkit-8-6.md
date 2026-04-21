@@ -9,8 +9,6 @@ release-pro: https://github.com/KeyboardKit/KeyboardKitPro/releases/tag/8.6
 
 KeyboardKit 8.6 is out. This is a HUGE update that adds 5 new locales, support for diacritics, makes it easier to identify the host application, improves autocomplete and many layouts, and much more.
 
-![KeyboardKit logo]({{page.image}})
-
 
 ## New locales
 
@@ -21,7 +19,7 @@ KeyboardKit 8.6 adds support for French (Canada), Norwegian (Nynorsk), Spanish (
 
 This new version also brings brand new support for diacritcs, which lets you replace the previously typed character with a diacritic variant.
 
-This new feature is powered by the new `Keyboard.Diacritic` type, the new `KeyboardAction.diacritic` and the new `insertDiacritic(_:)` function in `KeyboardController` & `UITextDocumentProxy`.
+This new feature is powered by the new `Keyboard.Diacritic`, the new `KeyboardAction.diacritic` and the new `insertDiacritic(_:)` function in `KeyboardController` & `UITextDocumentProxy`.
 
 
 ## Layout updates

@@ -6,8 +6,6 @@ tags:   actions
 
 The next keyboard 🌐 key that is used to switch keyboards, has behaved a bit strange. Let's take a look at two opt-in experiments that were introduced in `8.8.7`, that aim to fix improve its behavior.
 
-![KeyboardKit logo]({{page.image}})
-
 
 ## The switcher can stop working when added inside a keyboard
 

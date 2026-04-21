@@ -12,8 +12,6 @@ toot:   https://techhub.social/@keyboardkit/113209639816416641
 
 KeyboardKit 8.9 is out! This a massive update that is built with Xcode 16 and that improves how to set up a keyboard extension, renames services, and adds a bunch of new features.
 
-![KeyboardKit logo]({{page.image}})
-
 
 ## 🚨 Important information
 

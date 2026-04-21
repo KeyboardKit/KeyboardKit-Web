@@ -141,6 +141,11 @@ a.glass {
 
 // Container
 
+.page-content > p + div.glass,
+.page-content > div.glass + p {
+  margin-top: var(--page-content-media-gap);
+}
+
 div.glass {
   border-radius: var(--radius-glass-panel);
   overflow: hidden;

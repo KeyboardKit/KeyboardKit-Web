@@ -8,8 +8,6 @@ image:  /assets/headers/pro.jpg
 
 KeyboardKit 8 will make some really exciting changes to the KeyboardKit Pro license model, that will make it possible to finally offer immediate license activation, free trials, and a monthly plan.
 
-![KeyboardKit logo]({{page.image}})
-
 As part of the KeyboardKit 8 release, the KeyboardKit Pro license will take a huge step forward, as the 4 Gumroad products will be replaced by a 3-tier subscription.
 
 What does this mean for new customers?

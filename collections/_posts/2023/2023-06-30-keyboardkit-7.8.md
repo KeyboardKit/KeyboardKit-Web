@@ -8,8 +8,6 @@ release: https://github.com/KeyboardKit/KeyboardKit/releases/tag/7.8.0
 
 KeyboardKit 7.8 is out! This release adds more action, style and theme features and fixes a couple of minor bugs and annoyances.
 
-![KeyboardKit logo]({{page.image}})
-
 
 ## Action handler improvements
 

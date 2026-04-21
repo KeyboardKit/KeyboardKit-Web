@@ -19,7 +19,7 @@ The app now supports adding the same language many times, once for every layout 
 
 This means that you can easily use AZERTY instead of QWERTY for each language that supports it, or add multiple layouts for the same language. You can also use the new Colemak and Dvorak layouts.
 
-![A screenshot of Dvorak layout on iPhone]({{page.assets}}dvorak.jpg){: width="350"}
+![A screenshot of Dvorak layout on iPhone]({{page.assets}}dvorak.jpg){:class="medium"}
 
 Dvorak and Colemak are supported by all languages that support QWERTY, QWERTZ, and AZERTY.
 
@@ -37,7 +37,7 @@ Since this is a beta feature, please give it a try and report bugs you find and 
 
 The app now supports colon-based emoji autocomplete, which integrates with the autocomplete:
 
-![A screenshot of emoji colon search]({{page.assets}}emojis.jpg){: width="350"}
+![A screenshot of emoji colon search]({{page.assets}}emojis.jpg){:class="medium"}
 
 Just type a colon to start colon matching that lists matching emojis in the autocomplete toolbar.
 

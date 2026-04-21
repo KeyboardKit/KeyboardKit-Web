@@ -23,9 +23,9 @@ KeyboardKit 9.6 is out, with new standard value builders, two new supported loca
 
 KeyboardKit 9.6 deprecates the old `KeyboardAction` extensions for building standard button styles, and moves these standard value builders to their related type.
 
-This means that instead of the `KeyboardAction` type having a `standardButtonStyle(for:isPressed:)`, this builder becomes `Keyboard.ButtonStyle.standard(for:action:isPressed)`.
+This means that instead of `KeyboardAction` having a `standardButtonStyle(for:isPressed:)`, this builder becomes `Keyboard.ButtonStyle.standard(for:action:isPressed)`.
 
-Other types have similar builders. `Color`, `Keyboard.ButtonBorderStyle`, `Keyboard.ButtonShadowStyle`, and `KeyboardFont` all similar have standard builders for a context and action.
+Other types have similar builders. `Color`, `KeyboardFont`, and some keyboard views all have standard builders for a context and action.
 
 This change will make it easier to find the standard value builders, since they will now be provided extensions to the related type, instead of to one of the argument types.
 

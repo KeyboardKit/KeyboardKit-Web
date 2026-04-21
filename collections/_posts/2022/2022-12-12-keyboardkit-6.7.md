@@ -10,8 +10,6 @@ release-notes: https://github.com/KeyboardKit/KeyboardKit/releases/tag/6.7.0
 
 KeyboardKit 6.7 is out, with a bunch of new emoji capabilities as well as various adjustments.
 
-![Icon badge]({{page.image}})
-
 
 ## New emoji capabilities
 

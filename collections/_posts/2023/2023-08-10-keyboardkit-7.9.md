@@ -8,8 +8,6 @@ release: https://github.com/KeyboardKit/KeyboardKit/releases/tag/7.8.0
 
 KeyboardKit 7.9 is out! This release prepares the library for the upcoming major version bump, by deprecating a lot of stuff. It also adds a bunch of new features, adjusts things and fixes a couple of minor bugs.
 
-![KeyboardKit logo]({{page.image}})
-
 KeyboardKit 8.0 will be a major bump that removes a lot of deprecated types and makes the surface level of the library smaller. This release prepares the library for that upcoming change.
 
 Many types have been deprecated with proper `@available` annotations, while other types that can't be deprecated yet are soft deprecated with a `[DEPRECATED]` comment. `> v8.0: `. These types will either be removed, since the library has been simplified, or moved into container types that aim to make it easier to find things in the library.

@@ -21,7 +21,7 @@ KeyboardKit 5.8 adds support for 9 new keyboards locales:
 * 🇭🇺 Hungarian
 * 🇸🇮 Slovenian
 
-Implementing support for a Greek keyboard involved a lot of adjustments to the layout engine, since this keyboard looks a lot different
+Implementing support for a Greek keyboard involved a lot of adjustments to the layout engine, since it looks a lot different
 
 With these 9 new locales, KeyboardKit now covers most European languages. 5.8 will add even more locales to make it even more flexible.
 
@@ -30,7 +30,7 @@ With these 9 new locales, KeyboardKit now covers most European languages. 5.8 wi
 
 Another big change in this version is that many types are renamed to shorter names. For instance:
 
-* KeyboardInputSetProvider and all implementations and related properties have been renamed to use InputSetProvider.
-* SecondaryCalloutActionProvider and all implementations and related properties have been renamed to use CalloutActionProvider.
+* `KeyboardInputSetProvider` and all implementations and related properties have been renamed to use InputSetProvider.
+* `SecondaryCalloutActionProvider` and all implementations and related properties have been renamed to use CalloutActionProvider.
 
-This maeks it a lot less cumbersome to refer to these types, although the names now become a little less specific.
+This makes it less cumbersome to refer to these types, although the names now become a little less specific.

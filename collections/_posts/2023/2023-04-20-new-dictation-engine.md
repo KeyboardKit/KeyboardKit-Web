@@ -17,7 +17,7 @@ KeyboardKit 7.3 added a beta version of a new dictation engine, that lets you st
 
 ## New dictation namespace
 
-The new `Dictation` namespace has many new types that can be used to perform dictation. For instance, a `DictationService` can perform dictation where microphone access is available, like an app, while a `KeyboardDictationService` can perform dictation from a keyboard extension, where microphone access is not available.
+The new `Dictation` namespace has many new types that can be used to perform dictation. For instance, a `DictationService` can perform dictation where microphone access is available, like an app, while a `KeyboardDictationService` can perform dictation from a keyboard extension, where it's not available.
 
 KeyboardKit uses the controller `dictationService` as the standard keyboard dictation service, which in turn uses the controller `dictationContext` for shared data and observable state.
 
@@ -26,7 +26,7 @@ KeyboardKit doesn’t have any standard dictations services as it has for most o
 
 ## How to perform basic dictation
 
-You can use a `DictationService` to perform dictation where microphone access is available, such as in an app.
+You can use a `DictationService` to perform dictation where microphone access is available, like an app.
 
 Before you can perform dictation, you must add the required permissions to your app config file, otherwise the app will crash. You can then start dictating with `startDictation(with:)` and stop with `stopDictation()`. Since dictation may stop at any time, for instance by a period of silence, services must describe how to access the result when the operation completes.
 

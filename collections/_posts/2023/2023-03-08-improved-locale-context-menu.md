@@ -13,17 +13,13 @@ KeyboardKit 7.1 will patch a few things that were overlooked in the 7.0 release.
 
 For reference, KeyboardKit 7.0 and earlier versions use a SwiftUI `ContextMenu`, which makes the long pressed view pop out, blur the background and present the context menu:
 
-![Old context menu]({{page.assets}}1_old.gif)
+![Old context menu]({{page.assets}}1_old.gif){:class="medium"}
 
-This menu really pulls you out of the keyboard experience and causes a noticable delay when you select a locale and return to the keyboard.
+This menu really pulls you out of the keyboard experience and causes a noticable delay when you select a locale and return to the keyboard. To improve this experience, KeyboardKit 7.1 will instead use a SwiftUI `Menu`, which has a cleaner transition, leaves the keyboard visible and updates it a lot faster when a locale is selected:
 
-To improve this experience, KeyboardKit 7.1 will instead use a SwiftUI `Menu`, which has a cleaner transition, leaves the keyboard visible and updates it a lot faster when a locale is selected:
+![Old context menu]({{page.assets}}2_new.gif){:class="medium"}
 
-![Old context menu]({{page.assets}}2_new.gif)
-
-This menu is only available in iOS 15 and macOS 12. Earlier versions will keep the `ContextMenu`.
-
-As you can see in the gifs above, the menu will now place the currently selected locale first and add a `Divider` between the selected locale and all other locales.
+This menu is only available in iOS 15 and macOS 12. Earlier versions will keep `ContextMenu`. As you can see in the gifs above, the menu will now place the currently selected locale first and add a `Divider` between the selected locale and all other locales.
 
 `KeyboardContext` has a new `localePresentationLocale` property that can be used to set the locale to use when presenting the locales in this menu. 
 

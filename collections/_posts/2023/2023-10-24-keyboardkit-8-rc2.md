@@ -11,8 +11,6 @@ rc1:    /blog/2023/10/06/keyboardkit-8-rc
 
 KeyboardKit 8 RC 2 is now out for public access! This is an update to [release candidate 1]({{page.rc1}}) (rc1) and adjusts a few things to prepare the library for the upcoming release.
 
-![KeyboardKit logo]({{page.image}})
-
 
 ## 💡 Changes
 

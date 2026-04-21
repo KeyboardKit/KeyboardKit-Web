@@ -9,8 +9,6 @@ toot:   https://techhub.social/@keyboardkit/111602494916219080
 
 This blog post contains important information about a keyboard extension crash that may occur in production in iOS 17.1 (and perhaps even in iOS 17.0).
 
-![KeyboardKit logo]({{page.image}})
-
 Some developers have reported that their keyboard extensions crash on launch in production. The same has been observed for the [KeyboardKit app](/app).
 
 When the crash happens in production, nothing is reported to Xcode. This means that you won't get any indications that your keyboard is crashing for your users. When it happens in Xcode, attaching the debugger to your keyboard extension will not work. The keyboard will crash before being attached.

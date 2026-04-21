@@ -13,8 +13,6 @@ release-notes: https://github.com/KeyboardKit/KeyboardKit/releases/tag/6.6.0
 
 KeyboardKit 6.6 is out, with a brand new gesture engine, new emoji capabilities and a bunch of adjustments and bug fixes to make the typing experience better than ever before.
 
-![Icon badge]({{page.image}})
-
 
 ## New gesture engine
 
@@ -55,7 +53,7 @@ Emoji("👍").skinToneVariants        // 👍👍🏻👍🏼👍🏽👍🏾�
 Emoji("👍").skinToneVariantActions  // The above variants as keyboard actions
 ```
 
-This is used by the emoji keyboards, which means that tapping an emoji with show an input callout, and long pressing emojis that have skin tone variants will show a callout with these variants.
+This is used by the emoji keyboard, which means that tapping an emoji will show a callout, and long pressing emojis that have skin tone variants shows a callout with these variants.
 
 
 ## New buttons

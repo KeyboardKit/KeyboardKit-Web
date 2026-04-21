@@ -11,8 +11,6 @@ release: https://github.com/KeyboardKit/KeyboardKit/releases/tag/7.5.0
 
 KeyboardKit 7.5 is out! It improves the dictation and theme engines and makes them easier to use. It also greatly improves the way KeyboardKit handles locales. It now correctly changes the primary language, which affects text direction, spellchecking and more.
 
-![KeyboardKit logo]({{page.image}})
-
 
 ## Important information about this update
 

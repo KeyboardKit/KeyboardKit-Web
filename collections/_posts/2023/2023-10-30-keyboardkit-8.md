@@ -9,8 +9,6 @@ release-pro: https://github.com/KeyboardKit/KeyboardKitPro/releases/tag/8.0.0
 
 KeyboardKit 8 is finally out! This is a huge update with lots of changes and improvements. Let's take a look at what you can expect.
 
-![KeyboardKit logo]({{page.image}})
-
 KeyboardKit 8 cleans up the library to make it better structured and easier to use. It reorganizes types into namespaces and removes low-value utilities, such as types used solely for DocC exposure.
 
 The `SystemKeyboard` is now easier to use. Passing state and services instead of a controller will reduce the risk for memory leaks. It no longer needs a width and makes it a easier to customize its views.

@@ -29,7 +29,7 @@ Since this is in beta, please give it a try and [report any bugs you find](https
 
 This version adds Dvorak support to all locales that support QWERTY, QWERTZ, AZERTY & Colemak.
 
-![A screenshot of Dvorak layout on iPhone]({{page.assets}}dvorak.jpg){: width="350"}
+![A screenshot of Dvorak layout on iPhone]({{page.assets}}dvorak.jpg){:class="medium"}
 
 Dvorak is supported by: Catalan, Croatian, Dutch, Dutch (Belgium), English (All), Estonian, Filipino, Hungarian, Indonesian, Irish, Italian, Latvian, Malay, Polish, Portuguese, Portuguese (Brazil), Romanian, Serbian (Latin), Slovenian, Swahili, Uzbek, Welsh
 
@@ -38,7 +38,7 @@ Dvorak is supported by: Catalan, Croatian, Dutch, Dutch (Belgium), English (All)
 
 KeyboardKit Pro 9.3 adds support for emoji colon search, which integrates with local autocomplete:
 
-![A screenshot of emoji colon search]({{page.assets}}emojis.jpg){: width="350"}
+![A screenshot of emoji colon search]({{page.assets}}emojis.jpg){:class="medium"}
 
 Starting a word with colon will provide you with emoji search results in the autocomplete toolbar. This feature can be toggled on and off with the autocomplete settings.
 

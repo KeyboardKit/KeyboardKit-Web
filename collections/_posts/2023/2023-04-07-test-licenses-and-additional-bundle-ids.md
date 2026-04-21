@@ -11,8 +11,6 @@ toot:   https://techhub.social/@keyboardkit/110156343564099701
 
 KeyboardKit Pro 7.3 introduces test and development licenses and additional bundle IDs, which can be added to a base license at a discounted price.
 
-![KeyboardKit logo]({{page.image}})
-
 Ever since it was launched, KeyboardKit Pro has required a separate license for every app. This now changes with the addition of Test Licenses and Additional Bundle IDs. 
 
 

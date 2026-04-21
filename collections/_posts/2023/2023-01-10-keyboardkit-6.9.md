@@ -9,8 +9,6 @@ release-notes: https://github.com/KeyboardKit/KeyboardKit/releases/tag/6.9.0
 
 KeyboardKit 6.9 is out, with many new features, as well as changes and deprecations that will help you prepare for and transition to KeyboardKit 7.0, which will be a big step forward for the library.
 
-![Icon badge]({{page.image}})
-
 
 ## Smoother KeyboardKit 7 transition
 

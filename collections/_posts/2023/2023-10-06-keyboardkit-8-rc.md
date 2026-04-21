@@ -7,9 +7,7 @@ release: https://github.com/KeyboardKit/KeyboardKit/releases/tag/8.0-rc1
 release-pro: https://github.com/KeyboardKit/KeyboardKitPro/releases/tag/8.0-rc1
 ---
 
-KeyboardKit 8 RC 1 is out! This is a huge update with lots of improvements. Let's take a look at what you can expect.
-
-![KeyboardKit logo]({{page.image}})
+KeyboardKit 8 RC 1 is out! This is a huge update with lots of improvements. Let's look at what you can expect.
 
 KeyboardKit 8 is all about cleaning up the library to make it more approachable, better structured and easier to use. It removes previously deprecated code, reorganizes types into namespaces, and removes low-value utilities, including types solely used for DocC documentation exposure.
 
@@ -17,7 +15,7 @@ Central types like `SystemKeyboard` are now easier to use. Passing state and ser
 
 These updates will simplify scaling the library and has helped enabling new features like fading the keyboard buttons while moving the cursor with space. There are many quality of life and bug fixes. Accessibility has been drastically improved for Voice Over and the emoji keyboard is redesigned.
 
-Most emoji features, including the emoji keyboard and emoji category information, are now Pro features. The `SystemKeyboard` automatically removes the emoji key if no custom emoji keyboard is provided in the view builder.
+Most emoji features, including the emoji keyboard and emoji category information, are now Pro features. The `SystemKeyboard` automatically removes the emoji key if no emoji keyboard is provided in the view builder.
 
 The documentation has been extensively updated to provide more information, discussions, code examples, etc. Please report any inconsistencies found, as much is rewritten.
 

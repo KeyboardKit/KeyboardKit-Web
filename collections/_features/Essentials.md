@@ -15,7 +15,7 @@ KeyboardKit lets you create a native, fully customizable [custom keyboard](/term
 
 KeyboardKit has essential models, features and views, and a [KeyboardView]({{page.keyboard-view}}) that mimics the native keyboard.
 
-<div class="grid col2">
+<div class="grid col2 images">
     <span><img src="{{page.assets}}keyboardview-english-callout.jpg" /></span>
     <span><img src="{{page.assets}}keyboardview-swedish-theme.jpg" /></span>
 </div>
@@ -56,7 +56,7 @@ The `Keyboard` namespace defines many core views, like `Keyboard.Button`, toolba
 
 [KeyboardKit Pro][Pro] unlocks more capabilities in each feature, and makes the [KeyboardView]({{page.keyboardview}}) support [{{site.locales.count}} locales](/locales).
 
-<div class="grid col2">
+<div class="grid col2 images">
     <span><img src="{{page.assets}}keyboard-settingsscreen.jpg" /></span>
     <span><img src="{{page.assets}}keyboard-localesettingsscreen.jpg" /></span>
 </div>

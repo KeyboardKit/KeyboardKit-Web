@@ -13,8 +13,6 @@ toot:   https://techhub.social/@keyboardkit/110378499100929879
 
 KeyboardKit 7.6 is out! This release fixes a dictation-related problem when submitting apps to the App Store Connect and has a bunch of dictation and emoji-related features and fixes.
 
-![KeyboardKit logo]({{page.image}})
-
 
 ## Dictation changes
 

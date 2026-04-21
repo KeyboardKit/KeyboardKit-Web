@@ -76,5 +76,3 @@ If you don't have to change your custom keyboards, I suggest that you wait for t
 Also, feel free to continue the discussion in the [main ticket]({{page.ticket}}). I'd love to hear what you think.
 
 Thank you all for using and supporting KeyboardKit!
-
-/Daniel Saidi

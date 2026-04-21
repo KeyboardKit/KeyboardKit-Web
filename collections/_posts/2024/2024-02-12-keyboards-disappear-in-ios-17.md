@@ -11,8 +11,6 @@ feedback: FB13611131
 
 People have started reporting that their custom keyboard extensions have disappeared in iOS 17. This article discusses some concerning findings after investigating this problem.
 
-![KeyboardKit logo]({{page.image}})
-
 Some KeyboardKit users have also reported this problem. When it happens, the keyboard no longer shows up in System Settings or the keyboard switcher.
 
 While investigating the problem, some devices that previously have enabled the keyboard still show it as enabled in the main app, while it doesn't show up anywhere else.
