@@ -2,6 +2,10 @@
 layout: side-menu-page
 ---
 
+<div class="blog-header">
+  <input class="blog-search" type="search" placeholder="Search…" aria-label="Search posts" />
+</div>
+
 <div class="blog">
   {% assign all_tags = "" %}
   {% for post in site.posts %}
@@ -36,7 +40,7 @@ layout: side-menu-page
   {% for post in site.posts %}
     {% assign words = post.content | number_of_words %}
     {% assign read_time = words | divided_by: 200 | plus: 1 %}
-    <article class="blog-post" data-tags="{{ post.tags | join: ',' }}">
+    <article class="blog-post" data-tags="{{ post.tags | join: ',' }}" data-title="{{ post.title | downcase }}" data-excerpt="{{ post.excerpt | strip_html | downcase | truncatewords: 40 }}">
       <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
       <div class="blog-post-meta">
         <span class="blog-post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
