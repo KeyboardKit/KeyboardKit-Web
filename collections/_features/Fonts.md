@@ -5,12 +5,17 @@ hero:
   emoji: 𝒜
 ---
 
-KeyboardKit can apply a custom unicode font to your keyboard, to let users type with custom fonts.
-
-KeyboardKit Pro unlocks custom font capabilities for licenses that include the ``fonts`` feature. This is **NOT** part of the Gold tier, but must be enabled through a custom license agreement.
+KeyboardKit makes it easy to type with custom unicode fonts.
 
 
-## 👑 KeyboardKit Pro
+## Namespace
+
+KeyboardKit defines a `Font` namespace with font-related features and views to let us type with custom fonts.
+
+
+## KeyboardKit Pro
+
+KeyboardKit Pro unlocks custom font capabilities for any license that includes the ``fonts`` feature. This is **NOT** part of the Gold tier, and must be enabled through a [business license](/business-licenses).
 
 [KeyboardKit Pro][Pro] unlocks a font settings screen that can be added to the app or keyboard, in which users can select custom unicode font in a list.
 

@@ -127,6 +127,10 @@ defaults:
       back-link:
         title: Features
         url: /features
+      side-menu-append:
+        - title: Documentation
+          anchor: documentation
+
   -
     scope:
       type: "posts"

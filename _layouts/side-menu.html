@@ -56,6 +56,9 @@ instructions: To customize the side menu, add a "menu" value to the front-matter
                     {% endif %}
                   {% endif %}
                 {% endfor %}
+                {% for item in page.side-menu-append %}
+                  <li><a href="#{{ item.anchor }}">{{ item.title }}</a></li>
+                {% endfor %}
               </ul>
             </nav>
           </section>

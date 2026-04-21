@@ -4,7 +4,7 @@
   group:  core
   color:  blue
   text:   KeyboardKit comes with essential models, features and views.
-  docs:   https://keyboardkit.github.io/KeyboardKit/documentation/keyboardkit/essentials-article
+  docs:   https://docs.keyboardkit.com/documentation/keyboardkit/essentials-article
 
 - title:  Keyboard View
   emoji:  ⌨️
@@ -12,7 +12,7 @@
   group:  system
   color:  green
   text:   KeyboardKit has a native-looking, customizable keyboard view.
-  docs:   https://keyboardkit.github.io/KeyboardKit/documentation/keyboardkit/essentials-keyboardview
+  docs:   https://docs.keyboardkit.com/documentation/keyboardkit/essentials-keyboardview
 
 - title:  Keyboard View
   emoji:  ⌨️
@@ -20,15 +20,15 @@
   group:  ui
   color:  purple
   text:   KeyboardKit has a native-looking, customizable keyboard view.
-  docs:   https://keyboardkit.github.io/KeyboardKit/documentation/keyboardkit/essentials-keyboardview
+  docs:   https://docs.keyboardkit.com/documentation/keyboardkit/essentials-keyboardview
 
-- title:  Languages
+- title:  Localization
   emoji:  🌐
   url:    /features/localization
   group:  core
   color:  blue
   text:   KeyboardKit supports <b>75 locales</b>, with localized assets and layouts.
-  docs:   https://keyboardkit.github.io/KeyboardKit/documentation/keyboardkit/localization-article
+  docs:   https://docs.keyboardkit.com/documentation/keyboardkit/localization-article
   card:   
     tags:
       - pro
@@ -39,7 +39,7 @@
   group:  core
   color:  blue
   text:   KeyboardKit lets you trigger and customize keyboard actions.
-  docs:   https://keyboardkit.github.io/KeyboardKit/documentation/keyboardkit/actions-article
+  docs:   https://docs.keyboardkit.com/documentation/keyboardkit/actions-article
 
 - title:  AI Support
   emoji:  🤖
@@ -47,7 +47,7 @@
   group:  intelligence
   color:  orange
   text:   KeyboardKit Pro unlocks features that are needed for AI keyboards.
-  docs:   https://keyboardkit.github.io/KeyboardKit/documentation/keyboardkit/ai-article
+  docs:   https://docs.keyboardkit.com/documentation/keyboardkit/ai-article
   card:   
     tags:
       - pro
@@ -58,7 +58,7 @@
   group:  system
   color:  green
   text:   KeyboardKit makes it easy to set up great keyboard apps.
-  docs:   https://keyboardkit.github.io/KeyboardKit/documentation/keyboardkit/app-article
+  docs:   https://docs.keyboardkit.com/documentation/keyboardkit/app-article
   card:   
     tags:
       - pro
@@ -69,7 +69,7 @@
   group:  intelligence
   color:  orange
   text:   KeyboardKit Pro unlocks local autocomplete and predictions.
-  docs:   https://keyboardkit.github.io/KeyboardKit/documentation/keyboardkit/autocomplete-article
+  docs:   https://docs.keyboardkit.com/documentation/keyboardkit/autocomplete-article
   card:   
     tags:
       - pro
@@ -80,7 +80,7 @@
   group:  ui
   color:  purple
   text:   KeyboardKit can show input and secondary action callouts.
-  docs:   https://keyboardkit.github.io/KeyboardKit/documentation/keyboardkit/callouts-article
+  docs:   https://docs.keyboardkit.com/documentation/keyboardkit/callouts-article
 
 - title:  Clipboard
   emoji:  📋
@@ -88,7 +88,7 @@
   group:  intelligence
   color:  orange
   text:   KeyboardKit Pro can manage the system clipboard and user clips.
-  docs:   https://keyboardkit.github.io/KeyboardKit/documentation/keyboardkit/clipboard-article
+  docs:   https://docs.keyboardkit.com/documentation/keyboardkit/clipboard-article
   card:   
     tags:
       - pro
@@ -99,7 +99,7 @@
   group:  intelligence
   color:  orange
   text:   KeyboardKit Pro can trigger dictation from the keyboard.
-  docs:   https://keyboardkit.github.io/KeyboardKit/documentation/keyboardkit/dictation-article
+  docs:   https://docs.keyboardkit.com/documentation/keyboardkit/dictation-article
   card:   
     tags:
       - pro
@@ -110,7 +110,7 @@
   group:  system
   color:  green
   text:   KeyboardKit has emojis models, an emoji keyboard, etc.
-  docs:   https://keyboardkit.github.io/KeyboardKit/documentation/keyboardkit/emojis-article
+  docs:   https://docs.keyboardkit.com/documentation/keyboardkit/emojis-article
   card:   
     tags:
       - pro
@@ -121,7 +121,7 @@
   group:  system
   color:  green
   text:   KeyboardKit Pro can detect if an external keyboard is connected.
-  docs:   https://keyboardkit.github.io/KeyboardKit/documentation/keyboardkit/feedback-article
+  docs:   https://docs.keyboardkit.com/documentation/keyboardkit/feedback-article
   card:   
     tags:
       - pro
@@ -132,7 +132,7 @@
   group:  ui
   color:  purple
   text:   KeyboardKit can trigger audio & haptic feedback.
-  docs:   https://keyboardkit.github.io/KeyboardKit/documentation/keyboardkit/feedback-article
+  docs:   https://docs.keyboardkit.com/documentation/keyboardkit/feedback-article
 
 - title:  Fonts
   emoji:  𝒜
@@ -140,7 +140,7 @@
   group:  ui
   color:  purple
   text:   KeyboardKit Pro lets you type with custom unicode fonts.
-  docs:   https://keyboardkit.github.io/KeyboardKit/documentation/keyboardkit/fonts-article
+  docs:   https://docs.keyboardkit.com/documentation/keyboardkit/fonts-article
   card:   
     tags:
       - pro
@@ -151,7 +151,7 @@
   group:  system
   color:  green
   text:   KeyboardKit Pro can identify and open specific applications.
-  docs:   https://keyboardkit.github.io/KeyboardKit/documentation/keyboardkit/host-article
+  docs:   https://docs.keyboardkit.com/documentation/keyboardkit/host-article
   card:   
     tags:
       - pro
@@ -162,7 +162,7 @@
   group:  core
   color:  blue
   text:   KeyboardKit has dynamic and fully customizable layout engine.
-  docs:   https://keyboardkit.github.io/KeyboardKit/documentation/keyboardkit/layout-article
+  docs:   https://docs.keyboardkit.com/documentation/keyboardkit/layout-article
 
 - title:  Navigation
   emoji:  🗺️
@@ -170,7 +170,7 @@
   group:  core
   color:  blue
   text:   KeyboardKit lets you open urls and apps from the keyboard.
-  docs:   https://keyboardkit.github.io/KeyboardKit/documentation/keyboardkit/navigation-article
+  docs:   https://docs.keyboardkit.com/documentation/keyboardkit/navigation-article
 
 - title:  Proxy Utilities
   emoji:  📄
@@ -178,7 +178,7 @@
   group:  intelligence
   color:  orange
   text:   KeyboardKit can access the full document content in more ways.
-  docs:   https://keyboardkit.github.io/KeyboardKit/documentation/keyboardkit/proxy-utilities-article
+  docs:   https://docs.keyboardkit.com/documentation/keyboardkit/proxy-utilities-article
   card:   
     tags:
       - pro
@@ -189,7 +189,7 @@
   group:  system
   color:  green
   text:   KeyboardKit has tools for in-app settings & System Settings.
-  docs:   https://keyboardkit.github.io/KeyboardKit/documentation/keyboardkit/settings-article
+  docs:   https://docs.keyboardkit.com/documentation/keyboardkit/settings-article
   card:   
     tags:
       - pro
@@ -200,7 +200,7 @@
   group:  core
   color:  blue
   text:   KeyboardKit can detect & manage keyboard and Full Access states.
-  docs:   https://keyboardkit.github.io/KeyboardKit/documentation/keyboardkit/status-article
+  docs:   https://docs.keyboardkit.com/documentation/keyboardkit/status-article
 
 - title:  Text Input
   emoji:  📝
@@ -208,7 +208,7 @@
   group:  intelligence
   color:  orange
   text:   KeyboardKit Pro unlocks tools to let you type within the keyboard
-  docs:   https://keyboardkit.github.io/KeyboardKit/documentation/keyboardkit/text-input-article
+  docs:   https://docs.keyboardkit.com/documentation/keyboardkit/input-article
   card:   
     tags:
       - pro
@@ -219,7 +219,7 @@
   group:  ui
   color:  purple
   text:   KeyboardKit lets you design your own beautiful keyboard styles.
-  docs:   https://keyboardkit.github.io/KeyboardKit/documentation/keyboardkit/styling-article
+  docs:   https://docs.keyboardkit.com/documentation/keyboardkit/styling-article
 
 - emoji: 🍭
   title:  Themes
@@ -227,7 +227,7 @@
   group:  ui
   color:  purple
   text:   KeyboardKit Pro unlocks a theme engine with many themes.
-  docs:   https://keyboardkit.github.io/KeyboardKit/documentation/keyboardkit/themes-article
+  docs:   https://docs.keyboardkit.com/documentation/keyboardkit/themes-article
   card:   
     tags:
       - pro

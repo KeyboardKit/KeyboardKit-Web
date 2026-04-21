@@ -95,7 +95,7 @@ h2 {
     img {
       display: block;
       border-radius: var(--radius-glass-panel);
-      box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+      box-shadow: var(--shadow-default);
     }
   }
 
