@@ -4,13 +4,6 @@ description: Identify and open other apps
 
 hero:
   emoji: 🏠
-
-top-message:
-  text: OBS - This feature experiences serious problems in iOS 26.4!
-  type: alert
-  link:
-    text: Read more here.
-    url: /blog/2026/03/02/ios-26-4-host-application-bundle-id-bug
 ---
 
 Some keyboards may need to identify the [host application](/terminology), which is the app that is currently using the keyboard. This is needed to configure or style the keyboard for certain apps.

@@ -1,7 +1,43 @@
 ---
-layout: plain
+layout: side-menu-page
 ---
 
-<div class="wrapper wide">
-  {{ content }}
+<div class="blog">
+  {% assign all_tags = "" %}
+  {% for post in site.posts %}
+    {% for tag in post.tags %}
+      {% unless all_tags contains tag %}
+        {% assign all_tags = all_tags | append: tag | append: "," %}
+      {% endunless %}
+    {% endfor %}
+  {% endfor %}
+  {% assign unique_tags = all_tags | split: "," | sort %}
+
+  <div class="tags">
+    {% for tag in unique_tags %}
+      {% if tag != "" %}
+        <span class="tag">{{ tag }}</span>
+      {% endif %}
+    {% endfor %}
+  </div>
 </div>
+
+<section class="blog-list">
+  {% for post in site.posts %}
+    {% assign words = post.content | number_of_words %}
+    {% assign read_time = words | divided_by: 200 | plus: 1 %}
+    <article class="blog-post">
+      <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+      <div class="blog-post-meta">
+        <span class="blog-post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <span class="blog-post-read-time">{{ read_time }} min read</span>
+        <div class="blog-post-tags">
+          {% for tag in post.tags %}
+            <span class="tag">{{ tag }}</span>
+          {% endfor %}
+        </div>
+      </div>
+      <p class="blog-post-excerpt">{{ post.excerpt | strip_html | truncatewords: 40 }}</p>
+    </article>
+  {% endfor %}
+</section>

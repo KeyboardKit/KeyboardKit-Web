@@ -5,7 +5,8 @@
       "Bash(cat:*)",
       "Bash(bundle exec jekyll build:*)",
       "Bash(sed -n '36,40p' /Users/danielsaidi/Projects/keyboardkit/web/_site/assets/main.css)",
-      "Bash(sed -n '451,456p' /Users/danielsaidi/Projects/keyboardkit/web/_site/assets/main.css)"
+      "Bash(sed -n '451,456p' /Users/danielsaidi/Projects/keyboardkit/web/_site/assets/main.css)",
+      "Bash(grep -v \"^$\")"
     ],
     "deny": [],
     "ask": []

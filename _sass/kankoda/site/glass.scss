@@ -57,6 +57,7 @@ h1, h2, span {
       color: transparent !important;
       -webkit-background-clip: text;
       background-clip: text;
+      padding-bottom: 0.1em;
     }
 
     &.blue { background-image: linear-gradient(180deg, color-mix(in srgb, var(--glass-blue-text) 60%, white), var(--glass-blue-text)); }

@@ -1,12 +1,13 @@
 ---
-eyebrow: KeyboardKit
 title: Features
 title-color: blue
-menu:
-  title: Features
+eyebrow: KeyboardKit
 intro: KeyboardKit has many features.<br />Upgrade to <a href="/pro" class="pro">KeyboardKit Pro</a> to unlock powerful pro features.
 permalink: /features
 layout: side-menu-page
+
+menu:
+  title: Features
 
 image: /assets/headers/features.jpg
 
