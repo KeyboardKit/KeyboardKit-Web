@@ -1,7 +1,7 @@
 ---
+eyebrow: KeyboardKit
 title: Case Studies
 title-color: purple
-eyebrow: KeyboardKit
 intro: Below are some apps & products that use KeyboardKit.
 permalink: /case-studies
 layout: page

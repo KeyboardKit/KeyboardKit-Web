@@ -41,6 +41,7 @@
 
 .blog.page-content h1 {
   font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: 1.1rem;
 }
 
 .blog.page-content .blog-post-meta {
@@ -67,7 +68,7 @@
     display: flex;
     align-items: center;
     gap: 0.75rem;
-    margin-bottom: 0.75rem;
+    margin-bottom: 1.25rem;
     color: rgba(0, 0, 0, var(--opacity-secondary));
   }
 
