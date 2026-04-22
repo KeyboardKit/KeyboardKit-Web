@@ -1,0 +1,14 @@
+- title: What is a custom keyboard?
+  text:  A custom keyboard is...
+
+- title: What is KeyboardKit?
+  text:  KeyboardKit is a comprehensive Swift SDK that helps developers build custom keyboards for iOS and iPadOS. It provides all the tools you need including autocomplete, autocorrect, emoji support, and much more.
+  
+- title: Do I need prior experience with keyboard development?
+  text:  While some iOS development experience is helpful, KeyboardKit is designed to be beginner-friendly. Our comprehensive documentation and examples will help you get started quickly.
+
+- title: Which languages are supported?
+  text:  KeyboardKit supports [75+ locales](/locales) out of the box. You can also add support for additional languages.
+
+- title: Can I use KeyboardKit for commercial projects?
+  text:  Yes! KeyboardKit offers different licensing options including commercial licenses. Check our pricing page for more details on which plan suits your needs.
