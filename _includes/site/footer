@@ -41,8 +41,9 @@
       </div>
 
       <div class="column">
-        <p class="toggle">Social</p>
+        <p class="toggle">Contact</p>
         <div class="content">
+          <a href="/contact">Contact</a>
           <a href="{{site.urls.email}}">E-mail</a>
           <a href="{{site.urls.bluesky}}">Bluesky</a>
           <a href="{{site.urls.mastodon}}">Mastodon</a>
