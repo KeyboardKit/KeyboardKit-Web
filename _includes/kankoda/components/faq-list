@@ -1,0 +1,9 @@
+{% assign faq_items = include.items %}
+<div class="faq-list">
+  {% for item in faq_items %}
+  <details class="faq-item">
+    <summary class="faq-item-title">{{ item.title }}</summary>
+    <div class="faq-item-body">{{ item.text | markdownify }}</div>
+  </details>
+  {% endfor %}
+</div>

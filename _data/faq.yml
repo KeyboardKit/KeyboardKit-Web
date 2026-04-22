@@ -1,14 +1,70 @@
-- title: What is a custom keyboard?
-  text:  A custom keyboard is...
+- tag: custom-keyboards
+  title: What is a custom keyboard?
+  text: A custom keyboard is a third-party keyboard extension that can replace the native iOS keyboard. It lets users type using your app's unique features in any app that supports text input.
 
-- title: What is KeyboardKit?
-  text:  KeyboardKit is a comprehensive Swift SDK that helps developers build custom keyboards for iOS and iPadOS. It provides all the tools you need including autocomplete, autocorrect, emoji support, and much more.
-  
-- title: Do I need prior experience with keyboard development?
-  text:  While some iOS development experience is helpful, KeyboardKit is designed to be beginner-friendly. Our comprehensive documentation and examples will help you get started quickly.
+- tag: custom-keyboards
+  title: Can custom keyboards access the internet?
+  text: By default, custom keyboards run in a sandboxed environment without network access. Users can grant "Full Access" to enable network features, but this requires explicit permission and must be disclosed in your privacy policy.
 
-- title: Which languages are supported?
-  text:  KeyboardKit supports [75+ locales](/locales) out of the box. You can also add support for additional languages.
+- tag: custom-keyboards
+  title: Are custom keyboards available on all Apple platforms?
+  text: Custom keyboards are supported on iOS and iPadOS. They are not supported on macOS, watchOS, or tvOS, where the native system input methods apply, but these platforms can be used to create companion apps for e.g. settings.
 
-- title: Can I use KeyboardKit for commercial projects?
-  text:  Yes! KeyboardKit offers different licensing options including commercial licenses. Check our pricing page for more details on which plan suits your needs.
+- tag: custom-keyboards
+  title: Can a custom keyboard replace the system keyboard entirely?
+  text: Yes! Once a user installs and enables your keyboard in Settings, they can set it as their default keyboard and use it in any app that accepts text input.
+
+
+- tag: keyboardkit
+  title: What is KeyboardKit?
+  text: KeyboardKit is a comprehensive Swift SDK that helps developers build custom keyboards for iOS and iPadOS. It provides all the tools you need including autocomplete, autocorrect, emoji support, and much more.
+
+- tag: keyboardkit
+  title: Do I need prior experience with keyboard development?
+  text: While some iOS development experience is helpful, KeyboardKit is designed to be beginner-friendly. Our comprehensive documentation and examples will help you get started quickly.
+
+- tag: keyboardkit
+  title: Which languages are supported?
+  text: KeyboardKit supports [75+ locales](/locales) out of the box, with locale-specific autocomplete, spell checking, and keyboard layouts. You can also add support for additional languages.
+
+- tag: keyboardkit
+  title: Is KeyboardKit open source?
+  text: The KeyboardKit SDK is closed source, but freely available from [GitHub](/github). KeyboardKit Pro, which adds advanced features like autocomplete and more locales, requires a commercial license.
+
+- tag: keyboardkit
+  title: How do I get started?
+  text: Add KeyboardKit to your project via Swift Package Manager, then follow the [getting started guide](/getting-started). You can be up and running in minutes.
+
+
+- tag: licensing
+  title: What is the difference between KeyboardKit and KeyboardKit Pro?
+  text: KeyboardKit is the free, core SDK. KeyboardKit Pro is a commercial add-on that unlocks advanced features like autocomplete, AI support, more locales, dictation, and more. See [KeyboardKit Pro](/pro) for more information.
+
+- tag: licensing
+  title: Can I use KeyboardKit for commercial projects?
+  text: Yes! KeyboardKit offers different licensing options including commercial licenses. Check our [pricing page](/pricing) for more details on which plan suits your needs.
+
+- tag: licensing
+  title: Can I try KeyboardKit Pro before purchasing?
+  text: Yes! You can try all pro features for free using a trial license. The [KeyboardKit app](/app) also lets you explore all pro features on your device without writing any code.
+
+- tag: licensing
+  title: Do licenses auto-renew?
+  text: Subscription licenses renew automatically. You can cancel at any time from your Gumroad purchase page. [Business licenses](/business) renew annually as defined in the license terms.
+
+- tag: licensing
+  title: Can I use one license for multiple apps?
+  text: License terms vary by plan. Most plans cover a single app. If you need to use KeyboardKit across multiple apps or products, please [contact us](/contact) to discuss a suitable arrangement.
+
+
+- tag: privacy
+  title: Does KeyboardKit collect any user data?
+  text: No. KeyboardKit does not collect, store, or transmit any user data. All processing happens on-device. See the [privacy policy](/privacy) for details.
+
+- tag: privacy
+  title: Does using KeyboardKit require Full Access?
+  text: No. KeyboardKit works without Full Access although some advanced features like dictation or network-based autocomplete require Full Access, but this is always disclosed to the user.
+
+- tag: privacy
+  title: Is KeyboardKit compliant with App Store guidelines?
+  text: Yes. KeyboardKit is designed to follow Apple's guidelines for keyboard extensions, and is ready for App Store distribution.

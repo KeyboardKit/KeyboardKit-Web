@@ -13,10 +13,10 @@ Custom iOS keyboards provide a unique way to use functionality from your app in 
 
 ## What is a custom keyboard?
 
-A custom iOS [keyboard extension]({{site.urls.terminology}}) is an app extension that you ship together with your app. It can replace the system keyboard in any app, by using the 🌐 key while typing, and use your app's content and features.
+A custom iOS [keyboard extension](/terminology) is an app extension that you ship together with your app. It can replace the system keyboard in any app, by using the 🌐 key while typing, and use your app's content and features.
 
-See the [terminology]({{site.urls.terminology}}) page for a list of common terms and concepts that are involved with custom keyboards,
-and our [FAQ]({{site.urls.faq}}) for frequently asked questions.
+See the [terminology](/terminology) page for a list of common terms and concepts that are involved with custom keyboards,
+and our [FAQ](/faq) for frequently asked questions.
 
 
 ## What is KeyboardKit?
@@ -28,14 +28,14 @@ KeyboardKit is a software framework that lets you create custom keyboards and ke
 
 Custom keyboards can render any user interface in the system keyboard content area. A custom keyboard can resize this area to fit its content, and render any custom view.
 
-Custom keyboards use a [text document proxy]({{site.urls.terminology}}) to interact with the active app. The proxy can read and write text, move the input cursor, etc. By requesting [Full Access]({{site.urls.terminology}}), a keyboard unlocks more capabilities, like network access.
+Custom keyboards use a [text document proxy](/terminology) to interact with the active app. The proxy can read and write text, move the input cursor, etc. By requesting [Full Access](/terminology), a keyboard unlocks more capabilities, like network access.
 
 
 ## What can a custom keyboard *not* do?
 
-Apple puts massive restrictions on what custom keyboards can do. For instance, a custom keyboard can't draw outside its bounds, and can only send text and basic commands to the [active app]({{site.urls.terminology}}).
+Apple puts massive restrictions on what custom keyboards can do. For instance, a custom keyboard can't draw outside its bounds, and can only send text and basic commands to the [active app](/terminology).
 
-Keyboard extensions must also open the [main app]({{site.urls.terminology}}) to perform certain actions, like using the device microphone to perform dictation, and are [memory capped]({{site.urls.terminology}}) at ~70 MB (depending on device & OS).
+Keyboard extensions must also open the [main app](/terminology) to perform certain actions, like using the device microphone to perform dictation, and are [memory capped](/terminology) at ~70 MB (depending on device & OS).
 
 
 ## Why use KeyboardKit?

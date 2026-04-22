@@ -62,7 +62,7 @@ header:
   title: KeyboardKit
   icon: /assets/icon/header.png
   pages:
-    - pages/about/about.md
+    - pages/about.md
     - pages/features.md
     - pages/blog.md
     - pages/pricing.md
@@ -70,8 +70,8 @@ header:
 footer:
   sitemap:
     - index.html
-    - pages/about/about.md
-    - pages/about/faq.md
+    - pages/about.md
+    - pages/faq.md
     - pages/features.md
     - pages/app/app.md
     - pages/case-studies.md
