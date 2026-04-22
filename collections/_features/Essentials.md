@@ -9,7 +9,7 @@ keyboard-view: /features/essentials-keyboardview
 
 KeyboardKit extends Apple's limited keyboard APIs with a lot more features than what is otherwise available.
 
-KeyboardKit lets you create a native, fully customizable [custom keyboard](/terminology) with just a few lines of code, and will automatically set up things like App Group settings sync, locales, dictation, etc.
+KeyboardKit lets you create a native, fully customizable [custom keyboard]({{site.urls.terminology}}) with just a few lines of code, and will automatically set up things like App Group settings sync, locales, dictation, etc.
 
 ## Core Features
 

@@ -1,6 +1,6 @@
 ---
-eyebrow: The Official
-title: KeyboardKit App
+eyebrow: KeyboardKit
+title: App
 title-color: purple
 layout: side-menu-page
 permalink: /app

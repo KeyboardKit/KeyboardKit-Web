@@ -34,8 +34,10 @@ urls:
   rss:        https://keyboardkit.com/feed.xml
 
   business:     /business-licenses
+  faq:          /faq
   case-studies: /case-studies
   escrow:       /features/escrow
+  terminology:  /terminology
 
   appstore:   https://itunes.apple.com/app/keyboardkit/id1568444977
   blog:       /blog
@@ -60,6 +62,7 @@ header:
   title: KeyboardKit
   icon: /assets/icon/header.png
   pages:
+    - pages/about/about.md
     - pages/features.md
     - pages/blog.md
     - pages/pricing.md
@@ -68,6 +71,7 @@ footer:
   sitemap:
     - index.html
     - pages/about/about.md
+    - pages/about/faq.md
     - pages/features.md
     - pages/app/app.md
     - pages/case-studies.md

@@ -6,7 +6,7 @@ hero:
   emoji: 🏠
 ---
 
-Some keyboards may need to identify the [host application](/terminology), which is the app that is currently using the keyboard. This is needed to configure or style the keyboard for certain apps.
+Some keyboards may need to identify the [host application]({{site.urls.terminology}}), which is the app that is currently using the keyboard. This is needed to configure or style the keyboard for certain apps.
 
 
 ## Host Bundle ID
