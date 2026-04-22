@@ -1,16 +1,3 @@
-// Typography
-
-section {
-  &.hero, &.showcase {
-    .wrapper > p {
-      max-width: 40rem;
-      font-size: 1.2em;
-      font-weight: 300;
-    }
-  }
-}
-
-
 // Hero
 
 section.hero {

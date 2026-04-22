@@ -53,7 +53,7 @@ details[open] .faq-item-title::after {
   color: rgba(255, 255, 255, 0.92);
   box-shadow: 0 8px 32px rgba(120, 40, 200, 0.3);
 
-  a { color: rgba(220, 200, 255, 0.95); }
+  a, a:hover, a:visited { color: rgba(255, 255, 255, 0.92) !important; }
   > p:first-child { margin-top: 0; }
   > p:last-child  { margin-bottom: 0; }
 }

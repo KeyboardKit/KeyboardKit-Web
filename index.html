@@ -112,9 +112,25 @@ description: The KeyboardKit SDK lets you create amazing custom keyboards for Ap
   </article>
 
   <article class="wrapper wide slide-in">
+    <h2>Industries</h2>
+    <p>KeyboardKit powers innovation across a wide range of industries and use cases.</p>
+    <div class="grid col4 carousel mobile">
+      {% assign featured_industries = site.data.industries | where: "featured", true %}
+      {% for industry in featured_industries %}
+      <div class="glass compact">
+        {% include kankoda/components/icon-badge color="blue" name=industry.icon %}
+        <h4>{{ industry.title }}</h4>
+        <p>{{ industry.text }}</p>
+      </div>
+      {% endfor %}
+    </div>
+    <a href="/industries" class="cta">Explore Industries</a>
+  </article>
+
+  <article class="wrapper wide slide-in">
     <h2>Success Stories</h2>
     <p>See how developers build successful keyboard apps with KeyboardKit.</p>
-    <div class="grid col3">
+    <div class="grid col3 mobile carousel">
       {% for item in site.case-studies limit:3 | where: "featured", 1 %}
         {% include kankoda/components/image-card item=item %}
       {% endfor %}
