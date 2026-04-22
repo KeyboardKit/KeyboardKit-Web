@@ -6,24 +6,23 @@ div.tag {
   justify-content: center;
   gap: 0.35rem;
   width: fit-content;
-  padding: 0.45rem 0.8rem;
-  border: 1px solid var(--color-bg-dark);
+  min-width: 2.5rem;
+  padding: 0.3rem 0.8rem 0.4rem;
   border-radius: var(--radius-tag);
   background: var(--color-bg-dark);
   color: var(--color-text-dark);
   font-size: 0.9rem;
-  line-height: 1;
   letter-spacing: 0.02em;
   text-decoration: none;
   white-space: nowrap;
 
-  &.blue   { background: var(--glass-blue-bg);   border-color: var(--glass-blue-bg);   color: var(--glass-blue-text); }
-  &.green  { background: var(--glass-green-bg);  border-color: var(--glass-green-bg);  color: var(--glass-green-text); }
-  &.yellow { background: var(--glass-yellow-bg); border-color: var(--glass-yellow-bg); color: var(--glass-yellow-text); }
-  &.orange { background: var(--glass-orange-bg); border-color: var(--glass-orange-bg); color: var(--glass-orange-text); }
-  &.red    { background: var(--glass-red-bg);    border-color: var(--glass-red-bg);    color: var(--glass-red-text); }
-  &.purple { background: var(--glass-purple-bg); border-color: var(--glass-purple-bg); color: var(--glass-purple-text); }
+  &.blue   { background: var(--glass-blue-bg);   color: var(--glass-blue-text); }
+  &.green  { background: var(--glass-green-bg);  color: var(--glass-green-text); }
+  &.yellow { background: var(--glass-yellow-bg); color: var(--glass-yellow-text); }
+  &.orange { background: var(--glass-orange-bg); color: var(--glass-orange-text); }
+  &.red    { background: var(--glass-red-bg);    color: var(--glass-red-text); }
+  &.purple { background: var(--glass-purple-bg); color: var(--glass-purple-text); }
 
-  &.pro { background: gold; border-color: orange; color: var(--color-text); }
-  &.releases  { background: var(--glass-blue-bg); border-color: var(--glass-blue-bg);   color: var(--glass-blue-text); }
+  &.pro       { background: gold; color: var(--color-text); }
+  &.releases  { background: var(--glass-blue-bg); color: var(--glass-blue-text); }
 }
