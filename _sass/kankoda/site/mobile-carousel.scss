@@ -13,10 +13,13 @@
     overflow-x: auto;
     overscroll-behavior-x: contain;
     padding:
+      var(--mobile-carousel-vertical-space, var(--mobile-carousel-shadow-space))
       var(--mobile-carousel-shadow-space)
-      var(--mobile-carousel-shadow-space)
-      calc(var(--mobile-carousel-shadow-space) + var(--mobile-carousel-padding-bottom));
-    margin: calc(-1 * var(--mobile-carousel-shadow-space));
+      calc(var(--mobile-carousel-vertical-space, var(--mobile-carousel-shadow-space)) + var(--mobile-carousel-padding-bottom))
+      var(--mobile-carousel-shadow-space);
+    margin-left: calc(-1 * var(--mobile-carousel-shadow-space));
+    margin-top: calc(-1 * var(--mobile-carousel-vertical-pull, 0rem));
+    margin-bottom: calc(-1 * var(--mobile-carousel-vertical-pull, 0rem));
     scroll-snap-type: x proximity;
     scroll-padding-inline: var(--mobile-carousel-shadow-space);
     -webkit-overflow-scrolling: touch;
@@ -24,6 +27,7 @@
     > * {
       scroll-snap-align: start;
     }
+
   }
 
   :where(article, div, main, section):has(> .mobile-carousel) {
@@ -37,13 +41,20 @@
     --mobile-carousel-shadow-space: 1.5rem;
   }
 
+  .grid.mobile-carousel.images {
+    --mobile-carousel-shadow-space: 1.5rem;
+    --mobile-carousel-vertical-space: 1.75rem;
+    --mobile-carousel-vertical-pull: 1.5rem;
+    --mobile-carousel-padding-bottom: 0rem;
+  }
+
   @container mobile-carousel (max-width: 90rem) {
     .grid.mobile-carousel.col5 {
       @include mobile-carousel-active;
     }
   }
 
-  @container mobile-carousel (max-width: 72rem) {
+  @container mobile-carousel (max-width: 52rem) {
     .grid.mobile-carousel.col4 {
       @include mobile-carousel-active;
     }

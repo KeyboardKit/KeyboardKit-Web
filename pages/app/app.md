@@ -22,7 +22,7 @@ The [KeyboardKit app]({{site.urls.appstore}}) lets you use KeyboardKit directly 
 
 The KeyboardKit app uses [KeyboardKit Pro](/pro) to enable all [pro](/pro) features, like autocomplete, dictation, fonts, etc.
 
-<div class="grid col4 images">
+<div class="grid col4 images mobile-carousel">
     <img src="{{page.assets}}screenshot-2.jpg" />
     <img src="{{page.assets}}screenshot-3.jpg" />
     <img src="{{page.assets}}screenshot-4.jpg" />
