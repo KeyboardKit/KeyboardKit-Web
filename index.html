@@ -88,26 +88,13 @@ description: The KeyboardKit SDK lets you create amazing custom keyboards for Ap
     <h2>Why Choose KeyboardKit?</h2>
     <p>KeyboardKit is the top choice for developers building custom keyboards.</p>
     <div class="grid col4 carousel mobile">
+      {% for usp in site.data.usps %}
       <div class="glass">
-        {% include kankoda/components/icon-badge color="orange" name="lucide:zap" %}
-        <h4>Lightning Fast</h4>
-        <p>Minimal latency for instant user feedback.</p>
+        {% include kankoda/components/icon-badge color=usp.color name=usp.icon %}
+        <h4>{{ usp.title }}</h4>
+        <p>{{ usp.text }}</p>
       </div>
-      <div class="glass">
-        {% include kankoda/components/icon-badge color="green" name="lucide:shield" %}
-        <h4>Secure & Private</h4>
-        <p>On-device processing ensures user & data privacy.</p>
-      </div>
-      <div class="glass">
-        {% include kankoda/components/icon-badge color="blue" name="lucide:globe" %}
-        <h4>Multi-language</h4>
-        <p>Support for <a href="/features/localization">{{site.locales.count}} locales</a> and fully localized features.</p>
-      </div>
-      <div class="glass">
-        {% include kankoda/components/icon-badge color="purple" name="lucide:tablet-smartphone" %}
-        <h4>Swift & SwiftUI</h4>
-        <p>Native iOS following Apple's design guidelines.</p>
-      </div>
+      {% endfor %}
     </div>
   </article>
 

@@ -1,0 +1,19 @@
+- color: orange
+  icon: lucide:zap
+  title: Lightning Fast
+  text: Minimal latency for instant user feedback.
+
+- color: green
+  icon: lucide:shield
+  title: Secure & Private
+  text: On-device processing ensures user & data privacy.
+
+- color: blue
+  icon: lucide:globe
+  title: Multi-language
+  text: Support for <a href="/features/localization">75+ locales</a> and fully localized features.
+
+- color: purple
+  icon: lucide:tablet-smartphone
+  title: Swift & SwiftUI
+  text: Native iOS following Apple's design guidelines.
