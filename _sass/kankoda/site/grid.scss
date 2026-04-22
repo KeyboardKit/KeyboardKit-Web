@@ -9,6 +9,7 @@
   &.col3 { grid-template-columns: repeat(3, 1fr); }
   &.col4 { grid-template-columns: repeat(4, 1fr); }
   &.col5 { grid-template-columns: repeat(5, 1fr); }
+  &.col6 { grid-template-columns: repeat(6, 1fr); }
 
   &.spaced { margin: 3em 0; }
 

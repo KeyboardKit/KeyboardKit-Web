@@ -1,75 +1,8 @@
-<ul>
-    <li>🇺🇸 English (Default)</li>
-    <li>🇦🇱 Albanian</li>
-    <li>🇦🇪 Arabic</li>
-    <li>🇦🇲 Armenian</li>
-    <li>🇧🇾 Belarusian</li>
-    <li>🇧🇬 Bulgarian</li>
-    <li>🇦🇩 Catalan</li>
-    <li>🏳️ Cherokee</li>
-    <li>🏳️ Chuvash</li>
-    <li>🇭🇷 Croatian</li>
-    <li>🇨🇿 Czech</li>
-    <li>🇩🇰 Danish</li>
-    <li>🇳🇱 Dutch</li>
-    <li>🇧🇪 Dutch (Belgium)</li>
-    <li>🇦🇺 English (Australia)</li>
-    <li>🇨🇦 English (Canada)</li>
-    <li>🇬🇧 English (United Kingdom)</li>
-    <li>🇺🇸 English (United States)</li>
-    <li>🇪🇪 Estonian</li>
-    <li>🇫🇴 Faroese</li>
-    <li>🇵🇭 Filipino</li>
-    <li>🇫🇮 Finnish</li>
-    <li>🇫🇷 French</li>
-    <li>🇨🇦 French (Canada)</li>
-    <li>🇧🇪 French (Belgium)</li>
-    <li>🇨🇭 French (Switzerland)</li>
-    <li>🇬🇪 Georgian</li>
-    <li>🇩🇪 German</li>
-    <li>🇦🇹 German (Austria)</li>
-    <li>🇨🇭 German (Switzerland)</li>
-    <li>🇬🇷 Greek</li>
-    <li>🇺🇸 Hawaiian</li>
-    <li>🇮🇱 Hebrew (Israel)</li>
-    <li>🇭🇺 Hungarian</li>
-    <li>🇮🇸 Icelandic</li>
-    <li>🏳️ Inari Sami</li>
-    <li>🇮🇩 Indonesian</li>
-    <li>🇮🇪 Irish (Ireland)</li>
-    <li>🇮🇹 Italian</li>
-    <li>🇰🇿 Kazakh</li>
-    <li>🇹🇯 Kurdish, Sorani</li>
-    <li>🇹🇯 Kurdish, Sorani (Iraq)</li>
-    <li>🇹🇯 Kurdish, Sorani (PC)</li>
-    <li>🇱🇻 Latvian</li>
-    <li>🇱🇹 Lithuanian</li>
-    <li>🇲🇰 Macedonian</li>
-    <li>🇲🇾 Malay</li>
-    <li>🇲🇹 Maltese</li>
-    <li>🇲🇳 Mongolian</li>
-    <li>🏳️ North Sámi</li>
-    <li>🇳🇴 Norwegian Bokmål</li>
-    <li>🇳🇴 Norwegian Nynorsk</li>
-    <li>🇮🇷 Persian</li>
-    <li>🇵🇱 Polish</li>
-    <li>🇵🇹 Portuguese (Portugal)</li>
-    <li>🇧🇷 Portuguese (Brazil)</li>
-    <li>🇷🇴 Romanian</li>
-    <li>🇷🇺 Russian</li>
-    <li>🇷🇸 Serbian</li>
-    <li>🇷🇸 Serbian (Latin)</li>
-    <li>🇹🇯 Shughni Tajik</li>
-    <li>🇸🇰 Slovak</li>
-    <li>🇸🇮 Slovenian</li>
-    <li>🇪🇸 Spanish</li>
-    <li>🇦🇷 Spanish (Latin America)</li>
-    <li>🇲🇽 Spanish (Mexico)</li>
-    <li>🇸🇪 Swedish</li>
-    <li>🇰🇪 Swahili</li>
-    <li>🇹🇷 Turkish</li>
-    <li>🇺🇦 Ukrainian</li>
-    <li>🇺🇿 Uzbek</li>
-    <li>🇻🇳 Vietnamese (TELEX, VIQR, VNI)</li>
-    <li>🏴󠁧󠁢󠁷󠁬󠁳󠁿 Welsh</li>
-</ul>
+<div class="grid col6">
+  {% for locale in site.data.locales %}
+  <div class="glass compact">
+    <div class="locale-flag">{{ locale.flag }}</div>
+    <div class="locale-name">{{ locale.name }}</div>
+  </div>
+  {% endfor %}
+</div>
