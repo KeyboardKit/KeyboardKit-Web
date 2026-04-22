@@ -40,7 +40,7 @@ The app also has some unique features that are not yet added to the SDK, such as
 
 ## Privacy Policy
 
-Just like the KeyboardKit SDK, the KeyboardKit app does not collect any data. Read more in the [privacy policy](/app/privacy-policy).
+Just like the KeyboardKit SDK, the KeyboardKit app does not collect any data. Read more in the [privacy policy](/app/privacy).
 
 
 ## Download

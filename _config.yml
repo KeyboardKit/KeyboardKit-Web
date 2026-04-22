@@ -134,7 +134,6 @@ defaults:
         url: /features
       side-menu-append:
         - title: Documentation
-          anchor: documentation
 
   -
     scope:
