@@ -1,4 +1,5 @@
-- tag: custom-keyboards
+- featured: 1
+  tag: custom-keyboards
   title: What is a custom keyboard?
   text: A custom keyboard is a third-party keyboard extension that can replace the native iOS keyboard. It lets users type using your app's unique features in any app that supports text input.
 
@@ -15,7 +16,8 @@
   text: Yes! Once a user installs and enables your keyboard in Settings, they can set it as their default keyboard and use it in any app that accepts text input.
 
 
-- tag: keyboardkit
+- featured: 1
+  tag: keyboardkit
   title: What is KeyboardKit?
   text: KeyboardKit is a comprehensive Swift SDK that helps developers build custom keyboards for iOS and iPadOS. It provides all the tools you need including autocomplete, autocorrect, emoji support, and much more.
 
@@ -23,7 +25,8 @@
   title: Do I need prior experience with keyboard development?
   text: While some iOS development experience is helpful, KeyboardKit is designed to be beginner-friendly. Our comprehensive documentation and examples will help you get started quickly.
 
-- tag: keyboardkit
+- featured: 1
+  tag: keyboardkit
   title: Which languages are supported?
   text: KeyboardKit supports [75+ locales](/locales) out of the box, with locale-specific autocomplete, spell checking, and keyboard layouts. You can also add support for additional languages.
 
@@ -40,7 +43,8 @@
   title: What is the difference between KeyboardKit and KeyboardKit Pro?
   text: KeyboardKit is the free, core SDK. KeyboardKit Pro is a commercial add-on that unlocks advanced features like autocomplete, AI support, more locales, dictation, and more. See [KeyboardKit Pro](/pro) for more information.
 
-- tag: licensing
+- featured: 1
+  tag: licensing
   title: Can I use KeyboardKit for commercial projects?
   text: Yes! KeyboardKit offers different licensing options including commercial licenses. Check our [pricing page](/pricing) for more details on which plan suits your needs.
 
@@ -57,7 +61,8 @@
   text: License terms vary by plan. Most plans cover a single app. If you need to use KeyboardKit across multiple apps or products, please [contact us](/contact) to discuss a suitable arrangement.
 
 
-- tag: privacy
+- featured: 1
+  tag: privacy
   title: Does KeyboardKit collect any user data?
   text: No. KeyboardKit does not collect, store, or transmit any user data. All processing happens on-device. See the [privacy policy](/privacy) for details.
 

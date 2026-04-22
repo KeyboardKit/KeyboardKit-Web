@@ -1,7 +1,7 @@
 ---
 eyebrow: About
 title: FAQ
-title-color: green
+title-color: purple
 layout: side-menu-page
 permalink: /faq
 
