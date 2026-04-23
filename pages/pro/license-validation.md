@@ -18,3 +18,10 @@ KeyboardKit will automatically cache successful license validations to handle te
 ## On-Device License Validation
 
 All [business licenses](/business) are validated on-device, without need for Full Access. These licenses are delivered on a file that automatically unlocks KeyboardKit Pro when you add it to your app.
+
+
+## License Files
+
+A KeyboardKit license file is a binary file that can be added to your app to enable KeyboardKit. Just add and link it to the main app target and its keyboard extension, and KeyboardKit will use it to register your license.
+
+You will get a new license file after renewing your license. Until then, all license validation will be performed on device, with no need to call an external license service.

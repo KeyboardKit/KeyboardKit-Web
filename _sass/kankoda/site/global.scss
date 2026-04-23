@@ -45,7 +45,7 @@ h1 {
 
 h2 {
   font-size: clamp(1.6rem, 3vw, 2.4rem);
-  margin-top: clamp(2rem, 4vw, 3.5rem);
+  margin-top: clamp(2.5rem, 8vw, 4.5rem);
   margin-bottom: clamp(0.75rem, 1.5vw, 1.25rem);
 }
 
@@ -58,13 +58,13 @@ p {
 }
 
 
-// Wrapper
+// Wrappers
 
 .wrapper {
   max-width: var(--wrapper-width);
   margin-left: auto;
   margin-right: auto;
-  padding: 0 2rem;
+  padding: 0 clamp(1rem, 4vw, 2rem);
 
   &.narrow {
     max-width: var(--wrapper-width-narrow);
@@ -72,6 +72,10 @@ p {
 
   &.wide {
     max-width: var(--wrapper-width-wide);
+  }
+
+  &.centered {
+    text-align: center;
   }
 }
 
@@ -128,7 +132,7 @@ img.medium {
   > p,
   > div.images {
     img {
-      display: block;
+      
       border-radius: var(--radius-glass-panel);
       box-shadow: var(--shadow-default);
     }
@@ -143,7 +147,7 @@ img.medium {
     width: 100%;
   }
 
-  > p:has(> img.medium:only-child) {
+  > p:has(> img:only-child) {
     display: flex;
     justify-content: center;
   }

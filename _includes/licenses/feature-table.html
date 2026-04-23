@@ -1,53 +1,59 @@
 <section class="feature-table">
-  TODO: TIERS
-  
   <div class="sections">
-    <div class="glass">
-      TODO ROW title="Languages"   columns="1,5,<a href='/features/localization'>&nbsp;75&nbsp;</a>,<a href='/features/localization'>&nbsp;75&nbsp;</a>"  url="/features/localization"  tooltip="KeyboardKit Pro unlocks fully localized keyboards and services for all locales."
+    <div class="grid glass tiers header">
+        <div class="feature"></div>
+        {% for tier in include.tiers %}
+        <div class="tier-heading {{tier.name | downcase}}">
+            <h3>{{tier.name}}</h3>
+        </div>
+        {% endfor %}
     </div>
     <div class="glass">
-      TODO ROW title="iOS"            columns="✔,✔,✔,✔"          url="/features/platforms"  tooltip="KeyboardKit is available on iOS."
-      TODO ROW title="Multiplatform"  columns="-,-,✔,✔"          url="/features/platforms"  tooltip="KeyboardKit Pro is available on all major Apple platforms."
-      TODO ROW title="Android"        columns="TBD,TBD,TBD,TBD"  url="/features/platforms"  tooltip="KeyboardKit Pro is not yet available on Android."
+      {% include kankoda/licenses/feature-table-row title="Languages"   columns="1,5,<a href='/features/localization'><b>75</b></a>,<a href='/features/localization'><b>75</b></a>"  url="/features/localization"  tooltip="KeyboardKit Pro unlocks fully localized keyboards and services for all locales." %}
     </div>
     <div class="glass">
-      TODO ROW title="Autocomplete"        columns="✔,✔,✔,✔"  url="/features/autocomplete"  tooltip="Unlock autocomplete & auocorrect for the languages in your license."
-      TODO ROW title="Autocorrect"         columns="✔,✔,✔,✔"  url="/features/autocomplete"  tooltip="Unlock autocomplete & auocorrect for the languages in your license."
-      TODO ROW title="Layout Utilities"    columns="✔,✔,✔,✔"  url="/features/layout"        tooltip="Unlock additional layout capabilities that make it easier to customize your layouts."
+      {% include kankoda/licenses/feature-table-row title="iOS"            columns="✔,✔,✔,✔"          url="/features/platforms"  tooltip="KeyboardKit is available on iOS." %}
+      {% include kankoda/licenses/feature-table-row title="Multiplatform"  columns="-,-,✔,✔"          url="/features/platforms"  tooltip="KeyboardKit Pro is available on all major Apple platforms." %}
+      {% include kankoda/licenses/feature-table-row title="Android"        columns="TBD,TBD,TBD,TBD"  url="/features/platforms"  tooltip="KeyboardKit Pro is not yet available on Android." %}
     </div>
     <div class="glass">
-      TODO ROW title="AI Support"          columns="-,✔,✔,✔"  url="/features/ai"               tooltip="Unlock tools that support implementing AI-based features."
-      TODO ROW title="Document Reader"     columns="-,✔,✔,✔"  url="/features/proxy-utilities"  tooltip="Unlock ways to read the entire text document, instead of just the text next to the cursor."
-      TODO ROW title="In-keyboard Typing"  columns="-,✔,✔,✔"  url="/features/text-input"       tooltip="Unlock text fields that can let you type within the keyboard."
+      {% include kankoda/licenses/feature-table-row title="Autocomplete"        columns="✔,✔,✔,✔"  url="/features/autocomplete"  tooltip="Unlock autocomplete & auocorrect for the languages in your license." %}
+      {% include kankoda/licenses/feature-table-row title="Autocorrect"         columns="✔,✔,✔,✔"  url="/features/autocomplete"  tooltip="Unlock autocomplete & auocorrect for the languages in your license." %}
+      {% include kankoda/licenses/feature-table-row title="Layout Utilities"    columns="✔,✔,✔,✔"  url="/features/layout"        tooltip="Unlock additional layout capabilities that make it easier to customize your layouts." %}
     </div>
     <div class="glass">
-      TODO ROW title="App Views"           columns="-,-,✔,✔"  url="/features/app"           tooltip="Unlock app-specific screens to kick-start your main app."
-      TODO ROW title="Clipboard"           columns="-,-,✔,✔"  url="/features/clipboard"     tooltip="Paste from the system clipboard and custom user clips."
-      TODO ROW title="Dictation"           columns="-,-,✔,✔"  url="/features/dictation"     tooltip="Unlock a dictation engine that lets you perform dictation from a keyboard."
-      TODO ROW title="Emoji Keyboard"      columns="-,-,✔,✔"  url="/features/emojis"        tooltip="Unlock a full-blown emoji keyboard."
-      TODO ROW title="Host App Utils"      columns="-,-,✔,✔"  url="/features/host"          tooltip="Unlock ways to easily identify the host application."
-      TODO ROW title="Layout Addons"       columns="-,-,✔,✔"  url="/features/layout"        tooltip="Unlock an input toolbar that can be added to a system keyboard."
-      TODO ROW title="Themes"              columns="-,-,✔,✔"  url="/features/themes"        tooltip="Unlock a theme engine with many predefined themes."
-      TODO ROW title="Vietnamese Input"    columns="-,-,✔,✔"  url="/locales"                tooltip="Unlock a Vientamese typing engine, with support for TELEX, VIQR, and VNI."
+      {% include kankoda/licenses/feature-table-row title="AI Support"          columns="-,✔,✔,✔"  url="/features/ai"               tooltip="Unlock tools that support implementing AI-based features." %}
+      {% include kankoda/licenses/feature-table-row title="Document Reader"     columns="-,✔,✔,✔"  url="/features/proxy-utilities"  tooltip="Unlock ways to read the entire text document, instead of just the text next to the cursor." %}
+      {% include kankoda/licenses/feature-table-row title="In-keyboard Typing"  columns="-,✔,✔,✔"  url="/features/text-input"       tooltip="Unlock text fields that can let you type within the keyboard." %}
     </div>
     <div class="glass">
-      TODO ROW title="Custom Fonts"        columns="-,-,-,✔"  url="/features/fonts"         tooltip="Unlock the capability to type with unicode fonts."
+      {% include kankoda/licenses/feature-table-row title="App Views"           columns="-,-,✔,✔"  url="/features/app"           tooltip="Unlock app-specific screens to kick-start your main app." %}
+      {% include kankoda/licenses/feature-table-row title="Clipboard"           columns="-,-,✔,✔"  url="/features/clipboard"     tooltip="Paste from the system clipboard and custom user clips." %}
+      {% include kankoda/licenses/feature-table-row title="Dictation"           columns="-,-,✔,✔"  url="/features/dictation"     tooltip="Unlock a dictation engine that lets you perform dictation from a keyboard." %}
+      {% include kankoda/licenses/feature-table-row title="Emoji Keyboard"      columns="-,-,✔,✔"  url="/features/emojis"        tooltip="Unlock a full-blown emoji keyboard." %}
+      {% include kankoda/licenses/feature-table-row title="Host App Utils"      columns="-,-,✔,✔"  url="/features/host"          tooltip="Unlock ways to easily identify the host application." %}
+      {% include kankoda/licenses/feature-table-row title="Layout Addons"       columns="-,-,✔,✔"  url="/features/layout"        tooltip="Unlock an input toolbar that can be added to a system keyboard." %}
+      {% include kankoda/licenses/feature-table-row title="Themes"              columns="-,-,✔,✔"  url="/features/themes"        tooltip="Unlock a theme engine with many predefined themes." %}
+      {% include kankoda/licenses/feature-table-row title="Vietnamese Input"    columns="-,-,✔,✔"  url="/locales"                tooltip="Unlock a Vientamese typing engine, with support for TELEX, VIQR, and VNI." %}
     </div>
     <div class="glass">
-      TODO ROW title="License File"          columns="-,-,-,✔"  url="/pro/license-validation"  tooltip="Business licenses are validated on-device, without the need for Full Access."
-      TODO ROW title="On-Device Validation"  columns="-,-,-,✔"  url="/pro/license-validation"  tooltip="Business licenses are validated on-device, without the need for Full Access."
+      {% include kankoda/licenses/feature-table-row title="Custom Fonts"        columns="-,-,-,✔"  url="/features/fonts"         tooltip="Unlock the capability to type with unicode fonts." %}
     </div>
     <div class="glass">
-      TODO ROW title="Signed Terms"    columns="-,-,-,✔"  url=site.urls.business  tooltip="Business+ licenses can customize billing, included products, etc."
-      TODO ROW title="Custom Billing"    columns="-,-,-,✔"  url=site.urls.business  tooltip="Business+ licenses can customize billing, included products, etc."
-      TODO ROW title="Custom SLA"        columns="-,-,-,✔"  url=site.urls.business  tooltip="Enterprise licenses can customize the SLA and support level."
-      TODO ROW title="Custom Terms"      columns="-,-,-,✔"  url=site.urls.business  tooltip="Business+ licenses can customize the license terms."
-      TODO ROW title="Expiration Grace"  columns="-,-,-,✔"  url=site.urls.business  tooltip="Custom licenses can include software escrow services, which can help protect your business."
-      TODO ROW title="Software Escrow"   columns="-,-,-,✔"  url=site.urls.business  tooltip="Enterprise licenses can include support for additional test environments and enterprise requirements.."
+      {% include kankoda/licenses/feature-table-row title="License File"          columns="-,-,-,✔"  url="/pro/license-validation"  tooltip="Business licenses are validated on-device, without the need for Full Access." %}
+      {% include kankoda/licenses/feature-table-row title="On-Device Validation"  columns="-,-,-,✔"  url="/pro/license-validation"  tooltip="Business licenses are validated on-device, without the need for Full Access." %}
     </div>
     <div class="glass">
-      TODO ROW title="Support"           columns="GitHub,Email,Priority,Dedicated"  url="/pro/support"                tooltip="The higher tiers include priority support and can pay extra for dedicated support."
-      TODO ROW title="Discord Server"    columns="-,-,✔,✔"                          url="/pro/support#communication"  tooltip="Gold and Business customers are welcome to join the closed Discord server."
+      {% include kankoda/licenses/feature-table-row title="Signed Terms"    columns="-,-,-,✔"  url=site.urls.business  tooltip="Business+ licenses can customize billing, included products, etc." %}
+      {% include kankoda/licenses/feature-table-row title="Custom Billing"    columns="-,-,-,✔"  url=site.urls.business  tooltip="Business+ licenses can customize billing, included products, etc." %}
+      {% include kankoda/licenses/feature-table-row title="Custom SLA"        columns="-,-,-,✔"  url=site.urls.business  tooltip="Enterprise licenses can customize the SLA and support level." %}
+      {% include kankoda/licenses/feature-table-row title="Custom Terms"      columns="-,-,-,✔"  url=site.urls.business  tooltip="Business+ licenses can customize the license terms." %}
+      {% include kankoda/licenses/feature-table-row title="Expiration Grace"  columns="-,-,-,✔"  url=site.urls.business  tooltip="Custom licenses can include software escrow services, which can help protect your business." %}
+      {% include kankoda/licenses/feature-table-row title="Software Escrow"   columns="-,-,-,✔"  url=site.urls.business  tooltip="Enterprise licenses can include support for additional test environments and enterprise requirements.." %}
+    </div>
+    <div class="glass">
+      {% include kankoda/licenses/feature-table-row title="Support"           columns="GitHub,Email,Priority,Dedicated"  url="/pro/support"                tooltip="The higher tiers include priority support and can pay extra for dedicated support." %}
+      {% include kankoda/licenses/feature-table-row title="Discord Server"    columns="-,-,✔,✔"                          url="/pro/support#communication"  tooltip="Gold and Business customers are welcome to join the closed Discord server." %}
     </div>
   </div>
 </section>

@@ -1,22 +1,52 @@
 - name: Basic
-  price_month: "50"
+  subtitle: Indies & Startups
+  price_month: 50
   price_year: 500
   cta: Sign Up
   url: https://kankoda.gumroad.com/l/keyboardkitpro
+  features:
+    - 1 Language
+    - iOS Support
+    - Autocomplete
+    - Autocorrect
+    - GitHub Support
 
 - name: Silver
-  price_month: "150"
+  subtitle: AI & Scale-Up
+  price_month: 150
   price_year: "1.500"
   cta: Sign Up
   url: https://kankoda.gumroad.com/l/keyboardkitpro
+  features:
+    - Everything in Basic
+    - 5 Languages
+    - AI Support
+    - In-Keyboard Typing
+    - Email Support
 
 - name: Gold
-  price_month: "500"
+  badge: Popular
+  subtitle: All Pro Features
+  price_month: 500
   price_year: "5.000"
   cta: Sign Up
   url: https://kankoda.gumroad.com/l/keyboardkitpro
+  features:
+    - Everything in Silver
+    - <b>75 Languages</b>
+    - All Pro Features
+    - App Utilities
+    - Priority Support
 
 - name: Business
-  cta: Sign Up
-  subtitle: Let's talk
-  url: /business-licenses
+  subtitle: Companies & Enterprises
+  price_month: Custom
+  price_year: Custom
+  cta: Read More
+  url: /business
+  features:
+    - Everything in Gold
+    - Additional Features
+    - Custom Terms & SLA
+    - Software Escrow
+    - Priority Support

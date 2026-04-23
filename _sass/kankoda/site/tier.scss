@@ -1,0 +1,159 @@
+div.glass.tier {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  text-align: left;
+  position: relative;
+
+  &.elevated {
+    box-shadow:
+      0 12px 40px rgba(0, 0, 0, 0.18),
+      0 4px 12px rgba(0, 0, 0, 0.10);
+    transform: scale(1.04);
+    z-index: 1;
+  }
+
+  .tier-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding: 0.3rem 0.75rem;
+    border-radius: var(--radius-capsule);
+    background: #e8720c;
+    color: #ffffff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    border: none;
+  }
+
+  .tier-header {
+    margin-bottom: 1.5rem;
+  }
+
+  .tier-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 0 0.2rem;
+    letter-spacing: 0;
+  }
+
+  .tier-subtitle {
+    font-size: 0.95rem;
+    font-weight: 400;
+    margin: -0.2rem 0 1.25rem;
+    opacity: 0.45;
+  }
+
+  .tier-price {
+    margin: 0;
+    line-height: 1;
+  }
+
+  .tier-price-amount {
+    font-size: clamp(1.8rem, 3.5vw, 2.4rem);
+    font-weight: 600;
+    letter-spacing: -0.03em;
+  }
+
+  .tier-price-period {
+    font-size: 1rem;
+    font-weight: 400;
+    opacity: 0.6;
+    margin-left: 0.1em;
+  }
+
+  .tier-price-alt {
+    margin: 0.2rem 0 0;
+    font-size: 0.95rem;
+    font-weight: 400;
+    opacity: 0.45;
+  }
+
+  .tier-features {
+    flex: 1;
+    list-style: none;
+    margin: 0 0 1.75rem;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    padding-top: 1.25rem;
+
+    li {
+      font-size: 0.95rem;
+      font-weight: 400;
+      padding-left: 1.5rem;
+      position: relative;
+
+      &::before {
+        content: "✓";
+        position: absolute;
+        left: 0;
+        font-weight: 700;
+        opacity: 0.5;
+      }
+    }
+  }
+
+  // Silver
+  &.silver {
+    background-color: var(--glass-silver-bg);
+    background-image: linear-gradient(160deg, var(--glass-silver-light-bg), var(--glass-silver-bg));
+    border-color: rgba(255, 255, 255, 0.7);
+
+    .tier-cta {
+      background: #3a3d4a;
+      color: #ffffff !important;
+      border-color: #3a3d4a;
+    }
+  }
+
+  // Gold
+  &.gold {
+    background-color: var(--glass-yellow-bg);
+    background-image: linear-gradient(160deg, rgba(255, 245, 180, 0.9), var(--glass-yellow-bg));
+    border-color: rgba(255, 220, 80, 0.7);
+
+    .tier-cta {
+      background: #c49a10;
+      color: #ffffff !important;
+      border-color: #c49a10;
+    }
+  }
+
+  // Business
+  &.business {
+    background: linear-gradient(160deg, #2e3044, #1e2035);
+    border-color: rgba(255, 255, 255, 0.12);
+    color: #ffffff;
+
+    .tier-features {
+      border-top-color: rgba(255, 255, 255, 0.12);
+    }
+  }
+}
+
+a.tier-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.9rem 1.4rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-capsule);
+  background: var(--color-bg);
+  color: var(--color-text) !important;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1;
+  text-decoration: none;
+  transition:
+    transform var(--duration-link) ease,
+    box-shadow var(--duration-link) ease;
+
+  &:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 24px var(--color-shadow);
+  }
+}

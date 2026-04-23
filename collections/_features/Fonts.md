@@ -19,7 +19,7 @@ KeyboardKit Pro unlocks custom font capabilities for any license that includes t
 
 [KeyboardKit Pro][Pro] unlocks a font settings screen that can be added to the app or keyboard, in which users can select custom unicode font in a list.
 
-<div class="grid col2">
+<div class="grid col2 images">
     <span><img src="{{page.assets}}fonts-settingsscreen.jpg" /></span>
     <span><img src="{{page.assets}}keyboardview-font.jpg" /></span>
 </div>

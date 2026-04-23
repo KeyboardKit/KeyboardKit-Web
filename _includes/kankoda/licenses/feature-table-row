@@ -1,0 +1,15 @@
+<div class="table-row">
+  <div class="feature header" title="{{include.tooltip}}">{{include.title}}</div>
+  <div class="grid {{include.grid-class}}" title="{{include.tooltip}}"  style="line-height: 1em;">
+    <div class="feature">
+      {% if include.url %}
+      <a href="{{include.url}}">{{include.title}}</a>
+      {% else %}
+      {{include.title}}
+      {% endif %}
+    </div>
+    <div>
+      {{include.columns | replace: "✔", "<img src='/assets/kankoda/checkmark.png' class='plain' width='20' />" | split: "," | join: "</div><div>"}}
+    </div>
+  </div>
+</div>

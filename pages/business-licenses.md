@@ -1,9 +1,9 @@
 ---
 title: Business Licenses
 layout: page
-permalink: /business-licenses
-
+permalink: /business
 redirect_from: 
+  - business-licenses
   - pro/business-licenses
   - pro/custom-licenses
 
@@ -16,7 +16,6 @@ description: KeyboardKit has business licenses for larger companies and apps.
 ---
 
 [KeyboardKit](/pro) requires a business license for companies with $10M+ in annual revenue or apps with $1M+ in annual revenue.
-
 
 <div class="grid col3">
   TIER BOXES

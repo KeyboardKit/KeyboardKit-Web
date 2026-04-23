@@ -1,0 +1,22 @@
+{% assign tier = include.tier %}
+{% assign tier_class = tier.name | downcase %}
+<div class="glass tier {{ tier_class }}{% if tier.badge %} elevated{% endif %}">
+  {% if tier.badge %}<div class="tier-badge">{{ tier.badge }}</div>{% endif %}
+  <div class="tier-header">
+    <p class="tier-name">{{ tier.name }}</p>
+    <p class="tier-subtitle">{{ tier.subtitle }}</p>
+    {% if tier.price_month == "Custom" %}
+    <p class="tier-price"><span class="tier-price-amount">Custom</span></p>
+    <p class="tier-price-alt">Contact Us</p>
+    {% else %}
+    <p class="tier-price"><span class="tier-price-amount">${{ tier.price_month }}</span><span class="tier-price-period">/month</span></p>
+    <p class="tier-price-alt">or ${{ tier.price_year }}/year</p>
+    {% endif %}
+  </div>
+  <ul class="tier-features">
+    {% for feature in tier.features %}
+    <li>{{ feature }}</li>
+    {% endfor %}
+  </ul>
+  <a href="{{ tier.url }}" class="tier-cta">{{ tier.cta }}</a>
+</div>
