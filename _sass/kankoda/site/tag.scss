@@ -16,6 +16,8 @@ div.tag {
   text-decoration: none;
   white-space: nowrap;
 
+  &.glass  { background: rgba(255, 255, 255, 0.55); color: var(--color-text); }
+
   &.blue   { background: var(--glass-blue-bg);   color: var(--glass-blue-text); }
   &.green  { background: var(--glass-green-bg);  color: var(--glass-green-text); }
   &.yellow { background: var(--glass-yellow-bg); color: var(--glass-yellow-text); }

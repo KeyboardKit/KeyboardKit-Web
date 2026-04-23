@@ -1,0 +1,84 @@
+---
+title: Getting Started
+layout: plain
+permalink: /get-started
+
+description: KeyboardKit is easy to install and start using. Be up and running in minutes, with little or no extra code.
+---
+
+<section class="hero glow silver">
+  <div class="wrapper wide">
+    <div class="glass tag">Easy integration</div>
+    <h1>Get Started</h1>
+    <h2>KeyboardKit lets you be up and running in minutes.</h2>
+    <p>{{page.description}}</p>
+    <div>
+      <a href="#install" class="cta">Installation</a>
+      <a href="#setup" class="cta secondary">Setup</a>
+    </div>
+  </div>
+  <a href="#features" class="content-chevron" aria-label="Scroll down"></a>
+</section>
+
+<a name="install"></a>
+<section class="showcase dark blue">
+  <div class="wrapper slide-in">
+    <h2>Installation</h2>
+    <p>Add KeyboardKit to your project with the Swift Package Manager.</p>
+    {% highlight swift-package-manager %}{{site.urls.github}}{% endhighlight %}
+  </div>
+</section>
+
+<a name="setup"></a>
+<section class="showcase blue glow">
+  <div class="wrapper slide-in">
+    <h2>Keyboard Extension</h2>
+    <p>Setting up KeyboardKit for your keyboard extension is super simple.</p>
+    {% highlight swift %}
+import KeyboardKit
+
+class KeyboardViewController: KeyboardInputViewController {
+
+  override func viewWillSetupKeyboardKit() {
+    super.viewWillSetupKeyboardKit()
+    setupKeyboardKit(for: .keyboardkit) { [weak self] result in
+      ...
+    }
+  }
+
+  // Optional
+  override func viewWillSetupKeyboardView() {
+    setupKeyboardView { [unowned self] controller in
+      CustomKeyboardView(...)
+    }
+  }
+}{% endhighlight %}
+  </div>
+</section>
+
+<section class="showcase purple glass">
+  <div class="wrapper slide-in">
+    <h2>Main App</h2>
+    <p>Setting up KeyboardKit for your main app is equally easy.</p>
+    {% highlight swift %}
+import KeyboardKit
+
+@main
+struct KeyboardKitApp: App {
+
+  var body: some Scene {
+    WindowGroup {
+      KeyboardAppView(for: .myApp) {
+          ContentView()
+      }
+    }
+  }
+}{% endhighlight %}
+  </div>
+</section>
+
+<section class="showcase dark blue glass">
+  <div class="wrapper slide-in">
+    {% include sections/ready-to-build %}
+  </div>
+</section>
