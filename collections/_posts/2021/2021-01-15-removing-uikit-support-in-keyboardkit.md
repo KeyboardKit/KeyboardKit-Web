@@ -1,7 +1,7 @@
 ---
 title:  Removing UIKit support in KeyboardKit
 date:   2021-01-15 07:00:00 +0100
-tags:   xcode spm
+tags:   general
 
 keyboardkit: https://github.com/danielsaidi/KeyboardKit
 kkswiftui:   https://github.com/danielsaidi/KeyboardKitSwiftUI

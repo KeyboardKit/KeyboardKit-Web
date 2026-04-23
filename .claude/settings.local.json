@@ -8,7 +8,8 @@
       "Bash(sed -n '451,456p' /Users/danielsaidi/Projects/keyboardkit/web/_site/assets/main.css)",
       "Bash(grep -v \"^$\")",
       "WebSearch",
-      "WebFetch(domain:lucide.dev)"
+      "WebFetch(domain:lucide.dev)",
+      "Bash(xargs ls *)"
     ],
     "deny": [],
     "ask": []

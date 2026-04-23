@@ -18,21 +18,24 @@ layout: page-sidebar
   {% assign unique_tags = all_tags | split: "," | sort %}
   {% assign first_tags = page.tags.first | split: ", " %}
   
-  <div class="tags">
-    {% for tag in first_tags %}
-      {% assign tag = tag | strip %}
-      {% if tag != "" %}
-        <span class="tag {{ tag | slugify }}" data-tag="{{ tag }}">{{ tag }}</span>
-      {% endif %}
-    {% endfor %}
-    &nbsp;·&nbsp;
-    {% for tag in unique_tags %}
-      {% if tag != "" %}
-        {% unless first_tags contains tag %}
+  <div class="tags-container">
+    <div class="tags">
+      {% for tag in first_tags %}
+        {% assign tag = tag | strip %}
+        {% if tag != "" %}
           <span class="tag {{ tag | slugify }}" data-tag="{{ tag }}">{{ tag }}</span>
-        {% endunless %}
-      {% endif %}
-    {% endfor %}
+        {% endif %}
+      {% endfor %}
+      &nbsp;·&nbsp;
+      {% for tag in unique_tags %}
+        {% if tag != "" %}
+          {% unless first_tags contains tag %}
+            <span class="tag {{ tag | slugify }}" data-tag="{{ tag }}">{{ tag }}</span>
+          {% endunless %}
+        {% endif %}
+      {% endfor %}
+    </div>
+    <button class="tags-toggle" aria-expanded="false">Show more</button>
   </div>
 </div>
 

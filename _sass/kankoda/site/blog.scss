@@ -31,11 +31,61 @@
     }
   }
 
+  .tags-container {
+    margin: var(--page-content-media-gap) 0;
+  }
+
   .tags {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
-    margin: var(--page-content-media-gap) 0;
+    max-height: calc(7rem + 25px);
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+
+    &.expanded {
+      max-height: 600px;
+      padding-bottom: 0.75rem;
+    }
+  }
+
+  .tags-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+    padding: 0.6rem 0;
+    border: none;
+    border-top: 1px solid var(--color-border);
+    background: transparent;
+    color: var(--color-text);
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    opacity: var(--opacity-secondary);
+    transition: opacity 0.2s ease;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 0.5rem;
+      height: 0.5rem;
+      border-right: 2px solid currentColor;
+      border-bottom: 2px solid currentColor;
+      transform: rotate(45deg);
+      transition: transform 0.3s ease;
+      margin-bottom: 0.2em;
+    }
+
+    &[aria-expanded="true"]::after {
+      transform: rotate(-135deg);
+      margin-bottom: -0.2em;
+    }
   }
 }
 

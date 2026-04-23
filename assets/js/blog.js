@@ -37,5 +37,15 @@
         applyFilters();
       });
     }
+
+    const tagsEl = document.querySelector(".blog .tags");
+    const toggleBtn = document.querySelector(".blog .tags-toggle");
+    if (tagsEl && toggleBtn) {
+      toggleBtn.addEventListener("click", function () {
+        const expanded = tagsEl.classList.toggle("expanded");
+        toggleBtn.textContent = expanded ? "Show less" : "Show more";
+        toggleBtn.setAttribute("aria-expanded", expanded);
+      });
+    }
   });
 })();
