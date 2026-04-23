@@ -3,7 +3,7 @@ title: About
 layout: page-sidebar
 permalink: /about
 
-description: KeyboardKit lets you build amazing keyboard extensions with Swift & SwiftUI
+description: This page describes what a custom keyboard is and how KeyboardKit can help.
 
 stockholm: https://www.google.com/maps/place/Stockholm,+Sweden/@59.3262131,17.8172499,11z/data=!3m1!4b1!4m6!3m5!1s0x465f763119640bcb:0xa80d27d3679d7766!8m2!3d59.3293235!4d18.0685808!16zL20vMDZteHM
 ---
@@ -11,12 +11,15 @@ stockholm: https://www.google.com/maps/place/Stockholm,+Sweden/@59.3262131,17.81
 Custom iOS keyboards provide a unique way to use functionality from your app in any other app that supports text input. This page describes this technology in detail, and how KeyboardKit can help you get started.
 
 
-## What is a custom keyboard?
-
-A custom iOS [keyboard extension](/terminology) is an app extension that you ship together with your app. It can replace the system keyboard in any app, by using the 🌐 key while typing, and use your app's content and features.
+## Terminology & FAQ
 
 See the [terminology](/terminology) page for a list of common terms and concepts that are involved with custom keyboards,
 and our [FAQ](/faq) for frequently asked questions.
+
+
+## What is a custom keyboard?
+
+A custom iOS [keyboard extension](/terminology) is an app extension that you ship together with your app. It can replace the system keyboard in any app, by using the 🌐 key while typing, and use your app's content and features.
 
 
 ## What is KeyboardKit?
