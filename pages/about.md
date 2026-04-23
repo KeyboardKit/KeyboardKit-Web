@@ -1,6 +1,6 @@
 ---
 title: About
-layout: side-menu-page
+layout: page-sidebar
 permalink: /about
 
 description: KeyboardKit lets you build amazing keyboard extensions with Swift & SwiftUI

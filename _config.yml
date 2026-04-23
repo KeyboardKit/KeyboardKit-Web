@@ -115,9 +115,18 @@ defaults:
       image: /assets/headers/keyboardkit.jpg
   -
     scope:
+      path: "pages/pro"
+    values:
+      eyebrow: KeyboardKit Pro
+      title-color: orange
+      back-link:
+        title: Pricing
+        url: /pricing
+  -
+    scope:
       type: "case-studies"
     values:
-      layout: side-menu-page
+      layout: page-sidebar
       subtitle-color: purple
       back-link:
         title: Case studies

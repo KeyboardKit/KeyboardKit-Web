@@ -2,7 +2,7 @@
 eyebrow: KeyboardKit
 title: Contact
 title-color: blue
-layout: side-menu-page
+layout: page-sidebar
 permalink: /contact
 
 description: Find out how to get in touch with the KeyboardKit team.

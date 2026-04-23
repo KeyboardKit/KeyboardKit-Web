@@ -2,7 +2,7 @@
 eyebrow: About
 title: FAQ
 title-color: purple
-layout: side-menu-page
+layout: page-sidebar
 permalink: /faq
 
 back-link:

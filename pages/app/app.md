@@ -2,7 +2,7 @@
 eyebrow: KeyboardKit
 title: App
 title-color: purple
-layout: side-menu-page
+layout: page-sidebar
 permalink: /app
 
 assets: /assets/app/

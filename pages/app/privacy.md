@@ -3,7 +3,7 @@ eyebrow: App
 title: Privacy Policy
 title-color: blue
 permalink: /app/privacy
-layout: side-menu-page
+layout: page-sidebar
 
 redirect_from: /app/privacy-policy
 

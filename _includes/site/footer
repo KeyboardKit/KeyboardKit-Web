@@ -19,6 +19,8 @@
           <a href="/pro">KeyboardKit Pro</a>
           <a href="/pricing">Pricing</a>
           <a href="/business-licenses">Business Licenses</a>
+          <a href="/pro/terms">Terms & Conditions</a>
+          <a href="/privacy">Privacy Policy</a>
         </div>
       </div>
 
@@ -35,6 +37,7 @@
         <p class="toggle">Code</p>
         <div class="content">
           <a href="{{site.urls.github}}">GitHub</a>
+          <a href="{{site.urls.github}}-Binaries">Binaries & dSYMs</a>
           <a href="{{site.urls.docs}}">Documentation</a>
           <a href="{{site.urls.issues}}">Issue Tracker</a>
         </div>

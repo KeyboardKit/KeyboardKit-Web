@@ -37,13 +37,13 @@ instructions: To customize the side menu, add a "menu" value to the front-matter
 
                   {% if in_code_block == false %}
                     {% assign prefix_h2 = line | slice: 1, 2 %}
-                    {% assign prefix_md = line | slice: 0, 2 %}
+                    {% assign prefix_md = line | slice: 0, 3 %}
 
                     {% if prefix_h2 == "h2" %}
                       {% assign title_text = line | strip_html | strip %}
                       {% assign title_anchor = line | split: 'id="' | last | split: '"' | first %}
                       <li><a href="#{{ title_anchor }}">{{ title_text }}</a></li>
-                    {% elsif prefix_md == "##" %}
+                    {% elsif prefix_md == "## " %}
                       {% assign title_md = line | remove_first: "## " | strip %}
                       {% capture heading_md %}## {{ title_md }}{% endcapture %}
                       {% assign heading_html = heading_md | markdownify | strip %}

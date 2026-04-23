@@ -2,7 +2,7 @@
 eyebrow: About
 title: Terminology
 title-color: green
-layout: side-menu-page
+layout: page-sidebar
 permalink: /terminology
 
 back-link:

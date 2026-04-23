@@ -1,6 +1,6 @@
 ---
 title: Locales
-layout: side-menu-page
+layout: page-sidebar
 permalink: /locales
 redirect_from: /languages
 

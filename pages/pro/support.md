@@ -1,17 +1,12 @@
 ---
-id: pro-support
-title: License Support
-layout: page
+title: Support
+layout: page-sidebar
 permalink: /pro/support
-
-hero:
-  icon: /assets/icon/pro.png
-  icon-class: plain
 
 description: KeyboardKit Pro has custom support levels for larger organizations
 ---
 
-[KeyboardKit Pro](/pro) has different support levels, that are based on the license tiers and your needs.
+[KeyboardKit Pro](/pro) has different support levels, based on the license tier and your needs.
 
 
 ## Support Levels
@@ -23,17 +18,17 @@ description: KeyboardKit Pro has custom support levels for larger organizations
 
 ### Email Support
 
-[Silver license](/pro) customers and above can reach out over email at any time to get help with problems, ask questions, schedule paid support, etc.
+[Silver license](/pro) customers and above can reach out over email to get help with problems, ask questions, schedule paid support, etc.
 
 
 ### Prioritized Support
 
-[Gold license](/pro) customers and above have prioritized support. Their specific needs will be considered when planning bug fixes and future releases.
+[Gold license](/pro) customers and above have prioritized support. Their needs will be considered when planning bug fixes and future releases.
 
 
 ### Dedicated Support
 
-[Business license](/business-licenses) customers can customize the support level to fit their needs, schedule recurring support activites, request custom SLAs, etc.
+[Business license](/business-licenses) customers can customize their support levels to fit their needs, and can schedule recurring support activites, request custom SLAs, etc.
 
 
 <a name="communication">
@@ -52,9 +47,9 @@ description: KeyboardKit Pro has custom support levels for larger organizations
 
 ### Reddit
 
-All license customers are welcome to join the [KeyboardKit subreddit]({{site.urls.reddit}}), which is where discussions about the KeyboardKit SDK takes place.
+All license customers are welcome to join the [KeyboardKit subreddit]({{site.urls.reddit}}), where discussions about the KeyboardKit SDK takes place.
 
 
 ### Discord
 
-All license customers are welcome to join the KeyboardKit Discord, which offers public and private, company-specific channels. The invite link is in your license confirmation material.
+All license customers are welcome to join the KeyboardKit Discord, which offers public discussion channels for all customers, and private, company-specific channels for business customers.
