@@ -3,6 +3,8 @@ title: Pricing
 layout: plain
 permalink: /pricing
 
+image: /assets/headers/pro.jpg
+
 description: KeyboardKit Pro unlocks critical pro features, like 75 languages, on-device autocomplete, AI support, dictation, emojis, themes, and much more.
 
 custom-license-email: mailto:info@keyboardkit.com?subject=KeyboardKit%20Pro%20-%20Custom%20Plan
@@ -15,7 +17,7 @@ terms: /pro/terms
 ## Choose the plan that fits your needs
 
 <div class="wrapper" markdown="1">
-The standard tiers are for indies, startups and small businesses.
+  The standard tiers are for indies, startups and small businesses.
 </div>
 
 
@@ -42,3 +44,4 @@ Compare all features across all plans.
 ## Terms & Conditions
 
 The standard [Terms & Conditions]({{page.terms}}) apply to all standard tiers. [Contact us]({{site.urls.email-custom-terms}}) to discuss custom terms.
+</div>

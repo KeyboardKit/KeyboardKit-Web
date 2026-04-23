@@ -1,0 +1,44 @@
+- name: Additional Apps & Products
+  color: blue
+  icon: lucide:layout-grid
+  description: Include additional apps at a discounted price in a single business license.
+
+- name: Custom Billing
+  color: green
+  icon: lucide:receipt
+  description: Customize your billing method, billing cadence, renewal strategy, etc.
+
+- name: Custom SLA
+  color: purple
+  icon: lucide:shield-check
+  description: Customize your SLA and support level to fit your high-impact needs.
+
+- name: Custom Terms
+  color: orange
+  icon: lucide:file-pen
+  description: Customize your license terms to cater to specific business and legal requirements.
+
+- name: Expiration Grace Period
+  color: yellow
+  icon: lucide:clock
+  description: An expiration grace period provides a more flexible license expiration.
+
+- name: License File
+  color: blue
+  icon: lucide:file-badge
+  description: Business licenses are delivered on file and validated on-device, without network validation.
+
+- name: Multi-platform Support
+  color: green
+  icon: lucide:tablet-smartphone
+  description: Request tailored multi-platform builds of certain SDK versions.
+
+- name: On-Device License Validation
+  color: purple
+  icon: lucide:cpu
+  description: Business licenses are validated on-device, without requiring Full Access.
+
+- name: Software Escrow
+  color: orange
+  icon: lucide:vault
+  description: Get access to the SDK source code in case anything happens to KeyboardKit.
