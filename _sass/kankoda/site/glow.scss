@@ -17,6 +17,18 @@
   transform: translate3d(0, 0, 0);
 }
 
+%glow-before-yellow {
+  background:
+    radial-gradient(circle at 18% 30%, var(--glass-yellow-bg) 0, rgba(255, 232, 160, 0) 30%),
+    radial-gradient(circle at 76% 18%, var(--glass-orange-bg) 0, rgba(255, 210, 160, 0) 28%),
+    radial-gradient(circle at 86% 56%, var(--glass-peach-bg) 0, rgba(255, 190, 160, 0) 30%),
+    radial-gradient(circle at 54% 86%, var(--glass-pink-bg) 0, rgba(255, 185, 210, 0) 28%),
+    radial-gradient(circle at 26% 82%, var(--glass-orange-bg) 0, rgba(255, 210, 160, 0) 32%);
+  filter: blur(72px);
+  opacity: 0.95;
+  transform: translate3d(0, 0, 0);
+}
+
 %glow-after {
   background:
     linear-gradient(115deg, rgba(255, 255, 255, 0.5) 14%, rgba(255, 255, 255, 0) 42%, rgba(255, 255, 255, 0.26) 70%, rgba(255, 255, 255, 0) 100%),
@@ -64,5 +76,14 @@ div.glow {
 
   &::after {
     @extend %glow-after;
+  }
+
+  &.gold {
+    background: linear-gradient(135deg, rgba(255, 248, 220, 0.96), rgba(255, 228, 200, 0.92));
+
+    &::before {
+      @extend %glow-before-yellow;
+      inset: -18%;
+    }
   }
 }

@@ -1,0 +1,96 @@
+---
+id: pro
+title: Pro
+layout: plain
+permalink: /pro
+
+description: KeyboardKit Pro unlocks powerful features like 75 locales, autocomplete, AI support, dictation, themes, and much more.
+---
+
+<section class="hero glow gold">
+  <div class="wrapper wide">
+    <div class="yellow glass tag">Pro Features</div>
+    <h1>KeyboardKit Pro</h1>
+    <h2>Unlock Pro features that take your keyboard to the next level.</h2>
+    <p>{{page.description}}</p>
+    <div>
+      <a href="/pricing" class="cta">View Pricing</a>
+      <a href="#features" class="cta secondary">View Features</a>
+    </div>
+  </div>
+  <a href="#features" class="content-chevron" aria-label="Scroll to features"></a>
+</section>
+
+<section class="yellow glass">
+  <div class="wrapper">
+    {% include sections/numeric-items %}
+  </div>
+</section>
+
+<a name="features"></a>
+<section class="showcase glow">
+  <article class="wrapper wide slide-in">
+    <h2>Everything you need.</h2>
+    <p>KeyboardKit Pro gives you the full toolkit — from language support and autocomplete to AI, themes, and beyond.</p>
+    <div class="grid col4 carousel mobile">
+      {% for usp in site.data.usps-pro %}
+      <div class="glass compact">
+        {% include kankoda/components/icon-badge color=usp.color name=usp.icon %}
+        <h4>{{ usp.title }}</h4>
+        <p>{{ usp.text }}</p>
+      </div>
+      {% endfor %}
+    </div>
+    <a href="/features" class="cta">View All Features</a>
+  </article>
+
+  <article class="wrapper wide slide-in">
+    <h2>Try before you buy.</h2>
+    <p>Not sure yet? Explore all pro features risk-free before committing to a plan.</p>
+    <div class="grid col2">
+      <div class="glass scale">
+        <h3>Free Trial</h3>
+        <p>Get a free trial license and try all pro features directly in your own app, with no credit card required.</p>
+        <a class="large cta" href="/pro/trial">Get Free Trial</a>
+      </div>
+      <div class="glass scale">
+        <h3>KeyboardKit App</h3>
+        <p>Download the KeyboardKit app from the App Store and try all pro features on your device — no code needed.</p>
+        <a class="large cta" href="/app">Download App</a>
+      </div>
+    </div>
+  </article>
+</section>
+
+<section class="purple glass showcase">
+  <article class="wrapper wide slide-in">
+    <h2>Choose the path that fits you.</h2>
+    <p>KeyboardKit Pro scales with your needs — from indie developers to large organizations.</p>
+    <div class="grid col2">
+      <div class="glass scale">
+        <h3>Individual & Startups</h3>
+        <p>For solo developers, freelancers, or small teams. Flexible subscription plans with continuous updates.</p>
+        <a class="large cta" href="/pricing">View Pricing</a>
+      </div>
+      <div class="glass scale">
+        <h3>Business & Organization</h3>
+        <p>For established companies requiring legal security, invoice billing, software escrow, and priority support.</p>
+        <a class="large cta" href="/business">Business Plans</a>
+      </div>
+    </div>
+  </article>
+</section>
+
+<section class="showcase glow">
+  <article class="wrapper slide-in">
+    <h2>Frequently Asked Questions</h2>
+    <p>Common questions about KeyboardKit Pro, licensing, and features.</p>
+    {% assign pro_faqs = site.data.faq | where: "tag", "licensing" %}
+    {% include kankoda/components/faq-list items=pro_faqs %}
+    <a href="/faq" class="cta">See all FAQs</a>
+  </article>
+</section>
+
+<section class="showcase dark blue">
+  {% include sections/ready-to-build %}
+</section>

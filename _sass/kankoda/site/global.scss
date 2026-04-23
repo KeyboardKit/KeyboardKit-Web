@@ -66,6 +66,10 @@ p {
   margin-right: auto;
   padding: 0 2rem;
 
+  &.narrow {
+    max-width: var(--wrapper-width-narrow);
+  }
+
   &.wide {
     max-width: var(--wrapper-width-wide);
   }

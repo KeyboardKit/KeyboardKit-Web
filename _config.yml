@@ -63,8 +63,9 @@ header:
   icon: /assets/icon/header.png
   pages:
     - pages/about.md
-    - pages/features.md
     - pages/blog.md
+    - pages/features.md
+    - pages/pro/pro.html
     - pages/pricing.md
 
 footer:
@@ -77,7 +78,6 @@ footer:
     - pages/industries.md
     - pages/case-studies.md
     - pages/documentation.md
-    - pages/contact.md
 
 collections_dir: collections
 
