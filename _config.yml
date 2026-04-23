@@ -62,7 +62,7 @@ header:
   title: KeyboardKit
   icon: /assets/icon/header.png
   pages:
-    - pages/about.md
+    - pages/info/about.md
     - pages/blog.md
     - pages/features.md
     - pages/pro/pro.html
@@ -71,8 +71,8 @@ header:
 footer:
   sitemap:
     - index.html
-    - pages/about.md
-    - pages/faq.md
+    - pages/info/about.md
+    - pages/info/faq.md
     - pages/features.md
     - pages/app/app.md
     - pages/industries.md
@@ -113,6 +113,18 @@ defaults:
     values:
       layout: page
       image: /assets/headers/keyboardkit.jpg
+  -
+    scope:
+      path: "pages/info"
+    values:
+      eyebrow: KeyboardKit
+      title-color: blue
+  -
+    scope:
+      path: "pages/code"
+    values:
+      eyebrow: KeyboardKit
+      title-color: blue
   -
     scope:
       path: "pages/pro"

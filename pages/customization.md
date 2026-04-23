@@ -1,5 +1,4 @@
 ---
-id: customization
 title: Customizations
 permalink: /customization
 

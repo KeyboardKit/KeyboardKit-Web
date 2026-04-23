@@ -1,13 +1,7 @@
 ---
-eyebrow: About
 title: FAQ
-title-color: purple
 layout: page-sidebar
 permalink: /faq
-
-back-link:
-  title: About
-  url: /about
 
 description: This page contains frequently asked questions about custom keyboards.
 ---

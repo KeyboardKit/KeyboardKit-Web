@@ -1,13 +1,7 @@
 ---
-eyebrow: About
 title: Terminology
-title-color: green
 layout: page-sidebar
 permalink: /terminology
-
-back-link:
-  title: About
-  url: /about
 
 description: This page describes common custom keyboard terminology.
 ---

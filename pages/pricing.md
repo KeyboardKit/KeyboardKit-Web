@@ -1,5 +1,4 @@
 ---
-id: pro
 title: Pricing
 layout: page
 permalink: /pricing

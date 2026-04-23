@@ -1,7 +1,5 @@
 ---
-eyebrow: KeyboardKit
 title: Contact
-title-color: blue
 layout: page-sidebar
 permalink: /contact
 

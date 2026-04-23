@@ -1,7 +1,7 @@
 ---
 eyebrow: KeyboardKit
 title: Blog
-title-color: green
+title-color: blue
 permalink: /blog
 layout: blog
 
