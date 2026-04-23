@@ -120,11 +120,18 @@
     gap: 0.75rem;
     margin-bottom: 1.25rem;
     color: rgba(0, 0, 0, var(--opacity-secondary));
+    overflow-x: auto;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
 
   &-date,
   &-read-time {
     white-space: nowrap;
+    flex-shrink: 0;
   }
 
   &-read-time::before {
@@ -141,12 +148,6 @@
   &-tags {
     display: flex;
     gap: 0.4rem;
-    overflow-x: auto;
-    scrollbar-width: none;
-
-    &::-webkit-scrollbar {
-      display: none;
-    }
 
     .tag {
       flex-shrink: 0;
