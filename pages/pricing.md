@@ -51,8 +51,8 @@ The standard [Terms & Conditions]({{page.terms}}) apply to all standard tiers. [
     <h2>Start building today.</h2>
     <p>Try KeyboardKit Pro free for 7 days — no credit card required. Upgrade to a plan when you're ready.</p>
     <div>
-      <a href="/pro/free-trial" class="glass">Get Free Trial</a>
-      <a href="{{site.urls.email}}" class="glass secondary">Contact Us</a>
+      <a href="/pro/free-trial" class="cta glass">Get Free Trial</a>
+      <a href="{{site.urls.email}}" class="cta glass secondary">Contact Us</a>
     </div>
   </div>
 </section>

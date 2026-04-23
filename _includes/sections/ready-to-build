@@ -2,7 +2,7 @@
   <h2>Ready to Build Your Keyboard?</h2>
   <p>Join thousands of developers creating amazing keyboard experiences with KeyboardKit. Start building today!</p>
   <div>
-    <a href="{{site.urls.github}}" class="glass">GitHub</a>
-    <a href="{{site.urls.docs}}" class="glass">Documentation</a>
+    <a href="{{site.urls.github}}" class="cta glass">GitHub</a>
+    <a href="{{site.urls.docs}}" class="cta glass">Documentation</a>
   </div>
 </div>

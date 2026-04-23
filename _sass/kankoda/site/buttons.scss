@@ -27,11 +27,27 @@ a.cta.large {
   font-size: 1.15rem;
 }
 
-a.cta + a.cta,
-a.cta + a.glass,
-a.glass + a.cta,
-a.glass + a.glass {
+a.cta + a.cta {
   margin-left: 0.75rem;
+}
+
+a.cta.glass {
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  box-shadow: var(--shadow-default);
+  color: var(--color-text) !important;
+}
+
+a.cta.glass.secondary {
+  background: rgba(255, 255, 255, 0.2);
+  color: var(--color-text) !important;
+}
+
+.dark a.cta.glass,
+.dark a.cta.glass.secondary {
+  color: var(--color-text-dark) !important;
 }
 
 a.cta:hover {

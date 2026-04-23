@@ -55,7 +55,7 @@ Business plans include all [pro features](/pro) plus these additional benefits.
     <h2>Let's build something great together.</h2>
     <p>Business licenses are tailored to your needs. Reach out and we'll put together a plan that fits your team, your legal requirements, and your timeline — no generic tiers, no surprises.</p>
     <div>
-      <a href="{{site.urls.email-business-license}}" class="glass">Contact Us</a>
+      <a href="{{site.urls.email-business-license}}" class="cta glass">Contact Us</a>
     </div>
   </div>
 </section>
