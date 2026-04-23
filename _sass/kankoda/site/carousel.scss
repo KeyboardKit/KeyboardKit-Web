@@ -10,7 +10,7 @@
 @supports (container-type: inline-size) {
   @mixin carousel-active {
     display: grid;
-    grid-auto-columns: minmax(min(100%, var(--carousel-item-width)), var(--carousel-item-width));
+    grid-auto-columns: var(--carousel-item-width);
     grid-auto-flow: column;
     grid-template-columns: none;
     justify-content: start;
@@ -20,8 +20,8 @@
       var(--carousel-vertical-space, var(--carousel-shadow-space))
       var(--carousel-shadow-space)
       calc(var(--carousel-vertical-space, var(--carousel-shadow-space)) + var(--carousel-padding-bottom))
-      var(--carousel-shadow-space);
-    margin-left: calc(-1 * var(--carousel-shadow-space));
+      0;
+    margin-left: 0;
     margin-top: calc(-1 * var(--carousel-vertical-pull, 0rem));
     margin-bottom: calc(-1 * var(--carousel-vertical-pull, 0rem));
     scroll-snap-type: x proximity;
@@ -30,6 +30,7 @@
 
     > * {
       scroll-snap-align: start;
+      min-width: 0;
     }
   }
 
