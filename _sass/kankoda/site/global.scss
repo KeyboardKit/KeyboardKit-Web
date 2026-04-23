@@ -35,7 +35,12 @@ h1 {
   margin-bottom: clamp(1.25rem, 2.5vw, 2rem);
 
   &+h2 {
-    margin-top: -0.8em;
+    margin-top: -0.5em;
+
+    @media (max-width: 700px) {
+      margin-top: -0.5em;
+      margin-bottom: clamp(1.5rem, 4vw, 2.5rem);
+    }
   }
 
   &+h3 {
@@ -45,7 +50,8 @@ h1 {
 
 h2 {
   font-size: clamp(1.6rem, 3vw, 2.4rem);
-  margin-top: clamp(2.5rem, 8vw, 4.5rem);
+  line-height: 1.15;
+  margin-top: clamp(2rem, 6vw, 3.5rem);
   margin-bottom: clamp(0.75rem, 1.5vw, 1.25rem);
 }
 
