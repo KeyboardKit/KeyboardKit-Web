@@ -31,7 +31,7 @@ Companies with $10M+ in annual revenue and apps with $1M+ in annual revenue need
   {% endfor %}
 </div>
 
-Standard subscriptions are managed via [Gumroad]({{site.urls.gumroad}}). Sign up for a full year to save on your yearly price!
+Standard subscriptions are managed via [Gumroad]({{site.urls.gumroad}}). The yearly plan saves you two months on your yearly price!
 
 
 ## Full Feature Comparison
@@ -39,12 +39,14 @@ Standard subscriptions are managed via [Gumroad]({{site.urls.gumroad}}). Sign up
 Compare all features across all plans.
 
 {% include licenses/feature-table.html tiers=site.data.tiers %}
-
-
-## Terms & Conditions
-
-The standard [Terms & Conditions]({{page.terms}}) apply to all standard tiers. [Contact us]({{site.urls.email-custom-terms}}) to discuss custom terms.
 </div>
+
+<section class="showcase purple glass">
+  <div class="wrapper slide-in">
+    <h2>Terms & Conditions</h2>
+    <p>The standard <a href="/pro/terms">Terms & Conditions</a> apply to all standard tiers. <a href="{{site.urls.email-custom-terms}}">Contact us</a> to discuss custom terms.</p>
+  </div>
+</section>
 
 <section class="showcase dark blue">
   <div class="wrapper slide-in">
