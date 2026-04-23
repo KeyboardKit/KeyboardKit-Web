@@ -45,3 +45,14 @@ Compare all features across all plans.
 
 The standard [Terms & Conditions]({{page.terms}}) apply to all standard tiers. [Contact us]({{site.urls.email-custom-terms}}) to discuss custom terms.
 </div>
+
+<section class="showcase dark blue">
+  <div class="wrapper slide-in">
+    <h2>Start building today.</h2>
+    <p>Try KeyboardKit Pro free for 7 days — no credit card required. Upgrade to a plan when you're ready.</p>
+    <div>
+      <a href="/pro/free-trial" class="glass">Get Free Trial</a>
+      <a href="{{site.urls.email}}" class="glass secondary">Contact Us</a>
+    </div>
+  </div>
+</section>
