@@ -54,7 +54,7 @@ KeyboardKit Pro emoji-specific, vectorized assets, like the ``.keyboardEmoji`` a
 
 ### Themes
 
-KeyboardKit Pro unlocks a theje engine that makes easy to define and style keyboards with themes:
+KeyboardKit Pro unlocks a theme engine that makes easy to define and style keyboards with themes:
 
 <div class="grid col3">
     <div><img alt="Standard Green Theme" src="{{site.assets}}/themes/theme-standard-green.jpg" /></div>
