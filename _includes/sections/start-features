@@ -1,0 +1,12 @@
+<a name="features"></a>
+<section class="showcase blue glass">
+  <div class="wrapper slide-in">
+    <h2>Features you'll love.</h2>
+    <img class="promo" src="/assets/feature-promos/plain-blueprint-split.png" alt="Custom keyboard preview with a diagonal split that reveals a blueprint." />
+    <p>KeyboardKit gives you everything you need to build a professional custom keyboard, with native performance and modern Swift and SwiftUI integration.</p>
+    <div>
+      <a href="/features" class="cta">View Features</a>
+      <a href="/pro" class="cta glass">KeyboardKit Pro</a>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,10 @@
+<article class="wrapper wide slide-in">
+  <h2>Success Stories</h2>
+  <p>See how developers build successful keyboard apps with KeyboardKit.</p>
+  <div class="grid col3 mobile carousel">
+    {% for item in site.case-studies limit:3 | where: "featured", 1 %}
+      {% include kankoda/components/image-card item=item %}
+    {% endfor %}
+  </div>
+  <a href="/case-studies" class="cta">See more case studies</a>
+</article>

@@ -1,0 +1,5 @@
+<section class="yellow glass">
+  <div class=" wrapper">
+    {% include sections/numeric-items %}
+  </div>
+</section>

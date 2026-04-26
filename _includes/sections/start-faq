@@ -1,0 +1,7 @@
+<article class="wrapper slide-in">
+  <h2>Frequently Asked Questions</h2>
+  <p>Find answers to common questions about KeyboardKit and its features.</p>
+  {% assign featured_faqs = site.data.faq | where: "featured", 1 %}
+  {% include kankoda/components/faq-list items=featured_faqs %}
+  <a href="/faq" class="cta">See all FAQs</a>
+</article>

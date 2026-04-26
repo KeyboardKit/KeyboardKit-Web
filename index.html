@@ -7,155 +7,27 @@ image:  /assets/headers/keyboardkit.jpg
 description: The KeyboardKit SDK lets you create amazing custom keyboards for Apple platforms, using modern technologies like Swift & SwiftUI.
 ---
 
-<section class="hero glow">
-  <div class="wrapper wide">
-    <div class="green glass tag">Trusted by companies worldwide</div>
-    <h1>Build your own<br />custom iOS keyboard.</h1>
-    <h2>The leading Swift and SwiftUI custom keyboard framework.</h2>
-    <p>{{ page.description }}</p>
-    <div>
-      <a href="#get-started" class="cta">Start Building</a>
-      <a href="#content" class="cta glass">Learn More</a>
-    </div>
-  </div>
-  <a href="#get-started" class="content-chevron" aria-label="Scroll to get started"></a>
-</section>
-
-<section class="purple glass">
-  <div class=" wrapper">
-    {% include sections/numeric-items %}
-  </div>
-</section>
-
-<a name="get-started"></a>
-<section class="showcase dark blue">
-  <div class="wrapper slide-in">
-    <h2>Get Started.</h2>
-    <p>Add KeyboardKit to your project and be up and running in minutes.</p>
-    {% highlight swift-package-manager %}{{site.urls.github}}{% endhighlight %}
-    <div>
-      <a href="/get-started" class="cta glass">More Information</a>
-    </div>
-  </div>
-</section>
-
-<a name="features"></a>
-<section class="showcase blue glass">
-  <div class="wrapper slide-in">
-    <h2>Features you'll love.</h2>
-    <img class="promo" src="/assets/feature-promos/plain-blueprint-split.png" alt="Custom keyboard preview with a diagonal split that reveals a blueprint." />
-    <p>KeyboardKit gives you everything you need to build a professional custom keyboard, with native performance and modern Swift and SwiftUI integration.</p>
-    <div>
-      <a href="/features" class="cta">View Features</a>
-      <a href="/pro" class="cta glass">KeyboardKit Pro</a>
-    </div>
-  </div>
-</section>
-
-<a name="choose-path"></a>
-<section class="showcase purple glass">
-  <div class="wrapper wide slide-in">
-    <h2>Choose the path that fits you.</h2>
-    <p>KeyboardKit is free to start using and scales with your needs.</p>
-    <div class="grid col2">
-      <div class="glass scale">
-        <h3>Individual & Startups</h3>
-        <p>For solo developers, freelancers, or small teams. Flexible subscription plans with continuous updates.</p>
-        <a class="large cta" href="/pricing">View Pricing</a>
-      </div>
-      <div class="glass scale">
-        <h3>Business & Organization</h3>
-        <p>For established companies requiring legal security, invoice billing, software escrow, and priority support.</p>
-        <a class="large cta" href="/business">Business Plans</a>
-      </div>
-    </div>
-  </div>
-</section>
+{% include sections/start-hero %}
+{% include sections/start-numeric-items %}
+{% include sections/start-features %}
+{% include sections/start-get-started %}
+{% include sections/start-path %}
 
 <a name="content"></a>
 <section class="showcase glow">
-  <a name="what-is"></a>
-  <article class="wrapper slide-in">
-    <h2>What is a Custom Keyboard?</h2>
-    <p>A custom keyboard can replace the native software keyboard, and lets users use your app's unique features in any app that support typing and pasting.</p>
-    <a href="/about" class="cta">Learn more</a>
-  </article>
+  {% include sections/start-what-is %}
+  {% include sections/start-why-choose %}
+  {% include sections/start-industries %}
+  {% include sections/start-case-studies %}
+</section>
 
-  <article class="wrapper wide slide-in">
-    <h2>Why Choose KeyboardKit?</h2>
-    <p>KeyboardKit is the top choice for developers building custom keyboards.</p>
-    <div class="grid col4 carousel mobile">
-      {% for usp in site.data.usps %}
-      <div class="glass">
-        {% include kankoda/components/icon-badge color=usp.color name=usp.icon %}
-        <h4>{{ usp.title }}</h4>
-        <p>{{ usp.text }}</p>
-      </div>
-      {% endfor %}
-    </div>
-  </article>
+<section class="showcase purple glass">
+  {% include sections/start-news %}
+  {% include sections/start-social %}
+</section>
 
-  <article class="wrapper wide slide-in">
-    <h2>Industries</h2>
-    <p>KeyboardKit powers innovation across a wide range of industries and use cases.</p>
-    <div class="grid col4 carousel mobile">
-      {% assign featured_industries = site.data.industries | where: "featured", true %}
-      {% for industry in featured_industries %}
-      <div class="glass compact">
-        {% include kankoda/components/icon-badge color="blue" name=industry.icon %}
-        <h4>{{ industry.title }}</h4>
-        <p>{{ industry.text }}</p>
-      </div>
-      {% endfor %}
-    </div>
-  </article>
-
-  <article class="wrapper wide slide-in">
-    <h2>Success Stories</h2>
-    <p>See how developers build successful keyboard apps with KeyboardKit.</p>
-    <div class="grid col3 mobile carousel">
-      {% for item in site.case-studies limit:3 | where: "featured", 1 %}
-        {% include kankoda/components/image-card item=item %}
-      {% endfor %}
-    </div>
-    <a href="/case-studies" class="cta">See more case studies</a>
-  </article>
-  
-  <article class="wrapper wide slide-in">
-    <div class="slide-in grid col2">
-      <div>
-        <h3>Follow Us</h3>
-        <p>Follow us on <a href="{{site.urls.bluesky}}">Bluesky</a> and <a href="{{site.urls.mastodon}}">Mastodon</a> for the latest news.
-        <div class="icon-group">
-          <a href="{{site.urls.bluesky}}">{% include kankoda/components/icon name="bi:bluesky" %}</a>
-          <a href="{{site.urls.mastodon}}">{% include kankoda/components/icon name="bi:mastodon" %}</a>
-        </div>
-      </div>
-      <div>
-        <h3>Newsletter</h3>
-        <p>Subscribe to our <a href="{{site.urls.newsletter}}">newsletter</a> for periodic updates.</p>
-        {% include kankoda/gumroad/newsletter %}
-      </div>
-    </div>
-  </article>
-
-  <article class="wrapper wide slide-in">
-    <h2>Latest News</h2>
-    <p>Follow the <a href="{{site.urls.blog}}">KeyboardKit Blog</a> for news & updates.</p>
-    <div class="grid col2">
-      {% for post in site.posts limit:2 %}
-        {% include kankoda/components/image-link item=post %}
-      {% endfor %}
-    </div>
-  </article>
-
-  <article class="wrapper slide-in">
-    <h2>Frequently Asked Questions</h2>
-    <p>Find answers to common questions about KeyboardKit and its features.</p>
-    {% assign featured_faqs = site.data.faq | where: "featured", 1 %}
-    {% include kankoda/components/faq-list items=featured_faqs %}
-    <a href="/faq" class="cta">See all FAQs</a>
-  </article>
+<section class="showcase glow">
+  {% include sections/start-faq %}
 </section>
 
 <section class="showcase dark blue">
