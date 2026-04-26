@@ -97,6 +97,10 @@ section.showcase {
     margin-top: calc(clamp(5rem, 8vw, 7rem) - 2rem) !important;
   }
 
+  p, .wrapper > p {
+    max-width: 750px;
+  }
+
   .wrapper {
     display: grid;
     gap: 2.3rem;
