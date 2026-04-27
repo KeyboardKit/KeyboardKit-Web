@@ -6,5 +6,5 @@
       {% include kankoda/components/image-card item=item %}
     {% endfor %}
   </div>
-  <a href="/case-studies" class="cta">See more case studies</a>
+  <a href="/case-studies" class="cta">View Case Studies</a>
 </article>

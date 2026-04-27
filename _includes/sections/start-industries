@@ -11,4 +11,5 @@
     </div>
     {% endfor %}
   </div>
+  <a href="/industries" class="cta">View Industries</a>
 </article>

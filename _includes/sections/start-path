@@ -1,19 +1,16 @@
-<a name="choose-path"></a>
-<section class="showcase purple glass">
-  <div class="wrapper wide slide-in">
-    <h2>Choose the path that fits you.</h2>
-    <p>KeyboardKit is free to start using and scales with your needs.</p>
-    <div class="grid col2">
-      <div class="glass scale">
-        <h3>Individual & Startups</h3>
-        <p>For solo developers, freelancers, or small teams. Flexible subscription plans with continuous updates.</p>
-        <a class="large cta" href="/pricing">View Pricing</a>
-      </div>
-      <div class="glass scale">
-        <h3>Business & Organization</h3>
-        <p>For established companies requiring legal security, invoice billing, software escrow, and priority support.</p>
-        <a class="large cta" href="/business">Business Plans</a>
-      </div>
+<div class="wrapper wide slide-in">
+  <h2>Choose the path that fits you.</h2>
+  <p>KeyboardKit is free to start using and scales with your needs.</p>
+  <div class="grid col2">
+    <div class="glass scale">
+      <h3>Individual & Startups</h3>
+      <p>For solo developers, freelancers, or small teams. Flexible subscription plans with continuous updates.</p>
+      <a class="large cta" href="/pricing">View Pricing</a>
+    </div>
+    <div class="glass scale">
+      <h3>Business & Organization</h3>
+      <p>For established companies requiring legal security, invoice billing, software escrow, and priority support.</p>
+      <a class="large cta" href="/business">Business Plans</a>
     </div>
   </div>
-</section>
+</div>

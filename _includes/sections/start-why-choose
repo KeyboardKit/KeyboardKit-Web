@@ -1,13 +1,13 @@
 <article class="wrapper wide slide-in">
-    <h2>Why Choose KeyboardKit?</h2>
-    <p>KeyboardKit is the top choice for developers building custom keyboards.</p>
-    <div class="grid col4 carousel mobile">
-      {% for usp in site.data.usps %}
-      <div class="glass">
-        {% include kankoda/components/icon-badge color=usp.color name=usp.icon %}
-        <h4>{{ usp.title }}</h4>
-        <p>{{ usp.text }}</p>
-      </div>
-      {% endfor %}
+  <h2>Why Choose KeyboardKit?</h2>
+  <p>KeyboardKit is the top choice for developers building custom keyboards.</p>
+  <div class="grid col4 carousel mobile">
+    {% for usp in site.data.usps %}
+    <div class="glass">
+      {% include kankoda/components/icon-badge color=usp.color name=usp.icon %}
+      <h4>{{ usp.title }}</h4>
+      <p>{{ usp.text }}</p>
     </div>
-  </article>
+    {% endfor %}
+  </div>
+</article>
