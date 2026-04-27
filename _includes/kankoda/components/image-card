@@ -5,7 +5,7 @@
         <img src="{{ include.item.image }}" />
       </div>
     {% elsif include.item.icon or include.item.emoji %}
-      {% assign media_color = include.item.color %}
+      {% assign media_color = include.color | default: include.item.color %}
       <div class="image-card-media is-generated {{ media_color }}{% unless include.item.icon %} is-emoji{% endunless %}">
         <div class="image-card-media-icon{% unless include.item.icon %} is-emoji{% endunless %}">
           {% if include.item.icon %}

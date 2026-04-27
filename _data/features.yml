@@ -4,7 +4,6 @@
   emoji:  🌱
   url:    /features/essentials
   group:  core
-  color:  blue
   text:   KeyboardKit's core engine provides you with essential models, extensions and views.
   docs:   https://docs.keyboardkit.com/documentation/keyboardkit/essentials-article
 
@@ -12,7 +11,6 @@
   emoji:  🌐
   url:    /features/localization
   group:  core
-  color:  blue
   text:   KeyboardKit supports typing in <b>75 locales</b>, with fully localized assets and layouts.
   docs:   https://docs.keyboardkit.com/documentation/keyboardkit/localization-article
   card:   
@@ -23,7 +21,6 @@
   emoji:  💥
   url:    /features/actions
   group:  core
-  color:  blue
   text:   KeyboardKit lets you trigger and handle meny predefined keyboard actions.
   docs:   https://docs.keyboardkit.com/documentation/keyboardkit/actions-article
 
@@ -31,7 +28,6 @@
   emoji:  🔣
   url:    /features/layout
   group:  core
-  color:  blue
   text:   KeyboardKit has dynamic and fully customizable keyboard layout engine.
   docs:   https://docs.keyboardkit.com/documentation/keyboardkit/layout-article
 
@@ -39,7 +35,6 @@
   emoji:  🗺️
   url:    /features/navigation
   group:  core
-  color:  blue
   text:   KeyboardKit lets you open any URL and app deep link directly from the keyboard.
   docs:   https://docs.keyboardkit.com/documentation/keyboardkit/navigation-article
 
@@ -47,7 +42,6 @@
   emoji:  🩺
   url:    /features/status
   group:  core
-  color:  blue
   text:   KeyboardKit can detect and manage a keyboard's system and Full Access status.
   docs:   https://docs.keyboardkit.com/documentation/keyboardkit/status-article
 
@@ -59,7 +53,6 @@
   emoji:  ⌨️
   url:    /features/essentials-keyboardview
   group:  system
-  color:  green
   text:   KeyboardKit has a native, fully customizable keyboard view that supports all key features.
   docs:   https://docs.keyboardkit.com/documentation/keyboardkit/essentials-keyboardview
 
@@ -67,7 +60,6 @@
   emoji:  📱
   url:    /features/app
   group:  system
-  color:  green
   text:   KeyboardKit makes it easy to set up great keyboard apps, with complete utility screens.
   docs:   https://docs.keyboardkit.com/documentation/keyboardkit/app-article
   card:   
@@ -78,7 +70,6 @@
   emoji:  😀
   url:    /features/emojis
   group:  system
-  color:  green
   text:   KeyboardKit has state of the art emoji models, with a fully customizable emoji keyboard.
   docs:   https://docs.keyboardkit.com/documentation/keyboardkit/emojis-article
   card:   
@@ -89,7 +80,6 @@
   emoji:  🔌
   url:    /features/external-keyboards
   group:  system
-  color:  green
   text:   KeyboardKit can detect if an external hardware keyboard is connected to the device.
   docs:   https://docs.keyboardkit.com/documentation/keyboardkit/feedback-article
   card:   
@@ -100,7 +90,6 @@
   emoji:  🏠
   url:    /features/host
   group:  system
-  color:  green
   text:   KeyboardKit Pro can identify and open specific applications (iOS 26.4 problems exist).
   docs:   https://docs.keyboardkit.com/documentation/keyboardkit/host-article
   card:   
@@ -111,7 +100,6 @@
   emoji:  ⚙️
   url:    /features/settings
   group:  system
-  color:  green
   text:   KeyboardKit has tools for in-app settings and can open any app in System Settings.
   docs:   https://docs.keyboardkit.com/documentation/keyboardkit/settings-article
   card:   
@@ -126,7 +114,6 @@
   emoji:  🤖
   url:    /features/ai
   group:  intelligence
-  color:  orange
   text:   KeyboardKit has features that are needed for AI keyboards and in-keyboard prompting.
   docs:   https://docs.keyboardkit.com/documentation/keyboardkit/ai-article
   card:   
@@ -137,7 +124,6 @@
   emoji:  💡
   url:    /features/autocomplete
   group:  intelligence
-  color:  orange
   text:   KeyboardKit has a fully local autocomplete engine with autocorrect and predictions.
   docs:   https://docs.keyboardkit.com/documentation/keyboardkit/autocomplete-article
   card:   
@@ -148,7 +134,6 @@
   emoji:  📋
   url:    /features/clipboard
   group:  intelligence
-  color:  orange
   text:   KeyboardKit can integrate with the system clipboard and extend it with custom text clips.
   docs:   https://docs.keyboardkit.com/documentation/keyboardkit/clipboard-article
   card:   
@@ -159,7 +144,6 @@
   emoji:  🎤
   url:    /features/dictation  
   group:  intelligence
-  color:  orange
   text:   KeyboardKit can start dictation directly from the keyboard and use it to trigger commands.
   docs:   https://docs.keyboardkit.com/documentation/keyboardkit/dictation-article
   card:   
@@ -170,7 +154,6 @@
   emoji:  📄
   url:    /features/proxy-utilities
   group:  intelligence
-  color:  orange
   text:   KeyboardKit extends the text document proxu and can use it to read the full document.
   docs:   https://docs.keyboardkit.com/documentation/keyboardkit/proxy-utilities-article
   card:   
@@ -181,7 +164,6 @@
   emoji:  📝
   url:    /features/text-input
   group:  intelligence
-  color:  orange
   text:   KeyboardKit has custom text fields that let you type within the keyboard extension.
   docs:   https://docs.keyboardkit.com/documentation/keyboardkit/input-article
   card:   
@@ -196,7 +178,6 @@
   emoji:  ⌨️
   url:    /features/essentials-keyboardview
   group:  ui
-  color:  purple
   text:   KeyboardKit has a native, fully customizable keyboard view that supports all key features.
   docs:   https://docs.keyboardkit.com/documentation/keyboardkit/essentials-keyboardview
 
@@ -204,7 +185,6 @@
   emoji:  🗯
   url:    /features/callouts
   group:  ui
-  color:  purple
   text:   KeyboardKit can show input and secondary action callouts as the user types.
   docs:   https://docs.keyboardkit.com/documentation/keyboardkit/callouts-article
 
@@ -212,7 +192,6 @@
   emoji:  🔉
   url:    /features/feedback
   group:  ui
-  color:  purple
   text:   KeyboardKit can trigger audio & haptic feedback as the user interacts with the keyboard.
   docs:   https://docs.keyboardkit.com/documentation/keyboardkit/feedback-article
 
@@ -220,7 +199,6 @@
   emoji:  𝒜
   url:    /features/fonts
   group:  ui
-  color:  purple
   text:   KeyboardKit lets you type with custom, unicode fonts. This is a <u>special license feature</u>.
   docs:   https://docs.keyboardkit.com/documentation/keyboardkit/fonts-article
   card:   
@@ -231,7 +209,6 @@
   emoji:  🎨
   url:    /features/styling
   group:  ui
-  color:  purple
   text:   KeyboardKit lets you styles all keyboard components with a rich set of view styles.
   docs:   https://docs.keyboardkit.com/documentation/keyboardkit/styling-article
 
@@ -239,7 +216,6 @@
   title:  Themes
   url:    /features/themes
   group:  ui
-  color:  purple
   text:   KeyboardKit has a theme engine that lets you style the entire keyboard with themes.
   docs:   https://docs.keyboardkit.com/documentation/keyboardkit/themes-article
   card:   
