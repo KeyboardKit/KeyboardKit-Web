@@ -31,7 +31,7 @@ KeyboardKit supports [{{site.locales.count}} languages](/locales).
 
 KeyboardKit's core keyboard engine provides essential models, features and views.
 
-<div class="grid col3">
+<div class="grid col3 mobile carousel">
 {% for feature in core_features %}
   {% include kankoda/components/image-card item=feature %}
 {% endfor %}
@@ -41,7 +41,7 @@ KeyboardKit's core keyboard engine provides essential models, features and views
 
 KeyboardKit's system features add a native looking keyboard view and additional utilities.
 
-<div class="grid col3">
+<div class="grid col3 mobile carousel">
 {% for feature in system_features %}
   {% include kankoda/components/image-card item=feature %}
 {% endfor %}
@@ -51,7 +51,7 @@ KeyboardKit's system features add a native looking keyboard view and additional 
 
 KeyboardKit's text & intelligence features improves the typing and text input capabilities.
 
-<div class="grid col3">
+<div class="grid col3 mobile carousel">
 {% for feature in intelligence_features %}
   {% include kankoda/components/image-card item=feature %}
 {% endfor %}
@@ -61,7 +61,7 @@ KeyboardKit's text & intelligence features improves the typing and text input ca
 
 KeyboardKit's UI & design features let you customize the keyboard and tailor it to your needs.
 
-<div class="grid col3">
+<div class="grid col3 mobile carousel">
 {% for feature in ui_features %}
   {% include kankoda/components/image-card item=feature %}
 {% endfor %}
