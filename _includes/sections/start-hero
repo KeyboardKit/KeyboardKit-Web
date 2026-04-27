@@ -1,6 +1,6 @@
 <section class="hero glow">
   <div class="wrapper wide">
-    <div class="green glass tag">Trusted by companies worldwide</div>
+    <div class="glass tag">Trusted by companies worldwide</div>
     <h1>Build your own<br />custom iOS keyboard.</h1>
     <h2>The leading Swift and SwiftUI custom keyboard framework.</h2>
     <p>{{ page.description }}</p>
@@ -9,5 +9,5 @@
       <a href="#content" class="cta glass">Learn More</a>
     </div>
   </div>
-  <a href="#get-started" class="content-chevron" aria-label="Scroll to get started"></a>
+  {% include sections/numeric-items %}
 </section>

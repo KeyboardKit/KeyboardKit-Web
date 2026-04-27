@@ -1,7 +1,7 @@
 // Hero
 
 section.hero {
-  min-height: calc(100vh - 2 * var(--header-height, 60px));
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -24,6 +24,11 @@ section.hero {
   .tag {
     margin: 2.25rem 0;
     padding: 0.8rem 1.2rem;
+  }
+
+  .tag.glass {
+    background: rgba(210, 222, 185, 0.35);
+    color: rgba(95, 108, 65, 0.75);
   }
 
   h1 {
@@ -77,6 +82,15 @@ section.hero {
       transform: translateY(0.2rem);
     }
   }
+}
+
+
+section.hero.gold,
+section.hero.silver {
+  justify-content: flex-start;
+  padding-top: calc(var(--header-height, 60px) + 6vh);
+  padding-bottom: 0;
+  min-height: 100vh;
 }
 
 
