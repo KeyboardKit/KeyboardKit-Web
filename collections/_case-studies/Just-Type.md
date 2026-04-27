@@ -1,5 +1,4 @@
 ---
-name:  JustType
 title: JustType
 subtitle: Type efficiently & accurately with AI
 

@@ -1,5 +1,4 @@
 ---
-name:  Tapling
 title: Tapling
 subtitle: Type with Bongo Cat
 

@@ -1,5 +1,4 @@
 ---
-name:  BiAffect
 title: BiAffect
 subtitle: Track mental health through keystroke dynamics
 

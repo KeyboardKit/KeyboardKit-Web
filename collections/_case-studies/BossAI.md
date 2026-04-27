@@ -1,5 +1,4 @@
 ---
-name:  BossAI
 title: BossAI
 subtitle: Voice-First AI Keyboard
 

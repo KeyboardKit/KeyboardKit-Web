@@ -1,0 +1,223 @@
+# Core
+
+- title:  Essentials
+  emoji:  🌱
+  url:    /features/essentials
+  group:  core
+  text:   KeyboardKit's core engine provides you with essential models, extensions and views.
+  docs:   https://docs.keyboardkit.com/documentation/keyboardkit/essentials-article
+
+- title:  Localization
+  emoji:  🌐
+  url:    /features/localization
+  group:  core
+  text:   KeyboardKit supports typing in <b>75 locales</b>, with fully localized assets and layouts.
+  docs:   https://docs.keyboardkit.com/documentation/keyboardkit/localization-article
+  card:   
+    tags:
+      - pro
+
+- title:  Actions
+  emoji:  💥
+  url:    /features/actions
+  group:  core
+  text:   KeyboardKit lets you trigger and handle meny predefined keyboard actions.
+  docs:   https://docs.keyboardkit.com/documentation/keyboardkit/actions-article
+
+- title:  Layout
+  emoji:  🔣
+  url:    /features/layout
+  group:  core
+  text:   KeyboardKit has dynamic and fully customizable keyboard layout engine.
+  docs:   https://docs.keyboardkit.com/documentation/keyboardkit/layout-article
+
+- title:  Navigation
+  emoji:  🗺️
+  url:    /features/navigation
+  group:  core
+  text:   KeyboardKit lets you open any URL and app deep link directly from the keyboard.
+  docs:   https://docs.keyboardkit.com/documentation/keyboardkit/navigation-article
+
+- title:  Status
+  emoji:  🩺
+  url:    /features/status
+  group:  core
+  text:   KeyboardKit can detect and manage a keyboard's system and Full Access status.
+  docs:   https://docs.keyboardkit.com/documentation/keyboardkit/status-article
+
+
+
+# System
+
+- title:  Keyboard View
+  emoji:  ⌨️
+  url:    /features/essentials-keyboardview
+  group:  system
+  text:   KeyboardKit has a native, fully customizable keyboard view that supports all key features.
+  docs:   https://docs.keyboardkit.com/documentation/keyboardkit/essentials-keyboardview
+
+- title:  App Utilities
+  emoji:  📱
+  url:    /features/app
+  group:  system
+  text:   KeyboardKit makes it easy to set up great keyboard apps, with complete utility screens.
+  docs:   https://docs.keyboardkit.com/documentation/keyboardkit/app-article
+  card:   
+    tags:
+      - pro
+
+- title:  Emojis
+  emoji:  😀
+  url:    /features/emojis
+  group:  system
+  text:   KeyboardKit has state of the art emoji models, with a fully customizable emoji keyboard.
+  docs:   https://docs.keyboardkit.com/documentation/keyboardkit/emojis-article
+  card:   
+    tags:
+      - pro
+
+- title:  External Keyboards
+  emoji:  🔌
+  url:    /features/external-keyboards
+  group:  system
+  text:   KeyboardKit can detect if an external hardware keyboard is connected to the device.
+  docs:   https://docs.keyboardkit.com/documentation/keyboardkit/feedback-article
+  card:   
+    tags:
+      - pro
+
+- title:  Host Application
+  emoji:  🏠
+  url:    /features/host
+  group:  system
+  text:   KeyboardKit Pro can identify and open specific applications (iOS 26.4 problems exist).
+  docs:   https://docs.keyboardkit.com/documentation/keyboardkit/host-article
+  card:   
+    tags:
+      - pro
+
+- title:  Settings
+  emoji:  ⚙️
+  url:    /features/settings
+  group:  system
+  text:   KeyboardKit has tools for in-app settings and can open any app in System Settings.
+  docs:   https://docs.keyboardkit.com/documentation/keyboardkit/settings-article
+  card:   
+    tags:
+      - pro
+
+
+
+## Intelligence
+
+- title:  AI Support
+  emoji:  🤖
+  url:    /features/ai
+  group:  intelligence
+  text:   KeyboardKit has features that are needed for AI keyboards and in-keyboard prompting.
+  docs:   https://docs.keyboardkit.com/documentation/keyboardkit/ai-article
+  card:   
+    tags:
+      - pro
+
+- title:  Autocomplete
+  emoji:  💡
+  url:    /features/autocomplete
+  group:  intelligence
+  text:   KeyboardKit has a fully local autocomplete engine with autocorrect and predictions.
+  docs:   https://docs.keyboardkit.com/documentation/keyboardkit/autocomplete-article
+  card:   
+    tags:
+      - pro
+
+- title:  Clipboard
+  emoji:  📋
+  url:    /features/clipboard
+  group:  intelligence
+  text:   KeyboardKit can integrate with the system clipboard and extend it with custom text clips.
+  docs:   https://docs.keyboardkit.com/documentation/keyboardkit/clipboard-article
+  card:   
+    tags:
+      - pro
+
+- title:  Dictation
+  emoji:  🎤
+  url:    /features/dictation  
+  group:  intelligence
+  text:   KeyboardKit can start dictation directly from the keyboard and use it to trigger commands.
+  docs:   https://docs.keyboardkit.com/documentation/keyboardkit/dictation-article
+  card:   
+    tags:
+      - pro
+
+- title:  Proxy Utilities
+  emoji:  📄
+  url:    /features/proxy-utilities
+  group:  intelligence
+  text:   KeyboardKit extends the text document proxu and can use it to read the full document.
+  docs:   https://docs.keyboardkit.com/documentation/keyboardkit/proxy-utilities-article
+  card:   
+    tags:
+      - pro
+
+- title:  Text Input
+  emoji:  📝
+  url:    /features/text-input
+  group:  intelligence
+  text:   KeyboardKit has custom text fields that let you type within the keyboard extension.
+  docs:   https://docs.keyboardkit.com/documentation/keyboardkit/input-article
+  card:   
+    tags:
+      - pro
+
+
+
+# UI & Design
+
+- title:  Keyboard View
+  emoji:  ⌨️
+  url:    /features/essentials-keyboardview
+  group:  ui
+  text:   KeyboardKit has a native, fully customizable keyboard view that supports all key features.
+  docs:   https://docs.keyboardkit.com/documentation/keyboardkit/essentials-keyboardview
+
+- title:  Callouts
+  emoji:  🗯
+  url:    /features/callouts
+  group:  ui
+  text:   KeyboardKit can show input and secondary action callouts as the user types.
+  docs:   https://docs.keyboardkit.com/documentation/keyboardkit/callouts-article
+
+- title:  Feedback
+  emoji:  🔉
+  url:    /features/feedback
+  group:  ui
+  text:   KeyboardKit can trigger audio & haptic feedback as the user interacts with the keyboard.
+  docs:   https://docs.keyboardkit.com/documentation/keyboardkit/feedback-article
+
+- title:  Fonts
+  emoji:  𝒜
+  url:    /features/fonts
+  group:  ui
+  text:   KeyboardKit lets you type with custom, unicode fonts. This is a <u>special license feature</u>.
+  docs:   https://docs.keyboardkit.com/documentation/keyboardkit/fonts-article
+  card:   
+    tags:
+      - pro
+
+- title:  Styling
+  emoji:  🎨
+  url:    /features/styling
+  group:  ui
+  text:   KeyboardKit lets you styles all keyboard components with a rich set of view styles.
+  docs:   https://docs.keyboardkit.com/documentation/keyboardkit/styling-article
+
+- emoji: 🍭
+  title:  Themes
+  url:    /features/themes
+  group:  ui
+  text:   KeyboardKit has a theme engine that lets you style the entire keyboard with themes.
+  docs:   https://docs.keyboardkit.com/documentation/keyboardkit/themes-article
+  card:   
+    tags:
+      - pro

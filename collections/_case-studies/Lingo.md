@@ -1,5 +1,4 @@
 ---
-name:  Lingo
 title: Lingo 
 subtitle: Your Intelligent Translation Keyboard
 

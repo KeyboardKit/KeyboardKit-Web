@@ -24,7 +24,7 @@
       </div>
     {% endif %}
     <div class="content">
-      <h4>{{include.item.name | default: include.item.title }}</h4>
+      <h4>{{include.item.title | default: include.item.name}}</h4>
       <p>{{include.item.card.text | default: include.item.text}}</p>
       {% if include.item.card.bullets or include.item.card.tags %}
       <div class="image-card-meta">

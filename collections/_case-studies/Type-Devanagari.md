@@ -1,5 +1,4 @@
 ---
-name:  Type Devanagari
 title: Type Devanagari
 subtitle: Custom Sanskrit Keyboard
 

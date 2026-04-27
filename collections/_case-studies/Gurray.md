@@ -1,5 +1,4 @@
 ---
-name:  Gurray
 title: Gurray
 subtitle: Australian Indigenous Keyboard
 

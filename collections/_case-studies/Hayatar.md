@@ -1,5 +1,4 @@
 ---
-name:  Hayatar
 title: Hayatar
 subtitle: Native Armenian Keyboard
 

@@ -1,5 +1,4 @@
 ---
-name:  GIF AI Keyboard
 title: GIF AI Keyboard
 subtitle: Generate Custom GIFs
 
