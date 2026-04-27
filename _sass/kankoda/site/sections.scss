@@ -50,12 +50,11 @@ section.hero {
   }
 
   .content-chevron {
-    position: absolute;
-    left: 50%;
-    bottom: 2rem;
+    position: relative;
+    display: block;
+    margin-top: clamp(1.5rem, 4vh, 3rem);
     width: 2.25rem;
     height: 2.25rem;
-    transform: translateX(-50%);
     opacity: 0.7;
     transition:
       transform var(--duration-link) ease,
@@ -75,7 +74,7 @@ section.hero {
 
     &:hover {
       opacity: 1;
-      transform: translateX(-50%) translateY(0.2rem);
+      transform: translateY(0.2rem);
     }
   }
 }
@@ -84,7 +83,7 @@ section.hero {
 // Showcase
 
 section.showcase {
-  padding: clamp(5rem, 8vw, 7rem) 0 clamp(4rem, 7vw, 6rem);
+  padding: clamp(4rem, 6vw, 5.5rem) 0 clamp(3.5rem, 5vw, 5rem);
   text-align: center;
 
   article {
@@ -116,6 +115,7 @@ section.showcase {
 
   h3 {
     font-size: clamp(1.45rem, 2.15vw, 1.9rem);
+    margin: 0;
   }
 
   img.promo {
