@@ -97,7 +97,14 @@
     });
   });
 
+  nav.classList.add('no-transitions');
   updateActiveLink();
+  requestAnimationFrame(function() {
+    requestAnimationFrame(function() {
+      nav.classList.remove('no-transitions');
+    });
+  });
+
   window.addEventListener('scroll', updateActiveLink, { passive: true });
   window.addEventListener('resize', updateActiveLink);
   window.addEventListener('hashchange', updateActiveLink);

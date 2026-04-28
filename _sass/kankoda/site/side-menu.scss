@@ -9,6 +9,10 @@
   align-items: start;
 }
 
+.side-menu-nav.no-transitions * {
+  transition: none !important;
+}
+
 .side-menu-nav {
   overflow: visible;
   position: sticky;
