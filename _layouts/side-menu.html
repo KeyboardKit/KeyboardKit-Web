@@ -22,7 +22,6 @@ instructions: To customize the side menu, add a "menu" value to the front-matter
           <section class="side-menu-nav-section">
             <nav aria-label="{{ menu_title }}">
               <ul>
-                <li><a href="#page-top" data-side-menu-top="true">Top</a></li>
                 {% assign in_code_block = false %}
                 {% for raw_line in page_content_lines %}
                   {% assign line = raw_line | strip %}
