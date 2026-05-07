@@ -21,26 +21,22 @@ layout: plain
       <aside class="side-menu" aria-label="{{ menu_title }}">
         <div class="side-menu-inner">
           <div class="side-menu-title">Tags</div>
-          <section class="side-menu-section">
-            <div class="tags">
-                    
-              {% for tag in first_tags %}
-                {% assign tag = tag | strip %}
-                {% if tag != "" %}
-                  <button class="tag" type="button" data-tag="{{ tag | escape }}" aria-pressed="false">{{ tag | escape }}</button>
-                {% endif %}
-              {% endfor %}
-              <span class="blog-menu-tags-separator" aria-hidden="true">·</span>
-              {% for tag in unique_tags %}
-                {% if tag != "" %}
-                  {% unless first_tags contains tag %}
-                    <button class="tag" type="button" data-tag="{{ tag | escape }}" aria-pressed="false">{{ tag | escape }}</button>
-                  {% endunless %}
-                {% endif %}
-              {% endfor %}
-
-            </div>
-          </section>
+          <div class="side-menu-section tags" role="group" aria-label="Tags">
+            {% for tag in first_tags %}
+              {% assign tag = tag | strip %}
+              {% if tag != "" %}
+                <button class="tag {{ tag | slugify }}" type="button" data-tag="{{ tag | escape }}" aria-pressed="false">{{ tag | escape }}</button>
+              {% endif %}
+            {% endfor %}
+            <span class="side-menu-tag-separator" aria-hidden="true">·</span>
+            {% for tag in unique_tags %}
+              {% if tag != "" %}
+                {% unless first_tags contains tag %}
+                  <button class="tag {{ tag | slugify }}" type="button" data-tag="{{ tag | escape }}" aria-pressed="false">{{ tag | escape }}</button>
+                {% endunless %}
+              {% endif %}
+            {% endfor %}
+          </div>
         </div>
       </aside>
 

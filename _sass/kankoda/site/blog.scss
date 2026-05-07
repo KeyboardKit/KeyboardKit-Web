@@ -21,64 +21,52 @@
   }
 }
 
-.blog {
-  .side-menu .tags {
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.35rem;
-  }
+.blog .side-menu .tag {
+  appearance: none;
+  -webkit-appearance: none;
+  background: var(--tag-bg, rgba(255, 255, 255, 0.32));
+  border: 1px solid rgba(255, 255, 255, 0.48);
+  border-radius: 0.38rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+  color: var(--tag-color, var(--color-text));
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 600;
+  line-height: 1.35;
+  margin: 0;
+  opacity: 0.72;
+  padding: 0.18rem 0.42rem 0.22rem;
+  text-align: center;
+  text-transform: capitalize;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    color 0.2s ease,
+    opacity 0.2s ease;
+}
 
-  .side-menu .tag {
-    appearance: none;
-    -webkit-appearance: none;
-    background: rgba(255, 255, 255, 0.32);
-    border: 1px solid rgba(255, 255, 255, 0.48);
-    border-radius: 0.38rem;
-    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
-    color: var(--color-text);
-    cursor: pointer;
-    font: inherit;
-    font-size: 0.82rem;
-    font-weight: 600;
-    line-height: 1.35;
-    margin: 0;
-    opacity: 0.72;
-    padding: 0.18rem 0.42rem 0.22rem;
-    text-align: center;
-    text-transform: capitalize;
-    transition:
-      background-color 0.2s ease,
-      border-color 0.2s ease,
-      box-shadow 0.2s ease,
-      color 0.2s ease,
-      opacity 0.2s ease;
+.blog .side-menu .tag:hover,
+.blog .side-menu .tag.active {
+  background: var(--tag-bg, rgba(255, 255, 255, 0.56));
+  border-color: rgba(255, 255, 255, 0.72);
+  color: var(--tag-color, var(--color-text));
+  opacity: 1;
+}
 
-    &:hover,
-    &.active {
-      background: rgba(255, 255, 255, 0.56);
-      border-color: rgba(255, 255, 255, 0.72);
-      opacity: 1;
-    }
+.blog .side-menu .tag.active {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
 
-    &.active {
-      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
-    }
+.blog .side-menu .tag:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 0.2rem;
+  opacity: 1;
+}
 
-    &:focus-visible {
-      outline: 2px solid currentColor;
-      outline-offset: 0.2rem;
-      opacity: 1;
-    }
-
-    &.inactive {
-      opacity: 0.42;
-    }
-  }
-
-  .blog-menu-tags-separator {
-    opacity: 0.4;
-  }
+.blog .side-menu .tag.inactive {
+  opacity: 0.42;
 }
 
 .blog.page-content h1 {

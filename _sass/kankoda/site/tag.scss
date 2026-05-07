@@ -10,22 +10,55 @@ div.tag {
   min-width: 2.5rem;
   padding: 0.3rem 0.8rem 0.4rem;
   border-radius: var(--radius-tag);
-  background: var(--color-bg-dark);
-  color: var(--color-text-dark);
+  background: var(--tag-bg, var(--color-bg-dark));
+  color: var(--tag-color, var(--color-text-dark));
   font-size: 0.9rem;
   letter-spacing: 0.02em;
   text-decoration: none;
   white-space: nowrap;
+}
 
-  &.glass  { background: rgba(255, 255, 255, 0.55); color: var(--color-text); }
+.tag.glass {
+  --tag-bg: rgba(255, 255, 255, 0.55);
+  --tag-color: var(--color-text);
+}
 
-  &.blue   { background: var(--glass-blue-bg);   color: var(--glass-blue-text); }
-  &.green  { background: var(--glass-green-bg);  color: var(--glass-green-text); }
-  &.yellow { background: var(--glass-yellow-bg); color: var(--glass-yellow-text); }
-  &.orange { background: var(--glass-orange-bg); color: var(--glass-orange-text); }
-  &.red    { background: var(--glass-red-bg);    color: var(--glass-red-text); }
-  &.purple { background: var(--glass-purple-bg); color: var(--glass-purple-text); }
+.tag.blue {
+  --tag-bg: var(--glass-blue-bg);
+  --tag-color: var(--glass-blue-text);
+}
 
-  &.pro       { background: gold; color: var(--color-text); }
-  &.releases  { background: var(--glass-blue-bg); color: var(--glass-blue-text); }
+.tag.green {
+  --tag-bg: var(--glass-green-bg);
+  --tag-color: var(--glass-green-text);
+}
+
+.tag.yellow {
+  --tag-bg: var(--glass-yellow-bg);
+  --tag-color: var(--glass-yellow-text);
+}
+
+.tag.orange {
+  --tag-bg: var(--glass-orange-bg);
+  --tag-color: var(--glass-orange-text);
+}
+
+.tag.red {
+  --tag-bg: var(--glass-red-bg);
+  --tag-color: var(--glass-red-text);
+}
+
+.tag.purple {
+  --tag-bg: var(--glass-purple-bg);
+  --tag-color: var(--glass-purple-text);
+}
+
+.tag.pro {
+  --tag-bg: gold;
+  --tag-color: var(--color-text);
+}
+
+.tag.releases {
+  --tag-bg: var(--glass-blue-bg);
+  --tag-color: #1f5f9f;
 }
