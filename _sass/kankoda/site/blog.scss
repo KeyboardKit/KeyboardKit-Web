@@ -22,70 +22,62 @@
 }
 
 .blog {
-  .tags .tag {
-    cursor: pointer;
-    transition: opacity 0.2s ease;
-
-    &.inactive {
-      opacity: var(--opacity-secondary);
-    }
-  }
-
-  .tags-container {
-    margin: var(--page-content-media-gap) 0;
-  }
-
-  .tags {
+  .side-menu .tags {
+    align-items: center;
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem;
-    max-height: calc(2rem + 25px);
-    overflow: hidden;
-    transition: max-height 0.4s ease;
-
-    &.expanded {
-      max-height: 600px;
-      padding-bottom: 0.75rem;
-    }
+    gap: 0.35rem;
   }
 
-  .tags-toggle {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    width: 100%;
-    padding: 0.6rem 0;
-    border: none;
-    border-top: 1px solid var(--color-border);
-    background: transparent;
+  .side-menu .tag {
+    appearance: none;
+    -webkit-appearance: none;
+    background: rgba(255, 255, 255, 0.32);
+    border: 1px solid rgba(255, 255, 255, 0.48);
+    border-radius: 0.38rem;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
     color: var(--color-text);
-    font-size: 0.9rem;
-    font-weight: 600;
     cursor: pointer;
-    opacity: var(--opacity-secondary);
-    transition: opacity 0.2s ease;
+    font: inherit;
+    font-size: 0.82rem;
+    font-weight: 600;
+    line-height: 1.35;
+    margin: 0;
+    opacity: 0.72;
+    padding: 0.18rem 0.42rem 0.22rem;
+    text-align: center;
+    text-transform: capitalize;
+    transition:
+      background-color 0.2s ease,
+      border-color 0.2s ease,
+      box-shadow 0.2s ease,
+      color 0.2s ease,
+      opacity 0.2s ease;
 
-    &:hover {
+    &:hover,
+    &.active {
+      background: rgba(255, 255, 255, 0.56);
+      border-color: rgba(255, 255, 255, 0.72);
       opacity: 1;
     }
 
-    &::after {
-      content: "";
-      display: inline-block;
-      width: 0.5rem;
-      height: 0.5rem;
-      border-right: 2px solid currentColor;
-      border-bottom: 2px solid currentColor;
-      transform: rotate(45deg);
-      transition: transform 0.3s ease;
-      margin-bottom: 0.2em;
+    &.active {
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
     }
 
-    &[aria-expanded="true"]::after {
-      transform: rotate(-135deg);
-      margin-bottom: -0.2em;
+    &:focus-visible {
+      outline: 2px solid currentColor;
+      outline-offset: 0.2rem;
+      opacity: 1;
     }
+
+    &.inactive {
+      opacity: 0.42;
+    }
+  }
+
+  .blog-menu-tags-separator {
+    opacity: 0.4;
   }
 }
 

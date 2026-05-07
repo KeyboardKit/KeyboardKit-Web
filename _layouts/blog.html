@@ -1,49 +1,69 @@
 ---
-layout: page-sidebar
+layout: plain
 ---
 
-<div class="blog-header">
-  <input class="blog-search" type="search" placeholder="Search…" aria-label="Search posts" />
-</div>
-
-<div class="blog">
-  {% assign all_tags = "" %}
-  {% for post in site.posts %}
-    {% for tag in post.tags %}
-      {% unless all_tags contains tag %}
-        {% assign all_tags = all_tags | append: tag | append: "," %}
-      {% endunless %}
-    {% endfor %}
+{% assign all_tags = "" %}
+{% for post in site.posts %}
+  {% for tag in post.tags %}
+    {% unless all_tags contains tag %}
+      {% assign all_tags = all_tags | append: tag | append: "," %}
+    {% endunless %}
   {% endfor %}
-  {% assign unique_tags = all_tags | split: "," | sort %}
-  {% assign first_tags = page.tags.first | split: ", " %}
-  
-  <div class="tags-container">
-    <div class="tags">
-      {% for tag in first_tags %}
-        {% assign tag = tag | strip %}
-        {% if tag != "" %}
-          <span class="tag {{ tag | slugify }}" data-tag="{{ tag }}">{{ tag }}</span>
-        {% endif %}
-      {% endfor %}
-      &nbsp;·&nbsp;
-      {% for tag in unique_tags %}
-        {% if tag != "" %}
-          {% unless first_tags contains tag %}
-            <span class="tag {{ tag | slugify }}" data-tag="{{ tag }}">{{ tag }}</span>
-          {% endunless %}
-        {% endif %}
-      {% endfor %}
+{% endfor %}
+{% assign unique_tags = all_tags | split: "," | sort %}
+{% assign first_tags = page.tags.first | split: ", " %}
+{% assign menu = page.sidebar-menu %}
+{% assign menu_title = menu.title | default: "Tags" %}
+
+<section class="blog side-menu-layout">
+  <div class="wrapper wide">
+    <div class="side-menu-layout-grid">
+      <aside class="side-menu" aria-label="{{ menu_title }}">
+        <div class="side-menu-inner">
+          <div class="side-menu-title">Tags</div>
+          <section class="side-menu-section">
+            <div class="tags">
+                    
+              {% for tag in first_tags %}
+                {% assign tag = tag | strip %}
+                {% if tag != "" %}
+                  <button class="tag" type="button" data-tag="{{ tag | escape }}" aria-pressed="false">{{ tag | escape }}</button>
+                {% endif %}
+              {% endfor %}
+              <span class="blog-menu-tags-separator" aria-hidden="true">·</span>
+              {% for tag in unique_tags %}
+                {% if tag != "" %}
+                  {% unless first_tags contains tag %}
+                    <button class="tag" type="button" data-tag="{{ tag | escape }}" aria-pressed="false">{{ tag | escape }}</button>
+                  {% endunless %}
+                {% endif %}
+              {% endfor %}
+
+            </div>
+          </section>
+        </div>
+      </aside>
+
+      <div class="side-menu-content">
+        <div id="page-top" aria-hidden="true"></div>
+        <article class="page-content">
+          {% include kankoda/site/page-top %}
+                    
+          <div class="blog-header">
+            <input class="blog-search" type="search" placeholder="Search…" aria-label="Search posts" />
+          </div>
+
+          <section class="blog-list">
+            {% for post in site.posts %}
+              <article class="blog-post" data-tags="{{ post.tags | join: ',' }}" data-title="{{ post.title | downcase }}" data-excerpt="{{ post.excerpt | strip_html | downcase | truncatewords: 40 }}">
+                {% include kankoda/components/blog-header post=post %}
+                <p class="blog-post-excerpt">{{ post.excerpt | strip_html | truncatewords: 40 }}</p>
+              </article>
+            {% endfor %}
+          </section>
+
+        </article>
+      </div>
     </div>
-    <button class="tags-toggle" aria-expanded="false">Show more</button>
   </div>
-</div>
-
-<section class="blog-list">
-  {% for post in site.posts %}
-    <article class="blog-post" data-tags="{{ post.tags | join: ',' }}" data-title="{{ post.title | downcase }}" data-excerpt="{{ post.excerpt | strip_html | downcase | truncatewords: 40 }}">
-      {% include kankoda/components/blog-header post=post %}
-      <p class="blog-post-excerpt">{{ post.excerpt | strip_html | truncatewords: 40 }}</p>
-    </article>
-  {% endfor %}
 </section>

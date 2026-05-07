@@ -9,23 +9,23 @@
   align-items: start;
 }
 
-.side-menu-nav.no-transitions * {
+.side-menu.no-transitions * {
   transition: none !important;
 }
 
-.side-menu-nav {
+.side-menu {
   overflow: visible;
   position: sticky;
   top: calc(var(--header-height, 60px) + 1.5rem);
   align-self: start;
 }
 
-.side-menu-nav-inner {
+.side-menu-inner {
   display: grid;
   gap: 0.55rem;
 }
 
-.side-menu-nav-title {
+.side-menu-title {
   font-size: 0.78rem;
   font-weight: 700;
   letter-spacing: 0.18em;
@@ -33,7 +33,7 @@
   text-transform: uppercase;
 }
 
-a.side-menu-nav-title {
+a.side-menu-title {
   display: inline-block;
   text-decoration: none;
   transition: opacity var(--duration-link) ease;
@@ -67,7 +67,7 @@ a.side-menu-nav-title {
   }
 }
 
-.side-menu-nav-section {
+.side-menu-section {
   --side-menu-pill-hang: 0.9rem;
 
   display: grid;
@@ -156,7 +156,7 @@ a.side-menu-nav-title {
     grid-template-columns: minmax(0, 1fr);
   }
 
-  .side-menu-nav {
+  .side-menu {
     display: none;
   }
 }

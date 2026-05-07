@@ -6,7 +6,7 @@ intro: KeyboardKit has many features.<br />Upgrade to <a href="/pro" class="pro"
 permalink: /features
 layout: page-sidebar
 
-menu:
+sidebar-menu:
   title: Features
 
 image: /assets/headers/features.jpg

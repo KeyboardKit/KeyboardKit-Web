@@ -1,5 +1,5 @@
 (function() {
-  const nav = document.querySelector('.side-menu-nav');
+  const nav = document.querySelector('.side-menu');
   const content = document.querySelector('.side-menu-content');
 
   if (!nav || !content) return;

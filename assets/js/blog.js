@@ -1,6 +1,6 @@
 (function () {
   document.addEventListener("DOMContentLoaded", function () {
-    const tagButtons = document.querySelectorAll(".blog .tags .tag");
+    const tagButtons = document.querySelectorAll(".blog .side-menu .tag[data-tag]");
     const searchInput = document.querySelector(".blog-search");
     const posts = document.querySelectorAll(".blog-post");
     if (!posts.length) return;
@@ -10,8 +10,10 @@
 
     function applyFilters() {
       tagButtons.forEach(function (b) {
-        b.classList.toggle("active", b.dataset.tag === activeTag);
-        b.classList.toggle("inactive", !!activeTag && b.dataset.tag !== activeTag);
+        const isActive = b.dataset.tag === activeTag;
+        b.classList.toggle("active", isActive);
+        b.classList.toggle("inactive", !!activeTag && !isActive);
+        b.setAttribute("aria-pressed", isActive ? "true" : "false");
       });
       posts.forEach(function (post) {
         const tags = post.dataset.tags ? post.dataset.tags.split(",") : [];
@@ -35,16 +37,6 @@
       searchInput.addEventListener("input", function () {
         searchQuery = searchInput.value.trim().toLowerCase();
         applyFilters();
-      });
-    }
-
-    const tagsEl = document.querySelector(".blog .tags");
-    const toggleBtn = document.querySelector(".blog .tags-toggle");
-    if (tagsEl && toggleBtn) {
-      toggleBtn.addEventListener("click", function () {
-        const expanded = tagsEl.classList.toggle("expanded");
-        toggleBtn.textContent = expanded ? "Show less" : "Show more";
-        toggleBtn.setAttribute("aria-expanded", expanded);
       });
     }
   });

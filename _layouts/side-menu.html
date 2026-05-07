@@ -4,7 +4,7 @@ layout: plain
 instructions: To customize the side menu, add a "menu" value to the front-matter with an optional "title"
 ---
 
-{% assign menu = page.menu %}
+{% assign menu = page.sidebar-menu %}
 {% assign menu_title = menu.title | default: "On This Page" %}
 {% assign back_link = page["back-link"] %}
 {% assign page_content_lines = page.content | newline_to_br | split: '<br />' %}
@@ -12,14 +12,14 @@ instructions: To customize the side menu, add a "menu" value to the front-matter
 <section class="side-menu-layout">
   <div class="wrapper wide">
     <div class="side-menu-layout-grid">
-      <aside class="side-menu-nav" aria-label="{{ menu_title }}">
-        <div class="side-menu-nav-inner">
+      <aside class="side-menu" aria-label="{{ menu_title }}">
+        <div class="side-menu-inner">
           {% if back_link and back_link.title and back_link.url %}
-            <a class="side-menu-nav-title side-menu-back-link" href="{{ back_link.url | relative_url }}">{{ back_link.title }}</a>
+            <a class="side-menu-title side-menu-back-link" href="{{ back_link.url | relative_url }}">{{ back_link.title }}</a>
           {% endif %}
 
-          <div class="side-menu-nav-title">{{ menu_title }}</div>
-          <section class="side-menu-nav-section">
+          <div class="side-menu-title">{{ menu_title }}</div>
+          <section class="side-menu-section">
             <nav aria-label="{{ menu_title }}">
               <ul>
                 {% assign in_code_block = false %}
