@@ -12,6 +12,7 @@ section.hero {
   position: relative;
   margin-top: calc(-1 * var(--header-height, 60px));
   padding-top: var(--header-height, 60px);
+  padding-bottom: var(--header-height, 60px);
 
   // Subtle background color for inspection
   background-color: rgba(0, 120, 255, 0.03);
@@ -49,41 +50,13 @@ section.hero {
     font-size: 1.05rem;
   }
 
-  .content-chevron {
-    position: relative;
-    display: block;
-    margin-top: clamp(1.5rem, 4vh, 3rem);
-    width: 2.25rem;
-    height: 2.25rem;
-    opacity: 0.7;
-    transition:
-      transform var(--duration-link) ease,
-      opacity var(--duration-link) ease;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 0.9rem;
-      height: 0.9rem;
-      border-right: 2px solid currentColor;
-      border-bottom: 2px solid currentColor;
-      transform: translate(-50%, -65%) rotate(45deg);
-    }
-
-    &:hover {
-      opacity: 1;
-      transform: translateY(0.2rem);
-    }
-  }
 }
 
 
 // Showcase
 
 section.showcase {
-  padding: clamp(4rem, 6vw, 5.5rem) 0 clamp(3.5rem, 5vw, 5rem);
+  padding: clamp(4rem, 6vw, 5.5rem) 0;
   text-align: center;
 
   article {
@@ -105,6 +78,10 @@ section.showcase {
     gap: 2.3rem;
     justify-items: center;
     align-content: start;
+
+    &::after {
+      content: none;
+    }
   }
 
   h2 {

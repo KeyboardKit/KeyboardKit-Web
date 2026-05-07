@@ -9,6 +9,4 @@
       <a href="#content" class="cta glass">Learn More</a>
     </div>
   </div>
-  {% include sections/numeric-items %}
-  <a href="#get-started" class="content-chevron" aria-label="Scroll to get started"></a>
 </section>
