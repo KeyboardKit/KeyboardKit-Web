@@ -1,6 +1,6 @@
 ---
+eyebrow: Mental Health Tracker
 title: BiAffect
-subtitle: Track mental health through keystroke dynamics
 
 image:  /assets/case-studies/biaffect/header.jpg
 assets: /assets/case-studies/biaffect/article/

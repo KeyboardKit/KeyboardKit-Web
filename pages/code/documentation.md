@@ -1,7 +1,10 @@
 ---
-title: Documentation
-layout: page-sidebar
 permalink: /documentation
+layout: page-sidebar
+
+eyebrow: KeyboardKit
+title: Documentation
+
 redirect_from: /docs
 
 image:  /assets/headers/documentation.jpg

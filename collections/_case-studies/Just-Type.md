@@ -1,6 +1,6 @@
 ---
+eyebrow: Efficient & Accurate Typing
 title: JustType
-subtitle: Type efficiently & accurately with AI
 
 image:  /assets/case-studies/just-type/header.jpg
 assets: /assets/case-studies/just-type/article/

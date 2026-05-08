@@ -1,9 +1,9 @@
 ---
-eyebrow: KeyboardKit
-title: App
-title-color: purple
-layout: page-sidebar
 permalink: /app
+layout: page-sidebar
+
+title: App
+eyebrow: KeyboardKit
 
 assets: /assets/app/
 

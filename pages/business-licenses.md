@@ -1,7 +1,10 @@
 ---
-title: Business Licenses
-layout: plain
 permalink: /business
+layout: plain
+
+eyebrow: KeyboardKit Pro
+title: Business Licenses
+
 redirect_from: 
   - business-licenses
   - pro/business-licenses

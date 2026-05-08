@@ -1,7 +1,9 @@
 ---
-title: FAQ
-layout: page-sidebar
 permalink: /faq
+layout: page-sidebar
+
+title: FAQ
+eyebrow: KeyboardKit
 
 description: This page contains frequently asked questions about custom keyboards.
 ---

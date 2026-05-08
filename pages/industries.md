@@ -1,15 +1,18 @@
 ---
-eyebrow: KeyboardKit
-title: Industries
-title-color: green
-intro: KeyboardKit powers innovation across a wide range of industries and use cases.
 permalink: /industries
 layout: page
 
+eyebrow: KeyboardKit
+title: Industries
+
 image: /assets/headers/case-studies.jpg
+
+description: KeyboardKit powers innovation across a wide range of industries and use cases.
 ---
 
-KeyboardKit can be used to build keyboard experiences for many different industries — from language technology and AI, to medicine, finance, child protection, and entertainment. [Contact us]({{site.urls.email}}) if you'd like to discuss your use case.
+KeyboardKit can be used to build keyboard experiences for many different industries — from language technologies and AI, to medicine, finance, media & entertainment, and child protection and anti-bullying. [Contact us]({{site.urls.email}}) if you'd like to discuss your use case.
+
+## Examples
 
 <div class="spaced grid col4">
   {% for industry in site.data.industries %}

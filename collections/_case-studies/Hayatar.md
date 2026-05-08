@@ -1,6 +1,6 @@
 ---
+eyebrow: Native Armenian Keyboard
 title: Hayatar
-subtitle: Native Armenian Keyboard
 
 image:  /assets/case-studies/hayatar/header.jpg
 assets: /assets/case-studies/hayatar/article/

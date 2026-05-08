@@ -117,20 +117,16 @@ defaults:
     scope:
       path: "pages/info"
     values:
-      eyebrow: KeyboardKit
       title-color: blue
   -
     scope:
       path: "pages/code"
     values:
-      eyebrow: KeyboardKit
       title-color: blue
   -
     scope:
       path: "pages/pro"
     values:
-      eyebrow: KeyboardKit Pro
-      title-color: orange
       back-link:
         title: Pricing
         url: /pricing
@@ -139,7 +135,7 @@ defaults:
       type: "case-studies"
     values:
       layout: page-sidebar
-      subtitle-color: purple
+      title-color: purple
       back-link:
         title: Case studies
         url: /case-studies
@@ -149,8 +145,6 @@ defaults:
     values:
       layout: feature
       assets: /assets/features/
-      eyebrow: Feature
-      subtitle-color: blue
       back-link:
         title: Features
         url: /features

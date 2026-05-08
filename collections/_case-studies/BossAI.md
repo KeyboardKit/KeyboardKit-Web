@@ -1,6 +1,6 @@
 ---
+eyebrow: Voice-First AI Keyboard
 title: BossAI
-subtitle: Voice-First AI Keyboard
 
 image:  /assets/case-studies/boss-ai/header.jpg
 assets: /assets/case-studies/boss-ai/

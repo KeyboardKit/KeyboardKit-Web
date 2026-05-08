@@ -1,7 +1,8 @@
 ---
-title: Pricing
-layout: plain
 permalink: /pricing
+layout: plain
+
+title: Pricing
 
 image: /assets/headers/pro.jpg
 

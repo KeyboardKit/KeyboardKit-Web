@@ -1,7 +1,8 @@
 ---
-title: Support
-layout: page-sidebar
 permalink: /pro/support
+layout: page-sidebar
+
+title: Support
 
 description: KeyboardKit Pro has custom support levels for larger organizations
 ---

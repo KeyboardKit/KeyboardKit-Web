@@ -1,7 +1,9 @@
 ---
-title: About
-layout: page-sidebar
 permalink: /about
+layout: page-sidebar
+
+title: About
+eyebrow: KeyboardKit
 
 description: This page describes what a custom keyboard is and how KeyboardKit can help.
 

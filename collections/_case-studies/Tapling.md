@@ -1,6 +1,6 @@
 ---
+eyebrow: Typing Companion
 title: Tapling
-subtitle: Type with Bongo Cat
 
 image:  /assets/case-studies/tapling/header.jpg
 assets: /assets/case-studies/tapling/

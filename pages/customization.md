@@ -1,6 +1,7 @@
 ---
-title: Customizations
 permalink: /customization
+
+title: Customizations
 
 image:  /assets/headers/features.jpg
 

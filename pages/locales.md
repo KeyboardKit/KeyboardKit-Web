@@ -1,7 +1,9 @@
 ---
-title: Locales
-layout: page-sidebar
 permalink: /locales
+layout: page-sidebar
+
+title: Locales
+
 redirect_from: /languages
 
 hero:

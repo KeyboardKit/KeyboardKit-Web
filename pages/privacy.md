@@ -1,9 +1,9 @@
 ---
-eyebrow: KeyboardKit
-title: Privacy Policy
-title-color: blue
-layout: page-sidebar
 permalink: /privacy-policy
+layout: page-sidebar
+
+title: Privacy Policy
+eyebrow: KeyboardKit
 
 redirect_from: 
     - /privacy

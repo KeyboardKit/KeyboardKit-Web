@@ -1,7 +1,9 @@
 ---
-title: Free Trial
-layout: page-sidebar
 permalink: /pro/free-trial
+layout: page-sidebar
+
+title: Free Trial
+
 redirect_from: trial
 
 description: KeyboardKit Pro has a 7 day free trial with unlimited access to all the features in your selected tier. This lets you try out the features and see if they match your needs.

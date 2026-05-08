@@ -1,7 +1,8 @@
 ---
-title: License Validation
-layout: page-sidebar
 permalink: /pro/license-validation
+layout: page-sidebar
+
+title: License Validation
 
 description: KeyboardKit Pro can validate standard licenses over the Internet, and business licensess directly on-device.
 ---

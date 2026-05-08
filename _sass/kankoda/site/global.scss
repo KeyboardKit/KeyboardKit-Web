@@ -30,8 +30,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: clamp(2.6rem, 5.5vw, 4.5rem);
-  line-height: 0.98;
+  font-size: clamp(2.3rem, 4.5vw, 3.6rem);
+  line-height: 1.02;
   margin-bottom: clamp(1.25rem, 2.5vw, 2rem);
 
   &+h2 {
@@ -127,7 +127,7 @@ img.medium {
     line-height: 1.7;
 
     &.page-eyebrow {
-      font-size: clamp(1.6rem, 3vw, 2.4rem);
+      font-size: clamp(1.2rem, 2vw, 1.6rem);
       font-weight: 700;
       line-height: 1.1;
       max-width: 700px;

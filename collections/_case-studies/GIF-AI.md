@@ -1,6 +1,6 @@
 ---
+eyebrow: Generate Custom GIFs
 title: GIF AI Keyboard
-subtitle: Generate Custom GIFs
 
 image:  /assets/case-studies/gif-ai/header.jpg
 assets: /assets/case-studies/gif-ai/

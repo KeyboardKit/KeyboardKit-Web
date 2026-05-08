@@ -1,12 +1,12 @@
 ---
-eyebrow: KeyboardKit
-title: Case Studies
-title-color: purple
-intro: Below are some apps & products that use KeyboardKit.
 permalink: /case-studies
 layout: page
 
+eyebrow: KeyboardKit
+title: Case Studies
+
 image: /assets/headers/case-studies.jpg
+
 ---
 
 KeyboardKit can be used to create apps in many different [industries](/industries), from language and typing, to medicine, science, media, etc. Are you using KeyboardKit and want to be listed here? [Let us know]({{site.urls.email}}).

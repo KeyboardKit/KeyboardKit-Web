@@ -1,7 +1,9 @@
 ---
-title: Terminology
-layout: page-sidebar
 permalink: /terminology
+layout: page-sidebar
+
+title: Terminology
+eyebrow: Custom Keyboard
 
 description: This page describes common custom keyboard terminology.
 ---

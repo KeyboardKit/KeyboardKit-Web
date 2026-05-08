@@ -1,7 +1,9 @@
 ---
-title: Contact
-layout: page-sidebar
 permalink: /contact
+layout: page-sidebar
+
+title: Contact
+eyebrow: KeyboardKit
 
 description: Find out how to get in touch with the KeyboardKit team.
 ---

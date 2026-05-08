@@ -1,9 +1,9 @@
 ---
-eyebrow: App
-title: Privacy Policy
-title-color: blue
 permalink: /app/privacy
 layout: page-sidebar
+
+title: Privacy Policy
+eyebrow: KeyboardKit App
 
 redirect_from: /app/privacy-policy
 

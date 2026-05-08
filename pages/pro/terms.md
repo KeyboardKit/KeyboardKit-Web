@@ -1,7 +1,8 @@
 ---
-title: License Terms & Conditions
-layout: page-sidebar
 permalink: /pro/terms
+layout: page-sidebar
+
+title: License Terms & Conditions
 
 description: This page describes the Standard KeyboardKit Pro License Terms & Conditions
 

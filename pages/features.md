@@ -1,16 +1,19 @@
 ---
-title: Features
-intro: KeyboardKit has many features.<br />Upgrade to <a href="/pro" class="pro">KeyboardKit Pro</a> to unlock powerful pro features.
 permalink: /features
 layout: page-sidebar
+
+title: Features
+eyebrow: KeyboardKit
 
 sidebar-menu:
   title: Features
 
 image: /assets/headers/features.jpg
 
-description: KeyboardKit is packed with features that help you build amazing keyboards.
+description: KeyboardKit has many features and is free to start using. Upgrade to KeyboardKit Pro to unlock pro features.
 ---
+
+KeyboardKit has many features and is free to start using. Upgrade to <a href="/pro">KeyboardKit Pro</a> to unlock pro features.
 
 {% assign core_features = site.data.features | where: "group", "core" %}
 {% assign system_features = site.data.features | where: "group", "system" %}
