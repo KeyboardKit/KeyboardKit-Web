@@ -1,3 +1,5 @@
+// Tags
+
 a.tag,
 button.tag,
 span.tag,
@@ -31,50 +33,96 @@ div.tag {
   border-radius: var(--radius-tag);
 }
 
-.tag.blue {
-  --tag-bg: var(--glass-blue-bg);
-  --tag-border: rgba(111, 168, 232, 0.28);
-  --tag-color: var(--glass-blue-text);
+
+// Colored Tags
+
+.tag {
+
+  &.blue {
+    --tag-bg: var(--glass-blue-bg);
+    --tag-border: rgba(111, 168, 232, 0.28);
+    --tag-color: var(--glass-blue-text);
+  }
+
+  &.green {
+    --tag-bg: var(--glass-green-bg);
+    --tag-border: rgba(114, 183, 131, 0.28);
+    --tag-color: var(--glass-green-text);
+  }
+
+  &.yellow {
+    --tag-bg: var(--glass-yellow-bg);
+    --tag-border: rgba(213, 179, 50, 0.28);
+    --tag-color: var(--glass-yellow-text);
+  }
+
+  &.orange {
+    --tag-bg: var(--glass-orange-bg);
+    --tag-border: rgba(220, 141, 69, 0.28);
+    --tag-color: var(--glass-orange-text);
+  }
+
+  &.red {
+    --tag-bg: var(--glass-red-bg);
+    --tag-border: rgba(210, 111, 111, 0.28);
+    --tag-color: var(--glass-red-text);
+  }
+
+  &.purple {
+    --tag-bg: var(--glass-purple-bg);
+    --tag-border: rgba(171, 136, 217, 0.28);
+    --tag-color: var(--glass-purple-text);
+  }
+
+  &.pro {
+    --tag-bg: gold;
+    --tag-border: rgba(201, 169, 0, 0.28);
+    --tag-color: var(--color-text);
+  }
+
+  &.releases {
+    --tag-bg: var(--glass-blue-bg);
+    --tag-border: rgba(111, 168, 232, 0.28);
+    --tag-color: #1f5f9f;
+  }
 }
 
-.tag.green {
-  --tag-bg: var(--glass-green-bg);
-  --tag-border: rgba(114, 183, 131, 0.28);
-  --tag-color: var(--glass-green-text);
+
+// Button Tags
+
+button.tag {
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+  font-family: inherit;
+  margin: 0;
+  text-align: center;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    color 0.2s ease,
+    opacity 0.2s ease;
 }
 
-.tag.yellow {
-  --tag-bg: var(--glass-yellow-bg);
-  --tag-border: rgba(213, 179, 50, 0.28);
-  --tag-color: var(--glass-yellow-text);
+button.tag:hover,
+button.tag.active {
+  background: var(--tag-bg, rgba(255, 255, 255, 0.56));
+  border-color: rgba(255, 255, 255, 0.72);
+  color: var(--tag-color, var(--color-text));
+  opacity: 1;
 }
 
-.tag.orange {
-  --tag-bg: var(--glass-orange-bg);
-  --tag-border: rgba(220, 141, 69, 0.28);
-  --tag-color: var(--glass-orange-text);
+button.tag.active {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
 }
 
-.tag.red {
-  --tag-bg: var(--glass-red-bg);
-  --tag-border: rgba(210, 111, 111, 0.28);
-  --tag-color: var(--glass-red-text);
+button.tag:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 0.2rem;
+  opacity: 1;
 }
 
-.tag.purple {
-  --tag-bg: var(--glass-purple-bg);
-  --tag-border: rgba(171, 136, 217, 0.28);
-  --tag-color: var(--glass-purple-text);
-}
-
-.tag.pro {
-  --tag-bg: gold;
-  --tag-border: rgba(201, 169, 0, 0.28);
-  --tag-color: var(--color-text);
-}
-
-.tag.releases {
-  --tag-bg: var(--glass-blue-bg);
-  --tag-border: rgba(111, 168, 232, 0.28);
-  --tag-color: #1f5f9f;
+button.tag.inactive {
+  opacity: 0.42;
 }
