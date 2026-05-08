@@ -1,6 +1,6 @@
 - name: Business
-  subtitle: For formal agreements, discounts, and multi-platform support.
-  price: 10k
+  subtitle: Formal Agreements & Multi-Platform Support.
+  price: $10k
   price_unit: year
   cta: Contact Us
   url: mailto:info@kankoda.com?subject=Business%License
@@ -14,8 +14,8 @@
 
 - name: Business+
   badge: Critical Protection
-  subtitle: For custom terms, source code protection and renewal flexibility.
-  price: 25k
+  subtitle: Custom Terms, Business Protection & Flexibility.
+  price: $25k
   price_unit: year
   cta: Contact Us
   url: mailto:info@kankoda.com?subject=Business%License
@@ -27,8 +27,8 @@
     - Expiration Grace
 
 - name: Enterprise
-  subtitle: For high-impact use, dedicated support and custom SLAs.
-  price: 50k
+  subtitle: Dedicated Support, Custom SLA & High Value.
+  price: from $50k
   price_unit: year
   cta: Contact Us
   url: mailto:info@kankoda.com?subject=Business%License

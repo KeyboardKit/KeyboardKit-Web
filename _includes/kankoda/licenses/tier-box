@@ -9,14 +9,15 @@
   <div class="tier-header">
     <p class="tier-name">{{ tier.name }}</p>
     <p class="tier-subtitle">{{ tier.subtitle }}</p>
+    
     {% if tier.price_month == "Custom" %}
     <p class="tier-price"><span class="tier-price-amount">Custom</span></p>
     <p class="tier-price-alt">Contact Us</p>
     {% elsif tier.price %}
-    <p class="tier-price"><span class="tier-price-amount">${{ tier.price }}</span><span class="tier-price-period">/${{ tier.price_unit }}</span></p>
+    <p class="tier-price"><span class="tier-price-amount">{{ tier.price }}</span><span class="tier-price-period">/{{ tier.price_unit }}</span></p>
     {% else %}
-    <p class="tier-price"><span class="tier-price-amount">${{ tier.price_month }}</span><span class="tier-price-period">/month</span></p>
-    <p class="tier-price-alt">or ${{ tier.price_year }}/year</p>
+    <p class="tier-price"><span class="tier-price-amount">{{ tier.price_month }}</span><span class="tier-price-period">/month</span></p>
+    <p class="tier-price-alt">or {{ tier.price_year }}/year</p>
     {% endif %}
   </div>
   <ul class="tier-features">

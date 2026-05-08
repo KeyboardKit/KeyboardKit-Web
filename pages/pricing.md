@@ -35,7 +35,7 @@ Our standard tiers are built for indies, startups, and small businesses.
 
 ## Scaling Up?
 
-If your company exceeds $10M or your app exceeds $1M in annual revenue, check out our [Business licenses](/business).
+If your company exceeds $10M or your app exceeds $1M in annual revenue, you need a [Business License](/business).
 
 
 ## Yearly Savings
@@ -53,17 +53,18 @@ Compare all features across all plans.
 <section class="showcase purple glass">
   <div class="wrapper slide-in">
     <h2>Terms & Conditions</h2>
-    <p>The standard <a href="/pro/terms">Terms & Conditions</a> apply to all standard tiers. <a href="{{site.urls.email-custom-terms}}">Contact us</a> to discuss custom terms.</p>
+    <p>The standard <a href="/pro/terms">Terms & Conditions</a> apply to all standard tiers.</p>
+    <p><a href="{{site.urls.email-custom-terms}}">Contact us</a> to discuss custom terms.</p>
   </div>
 </section>
 
 <section class="showcase dark blue">
   <div class="wrapper slide-in">
     <h2>Start building today.</h2>
-    <p>Try KeyboardKit Pro free for 7 days — no credit card required. Upgrade to a plan when you're ready.</p>
+    <p>Try KeyboardKit Pro free for 7 days — upgrade to a plan when you're ready.</p>
     <div>
       <a href="/pro/free-trial" class="cta glass">Get Free Trial</a>
-      <a href="{{site.urls.email}}" class="cta glass secondary">Contact Us</a>
+      <a href="{{site.urls.email}}" class="cta glass">Contact Us</a>
     </div>
   </div>
 </section>
