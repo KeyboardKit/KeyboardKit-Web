@@ -1,20 +1,24 @@
 a.tag,
+button.tag,
 span.tag,
 div.tag {
   display: inline-flex;
-  text-transform: capitalize;
   align-items: center;
   justify-content: center;
   gap: 0.35rem;
   width: fit-content;
-  min-width: 2.5rem;
-  padding: 0.3rem 0.8rem 0.4rem;
-  border-radius: var(--radius-tag);
-  background: var(--tag-bg, var(--color-bg-dark));
-  color: var(--tag-color, var(--color-text-dark));
-  font-size: 0.9rem;
-  letter-spacing: 0.02em;
+  padding: 0.18rem 0.42rem 0.22rem;
+  border: 1px solid var(--tag-border, rgba(255, 255, 255, 0.48));
+  border-radius: 0.38rem;
+  background: var(--tag-bg, rgba(255, 255, 255, 0.32));
+  box-shadow: var(--tag-shadow, var(--shadow-default));
+  color: var(--tag-color, var(--color-text));
+  font-size: 0.82rem;
+  font-weight: 600;
+  line-height: 1.35;
+  opacity: 0.72;
   text-decoration: none;
+  text-transform: capitalize;
   white-space: nowrap;
 }
 
@@ -25,40 +29,48 @@ div.tag {
 
 .tag.blue {
   --tag-bg: var(--glass-blue-bg);
+  --tag-border: rgba(111, 168, 232, 0.28);
   --tag-color: var(--glass-blue-text);
 }
 
 .tag.green {
   --tag-bg: var(--glass-green-bg);
+  --tag-border: rgba(114, 183, 131, 0.28);
   --tag-color: var(--glass-green-text);
 }
 
 .tag.yellow {
   --tag-bg: var(--glass-yellow-bg);
+  --tag-border: rgba(213, 179, 50, 0.28);
   --tag-color: var(--glass-yellow-text);
 }
 
 .tag.orange {
   --tag-bg: var(--glass-orange-bg);
+  --tag-border: rgba(220, 141, 69, 0.28);
   --tag-color: var(--glass-orange-text);
 }
 
 .tag.red {
   --tag-bg: var(--glass-red-bg);
+  --tag-border: rgba(210, 111, 111, 0.28);
   --tag-color: var(--glass-red-text);
 }
 
 .tag.purple {
   --tag-bg: var(--glass-purple-bg);
+  --tag-border: rgba(171, 136, 217, 0.28);
   --tag-color: var(--glass-purple-text);
 }
 
 .tag.pro {
   --tag-bg: gold;
+  --tag-border: rgba(201, 169, 0, 0.28);
   --tag-color: var(--color-text);
 }
 
 .tag.releases {
   --tag-bg: var(--glass-blue-bg);
+  --tag-border: rgba(111, 168, 232, 0.28);
   --tag-color: #1f5f9f;
 }
