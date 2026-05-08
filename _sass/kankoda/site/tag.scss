@@ -27,6 +27,10 @@ div.tag {
   --tag-color: var(--color-text);
 }
 
+.tag.rounded {
+  border-radius: var(--radius-tag);
+}
+
 .tag.blue {
   --tag-bg: var(--glass-blue-bg);
   --tag-border: rgba(111, 168, 232, 0.28);

@@ -33,7 +33,7 @@ urls:
   email-custom-terms: mailto:info@keyboardkit.com?subject=Custom%20Terms
   rss:        https://keyboardkit.com/feed.xml
 
-  business:     /busines
+  business:     /business
   faq:          /faq
   case-studies: /case-studies
   escrow:       /features/escrow
@@ -113,16 +113,6 @@ defaults:
     values:
       layout: page
       image: /assets/headers/keyboardkit.jpg
-  -
-    scope:
-      path: "pages/info"
-    values:
-      title-color: blue
-  -
-    scope:
-      path: "pages/code"
-    values:
-      title-color: blue
   -
     scope:
       path: "pages/pro"
