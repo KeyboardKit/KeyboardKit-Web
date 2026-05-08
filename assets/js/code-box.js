@@ -58,6 +58,9 @@
       .replace(/\b\w/g, function(char) { return char.toUpperCase(); });
   }
 
+  const clipboardIcon = '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="2" width="6" height="4" rx="1"></rect><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path></svg>';
+  const checkIcon = '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>';
+
   blocks.forEach(function(block) {
     if (block.dataset.language) return;
 
@@ -67,5 +70,28 @@
       : '';
 
     block.dataset.language = formatLanguage(rawLanguage);
+  });
+
+  blocks.forEach(function(block) {
+    const btn = document.createElement('button');
+    btn.className = 'code-copy-btn';
+    btn.setAttribute('aria-label', 'Copy code');
+    btn.innerHTML = clipboardIcon;
+
+    btn.addEventListener('click', function() {
+      const pre = block.querySelector('pre') || block.querySelector('code');
+      if (!pre) return;
+      const text = pre.innerText || pre.textContent;
+      navigator.clipboard.writeText(text).then(function() {
+        btn.innerHTML = checkIcon;
+        btn.classList.add('copied');
+        setTimeout(function() {
+          btn.innerHTML = clipboardIcon;
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    });
+
+    block.appendChild(btn);
   });
 })();

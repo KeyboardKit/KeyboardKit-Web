@@ -58,6 +58,38 @@ figure.highlight::after {
   pointer-events: none;
 }
 
+.code-copy-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: $code-box-title-height;
+  height: $code-box-title-height;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: $code-box-muted;
+  padding: 0;
+  z-index: 2;
+  transition: color 0.2s;
+
+  svg {
+    width: 1.05rem;
+    height: 1.05rem;
+    flex-shrink: 0;
+  }
+
+  &:hover {
+    color: $code-box-text;
+  }
+
+  &.copied {
+    color: #67d35f;
+  }
+}
+
 .page-content > div.highlighter-rouge,
 .page-content > figure.highlight {
   margin-top: var(--page-content-media-gap);
@@ -260,6 +292,10 @@ td code.highlighter-rouge {
     right: 1.25rem;
     transform: none;
     font-size: 0.85rem;
+  }
+
+  .code-copy-btn {
+    display: none;
   }
 
   div.highlighter-rouge pre.highlight,
