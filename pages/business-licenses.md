@@ -2,7 +2,6 @@
 permalink: /business
 layout: plain
 
-eyebrow: KeyboardKit Pro
 title: Business Licenses
 
 redirect_from: 
@@ -16,20 +15,20 @@ description: KeyboardKit has business licenses for larger companies and apps.
 ---
 
 <div class="centered page-content wide wrapper" markdown="1">
+
 ![KeyboardKit Pro Icon](/assets/icon/pro-shadow.png){:width="200px" class="plain"}
+
 # Business Plans
-## Choose the plan that fits your needs
+## All features, built for enterprise scale.
 
-<div class="wrapper" markdown="1">
-  Companies with $10M+ and apps with $1M+ in annual revenue need a business license to use KeyboardKit.
-</div>
+Unlock our complete suite of features with business-critical protection and priority support.
 
 
-## Plans
+## Business Plans
 
-Our business plans include all [pro features](/pro) and add business-critical support for larger companies..
+A business plan is eequired for companies with $10M+ or apps with $1M+ in annual revenue.
 
-<div class="grid col3 tiers">
+<div class="grid col3 tiers spaced">
   {% for tier in site.data.business-tiers %}
     {% include kankoda/licenses/tier-box tier=tier %}
   {% endfor %}

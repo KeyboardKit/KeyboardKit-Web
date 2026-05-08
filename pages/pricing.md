@@ -13,26 +13,34 @@ terms: /pro/terms
 ---
 
 <div class="centered page-content wide wrapper" markdown="1">
+
 ![KeyboardKit Pro Icon](/assets/icon/pro-shadow.png){:width="200px" class="plain"}
-# Pro Pricing
-## Choose the plan that fits your needs
 
-<div class="wrapper" markdown="1">
-  The standard tiers are for indies, startups and small businesses.
-</div>
+# KeyboardKit Pro
+## Pricing that scales with your app.
+
+Unlock pro features that take your keyboard to the next level.
 
 
-## Plans
+## Standard Plans
 
-Companies with $10M+ in annual revenue and apps with $1M+ in annual revenue need a [business license]({{site.urls.business}}). 
+Our standard tiers are built for indies, startups, and small businesses.
 
-<div class="grid col4 tiers">
+<div class="grid col4 tiers spaced">
   {% for tier in site.data.tiers %}
     {% include kankoda/licenses/tier-box tier=tier %}
   {% endfor %}
 </div>
 
-Standard subscriptions are managed via [Gumroad]({{site.urls.gumroad}}). The yearly plan saves you two months on your yearly price!
+
+## Scaling Up?
+
+If your company exceeds $10M or your app exceeds $1M in annual revenue, check out our [Business licenses](/business).
+
+
+## Yearly Savings
+
+Our yearly plans save you two months on your yearly price!
 
 
 ## Full Feature Comparison

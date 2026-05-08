@@ -1,6 +1,6 @@
 <article class="wrapper wide slide-in">
   <h2>Why Choose KeyboardKit?</h2>
-  <p>KeyboardKit is the top choice for developers building custom keyboards.</p>
+  <p>KeyboardKit is the most trusted Swift and SwiftUI framework for developers who want to build, scale, and ship custom keyboards.</p>
   <div class="grid col4 carousel mobile">
     {% for usp in site.data.usps %}
     <div class="glass">
