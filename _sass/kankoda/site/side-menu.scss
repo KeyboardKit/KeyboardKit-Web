@@ -112,6 +112,18 @@ a.side-menu-title:hover {
 
 .side-menu-section a:hover {
   opacity: 0.9;
+}
+
+.side-menu-section a:hover::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: calc(var(--side-menu-pill-hang) * -1);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 999px;
   background: rgba(255, 255, 255, 0.28);
 }
 
