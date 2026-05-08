@@ -79,6 +79,10 @@ section.showcase {
     justify-items: center;
     align-content: start;
 
+    > p + p {
+      margin-top: calc(var(--paragraph-spacing) * -1);
+    }
+
     &::after {
       content: none;
     }
