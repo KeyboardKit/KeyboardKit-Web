@@ -1,8 +1,9 @@
 .metric-item-container {
   display: flex;
   justify-content: center;
-  gap: 4rem;
+  gap: clamp(1rem, 5vw, 4rem);
   flex-wrap: nowrap;
+  padding: 0 clamp(1rem, 4vw, 2rem);
 }
 
 .metric-item {
@@ -10,10 +11,11 @@
   gap: 0.4rem;
   justify-items: center;
   text-align: center;
+  min-width: 0;
 }
 
 .metric-item-value {
-  font-size: clamp(2rem, 4vw, 3rem);
+  font-size: clamp(1.5rem, 5vw, 3rem);
   font-weight: 800;
   line-height: 0.95;
   letter-spacing: -0.04em;
@@ -21,7 +23,7 @@
 
 .metric-item-label {
   opacity: 0.68;
-  font-size: 0.85rem;
+  font-size: clamp(0.65rem, 2vw, 0.85rem);
   font-weight: 600;
   line-height: 1.2;
   text-transform: uppercase;
