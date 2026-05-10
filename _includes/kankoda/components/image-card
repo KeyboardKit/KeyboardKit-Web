@@ -1,4 +1,4 @@
-<div class="glass image-card scale">
+<div class="glass image-card scale {{ include.card_class }}">
   <a href="{{ include.item.url | default: include.url }}" title="{{ include.title | default: include.item.title }}">
     {% if include.item.image %}
       <div class="image-card-media is-image">

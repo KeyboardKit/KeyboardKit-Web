@@ -104,6 +104,11 @@
     line-height: 1;
   }
 
+  &.keyboard .image-card-media.is-image {
+    background-color: rgba(166, 205, 255, 0.35);
+    padding-bottom: 1rem;
+  }
+
   h4 {
     font-size: 1.2em;
     margin-bottom: 0.35rem;

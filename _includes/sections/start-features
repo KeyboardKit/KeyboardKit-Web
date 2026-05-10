@@ -6,7 +6,7 @@
   <h3>Native & Fully Customizable</h3>
   <div class="grid col3 mobile carousel">
     {% for item in site.data.feature-promos limit:3 %}
-      {% include kankoda/components/image-card item=item color="blue" %}
+      {% include kankoda/components/image-card item=item color="blue" card_class="keyboard" %}
     {% endfor %}
   </div>
   <div>

@@ -6,7 +6,7 @@
 - color: green
   icon: lucide:shield
   title: Secure & Private
-  text: On-device processing ensures user & data privacy.
+  text: On-device processing ensures full user privacy.
 
 - color: blue
   icon: lucide:globe
