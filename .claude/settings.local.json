@@ -9,7 +9,9 @@
       "Bash(grep -v \"^$\")",
       "WebSearch",
       "WebFetch(domain:lucide.dev)",
-      "Bash(xargs ls *)"
+      "Bash(xargs ls *)",
+      "Bash(lsof -ti:4000)",
+      "mcp__Claude_in_Chrome__tabs_context_mcp"
     ],
     "deny": [],
     "ask": []
