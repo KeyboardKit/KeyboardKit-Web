@@ -39,7 +39,7 @@
           <a href="{{site.urls.github}}">GitHub</a>
           <a href="/get-started">Get Started</a>
           <a href="{{site.urls.github}}-Binaries">Binaries & dSYMs</a>
-          <a href="{{site.urls.docs}}">Documentation</a>
+          <a href="/documentation">Documentation</a>
           <a href="{{site.urls.issues}}">Issue Tracker</a>
         </div>
       </div>

@@ -2,7 +2,7 @@
 permalink: /industries
 layout: page
 
-eyebrow: KeyboardKit
+eyebrow: Custom Keyboard
 title: Industries
 
 image: /assets/headers/case-studies.jpg

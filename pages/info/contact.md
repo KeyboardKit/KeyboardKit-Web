@@ -3,24 +3,24 @@ permalink: /contact
 layout: page-sidebar
 
 title: Contact
-eyebrow: KeyboardKit
+page-title: Contact Us
 
 description: Find out how to get in touch with the KeyboardKit team.
 ---
 
-There are several ways to get in touch with the KeyboardKit team, depending on your needs.
+There are several ways to get in touch with the KeyboardKit team.
 
 ## E-mail
 
-For general inquiries, licensing questions, or anything else, feel free to [send us an e-mail]({{site.urls.email}}). We aim to respond within a few business days.
+For general inquiries, licensing questions, etc., [send us an e-mail]({{site.urls.email}}). We aim to respond within a few business days.
 
 ## GitHub
 
-For bug reports, feature requests, or SDK-related questions, please use the [GitHub issue tracker]({{site.urls.issues}}). This helps us track and prioritize issues effectively.
+For bug reports, feature requests, etc., use the [GitHub issue tracker]({{site.urls.issues}}). This helps us track and prioritize all issues.
 
-## Social Media
+## News
 
-Follow and reach us on [Bluesky]({{site.urls.bluesky}}) and [Mastodon]({{site.urls.mastodon}}) for news, updates, and casual conversation.
+Follow the [KeyboardKit Blog](/blog) and follow us on [Bluesky]({{site.urls.bluesky}}) and [Mastodon]({{site.urls.mastodon}}) for news, updates, and misc. discussions.
 
 ## Newsletter
 

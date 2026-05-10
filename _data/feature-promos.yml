@@ -3,7 +3,7 @@
   image:  /assets/feature-promos/blueprint.png
   text:   Build fast, native, and fully customizable keyboards with modern Swift & SwiftUI.
 
-- title:  75 Locales & Layouts
+- title:  Localized Features
   url:    /features
   image:  /assets/feature-promos/localization.png
   text:   Support 75 locales with localized layouts, callouts, input logic, and RTL support.

@@ -1,9 +1,12 @@
 <a name="features"></a>
-<div class="wrapper wide slide-in">
+
+<article class="wrapper slide-in">
+  {% include sections/numeric-items %}
+</article>
+
+<article class="wrapper wide slide-in">
   <h2>Features you'll love.</h2>
-  <img class="promo" src="/assets/feature-promos/plain-blueprint-split.png" alt="Custom keyboard preview with a diagonal split that reveals a blueprint." />
-  <p>KeyboardKit gives you everything you need to build a professional custom keyboard.</p>
-  <h3>Native & Fully Customizable</h3>
+  <p>KeyboardKit gives you everything you need to build a native & fully customizable keyboard.</p>
   <div class="grid col3 mobile carousel">
     {% for item in site.data.feature-promos limit:3 %}
       {% include kankoda/components/image-card item=item color="blue" card_class="keyboard" %}
@@ -13,4 +16,4 @@
     <a href="/features" class="cta">View Features</a>
     <a href="/pro" class="cta glass">KeyboardKit Pro</a>
   </div>
-</div>
+</article>

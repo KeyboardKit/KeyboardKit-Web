@@ -3,7 +3,7 @@ permalink: /about
 layout: page-sidebar
 
 title: About
-eyebrow: KeyboardKit
+page-title: About KeyboardKit
 
 description: This page describes what a custom keyboard is and how KeyboardKit can help.
 

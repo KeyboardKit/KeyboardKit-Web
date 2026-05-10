@@ -3,12 +3,15 @@ permalink: /faq
 layout: page-sidebar
 
 title: FAQ
-eyebrow: KeyboardKit
 
 description: This page contains frequently asked questions about custom keyboards.
 ---
 
 Find answers to common questions about custom keyboards and KeyboardKit below. If you can't find what you're looking for, feel free to [reach out](/contact).
+
+## Terminology
+
+See the [terminology page](/terminology) for a list of common terms and concepts that are involved with custom keyboards.
 
 ## Custom Keyboards
 

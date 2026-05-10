@@ -2,7 +2,6 @@
 permalink: /documentation
 layout: page-sidebar
 
-eyebrow: KeyboardKit
 title: Documentation
 
 redirect_from: /docs
@@ -12,16 +11,20 @@ image:  /assets/headers/documentation.jpg
 description: KeyboardKit's online documentation has all the information you need.
 ---
 
-The KeyboardKit [documentation]({{site.urls.docs}}) has a getting-started guide, articles, code samples, developer guides, and type documentation for all available features.
+KeyboardKit has many different resources to let you explore the SDK and its features.
+
+## Online Documentation
+
+The [online documentation]({{site.urls.docs}}) has a getting-started guide, feature articles, developer guides, sample code, and full documentation for all types and features in the SDK.
 
 ## Demo App
 
-To demonstrate things that the documentation can't visualize, the [GitHub repository]({{site.urls.github}}) has a demo app with code samples that shows you how to set up and configure an app and its keyboard. 
+The [GitHub repository]({{site.urls.github}}) has a demo app with code samples that shows you how to set up your app and keyboard. 
 
 ## KeyboardKit App
 
-You can also download the [KeyboardKit app]({{site.urls.appstore}}) from the App Store to test many of the core and pro features that the SDK provides. This lets you try KeyboardKit without having to write any code.
+The [KeyboardKit app]({{site.urls.appstore}}) on the App Store lets you test the SDK and its features without having to write any code.
 
 ## Contact Us
 
-Make sure to [reach out]({{site.urls.email}}) if you find that the documentation lacks critical information that you need.
+Don't hesistate to [reach out]({{site.urls.email}}) if you find that the documentation resources lack any information that you need.

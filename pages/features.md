@@ -3,7 +3,7 @@ permalink: /features
 layout: page-sidebar
 
 title: Features
-eyebrow: KeyboardKit
+page-title: KeyboardKit Features
 
 sidebar-menu:
   title: Features

@@ -3,7 +3,7 @@ permalink: /app
 layout: page-sidebar
 
 title: App
-eyebrow: KeyboardKit
+page-title: KeyboardKit App
 
 assets: /assets/app/
 

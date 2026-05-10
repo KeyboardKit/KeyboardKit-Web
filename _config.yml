@@ -112,6 +112,7 @@ defaults:
       type: "pages"
     values:
       layout: page
+      title-color: blue
       image: /assets/headers/keyboardkit.jpg
   -
     scope:

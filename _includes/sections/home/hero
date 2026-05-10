@@ -6,7 +6,7 @@
     <p>{{ page.description }}</p>
     <div>
       <a href="#get-started" class="cta">Start Building</a>
-      <a href="#content" class="cta glass">Learn More</a>
+      <a href="#learn-more" class="cta glass">Learn More</a>
     </div>
   </div>
 </section>

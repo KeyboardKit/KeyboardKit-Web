@@ -3,7 +3,7 @@ permalink: /blog
 layout: blog
 
 title: Blog
-eyebrow: KeyboardKit
+page-title: KeyboardKit Blog
 
 sidebar-menu:
   title: Tags
