@@ -48,12 +48,15 @@ details[open] .faq-item-title::after {
   text-align: left;
   line-height: 1.7;
   border-radius: var(--radius-glass-panel);
-  background: linear-gradient(135deg, #5b6ef5 0%, #8b5cf6 50%, #c026d3 100%);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  color: rgba(255, 255, 255, 0.92);
-  box-shadow: 0 8px 32px rgba(120, 40, 200, 0.3);
+  background: rgba(255, 255, 255, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  color: var(--color-text);
+  box-shadow: var(--shadow-default);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 
-  a, a:hover, a:visited { color: rgba(255, 255, 255, 0.92) !important; }
+  a, a:hover, a:visited { color: var(--color-text) !important; }
+
   > p:first-child { margin-top: 0; }
   > p:last-child  { margin-bottom: 0; }
 }
