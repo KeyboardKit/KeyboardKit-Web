@@ -285,12 +285,18 @@ td code.highlighter-rouge {
     border-radius: 1.25rem;
   }
 
+  div.highlighter-rouge::before,
+  figure.highlight::before {
+    top: calc(($code-box-title-height - 0.75rem) / 2);
+    width: 0.75rem;
+    height: 0.75rem;
+    box-shadow:
+      1.2rem 0 0 #ffc64d,
+      2.4rem 0 0 #67d35f;
+  }
+
   div.highlighter-rouge::after,
   figure.highlight::after {
-    top: 1.15rem;
-    left: auto;
-    right: 1.25rem;
-    transform: none;
     font-size: 0.85rem;
   }
 
