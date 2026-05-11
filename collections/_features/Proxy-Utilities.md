@@ -9,7 +9,7 @@ description: Make the custom keyboard text document proxy do more
   
 ---
 
-Custom keyboards use a [text document proxy](/terminology) to integrate with the currently active text field. It lets you insert and delete text, get the selected text, move the input cursor, etc.
+Custom keyboards use a [text document proxy]({{site.terminology}}) to integrate with the currently active text field. It lets you insert and delete text, get the selected text, move the input cursor, etc.
 
 
 ## Limited Native Capabilities

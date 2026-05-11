@@ -10,18 +10,17 @@ description: This page describes what a custom keyboard is and how KeyboardKit c
 stockholm: https://www.google.com/maps/place/Stockholm,+Sweden/@59.3262131,17.8172499,11z/data=!3m1!4b1!4m6!3m5!1s0x465f763119640bcb:0xa80d27d3679d7766!8m2!3d59.3293235!4d18.0685808!16zL20vMDZteHM
 ---
 
-Custom iOS keyboards provide a unique way to use functionality from your app in any other app that supports text input. This page describes this technology in detail, and how KeyboardKit can help you get started.
+Custom iOS keyboards provide a unique way to use functionality from your app in any other app that supports text input. This page describes this technology and its concepts in detail.
 
 
-## Terminology & FAQ
+## FAQ
 
-See the [terminology](/terminology) page for a list of common terms and concepts that are involved with custom keyboards,
-and our [FAQ](/faq) for frequently asked questions.
+See the [faq](/faq) page for frequently asked questions, and a list of common custom keyboard terms and concepts.
 
 
 ## What is a custom keyboard?
 
-A custom iOS [keyboard extension](/terminology) is an app extension that you ship together with your app. It can replace the system keyboard in any app, by using the 🌐 key while typing, and use your app's content and features.
+A custom iOS [keyboard extension]({{site.terminology}}) is an app extension that you ship together with your app. It can replace the system keyboard in any app, by using the 🌐 key while typing, and use your app's content and features.
 
 
 ## What is KeyboardKit?
@@ -33,14 +32,14 @@ KeyboardKit is a software framework that lets you create custom keyboards and ke
 
 Custom keyboards can render any user interface in the system keyboard content area. A custom keyboard can resize this area to fit its content, and render any custom view.
 
-Custom keyboards use a [text document proxy](/terminology) to interact with the active app. The proxy can read and write text, move the input cursor, etc. By requesting [Full Access](/terminology), a keyboard unlocks more capabilities, like network access.
+Custom keyboards use a [text document proxy]({{site.terminology}}) to interact with the active app. The proxy can read and write text, move the input cursor, etc. By requesting [Full Access]({{site.terminology}}), a keyboard unlocks more capabilities, like network access.
 
 
 ## What can a custom keyboard *not* do?
 
-Apple puts massive restrictions on what custom keyboards can do. For instance, a custom keyboard can't draw outside its bounds, and can only send text and basic commands to the [active app](/terminology).
+Apple puts massive restrictions on what custom keyboards can do. For instance, a custom keyboard can't draw outside its bounds, and can only send text and basic commands to the [active app]({{site.terminology}}).
 
-Keyboard extensions must also open the [main app](/terminology) to perform certain actions, like using the device microphone to perform dictation, and are [memory capped](/terminology) at ~70 MB (depending on device & OS).
+Keyboard extensions must also open the [main app]({{site.terminology}}) to perform certain actions, like using the device microphone to perform dictation, and are [memory capped]({{site.terminology}}) at ~70 MB (depending on device & OS).
 
 
 ## Why use KeyboardKit?

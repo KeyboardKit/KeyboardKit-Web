@@ -37,7 +37,7 @@ urls:
   faq:          /faq
   case-studies: /case-studies
   escrow:       /features/escrow
-  terminology:  /terminology
+  terminology:  /faq#terminology
 
   appstore:   https://itunes.apple.com/app/keyboardkit/id1568444977
   blog:       /blog

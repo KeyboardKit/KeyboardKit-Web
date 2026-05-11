@@ -73,3 +73,37 @@
 - tag: privacy
   title: Is KeyboardKit compliant with App Store guidelines?
   text: Yes. KeyboardKit is designed to follow Apple's guidelines for keyboard extensions, and is ready for App Store distribution.
+
+
+
+- tag: terminology
+  title: Custom Keyboard
+  text: A custom keyboard is a keyboard app extension that can replace the system keyboard in any app. Unlike an app, a custom keyboard extension runs within the context of another app. It can offer specialized input methods, enhanced autocomplete and autocorrections, a custom emoji keyboard, and completely different input methods like swipe typing or voice-to-text conversion.
+
+- tag: terminology
+  title: Full Access
+  text: Custom keyboards are very limited by default, but can request Full Access to unlock capabilities like network access, location services, access to the device dictionary and pasteboard, etc. Full Access requires explicit user consent and triggers privacy warnings. Many users decline Full Access due to privacy concerns, so developers must design their keyboards to function without it.
+
+- tag: terminology
+  title: Host Application
+  text: The host application is the app that is using the keyboard for text input. Different apps may have different input requirements, or custom input traits that affect the keyboard. A custom keyboard interacts with the host app through a Text Document Proxy.
+
+- tag: terminology
+  title: Input View Controller
+  text: A UIInputViewController is the main class in a custom keyboard. It's responsible for the custom keyboard lifecycle and how a keyboard is loaded, displayed, and terminated. Unlike regular view controllers, an input view controller has a special lifecycle, which is essential to understand for proper resource and state management.
+
+- tag: terminology
+  title: Main Application
+  text: The main application is the app that contains the custom keyboard extension. It's a great place for keyboard settings, user onboarding, and other features that need a large user interface or access to certain features like microphone access. Both targets can use App Groups to communicate with each other.
+
+- tag: terminology
+  title: Memory Cap
+  text: Custom keyboards are memory capped at ~60-70 MB, based on the device and OS. Exceeding this limit results in immediate system termination. This is particularly challenging for keyboards that use large AI or language models, or memory-intensive media content.
+
+- tag: terminology
+  title: Sandboxing
+  text: Custom keyboards operate within a heavily sandboxed environment that restricts access to system resources and user data. This ensures that malicious keyboards can't access sensitive information, and prevents keyboards from launching other apps or accessing certain system APIs without user consent.
+
+- tag: terminology
+  title: Text Document Proxy
+  text: A custom keyboard communicates with the host application through a Text Document Proxy, which is the main interface for text manipulation in a custom keyboard. It provides methods to insert and delete text, and read limited context around the input cursor, while preventing the keyboard from accessing the full content of text fields.
