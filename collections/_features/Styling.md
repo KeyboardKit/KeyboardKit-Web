@@ -5,7 +5,10 @@ hero:
   emoji: 🎨
 ---
 
-While iOS has very limited ways to customize the look and feel of the native keyboard, KeyboardKit can be styled and customized with styles and themes.
+While iOS has limited ways to customize the look and feel of the native keyboard, KeyboardKit can be styled to great extent, using styles and themes.
+
+
+## Namespace
 
 KeyboardKit has a ``KeyboardStyle`` namespace that contains style-related types, styles and views, to let you style different parts of the keyboard.
 
@@ -41,7 +44,7 @@ let text = KeyboardAction.space.standardButtonText(for: context)     // KKL10n.s
 Most KeyboardKit views have custom styles and style modifiers. For instance, the ``Keyboard.Button`` view has a  ``.keyboardButtonStyle(_:)`` view modifier that lets you customize the style of any button.
 
 
-## 👑 KeyboardKit Pro
+## KeyboardKit Pro
 
 [KeyboardKit Pro][Pro] unlocks additional assets, and a theme engine that makes styling even easier.
 
@@ -52,11 +55,12 @@ KeyboardKit Pro emoji-specific, vectorized assets, like the ``.keyboardEmoji`` a
 
 <img alt="Emoji Images" src="{{page.assets}}images-emojis.jpg" />
 
+
 ### Themes
 
 KeyboardKit Pro unlocks a theme engine that makes easy to define and style keyboards with themes:
 
-<div class="grid col3">
+<div class="grid col3 images">
     <div><img alt="Standard Green Theme" src="{{site.assets}}/themes/theme-standard-green.jpg" /></div>
     <div><img alt="Swifty Blue Theme" src="{{site.assets}}/themes/theme-swifty-blue.jpg" /></div>
     <div><img alt="Cotton Candy Theme" src="{{site.assets}}/themes/theme-candyshop.jpg" /></div>

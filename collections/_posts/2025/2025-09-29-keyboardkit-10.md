@@ -93,7 +93,7 @@ Finally, the `.claude` remote prediction request builder uses `claude-sonnet-4-2
 
 KeyboardKit 10 has a new `Clipboard` namespace with clipboard-related features to let users paste from the system clipboard and a collection of custom clips. 
 
-<div class="grid col2">
+<div class="grid col2 images">
     <span><img src="{{page.assets}}clipboard-settings.jpg" /></span>
     <span><img src="{{page.assets}}clipboard-keyboard.jpg" /></span>
 </div>
@@ -105,7 +105,7 @@ There is a new `SettingsScreen` that can be used to manage clips in the main app
 
 KeyboardKit 10 has a new `Fonts` namespace with font features that let us type with Unicode fonts. 
 
-<div class="grid col2">
+<div class="grid col2 images">
     <span><img src="{{page.assets}}fonts-settings.jpg" /></span>
     <span><img src="{{page.assets}}fonts-keyboard.jpg" /></span>
 </div>
@@ -119,7 +119,7 @@ Due to the market situation, this feature is not part of the Gold tier. It requi
 
 The `EmojiKeyboard` has been rewritten from scratch and has better responsiveness and a memory management that properly deallocates memory when emojis are scrolled out of frame.
 
-<div class="grid col2">
+<div class="grid col2 images">
     <span><img src="{{page.assets}}emoji-keyboard-1.jpg" /></span>
     <span><img src="{{page.assets}}emoji-keyboard-2.jpg" /></span>
 </div>
@@ -131,7 +131,7 @@ This new memory management allows the new emoji keyboard to render emojis withou
 
 The `KeyboardTheme` namespace has a new `.blueprint` theme that mimics the classic blueprint style.
 
-<div class="grid col2">
+<div class="grid col2 images">
     <span><img src="{{page.assets}}theme-blueprint.jpg" /></span>
     <span><img src="{{page.assets}}theme-blueprint-dark.jpg" /></span>
 </div>

@@ -1,0 +1,100 @@
+// Carousel
+//
+// Add `.carousel` to any `.grid` to make it always behave as a horizontal
+// scroll carousel, keeping card widths and enabling horizontal scrolling.
+//
+// Add `.carousel.mobile` to any `.grid` to let it keep card widths and
+// switch to a horizontal scroll carousel only when its container gets too
+// narrow (container-query-based activation).
+
+@supports (container-type: inline-size) {
+  @mixin carousel-active {
+    display: grid;
+    grid-auto-columns: var(--carousel-item-width);
+    grid-auto-flow: column;
+    grid-template-columns: none;
+    justify-content: start;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    padding:
+      var(--carousel-vertical-space, var(--carousel-shadow-space))
+      var(--carousel-shadow-space)
+      calc(var(--carousel-vertical-space, var(--carousel-shadow-space)) + var(--carousel-padding-bottom))
+      var(--carousel-shadow-space);
+    margin-left: calc(-1 * var(--carousel-shadow-space));
+    margin-right: calc(-1 * var(--carousel-shadow-space));
+    margin-top: calc(-1 * var(--carousel-vertical-pull, 0rem));
+    margin-bottom: calc(-1 * var(--carousel-vertical-pull, 0rem));
+    scroll-snap-type: x proximity;
+    scroll-padding-inline: var(--carousel-shadow-space);
+    -webkit-overflow-scrolling: touch;
+
+    > * {
+      scroll-snap-align: start;
+      min-width: 0;
+    }
+  }
+
+  :has(> .carousel) {
+    container-type: inline-size;
+    container-name: carousel;
+  }
+
+  .grid.carousel {
+    --carousel-item-width: 17rem;
+    --carousel-padding-bottom: 0.75rem;
+    --carousel-shadow-space: clamp(1rem, 4vw, 2rem);
+    --carousel-vertical-space: clamp(1rem, 2vw, 1.5rem);
+  }
+
+  .grid.carousel.images {
+    --carousel-shadow-space: 1.5rem;
+    --carousel-vertical-space: 1.75rem;
+    --carousel-vertical-pull: 1.5rem;
+    --carousel-padding-bottom: 0rem;
+  }
+
+  // Unconditional carousel activation
+  .grid.carousel:not(.mobile) {
+    @include carousel-active;
+  }
+
+  // Container-query-based activation for `.mobile` carousels
+  @container carousel (max-width: 90rem) {
+    .grid.carousel.mobile.col5 {
+      @include carousel-active;
+    }
+  }
+
+  @container carousel (max-width: 52rem) {
+    .grid.carousel.mobile.col4 {
+      @include carousel-active;
+    }
+  }
+
+  @container carousel (max-width: 54rem) {
+    .grid.carousel.mobile.col3 {
+      @include carousel-active;
+    }
+  }
+
+  @container carousel (max-width: 36rem) {
+    .grid.carousel.mobile.col2 {
+      @include carousel-active;
+    }
+  }
+
+  .grid.carousel {
+    scrollbar-color: rgba(0, 0, 0, 0.18) transparent;
+    scrollbar-width: thin;
+  }
+
+  .grid.carousel::-webkit-scrollbar {
+    height: 0.45rem;
+  }
+
+  .grid.carousel::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.18);
+    border-radius: 999px;
+  }
+}

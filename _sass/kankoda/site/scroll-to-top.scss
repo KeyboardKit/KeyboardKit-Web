@@ -1,0 +1,38 @@
+.scroll-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 100;
+  width: 2.75rem;
+  height: 2.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  background: var(--color-bg-dark-blue);
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+
+  &.is-visible {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  &:hover {
+    transform: translateY(-3px);
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    width: 0.55rem;
+    height: 0.55rem;
+    border-right: 2px solid white;
+    border-top: 2px solid white;
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+}

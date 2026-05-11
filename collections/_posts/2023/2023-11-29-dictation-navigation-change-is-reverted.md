@@ -8,8 +8,6 @@ image:  /assets/headers/pro.jpg
 
 A change that was introducted to make the dictation back navigation work again, is being reverted.
 
-![KeyboardKit logo]({{page.image}})
-
 Since keyboard extensions can't access the microphone, KeyboardKit's keyboard dictation currently opens the main application to perform dictation there. 
 
 The intended user experience is to be taken back to the source app when dictation stops, but this navigation stopped working in iOS 17 because of removed system APIs.

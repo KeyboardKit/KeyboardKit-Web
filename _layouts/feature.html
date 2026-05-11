@@ -1,29 +1,14 @@
 ---
-layout: plain
+layout: page-sidebar
 ---
 
-{%- assign features = site.data.features -%}
-{%- assign feature = features | where:"title", page.title | first -%}
+{%- assign feature = site.data.features | where:"title", page.title | first -%}
 
-<main class="page-content feature" aria-label="Content">
-  <div class="wrapper">
-    <article class="paper">
-      <p>
-        {% include kankoda/buttons/back url="/features" title="Back to Features" %}
-      </p>
+{{content}}
 
-      {{ content }}
-
-      {% if feature.docs %}
-      <h2>Documentation</h2>
-      <p>
-        The information on this page is shortened to be easier to overview. For more information, see the <a href="{{site.urls.docs}}">online KeyboardKit documentation</a>.
-      </p>
-      {% endif %}
-
-      <hr />
-
-      {% include features-footer.html %}
-    </article>
-  </div>
-</main>
+{% if feature.docs %}
+<h2 id="documentation">Documentation</h2>
+<p>
+  The information on this page has been shortened to be easier to overview and keep up to date. For a complete feature description, see the <a href="{{feature.docs}}">online documentation</a>.
+</p>
+{% endif %}

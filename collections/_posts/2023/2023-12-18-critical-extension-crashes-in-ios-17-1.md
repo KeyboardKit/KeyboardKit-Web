@@ -1,15 +1,13 @@
 ---
 title:  Critical extension crashes in iOS 17.1
 date:   2023-12-10 08:00:00 +0100
-tags:   ios-bugs
+tags:   apple-bugs
 
 tweet:  https://x.com/GetKeyboardKit/status/1736793940324413473?s=20
 toot:   https://techhub.social/@keyboardkit/111602494916219080
 ---
 
 This blog post contains important information about a keyboard extension crash that may occur in production in iOS 17.1 (and perhaps even in iOS 17.0).
-
-![KeyboardKit logo]({{page.image}})
 
 Some developers have reported that their keyboard extensions crash on launch in production. The same has been observed for the [KeyboardKit app](/app).
 

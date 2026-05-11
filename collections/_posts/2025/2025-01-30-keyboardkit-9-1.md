@@ -32,7 +32,7 @@ This version makes it easier to set up a `KeyboardApp` for your app, by removing
 
 This version makes it possible to dock your keyboard to the leading or trailing edge of the screen, to simplify one handed typing on iPhone.
 
-![A screenshot of a docked KeyboardView]({{page.assets}}screenshot-dock.png){:width="450"}
+![A screenshot of a docked KeyboardView]({{page.assets}}screenshot-dock.png){:class="medium"}
 
 To make this work, the `Keyboard.Settings` class has a new, auto-persisted `keyboardDockEdge` setting, that can be set to any horizontal edge to enable docking.
 
@@ -43,9 +43,9 @@ KeyboardKit Pro 9.2 will add a new dock section to the `KeyboardApp.SettingsScre
 
 This version makes it possible to add a locale switcher to the trailing edge of the spacebar. This lets you mimic the iOS 18 multi-locale mode, but with a different behavior.
 
-![A screenshot of a docked KeyboardView]({{page.assets}}screenshot-spacebar.png){:width="450"}
+![A screenshot of a docked KeyboardView]({{page.assets}}screenshot-spacebar.png){:class="medium"}
 
-To make this work, `Keyboard.SpaceLongPressBehavior` has a new `.moveInputCursorWithLocaleSwitcher`, which can be used to use the spacebar to move the input cursor AND switch locale.
+To make this work, `SpaceLongPressBehavior` has a new `.moveInputCursorWithLocaleSwitcher`, which can be used to use the spacebar to move the input cursor AND switch locale.
 
 KeyboardKit Pro 9.2 will move `spaceLongPressBehavior` from `KeyboardContext` to `Keyboard.Settings`, and convert this to an auto-persisted user setting. 
 

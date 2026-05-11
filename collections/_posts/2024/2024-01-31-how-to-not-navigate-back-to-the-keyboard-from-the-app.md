@@ -9,17 +9,11 @@ toot:   https://techhub.social/@keyboardkit/111855245325388950
 
 Keyboard extensions may sometimes want to open the main app to perform some operations, or provide a larger UI for settings. Getting back to the keyboard is however unfortunately not as easy.
 
-![KeyboardKit logo]({{page.image}})
-
-[KeyboardKit Pro](/pro) used to have a `PreviousAppNavigator` that could be used to navigate back to the keyboard (in the previously open app) from the main app.
-
-This was used to e.g. take the user back to the keyboard when dictation finished in the app.
+[KeyboardKit Pro](/pro) had a `PreviousAppNavigator` that could be used to navigate back to the keyboard (in the previously open app) from the main app. This was used to e.g. take the user back to the keyboard when dictation finished in the app.
 
 However, the first implementation, which is also used by apps like Gboard, stopped working in iOS 17, leaving dictation stuck in the main app.
 
-To fix this, KeyboardKit 8 added a new implementation, that used `LSApplicationWorkspace` to rather open the bundle ID of the previous app. This fix was however rejected by Apple.
-
-If you want to take a risk at adding the rejected code, here are two implementations that you can add *at your own risk*.
+To fix this, KeyboardKit 8 added a new implementation, that used `LSApplicationWorkspace` to rather open the bundle ID of the previous app. This fix was however rejected by Apple. If you want to risk using the rejected code, here are two implementations that you can add *at your own risk*.
 
 
 ### Option 1 - Using LSApplicationWorkspace

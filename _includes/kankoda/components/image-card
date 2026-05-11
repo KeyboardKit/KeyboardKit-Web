@@ -1,0 +1,50 @@
+<div class="glass image-card scale {{ include.card_class }}">
+  <a href="{{ include.item.url | default: include.url }}" title="{{ include.title | default: include.item.title }}">
+    {% if include.item.image %}
+      <div class="image-card-media is-image">
+        <img src="{{ include.item.image }}" />
+      </div>
+    {% elsif include.item.icon or include.item.emoji %}
+      {% assign media_color = include.color | default: include.item.color %}
+      <div class="image-card-media is-generated {{ media_color }}{% unless include.item.icon %} is-emoji{% endunless %}">
+        <div class="image-card-media-icon{% unless include.item.icon %} is-emoji{% endunless %}">
+          {% if include.item.icon %}
+            {% assign icon = include.item.icon %}
+            {% include kankoda/components/icon
+              name=icon.name
+              class="image-card-media-symbol"
+              width="62"
+              height="62"
+              label=include.item.title
+            %}
+          {% else %}
+            <span class="image-card-media-symbol image-card-media-emoji" aria-hidden="true">{{ include.item.emoji }}</span>
+          {% endif %}
+        </div>
+      </div>
+    {% endif %}
+    <div class="content">
+      <h4>{{include.item.title | default: include.item.name}}</h4>
+      <p>{{include.item.card.text | default: include.item.text}}</p>
+      {% if include.item.card.bullets or include.item.card.tags %}
+      <div class="image-card-meta">
+        {% if include.item.card.bullets %}
+        <div class="bullets">
+          <ul>
+            {% for bullet in include.item.card.bullets %}
+            <li>{{bullet}}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% else %}
+        <div class="tags">
+          {% for tag in include.item.card.tags %}
+          <span class="tag {{tag}}">{{tag}}</span>
+          {% endfor %}
+        </div>
+        {% endif %}
+      </div>
+      {% endif %}
+    </div>
+  </a>
+</div>

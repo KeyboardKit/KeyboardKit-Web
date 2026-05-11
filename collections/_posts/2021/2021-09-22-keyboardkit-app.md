@@ -11,7 +11,7 @@ The KeyboardKit app has been finished and sent to the App Store for review. If a
 
 One of the many goals with the KeyboardKit library has always been to build something on top of it, to really put the library to the test and use all of KeyboardKit's features in a real-world product.
 
-Today, the app has finally been sent to Apple for review. It will hopefuly be out on the App Store in a couple of days.
+The app has finally been sent to Apple for review. It will hopefuly be out on the App Store in a couple of days.
 
 
 ## New website

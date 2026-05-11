@@ -10,8 +10,6 @@ url: https://kankoda.gumroad.com/l/keyboardkitpro
 
 As part of the Kankoda Black Week campaign, [KeyboardKit Pro is 50% off]({{page.url}}) through Sunday 26th!
 
-![KeyboardKit logo]({{page.image}})
-
 There has never been a better time to become a [KeyboardKit Pro user](/pro). Just enter discount code [BF23-KKPRO]({{page.url}}) during checkout to get **50%** off your first payment.
 
 The offer is valid through November 26 and applies to both the yearly and the monthly plan and to all tiers. Since it applies to the first payment, signing up for a yearly Gold license will maximize your savings. 

@@ -9,8 +9,6 @@ toot:   https://techhub.social/@keyboardkit/110378488624461760
 
 KeyboardKit 7.6 will fix a dictation-related problem, where you had to add dictation permissions to your app when submitting it to the App Store, even if you didn't use the dictation feature.
 
-![KeyboardKit logo]({{page.image}})
-
 
 ## The problem
 
@@ -121,7 +119,7 @@ private extension StandardSpeechRecognizer {
 #endif
 ```
 
-If you know how the code could be included in the source code without causing this problem, feel free to reach out.
+If you know how the code could be included in the source code without causing this problem, please reach out.
 
 
 ## More improvements

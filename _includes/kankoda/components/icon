@@ -1,0 +1,8 @@
+{% comment %}Icon sets: https://icon-sets.iconify.design {% endcomment %}
+<iconify-icon
+  icon="{{ include.name }}"
+  {% if include.class %}class="{{ include.class }}"{% endif %}
+  {% if include.width %}width="{{ include.width }}"{% endif %}
+  {% if include.height %}height="{{ include.height }}"{% endif %}
+  {% if include.label %}aria-label="{{ include.label }}"{% else %}aria-hidden="true"{% endif %}
+></iconify-icon>

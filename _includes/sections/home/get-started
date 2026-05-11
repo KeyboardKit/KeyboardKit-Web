@@ -1,0 +1,8 @@
+<div class="wrapper slide-in">
+  <h2>Get Started.</h2>
+  <p>Add KeyboardKit to your project and be up and running in minutes.</p>
+  {% highlight swift-package-manager %}{{site.urls.github}}{% endhighlight %}
+  <div>
+    <a href="/get-started" class="cta glass">More Information</a>
+  </div>
+</div>

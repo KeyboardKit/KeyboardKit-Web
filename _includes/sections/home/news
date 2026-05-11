@@ -1,0 +1,9 @@
+<article class="wrapper wide slide-in">
+  <h2>Latest News</h2>
+  <p>Follow the <a href="{{site.urls.blog}}">KeyboardKit Blog</a> for news & updates.</p>
+  <div class="grid col2">
+    {% for post in site.posts limit:2 %}
+      {% include kankoda/components/image-link item=post %}
+    {% endfor %}
+  </div>
+</article>

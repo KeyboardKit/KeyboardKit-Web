@@ -1,0 +1,5 @@
+<div class="metric-item-container">
+  {% include kankoda/components/metric-item value="100k+" label="Active Users" %}
+  {% include kankoda/components/metric-item value="75" label="Supported Locales" %}
+  {% include kankoda/components/metric-item value="1.8k+" label="GitHub Stars" %}
+</div>

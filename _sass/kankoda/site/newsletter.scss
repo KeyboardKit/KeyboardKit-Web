@@ -1,0 +1,30 @@
+#gumroad-follow-form-embed {
+
+    margin-top: 1.75rem;
+
+    input, button {
+        font-size: 1rem;
+        padding: 0.625rem 1.25rem;
+        border-radius: var(--radius-glass-link);
+        border: solid 1px var(--color-border);
+    }
+
+    button {
+        color: var(--color-text-dark);
+        background-color: var(--color-bg-dark);
+    }
+
+    button:active {
+        color: var(--color-text-dark);
+        background-color: #555;
+    }
+}
+
+@media (max-width: 600px) {
+
+    #gumroad-follow-form-embed {
+        input, button {
+            font-size: 0.875rem;
+        }
+    }
+}

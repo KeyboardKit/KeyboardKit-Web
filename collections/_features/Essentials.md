@@ -7,47 +7,60 @@ hero:
 keyboard-view: /features/essentials-keyboardview
 ---
 
-KeyboardKit extends Apple's very imited native keyboard APIs with a lot more features than what is otherwise available.
+KeyboardKit extends Apple's limited keyboard APIs with a lot more features than what is otherwise available.
 
-KeyboardKit lets you create a fully customizable [custom keyboard](/terminology) with a few lines of code, and will automatically set up things like App Group settings sync, locales, dictation, etc.
+KeyboardKit lets you create a native, fully customizable [custom keyboard]({{site.terminology}}) with just a few lines of code, and will automatically set up things like App Group settings sync, locales, dictation, etc.
 
 ## Core Features
 
-KeyboardKit has essential features & views, and a [KeyboardView]({{page.keyboard-view}}) that mimics the native keyboard.
+KeyboardKit has essential models, features and views, and a [KeyboardView]({{page.keyboard-view}}) that mimics the native keyboard.
 
-<div class="grid col2">
+<div class="grid col2 images">
     <span><img src="{{page.assets}}keyboardview-english-callout.jpg" /></span>
     <span><img src="{{page.assets}}keyboardview-swedish-theme.jpg" /></span>
 </div>
 
-The KeyboardKit `KeyboardInputViewController` extends the native `UIInputViewController` with more features, and the `KeyboardAppView` can be used to set up the main app with keyboard integrations.
+KeyboardKit's `KeyboardInputViewController` extends `UIInputViewController` with more features, and the `KeyboardAppView` can be used to set up a main app target with keyboard-related features.
 
-KeyboardKit has separate feature namespaces, like `Keyboard`, `Autocomplete`, `Emojis`, `Feedback`, etc. Each namespace has its own observable state, settings, services, etc.
+KeyboardKit has feature-specific namespaces, like `Keyboard`, `Autocomplete`, `Emojis`, `Feedback`, etc. Each namespace has its own observable state, settings, services, etc.
 
-
-## Keyboard Engine
-
-The `Keyboard` namespace contains essential keyboard utilities like `State` and `Services`, models like `AutocapitalizationType`, `Diacritic` and `Gesture`, and views like `Button`, `NextKeyboardButton`.
-
-The `Keyboard` namespace is designed to provide you with all the tools needed for the core keyboard engine, while the other namespaces provide specific features on top of this engine.
+The `Keyboard` namespace is designed to provide you with all the tools needed for the core keyboard engine, while the other namespaces provide additional features on top of this engine.
 
 
-## Keyboard Gestures
+## Models & Utilities
 
-The native iOS keyboard has more gestures than you may think. Keys can be pressed, released, and long pressed, space can be dragged to move the cursor, shift can be double tapped, etc.
-
-KeyboardKit lets you handle complex gestures with very little code and has a drag gesture handlers that can handle various gestures, like using space to move the input cursor.
+The `Keyboard` namespace defines tons of essential models like `Diacritic`, `KeyboardCase`, `Gesture`, etc., utilities like `State` and `Services`, and views like `Button`, and `NextKeyboardButton`.
 
 
-## 👑 KeyboardKit Pro
+## Observable State
 
-[KeyboardKit Pro][Pro] unlocks even more essential features, makes the [KeyboardView]({{page.keyboardview}}) support all [{{site.locales.count}} supported locales](/locales), etc.
+Each KeyboardKit feature has an observable context class, that contains observable state. For instance, the main `KeyboardContext` lets you get and set the current `locale`, and manage the overall keyboard state.
 
-<div class="grid col2">
+Other contexts, like `AutocompleteContext` and `DictationContext` are used for their specific features, and contain `settings` properties that refer to auto-persisted, feature-specific settings.
+
+KeyboardKit injects all contexts into the environment, to let you easily access them as environment obejcts.
+
+
+## Settings
+
+KeyboardKit manages core settings via the `KeyboardSettings` features. Each feature has its own settings, like `AutocompleteSettings` and `DictationSettings`.
+
+
+## Views
+
+The `Keyboard` namespace defines many core views, like `Keyboard.Button`, toolbars, gestures, etc., and a [KeyboardView]({{page.keyboard-view}}) that mimics the native keyboard.
+
+
+
+## KeyboardKit Pro
+
+[KeyboardKit Pro][Pro] unlocks more capabilities in each feature, and makes the [KeyboardView]({{page.keyboardview}}) support [{{site.locales.count}} locales](/locales).
+
+<div class="grid col2 images">
     <span><img src="{{page.assets}}keyboard-settingsscreen.jpg" /></span>
     <span><img src="{{page.assets}}keyboard-localesettingsscreen.jpg" /></span>
 </div>
 
-KeyboardKit also provides [additional app utilities](/features/app), that lets you set up a full-blown main app with keyboard status handling, settings screens, etc. Be up and running in minutes, with very little code.
+KeyboardKit also unlocks [additional app utilities](/features/app), that lets you set up a full-blown main app with keyboard status handling, settings screens, etc. Be up and running in minutes, with very little code.
 
 [Pro]: /pro

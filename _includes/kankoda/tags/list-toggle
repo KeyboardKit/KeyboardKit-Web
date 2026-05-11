@@ -1,4 +1,0 @@
-<div class="tag-list-toggle" >
-  <a class="tag-list-toggle" href="javascript:toggleTagList()">Show tags</a>
-  <hr />
-</div>

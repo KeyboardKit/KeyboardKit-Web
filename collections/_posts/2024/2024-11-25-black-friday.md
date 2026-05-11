@@ -16,7 +16,7 @@ This works with the Basic, Silver, *and* Gold tier, which means that you can sav
 
 Enter the following code in the Gumroad checkout flow, to apply the discount to your Pro purchase:
 
-<div class="box pro">
+<div class="orange glass">
   BLACK-FRIDAY-2024
 </div>
 

@@ -20,16 +20,14 @@ release-pro: https://github.com/KeyboardKit/KeyboardKitPro/releases/tag/9.0.0
 
 KeyboardKit 9.0 is finally out! 🚀 Let's take a look at all the new things that make KeyboardKit better than ever, and how to best upgrade from KeyboardKit 8 to KeyboardKit 9.
 
-![KeyboardKit logo]({{page.image}})
-
 
 ## TLDR;
 
 Let's sum up the most important changes, in case you find this post too long:
 
-KeyboardKit 9 targets `iOS 15`, `macOS 12`, `tvOS 15`, `watchOS 8`, and `visionOS 1`, removes deprecated code, and simplifies many parts of the library.
+KeyboardKit 9 targets `iOS 15`, `macOS 12`, `tvOS 15`, `watchOS 8`, and `visionOS 1`, removes lots of deprecated code, and simplifies many parts of the library.
 
-KeyboardKit now supports both floating and collapsing a keyboard on iPad, and the keyboard type is decoupled from the case. Autocomplete lets you use 3rd party AI tools (Claude & OpenAI are first out) for next word prediction. Callouts are easier to use and look better than before. Dictation is a lot easier to use. Emoji is better localized and the emoji keyboard supports search & scrolling through categories. Haptic feedback is lighter when typing. Localization adds support for 🇦🇺 English (Australia) and 🇨🇦 English (Canada), bringing the number of supported locales up to `70`. Hey, there's so much in this release that even the TLDR; became too long to read.
+KeyboardKit now supports both floating and collapsing a keyboard on iPad, and the keyboard type is decoupled from the case. Autocomplete lets you use 3rd party AI tools (Claude & OpenAI are first out) for next word prediction. Callouts are easier to use and look better than before. Dictation is a lot easier to use. Emoji is better localized and the emoji keyboard supports search & scrolling through categories. Haptic feedback is lighter when typing. Localization adds support for 🇦🇺 English (Australia) and 🇨🇦 English (Canada), bringing the number of supported locales up to `70`. There's so much in this release that even the TLDR; became too long to read.
 
 Futhermore, KeyboardKit Pro now only requires a bundle ID for the main app, and can be used with as many keyboard extensions as you like within that app. Yearly Gold and Custom licenses can also use license files to avoid having to upgrade KeyboardKit version to upgrade their license.
 

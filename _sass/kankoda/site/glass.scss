@@ -1,0 +1,121 @@
+// Elements
+
+div.glass {
+  border: 1px solid var(--color-border-glass);
+  box-shadow: var(--shadow-default);
+}
+
+
+// Shapes
+
+section.glass, section.glow {
+  border-top: 1px solid var(--color-border-glass);
+}
+
+div.glass, section.glass {
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px); // For Safari support
+
+  &.blue,
+  &.green,
+  &.yellow,
+  &.orange,
+  &.red,
+  &.purple {
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.76), rgba(255, 255, 255, 0.76));
+  }
+
+  &.blue { background-color: var(--glass-blue-bg); }
+  &.green { background-color: var(--glass-green-bg); }
+  &.yellow { background-color: var(--glass-yellow-bg); }
+  &.orange { background-color: var(--glass-orange-bg); }
+  &.red { background-color: var(--glass-red-bg); }
+  &.purple { background-color: var(--glass-purple-bg); }
+}
+
+
+// Content
+
+.icon-badge.glass {
+  &.blue { color: var(--glass-blue-text) !important; }
+  &.green { color: var(--glass-green-text) !important; }
+  &.yellow { color: var(--glass-yellow-text) !important; }
+  &.orange { color: var(--glass-orange-text) !important; }
+  &.red { color: var(--glass-red-text) !important; }
+  &.purple { color: var(--glass-purple-text) !important; }
+}
+
+
+// Text
+
+h1, h2, span {
+  &.glass {
+    color: var(--color-text);
+
+    &.blue, &.green, &.yellow, &.orange, &.red, &.purple {
+      color: transparent !important;
+      -webkit-background-clip: text;
+      background-clip: text;
+      padding-bottom: 0.1em;
+    }
+
+    &.blue { background-image: linear-gradient(180deg, color-mix(in srgb, var(--glass-blue-text) 60%, white), var(--glass-blue-text)); }
+    &.green { background-image: linear-gradient(180deg, color-mix(in srgb, var(--glass-green-text) 60%, white), var(--glass-green-text)); }
+    &.yellow { background-image: linear-gradient(180deg, color-mix(in srgb, var(--glass-yellow-text) 60%, white), var(--glass-yellow-text)); }
+    &.orange { background-image: linear-gradient(180deg, color-mix(in srgb, var(--glass-orange-text) 60%, white), var(--glass-orange-text)); }
+    &.red { background-image: linear-gradient(180deg, color-mix(in srgb, var(--glass-red-text) 60%, white), var(--glass-red-text)); }
+    &.purple { background-image: linear-gradient(180deg, color-mix(in srgb, var(--glass-purple-text) 60%, white), var(--glass-purple-text)); }
+  }
+}
+
+
+
+// Container
+
+.page-content > p + div.glass,
+.page-content > div.glass + p {
+  margin-top: var(--page-content-media-gap);
+}
+
+div.glass {
+  border-radius: var(--radius-glass-panel);
+  overflow: hidden;
+  padding: clamp(1.25rem, 3vw, 2rem);
+
+  a.cta {
+    margin-top: 0.85rem;
+  }
+
+  a:hover & {
+    box-shadow: 0 4px 24px rgba(0,0,0,0.22);
+  }
+
+  > .icon-badge:first-child {
+    margin-bottom: 1.25rem;
+  }
+
+  > p:last-child {
+    margin-bottom: 0;
+  }
+
+  &.no-padding {
+    padding: 0;
+  }
+
+  &.compact {
+    padding: clamp(1.25rem, 3vw, 2rem) clamp(0.75rem, 2vw, 1.25rem) clamp(0.75rem, 2vw, 1.25rem);
+    p {
+      font-size: 1em;
+    }
+  }
+
+  &.dark {
+    border-color: var(--color-border-dark);
+
+    .tag {
+      border-color: var(--color-border-dark);
+      color: var(--color-text-dark) !important;
+    }
+  }
+}

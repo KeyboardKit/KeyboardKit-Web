@@ -1,0 +1,71 @@
+---
+layout: plain
+
+instructions: To customize the side menu, add a "menu" value to the front-matter with an optional "title"
+---
+
+{% assign menu = page.sidebar-menu %}
+{% assign menu_title = menu.title | default: "On This Page" %}
+{% assign back_link = page["back-link"] %}
+{% assign page_content_lines = page.content | newline_to_br | split: '<br />' %}
+
+<section class="side-menu-layout">
+  <div class="wrapper wide">
+    <div class="side-menu-layout-grid">
+      <aside class="side-menu" aria-label="{{ menu_title }}">
+        <div class="side-menu-inner">
+          {% if back_link and back_link.title and back_link.url %}
+            <a class="side-menu-title side-menu-back-link" href="{{ back_link.url | relative_url }}">{{ back_link.title }}</a>
+          {% endif %}
+
+          <div class="side-menu-title">{{ menu_title }}</div>
+          <nav class="side-menu-section" aria-label="{{ menu_title }}">
+            <ul>
+              {% assign in_code_block = false %}
+              {% for raw_line in page_content_lines %}
+                {% assign line = raw_line | strip %}
+
+                {% if line contains "```" %}
+                  {% if in_code_block %}
+                    {% assign in_code_block = false %}
+                  {% else %}
+                    {% assign in_code_block = true %}
+                  {% endif %}
+                {% endif %}
+
+                {% if in_code_block == false %}
+                  {% assign prefix_h2 = line | slice: 1, 2 %}
+                  {% assign prefix_md = line | slice: 0, 3 %}
+
+                  {% if prefix_h2 == "h2" %}
+                    {% assign title_text = line | strip_html | strip %}
+                    {% assign title_anchor = line | split: 'id="' | last | split: '"' | first %}
+                    <li><a href="#{{ title_anchor }}">{{ title_text }}</a></li>
+                  {% elsif prefix_md == "## " %}
+                    {% assign title_md = line | remove_first: "## " | strip %}
+                    {% capture heading_md %}## {{ title_md }}{% endcapture %}
+                    {% assign heading_html = heading_md | markdownify | strip %}
+                    {% assign title_text = heading_html | strip_html | strip %}
+                    {% assign title_anchor = heading_html | split: 'id="' | last | split: '"' | first %}
+                    {% if title_anchor == heading_html %}
+                      {% assign title_anchor = title_text | slugify %}
+                    {% endif %}
+                    <li><a href="#{{ title_anchor }}">{{ title_text }}</a></li>
+                  {% endif %}
+                {% endif %}
+              {% endfor %}
+              {% for item in page.side-menu-append %}
+                <li><a href="#{{ item.title | slugify }}">{{ item.title }}</a></li>
+              {% endfor %}
+            </ul>
+          </nav>
+        </div>
+      </aside>
+
+      <div class="side-menu-content">
+        <div id="page-top" aria-hidden="true"></div>
+        {{ content }}
+      </div>
+    </div>
+  </div>
+</section>

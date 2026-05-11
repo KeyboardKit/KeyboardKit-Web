@@ -1,0 +1,39 @@
+- color: blue
+  icon: lucide:languages
+  title: 75 Locales
+  text: Full keyboard layouts, callouts, and autocomplete for all 75 supported locales.
+
+- color: green
+  icon: lucide:check-check
+  title: Autocomplete
+  text: Local and on-device autocomplete and autocorrect with next-word prediction.
+
+- color: purple
+  icon: lucide:sparkles
+  title: AI Support
+  text: Full document reader and text input within the keyboard — built for AI-powered experiences.
+
+- color: orange
+  icon: lucide:mic
+  title: Dictation
+  text: Let users dictate text using the microphone, without leaving the keyboard.
+
+- color: yellow
+  icon: lucide:smile
+  title: Emojis
+  text: A full emoji keyboard with categories, skin tones, search, and most-recently-used.
+
+- color: purple
+  icon: lucide:paintbrush
+  title: Themes
+  text: Ready-made themes and full styling support to match any brand or visual identity.
+
+- color: blue
+  icon: lucide:type
+  title: Fonts
+  text: Custom fonts and typographic control to make your keyboard visually stand out.
+
+- color: green
+  icon: lucide:eye
+  title: Previews
+  text: SwiftUI previews for all keyboard components — iterate faster with live design feedback.

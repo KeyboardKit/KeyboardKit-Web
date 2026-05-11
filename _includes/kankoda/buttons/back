@@ -1,5 +1,0 @@
-<div class="back-button">
-  <a href="{{include.url}}">
-    {{ include.title | default: "Back" }}
-  </a>
-</div>

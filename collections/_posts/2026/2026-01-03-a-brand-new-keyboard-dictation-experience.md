@@ -8,7 +8,7 @@ image: /assets/blog/26/0103/image.jpg
 assets: /assets/blog/26/0103/
 ---
 
-KeyboardKit 10.2 will feature a brand new dictation experience: in-keyboard dictation. This is a huge improvement for keyboard-based apps that rely heavily on dictation.
+KeyboardKit 10.2 will feature a new dictation experience: in-keyboard dictation. This is a huge improvement for keyboard-based apps that rely heavily on dictation.
 
 ## The current dictation method
 
@@ -22,7 +22,7 @@ While this works fairly well, it's a lackluster experience for keyboards that re
 
 In-keyboard dictation method will only open the main app to start dictation if needed, then navigate back to the keyboard to perform dictation, keeping an open connection to the dictation engine.
 
-![In-keyboard dictation screenshot]({{page.assets}}/preview.jpg){:width="350"}
+![In-keyboard dictation screenshot]({{page.assets}}/preview.jpg){:class="medium"}
 
 The dictation engine will stay open as long as the main app is alive. This lets the user perform many subsequent dictation operations without having to open the main app, which is a big improvement.
 
@@ -40,6 +40,4 @@ The new progress and indicator views gives you and the user full control. Users 
 
 ## When will this be available?
 
-The new dictation experience will be available as a beta experiment in KeyboardKit 10.2, which will be released later in January. 
-
-Don't hesitate to reach out to discuss how this can help you improve your keyboard-based product.
+The new dictation experience will be available as a beta experiment in KeyboardKit 10.2, which will be released later in January. Don't hesitate to reach out to discuss how this can help you improve your keyboard.

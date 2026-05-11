@@ -1,0 +1,131 @@
+%glow-pseudo-base {
+  content: "";
+  pointer-events: none;
+  inset: 0;
+  z-index: -1;
+}
+
+%glow-before {
+  background:
+    radial-gradient(circle at 18% 30%, var(--glass-blue-bg) 0, rgba(166, 205, 255, 0) 30%),
+    radial-gradient(circle at 76% 18%, var(--glass-green-bg) 0, rgba(203, 236, 175, 0) 28%),
+    radial-gradient(circle at 86% 56%, var(--glass-yellow-bg) 0, rgba(255, 232, 160, 0) 30%),
+    radial-gradient(circle at 54% 86%, var(--glass-red-bg) 0, rgba(255, 198, 205, 0) 28%),
+    radial-gradient(circle at 26% 82%, var(--glass-purple-bg) 0, rgba(212, 202, 255, 0) 32%);
+  filter: blur(72px);
+  opacity: 0.95;
+  transform: translate3d(0, 0, 0);
+}
+
+%glow-before-gold {
+  background:
+    radial-gradient(circle at 18% 30%, var(--glass-yellow-bg) 0, rgba(255, 232, 160, 0) 30%),
+    radial-gradient(circle at 76% 18%, var(--glass-orange-bg) 0, rgba(255, 210, 160, 0) 28%),
+    radial-gradient(circle at 86% 56%, var(--glass-peach-bg) 0, rgba(255, 190, 160, 0) 30%),
+    radial-gradient(circle at 54% 86%, var(--glass-pink-bg) 0, rgba(255, 185, 210, 0) 28%),
+    radial-gradient(circle at 26% 82%, var(--glass-orange-bg) 0, rgba(255, 210, 160, 0) 32%);
+  filter: blur(72px);
+  opacity: 0.95;
+  transform: translate3d(0, 0, 0);
+}
+
+%glow-before-silver {
+  background:
+    radial-gradient(circle at 18% 30%, var(--glass-silver-light-bg) 0, rgba(220, 226, 238, 0) 30%),
+    radial-gradient(circle at 76% 18%, var(--glass-silver-bg) 0, rgba(195, 200, 215, 0) 28%),
+    radial-gradient(circle at 86% 56%, var(--glass-silver-light-bg) 0, rgba(220, 226, 238, 0) 30%),
+    radial-gradient(circle at 54% 86%, var(--glass-silver-bg) 0, rgba(195, 200, 215, 0) 28%),
+    radial-gradient(circle at 26% 82%, var(--glass-silver-light-bg) 0, rgba(220, 226, 238, 0) 32%);
+  filter: blur(72px);
+  opacity: 0.95;
+  transform: translate3d(0, 0, 0);
+}
+
+%glow-before-blue {
+  background:
+    radial-gradient(circle at 18% 30%, var(--glass-blue-bg) 0, rgba(166, 205, 255, 0) 30%),
+    radial-gradient(circle at 76% 18%, var(--glass-indigo-bg) 0, rgba(150, 180, 255, 0) 28%),
+    radial-gradient(circle at 86% 56%, var(--glass-blue-bg) 0, rgba(166, 205, 255, 0) 30%),
+    radial-gradient(circle at 54% 86%, var(--glass-indigo-bg) 0, rgba(150, 180, 255, 0) 28%),
+    radial-gradient(circle at 26% 82%, var(--glass-purple-bg) 0, rgba(212, 202, 255, 0) 32%);
+  filter: blur(72px);
+  opacity: 0.95;
+  transform: translate3d(0, 0, 0);
+}
+
+%glow-after {
+  background:
+    linear-gradient(115deg, rgba(255, 255, 255, 0.5) 14%, rgba(255, 255, 255, 0) 42%, rgba(255, 255, 255, 0.26) 70%, rgba(255, 255, 255, 0) 100%),
+    radial-gradient(circle at center, rgba(255, 255, 255, 0.32) 0, rgba(255, 255, 255, 0) 52%);
+  mix-blend-mode: screen;
+  opacity: 0.75;
+}
+
+body.glow {
+  background: linear-gradient(135deg, rgba(244, 248, 255, 0.96), rgba(255, 245, 234, 0.92));
+  position: relative;
+
+  &::before,
+  &::after {
+    @extend %glow-pseudo-base;
+    position: fixed;
+  }
+
+  &::before {
+    @extend %glow-before;
+  }
+
+  &::after {
+    @extend %glow-after;
+  }
+}
+
+section.glow,
+div.glow {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  background: linear-gradient(135deg, rgba(244, 248, 255, 0.96), rgba(255, 245, 234, 0.92));
+
+  &::before,
+  &::after {
+    @extend %glow-pseudo-base;
+    position: absolute;
+  }
+
+  &::before {
+    @extend %glow-before;
+    inset: -18%;
+  }
+
+  &::after {
+    @extend %glow-after;
+  }
+
+  &.gold {
+    background: linear-gradient(135deg, rgba(255, 248, 220, 0.96), rgba(255, 228, 200, 0.92));
+
+    &::before {
+      @extend %glow-before-gold;
+      inset: -18%;
+    }
+  }
+
+  &.silver {
+    background: linear-gradient(135deg, rgba(245, 245, 247, 0.96), rgba(232, 232, 235, 0.92));
+
+    &::before {
+      @extend %glow-before-silver;
+      inset: -18%;
+    }
+  }
+
+  &.blue {
+    background: linear-gradient(135deg, rgba(230, 242, 255, 0.96), rgba(210, 228, 255, 0.92));
+
+    &::before {
+      @extend %glow-before-blue;
+      inset: -18%;
+    }
+  }
+}

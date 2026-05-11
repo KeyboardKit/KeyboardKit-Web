@@ -1,21 +1,26 @@
-<header class="site-header" role="banner">
+<header role="banner">
   <div class="wrapper wide">
-    {% if site.header_axis == "vertical" %}
-    <div class="center-content">
-      <p>
-        {% include kankoda/site/header-logo %}
-      </p>
-      {% include kankoda/site/header-links %}
-    </div>
-    {% else %}  
-    <div class="row">
-      <div class="column">
-        {% include kankoda/site/header-logo %}
-      </div>
-      <div class="column">
-        {% include kankoda/site/header-links %}
-      </div>
-    </div>
+    {% if site.header.icon %}
+      <a class="brand-icon" href="/"><img src="{{site.header.icon}}" width="25" /></a>
     {% endif %}
+    
+    <a href="/" class="brand">{{ site.header.title }}</a>
+
+    <button class="menu-toggle" aria-label="Toggle menu">
+      <div class="menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </button>
+
+    <nav>
+      {%- for path in site.header.pages -%}
+        {%- assign current-page = site.pages | where: "path", path | first -%}
+        {%- if current-page.title -%}
+          <a href="{{ current-page.url | relative_url }}">{{ current-page.title | escape }}</a>
+        {%- endif -%}
+      {%- endfor -%}
+    </nav>
   </div>
 </header>

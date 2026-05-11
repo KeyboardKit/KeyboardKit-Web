@@ -1,11 +1,17 @@
 ---
-name:  BossAI
-title: BossAI - Voice-First AI Keyboard
+eyebrow: Voice-First AI Keyboard
+title: BossAI
 
 image:  /assets/case-studies/boss-ai/header.jpg
 assets: /assets/case-studies/boss-ai/
 
 featured: 1
+
+card:
+  text: A voice-first AI keyboard that dictates polished text and writes replies from screen context.
+  bullets:
+    - Voice AI
+    - Dictation
 
 appstore: https://apps.apple.com/us/app/boss-ai-voice-first-keyboard/id6738732843
 website:  https://bossai.tech
@@ -22,7 +28,7 @@ Meet [BossAI]({{page.website}}) - a voice-first AI keyboard that transforms how 
 
 [BossAI]({{page.website}}) is a voice-first AI keyboard with two powerful modes that work in every app with a text field - Mail, Slack, WhatsApp, LinkedIn, code editors, and more.
 
-<div class="grid col3 slide-in portrait screenshots">
+<div class="grid col3 slide-in images">
     <img src="{{page.assets}}screenshot-1.webp" />
     <img src="{{page.assets}}screenshot-2.webp" />
     <img src="{{page.assets}}screenshot-3.webp" />
@@ -33,7 +39,7 @@ Meet [BossAI]({{page.website}}) - a voice-first AI keyboard that transforms how 
 **Boss Mode** takes it further. Speak a command, and BossAI reads your screen, understands context, and writes the response. No screenshots. No hassle. Just switch to the BossAI keyboard and speak.
 
 
-## The Story Behind BossAI
+## The Story Behind the App
 
 [Hyathi Technologies]({{page.developer-url}}) has spent years building AI and cybersecurity products for global clients. The team shipped AI daily. But internally, they found their hours burned by typing, not thinking.
 
@@ -59,8 +65,6 @@ Rather than reinventing keyboard fundamentals, KeyboardKit provided an infrastru
 The Hyathi team could dedicate their expertise to what makes BossAI different, and add that on top of the keyboard engine. [BossAI]({{page.website}}) is now live on the App Store.
 
 
-## Give it a try
+## Download
 
 Download [BossAI]({{page.website}}) from the [App Store]({{page.appstore}}) today to experience their vision of voice-first communication. Stop typing your thoughts - speak them. Let AI handle the rest.
-
-{% include kankoda/buttons/app-store image-class="plain" url=page.appstore %}

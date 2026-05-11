@@ -1,6 +1,9 @@
 ---
-title: Locales
 permalink: /locales
+layout: page-sidebar
+
+title: Locales
+
 redirect_from: /languages
 
 hero:
@@ -10,10 +13,19 @@ hero:
 description: KeyboardKit supports 75 locales
 ---
 
-KeyboardKit comes with support for <b>{{site.locales.count}}</b> keyboard [locales](/features/localization) (languages), which determines things like keyboard layout, callout actions, autocomplete suggestions, etc.:
+KeyboardKit supports **{{site.locales.count}}** locales (languages), which affects things like keyboard layout, callout actions, autocomplete suggestions, etc.
 
-{% include locales/list.html %}
+## Supported Locales
 
-KeyboardKit defines locale-specific information (name, flag, unicode information, etc.) and localized strings for all supported locales.
+Below is a list of all **{{site.locales.count}}** locales that KeyboardKit supports:
 
-[KeyboardKit Pro](/pro) unlocks keyboard layouts and callout actions for all locales, to let you create fully localized keyboards with no additional code.
+<ul>
+  {% for locale in site.data.locales %}
+  <li>{{ locale.flag }} {{ locale.name }}</li>
+  {% endfor %}
+</ul>
+
+
+## Localized Features
+
+KeyboardKit defines locale-specific [features](/features/localization), like locale information (name, flag, unicode information, etc.) and localized strings, while [KeyboardKit Pro](/pro) unlocks keyboard layouts and callout actions for all supported locales.

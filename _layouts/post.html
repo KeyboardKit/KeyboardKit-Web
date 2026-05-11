@@ -1,25 +1,17 @@
 ---
-layout: default
+layout: side-menu
 ---
 
-<article class="blog post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+<article class="blog page-content" itemscope itemtype="http://schema.org/BlogPosting">
   
-  {% include kankoda/buttons/back url="/blog" title="Blog" %}
+  {% include kankoda/components/blog-header post=page configuration="post" %}
 
   {% assign url_bluesky = page.bsky | default: site.urls.bluesky %}  
   {% assign url_mastodon = page.toot | default: site.urls.mastodon %}  
   {% assign url_twitter = page.tweet | default: site.urls.twitter %}  
   
-  <h1>
-    {{ page.title | escape }}
-  </h1>
-
-  {% include kankoda/tags/date-title item=page links=0 %}
-
-  <div class="e-content" itemprop="articleBody">
-    {{ content }}
-  </div>
-
+  {{ content }}
+  
   <h2>Discussions & More</h2>
   <p>
     If you found this interesting, please share your thoughts on 
@@ -28,7 +20,5 @@ layout: default
     Make sure to follow to be notified when new content is published.
   </p>
 
-  <a class="u-url" href="{{page.url | relative_url}}" hidden></a>
+  <a href="{{page.url | relative_url}}" hidden></a>
 </article>
-
-{% include kankoda/tags/scripts %}

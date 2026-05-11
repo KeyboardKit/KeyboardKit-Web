@@ -1,8 +1,0 @@
-{% if include.image %}
-<img src="{{include.image}}" class="{{include.image-class}} {{include.icon-class}}" alt="{{include.name}} image" title="{{include.title}}" />
-{% else %}
-<img src="/assets/icons/{{include.icon}}.png" class="{{include.image-class}} {{include.icon-class}}" alt="{{include.name}} icon" title="{{include.title}}" />
-{% endif %}
-{%- if include.title -%}
-<p>{{ include.title }}</p>
-{%- endif -%}

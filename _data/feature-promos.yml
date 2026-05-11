@@ -1,0 +1,14 @@
+- title:  Native Foundation
+  url:    /features
+  image:  /assets/feature-promos/blueprint.png
+  text:   Build fast, native, and fully customizable keyboards with modern Swift & SwiftUI.
+
+- title:  Localized Features
+  url:    /features
+  image:  /assets/feature-promos/localization.png
+  text:   Support 75 locales with localized layouts, callouts, input logic, and RTL support.
+
+- title:  Smart Typing Tools
+  url:    /features
+  image:  /assets/feature-promos/ai.png
+  text:   Add autocomplete, predictions, emojis, dictation, and AI-powered input.

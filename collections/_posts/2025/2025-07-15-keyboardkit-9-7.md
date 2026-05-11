@@ -27,7 +27,7 @@ The last versions move standard value builders from `KeyboardAction` to each val
 
 The idea with this was to attach standard value builders to each value type, to make them easier to find and to enable shorthands, where you could just return `.standard(...)` for each type. 
 
-However, this made it a lot harder to work with keyboard styling, since the varioys parts that make up a complete `Keyboard.ButtonStyle` got scattered throughout the library. By moving the builders back to `KeyboardAction`, all value builders are grouped together, which makes it a lot easier to work with style customizations.
+However, this made it a lot harder to work with keyboard styling, since the varioys parts that make up a complete `Keyboard.ButtonStyle` got scattered throughout the library. By moving the builders back to `KeyboardAction`, value builders are grouped together, which makes it easier to handle style customizations.
 
 
 ## Emoji Utilities

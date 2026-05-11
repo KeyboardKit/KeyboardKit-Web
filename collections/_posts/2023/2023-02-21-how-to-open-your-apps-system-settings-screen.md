@@ -12,7 +12,7 @@ KeyboardKit has utilities to easily let you open your app's System Settings scre
 
 KeyboardKit has a `KeyboardSettingsUrlProvider` protocol that automatically extends all types that implement it with a static `.keyboardSettings` url. Under the hood, this url just resolves to `UIApplication.openSettingsURLString` on iOS and tvOS, and `nil` on macOS and watchOS. 
 
-You can open this URL like any other url, by using `UIApplication.shared.open(...)` on iOS and tvOS and `NSWorkspace.shared.open(...)` on macOS, although in this patricular case there is no url to open on macOS.
+You can open this URL like any other url, by using `UIApplication.shared.open(...)` on iOS & tvOS and `NSWorkspace.shared.open(...)` on macOS, although in this case there is no url to open on macOS.
 
 
 ## Keyboard settings link

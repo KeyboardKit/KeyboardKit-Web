@@ -1,2 +1,0 @@
-<a class="social-button {{include.name}} {{include.class}}" href="{{include.href}}" alt="{{include.name}} icon" title="Visit {{site.title}} on {{include.name}}">
-</a>

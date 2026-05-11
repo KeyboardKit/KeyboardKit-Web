@@ -1,7 +1,7 @@
 ---
 title:  KeyboardKit 8.5
 date:   2024-04-16 08:00:00 +0100
-tags:   releases actions callouts emojis feedback layout views
+tags:   releases actions callouts emojis feedback layout
 
 assets: /assets/blog/24/0416/
 
@@ -10,8 +10,6 @@ release-pro: https://github.com/KeyboardKit/KeyboardKitPro/releases/tag/8.5.0
 ---
 
 KeyboardKit 8.5 is out. This is a big update, that renames and moves many types into namespaces, adds many new features and makes many small adjustments and improvements.
-
-![KeyboardKit logo]({{page.image}})
 
 
 ## Renamed and moved types
@@ -38,7 +36,7 @@ KeyboardKit 8.5 makes it easier to register custom audio & haptic feedback, in a
 
 You can now just register custom feedback for any gesture on any action, and it will be triggered by the standard action handler. 
 
-You can also play URL-based sound effects from custom audio files, using the new `customUrl` audio feedback type.
+You can also play URL-based sound effects from audio files, using the new `customUrl` audio feedback type.
 
 
 ## UI Changes

@@ -1,31 +1,32 @@
-<footer class="site-footer">
-  <hr />
+<footer>
   <data class="u-url" href="{{ "/" | relative_url }}"></data>
-  <div class="wrapper">
+  <div class="wrapper wide">
     <div class="row">
       {%- assign pages = site.pages -%}
       {%- assign paths_site = site.footer_pages_sitemap -%}
       {%- assign paths_app = site.footer_pages_app -%}
       
       <div class="column">
-        <p class="footer-toggle">Site</p>
-        <div class="footer-content">
+        <p class="toggle">Site</p>
+        <div class="content">
           {% include kankoda/site/footer-links paths=site.footer.sitemap %}
         </div>
       </div>
 
       <div class="column">
-        <p class="footer-toggle">Licensing</p>
-        <div class="footer-content">
+        <p class="toggle">Licensing</p>
+        <div class="content">
           <a href="/pro">KeyboardKit Pro</a>
           <a href="/pricing">Pricing</a>
           <a href="/business-licenses">Business Licenses</a>
+          <a href="/pro/terms">Terms & Conditions</a>
+          <a href="/privacy">Privacy Policy</a>
         </div>
       </div>
 
       <div class="column">
-        <p class="footer-toggle">News</p>
-        <div class="footer-content">
+        <p class="toggle">News</p>
+        <div class="content">
           <a href="{{site.urls.blog}}">Blog</a>
           <a href="{{site.urls.rss}}">RSS</a>
           <a href="{{site.urls.newsletter}}">Newsletter</a>
@@ -33,17 +34,20 @@
       </div>
 
       <div class="column">
-        <p class="footer-toggle">Code</p>
-        <div class="footer-content">
+        <p class="toggle">Code</p>
+        <div class="content">
           <a href="{{site.urls.github}}">GitHub</a>
-          <a href="{{site.urls.docs}}">Documentation</a>
+          <a href="/get-started">Get Started</a>
+          <a href="{{site.urls.github}}-Binaries">Binaries & dSYMs</a>
+          <a href="/documentation">Documentation</a>
           <a href="{{site.urls.issues}}">Issue Tracker</a>
         </div>
       </div>
 
       <div class="column">
-        <p class="footer-toggle">Social</p>
-        <div class="footer-content">
+        <p class="toggle">Contact</p>
+        <div class="content">
+          <a href="/contact">Contact</a>
           <a href="{{site.urls.email}}">E-mail</a>
           <a href="{{site.urls.bluesky}}">Bluesky</a>
           <a href="{{site.urls.mastodon}}">Mastodon</a>
@@ -53,7 +57,9 @@
     </div>
     
     <div class="copyright">
-      © {{site.copyright_year}} <a href="{{site.copyright_url}}">{{site.copyright_owner}}</a>. All rights reserved.
+      <span>© {{site.copyright_year}}&nbsp;</span>
+      <a href="{{site.copyright_url}}">{{site.copyright_owner}}</a>. 
+      <span>&nbsp;All rights reserved.</span>
     </div>
   </div>
 </footer>

@@ -11,14 +11,12 @@ toot:   https://techhub.social/@keyboardkit/113090688970833001
 
 Xcode 16 causes a breaking gesture bug, where multi-gesture buttons stop working in scroll views in iOS 18. This affects the emoji keyboard. This post describes how KeyboardKit will fix it.
 
-![KeyboardKit logo]({{page.image}})
-
 
 ## Background
 
 Triggering many gestures with a single button is pretty complicated in SwiftUI. KeyboardKit thus has a custom `GestureButton` that can trigger multiple gestures with a single button.
 
-The `GestureButton` supports triggering actions for `press`, `release`, `long press`, `repeat`, `drag start`, `drag changed`, `drag end` and `ended`, which is used to support many native keyboard operations.
+The `GestureButton` supports triggering actions for `press`, `release`, `long press`, `repeat`, `drag start`, `drag changed`, `drag end` and `ended`, which is used to support many keyboard operations.
 
 
 ## How does it work?

@@ -8,8 +8,6 @@ release: https://github.com/KeyboardKit/KeyboardKit/releases/tag/8.7.0
 
 KeyboardKit 8.7 is out. This is a **massive** update that improves autocomplete, adds next character prediction & persistent settings, improves the design and layout handling, and much, much more.
 
-![KeyboardKit logo]({{page.image}})
-
 
 ## Improved Autocomplete
 

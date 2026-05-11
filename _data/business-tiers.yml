@@ -1,32 +1,40 @@
 - name: Business
-  price: 10k
-  header: Business Offering
-  header-class: placeholder
-  description: For formal agreements, discounts, and multi-platform support.
+  subtitle: Formal Agreements & Multi-Platform Support.
+  price: $10k
+  price_unit: year
+  cta: Contact Us
+  url: mailto:info@kankoda.com?subject=Business%License
+  box-class: glass tier
   features:
-    - Standard Terms
+    - <a href="/pro/terms">Standard Terms</a>
+    - Manual Invoicing
     - Signed Agreement
-    - Multi-platform Builds
-    - On-Device License Validation
+    - <a href="/features/platforms">Multi-platform Builds</a>
+    - <a href="/pro/license-validation">On-Device License Validation</a>
 
 - name: Business+
-  price: 25k
-  header: Critical Protection
-  header-class: orange
-  description: For custom terms, source code protection and renewal flexibility.
+  badge: Critical Protection
+  subtitle: Custom Terms, Business Protection & Flexibility.
+  price: $25k
+  price_unit: year
+  cta: Contact Us
+  url: mailto:info@kankoda.com?subject=Business%License
   features:
     - Everything in Business
-    - Custom Billing & Terms
-    - Software Escrow
+    - Custom Billing
+    - Custom Terms
+    - <a href="/features/escrow">Software Escrow</a>
     - Expiration Grace
 
 - name: Enterprise
-  price: 50k
-  price-from: 1
-  header: Our Best Plan
-  description: For high-impact use, dedicated support and custom SLAs.
+  subtitle: Dedicated Support, Custom SLA & High Value.
+  price: from $50k
+  price_unit: year
+  cta: Contact Us
+  url: mailto:info@kankoda.com?subject=Business%License
   features:
     - Everything in Business+
-    - High Volume
+    - High Value
+    - High Volume Use
     - High Impact
     - Custom SLA

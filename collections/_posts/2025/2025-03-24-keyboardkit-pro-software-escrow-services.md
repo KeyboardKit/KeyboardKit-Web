@@ -1,7 +1,7 @@
 ---
 title:  KeyboardKit Pro Software Escrow Services
 date:   2025-03-24 08:00:00 +0100
-tags:   features enterprise escrow
+tags:   enterprise escrow
 
 image-show: 0
 image: /assets/headers/software-escrow.jpg

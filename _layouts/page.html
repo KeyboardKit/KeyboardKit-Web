@@ -1,7 +1,12 @@
 ---
-layout: default
+layout: plain
 ---
 
-<article>
+<article class="page-content wrapper wide">
+  {% include kankoda/site/page-top %}
   {{ content }}
 </article>
+
+<section class="dark showcase">
+  {% include sections/ready-to-build %}
+</section>

@@ -1,0 +1,4 @@
+{% if page.eyebrow %}
+  <p class="page-eyebrow">{{page.eyebrow}}</p>
+{% endif %}
+<h1 class="{{page.title-color}} glass">{{page.page-title | default: page.title}}</h1>

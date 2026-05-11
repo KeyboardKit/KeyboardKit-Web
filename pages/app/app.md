@@ -1,8 +1,9 @@
 ---
-id: app
-title: App
-layout: page
 permalink: /app
+layout: page-sidebar
+
+title: App
+page-title: KeyboardKit App
 
 assets: /assets/app/
 
@@ -11,19 +12,37 @@ hero:
     icon-class: plain
     title: KeyboardKit App
 
-description: The KeyboardKit app lets you create custom keyboards for iOS and iPadOS. It supports a bunch of features and lets you create completely custom themes.
+description: The KeyboardKit app lets you try KeyboardKit in action on iOS and iPadOS, including all pro features.
 ---
 
-The [KeyboardKit app]({{site.urls.appstore}}) lets you use a KeyboardKit directly on your iPhone or iPad. You can use all [{{site.locales.count}} supported locales](/locales), add more keys to the keyboard, resize keys, customize the design, etc.
+The [KeyboardKit app]({{site.urls.appstore}}) lets you use KeyboardKit directly on your iPhone or iPad. You can use all [{{site.locales.count}} supported locales](/locales), try out all [pro features](/pro), add more keys to the keyboard, customize the design, etc.
 
-The KeyboardKit app uses [KeyboardKit Pro](/pro) to support many [pro](/pro) features. It comes with many pre-defined [themes](/pro/themes) and lets you create custom themes that you can share with others.
 
-<div class="grid col3 slide-in portrait screenshots">
-    <img src="{{page.assets}}keyboardkit-1.jpg" />
-    <img src="{{page.assets}}keyboardkit-4.jpg" />
-    <img src="{{page.assets}}keyboardkit-2.jpg" />
+## Features
+
+The KeyboardKit app uses [KeyboardKit Pro](/pro) to enable all [pro](/pro) features, like autocomplete, dictation, fonts, etc.
+
+<div class="grid col4 images mobile carousel">
+    <img src="{{page.assets}}screenshot-2.jpg" />
+    <img src="{{page.assets}}screenshot-3.jpg" />
+    <img src="{{page.assets}}screenshot-4.jpg" />
+    <img src="{{page.assets}}screenshot-5.jpg" />
+    <img src="{{page.assets}}screenshot-6.jpg" />
+    <img src="{{page.assets}}screenshot-7.jpg" />
+    <img src="{{page.assets}}screenshot-8.jpg" />
+    <img src="{{page.assets}}screenshot-9.jpg" />
 </div>
 
-For information on how the app collects and uses data (it doesn't), you find the privacy policy [here](/app/privacy-policy).
+The app lets you try KeyboardKit and KeyboardKit Pro without having to write any code yourself. It's an easy way to evaluate KeyboardKit before signing up for a [pro license](/pricing).
 
-{% include kankoda/buttons/app-store image-class="plain" %}
+The app also has some unique features that are not yet added to the SDK, such as the ability to use accessiblity settings to resize keys.
+
+
+## Privacy Policy
+
+Just like the KeyboardKit SDK, the KeyboardKit app does not collect any data. Read more in the [privacy policy](/app/privacy).
+
+
+## Download
+
+You can [download the KeyboardKit app]({{site.urls.appstore}}) from the App Store.

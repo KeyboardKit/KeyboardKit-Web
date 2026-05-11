@@ -1,24 +1,28 @@
 ---
-id: pro-addons
-title: KeyboardKit Pro License Validation
-layout: page
 permalink: /pro/license-validation
+layout: page-sidebar
 
-hero:
-  icon: /assets/icon/pro.png
-  icon-class: plain large
-  title: License Validation
+title: License Validation
 
-description: KeyboardKit Pro can validate licenses over the Internet or directly on-device 
+description: KeyboardKit Pro can validate standard licenses over the Internet, and business licensess directly on-device.
 ---
 
-## Online validation
+{{page.description}}
 
-All [standard license subscriptions](/pro) are validated over the Internet. This means that your keyboard extension needs Full Access to be able to validate your license key.
+## Online License Validation
+
+All [standard licenses](/pro) are validated over a network call to a license server. This means that your keyboard will need Full Access to be able to validate your license key.
 
 KeyboardKit will automatically cache successful license validations to handle temporary connection loss, but the first launch and periodic launches will require a new validation.
 
 
-## On-Device validation
+## On-Device License Validation
 
-Our [Business, and Enterprise licenses](/business-licenses) are validated on-device, without need for Full Access. These licenses are delivered in a file that automatically unlocks KeyboardKit Pro.
+All [business licenses](/business) are validated on-device, without need for Full Access. These licenses are delivered on a file that automatically unlocks KeyboardKit Pro when you add it to your app.
+
+
+## License Files
+
+A KeyboardKit license file is a binary file that can be added to your app to enable KeyboardKit. Just add and link it to the main app target and its keyboard extension, and KeyboardKit will use it to register your license.
+
+You will get a new license file after renewing your license. Until then, all license validation will be performed on device, with no need to call an external license service.

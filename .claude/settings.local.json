@@ -1,7 +1,17 @@
 {
   "permissions": {
     "allow": [
-      "WebFetch(domain:code.claude.com)"
+      "WebFetch(domain:code.claude.com)",
+      "Bash(cat:*)",
+      "Bash(bundle exec jekyll build:*)",
+      "Bash(sed -n '36,40p' /Users/danielsaidi/Projects/keyboardkit/web/_site/assets/main.css)",
+      "Bash(sed -n '451,456p' /Users/danielsaidi/Projects/keyboardkit/web/_site/assets/main.css)",
+      "Bash(grep -v \"^$\")",
+      "WebSearch",
+      "WebFetch(domain:lucide.dev)",
+      "Bash(xargs ls *)",
+      "Bash(lsof -ti:4000)",
+      "mcp__Claude_in_Chrome__tabs_context_mcp"
     ],
     "deny": [],
     "ask": []

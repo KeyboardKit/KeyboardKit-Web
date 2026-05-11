@@ -11,8 +11,6 @@ toot:   https://techhub.social/@keyboardkit/113117869193627340
 
 iOS 18 causes the selector-based way of opening URLs from a keyboard extension without the main application, to stop working. This post describes how KeyboardKit will fix it.
 
-![KeyboardKit logo]({{page.image}})
-
 The `KeyboardInputViewController` has an `openURL` function that uses a selector to open URLs:
 
 ```swift

@@ -1,0 +1,71 @@
+// Light/Dark Mode Foundation
+:root {
+  // Light mode (default)
+  --color-bg-light: #FFFFFF;
+  --color-bg-dark: #1C1C1E;
+  --color-bg-dark-blue: #10111f;
+  --color-text-light: #000000;
+  --color-text-dark: #FFFFFF;
+
+  --color-bg: var(--color-bg-light);
+  --color-text: var(--color-text-light);
+  --color-border: rgba(0, 0, 0, 0.1);
+  --color-border-glass: rgba(255,255,255,0.8);
+  --color-border-dark: rgba(255, 255, 255, 0.1);
+  --color-shadow: rgba(0, 0, 0, 0.12);
+  --shadow-default: 0 4px 24px rgba(0,0,0,0.12);
+
+  --glass-blue-bg: rgba(166, 205, 255, 0.82);
+  --glass-green-bg: rgba(203, 236, 175, 0.78);
+  --glass-yellow-bg: rgba(255, 232, 160, 0.76);
+  --glass-orange-bg: rgba(255, 210, 160, 0.74);
+  --glass-peach-bg: rgba(255, 190, 160, 0.72);
+  --glass-pink-bg: rgba(255, 185, 210, 0.68);
+  --glass-silver-bg: rgba(195, 200, 215, 0.82);
+  --glass-silver-light-bg: rgba(220, 226, 238, 0.78);
+  --glass-indigo-bg: rgba(150, 180, 255, 0.78);
+  --glass-red-bg: rgba(255, 198, 205, 0.62);
+  --glass-purple-bg: rgba(212, 202, 255, 0.58);
+
+  --glass-blue-text: #2d7ecf;
+  --glass-green-text: #3d8f66;
+  --glass-yellow-text: #bf7d22;
+  --glass-orange-text: #cb7a2f;
+  --glass-red-text: #cf4177;
+  --glass-purple-text: #6b56d5;
+
+  --opacity-secondary: 0.7;
+
+  --radius-capsule: 999px;
+  --radius-glass-panel: 20px;
+  --radius-glass-link: 10px;
+  --radius-screenshot: 10px;
+  --radius-tag: 999px;
+
+  --duration-accordion: 0.3s;
+  --duration-link: 0.4s;
+
+  --grid-gap: 20px;
+
+  --paragraph-spacing: 20px;
+
+  --wrapper-width: 900px;
+  --wrapper-width-wide: 1250px;
+  --wrapper-width-narrow: 650px;
+
+  --page-content-media-gap: 2em;
+
+  --feature-table-even-row-color: #ffffff88;
+}
+
+/*
+// Dark mode
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: var(--color-bg-dark);
+    --color-text: var(--color-text-dark);
+
+    --color-border: rgba(255, 255, 255, 0.1);
+  }
+}
+*/

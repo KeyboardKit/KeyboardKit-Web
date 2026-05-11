@@ -1,34 +1,21 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
-  {% include kankoda/site/head %}
+  {% include kankoda/site/head-tag %}
 
-  <body class="{{page.id}} {{page.page-class}}"> 
-    
-    <!-- Header -->
-    {% include kankoda/site/header %}
+  <body class="{{ page.page-class | default:"glow" }}">
+    <div class="page-shell">
+      <!-- Header -->
+      {% include kankoda/site/header %}
 
-    <!-- Top Message -->
-    {% if page.top-message %}
-    <section class="glass-message">
-      {% include kankoda/glass/message message=page.top-message %}
-    </section>
-    {% endif %}
-
-    <!-- Content -->
-    <main class="page-content" aria-label="Content">
-      {% include kankoda/site/hero %}
-
-      <!-- Below Hero Message -->
-      {% if page.hero.message %}
-      <section class="glass-message below-hero">
-        {% include kankoda/glass/message message=page.hero.message %}
-      </section>
-      {% endif %}
-    
-      {{ content }}
-    </main>
+      <!-- Content -->
+      <main aria-label="Content">
+        {{ content }}
+      </main>
+    </div>
 
     <!-- Footer -->
     {% include site/footer %}
+
+    <button class="scroll-to-top" aria-label="Back to top" title="Back to top"></button>
   </body>
 </html>

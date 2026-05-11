@@ -1,43 +1,56 @@
 ---
-id: pro-custom
+permalink: /business
+layout: plain
+
 title: Business Licenses
-layout: page
-permalink: /business-licenses
 
 redirect_from: 
+  - business-licenses
   - pro/business-licenses
   - pro/custom-licenses
 
 image: /assets/headers/business-licenses.jpg
 
-hero:
-  hero-title: Business Licenses
-
 description: KeyboardKit has business licenses for larger companies and apps.
 ---
 
-[KeyboardKit](/pro) requires a business license for companies with $10M+ in annual revenue or apps with $1M+ in annual revenue.
+<div class="centered page-content wide wrapper" markdown="1">
 
+# Business Plans
+## All features, built for enterprise scale.
 
-<div class="grid col3 tiers">
-  {% include kankoda/licenses/tier-boxes tiers=site.data.business-tiers %}
+A business plan is required for companies with $10M+ or apps with $1M+ in annual revenue.
+
+<div class="grid col3 tiers spaced">
+  {% for tier in site.data.business-tiers %}
+    {% include kankoda/licenses/tier-box tier=tier %}
+  {% endfor %}
 </div>
 
 
-## Features
+## Business Features
 
-Our business plans include all [pro features](/pro) and add business-critical support for larger companies, tailored to your legal, technical, and procurement needs.
+Business plans include all [pro features](/pro) plus these additional benefits.
 
-<div class="rounded glass info-table slide-in">
-  {% for feature in site.data.business-features %}
-  <div style="display: flex; align-items: center; justify-content: space-between;">
-    <div>
-      <h3>{{ feature.name }}</h3>
-      {{ feature.description }}
-    </div>
-    {% if feature.url %}
-    <a href="{{ feature.url }}" class="cta">Read more</a>
-    {% endif %}
+<div class="grid col3 carousel mobile">
+  {% for feature in site.data.usps-business %}
+  <div class="glass compact">
+    {% include kankoda/components/icon-badge color=feature.color name=feature.icon %}
+    <h4>{{ feature.name }}</h4>
+    <p>{{ feature.description }}</p>
+    {% if feature.url %}<a href="{{ feature.url }}" class="cta">Learn more</a>{% endif %}
   </div>
   {% endfor %}
 </div>
+
+</div>
+
+<section class="showcase dark blue">
+  <div class="wrapper slide-in">
+    <h2>Let's build something great together.</h2>
+    <p>Business licenses are tailored to your needs. Reach out and we'll put together a plan that fits your team, your legal requirements, and your timeline — no generic tiers, no surprises.</p>
+    <div>
+      <a href="{{site.urls.email-business-license}}" class="cta glass">Contact Us</a>
+    </div>
+  </div>
+</section>

@@ -12,8 +12,6 @@ toot:   https://techhub.social/@keyboardkit/111557907679669752
 
 KeyboardKit 8.1 is out, with some autocomplete and localization improvements. Pro users will also be able to choose language at setup, instead of being bound to the license. Let's take a look.
 
-![KeyboardKit logo]({{page.image}})
-
 
 ## Removed migration support
 

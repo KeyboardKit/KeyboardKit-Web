@@ -10,8 +10,6 @@ description: >-
 url: https://keyboardkit.com
 email: info@keyboardkit.com
 
-is_lib: 1
-
 copyright_year: 2016-2026
 copyright_owner: Kankoda Sweden AB
 copyright_url: https://kankoda.com
@@ -35,8 +33,11 @@ urls:
   email-custom-terms: mailto:info@keyboardkit.com?subject=Custom%20Terms
   rss:        https://keyboardkit.com/feed.xml
 
-  business:   /business-licenses
-  escrow:     /features/escrow
+  business:     /business
+  faq:          /faq
+  case-studies: /case-studies
+  escrow:       /features/escrow
+  terminology:  /faq#terminology
 
   appstore:   https://itunes.apple.com/app/keyboardkit/id1568444977
   blog:       /blog
@@ -57,25 +58,26 @@ urls:
 google-analytics:
   measurement-id: G-XJ0HPZDSM3
 
-# header:
-#  banner:
-#    text: 👑 Cyber Monday Discount - Save 50% on KeyboardKit Pro! 👑
-#    url:  /blog/2024/12/02/cyber-monday
-
 header:
+  title: KeyboardKit
+  icon: /assets/icon/header.png
   pages:
-    - pages/features.md
+    - pages/info/about.md
     - pages/blog.md
+    - pages/features.md
+    - pages/pro/pro.html
     - pages/pricing.md
 
 footer:
   sitemap:
     - index.html
-    - pages/about/about.md
     - pages/features.md
-    - pages/app/app.md
     - pages/case-studies.md
-    - pages/documentation.md
+    - pages/industries.md
+    - pages/app/app.md
+    - pages/info/about.md
+    - pages/info/faq.md
+    
 
 collections_dir: collections
 
@@ -110,20 +112,36 @@ defaults:
       type: "pages"
     values:
       layout: page
+      title-color: blue
       image: /assets/headers/keyboardkit.jpg
-      page-class: glass-background bg1
+  -
+    scope:
+      path: "pages/pro"
+    values:
+      back-link:
+        title: Pricing
+        url: /pricing
   -
     scope:
       type: "case-studies"
     values:
-      layout: case-study
+      layout: page-sidebar
+      title-color: purple
+      back-link:
+        title: Case studies
+        url: /case-studies
   -
     scope:
       type: "features"
     values:
       layout: feature
-      page-class: glass-background bg1
       assets: /assets/features/
+      back-link:
+        title: Features
+        url: /features
+      side-menu-append:
+        - title: Documentation
+
   -
     scope:
       type: "posts"
@@ -131,7 +149,9 @@ defaults:
       layout: post
       author: danielsaidi
       image:  /assets/headers/blog.jpg
-      page-class: glass-background bg1
+      back-link:
+        title: Blog
+        url: /blog
 
 exclude:
   - Gemfile

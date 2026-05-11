@@ -5,21 +5,26 @@ hero:
   emoji: 🎤
 ---
 
-Dictation can be used to let users enter text by speaking instead of typing. This can be hard to do in a keyboard extension where microphone access is unavailable, but [KeyboardKit Pro](/pro) makes it easy. 
+KeyboardKit makes it easy to add powerful dictation to your keyboard.
 
-KeyboardKit Pro lets you add dictation to custom keyboard extensions, where a keyboard can open the main app to open an audio bridge, after which dictation can be performed within the keyboard.
+
+## Dictation
+
+Dictation can be used to let users enter text by speaking instead of typing. This can be hard to do in a keyboard extension where microphone access is unavailable, but KeyboardKit makes it easy. 
+
+KeyboardKit Pro lets your keyboard open the main app to start dictation and link to it via an audio bridge, after which dictation can be performed within the keyboard.
 
 
 ## Namespace
 
-KeyboardKit has a ``Dictation`` namespace with dictation-related types, an observable context, auto-persisted settings, dictation services, etc. KeyboardKit Pro adds more features to this namespace.
+KeyboardKit has a ``Dictation`` feature namespace with dictation-related types, a `DictationContext`, auto-persisted `DictationSettings`, various `DictationService` implementations, etc.
 
 
-## 👑 KeyboardKit Pro
+## KeyboardKit Pro
 
-[KeyboardKit Pro][Pro] unlocks dictation features that let you add dictation support with very little code.
+[KeyboardKit Pro][Pro] unlocks features that let you add dictation support with very little code.
 
-<div class="grid col2">
+<div class="grid col2 images">
     <span><img src="{{page.assets}}dictation-progressview.jpg" /></span>
     <span><img src="{{page.assets}}dictation-settingsscreen.jpg" /></span>
 </div>

@@ -1,0 +1,133 @@
+// Hero
+
+section.hero {
+  min-height: calc(100vh - 2 * var(--header-height, 60px));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  // Position to start at viewport top
+  position: relative;
+  margin-top: calc(-1 * var(--header-height, 60px));
+  padding-top: var(--header-height, 60px);
+  padding-bottom: var(--header-height, 60px);
+
+  // Subtle background color for inspection
+  background-color: rgba(0, 120, 255, 0.03);
+
+  @media (max-width: 700px) {
+    --header-height: 50px;
+    padding-bottom: 5rem;
+  }
+
+  .tag {
+    margin: 2.25rem 0;
+    padding: 0.8rem 1.2rem;
+  }
+
+  h1 {
+    font-size: clamp(2.9rem, 8vw, 6rem);
+    line-height: 1.08;
+    margin-bottom: 2.5rem;
+  }
+
+  h2 {
+    font-size: clamp(1.25rem, 2.5vw, 2rem);
+    font-weight: 400;
+    line-height: 1.35;
+    margin-bottom: 0;
+  }
+
+  p {
+    margin: 2em auto;
+    max-width: var(--wrapper-width-narrow);
+  }
+
+  a.cta {
+    padding: 1.05rem 1.75rem;
+    font-size: 1.05rem;
+  }
+
+}
+
+
+// Showcase
+
+section.showcase {
+  padding: clamp(4rem, 6vw, 5.5rem) 0;
+  text-align: center;
+
+  article {
+    > p {
+      margin-bottom: 0;
+    }
+  }
+
+  article + article {
+    margin-top: 5rem !important;
+  }
+
+  p, .wrapper > p {
+    max-width: 750px;
+  }
+
+  .wrapper {
+    display: grid;
+    gap: clamp(1.25rem, 3vw, 2.3rem);
+    justify-items: center;
+    align-content: start;
+
+    > p + p {
+      margin-top: calc(var(--paragraph-spacing) * -1);
+    }
+
+    &::after {
+      content: none;
+    }
+  }
+
+  h2 {
+    font-size: clamp(2rem, 4vw, 3.25rem);
+    line-height: 1;
+    margin: 0;
+  }
+
+  h3 {
+    font-size: clamp(1.45rem, 2.15vw, 1.9rem);
+    margin: 0;
+  }
+
+  img.promo {
+    padding: 1.5rem 0;
+    max-height: 25rem;
+    width: auto;
+  }
+
+  .grid {
+    width: 100%;
+    align-items: stretch;
+    justify-content: center;
+
+    &.spaced { margin: 0 !important; }
+  }
+
+  &.dark {
+    background: var(--color-bg-dark);
+    color: var(--color-text-dark);
+  }
+
+  &.dark a:not(.cta):not(.glass) {
+    color: var(--color-text-dark) !important;
+  }
+
+  &.dark.blue {
+    background: var(--color-bg-dark-blue);
+    color: var(--color-text-dark);
+
+    > .wrapper p {
+      opacity: 0.6;
+    }
+  }
+}

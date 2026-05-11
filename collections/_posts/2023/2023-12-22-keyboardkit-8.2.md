@@ -9,8 +9,6 @@ release-pro: https://github.com/KeyboardKit/KeyboardKitPro/releases/tag/8.2.0
 
 KeyboardKit 8.2 is out, with localization improvements and support for Northern and Inari Sámi.
 
-![KeyboardKit logo]({{page.image}})
-
 KeyboardKit 8.2 cleans up the code that is used to localize content for all supported `KeyboardLocale` values. Some keys have been removed and some have been renamed, to make it easier to manage.
 
 There is also a new internal development tool that makes it a lot easier to localize these strings. This will let future versions of KeyboardKit improve the localized strings of all locales.

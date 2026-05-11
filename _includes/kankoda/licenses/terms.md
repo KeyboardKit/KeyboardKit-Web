@@ -5,13 +5,11 @@
 {% assign privacy-url = include.cprivacy-url | default: "/privacy" %}
 {% assign custom-email = site.urls.email | append: "?subject=" | append: product-escaped | append: "%20-%20Custom%20Plan" %}
 
-{% if show-title == 1 %}
-# {{product}} Terms & Conditions
-{% endif %}
-
-## Standard Terms & Conditions
 
 These are the Standard Terms & Conditions for the [{{product}} SDK]({{include.url}}) ("the Software"), which is owned and licensed by [Kankoda Sweden AB]({{kankoda-url}}) (“the Licensor").
+
+
+## Scope
 
 The standard license is for indies, startups and small businesses. For companies with $10M+ annual revenue or apps with $1M+ annual revenue, please [contact us]({{custom-email}}) for a custom license.
 

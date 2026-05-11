@@ -1,8 +1,6 @@
 {% assign name = include.name %}
 {% assign url = include.url %}
 
-# {{name}} Privacy Policy
-
 *Last updated: 2025-06-05*
 
 

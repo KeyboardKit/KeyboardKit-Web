@@ -14,8 +14,6 @@ KeyboardKit 8.8 is a massive update that adds a lot of features, improves autoco
 
 Since this version sets the tone for the upcoming 9.0 update, and the foundation it lays will evolve in 8.9, your feedback is most welcome.
 
-![KeyboardKit logo]({{page.image}})
-
 
 ## 💥 Breaking changes
 
@@ -30,7 +28,7 @@ KeyboardKit 8.8 introduces many new deprecations, since the structure is being c
 
 Many service types are renamed to use the new service name. Types like `KeyboardLayoutProvider` is now called `KeyboardLayoutService`, to add more consistency to the SDK.
 
-Two exceptions are the `KeyboardActionHandler`, which is a better name, and `KeyboardStyleProvider`, which will most probably be removed in 9.0 and replaced with SwiftUI view modifiers.
+Two exceptions are `KeyboardActionHandler`, which is a better name, and `KeyboardStyleProvider`, which will most probably be removed in 9.0 and replaced with SwiftUI view modifiers.
 
 KeyboardKit 9.0 is planned to be released soon after the public release of iOS 18. It will remove all deprecations and bump the deployment target to iOS 15.
 

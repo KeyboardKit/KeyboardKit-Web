@@ -1,7 +1,7 @@
 ---
 title:  iOS 26.4 Host Application Bug
 date:   2026-03-02 06:00:00 +0100
-tags:   ios-bugs
+tags:   apple-bugs
 
 assets: /assets/blog/26/0302
 image: /assets/blog/26/0302/image.jpg
@@ -77,4 +77,4 @@ The attached code below uses a newer approach, which uses Swift to parse the str
 When the host application bundle ID becomes `nil`, developers are no longer able to identify the host application. This causes severe problems for keyboard developers that tailor the keyboard functionality to the host application, or need the host application ID for critical features. While we understand that you may want to remove or change private APIs over time, this particular change will strongly affect all custom keyboards and lead to a much worse user experience. Some keyboards will be severely crippled by not being able to access the host application bundle ID.
 
 **SUGGESTION:**
-Due to the severe implications of this change, we ask you to reverse the removal that causes this to return NIL, or replace it with a proper, public API to let custom keyboard developers identify the host application in a safe manner. You can require Full Access and limit the capability to the `UIInputController` type. 
+Due to the severe implications of this change, we ask you to reverse the removal that causes this to return NIL, or replace it with a proper, public API to let custom keyboard developers identify the host application in a safe manner. You can require Full Access and limit the capability to the `UIInputController`. 

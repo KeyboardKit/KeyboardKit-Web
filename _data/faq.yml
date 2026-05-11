@@ -1,0 +1,109 @@
+- featured: 1
+  tag: custom-keyboards
+  title: What is a custom keyboard?
+  text: A custom keyboard is a third-party keyboard extension that can replace the native iOS keyboard. It lets users type using your app's unique features in any app that supports text input.
+
+- tag: custom-keyboards
+  title: Can custom keyboards access the internet?
+  text: By default, custom keyboards run in a sandboxed environment without network access. Users can grant "Full Access" to enable network features, but this requires explicit permission and must be disclosed in your privacy policy.
+
+- tag: custom-keyboards
+  title: Are custom keyboards available on all Apple platforms?
+  text: Custom keyboards are supported on iOS and iPadOS. They are not supported on macOS, watchOS, or tvOS, where the native system input methods apply, but these platforms can be used to create companion apps for e.g. settings.
+
+- tag: custom-keyboards
+  title: Can a custom keyboard replace the system keyboard entirely?
+  text: Yes! Once a user installs and enables your keyboard in Settings, they can set it as their default keyboard and use it in any app that accepts text input.
+
+
+- featured: 1
+  tag: keyboardkit
+  title: What is KeyboardKit?
+  text: KeyboardKit is a comprehensive Swift SDK that helps developers build custom keyboards for iOS and iPadOS. It provides all the tools you need including autocomplete, autocorrect, emoji support, and much more.
+
+- tag: keyboardkit
+  title: Do I need prior experience with keyboard development?
+  text: While some iOS development experience is helpful, KeyboardKit is designed to be beginner-friendly. Our comprehensive documentation and examples will help you get started quickly.
+
+- featured: 1
+  tag: keyboardkit
+  title: Which languages are supported?
+  text: KeyboardKit supports [75+ locales](/locales) out of the box, with locale-specific autocomplete, spell checking, and keyboard layouts. You can also add support for additional languages.
+
+- tag: keyboardkit
+  title: Is KeyboardKit open source?
+  text: The KeyboardKit SDK is closed source, but freely available from [GitHub](/github). KeyboardKit Pro, which adds advanced features like autocomplete and more locales, requires a commercial license.
+
+- tag: keyboardkit
+  title: How do I get started?
+  text: Add KeyboardKit to your project via Swift Package Manager, then follow the [getting started guide](/getting-started). You can be up and running in minutes.
+
+
+- tag: licensing
+  title: What is the difference between KeyboardKit and KeyboardKit Pro?
+  text: KeyboardKit is the free, core SDK. KeyboardKit Pro is a commercial add-on that unlocks advanced features like autocomplete, AI support, more locales, dictation, and more. See [KeyboardKit Pro](/pro) for more information.
+
+- featured: 1
+  tag: licensing
+  title: Can I use KeyboardKit for commercial projects?
+  text: Yes! KeyboardKit offers different licensing options including commercial licenses. Check our [pricing page](/pricing) for more details on which plan suits your needs.
+
+- tag: licensing
+  title: Can I try KeyboardKit Pro before purchasing?
+  text: Yes! You can try all pro features for free using a trial license. The [KeyboardKit app](/app) also lets you explore all pro features on your device without writing any code.
+
+- tag: licensing
+  title: Do licenses auto-renew?
+  text: Subscription licenses renew automatically. You can cancel at any time from your Gumroad purchase page. [Business licenses](/business) renew annually as defined in the license terms.
+
+- tag: licensing
+  title: Can I use one license for multiple apps?
+  text: License terms vary by plan. Most plans cover a single app. If you need to use KeyboardKit across multiple apps or products, please [contact us](/contact) to discuss a suitable arrangement.
+
+
+- featured: 1
+  tag: privacy
+  title: Does KeyboardKit collect any user data?
+  text: No. KeyboardKit does not collect, store, or transmit any user data. All processing happens on-device. See the [privacy policy](/privacy) for details.
+
+- tag: privacy
+  title: Does using KeyboardKit require Full Access?
+  text: No. KeyboardKit works without Full Access although some advanced features like dictation or network-based autocomplete require Full Access, but this is always disclosed to the user.
+
+- tag: privacy
+  title: Is KeyboardKit compliant with App Store guidelines?
+  text: Yes. KeyboardKit is designed to follow Apple's guidelines for keyboard extensions, and is ready for App Store distribution.
+
+
+
+- tag: terminology
+  title: Custom Keyboard
+  text: A custom keyboard is a keyboard app extension that can replace the system keyboard in any app. Unlike an app, a custom keyboard extension runs within the context of another app. It can offer specialized input methods, enhanced autocomplete and autocorrections, a custom emoji keyboard, and completely different input methods like swipe typing or voice-to-text conversion.
+
+- tag: terminology
+  title: Full Access
+  text: Custom keyboards are very limited by default, but can request Full Access to unlock capabilities like network access, location services, access to the device dictionary and pasteboard, etc. Full Access requires explicit user consent and triggers privacy warnings. Many users decline Full Access due to privacy concerns, so developers must design their keyboards to function without it.
+
+- tag: terminology
+  title: Host Application
+  text: The host application is the app that is using the keyboard for text input. Different apps may have different input requirements, or custom input traits that affect the keyboard. A custom keyboard interacts with the host app through a Text Document Proxy.
+
+- tag: terminology
+  title: Input View Controller
+  text: A UIInputViewController is the main class in a custom keyboard. It's responsible for the custom keyboard lifecycle and how a keyboard is loaded, displayed, and terminated. Unlike regular view controllers, an input view controller has a special lifecycle, which is essential to understand for proper resource and state management.
+
+- tag: terminology
+  title: Main Application
+  text: The main application is the app that contains the custom keyboard extension. It's a great place for keyboard settings, user onboarding, and other features that need a large user interface or access to certain features like microphone access. Both targets can use App Groups to communicate with each other.
+
+- tag: terminology
+  title: Memory Cap
+  text: Custom keyboards are memory capped at ~60-70 MB, based on the device and OS. Exceeding this limit results in immediate system termination. This is particularly challenging for keyboards that use large AI or language models, or memory-intensive media content.
+
+- tag: terminology
+  title: Sandboxing
+  text: Custom keyboards operate within a heavily sandboxed environment that restricts access to system resources and user data. This ensures that malicious keyboards can't access sensitive information, and prevents keyboards from launching other apps or accessing certain system APIs without user consent.
+
+- tag: terminology
+  title: Text Document Proxy
+  text: A custom keyboard communicates with the host application through a Text Document Proxy, which is the main interface for text manipulation in a custom keyboard. It provides methods to insert and delete text, and read limited context around the input cursor, while preventing the keyboard from accessing the full content of text fields.

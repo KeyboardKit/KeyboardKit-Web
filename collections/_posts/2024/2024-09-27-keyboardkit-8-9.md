@@ -1,7 +1,7 @@
 ---
 title:  KeyboardKit 8.9
 date:   2024-09-27 08:00:00 +0100
-tags:   releases essentials app callouts layout services themes views
+tags:   releases essentials app callouts layout services themes
 
 release: https://github.com/KeyboardKit/KeyboardKit/releases/tag/8.9
 release-pro: https://github.com/KeyboardKit/KeyboardKitPro/releases/tag/8.9
@@ -11,8 +11,6 @@ toot:   https://techhub.social/@keyboardkit/113209639816416641
 ---
 
 KeyboardKit 8.9 is out! This a massive update that is built with Xcode 16 and that improves how to set up a keyboard extension, renames services, and adds a bunch of new features.
-
-![KeyboardKit logo]({{page.image}})
 
 
 ## 🚨 Important information

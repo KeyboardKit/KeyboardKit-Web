@@ -1,1 +1,0 @@
-{% include kankoda/buttons/back url="/" title="Home" %}

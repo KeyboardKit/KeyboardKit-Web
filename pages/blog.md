@@ -1,30 +1,12 @@
 ---
-layout: blog
-title: Blog
 permalink: /blog
+layout: blog
 
-page-class: glass-background bg4
+title: Blog
 
-top-message:
-  text: Host application problems discovered in iOS 26.4.
-  type: warning
-  link:
-    text: Read more
-    url: /blog/2026/03/02/ios-26-4-host-application-bundle-id-bug
+sidebar-menu:
+  title: Tags
+
+tags:
+  first: general, releases, pro
 ---
-
-<div class="searchbar-header">
-  <h1>Blog</h1>
-  {% include kankoda/search/searchbar class="glass prominent" %}
-</div>
-
-<div class="blog list paper">
-  {%- include kankoda/tags/list tags=site.tags firstmost="releases,pro" class="collapsed" -%}
-  {% include kankoda/tags/list-toggle %}
-  
-  <a name="tag-item-list"></a>
-    {% for post in site.posts %}
-      {% include kankoda/blog/list-item post=post %}
-    {% endfor %}
-    {%- include kankoda/tags/scripts -%}
-</div>

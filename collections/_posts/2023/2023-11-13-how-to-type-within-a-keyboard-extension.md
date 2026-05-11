@@ -1,12 +1,10 @@
 ---
 title:  How to type into a text input within a keyboard extension
 date:   2023-11-13 09:00:00 +0100
-tags:   how-to routing
+tags:   text-input
 ---
 
 This article discusses how to type into a text input within a keyboard extension.
-
-![KeyboardKit logo]({{page.image}})
 
 When creating a keyboard extension for iOS, you may have had to add a `TextView` or `TextField` to let users type into a text field *within* the keyboard, for instance:
 

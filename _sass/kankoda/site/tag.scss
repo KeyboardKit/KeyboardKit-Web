@@ -1,0 +1,125 @@
+// Tags
+
+a.tag,
+button.tag,
+span.tag,
+div.tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  width: fit-content;
+  padding: 0.18rem 0.42rem 0.22rem;
+  border: 1px solid var(--tag-border, var(--color-border-glass));
+  border-radius: 0.38rem;
+  background: var(--tag-bg, rgba(255, 255, 255, 0.55));
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: var(--shadow-default);
+  color: var(--tag-color, var(--color-text));
+  font-size: 0.82rem;
+  font-weight: 600;
+  line-height: 1.35;
+  opacity: 0.72;
+  text-decoration: none;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+.tag.rounded {
+  border-radius: var(--radius-tag);
+}
+
+
+// Colored Tags
+
+.tag {
+
+  &.blue {
+    --tag-bg: var(--glass-blue-bg);
+    --tag-border: rgba(111, 168, 232, 0.5);
+    --tag-color: var(--glass-blue-text);
+  }
+
+  &.green {
+    --tag-bg: var(--glass-green-bg);
+    --tag-border: rgba(114, 183, 131, 0.5);
+    --tag-color: var(--glass-green-text);
+  }
+
+  &.yellow {
+    --tag-bg: rgba(255, 210, 0, 0.55);
+    --tag-border: rgba(200, 160, 0, 0.4);
+    --tag-color: rgba(100, 70, 0, 1);
+  }
+
+  &.orange {
+    --tag-bg: var(--glass-orange-bg);
+    --tag-border: rgba(220, 141, 69, 0.5);
+    --tag-color: var(--glass-orange-text);
+  }
+
+  &.red {
+    --tag-bg: var(--glass-red-bg);
+    --tag-border: rgba(210, 111, 111, 0.5);
+    --tag-color: var(--glass-red-text);
+  }
+
+  &.purple {
+    --tag-bg: var(--glass-purple-bg);
+    --tag-border: rgba(171, 136, 217, 0.5);
+    --tag-color: var(--glass-purple-text);
+  }
+
+  &.pro {
+    --tag-border: rgba(220, 140, 80, 0.4);
+    --tag-color: rgba(100, 40, 0, 1);
+    background: linear-gradient(135deg, rgba(255, 210, 80, 0.95), rgba(255, 155, 100, 0.95)) !important;
+  }
+
+  &.releases {
+    --tag-bg: var(--glass-blue-bg);
+    --tag-border: rgba(111, 168, 232, 0.5);
+    --tag-color: #1f5f9f;
+  }
+}
+
+
+// Button Tags
+
+button.tag {
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+  font-family: inherit;
+  margin: 0;
+  text-align: center;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    color 0.2s ease,
+    opacity 0.2s ease;
+}
+
+button.tag:hover,
+button.tag.active {
+  background: var(--tag-bg, rgba(255, 255, 255, 0.72));
+  border-color: var(--tag-border, rgba(255, 255, 255, 0.72));
+  color: var(--tag-color, var(--color-text));
+  opacity: 1;
+}
+
+button.tag.active {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+button.tag:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 0.2rem;
+  opacity: 1;
+}
+
+button.tag.inactive {
+  opacity: 0.42;
+}

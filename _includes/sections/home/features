@@ -1,0 +1,19 @@
+<a name="features"></a>
+
+<article class="wrapper slide-in">
+  {% include sections/numeric-items %}
+</article>
+
+<article class="wrapper wide slide-in">
+  <h2>Features you'll love.</h2>
+  <p>KeyboardKit gives you everything you need to build a native & fully customizable keyboard.</p>
+  <div class="grid col3 mobile carousel">
+    {% for item in site.data.feature-promos limit:3 %}
+      {% include kankoda/components/image-card item=item color="blue" card_class="keyboard" %}
+    {% endfor %}
+  </div>
+  <div>
+    <a href="/features" class="cta">View Features</a>
+    <a href="/pro" class="cta glass">KeyboardKit Pro</a>
+  </div>
+</article>

@@ -1,27 +1,22 @@
 ---
-id: trial
-title: KeyboardKit Pro - Free Trial
-layout: page
-permalink: /pro/trial
+permalink: /pro/free-trial
+layout: page-sidebar
+
+title: Free Trial
+
 redirect_from: trial
 
-hero:
-  icon: /assets/icon/pro.png
-  icon-class: plain
-
-description: KeyboardKit Pro has a free trial
+description: KeyboardKit Pro has a 7 day free trial with unlimited access to all the features in your selected tier. This lets you try out the features and see if they match your needs.
 ---
 
-KeyboardKit Pro has a [7 day free trial]({{site.urls.gumroad}}) with unlimited access to all the features in your selected tier. This lets you try out the features and see if they match your needs.
+{{page.description}}
 
 
-## License Expiration
+## Standard Plans
 
-The free trial stops working if you cancel it. This will affect shipped apps, which will no longer be able to use KeyboardKit Pro.
+All [standard plans](/pricing) include a [7 day free trial]({{site.urls.gumroad}}) when you sign up for a new license subscription from Gumroad.
 
 
-## License Validation
+## Business Plans
 
-The free trial requires server validation. The result is cached to handle temporary connectivity loss, but your product will perform regular server validations to ensure that the license is valid.
-
-If your free trial converts to a yearly license, it will be added to a new KeyboardKit Pro version, after which our license will validate locally, without any server roundtrips.
+If you're evaluating KeyboardKit Pro for your organization and require [business terms](/business), you are welcome to [contact us]({{site.urls.email}}) to discuss a trial.

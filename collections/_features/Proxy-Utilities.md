@@ -9,14 +9,20 @@ description: Make the custom keyboard text document proxy do more
   
 ---
 
-Custom keyboards use a [text document proxy](/terminology) to integrate with the currently active text field. It lets you insert and delete text, get the selected text, move the input cursor, etc.
+Custom keyboards use a [text document proxy]({{site.terminology}}) to integrate with the currently active text field. It lets you insert and delete text, get the selected text, move the input cursor, etc.
+
+
+## Limited Native Capabilities
 
 The native proxy APIs are however *very* limited, which makes it hard to get information about the text and to perform many common keyboard operations. 
+
+
+## Extensions
 
 KeyboardKit extends the proxy with more features to let you do more, like getting the ``currentWord`` and info like ``isCursorAtNewSentence``, and to  ``deleteBackward(range:)``, ``endSentence(withText:)``, etc.
 
 
-## 👑 KeyboardKit Pro
+## KeyboardKit Pro
 
 [KeyboardKit Pro][Pro] unlocks additional text document proxy capabilities, like the ability to read the full document context, instead of the limited text that the native APIs return.
 

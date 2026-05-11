@@ -12,14 +12,12 @@ matt: https://matthewskiles.com
 
 KeyboardKit is getting a new icon! We're moving from a glowing keyboard key to an abstract design with two Ks on a gradient background that carries over from the old icon.
 
-![Post Image]({{page.image}})
-
 
 ## The previous icon
 
 The previous icon has been with us for a while. Designed by digital artist [Matthew Skiles]({{page.matt}}), it added a glass-like, glowing design to the original, plain keyboard key design.
 
-![Old Icon](/assets/icon-old/icon-header.png){:width="300" class="plain"}
+![Old Icon](/assets/icon-old/icon-header.png){:class="plain medium"}
 
 While we absolutely loved this design, we have struggled with explaining what the A in the old icon stands for. All attempts to tweak it to better communicate KeyboardKit have been unsuccessful.
 
@@ -28,7 +26,7 @@ While we absolutely loved this design, we have struggled with explaining what th
 
 The new icon design takes a more abstract approach. Rather than having a literal key, it places two discrete, K-like glass-shapes on top of the gradient background from the previous icon.
 
-![New Icon](/assets/icon/header.png){:width="300" class="plain"}
+![New Icon](/assets/icon/header.png){:class="plain medium"}
 
 This icon design lets us carry over the color identity from the original icon and stay true to our visual roots, while taking the brand in a new, exciting direction.
 

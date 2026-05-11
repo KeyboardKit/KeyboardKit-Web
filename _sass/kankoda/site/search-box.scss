@@ -1,0 +1,18 @@
+.search-box {
+  padding: 0.7rem 1.1rem;
+  border: 1px solid var(--color-border-glass);
+  border-radius: var(--radius-glass-link);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: var(--shadow-default);
+  font-size: 1rem;
+  width: 100%;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+
+  &:focus {
+    border-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 4px 32px rgba(0,0,0,0.16);
+  }
+}
