@@ -51,12 +51,14 @@ layout: plain
 
           <section class="blog-list">
             {% for post in site.posts %}
-              <article class="blog-post" data-tags="{{ post.tags | join: ',' }}" data-title="{{ post.title | downcase }}" data-excerpt="{{ post.excerpt | strip_html | downcase | truncatewords: 40 }}">
+              <article class="blog-post" data-tags="{{ post.tags | join: ',' }}" data-title="{{ post.title | downcase }}" data-excerpt="{{ post.excerpt | strip_html | downcase | truncatewords: 40 }}" data-year="{{ post.date | date: '%Y' }}">
                 {% include kankoda/components/blog-header post=post %}
                 <p class="blog-post-excerpt">{{ post.excerpt | strip_html | truncatewords: 40 }}</p>
               </article>
             {% endfor %}
           </section>
+
+          <div class="blog-pagination"></div>
 
         </article>
       </div>
