@@ -13,18 +13,10 @@ div.glass.tier {
     z-index: 1;
   }
 
-  .tier-badge {
+  > .tag {
     position: absolute;
     top: 1rem;
     right: 1rem;
-    padding: 0.3rem 0.75rem;
-    border-radius: var(--radius-capsule);
-    background: #e8720c;
-    color: #ffffff;
-    font-size: 0.75rem;
-    font-weight: 700;
-    letter-spacing: 0.04em;
-    border: none;
   }
 
   .tier-header {
@@ -61,13 +53,6 @@ div.glass.tier {
     font-weight: 400;
     opacity: 0.6;
     margin-left: 0.1em;
-  }
-
-  .tier-price-alt {
-    margin: 0.2rem 0 0;
-    font-size: 0.95rem;
-    font-weight: 400;
-    opacity: 0.45;
   }
 
   .tier-features {
