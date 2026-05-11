@@ -31,6 +31,9 @@ footer {
 
   .toggle {
     cursor: default;
+    font-size: 1em;
+    font-weight: 700;
+    margin: 0 0 0.5rem;
 
     @media (max-width: 700px) {
       cursor: pointer;

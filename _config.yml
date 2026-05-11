@@ -71,12 +71,13 @@ header:
 footer:
   sitemap:
     - index.html
-    - pages/info/about.md
-    - pages/info/faq.md
     - pages/features.md
     - pages/case-studies.md
     - pages/industries.md
     - pages/app/app.md
+    - pages/info/about.md
+    - pages/info/faq.md
+    
 
 collections_dir: collections
 
