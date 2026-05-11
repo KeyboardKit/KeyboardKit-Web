@@ -20,35 +20,7 @@ terms: /pro/terms
 Unlock pro features that take your keyboard to the next level.
 
 
-<div class="pricing-toggle-wrap">
-  <div class="pricing-toggle">
-    <button class="pricing-toggle-btn active" data-period="monthly" onclick="setPricingPeriod('monthly')">Monthly</button>
-    <div class="pricing-toggle-annual-wrap">
-      <span class="pricing-save-badge">Save 17%</span>
-      <button class="pricing-toggle-btn" data-period="yearly" onclick="setPricingPeriod('yearly')">Annual</button>
-    </div>
-  </div>
-</div>
-
-<div class="grid col4 tiers spaced">
-  {% for tier in site.data.tiers %}
-    {% include kankoda/licenses/tier-box tier=tier %}
-  {% endfor %}
-</div>
-
-<script>
-function setPricingPeriod(period) {
-  document.querySelectorAll('.pricing-toggle-btn').forEach(function(btn) {
-    btn.classList.toggle('active', btn.dataset.period === period);
-  });
-  document.querySelectorAll('.tier-price-amount[data-monthly]').forEach(function(el) {
-    el.textContent = el.dataset[period];
-  });
-  document.querySelectorAll('.tier-price-period[data-monthly]').forEach(function(el) {
-    el.textContent = el.dataset[period];
-  });
-}
-</script>
+{% include licenses/tier-boxes %}
 
 
 ## Scaling Up?

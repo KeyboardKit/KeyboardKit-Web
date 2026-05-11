@@ -109,6 +109,8 @@ section.showcase {
     width: 100%;
     align-items: stretch;
     justify-content: center;
+
+    &.spaced { margin: 0 !important; }
   }
 
   &.dark {

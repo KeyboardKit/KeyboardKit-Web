@@ -14,21 +14,29 @@ description: KeyboardKit Pro unlocks powerful features like 75 locales, autocomp
     <h2>Unlock Pro features that take your keyboard to the next level.</h2>
     <p>{{page.description}}</p>
     <div>
-      <a href="/pricing" class="cta">View Pricing</a>
+      <a href="#pricing" class="cta">View Pricing</a>
       <a href="#features" class="cta glass">View Features</a>
     </div>
   </div>
 </section>
 
-<section class="showcase yellow glass">
-  {% include sections/numeric-items %}
+<a name="pricing"></a>
+<section class="showcase purple glass">
+  <article class="wrapper wide slide-in">
+    <h2>Flexible Pricing</h2>
+    <p>KeyboardKit Pro's pricing scales with your needs.</p>
+    {% include licenses/tier-boxes %}
+    <div>
+      <a href="/pricing" class="cta">View Full Details</a>
+    </div>
+  </article>
 </section>
 
 <a name="features"></a>
 <section class="showcase glow">
   <article class="wrapper wide slide-in">
     <h2>Everything you need.</h2>
-    <p>KeyboardKit Pro gives you the full toolkit — from language support and autocomplete to AI, themes, and beyond.</p>
+    <p>KeyboardKit Pro gives you the full toolkit — from language support and autocomplete to AI.</p>
     <div class="grid col4 carousel mobile">
       {% for usp in site.data.usps-pro %}
       <div class="glass compact">
@@ -39,26 +47,16 @@ description: KeyboardKit Pro unlocks powerful features like 75 locales, autocomp
       {% endfor %}
     </div>
     <div>
-      <a href="/features" class="cta">View Features</a>
-      <a href="/pricing" class="cta glass">View Pricing</a>
+      <a href="/features" class="cta">View All Features</a>
     </div>
   </article>
 
-  <article class="wrapper wide slide-in">
-    <h2>Try before you buy.</h2>
-    <p>Not sure yet? Explore all pro features risk-free before committing to a plan.</p>
-    <div class="grid col2">
-      <div class="glass scale">
-        <h3>Free Trial</h3>
-        <p>Get a free trial license and try all pro features directly in your own app, with no credit card required.</p>
-        <a class="large cta" href="/pro/free-trial">Get Free Trial</a>
-      </div>
-      <div class="glass scale">
-        <h3>KeyboardKit App</h3>
-        <p>Download the KeyboardKit app from the App Store and try all pro features on your device — no code needed.</p>
-        <a class="large cta" href="/app">Download App</a>
-      </div>
-    </div>
+  <article class="wrapper slide-in">
+    <h2>Frequently Asked Questions</h2>
+    <p>Common questions about KeyboardKit Pro, licensing, and features.</p>
+    {% assign pro_faqs = site.data.faq | where: "tag", "licensing" %}
+    {% include kankoda/components/faq-list items=pro_faqs %}
+    <a href="/faq" class="cta">View All FAQs</a>
   </article>
 </section>
 
@@ -75,19 +73,9 @@ description: KeyboardKit Pro unlocks powerful features like 75 locales, autocomp
       <div class="glass scale">
         <h3>Business & Organization</h3>
         <p>For established companies requiring legal security, invoice billing, software escrow, and priority support.</p>
-        <a class="large cta" href="/business">Business Plans</a>
+        <a class="large cta" href="/business">View Business Plans</a>
       </div>
     </div>
-  </article>
-</section>
-
-<section class="showcase glow">
-  <article class="wrapper slide-in">
-    <h2>Frequently Asked Questions</h2>
-    <p>Common questions about KeyboardKit Pro, licensing, and features.</p>
-    {% assign pro_faqs = site.data.faq | where: "tag", "licensing" %}
-    {% include kankoda/components/faq-list items=pro_faqs %}
-    <a href="/faq" class="cta">View FAQs</a>
   </article>
 </section>
 
@@ -95,9 +83,5 @@ description: KeyboardKit Pro unlocks powerful features like 75 locales, autocomp
   <div class="wrapper slide-in">
     <h2>Ready to go Pro?</h2>
     <p>Start with a free trial and upgrade when you're ready. No credit card required, no commitment — just full access to everything KeyboardKit Pro has to offer.</p>
-    <div>
-      <a href="/pro/free-trial" class="cta glass secondary">Get Free Trial</a>
-      <a href="/pricing" class="cta glass">View Pricing</a>
-    </div>
   </div>
 </section>
