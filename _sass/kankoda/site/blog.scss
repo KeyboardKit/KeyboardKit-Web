@@ -1,12 +1,16 @@
-.blog.page-content {
+.blog {
 
   h1 {
-    margin-bottom: 1.1rem;
+     margin-bottom: 1.5rem;
   }
- 
-  .blog-post-meta {
-    margin-bottom: clamp(1.5rem, 3vw, 2.5rem);
+
+  .search-box {
+    margin-bottom: 1rem;
   }
+}
+
+.blog-post-meta {
+  margin-bottom: 3rem;
 }
 
 .blog-list {
@@ -14,6 +18,10 @@
   flex-direction: column;
   gap: clamp(2rem, 4vw, 3rem);
   margin-top: clamp(2rem, 4vw, 3.5rem);
+
+  .blog-post-meta {
+    margin-bottom: 1rem;
+  }
 }
 
 .blog-post {
@@ -67,49 +75,5 @@
     font-size: 1.2em;
     font-weight: 300;
     opacity: var(--opacity-secondary);
-  }
-}
-
-.blog-pagination {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.3rem;
-  margin-top: clamp(2rem, 4vw, 3rem);
-
-  button {
-    min-width: 2.2rem;
-    padding: 0.4rem 0.6rem;
-    border: 1px solid var(--color-border);
-    border-radius: var(--radius-tag);
-    background: transparent;
-    color: var(--color-text);
-    font-size: 0.9rem;
-    cursor: pointer;
-    transition: background 0.15s ease, color 0.15s ease, opacity 0.15s ease;
-
-    &:hover:not(:disabled) {
-      background: rgba(0, 0, 0, 0.06);
-    }
-
-    &.active {
-      background: #000;
-      color: #fff;
-      border-color: #000;
-    }
-
-    &:disabled {
-      opacity: var(--opacity-secondary);
-      cursor: default;
-    }
-  }
-
-  .pagination-ellipsis {
-    min-width: 2.2rem;
-    padding: 0.4rem 0.6rem;
-    text-align: center;
-    font-size: 0.9rem;
-    opacity: var(--opacity-secondary);
-    user-select: none;
   }
 }
