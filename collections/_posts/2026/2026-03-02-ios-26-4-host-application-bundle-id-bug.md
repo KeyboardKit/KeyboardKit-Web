@@ -1,7 +1,7 @@
 ---
 title:  iOS 26.4 Host Application Bug
 date:   2026-03-02 06:00:00 +0100
-tags:   ios-bugs
+tags:   apple-bugs
 
 assets: /assets/blog/26/0302
 image: /assets/blog/26/0302/image.jpg

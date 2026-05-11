@@ -1,7 +1,7 @@
 ---
 title:  KeyboardKit 8.5
 date:   2024-04-16 08:00:00 +0100
-tags:   releases actions callouts emojis feedback layout views
+tags:   releases actions callouts emojis feedback layout
 
 assets: /assets/blog/24/0416/
 

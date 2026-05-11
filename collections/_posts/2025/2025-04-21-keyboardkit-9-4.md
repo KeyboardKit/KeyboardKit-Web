@@ -1,7 +1,7 @@
 ---
 title:  KeyboardKit 9.4 is out
 date:   2025-04-21 08:00:00 +0100
-tags:   releases emojis layout localization performance
+tags:   releases emojis layout localization
 
 image-show: 0
 image: /assets/versions/9_4.jpg

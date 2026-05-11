@@ -1,7 +1,7 @@
 ---
 title:  KeyboardKit 8.9
 date:   2024-09-27 08:00:00 +0100
-tags:   releases essentials app callouts layout services themes views
+tags:   releases essentials app callouts layout services themes
 
 release: https://github.com/KeyboardKit/KeyboardKit/releases/tag/8.9
 release-pro: https://github.com/KeyboardKit/KeyboardKitPro/releases/tag/8.9

@@ -1,7 +1,7 @@
 ---
 title:  Custom Keyboard Extensions Can Disappear in iOS 17
 date:   2024-02-12 08:00:00 +0100
-tags:   ios-bugs
+tags:   apple-bugs
 
 tweet:  https://x.com/GetKeyboardKit/status/1757058760579661914?s=20
 toot:   https://techhub.social/@keyboardkit/111919132611882137

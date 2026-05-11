@@ -1,7 +1,7 @@
 ---
 title:  KeyboardKit 9.2 is out
 date:   2025-02-14 08:00:00 +0100
-tags:   releases layout localization settings host
+tags:   releases layout localization settings host-app
 
 image-show: 0
 image: /assets/versions/9_2.jpg
