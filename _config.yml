@@ -74,10 +74,9 @@ footer:
     - pages/info/about.md
     - pages/info/faq.md
     - pages/features.md
-    - pages/app/app.md
-    - pages/industries.md
     - pages/case-studies.md
-    - pages/documentation.md
+    - pages/industries.md
+    - pages/app/app.md
 
 collections_dir: collections
 

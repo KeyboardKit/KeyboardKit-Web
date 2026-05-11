@@ -3,7 +3,6 @@ permalink: /privacy-policy
 layout: page-sidebar
 
 title: Privacy Policy
-eyebrow: KeyboardKit
 
 redirect_from: 
     - /privacy

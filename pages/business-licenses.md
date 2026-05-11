@@ -16,17 +16,10 @@ description: KeyboardKit has business licenses for larger companies and apps.
 
 <div class="centered page-content wide wrapper" markdown="1">
 
-![KeyboardKit Pro Icon](/assets/icon/pro-shadow.png){:width="200px" class="plain"}
-
 # Business Plans
 ## All features, built for enterprise scale.
 
-Unlock our complete suite of features with business-critical protection and priority support.
-
-
-## Business Plans
-
-A business plan is eequired for companies with $10M+ or apps with $1M+ in annual revenue.
+A business plan is required for companies with $10M+ or apps with $1M+ in annual revenue.
 
 <div class="grid col3 tiers spaced">
   {% for tier in site.data.business-tiers %}

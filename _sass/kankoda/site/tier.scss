@@ -97,32 +97,6 @@ div.glass.tier {
     }
   }
 
-  // Silver
-  &.silver {
-    background-color: var(--glass-silver-bg);
-    background-image: linear-gradient(160deg, var(--glass-silver-light-bg), var(--glass-silver-bg));
-    border-color: rgba(255, 255, 255, 0.7);
-
-    .tier-cta {
-      background: #3a3d4a;
-      color: #ffffff !important;
-      border-color: #3a3d4a;
-    }
-  }
-
-  // Gold
-  &.gold {
-    background-color: var(--glass-yellow-bg);
-    background-image: linear-gradient(160deg, rgba(255, 245, 180, 0.9), var(--glass-yellow-bg));
-    border-color: rgba(255, 220, 80, 0.7);
-
-    .tier-cta {
-      background: #c49a10;
-      color: #ffffff !important;
-      border-color: #c49a10;
-    }
-  }
-
   // Business
   &.business {
     background: linear-gradient(160deg, #2e3044, #1e2035);
@@ -150,11 +124,6 @@ div.glass.tier {
   background: rgba(0, 0, 0, 0.06);
   border-radius: var(--radius-capsule);
   border: 1px solid var(--color-border);
-
-  @media (prefers-color-scheme: dark) {
-    background: rgba(255, 255, 255, 0.08);
-    border-color: rgba(255, 255, 255, 0.1);
-  }
 }
 
 .pricing-toggle-annual-wrap {
@@ -176,13 +145,9 @@ div.glass.tier {
 
   &.active {
     background: var(--color-bg);
-    opacity: 1;
+    opacity: 0.8;
     font-weight: 700;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-
-    @media (prefers-color-scheme: dark) {
-      background: rgba(255, 255, 255, 0.15);
-    }
   }
 }
 

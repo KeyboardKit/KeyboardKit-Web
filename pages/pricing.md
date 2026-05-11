@@ -14,17 +14,11 @@ terms: /pro/terms
 
 <div class="centered page-content wide wrapper" markdown="1">
 
-![KeyboardKit Pro Icon](/assets/icon/pro-shadow.png){:width="200px" class="plain"}
-
 # KeyboardKit Pro
 ## Pricing that scales with your app.
 
 Unlock pro features that take your keyboard to the next level.
 
-
-## Standard Plans
-
-Our standard tiers are built for indies, startups, and small businesses.
 
 <div class="pricing-toggle-wrap">
   <div class="pricing-toggle">
@@ -60,11 +54,6 @@ function setPricingPeriod(period) {
 ## Scaling Up?
 
 If your company exceeds $10M or your app exceeds $1M in annual revenue, you need a [Business License](/business).
-
-
-## Yearly Savings
-
-Our yearly plans save you two months on your yearly price!
 
 
 ## Full Feature Comparison
