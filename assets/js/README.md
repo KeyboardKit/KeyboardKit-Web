@@ -5,7 +5,7 @@ This directory contains site-specific JavaScript modules that are bundled into `
 ## How It Works
 
 1. **Individual modules** go in this `assets/js/` directory
-2. **Bundle file** at `/assets/site.js` imports all modules using `{% include_relative %}`
+2. **Bundle file** at `/assets/site.js` imports all modules
 3. **Bundle is processed** by Jekyll and output to `_site/assets/site.js`
 4. **Loaded in head** via `/_includes/kankoda/site/head-tag` with `defer` attribute
 
@@ -37,10 +37,7 @@ Each module should be a self-contained IIFE (Immediately Invoked Function Expres
 
 1. Create a new file in `assets/js/`, e.g., `assets/js/my-module.js`
 2. Write your JavaScript as an IIFE (see structure above)
-3. Add it to `/assets/site.js`:
-   ```liquid
-   {% include_relative js/my-module.js %}
-   ```
+3. Add it to `/assets/site.js`
 4. Jekyll will bundle it automatically on next build
 
 ## Existing Modules
