@@ -8,6 +8,7 @@ $code-box-muted: #8f93b4;
 $code-box-shadow: var(--shadow-default);
 
 div.highlighter-rouge,
+div.highlight,
 figure.highlight {
   display: block;
   width: 100%;
@@ -29,10 +30,11 @@ figure.highlight {
 }
 
 div.highlighter-rouge::before,
+div.highlight::before,
 figure.highlight::before {
   content: "";
   position: absolute;
-  top: calc(($code-box-title-height - 1rem) / 2);
+  top: 1.175rem;
   left: 1.35rem;
   width: 1rem;
   height: 1rem;
@@ -44,10 +46,11 @@ figure.highlight::before {
 }
 
 div.highlighter-rouge::after,
+div.highlight::after,
 figure.highlight::after {
   content: attr(data-language);
   position: absolute;
-  top: calc($code-box-title-height / 2);
+  top: 1.675rem;
   left: 50%;
   transform: translate(-50%, -50%);
   color: rgba(238, 242, 255, 0.46);
@@ -91,12 +94,14 @@ figure.highlight::after {
 }
 
 .page-content > div.highlighter-rouge,
+.page-content > div.highlight,
 .page-content > figure.highlight {
   margin-top: var(--page-content-media-gap);
   margin-bottom: var(--page-content-media-gap);
 }
 
 div.highlighter-rouge > .highlight,
+div.highlight > .highlight,
 .highlighter-rouge .highlight,
 figure.highlight > .highlight,
 figure.highlight > pre {
@@ -104,6 +109,7 @@ figure.highlight > pre {
 }
 
 div.highlighter-rouge > .highlight,
+div.highlight > .highlight,
 figure.highlight > .highlight,
 figure.highlight > pre {
   position: relative;
@@ -114,6 +120,7 @@ figure.highlight > pre {
 
 div.highlighter-rouge pre.highlight,
 div.highlighter-rouge .highlight pre,
+div.highlight pre,
 figure.highlight pre {
   margin: 0;
   padding: 1.7rem 1.9rem 1.9rem;
@@ -129,6 +136,7 @@ figure.highlight pre {
 }
 
 div.highlighter-rouge code,
+div.highlight code,
 figure.highlight code {
   display: block;
   padding: 0;
@@ -142,11 +150,13 @@ figure.highlight code {
 }
 
 div.highlighter-rouge pre::-webkit-scrollbar,
+div.highlight pre::-webkit-scrollbar,
 figure.highlight pre::-webkit-scrollbar {
   height: 10px;
 }
 
 div.highlighter-rouge pre::-webkit-scrollbar-thumb,
+div.highlight pre::-webkit-scrollbar-thumb,
 figure.highlight pre::-webkit-scrollbar-thumb {
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.14);
@@ -281,13 +291,15 @@ td code.highlighter-rouge {
 
 @media (max-width: 700px) {
   div.highlighter-rouge,
+  div.highlight,
   figure.highlight {
     border-radius: 1.25rem;
   }
 
   div.highlighter-rouge::before,
+  div.highlight::before,
   figure.highlight::before {
-    top: calc(($code-box-title-height - 0.75rem) / 2);
+    top: 1.3rem;
     width: 0.75rem;
     height: 0.75rem;
     box-shadow:
@@ -296,6 +308,7 @@ td code.highlighter-rouge {
   }
 
   div.highlighter-rouge::after,
+  div.highlight::after,
   figure.highlight::after {
     font-size: 0.85rem;
   }
@@ -306,6 +319,7 @@ td code.highlighter-rouge {
 
   div.highlighter-rouge pre.highlight,
   div.highlighter-rouge .highlight pre,
+  div.highlight pre,
   figure.highlight pre {
     padding: 1.35rem 1.25rem 1.45rem;
     font-size: 0.94rem;

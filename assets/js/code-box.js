@@ -4,7 +4,7 @@
  */
 
 (function() {
-  const blocks = document.querySelectorAll('div.highlighter-rouge, figure.highlight');
+  const blocks = document.querySelectorAll('div.highlighter-rouge, div.highlight, figure.highlight');
   if (!blocks.length) return;
 
   const aliases = {
