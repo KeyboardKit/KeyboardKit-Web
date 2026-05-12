@@ -2,12 +2,10 @@
 
 This repository contains the code for the [KeyboardKit website][Website].
 
+## General Instructions
 
-## Device resources
+* Run `bundle install` to install the required gems.
+* Run `./serve` to build and start serving the website on a local server.
 
-Make sure to continously update the home page device hero with the latest resources from [Apple's Marketing Resources and Identity Guidelines][Apple-marketing].
-
-
-
-[Apple-marketing]: https://developer.apple.com/app-store/marketing/guidelines/#section-products
+[Apple]: https://developer.apple.com/app-store/marketing/guidelines/
 [Website]: https://keyboardkit.com
