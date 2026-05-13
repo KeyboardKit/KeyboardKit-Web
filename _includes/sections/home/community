@@ -2,4 +2,5 @@
   <h2>Loved by the community.</h2>
   <p>KeyboardKit is used by indies, startups and enterprises, all over the world.</p>
   {% include sections/numeric-items %}
+  {% include sections/home/testimonials %}
 </article>

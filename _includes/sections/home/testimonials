@@ -1,0 +1,7 @@
+<div class="wrapper">
+  <div class="grid col2">
+    {% for item in site.data.testimonials %}
+      {% include kankoda/components/testimonial quote=item.quote name=item.name %}
+    {% endfor %}
+  </div>
+</div>

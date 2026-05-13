@@ -1,0 +1,38 @@
+// Testimonial
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.75rem;
+  padding: 1.5rem 0;
+  max-width: 500px;
+  margin: 0 auto;
+
+  .testimonial-quote {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .testimonial-laurel {
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+    opacity: 0.5;
+  }
+
+  .testimonial-text {
+    margin: 0;
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+    line-height: 1.6;
+  }
+
+  .testimonial-name {
+    margin: 0;
+    font-size: 0.9rem;
+    font-weight: 600;
+    opacity: 0.6;
+  }
+}
