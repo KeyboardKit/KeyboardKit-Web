@@ -1,9 +1,3 @@
-<a name="features"></a>
-
-<article class="wrapper slide-in">
-  {% include sections/numeric-items %}
-</article>
-
 <article class="wrapper wide slide-in">
   <h2>Features you'll love.</h2>
   <p>KeyboardKit gives you everything you need to build a native & fully customizable keyboard.</p>

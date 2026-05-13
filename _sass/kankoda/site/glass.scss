@@ -5,6 +5,12 @@ div.glass {
   box-shadow: var(--shadow-default);
 }
 
+img.glass {
+  border: 1px solid var(--color-border-glass);
+  border-radius: 5em;
+  box-shadow: var(--shadow-default);
+}
+
 
 // Shapes
 

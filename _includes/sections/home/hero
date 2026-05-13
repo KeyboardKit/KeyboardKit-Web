@@ -1,12 +1,11 @@
 <section class="hero glow">
   <div class="wrapper wide">
-    <div class="green tag rounded">Trusted by companies worldwide</div>
-    <h1>Build your own<br />custom iOS keyboard.</h1>
-    <h2>The leading Swift and SwiftUI custom keyboard framework.</h2>
+    <img src="/assets/icon/icon.png" class="glass" />
+    <h1>Build your own<br />custom keyboard.</h1>
+    <h2>The leading Swift and SwiftUI custom iOS keyboard framework.</h2>
     <p>{{ page.description }}</p>
     <div>
-      <a href="#get-started" class="cta">Start Building</a>
-      <a href="#learn-more" class="cta glass">Learn More</a>
+      <a href="#content" class="cta glass">Learn More</a>
     </div>
   </div>
 </section>

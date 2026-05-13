@@ -1,0 +1,64 @@
+.hero {
+  min-height: calc(100vh - 2 * var(--header-height, 60px));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  // Position to start at viewport top
+  position: relative;
+  margin-top: calc(-1 * var(--header-height, 60px));
+  padding-top: var(--header-height, 60px);
+  padding-bottom: var(--header-height, 60px);
+
+  // Subtle background color for inspection
+  background-color: rgba(0, 120, 255, 0.03);
+
+  @media (max-width: 700px) {
+    --header-height: 50px;
+    padding-bottom: 5rem;
+  }
+
+  .tag {
+    margin: 2.25rem 0;
+    padding: 0.8rem 1.2rem;
+  }
+
+  .wrapper {
+    display: grid;
+    justify-items: center;
+    gap: 2rem;
+
+    @media (max-width: 700px) {
+      gap: 1.5rem;
+    }
+  }
+
+  h1 {
+    font-size: clamp(2.9rem, 8vw, 6rem);
+    line-height: 1.08;
+    margin: 0;
+
+    @media (max-width: 700px) {
+      font-size: 2.4rem;
+    }
+  }
+
+  h2 {
+    font-size: clamp(1.25rem, 2.5vw, 2rem);
+    font-weight: 400;
+    line-height: 1.35;
+    margin: 0;
+  }
+
+  p {
+    margin: 0 auto;
+    max-width: var(--wrapper-width-narrow);
+  }
+
+  a.cta {
+    padding: 1.05rem 1.75rem;
+    font-size: 1.05rem;
+  }
+}
