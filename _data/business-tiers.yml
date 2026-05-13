@@ -7,10 +7,10 @@
   box-class: glass tier
   features:
     - <a href="/pro/terms">Standard Terms</a>
-    - Manual Invoicing
     - Signed Agreement
+    - Invoice & PO
+    - <a href="/pro/license-validation">On-Device License File</a>
     - <a href="/features/platforms">Multi-platform Builds</a>
-    - <a href="/pro/license-validation">On-Device License Validation</a>
 
 - name: Business+
   badge: Critical Protection
