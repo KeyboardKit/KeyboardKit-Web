@@ -9,6 +9,9 @@
 
       <!-- Content -->
       <main aria-label="Content">
+        {% if page.image-show == 1 %}
+        <img src="{{ page.image }}" alt="{{ page.title }}" />
+        {% endif %}
         {{ content }}
       </main>
     </div>
