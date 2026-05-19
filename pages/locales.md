@@ -10,7 +10,7 @@ hero:
   icon: /assets/heros/locales.png
   icon-class: plain
   
-description: KeyboardKit supports 75 locales
+description: KeyboardKit supports 76 locales
 ---
 
 KeyboardKit supports **{{site.locales.count}}** locales (languages), which affects things like keyboard layout, callout actions, autocomplete suggestions, etc.

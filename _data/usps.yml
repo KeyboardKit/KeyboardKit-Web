@@ -11,7 +11,7 @@
 - color: blue
   icon: lucide:globe
   title: Multi-language
-  text: Support for <a href="/features/localization">75+ locales</a> and fully localized features.
+  text: Support for <a href="/features/localization">76 locales</a> and fully localized features.
 
 - color: purple
   icon: lucide:tablet-smartphone

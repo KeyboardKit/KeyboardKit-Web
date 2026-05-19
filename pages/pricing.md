@@ -6,7 +6,7 @@ title: Pricing
 
 image: /assets/headers/pro.jpg
 
-description: KeyboardKit Pro unlocks critical pro features, like 75 languages, on-device autocomplete, AI support, dictation, emojis, themes, and much more.
+description: KeyboardKit Pro unlocks critical pro features, like 76 languages, on-device autocomplete, AI support, dictation, emojis, themes, and much more.
 
 custom-license-email: mailto:info@keyboardkit.com?subject=KeyboardKit%20Pro%20-%20Custom%20Plan
 terms: /pro/terms
