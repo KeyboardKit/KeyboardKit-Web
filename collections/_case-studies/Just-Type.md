@@ -1,6 +1,6 @@
 ---
-eyebrow: Efficient & Accurate Typing
 title: JustType
+eyebrow: Efficient & Accurate Typing
 
 image:  /assets/case-studies/just-type/header.jpg
 assets: /assets/case-studies/just-type/article/

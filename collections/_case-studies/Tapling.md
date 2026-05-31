@@ -1,6 +1,6 @@
 ---
-eyebrow: Typing Companion
 title: Tapling
+eyebrow: Typing Companion
 
 image:  /assets/case-studies/tapling/header.jpg
 assets: /assets/case-studies/tapling/

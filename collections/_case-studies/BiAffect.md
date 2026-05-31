@@ -1,6 +1,6 @@
 ---
-eyebrow: Mental Health Tracker
 title: BiAffect
+eyebrow: Mental Health Tracker
 
 image:  /assets/case-studies/biaffect/header.jpg
 assets: /assets/case-studies/biaffect/article/

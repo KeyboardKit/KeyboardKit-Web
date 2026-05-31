@@ -1,6 +1,6 @@
 ---
-eyebrow: Sanskrit Keyboard
 title: Type Devanagari
+eyebrow: Sanskrit Keyboard
 
 image:  /assets/case-studies/type-devanagari/header.jpg
 assets: /assets/case-studies/type-devanagari/article/
