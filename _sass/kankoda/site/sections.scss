@@ -59,18 +59,18 @@ section.showcase {
   &.dark {
     background: var(--color-bg-dark);
     color: var(--color-text-dark);
-  }
 
-  &.dark a:not(.cta):not(.glass) {
-    color: var(--color-text-dark) !important;
-  }
+    a:not(.cta):not(.glass) {
+      color: var(--color-text-dark) !important;
+    }
 
-  &.dark.blue {
-    background: var(--color-bg-dark-blue);
-    color: var(--color-text-dark);
+    &.blue {
+      background: var(--color-bg-dark-blue);
+      color: var(--color-text-dark);
 
-    > .wrapper p {
-      opacity: 0.6;
+      > .wrapper p {
+        opacity: 0.6;
+      }
     }
   }
 }

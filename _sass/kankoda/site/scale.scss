@@ -3,21 +3,21 @@
     transform var(--duration-link) ease,
     box-shadow var(--duration-link) ease;
   transform-origin: center;
-}
 
-.scale:hover,
-.scale:focus-within {
-  transform: scale(1.04);
-  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.18);
+  &:hover,
+  &:focus-within {
+    transform: scale(1.04);
+    box-shadow: 0 14px 36px rgba(0, 0, 0, 0.18);
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
   .scale {
     transition: box-shadow var(--duration-link) ease;
-  }
 
-  .scale:hover,
-  .scale:focus-within {
-    transform: none;
+    &:hover,
+    &:focus-within {
+      transform: none;
+    }
   }
 }

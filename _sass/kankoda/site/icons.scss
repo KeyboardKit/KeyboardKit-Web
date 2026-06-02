@@ -12,16 +12,13 @@
   color: #111;
   line-height: 0;
   overflow: hidden;
+  font-size: 1.8em;
+  padding: 0.1em !important;
 }
 
 p + .icon-group {
   height: 40px;
   margin-top: 0.75rem;
-}
-
-.icon-badge {
-  font-size: 1.8em;
-  padding: 0.1em !important;
 }
 
 .icon-group {

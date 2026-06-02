@@ -19,60 +19,62 @@ a.cta {
     color var(--duration-link) ease,
     border-color var(--duration-link) ease;
   transform-origin: center;
+
+  &.large {
+    gap: 0.65rem;
+    padding: 1.15rem 1.9rem;
+    font-size: 1.15rem;
+  }
+
+  & + & {
+    margin-left: 0.75rem;
+  }
+
+  &.glass {
+    background: rgba(255, 255, 255, 0.55);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    box-shadow: var(--shadow-default);
+    color: var(--color-text) !important;
+
+    &.secondary {
+      background: rgba(255, 255, 255, 0.2);
+      color: var(--color-text) !important;
+    }
+  }
+
+  &:hover {
+    transform: scale(1.04);
+    box-shadow: 0 4px 24px var(--color-shadow);
+  }
+
+  &:focus-visible {
+    outline: 2px solid rgba(17, 17, 17, 0.35);
+    outline-offset: 3px;
+  }
+
+  &.secondary {
+    background: var(--color-bg);
+    border-color: var(--color-border);
+    color: var(--color-text) !important;
+  }
 }
 
-a.cta.large {
-  gap: 0.65rem;
-  padding: 1.15rem 1.9rem;
-  font-size: 1.15rem;
-}
-
-a.cta + a.cta {
-  margin-left: 0.75rem;
-}
-
-a.cta.glass {
-  background: rgba(255, 255, 255, 0.55);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border: 1px solid rgba(255, 255, 255, 0.35);
-  box-shadow: var(--shadow-default);
-  color: var(--color-text) !important;
-}
-
-a.cta.glass.secondary {
-  background: rgba(255, 255, 255, 0.2);
-  color: var(--color-text) !important;
-}
-
-.dark a.cta.glass,
-.dark a.cta.glass.secondary {
-  background: rgba(30, 27, 75, 0.2);
-  color: var(--color-text-dark) !important;
-}
-
-a.cta:hover {
-  transform: scale(1.04);
-  box-shadow: 0 4px 24px var(--color-shadow);
-}
-
-a.cta:focus-visible {
-  outline: 2px solid rgba(17, 17, 17, 0.35);
-  outline-offset: 3px;
-}
-
-a.cta.secondary {
-  background: var(--color-bg);
-  border-color: var(--color-border);
-  color: var(--color-text) !important;
+.dark {
+  a.cta.glass,
+  a.cta.glass.secondary {
+    background: rgba(30, 27, 75, 0.2);
+    color: var(--color-text-dark) !important;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
   a.cta {
     transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
-  }
 
-  a.cta:hover {
-    transform: none;
+    &:hover {
+      transform: none;
+    }
   }
 }

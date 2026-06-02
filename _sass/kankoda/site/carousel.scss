@@ -45,18 +45,30 @@
     --carousel-padding-bottom: 0.75rem;
     --carousel-shadow-space: clamp(1rem, 4vw, 2rem);
     --carousel-vertical-space: clamp(1rem, 2vw, 1.5rem);
-  }
 
-  .grid.carousel.images {
-    --carousel-shadow-space: 1.5rem;
-    --carousel-vertical-space: 1.75rem;
-    --carousel-vertical-pull: 1.5rem;
-    --carousel-padding-bottom: 0rem;
-  }
+    &.images {
+      --carousel-shadow-space: 1.5rem;
+      --carousel-vertical-space: 1.75rem;
+      --carousel-vertical-pull: 1.5rem;
+      --carousel-padding-bottom: 0rem;
+    }
 
-  // Unconditional carousel activation
-  .grid.carousel:not(.mobile) {
-    @include carousel-active;
+    // Unconditional carousel activation
+    &:not(.mobile) {
+      @include carousel-active;
+    }
+
+    scrollbar-color: rgba(0, 0, 0, 0.18) transparent;
+    scrollbar-width: thin;
+
+    &::-webkit-scrollbar {
+      height: 0.45rem;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: rgba(0, 0, 0, 0.18);
+      border-radius: 999px;
+    }
   }
 
   // Container-query-based activation for `.mobile` carousels
@@ -82,19 +94,5 @@
     .grid.carousel.mobile.col2 {
       @include carousel-active;
     }
-  }
-
-  .grid.carousel {
-    scrollbar-color: rgba(0, 0, 0, 0.18) transparent;
-    scrollbar-width: thin;
-  }
-
-  .grid.carousel::-webkit-scrollbar {
-    height: 0.45rem;
-  }
-
-  .grid.carousel::-webkit-scrollbar-thumb {
-    background: rgba(0, 0, 0, 0.18);
-    border-radius: 999px;
   }
 }

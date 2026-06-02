@@ -7,19 +7,19 @@
 .motion-ready .slide-in {
   opacity: 0;
   transform: translate3d(0, 1.75rem, 0);
-}
 
-.motion-ready .slide-in.from-left {
-  transform: translate3d(-2.5rem, 0, 0);
-}
+  &.from-left {
+    transform: translate3d(-2.5rem, 0, 0);
+  }
 
-.motion-ready .slide-in.from-right {
-  transform: translate3d(2.5rem, 0, 0);
-}
+  &.from-right {
+    transform: translate3d(2.5rem, 0, 0);
+  }
 
-.motion-ready .slide-in.is-visible {
-  opacity: 1;
-  transform: translate3d(0, 0, 0);
+  &.is-visible {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -27,11 +27,15 @@
     transition: none;
   }
 
-  .motion-ready .slide-in,
-  .motion-ready .slide-in.from-left,
-  .motion-ready .slide-in.from-right,
-  .motion-ready .slide-in.is-visible {
+  .motion-ready .slide-in {
     opacity: 1;
     transform: none;
+
+    &.from-left,
+    &.from-right,
+    &.is-visible {
+      opacity: 1;
+      transform: none;
+    }
   }
 }

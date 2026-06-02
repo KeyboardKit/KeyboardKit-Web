@@ -26,14 +26,13 @@ div.tag {
   white-space: nowrap;
 }
 
-.tag.rounded {
-  border-radius: var(--radius-tag);
-}
-
-
-// Colored Tags
-
 .tag {
+  &.rounded {
+    border-radius: var(--radius-tag);
+  }
+
+
+  // Colored Tags
 
   &.blue {
     --tag-bg: var(--glass-blue-bg);
@@ -100,26 +99,26 @@ button.tag {
     box-shadow 0.2s ease,
     color 0.2s ease,
     opacity 0.2s ease;
-}
 
-button.tag:hover,
-button.tag.active {
-  background: var(--tag-bg, rgba(255, 255, 255, 0.72));
-  border-color: var(--tag-border, rgba(255, 255, 255, 0.72));
-  color: var(--tag-color, var(--color-text));
-  opacity: 1;
-}
+  &:hover,
+  &.active {
+    background: var(--tag-bg, rgba(255, 255, 255, 0.72));
+    border-color: var(--tag-border, rgba(255, 255, 255, 0.72));
+    color: var(--tag-color, var(--color-text));
+    opacity: 1;
+  }
 
-button.tag.active {
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
-}
+  &.active {
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  }
 
-button.tag:focus-visible {
-  outline: 2px solid currentColor;
-  outline-offset: 0.2rem;
-  opacity: 1;
-}
+  &:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 0.2rem;
+    opacity: 1;
+  }
 
-button.tag.inactive {
-  opacity: 0.42;
+  &.inactive {
+    opacity: 0.42;
+  }
 }
