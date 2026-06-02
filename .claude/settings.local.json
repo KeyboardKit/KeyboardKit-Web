@@ -11,7 +11,8 @@
       "WebFetch(domain:lucide.dev)",
       "Bash(xargs ls *)",
       "Bash(lsof -ti:4000)",
-      "mcp__Claude_in_Chrome__tabs_context_mcp"
+      "mcp__Claude_in_Chrome__tabs_context_mcp",
+      "Bash(sed -i '' 's/^eyebrow:/subtitle:/' /Users/danielsaidi/Projects/keyboardkit/web/collections/_case-studies/*.md)"
     ],
     "deny": [],
     "ask": []

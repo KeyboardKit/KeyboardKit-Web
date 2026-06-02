@@ -1,6 +1,6 @@
 ---
 title: Tapling
-eyebrow: Typing Companion
+subtitle: Typing Companion
 
 image:  /assets/case-studies/tapling/header.jpg
 assets: /assets/case-studies/tapling/

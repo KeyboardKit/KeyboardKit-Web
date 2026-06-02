@@ -45,6 +45,11 @@ h1 {
 
   &+h3 {
     margin-top: 0;
+    margin-bottom: clamp(1.25rem, 2.5vw, 2rem);
+  }
+
+  &:has(+ h3) {
+    margin-bottom: 0;
   }
 }
 
@@ -121,6 +126,11 @@ img.medium {
     margin-bottom: clamp(0.75rem, 1.5vw, 1.25rem);
   }
 
+  > h1 + h3 {
+    margin-top: 0;
+    margin-bottom: clamp(1.25rem, 2.5vw, 2rem);
+  }
+
 
   > ul,
   > ol {
@@ -141,6 +151,7 @@ img.medium {
       max-width: 700px;
       margin: 0 0 clamp(0.5rem, 1vw, 0.75rem);
     }
+
   }
 
   > p,

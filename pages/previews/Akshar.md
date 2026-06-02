@@ -1,6 +1,6 @@
 ---
 title: Akshar
-eyebrow: Indic Transliteration Keyboard
+subtitle: Indic Transliteration Keyboard
 
 permalink: /previews/akshar
 layout: page-sidebar

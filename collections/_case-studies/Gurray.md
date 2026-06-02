@@ -1,6 +1,6 @@
 ---
 title: Gurray
-eyebrow: Australian Indigenous Keyboard
+subtitle: Australian Indigenous Keyboard
 
 image:  /assets/case-studies/gurray/header.jpg
 assets: /assets/case-studies/gurray/article/

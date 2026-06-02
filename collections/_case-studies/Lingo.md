@@ -1,6 +1,6 @@
 ---
 title: Lingo 
-eyebrow: Your Intelligent Translation Keyboard
+subtitle: Your Intelligent Translation Keyboard
 
 image:  /assets/case-studies/lingo/header.jpg
 assets: /assets/case-studies/lingo/article/
