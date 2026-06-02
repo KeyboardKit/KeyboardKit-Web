@@ -1,5 +1,5 @@
 ---
-title:  New Case Study - GIF AI Custom GIF Keyboard
+title:  Case Study - GIF AI Custom GIF Keyboard
 date:   2026-02-09 08:00:00 +0100
 tags:   case-studies
 

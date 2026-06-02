@@ -1,5 +1,5 @@
 ---
-title:  New Case Study - BossAI Voice First Keyboard
+title:  Case Study - BossAI Voice First Keyboard
 date:   2026-02-18 08:00:00 +0100
 tags:   case-studies
 

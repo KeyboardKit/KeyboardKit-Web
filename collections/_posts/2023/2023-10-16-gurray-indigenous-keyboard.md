@@ -1,5 +1,5 @@
 ---
-title:  New Case Study - Gurray Indigenous Keyboard
+title:  Case Study - Gurray Indigenous Keyboard
 date:   2023-10-16 08:00:00 +0100
 tags:   case-studies
 

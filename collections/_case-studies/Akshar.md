@@ -26,7 +26,7 @@ Say hi to [Akshar]({{page.appstore}}) - an Indic transliteration keyboard for iP
 
 [Akshar]({{page.appstore}}) is an Indic transliteration keyboard app for iPhone and iPad. It supports 21 Indian languages across 12 scripts built directly into the keyboard, the highest of any app on the App Store.
 
-<div class="grid col4 slide-in images">
+<div class="grid col4 slide-in images mobile carousel">
     <img src="{{page.assets}}01-keyboard-in-messages.png" class="plain" />
     <img src="{{page.assets}}02-script-selector.png" class="plain" />
     <img src="{{page.assets}}03-notes-with-transliteration.png" class="plain" />

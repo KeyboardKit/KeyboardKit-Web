@@ -1,5 +1,5 @@
 ---
-title:  New Case Study - Hayatar Armenian keyboard
+title:  Case Study - Hayatar Armenian keyboard
 date:   2023-08-02 08:00:00 +0100
 tags:   case-studies
 
