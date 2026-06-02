@@ -79,6 +79,15 @@ App-group sharing was another big win - keeping the IndicXlit Core ML model load
 We at KeyboardKit are happy to see apps like Akshar bring native, privacy-focused Indic typing to iPhone and iPad, making it easier for people everywhere to write in their native language.
 
 
+## News Coverage
+
+![News Coverage]({{page.assets}}news.png)
+
+Akshar has been covered across Indian and regional publications. The Indian Express ran the [original story](https://indianexpress.com/article/technology/akshar-kannada-free-keyboard-ai4bharat-10715582/) on how a father's solution to his son's Kannada homework became a free keyboard app for 21 Indian languages.
+
+Mint followed up with a [long-form feature](https://www.livemint.com/technology/akshar-app-how-a-fathers-attempt-to-help-with-kannada-homework-led-to-a-keyboard-app-for-21-indian-languages-11780295341667.html) by Aman Gupta and Tarunya Sanjay. The story was covered in Hindi by [Zee News](https://zeenews.india.com/hindi/technology/father-built-solution-for-son-homework-akshar-app-become-free-keyboard-app-for-21-indian-languages/3233738) and in Kannada by [Vartha Bharati](https://www.varthabharati.in/vishesha-varadigalu/developer-builds-keyboard-for-21-languages-to-teach-kannada-to-his-son-2250798). [News Karnataka](https://newskarnataka.com/karnataka/bengaluru/bengaluru-developer-builds-ai-powered-kannada-keyboard-for-iphone-users/21052026/) and [Business News This Week](https://businessnewsthisweek.com/technology/akshar-3-0-debuts-free-iphone-keyboard-expands-odia-indian-language-typing-with-on-device-ai/) covered the 3.0 launch in early May.
+
+
 ## Download
 
 You can [download Akshar from the App Store]({{page.appstore}}) to give it a try, and improve your Indic typing experience.
