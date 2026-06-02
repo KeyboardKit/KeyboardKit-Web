@@ -2,9 +2,6 @@
 title: Akshar
 subtitle: Indic Transliteration Keyboard
 
-permalink: /previews/akshar
-layout: page-sidebar
-
 image:  /assets/case-studies/akshar/header.jpg
 assets: /assets/case-studies/akshar/article/
 
@@ -73,7 +70,7 @@ KeyboardKit provided a solid, well-structured foundation, to let Krishna focus o
 
 > KeyboardKit was essential to the project. The polish and finish of Akshar wouldn't have been possible without it. The library architecture made it straightforward to customise the layout and behaviour to fit my specific needs, while keeping the keyboard feeling native and consistent with what iOS users expect. / Krishna Permi
 
-A few specific places earned its keep. The suggestion toolbar was customized to render Indic glyphs at the right metrics, and the language switching - where Akshar rotates through up to 11 enabled scripts via the globe key - was straightforward thanks to KeyboardKit's locale-context handling.
+A few specific places earned its keep. The suggestion toolbar was customized to render Indic glyphs at the right metrics, and the language switching - where Akshar rotates through all enabled scripts with the globe key - was straightforward thanks to KeyboardKit's locale-context handling.
 
 App-group sharing was another big win - keeping the IndicXlit Core ML model loaded in the keyboard process while letting the app use the same model just worked. Settings sync between the app and the keyboard, which is non-trivial in a sandboxed iOS keyboard, has been predictable thanks to the sync engine KeyboardKit provides.
 
