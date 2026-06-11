@@ -1,6 +1,19 @@
 <a name="what-is"></a>
-<article class="wrapper slide-in">
+<article class="wrapper wide slide-in">
   <h2>What is a Custom Keyboard?</h2>
   <p>A custom keyboard can replace the native software keyboard, and lets users use your app's unique features in any app that support typing and pasting.</p>
   <a href="/about" class="cta">Learn more</a>
+</article>
+<article class="wrapper wide slide-in">
+  <h2>What is KeyboardKit?</h2>
+  <p>KeyboardKit gives you everything you need to build a native & fully customizable keyboard.</p>
+  <div class="grid col3 mobile carousel">
+    {% for item in site.data.feature-promos limit:3 %}
+      {% include kankoda/components/image-card item=item color="blue" card_class="keyboard" %}
+    {% endfor %}
+  </div>
+  <div>
+    <a href="/features" class="cta">View Features</a>
+    <a href="/pro" class="cta glass">KeyboardKit Pro</a>
+  </div>
 </article>
