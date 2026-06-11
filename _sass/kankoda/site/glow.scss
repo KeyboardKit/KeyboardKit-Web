@@ -7,11 +7,11 @@
 
 %glow-before {
   background:
-    radial-gradient(circle at 18% 30%, var(--glass-blue-bg) 0, rgba(166, 205, 255, 0) 30%),
-    radial-gradient(circle at 76% 18%, var(--glass-green-bg) 0, rgba(203, 236, 175, 0) 28%),
-    radial-gradient(circle at 86% 56%, var(--glass-yellow-bg) 0, rgba(255, 232, 160, 0) 30%),
-    radial-gradient(circle at 54% 86%, var(--glass-red-bg) 0, rgba(255, 198, 205, 0) 28%),
-    radial-gradient(circle at 26% 82%, var(--glass-purple-bg) 0, rgba(212, 202, 255, 0) 32%);
+    radial-gradient(circle at 18% 30%, var(--glow-blue-bg) 0, rgba(166, 205, 255, 0) 30%),
+    radial-gradient(circle at 76% 18%, var(--glow-green-bg) 0, rgba(203, 236, 175, 0) 28%),
+    radial-gradient(circle at 86% 56%, var(--glow-yellow-bg) 0, rgba(255, 232, 160, 0) 30%),
+    radial-gradient(circle at 54% 86%, var(--glow-red-bg) 0, rgba(255, 198, 205, 0) 28%),
+    radial-gradient(circle at 26% 82%, var(--glow-purple-bg) 0, rgba(212, 202, 255, 0) 32%);
   filter: blur(72px);
   opacity: 0.95;
   transform: translate3d(0, 0, 0);
@@ -19,11 +19,11 @@
 
 %glow-before-gold {
   background:
-    radial-gradient(circle at 18% 30%, var(--glass-yellow-bg) 0, rgba(255, 232, 160, 0) 30%),
-    radial-gradient(circle at 76% 18%, var(--glass-orange-bg) 0, rgba(255, 210, 160, 0) 28%),
-    radial-gradient(circle at 86% 56%, var(--glass-peach-bg) 0, rgba(255, 190, 160, 0) 30%),
-    radial-gradient(circle at 54% 86%, var(--glass-pink-bg) 0, rgba(255, 185, 210, 0) 28%),
-    radial-gradient(circle at 26% 82%, var(--glass-orange-bg) 0, rgba(255, 210, 160, 0) 32%);
+    radial-gradient(circle at 18% 30%, var(--glow-yellow-bg) 0, rgba(255, 232, 160, 0) 30%),
+    radial-gradient(circle at 76% 18%, var(--glow-orange-bg) 0, rgba(255, 210, 160, 0) 28%),
+    radial-gradient(circle at 86% 56%, var(--glow-peach-bg) 0, rgba(255, 190, 160, 0) 30%),
+    radial-gradient(circle at 54% 86%, var(--glow-pink-bg) 0, rgba(255, 185, 210, 0) 28%),
+    radial-gradient(circle at 26% 82%, var(--glow-orange-bg) 0, rgba(255, 210, 160, 0) 32%);
   filter: blur(72px);
   opacity: 0.95;
   transform: translate3d(0, 0, 0);
@@ -31,11 +31,11 @@
 
 %glow-before-silver {
   background:
-    radial-gradient(circle at 18% 30%, var(--glass-silver-light-bg) 0, rgba(220, 226, 238, 0) 30%),
-    radial-gradient(circle at 76% 18%, var(--glass-silver-bg) 0, rgba(195, 200, 215, 0) 28%),
-    radial-gradient(circle at 86% 56%, var(--glass-silver-light-bg) 0, rgba(220, 226, 238, 0) 30%),
-    radial-gradient(circle at 54% 86%, var(--glass-silver-bg) 0, rgba(195, 200, 215, 0) 28%),
-    radial-gradient(circle at 26% 82%, var(--glass-silver-light-bg) 0, rgba(220, 226, 238, 0) 32%);
+    radial-gradient(circle at 18% 30%, var(--glow-silver-light-bg) 0, rgba(220, 226, 238, 0) 30%),
+    radial-gradient(circle at 76% 18%, var(--glow-silver-bg) 0, rgba(195, 200, 215, 0) 28%),
+    radial-gradient(circle at 86% 56%, var(--glow-silver-light-bg) 0, rgba(220, 226, 238, 0) 30%),
+    radial-gradient(circle at 54% 86%, var(--glow-silver-bg) 0, rgba(195, 200, 215, 0) 28%),
+    radial-gradient(circle at 26% 82%, var(--glow-silver-light-bg) 0, rgba(220, 226, 238, 0) 32%);
   filter: blur(72px);
   opacity: 0.95;
   transform: translate3d(0, 0, 0);
@@ -43,11 +43,11 @@
 
 %glow-before-blue {
   background:
-    radial-gradient(circle at 18% 30%, var(--glass-blue-bg) 0, rgba(166, 205, 255, 0) 30%),
-    radial-gradient(circle at 76% 18%, var(--glass-indigo-bg) 0, rgba(150, 180, 255, 0) 28%),
-    radial-gradient(circle at 86% 56%, var(--glass-blue-bg) 0, rgba(166, 205, 255, 0) 30%),
-    radial-gradient(circle at 54% 86%, var(--glass-indigo-bg) 0, rgba(150, 180, 255, 0) 28%),
-    radial-gradient(circle at 26% 82%, var(--glass-purple-bg) 0, rgba(212, 202, 255, 0) 32%);
+    radial-gradient(circle at 18% 30%, var(--glow-blue-bg) 0, rgba(166, 205, 255, 0) 30%),
+    radial-gradient(circle at 76% 18%, var(--glow-indigo-bg) 0, rgba(150, 180, 255, 0) 28%),
+    radial-gradient(circle at 86% 56%, var(--glow-blue-bg) 0, rgba(166, 205, 255, 0) 30%),
+    radial-gradient(circle at 54% 86%, var(--glow-indigo-bg) 0, rgba(150, 180, 255, 0) 28%),
+    radial-gradient(circle at 26% 82%, var(--glow-purple-bg) 0, rgba(212, 202, 255, 0) 32%);
   filter: blur(72px);
   opacity: 0.95;
   transform: translate3d(0, 0, 0);
