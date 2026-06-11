@@ -34,52 +34,10 @@ div.tag {
 
   // Colored Tags
 
-  &.blue {
-    --tag-bg: var(--glass-blue-bg);
-    --tag-border: rgba(111, 168, 232, 0.5);
-    --tag-color: var(--glass-blue-text);
-  }
-
-  &.green {
-    --tag-bg: var(--glass-green-bg);
-    --tag-border: rgba(114, 183, 131, 0.5);
-    --tag-color: var(--glass-green-text);
-  }
-
-  &.yellow {
-    --tag-bg: rgba(255, 210, 0, 0.55);
-    --tag-border: rgba(200, 160, 0, 0.4);
-    --tag-color: rgba(100, 70, 0, 1);
-  }
-
-  &.orange {
-    --tag-bg: var(--glass-orange-bg);
-    --tag-border: rgba(220, 141, 69, 0.5);
-    --tag-color: var(--glass-orange-text);
-  }
-
-  &.red {
-    --tag-bg: var(--glass-red-bg);
-    --tag-border: rgba(210, 111, 111, 0.5);
-    --tag-color: var(--glass-red-text);
-  }
-
-  &.purple {
-    --tag-bg: var(--glass-purple-bg);
-    --tag-border: rgba(171, 136, 217, 0.5);
-    --tag-color: var(--glass-purple-text);
-  }
-
   &.pro {
     --tag-border: rgba(220, 140, 80, 0.4);
     --tag-color: rgba(100, 40, 0, 1);
     background: linear-gradient(135deg, rgba(255, 210, 80, 0.95), rgba(255, 155, 100, 0.95)) !important;
-  }
-
-  &.releases {
-    --tag-bg: var(--glass-blue-bg);
-    --tag-border: rgba(111, 168, 232, 0.5);
-    --tag-color: #1f5f9f;
   }
 }
 
