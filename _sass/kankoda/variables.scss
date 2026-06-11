@@ -2,10 +2,9 @@
 :root {
   // Light mode (default)
   --color-bg-light: #FFFFFF;
-  --color-bg-dark: #1C1C1E;
-  --color-bg-dark-blue: #10111f;
-  --color-text-light: #000000;
-  --color-text-dark: #FFFFFF;
+  --color-bg-dark: #10111f;
+  --color-text-light: #000000DD;
+  --color-text-dark: #FFFFFFDD;
 
   --color-bg: var(--color-bg-light);
   --color-text: var(--color-text-light);
