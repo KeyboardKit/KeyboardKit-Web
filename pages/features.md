@@ -33,23 +33,13 @@ KeyboardKit's core keyboard engine provides essential models, features and views
 
 <div class="grid col3 mobile carousel">
 {% for feature in core_features %}
-  {% include kankoda/components/image-card item=feature color="blue" %}
-{% endfor %}
-</div>
-
-## System & Utilities
-
-KeyboardKit's system features add a native looking keyboard view and additional utilities.
-
-<div class="grid col3 mobile carousel">
-{% for feature in system_features %}
   {% include kankoda/components/image-card item=feature color="green" %}
 {% endfor %}
 </div>
 
-## Intelligence & Text
+## Intelligence & Voice
 
-KeyboardKit's text & intelligence features improves the typing and text input capabilities.
+KeyboardKit's intelligence & voice features improves the typing and text input capabilities.
 
 <div class="grid col3 mobile carousel">
 {% for feature in intelligence_features %}
@@ -63,6 +53,16 @@ KeyboardKit's UI & design features let you customize the keyboard and tailor it 
 
 <div class="grid col3 mobile carousel">
 {% for feature in ui_features %}
-  {% include kankoda/components/image-card item=feature color="purple" %}
+  {% include kankoda/components/image-card item=feature color="blue" %}
+{% endfor %}
+</div>
+
+## System & Utilities
+
+KeyboardKit provides ways to interact with the system and additional utilities.
+
+<div class="grid col3 mobile carousel">
+{% for feature in system_features %}
+  {% include kankoda/components/image-card item=feature color="" %}
 {% endfor %}
 </div>
