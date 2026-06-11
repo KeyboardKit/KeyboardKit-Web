@@ -4,7 +4,6 @@ layout: page
 
 eyebrow: KeyboardKit
 title: Case Studies
-title-color: purple
 
 image: /assets/headers/case-studies.jpg
 

@@ -28,7 +28,7 @@
 - featured: 1
   tag: keyboardkit
   title: Which languages are supported?
-  text: KeyboardKit supports [76 locales](/locales) out of the box, with locale-specific autocomplete, spell checking, and keyboard layouts. You can also add support for additional languages.
+  text: KeyboardKit supports [75+ locales](/locales) out of the box, with locale-specific autocomplete, spell checking, and keyboard layouts. You can also add support for additional languages.
 
 - tag: keyboardkit
   title: Is KeyboardKit open source?

@@ -14,8 +14,9 @@
       </div>
 
       <div class="column">
-        <p class="toggle">Licensing</p>
+        <p class="toggle">SDK</p>
         <div class="content">
+          <a href="/features">Features</a>
           <a href="/pro">KeyboardKit Pro</a>
           <a href="/pricing">Pricing</a>
           <a href="/business-licenses">Business Licenses</a>
@@ -25,7 +26,7 @@
       </div>
 
       <div class="column">
-        <p class="toggle">News</p>
+        <p class="toggle">News & Press</p>
         <div class="content">
           <a href="{{site.urls.blog}}">Blog</a>
           <a href="{{site.urls.rss}}">RSS</a>
