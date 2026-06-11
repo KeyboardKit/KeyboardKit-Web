@@ -15,12 +15,12 @@ header[role="banner"] {
 
   // When scrolled, add background and shadow
   &.scrolled {
-    background-color: var(--color-bg);
-    border-bottom: solid 1px var(--color-border);
+    background-color: var(--bg);
+    border-bottom: solid 1px var(--border);
   }
 
   a {
-    color: var(--color-text);
+    color: var(--text);
   }
 
   .wrapper {
@@ -70,7 +70,7 @@ header[role="banner"] {
     border: none;
     cursor: pointer;
     padding: 0.5rem;
-    color: var(--color-text);
+    color: var(--text);
     margin-left: auto;
 
     @media (max-width: 700px) {
@@ -88,7 +88,7 @@ header[role="banner"] {
         position: absolute;
         width: 100%;
         height: 2px;
-        background-color: var(--color-text);
+        background-color: var(--text);
         transition: all 0.3s ease;
 
         &:nth-child(1) {
@@ -132,7 +132,7 @@ header[role="banner"] {
       top: 100%;
       left: 0;
       right: 0;
-      background-color: var(--color-bg);
+      background-color: var(--bg);
       flex-direction: column;
       padding: 1rem 2rem;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);

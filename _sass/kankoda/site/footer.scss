@@ -3,8 +3,8 @@ footer {
   z-index: 1;
   font-size: 0.85em;
   padding: 2rem 0;
-  background-color: var(--color-bg);
-  border-top: 1px solid var(--color-border);
+  background-color: var(--bg);
+  border-top: 1px solid var(--border);
 
   .row {
     display: flex;
@@ -21,7 +21,7 @@ footer {
     min-width: 0;
 
     @media (max-width: 700px) {
-      border-bottom: 1px solid var(--color-border);
+      border-bottom: 1px solid var(--border);
 
       &:last-child {
         border-bottom: none;
@@ -82,7 +82,7 @@ footer {
     }
 
     a {
-      color: var(--color-text);
+      color: var(--text);
       text-decoration: none;
       opacity: var(--opacity-secondary);
       transition: opacity var(--duration-link) ease;
@@ -103,7 +103,7 @@ footer {
 
     a {
       opacity: 1;
-      color: var(--color-text);
+      color: var(--text);
       text-decoration: none;
 
       &:hover {

@@ -10,13 +10,13 @@ div.tag {
   gap: 0.35rem;
   width: fit-content;
   padding: 0.18rem 0.42rem 0.22rem;
-  border: 1px solid var(--tag-border, var(--color-border-glass));
+  border: 1px solid var(--tag-border, var(--border-glass));
   border-radius: 0.38rem;
   background: var(--tag-bg, rgba(255, 255, 255, 0.55));
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   box-shadow: var(--shadow-default);
-  color: var(--tag-color, var(--color-text));
+  color: var(--tag-color, var(--text));
   font-size: 0.82rem;
   font-weight: 600;
   line-height: 1.35;
@@ -62,7 +62,7 @@ button.tag {
   &.active {
     background: var(--tag-bg, rgba(255, 255, 255, 0.72));
     border-color: var(--tag-border, rgba(255, 255, 255, 0.72));
-    color: var(--tag-color, var(--color-text));
+    color: var(--tag-color, var(--text));
     opacity: 1;
   }
 

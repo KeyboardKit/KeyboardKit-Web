@@ -1,5 +1,5 @@
 section.glow, section.showcase {
-  border-top: 1px solid var(--color-border-glass);
+  border-top: 1px solid var(--border-glass);
 }
 
 section.showcase {
@@ -70,11 +70,11 @@ section.showcase {
   }
 
   &.dark {
-    background: var(--color-bg-dark);
-    color: var(--color-text-dark);
+    background: var(--bg-dark);
+    color: var(--text-dark);
 
     a:not(.cta):not(.glass) {
-      color: var(--color-text-dark) !important;
+      color: var(--text-dark) !important;
     }
   }
 }

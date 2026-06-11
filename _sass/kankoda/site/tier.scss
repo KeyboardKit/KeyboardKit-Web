@@ -108,7 +108,7 @@ div.glass.tier {
   padding: 0.25rem;
   background: rgba(0, 0, 0, 0.06);
   border-radius: var(--radius-capsule);
-  border: 1px solid var(--color-border);
+  border: 1px solid var(--border);
 }
 
 .pricing-toggle-annual-wrap {
@@ -120,7 +120,7 @@ div.glass.tier {
   border-radius: var(--radius-capsule);
   border: none;
   background: transparent;
-  color: var(--color-text);
+  color: var(--text);
   font-family: inherit;
   font-size: 1rem;
   font-weight: 500;
@@ -129,7 +129,7 @@ div.glass.tier {
   transition: all 0.2s ease;
 
   &.active {
-    background: var(--color-bg);
+    background: var(--bg);
     opacity: 0.8;
     font-weight: 700;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -157,10 +157,10 @@ a.tier-cta {
   align-items: center;
   justify-content: center;
   padding: 0.9rem 1.4rem;
-  border: 1px solid var(--color-border);
+  border: 1px solid var(--border);
   border-radius: var(--radius-capsule);
-  background: var(--color-bg);
-  color: var(--color-text) !important;
+  background: var(--bg);
+  color: var(--text) !important;
   font-size: 1rem;
   font-weight: 700;
   line-height: 1;
@@ -171,6 +171,6 @@ a.tier-cta {
 
   &:hover {
     transform: scale(1.03);
-    box-shadow: 0 4px 24px var(--color-shadow);
+    box-shadow: 0 4px 24px var(--shadow-color);
   }
 }

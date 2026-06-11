@@ -18,11 +18,11 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.7);
     background-color: var(--image-card-media-bg, rgba(224, 230, 240, 0.9));
 
-    &.blue { --image-card-media-bg: var(--bg-blue-vivid); }
-    &.green { --image-card-media-bg: var(--bg-green-vivid); }
-    &.orange { --image-card-media-bg: var(--bg-orange-vivid); }
-    &.purple { --image-card-media-bg: var(--bg-purple-vivid); }
-    &.red { --image-card-media-bg: var(--bg-red-vivid); }
+    &.blue { --image-card-media-bg: color-mix(in srgb, var(--glow-blue) 55%, transparent); }
+    &.green { --image-card-media-bg: color-mix(in srgb, var(--glow-green) 55%, transparent); }
+    &.orange { --image-card-media-bg: color-mix(in srgb, var(--glow-orange) 55%, transparent); }
+    &.purple { --image-card-media-bg: color-mix(in srgb, var(--glow-purple) 55%, transparent); }
+    &.red { --image-card-media-bg: color-mix(in srgb, var(--glow-red) 55%, transparent); }
 
     img {
       width: 100%;

@@ -1,18 +1,8 @@
 // Light/Dark Mode Foundation
 :root {
-  // Light mode (default)
-  --color-bg-light: #FFFFFF;
-  --color-bg-dark: #10111f;
-  --color-text-light: #000000DD;
-  --color-text-dark: #FFFFFFDD;
-
-  --color-bg: var(--color-bg-light);
-  --color-text: var(--color-text-light);
-  --color-border: rgba(0, 0, 0, 0.1);
-  --color-border-glass: rgba(255,255,255,0.8);
-  --color-border-dark: rgba(255, 255, 255, 0.1);
-  --color-shadow: rgba(0, 0, 0, 0.12);
-  --shadow-default: 0 4px 24px rgba(0,0,0,0.12);
+  --bg: var(--bg-light);
+  --bg-dark: #10111f;
+  --bg-light: #FFFFFF;
 
   --bg-blue: rgba(231, 239, 252, 0.7);
   --bg-green: rgba(229, 250, 229, 0.7);
@@ -20,12 +10,15 @@
   --bg-purple: rgba(235, 229, 249, 0.7);
   --bg-red: rgba(252, 231, 231, 0.7);
 
-  --bg-blue-vivid: rgba(166, 205, 255, 0.5);
-  --bg-green-vivid: rgba(166, 230, 166, 0.5);
-  --bg-orange-vivid: rgba(255, 200, 140, 0.5);
-  --bg-purple-vivid: rgba(200, 185, 255, 0.5);
-  --bg-red-vivid: rgba(255, 180, 180, 0.5);
+  --border: rgba(0, 0, 0, 0.1);
+  --border-glass: rgba(255,255,255,0.8);
+  --border-dark: rgba(255, 255, 255, 0.1);
 
+  --duration-accordion: 0.3s;
+  --duration-link: 0.4s;
+
+  --feature-table-even-row-color: #ffffff88;
+  
   --glass-blue-text: #2d7ecf;
   --glass-green-text: #3d8f66;
   --glass-yellow-text: #bf7d22;
@@ -45,7 +38,13 @@
   --glow-red: rgba(255, 198, 205, 0.62);
   --glow-purple: rgba(212, 202, 255, 0.58);
 
+  --grid-gap: 20px;
+
   --opacity-secondary: 0.7;
+
+  --page-content-media-gap: 2em;
+
+  --paragraph-spacing: 20px;
 
   --radius-capsule: 999px;
   --radius-glass-panel: 20px;
@@ -53,30 +52,26 @@
   --radius-screenshot: 10px;
   --radius-tag: 999px;
 
-  --duration-accordion: 0.3s;
-  --duration-link: 0.4s;
+  --shadow-color: rgba(0, 0, 0, 0.12);
+  --shadow-default: 0 4px 24px rgba(0,0,0,0.12);
 
-  --grid-gap: 20px;
-
-  --paragraph-spacing: 20px;
+  --text: var(--text-light);
+  --text-dark: #FFFFFFDD;
+  --text-light: #000000DD;
 
   --wrapper-width: 900px;
   --wrapper-width-wide: 1250px;
   --wrapper-width-narrow: 650px;
-
-  --page-content-media-gap: 2em;
-
-  --feature-table-even-row-color: #ffffff88;
 }
 
 /*
 // Dark mode
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-bg: var(--color-bg-dark);
-    --color-text: var(--color-text-dark);
+    --bg: var(--bg-dark);
+    --text: var(--text-dark);
 
-    --color-border: rgba(255, 255, 255, 0.1);
+    --border: rgba(255, 255, 255, 0.1);
   }
 }
 */

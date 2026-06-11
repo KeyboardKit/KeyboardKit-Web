@@ -3,13 +3,13 @@
 div.glass {
   background: rgba(255,255,255,0.1);
   backdrop-filter: blur(8px);
-  border: 1px solid var(--color-border-glass);
+  border: 1px solid var(--border-glass);
   box-shadow: var(--shadow-default);
   -webkit-backdrop-filter: blur(8px); // For Safari support
 }
 
 img.glass {
-  border: 1px solid var(--color-border-glass);
+  border: 1px solid var(--border-glass);
   border-radius: 5em;
   box-shadow: var(--shadow-default);
 }
@@ -19,7 +19,7 @@ img.glass {
 
 h1, h2, span {
   &.glass {
-    color: var(--color-text);
+    color: var(--text);
 
     &.blue, &.green, &.yellow, &.orange, &.red, &.purple {
       color: transparent !important;
@@ -78,11 +78,11 @@ div.glass {
   }
 
   &.dark {
-    border-color: var(--color-border-dark);
+    border-color: var(--border-dark);
 
     .tag {
-      border-color: var(--color-border-dark);
-      color: var(--color-text-dark) !important;
+      border-color: var(--border-dark);
+      color: var(--text-dark) !important;
     }
   }
 }

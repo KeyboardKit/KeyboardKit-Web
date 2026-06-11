@@ -53,12 +53,12 @@ details[open] .faq-item-title::after {
   border-radius: var(--radius-glass-panel);
   background: rgba(255, 255, 255, 0.55);
   border: 1px solid rgba(255, 255, 255, 0.7);
-  color: var(--color-text);
+  color: var(--text);
   box-shadow: var(--shadow-default);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
 
-  a, a:hover, a:visited { color: var(--color-text) !important; }
+  a, a:hover, a:visited { color: var(--text) !important; }
 
   > p:first-child { margin-top: 0; }
   > p:last-child  { margin-bottom: 0; }

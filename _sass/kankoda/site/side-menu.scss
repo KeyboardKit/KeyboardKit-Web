@@ -52,7 +52,7 @@ a.side-menu-title {
 
 .side-menu-back-link {
   position: relative;
-  color: var(--color-text) !important;
+  color: var(--text) !important;
   opacity: 0.8;
   margin-bottom: 2.3rem;
   padding-left: 0;
@@ -103,7 +103,7 @@ a.side-menu-title {
     border-radius: 999px;
     background: transparent;
     box-shadow: none;
-    color: var(--color-text) !important;
+    color: var(--text) !important;
     font-weight: 600;
     line-height: 1.25;
     text-decoration: none;

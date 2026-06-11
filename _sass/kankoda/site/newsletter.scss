@@ -5,15 +5,15 @@
     font-size: 1rem;
     padding: 0.625rem 1.25rem;
     border-radius: var(--radius-glass-link);
-    border: solid 1px var(--color-border);
+    border: solid 1px var(--border);
   }
 
   button {
-    color: var(--color-text-dark);
-    background-color: var(--color-bg-dark);
+    color: var(--text-dark);
+    background-color: var(--bg-dark);
 
     &:active {
-      color: var(--color-text-dark);
+      color: var(--text-dark);
       background-color: #555;
     }
   }
