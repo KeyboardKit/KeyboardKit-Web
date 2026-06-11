@@ -15,19 +15,24 @@ terms: /pro/terms
 <div class="centered page-content wide wrapper" markdown="1">
 
 # KeyboardKit Pro
+
 ## Pricing that scales with your app.
 
 Unlock pro features that take your keyboard to the next level.
 
 
 {% include licenses/tier-boxes %}
+</div>
 
-
+<section class="showcase blue">
+<div class="wide wrapper slide-in" markdown="1">
 ## Scaling Up?
 
 If your company exceeds $10M or your app exceeds $1M in annual revenue, you need a [Business License](/business).
+</div>
+</section>
 
-
+<div class="centered wide wrapper" markdown="1">
 ## Full Feature Comparison
 
 Compare all features across all plans.
@@ -35,7 +40,7 @@ Compare all features across all plans.
 {% include licenses/feature-table.html tiers=site.data.tiers %}
 </div>
 
-<section class="showcase purple glass">
+<section class="showcase purple">
   <div class="wrapper slide-in">
     <h2>Terms & Conditions</h2>
     <p>The standard <a href="/pro/terms">Terms & Conditions</a> apply to all standard tiers.</p>
@@ -43,7 +48,11 @@ Compare all features across all plans.
   </div>
 </section>
 
-<section class="showcase dark blue">
+<section class="showcase blue">
+  {% include sections/pro/faq %}
+</section>
+
+<section class="showcase dark">
   <div class="wrapper slide-in">
     <h2>Start building today.</h2>
     <p>Try KeyboardKit Pro free for 7 days — upgrade to a plan when you're ready.</p>

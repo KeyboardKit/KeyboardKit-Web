@@ -4,7 +4,7 @@
   <div class="grid col4 carousel mobile">
     {% for usp in site.data.usps %}
     <div class="glass">
-      {% include kankoda/components/icon-badge color=usp.color name=usp.icon %}
+      {% include kankoda/components/icon-badge name=usp.icon %}
       <h4>{{ usp.title }}</h4>
       <p>{{ usp.text }}</p>
     </div>

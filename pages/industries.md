@@ -17,7 +17,7 @@ KeyboardKit can be used to build keyboard experiences for many different industr
 <div class="spaced grid col4">
   {% for industry in site.data.industries %}
   <div class="glass compact">
-    {% include kankoda/components/icon-badge color="blue" name=industry.icon %}
+    {% include kankoda/components/icon-badge name=industry.icon %}
     <h4>{{ industry.title }}</h4>
     <p>{{ industry.text }}</p>
   </div>
