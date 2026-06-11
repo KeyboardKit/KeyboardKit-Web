@@ -53,6 +53,42 @@
   transform: translate3d(0, 0, 0);
 }
 
+%glow-before-green {
+  background:
+    radial-gradient(circle at 18% 30%, var(--glow-green) 0, rgba(203, 236, 175, 0) 30%),
+    radial-gradient(circle at 76% 18%, var(--glow-blue) 0, rgba(166, 205, 255, 0) 28%),
+    radial-gradient(circle at 86% 56%, var(--glow-green) 0, rgba(203, 236, 175, 0) 30%),
+    radial-gradient(circle at 54% 86%, var(--glow-blue) 0, rgba(166, 205, 255, 0) 28%),
+    radial-gradient(circle at 26% 82%, var(--glow-green) 0, rgba(203, 236, 175, 0) 32%);
+  filter: blur(72px);
+  opacity: 0.95;
+  transform: translate3d(0, 0, 0);
+}
+
+%glow-before-purple {
+  background:
+    radial-gradient(circle at 18% 30%, var(--glow-purple) 0, rgba(212, 202, 255, 0) 30%),
+    radial-gradient(circle at 76% 18%, var(--glow-indigo) 0, rgba(150, 180, 255, 0) 28%),
+    radial-gradient(circle at 86% 56%, var(--glow-purple) 0, rgba(212, 202, 255, 0) 30%),
+    radial-gradient(circle at 54% 86%, var(--glow-indigo) 0, rgba(150, 180, 255, 0) 28%),
+    radial-gradient(circle at 26% 82%, var(--glow-purple) 0, rgba(212, 202, 255, 0) 32%);
+  filter: blur(72px);
+  opacity: 0.95;
+  transform: translate3d(0, 0, 0);
+}
+
+%glow-before-red {
+  background:
+    radial-gradient(circle at 18% 30%, var(--glow-red) 0, rgba(255, 198, 205, 0) 30%),
+    radial-gradient(circle at 76% 18%, var(--glow-pink) 0, rgba(255, 185, 210, 0) 28%),
+    radial-gradient(circle at 86% 56%, var(--glow-red) 0, rgba(255, 198, 205, 0) 30%),
+    radial-gradient(circle at 54% 86%, var(--glow-pink) 0, rgba(255, 185, 210, 0) 28%),
+    radial-gradient(circle at 26% 82%, var(--glow-red) 0, rgba(255, 198, 205, 0) 32%);
+  filter: blur(72px);
+  opacity: 0.95;
+  transform: translate3d(0, 0, 0);
+}
+
 %glow-after {
   background:
     linear-gradient(115deg, rgba(255, 255, 255, 0.5) 14%, rgba(255, 255, 255, 0) 42%, rgba(255, 255, 255, 0.26) 70%, rgba(255, 255, 255, 0) 100%),

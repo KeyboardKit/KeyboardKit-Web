@@ -5,6 +5,17 @@ section.glow, section.showcase {
 section.showcase {
   padding: clamp(4rem, 6vw, 5.5rem) 0;
   text-align: center;
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+
+  &::before {
+    @extend %glow-pseudo-base;
+    @extend %glow-before;
+    position: absolute;
+    inset: -18%;
+    opacity: 0.4;
+  }
 
   article {
     > p {
@@ -60,18 +71,40 @@ section.showcase {
     &.spaced { margin: 0 !important; }
   }
 
-  &.blue { background: var(--bg-blue); }
-  &.green { background: var(--bg-green); }
-  &.purple { background: var(--bg-purple); }
-  &.red { background: var(--bg-red); }
+  &.blue {
+    background: var(--bg-blue);
+    &::before { @extend %glow-before-blue; inset: -18%; opacity: 0.4; }
+  }
+
+  &.green {
+    background: var(--bg-green);
+    &::before { @extend %glow-before-green; inset: -18%; opacity: 0.4; }
+  }
+
+  &.purple {
+    background: var(--bg-purple);
+    &::before { @extend %glow-before-purple; inset: -18%; opacity: 0.4; }
+  }
+
+  &.red {
+    background: var(--bg-red);
+    &::before { @extend %glow-before-red; inset: -18%; opacity: 0.4; }
+  }
 
   &.gold {
     background: linear-gradient(135deg, rgba(255, 248, 220, 0.96), rgba(255, 228, 200, 0.92));
+    &::before { @extend %glow-before-gold; inset: -18%; opacity: 0.4; }
+  }
+
+  &.plain {
+    &::before { content: none; }
   }
 
   &.dark {
     background: var(--bg-dark);
     color: var(--text-dark);
+
+    &::before { opacity: 0.15; }
 
     a:not(.cta):not(.glass) {
       color: var(--text-dark) !important;
