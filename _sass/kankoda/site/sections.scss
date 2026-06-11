@@ -57,21 +57,10 @@ section.showcase {
     &.spaced { margin: 0 !important; }
   }
 
-  &.blue {
-    background: #E7EFFC;
-  }
-
-  &.purple {
-    background: #EBE5F9;
-  }
-
-  &.green {
-    background: #E5FAE5;
-  }
-
-  &.red {
-    background: #FCE7E7;
-  }
+  &.blue { background: var(--bg-blue); }
+  &.green { background: var(--bg-green); }
+  &.purple { background: var(--bg-purple); }
+  &.red { background: var(--bg-red); }
 
   &.gold {
     background: linear-gradient(135deg, rgba(255, 248, 220, 0.96), rgba(255, 228, 200, 0.92));
