@@ -36,12 +36,9 @@ description: KeyboardKit Pro unlocks powerful features like 76 locales, autocomp
     <h2>Everything you need.</h2>
     <p>KeyboardKit Pro gives you the full toolkit — from language support and autocomplete to AI.</p>
     <div class="grid col4 carousel mobile">
-      {% for usp in site.data.usps-pro %}
-      <div class="glass compact">
-        {% include kankoda/components/icon-badge name=usp.icon %}
-        <h4>{{ usp.title }}</h4>
-        <p>{{ usp.text }}</p>
-      </div>
+      {% assign features = site.data.features | where: "card.tags" contains: "pro" | sort: "title" %}
+      {% for feature in features %}
+        {% include kankoda/components/image-card item=feature show-tags=0 %}
       {% endfor %}
     </div>
     <div>
@@ -55,7 +52,7 @@ description: KeyboardKit Pro unlocks powerful features like 76 locales, autocomp
   {% include sections/pro/faq %}
 </section>
 
-<section class="showcase dark blue">
+<section class="showcase dark">
   <div class="wrapper slide-in">
     <h2>Ready to go Pro?</h2>
     <p>Start with a free trial and upgrade when you're ready. No credit card required, no commitment — just full access to everything KeyboardKit Pro has to offer.</p>

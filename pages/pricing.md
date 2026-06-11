@@ -41,11 +41,7 @@ Compare all features across all plans.
 </div>
 
 <section class="showcase purple">
-  <div class="wrapper slide-in">
-    <h2>Terms & Conditions</h2>
-    <p>The standard <a href="/pro/terms">Terms & Conditions</a> apply to all standard tiers.</p>
-    <p><a href="{{site.urls.email-custom-terms}}">Contact us</a> to discuss custom terms.</p>
-  </div>
+  {% include sections/pro/terms-standard %}
 </section>
 
 <section class="showcase blue">

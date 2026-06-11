@@ -36,7 +36,7 @@
             {% endfor %}
           </ul>
         </div>
-        {% else %}
+        {% elsif include.show-tags | default: 1 %}{% else %}
         <div class="tags">
           {% for tag in include.item.card.tags %}
           <span class="tag {{tag}}">{{tag}}</span>

@@ -1,16 +1,16 @@
 - name: Business
-  subtitle: Formal Agreements & Multi-Platform Support.
+  subtitle: On-Device License & Multi-Platform Support.
   price: $10k
   price_unit: year
   cta: Contact Us
   url: mailto:info@kankoda.com?subject=Business%License
   box-class: glass tier
   features:
+    - <a href="/pro/license-handling">On-Device License File</a>
     - <a href="/pro/terms">Standard Terms</a>
-    - Signed Agreement
-    - Invoice & PO
-    - <a href="/pro/license-validation">On-Device License File</a>
+    - <a href="/pro/license-handling">1 Month Expiration Grace</a>
     - <a href="/features/platforms">Multi-platform Builds</a>
+    - Invoice Payment & Purchase Order Support
 
 - name: Business+
   badge: Critical Protection
@@ -21,10 +21,10 @@
   url: mailto:info@kankoda.com?subject=Business%License
   features:
     - Everything in Business
-    - Custom Billing
     - Custom Terms
+    - <a href="/pro/license-handling">2 Month Expiration Grace</a>
     - <a href="/features/escrow">Software Escrow</a>
-    - Expiration Grace
+    - Signed Agreement (Optional)
 
 - name: Enterprise
   subtitle: Dedicated Support, Custom SLA & High Value.
@@ -34,7 +34,7 @@
   url: mailto:info@kankoda.com?subject=Business%License
   features:
     - Everything in Business+
-    - High Value
-    - High Volume Use
-    - High Impact
     - Custom SLA
+    - <a href="/pro/license-handling">3+ Month Expiration Grace</a>
+    - High Impact & Value
+    - High Volume Use

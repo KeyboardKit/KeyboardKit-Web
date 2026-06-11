@@ -49,7 +49,15 @@ Business plans include all [pro features](/pro) plus these additional benefits.
 </div>
 </section>
 
-<section class="showcase dark blue">
+<section class="showcase purple">
+  {% include sections/pro/terms-business %}
+</section>
+
+<section class="showcase blue">
+  {% include sections/pro/faq %}
+</section>
+
+<section class="showcase dark">
   <div class="wrapper slide-in">
     <h2>Let's build something great together.</h2>
     <p>Business licenses are tailored to your needs. Reach out and we'll put together a plan that fits your team, your legal requirements, and your timeline — no generic tiers, no surprises.</p>
@@ -57,8 +65,4 @@ Business plans include all [pro features](/pro) plus these additional benefits.
       <a href="{{site.urls.email-business-license}}" class="cta glass">Contact Us</a>
     </div>
   </div>
-</section>
-
-<section class="showcase blue">
-  {% include sections/pro/faq %}
 </section>

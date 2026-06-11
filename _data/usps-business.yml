@@ -16,7 +16,7 @@
 
 - name: Expiration Grace Period
   icon: lucide:clock
-  description: An expiration grace period provides a more flexible license expiration.
+  description: An expiration grace period gives you and your users time to upgrade when renewing a license.
 
 - name: License File
   icon: lucide:file-badge
@@ -32,4 +32,4 @@
 
 - name: Software Escrow
   icon: lucide:vault
-  description: Get access to the SDK source code in case anything happens to KeyboardKit.
+  description: Critical Protection! Get access to the SDK source code in case anything happens to KeyboardKit.

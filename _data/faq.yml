@@ -68,7 +68,7 @@
 
 - tag: licenses
   title: How are licenses validated?
-  text: KeyboardKit's [standard licenses](/pricing) validate over a network call, and therefore require Full Access. [Business licenseses](/business) are validated locally on-device, using a license file, and do not need Full Access.
+  text: KeyboardKit's [standard licenses](/pricing) validate over a network call, and therefore require Full Access. [Business licenseses](/business) are validated on device, and do not need Full Access. Read more [here](/pro/license-handling).
 
 - tag: licenses
   title: Do licenses auto-renew?
