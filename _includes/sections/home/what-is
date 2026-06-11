@@ -9,7 +9,7 @@
   <p>KeyboardKit gives you everything you need to build a native & fully customizable keyboard.</p>
   <div class="grid col3 mobile carousel">
     {% for item in site.data.feature-promos limit:3 %}
-      {% include kankoda/components/image-card item=item color="blue" card_class="keyboard" %}
+      {% include kankoda/components/image-card item=item card_class="keyboard" %}
     {% endfor %}
   </div>
   <div>

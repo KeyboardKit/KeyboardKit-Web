@@ -16,6 +16,13 @@
     aspect-ratio: 16 / 9;
     overflow: hidden;
     border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+    background-color: var(--image-card-media-bg, rgba(224, 230, 240, 0.9));
+
+    &.blue { --image-card-media-bg: var(--bg-blue-vivid); }
+    &.green { --image-card-media-bg: var(--bg-green-vivid); }
+    &.orange { --image-card-media-bg: var(--bg-orange-vivid); }
+    &.purple { --image-card-media-bg: var(--bg-purple-vivid); }
+    &.red { --image-card-media-bg: var(--bg-red-vivid); }
 
     img {
       width: 100%;
@@ -24,53 +31,14 @@
       display: block;
     }
 
-    &.is-generated {
-      --image-card-media-bg: rgba(224, 230, 240, 0.9);
-      --image-card-media-fg: rgba(17, 24, 39, 0.95);
-
+    &.placeholder {
       display: flex;
       align-items: center;
       justify-content: center;
       padding: 1.5rem;
-      background-color: var(--image-card-media-bg);
-      background-image:
-        radial-gradient(circle at 18% 18%, rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0) 34%),
-        radial-gradient(circle at 78% 28%, rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0) 30%),
-        linear-gradient(140deg, rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0.02)),
-        linear-gradient(135deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0));
 
       &.is-emoji {
         padding: 1rem;
-      }
-
-      &.blue {
-        --image-card-media-bg: var(--glass-blue-bg);
-        --image-card-media-fg: var(--glass-blue-text);
-      }
-
-      &.green {
-        --image-card-media-bg: var(--glass-green-bg);
-        --image-card-media-fg: var(--glass-green-text);
-      }
-
-      &.yellow {
-        --image-card-media-bg: var(--glass-yellow-bg);
-        --image-card-media-fg: var(--glass-yellow-text);
-      }
-
-      &.orange {
-        --image-card-media-bg: var(--glass-orange-bg);
-        --image-card-media-fg: var(--glass-orange-text);
-      }
-
-      &.red {
-        --image-card-media-bg: var(--glass-red-bg);
-        --image-card-media-fg: var(--glass-red-text);
-      }
-
-      &.purple {
-        --image-card-media-bg: var(--glass-purple-bg);
-        --image-card-media-fg: var(--glass-purple-text);
       }
     }
   }
@@ -95,7 +63,6 @@
   }
 
   .image-card-media-symbol {
-    color: var(--image-card-media-fg);
     line-height: 0;
   }
 
@@ -105,7 +72,7 @@
   }
 
   &.keyboard .image-card-media.is-image {
-    background-color: rgba(166, 205, 255, 0.35);
+    background-color: var(--bg-blue-vivid);
     padding-bottom: 1rem;
   }
 
