@@ -1,0 +1,12 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "jekyll",
+      "runtimeExecutable": "jekyll",
+      "runtimeArgs": ["serve", "--watch"],
+      "port": 4000,
+      "autoPort": false
+    }
+  ]
+}

@@ -5,7 +5,7 @@
     {% assign featured_industries = site.data.industries | where: "featured", true %}
     {% for industry in featured_industries %}
     <div class="glass compact">
-      {% include kankoda/components/icon-badge color="blue" name=industry.icon %}
+      {% include kankoda/components/icon-badge name=industry.icon %}
       <h4>{{ industry.title }}</h4>
       <p>{{ industry.text }}</p>
     </div>

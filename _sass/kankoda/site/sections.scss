@@ -1,6 +1,7 @@
 section.showcase {
   padding: clamp(4rem, 6vw, 5.5rem) 0;
   text-align: center;
+  border-top: 1px solid var(--color-border-glass);
 
   article {
     > p {
@@ -56,21 +57,32 @@ section.showcase {
     &.spaced { margin: 0 !important; }
   }
 
+  &.blue {
+    background: #E7EFFC;
+  }
+
+  &.purple {
+    background: #EBE5F9;
+  }
+
+  &.green {
+    background: #E5FAE5;
+  }
+
+  &.red {
+    background: #FCE7E7;
+  }
+
+  &.gold {
+    background: linear-gradient(135deg, rgba(255, 248, 220, 0.96), rgba(255, 228, 200, 0.92));
+  }
+
   &.dark {
     background: var(--color-bg-dark);
     color: var(--color-text-dark);
 
     a:not(.cta):not(.glass) {
       color: var(--color-text-dark) !important;
-    }
-
-    &.blue {
-      background: var(--color-bg-dark-blue);
-      color: var(--color-text-dark);
-
-      > .wrapper p {
-        opacity: 0.6;
-      }
     }
   }
 }

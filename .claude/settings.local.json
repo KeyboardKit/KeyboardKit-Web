@@ -13,7 +13,8 @@
       "Bash(lsof -ti:4000)",
       "mcp__Claude_in_Chrome__tabs_context_mcp",
       "Bash(sed -i '' 's/^eyebrow:/subtitle:/' /Users/danielsaidi/Projects/keyboardkit/web/collections/_case-studies/*.md)",
-      "Bash(jekyll build *)"
+      "Bash(jekyll build *)",
+      "mcp__Claude_Preview__preview_start"
     ],
     "deny": [],
     "ask": []
