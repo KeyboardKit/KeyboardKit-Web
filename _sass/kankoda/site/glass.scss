@@ -1,55 +1,17 @@
 // Elements
 
 div.glass {
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(8px);
   border: 1px solid var(--color-border-glass);
   box-shadow: var(--shadow-default);
+  -webkit-backdrop-filter: blur(8px); // For Safari support
 }
 
 img.glass {
   border: 1px solid var(--color-border-glass);
   border-radius: 5em;
   box-shadow: var(--shadow-default);
-}
-
-
-// Shapes
-
-section.glass, section.glow {
-  border-top: 1px solid var(--color-border-glass);
-}
-
-div.glass, section.glass {
-  background: rgba(255,255,255,0.1);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px); // For Safari support
-
-  &.blue,
-  &.green,
-  &.yellow,
-  &.orange,
-  &.red,
-  &.purple {
-    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.76), rgba(255, 255, 255, 0.76));
-  }
-
-  &.blue { background-color: var(--glass-blue-bg); }
-  &.green { background-color: var(--glass-green-bg); }
-  &.yellow { background-color: var(--glass-yellow-bg); }
-  &.orange { background-color: var(--glass-orange-bg); }
-  &.red { background-color: var(--glass-red-bg); }
-  &.purple { background-color: var(--glass-purple-bg); }
-}
-
-
-// Content
-
-.icon-badge.glass {
-  &.blue { color: var(--glass-blue-text) !important; }
-  &.green { color: var(--glass-green-text) !important; }
-  &.yellow { color: var(--glass-yellow-text) !important; }
-  &.orange { color: var(--glass-orange-text) !important; }
-  &.red { color: var(--glass-red-text) !important; }
-  &.purple { color: var(--glass-purple-text) !important; }
 }
 
 
@@ -74,7 +36,6 @@ h1, h2, span {
     &.purple { background-image: linear-gradient(180deg, color-mix(in srgb, var(--glass-purple-text) 60%, white), var(--glass-purple-text)); }
   }
 }
-
 
 
 // Container
