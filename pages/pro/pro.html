@@ -36,7 +36,16 @@ description: KeyboardKit Pro unlocks powerful features like 76 locales, autocomp
     <h2>Everything you need.</h2>
     <p>KeyboardKit Pro gives you the full toolkit — from language support and autocomplete to AI.</p>
     <div class="grid col4 carousel mobile">
+      {% comment %} Preferred, but not supported by GitHub Pages Liquid:
       {% assign features = site.data.features | where: "card.tags" contains: "pro" | sort: "title" %}
+      {% endcomment %}
+      {% assign features = "" | split: "" %}
+      {% for feature in site.data.features %}
+        {% if feature.card.tags contains "pro" %}
+          {% assign features = features | push: feature %}
+        {% endif %}
+      {% endfor %}
+      {% assign features = features | sort: "title" %}
       {% for feature in features %}
         {% include kankoda/components/image-card item=feature show-tags=0 %}
       {% endfor %}
