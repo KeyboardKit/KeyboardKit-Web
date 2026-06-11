@@ -19,9 +19,14 @@ Find answers to common questions about custom keyboards and KeyboardKit below. I
 {% assign items = site.data.faq | where: "tag", "keyboardkit" %}
 {% include kankoda/components/faq-list items=items %}
 
-## Licensing & Pricing
+## KeyboardKit Pro
 
-{% assign items = site.data.faq | where: "tag", "licensing" %}
+{% assign items = site.data.faq | where: "tag", "pro" %}
+{% include kankoda/components/faq-list items=items %}
+
+## Licenses
+
+{% assign items = site.data.faq | where: "tag", "licenses" %}
 {% include kankoda/components/faq-list items=items %}
 
 ## Privacy & Security

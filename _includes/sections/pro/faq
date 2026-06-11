@@ -1,7 +1,9 @@
 <article class="wrapper slide-in">
   <h2>Frequently Asked Questions</h2>
   <p>Common questions about KeyboardKit Pro, licensing, and features.</p>
-  {% assign pro_faqs = site.data.faq | where: "tag", "licensing" %}
-  {% include kankoda/components/faq-list items=pro_faqs %}
+  {% assign pro = site.data.faq | where: "tag", "pro" %}
+  {% assign licenses = site.data.faq | where: "tag", "licenses" %}
+  {% assign items = pro | concat: licenses %}
+  {% include kankoda/components/faq-list items=items %}
   <a href="/faq" class="cta">View All FAQs</a>
 </article>
