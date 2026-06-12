@@ -20,12 +20,12 @@
 
 - featured: true
   icon: lucide:heart-pulse
-  title: Medical
+  title: Medicine & Health
   text: Surface biometric data and health insights at the point of input, giving medical users constant, contextual access to critical information.
 
 - featured: true
   icon: lucide:landmark
-  title: Finance
+  title: Bank & Finance
   text: Surface real-time financial data, sell triggers, and portfolio insights at the point of input — keeping traders and advisors informed as they work.
 
 - featured: true
@@ -34,6 +34,6 @@
   text: Detect exposure to harmful content or signs of grooming or bullying in real time, helping keep children safer wherever they type.
 
 - featured: true
-  icon: lucide:smile
-  title: Entertainment
+  icon: lucide:popcorn
+  title: Media & Entertainment
   text: Build delightful keyboard experiences — GIF keyboards, sticker packs, emoji tools, custom fonts, and more — that users keep coming back to.

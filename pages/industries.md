@@ -12,8 +12,6 @@ description: KeyboardKit powers innovation across a wide range of industries and
 
 KeyboardKit can be used to build keyboard experiences for many different industries — from language technologies and AI, to medicine, finance, media & entertainment, and child protection and anti-bullying. [Contact us]({{site.urls.email}}) if you'd like to discuss your use case.
 
-## Examples
-
 <div class="spaced grid col4">
   {% for industry in site.data.industries %}
   <div class="glass compact">
