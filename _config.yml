@@ -41,6 +41,7 @@ urls:
   appstore:   https://itunes.apple.com/app/keyboardkit/id1568444977
   blog:       /blog
   bluesky:    https://bsky.app/profile/keyboardkit.bsky.social
+  calendar:   https://calendar.app.google/HyJeUXdRczwkp3Jh6
   docs:       https://docs.keyboardkit.com
   github:     https://github.com/KeyboardKit/KeyboardKit
   gumroad:    https://kankoda.gumroad.com/l/keyboardkitpro
