@@ -19,16 +19,16 @@ You can find press kits for the KeyboardKit SDK and the KeyboardKit app below. E
 
 The KeyboardKit SDK is a closed-source framework for creating custom keyboards for iPhone and iPad devices.
 
-* Press Kit
-* Product Presentation
+* [Press Kit](https://github.com/KeyboardKit/KeyboardKit-Web/releases/download/press-material/Press-Kit-SDK-2606.zip)
+* [Product Presentation](https://github.com/KeyboardKit/KeyboardKit-Web/releases/download/press-material/KeyboardKit-Product-Presentation-2606.pdf)
 
 
 ## KeyboardKit App
 
 The KeyboardKit App lets you use KeyboardKit and its many features without having to create your own app.
 
-* Press Kit
-* App Store
+* [Press Kit](https://github.com/KeyboardKit/KeyboardKit-Web/releases/download/press-material/Press-Kit-App-2606.zip)
+* [App Store]({{site.urls.appstore}})
 
 
 ## News & Updates
