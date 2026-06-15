@@ -13,7 +13,7 @@ description: KeyboardKit has many features and is free to start using. Upgrade t
 
 presskit-app: https://github.com/KeyboardKit/KeyboardKit-Web/releases/download/press-material/Press-Kit-App-260615.zip
 presskit-sdk: https://github.com/KeyboardKit/KeyboardKit-Web/releases/download/press-material/Press-Kit-SDK-260615.zip
-presentation: https://github.com/KeyboardKit/KeyboardKit-Web/releases/download/press-material/KeyboardKit-Product-Presentation-2606.pdf
+presentation: https://github.com/KeyboardKit/KeyboardKit-Web/releases/download/press-material/KeyboardKit-Product-Presentation-260615.pdf
 ---
 
 You can find press kits for the KeyboardKit SDK and the KeyboardKit app below. Each press kit contains icons, screenshots, graphics, and product information.
