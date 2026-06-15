@@ -7,9 +7,9 @@
   box-class: glass tier
   features:
     - <a href="/pro/license-handling">On-Device License File</a>
-    - <a href="/pro/terms">Standard Terms</a>
     - <a href="/pro/license-handling">1 Month Expiration Grace</a>
-    - <a href="/features/platforms">Multi-platform Builds</a>
+    - Signed <a href="/pro/terms">Standard Terms</a>
+    - On-Demand <a href="/features/platforms">Multi-Platform Builds</a>
     - Invoice Payment & Purchase Order Support
 
 - name: Business+
@@ -21,10 +21,10 @@
   url: mailto:info@kankoda.com?subject=Business%License
   features:
     - Everything in Business
-    - Custom Terms
     - <a href="/pro/license-handling">2 Month Expiration Grace</a>
     - <a href="/features/escrow">Software Escrow</a>
-    - Signed Agreement (Optional)
+    - Custom Terms
+    - Custom Billing
 
 - name: Enterprise
   subtitle: Dedicated Support, Custom SLA & High Value.
@@ -34,7 +34,7 @@
   url: mailto:info@kankoda.com?subject=Business%License
   features:
     - Everything in Business+
+    - <a href="/pro/license-handling">3 Month Expiration Grace</a>
     - Custom SLA
-    - <a href="/pro/license-handling">3+ Month Expiration Grace</a>
-    - High Impact & Value
-    - High Volume Use
+    - High Impact/Value Use
+    - White Labeling
