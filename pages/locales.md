@@ -5,10 +5,6 @@ layout: page-sidebar
 title: Locales
 
 redirect_from: /languages
-
-hero:
-  icon: /assets/heros/locales.png
-  icon-class: plain
   
 description: KeyboardKit supports 75+ locales
 ---

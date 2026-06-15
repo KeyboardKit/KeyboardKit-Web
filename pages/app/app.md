@@ -7,11 +7,6 @@ page-title: KeyboardKit App
 
 assets: /assets/app/
 
-hero:
-    icon: /assets/heros/app.png
-    icon-class: plain
-    title: KeyboardKit App
-
 description: The KeyboardKit app lets you try KeyboardKit in action on iOS and iPadOS, including all pro features.
 ---
 

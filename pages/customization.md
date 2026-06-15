@@ -1,13 +1,10 @@
 ---
 permalink: /customization
+layout: page-sidebar
 
 title: Customizations
 
 image:  /assets/headers/features.jpg
-
-hero: 
-  icon: /assets/heros/features.png
-  icon-class: plain
 
 description: KeyboardKit is very customizable
 ---
