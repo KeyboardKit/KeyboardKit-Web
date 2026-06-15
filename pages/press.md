@@ -10,6 +10,10 @@ sidebar-menu:
 image: /assets/headers/press.jpg
 
 description: KeyboardKit has many features and is free to start using. Upgrade to KeyboardKit Pro to unlock pro features.
+
+presskit-app: https://github.com/KeyboardKit/KeyboardKit-Web/releases/download/press-material/Press-Kit-App-260615.zip
+presskit-sdk: https://github.com/KeyboardKit/KeyboardKit-Web/releases/download/press-material/Press-Kit-SDK-260615.zip
+presentation: https://github.com/KeyboardKit/KeyboardKit-Web/releases/download/press-material/KeyboardKit-Product-Presentation-2606.pdf
 ---
 
 You can find press kits for the KeyboardKit SDK and the KeyboardKit app below. Each press kit contains icons, screenshots, graphics, and product information.
@@ -19,15 +23,15 @@ You can find press kits for the KeyboardKit SDK and the KeyboardKit app below. E
 
 The KeyboardKit SDK is a closed-source framework for creating custom keyboards for iPhone and iPad devices.
 
-* [Press Kit](https://github.com/KeyboardKit/KeyboardKit-Web/releases/download/press-material/Press-Kit-SDK-2606.zip)
-* [Product Presentation](https://github.com/KeyboardKit/KeyboardKit-Web/releases/download/press-material/KeyboardKit-Product-Presentation-2606.pdf)
+* [Press Kit]({{page.presskit-sdk}})
+* [Product Presentation]({{page.presentation}})
 
 
 ## KeyboardKit App
 
 The KeyboardKit App lets you use KeyboardKit and its many features without having to create your own app.
 
-* [Press Kit](https://github.com/KeyboardKit/KeyboardKit-Web/releases/download/press-material/Press-Kit-App-2606.zip)
+* [Press Kit]({{page.presskit-app}})
 * [App Store]({{site.urls.appstore}})
 
 
