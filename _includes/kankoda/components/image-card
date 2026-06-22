@@ -1,7 +1,7 @@
 <div class="glass image-card scale {{ include.card_class }}">
   <a href="{{ include.item.url | default: include.url }}" title="{{ include.title | default: include.item.title }}">
     {% if include.item.image %}
-      <div class="image-card-media is-image">
+      <div class="image-card-media is-image {{ include.color | default: include.item.color }}">
         <img src="{{ include.item.image }}" />
       </div>
     {% elsif include.item.icon or include.item.emoji %}

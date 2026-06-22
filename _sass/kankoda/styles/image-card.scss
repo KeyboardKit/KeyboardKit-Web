@@ -72,7 +72,7 @@
   }
 
   &.keyboard .image-card-media.is-image {
-    background-color: var(--bg-blue-vivid);
+    background-color: var(--image-card-media-bg, var(--bg-blue-vivid));
     padding-bottom: 1rem;
   }
 
