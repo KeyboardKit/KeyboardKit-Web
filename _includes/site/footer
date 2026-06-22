@@ -50,10 +50,10 @@
         <p class="toggle">Contact</p>
         <div class="content">
           <a href="/contact">Contact</a>
-          <a href="{{site.urls.email}}">E-mail</a>
           <a href="{{site.urls.bluesky}}">Bluesky</a>
           <a href="{{site.urls.mastodon}}">Mastodon</a>
           <a href="{{site.urls.reddit}}">Reddit</a>
+          <a href="{{site.urls.calendar}}">Schedule a call</a>
         </div>
       </div>
     </div>

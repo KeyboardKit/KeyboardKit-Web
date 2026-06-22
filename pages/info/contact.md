@@ -25,3 +25,7 @@ Follow the [KeyboardKit Blog](/blog) and follow us on [Bluesky]({{site.urls.blue
 ## Newsletter
 
 Subscribe to the [KeyboardKit newsletter]({{site.urls.newsletter}}) for periodic updates on releases, new features, and announcements.
+
+## Schedule a call
+
+For press contacts, partner inquiries, introduction calls, etc., use the [KeyboardKit Calendar]({{site.urls.calendar}}) to schedule a call.
