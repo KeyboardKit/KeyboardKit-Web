@@ -37,6 +37,10 @@ section.showcase {
     justify-items: center;
     align-content: start;
 
+    > .feature-table {
+      justify-self: stretch;
+    }
+
     > p + p {
       margin-top: calc(var(--paragraph-spacing) * -1);
     }

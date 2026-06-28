@@ -20,25 +20,20 @@ terms: /pro/terms
 
 Unlock pro features that take your keyboard to the next level.
 
-
 {% include licenses/tier-boxes %}
+
+\* If your company exceeds $10M or your app exceeds $1M in annual revenue, you need a [Business License](/business).
 </div>
 
 <section class="showcase blue">
-<div class="wide wrapper slide-in" markdown="1">
-## Scaling Up?
-
-If your company exceeds $10M or your app exceeds $1M in annual revenue, you need a [Business License](/business).
-</div>
-</section>
-
-<div class="centered wide wrapper" markdown="1">
+  <div class="wide wrapper slide-in" markdown="1">
 ## Full Feature Comparison
 
 Compare all features across all plans.
 
 {% include licenses/feature-table.html tiers=site.data.tiers %}
-</div>
+  </div>
+</section>
 
 <section class="showcase purple">
   {% include sections/pro/terms-standard %}
