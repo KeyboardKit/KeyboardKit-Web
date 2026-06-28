@@ -120,13 +120,13 @@ p {
   > ol {
     font-size: 1.2em;
     font-weight: 300;
-    line-height: 1.7;
+    line-height: var(--line-height-body);
   }
 
   > p {
     font-size: 1.2em;
     font-weight: 300;
-    line-height: 1.7;
+    line-height: var(--line-height-body);
 
     &.page-eyebrow {
       font-size: clamp(1.2rem, 2vw, 1.6rem);

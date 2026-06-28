@@ -49,7 +49,7 @@ details[open] .faq-item-title::after {
 .faq-item-body {
   padding: 1rem 1.4rem;
   text-align: left;
-  line-height: 1.7;
+  line-height: var(--line-height-body);
   border-radius: var(--radius-glass-panel);
   background: rgba(255, 255, 255, 0.55);
   border: 1px solid rgba(255, 255, 255, 0.7);
