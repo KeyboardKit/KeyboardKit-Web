@@ -1,0 +1,10 @@
+<div class="split-container wrapper wide slide-in">
+  <div>
+    {% if include.item.eyebrow %}
+    <p class="eyebrow">{{ include.item.eyebrow }}</p>
+    {% endif %}
+    <h2>{{ include.item.title }}</h2>
+    <p>{{ include.item.text }}</p>
+  </div>
+  <img src="{{ include.item.image }}" />
+</div>

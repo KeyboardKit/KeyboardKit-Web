@@ -30,66 +30,16 @@ description: The KeyboardKit app lets you try KeyboardKit and all pro features o
 
 <section class="showcase blue split-list">
   <a name="features"></a>
-  <div class="split-container wrapper wide slide-in">
-    <div>
-      <p class="eyebrow">All Features</p>
-      <h2>Every feature, ready to try</h2>
-      <p>The KeyboardKit app uses <a href="/pro">KeyboardKit Pro</a> to enable autocomplete, dictation, emojis, fonts, themes, and AI support, so you can evaluate everything before writing a single line of code.</p>
-    </div>
-    <img src="{{page.assets}}App-Settings.png" />
-  </div>
-
-  <div class="split-container wrapper wide slide-in">
-    <div>
-      <p class="eyebrow">Localization</p>
-      <h2>Type in {{site.locales.count}} languages</h2>
-      <p>The KeyboardKit app supports all <a href="/locales">{{site.locales.count}} supported languages</a>, including localized features, right on your own device.</p>
-    </div>
-    <img src="{{page.assets}}App-Locales.png" />
-  </div>
-
-  <div class="split-container wrapper wide slide-in">
-    <div>
-      <p class="eyebrow">Themes</p>
-      <h2>Style With Themes</h2>
-      <p>The KeyboardKit app comes with a bunch of <a href="/features/themes">themes</a>, to let you style the keyboard to your likin. It also lets you create your own themes.</p>
-    </div>
-    <img src="{{page.assets}}app-themes.png" />
-  </div>
-
-  <div class="split-container wrapper wide slide-in">
-    <div>
-      <p class="eyebrow">Fonts</p>
-      <h2>Type with custom fonts</h2>
-      <p>The KeyboardKit app supports typing with custom, Unicode <a href="/features/fonts">fonts</a>, which encode the font into the character itself.</p>
-    </div>
-    <img src="{{page.assets}}App-Fonts.png" />
-  </div>
-
-  <div class="split-container wrapper wide slide-in">
-    <div>
-      <p class="eyebrow">Clipboard</p>
-      <h2>Paste from the system clipboard</h2>
-      <p>The KeyboardKit app lets you paste directly from the system <a href="/features/clipboard">clipboard</a>, and also supports letting you create your own, commonly used text clips.</p>
-    </div>
-    <img src="{{page.assets}}app-clipboard.png" />
-  </div>
-
-  <div class="split-container wrapper wide slide-in">
-    <div>
-      <p class="eyebrow">Customizable</p>
-      <h2>Fully customizable</h2>
-      <p>The KeyboardKit app lets you add and replace keys, and making the keys larger and bolder.</p>
-    </div>
-    <img src="{{page.assets}}app-clipboard.png" />
-  </div>
+  {% for item in site.data.app-split-items %}
+    {% include kankoda/split/split-item item=item %}
+  {% endfor %}
 </section>
 
 <section class="showcase purple">
   <a name="privacy"></a>
   <article class="wrapper wide slide-in">
     <h2>Privacy First</h2>
-    <p>Just like the KeyboardKit SDK, the app does not collect any data. Your typing stays on your device.</p>
+    <p>Just like the KeyboardKit SDK, the app does not collect or train on your data. Your typing stays on your device.</p>
     <div>
       <a href="/app/privacy" class="cta">Privacy Policy</a>
     </div>
