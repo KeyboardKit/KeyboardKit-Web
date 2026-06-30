@@ -1,9 +1,25 @@
-.hero {
-  min-height: calc(100vh - 2 * var(--header-height, 60px));
+// Shared spacing for hero text elements. Applied to the centered hero's
+// direct children, and to `.hero-content` when the layout nests them (e.g.
+// inside a `.split-container`). Keep both in sync via this one variable.
+.hero,
+.hero-content {
+  --hero-content-gap: 2rem;
+
   display: grid;
   justify-items: center;
-  align-content: center;
-  gap: 2rem;
+  gap: var(--hero-content-gap);
+
+  @media (max-width: 700px) {
+    --hero-content-gap: 1.5rem;
+  }
+}
+
+.hero {
+  min-height: calc(100vh - 2 * var(--header-height, 60px));
+  // `safe center` centers content when it fits, but falls back to start
+  // alignment when it's too tall — keeping it below the fixed header instead
+  // of riding up underneath it.
+  align-content: safe center;
   text-align: center;
 
   // Position to start at viewport top
@@ -17,7 +33,6 @@
 
   @media (max-width: 700px) {
     --header-height: 50px;
-    gap: 1.5rem;
     padding-bottom: 5rem;
   }
 
@@ -32,7 +47,7 @@
     margin: 0;
 
     @media (max-width: 700px) {
-      font-size: 2.4rem;
+      font-size: 2.8rem;
     }
   }
 
@@ -51,5 +66,16 @@
   a.cta {
     padding: 1.05rem 1.75rem;
     font-size: 1.05rem;
+  }
+
+  // A split hero uses `.wrapper.wide` for its width/padding (matching the
+  // header and other sections); just let its paragraphs fill the content
+  // column instead of the narrow centered cap above.
+  .split-container p {
+    margin: 0;
+
+    @media (min-width: 801px) {
+      max-width: none;
+    }
   }
 }

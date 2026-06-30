@@ -32,7 +32,7 @@ section.showcase {
     line-height: var(--line-height-body);
   }
 
-  .wrapper {
+  .wrapper:not(.split-container) {
     display: grid;
     gap: clamp(1.25rem, 3vw, 2.3rem);
     justify-items: center;

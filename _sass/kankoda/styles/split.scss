@@ -1,0 +1,128 @@
+// A reusable two-part layout: a block of content beside an image on wider
+// screens, stacked on smaller ones. The first direct `<div>` is the content,
+// a sibling `<img>` is the media. Built around the image width (a percentage
+// of the row) rather than a column grid, so it composes cleanly anywhere —
+// just `<div class="split-container">…</div>`.
+.split-container {
+  // Width the image takes when side-by-side, and its hard cap.
+  --split-gap: clamp(2rem, 5vw, 4rem);
+  --split-image-width: 30%;
+  --split-image-max: 360px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // Vertical spacing between content and media when stacked.
+  gap: clamp(2.5rem, 6vw, 4rem);
+
+  // Space between stacked split-containers (e.g. a list of feature sections).
+  & + & {
+    margin-top: clamp(3rem, 7vw, 6rem);
+  }
+
+  // Content stacks its children. Spacing comes from whatever the content div
+  // is (e.g. `.hero-content` inside a hero); a default keeps it sensible when
+  // used standalone.
+  > div {
+    display: grid;
+    justify-items: center;
+    gap: var(--hero-content-gap, 1.75rem);
+  }
+
+  // Small uppercase label above the heading.
+  .eyebrow {
+    margin: 0;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--glass-blue-text);
+  }
+
+  // Pull the heading up tight under its eyebrow.
+  .eyebrow + h2 {
+    margin-top: calc(var(--hero-content-gap, 1.75rem) * -0.6);
+  }
+
+  // Stacked state: centered media. `flex: none` keeps the image from being
+  // shrunk along the column's main axis, which would squash it out of its
+  // natural aspect ratio.
+  > img {
+    flex: none;
+    max-width: 400px;
+    height: auto;
+  }
+
+  // Side-by-side: a row with the image at a fixed share of the width and the
+  // content taking the rest. `.image-left` just reverses the order.
+  @media (min-width: 801px) {
+    flex-direction: row;
+    align-items: center;
+    gap: var(--split-gap);
+    text-align: left;
+
+    > div {
+      flex: 1;
+      justify-items: start;
+    }
+
+    // Image on the right (default): pushed to the far edge so it sits flush
+    // with the wrapper (lining up with the header menu).
+    > img {
+      margin-left: auto;
+      margin-right: calc(-1 * var(--split-gap));
+    }
+
+    // Mirror for image-left: image on the left.
+    &.image-left {
+      flex-direction: row-reverse;
+
+      > img {
+        margin-left: calc(-1 * var(--split-gap));
+        margin-right: auto;
+      }
+    }
+  }
+}
+
+// A run of split-containers that auto-alternates the image side, so each row
+// zig-zags without per-item `image-left` classes. The first row is image-left;
+// every even row flips back to image-right. Add `image-right` to the list to
+// start on the right instead (the parity inverts). Uses `nth-of-type` so stray
+// non-`div` siblings (e.g. an `<a name>` anchor) don't throw off the count.
+.split-list {
+  @media (min-width: 801px) {
+    // Odd rows (1st, 3rd, …) mirror to image-left.
+    > .split-container:nth-of-type(odd) {
+      flex-direction: row-reverse;
+
+      > img {
+        margin-left: calc(-1 * var(--split-gap));
+        margin-right: auto;
+      }
+    }
+
+    // Even rows stay image-right (the container default), so nothing needed.
+
+    // Start on the right instead: flip which parity gets mirrored.
+    &.image-right > .split-container {
+      &:nth-of-type(odd) {
+        flex-direction: row;
+
+        > img {
+          margin-left: auto;
+          margin-right: calc(-1 * var(--split-gap));
+        }
+      }
+
+      &:nth-of-type(even) {
+        flex-direction: row-reverse;
+
+        > img {
+          margin-left: calc(-1 * var(--split-gap));
+          margin-right: auto;
+        }
+      }
+    }
+  }
+}
