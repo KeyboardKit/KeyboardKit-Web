@@ -74,7 +74,7 @@ date:   $DATE 06:00:00 +0100
 tags:   general
 
 assets: /$FOLDER/
-image: /$FOLDER/image.jpg
+image:  /$FOLDER/image.jpg
 image-show: 1
 ---
 
