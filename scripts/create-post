@@ -1,0 +1,84 @@
+#!/bin/bash
+
+# Creates a blog post and its asset folder, using today's date.
+#
+#   assets/blog/yy/mmdd/
+#   collections/_posts/yyyy/yyyy-mm-dd-<title-slug>.md
+#
+# Usage: ./create-post --title "News in KeyboardKit 11"
+#        ./create-post -t "News in KeyboardKit 11"
+
+set -e
+
+TITLE=""
+
+while [ $# -gt 0 ]; do
+    case "$1" in
+        --title|-t)
+            TITLE="$2"
+            shift 2
+            ;;
+        --title=*)
+            TITLE="${1#*=}"
+            shift
+            ;;
+        -t=*)
+            TITLE="${1#*=}"
+            shift
+            ;;
+        *)
+            echo "Unknown argument: $1"
+            echo "Usage: ./create-post --title \"News in KeyboardKit 11\""
+            exit 1
+            ;;
+    esac
+done
+
+if [ -z "$TITLE" ]; then
+    echo "Missing title"
+    echo "Usage: ./create-post --title \"News in KeyboardKit 11\""
+    exit 1
+fi
+
+SLUG=$(echo "$TITLE" \
+    | tr '[:upper:]' '[:lower:]' \
+    | sed -E 's/[^a-z0-9]+/-/g; s/^-+//; s/-+$//')
+
+if [ -z "$SLUG" ]; then
+    echo "Invalid title: $TITLE (no usable characters for a slug)"
+    exit 1
+fi
+
+DATE=$(date +%Y-%m-%d)
+YYYY=$(date +%Y)
+YY=$(date +%y)
+MMDD=$(date +%m%d)
+
+FOLDER="assets/blog/$YY/$MMDD"
+POST_DIR="collections/_posts/$YYYY"
+POST="$POST_DIR/$DATE-$SLUG.md"
+
+if [ -e "$POST" ]; then
+    echo "Post already exists: $POST"
+    exit 1
+fi
+
+mkdir -p "$FOLDER"
+echo "Created $FOLDER"
+
+mkdir -p "$POST_DIR"
+cat > "$POST" <<EOF
+---
+title:  $TITLE
+date:   $DATE 06:00:00 +0100
+tags:   general
+
+assets: /$FOLDER/
+image: /$FOLDER/image.jpg
+image-show: 1
+---
+
+Text here...
+EOF
+
+echo "Created $POST"
