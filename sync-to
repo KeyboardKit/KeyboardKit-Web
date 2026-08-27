@@ -1,0 +1,45 @@
+#!/bin/bash
+
+# Documentation:
+# This script syncs the web foundation to another folder.
+
+set -e  # Exit immediately if a command exits with non-zero status
+
+TARGET=$1
+
+rm -rf $TARGET/serve
+cp -r serve $TARGET
+rm -rf $TARGET/sync-to
+cp -r sync-to $TARGET
+
+rm -rf $TARGET/scripts
+cp -r scripts $TARGET
+
+rm -rf $TARGET/_includes/kankoda
+cp -r _includes/kankoda $TARGET/_includes
+
+rm -rf $TARGET/_layouts/blog.html
+cp -r _layouts/blog.html $TARGET/_layouts/blog.html
+rm -rf $TARGET/_layouts/page.html
+cp -r _layouts/page.html $TARGET/_layouts/page.html
+rm -rf $TARGET/_layouts/page-sidebar.html
+cp -r _layouts/page-sidebar.html $TARGET/_layouts/page-sidebar.html
+rm -rf $TARGET/_layouts/plain.html
+cp -r _layouts/plain.html $TARGET/_layouts/plain.html
+rm -rf $TARGET/_layouts/post.html
+cp -r _layouts/post.html $TARGET/_layouts/post.html
+rm -rf $TARGET/_layouts/side-menu.html
+cp -r _layouts/side-menu.html $TARGET/_layouts/side-menu.html
+
+rm -rf $TARGET/_sass/kankoda
+cp -r _sass/kankoda $TARGET/_sass
+
+rm -rf $TARGET/assets/kankoda
+cp -r assets/kankoda $TARGET/assets
+rm -rf $TARGET/assets/js/kankoda.js
+cp -r assets/js/kankoda.js $TARGET/assets/js
+
+rm -rf $TARGET/assets/js/kankoda
+cp -r assets/js/kankoda $TARGET/assets/js
+rm -rf $TARGET/assets/main.scss
+cp -r assets/main.scss $TARGET/assets
