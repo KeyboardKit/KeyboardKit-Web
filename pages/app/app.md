@@ -9,12 +9,11 @@ assets: /assets/devices/
 
 image: /assets/headers/keyboardkit.jpg
 
-description: The KeyboardKit app lets you try KeyboardKit and all pro features on iPhone & iPad.
+description: The KeyboardKit app lets you try all KeyboardKit features on iPhone & iPad.
 ---
 
 <section class="hero glow">
-  <div class="split-container wrapper wide">
-    <div class="hero-content">
+  <div class="hero-content">
       <div class="rounded glass tag">Custom Keyboard App for iPhone & iPad</div>
       <h1>KeyboardKit App</h1>
       <h2>Install KeyboardKit on your device, no code required.</h2>
@@ -24,8 +23,6 @@ description: The KeyboardKit app lets you try KeyboardKit and all pro features o
         <a href="#features" class="cta glass">Learn More</a>
       </div>
     </div>
-    <img src="{{page.assets}}App-Split.png" class="plain" />
-  </div>
 </section>
 
 <section class="showcase blue split-list">
