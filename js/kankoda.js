@@ -1,14 +1,14 @@
 ---
 layout: none
-permalink: /assets/js/kankoda.js
+permalink: /js/kankoda.js
 ---
 
 {% comment %}
 Add site-specific JavaScript modules here using include_relative.
-Each module in assets/js/ should be a self-contained IIFE (Immediately Invoked Function Expression).
+Each module in kankoda/js/ should be a self-contained IIFE (Immediately Invoked Function Expression).
 
 Example:
-{% include_relative js/module-name.js %}
+{% include_relative kankoda/module-name.js %}
 {% endcomment %}
 
 {% include_relative kankoda/faq.js %}

@@ -1,12 +1,12 @@
 # JavaScript Modules
 
-This directory contains site-specific JavaScript modules that are bundled into `/assets/site.js`.
+This directory contains site-specific JavaScript modules that are bundled into `/js/kankoda.js`.
 
 ## How It Works
 
-1. **Individual modules** go in this `assets/js/` directory
-2. **Bundle file** at `/assets/site.js` imports all modules
-3. **Bundle is processed** by Jekyll and output to `_site/assets/site.js`
+1. **Individual modules** go in this `js/` directory
+2. **Bundle file** at `js/kankoda.js` imports all modules
+3. **Bundle is processed** by Jekyll and output to `_site/js/kankoda.js`
 4. **Loaded in head** via `/_includes/kankoda/site/head-tag` with `defer` attribute
 
 ## Module Structure
@@ -35,9 +35,9 @@ Each module should be a self-contained IIFE (Immediately Invoked Function Expres
 
 ## Adding a New Module
 
-1. Create a new file in `assets/js/`, e.g., `assets/js/my-module.js`
+1. Create a new file in `js/kankoda`, e.g., `js/kankoda/my-module.js`
 2. Write your JavaScript as an IIFE (see structure above)
-3. Add it to `/assets/site.js`
+3. Add it to `js/kankoda.js`
 4. Jekyll will bundle it automatically on next build
 
 ## Existing Modules
