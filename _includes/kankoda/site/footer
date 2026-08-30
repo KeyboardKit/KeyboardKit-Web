@@ -1,0 +1,21 @@
+<footer>
+  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+  <div class="wrapper wide">
+    <div class="row">
+      {%- for section in site.footer.sections %}
+      <div class="column">
+        <p class="toggle">{{ section.title | escape }}</p>
+        <div class="content">
+          {% include kankoda/site/footer-section-links links=section.links %}
+        </div>
+      </div>
+      {%- endfor %}
+    </div>
+    
+    <div class="copyright">
+      <span>© {{site.copyright_year}}&nbsp;</span>
+      <a href="{{site.copyright_url}}">{{site.copyright_owner}}</a>. 
+      <span>&nbsp;All rights reserved.</span>
+    </div>
+  </div>
+</footer>

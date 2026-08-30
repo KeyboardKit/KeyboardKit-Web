@@ -1,0 +1,8 @@
+{%- for link in include.links -%}
+  {%- assign parts = link | split: "|" -%}
+  {%- assign title = parts[0] | strip -%}
+  {%- assign url = parts[1] | strip -%}
+  {%- if title != "" and url != "" -%}
+  <a href="{{ url }}">{{ title | escape }}</a>
+  {%- endif -%}
+{%- endfor -%}

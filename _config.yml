@@ -69,13 +69,44 @@ header:
     - pages/pricing.md
 
 footer:
-  sitemap:
-    - index.html
-    - pages/info/about.md
-    - pages/app/app.md
-    - pages/info/faq.md
-    - pages/industries.md
-    - pages/case-studies.md
+  # Sections with links defined as "Title | url" strings.
+  sections:
+    - title: Site
+      links:
+        - Home | /
+        - About | /about
+        - App | /app
+        - FAQ | /faq
+        - Industries | /industries
+        - Case Studies | /case-studies
+    - title: SDK
+      links:
+        - Features | /features
+        - KeyboardKit Pro | /pro
+        - Pricing | /pricing
+        - Business Licenses | /business-licenses
+        - Terms & Conditions | /pro/terms
+        - Privacy Policy | /privacy
+    - title: News & Press
+      links:
+        - Blog | /blog
+        - RSS | https://keyboardkit.com/feed.xml
+        - Newsletter | https://kankoda.gumroad.com/subscribe
+        - Press | /press
+    - title: Code
+      links:
+        - GitHub | https://github.com/KeyboardKit/KeyboardKit
+        - Get Started | /get-started
+        - Binaries & dSYMs | https://github.com/KeyboardKit/KeyboardKit-Binaries
+        - Documentation | /documentation
+        - Issue Tracker | https://github.com/KeyboardKit/KeyboardKit/issues
+    - title: Contact
+      links:
+        - Contact | /contact
+        - Bluesky | https://bsky.app/profile/keyboardkit.bsky.social
+        - Mastodon | https://techhub.social/@keyboardkit
+        - Reddit | https://www.reddit.com/r/KeyboardKit
+        - Schedule a call | https://calendar.app.google/HyJeUXdRczwkp3Jh6
 
 collections_dir: collections
 
