@@ -1,0 +1,8 @@
+<div class="grid glass tiers header">
+    <div class="feature"></div>
+    {% for tier in include.tiers %}
+    <div class="tier-heading {{tier.name | downcase}}">
+        <h3>{{tier.name}}</h3>
+    </div>
+    {% endfor %}
+</div>

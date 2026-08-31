@@ -32,11 +32,28 @@ header[role="banner"] {
     position: relative;
   }
 
-  // Icon
-  .brand-icon {
-    width: 27px;
-    height: 27px;
+  // Icon and logo: capped by height only. Width is unconstrained so each image
+  // keeps its aspect ratio - a wide logotype gets wider instead of being
+  // squashed. A square icon reads smaller than a logotype at the same height,
+  // so the two are capped separately.
+  .brand-icon,
+  .brand-logo {
+    display: flex;
+    align-items: center;
     margin-right: 1em;
+
+    img {
+      width: auto;
+      max-width: none;
+    }
+  }
+
+  .brand-icon img {
+    max-height: 30px;
+  }
+
+  .brand-logo img {
+    max-height: 20px;
   }
 
   // Logo/Brand

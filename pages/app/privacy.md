@@ -4,8 +4,6 @@ layout: page-sidebar
 
 title: Privacy Policy
 
-redirect_from: /app/privacy-policy
-
 side-menu-append:
   - title: Definitions
   - title: Overview
@@ -17,4 +15,4 @@ side-menu-append:
   - title: Means of communication
 ---
 
-{% include kankoda/apps/privacy-policy name="KeyboardKit" url="/app" %}
+{% include kankoda/apps/privacy name="KeyboardKit" url="/app" %}

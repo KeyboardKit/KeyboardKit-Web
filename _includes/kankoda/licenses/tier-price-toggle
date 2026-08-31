@@ -1,17 +1,13 @@
+{% assign yearly-saving = include.yearly-saving | default: 17 %}
+
 <div class="pricing-toggle-wrap">
   <div class="pricing-toggle">
     <button class="pricing-toggle-btn active" data-period="monthly" onclick="setPricingPeriod('monthly')">Monthly</button>
     <div class="pricing-toggle-annual-wrap">
-      <span class="pricing-save-badge">Save 17%</span>
+      <span class="pricing-save-badge">Save {{ yearly-saving }}%</span>
       <button class="pricing-toggle-btn" data-period="yearly" onclick="setPricingPeriod('yearly')">Annual</button>
     </div>
   </div>
-</div>
-
-<div class="grid col4 tiers spaced">
-  {% for tier in site.data.tiers %}
-    {% include kankoda/licenses/tier-box tier=tier %}
-  {% endfor %}
 </div>
 
 <script>

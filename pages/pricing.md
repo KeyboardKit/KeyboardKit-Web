@@ -12,17 +12,15 @@ custom-license-email: mailto:info@keyboardkit.com?subject=KeyboardKit%20Pro%20-%
 terms: /pro/terms
 ---
 
-<div class="centered page-content wide wrapper" markdown="1">
+<div class="hero glow" markdown="1">
 
 # KeyboardKit Pro
 
 ## Pricing that scales with your app.
 
-Unlock pro features that take your keyboard to the next level.
-
-{% include licenses/tier-boxes %}
-
-\* If your company exceeds $10M or your app exceeds $1M in annual revenue, you need a [Business License](/business).
+{% include kankoda/licenses/tier-price-toggle %}
+{% include kankoda/licenses/tier-boxes tiers=site.data.tiers %}
+{% include kankoda/licenses/business-disclaimer  %}
 </div>
 
 <section class="showcase blue">

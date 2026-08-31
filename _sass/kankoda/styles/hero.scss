@@ -78,4 +78,9 @@
       max-width: none;
     }
   }
+
+  img.app-icon {
+    max-width: 200px;
+    box-shadow: var(--shadow-default);
+  }
 }

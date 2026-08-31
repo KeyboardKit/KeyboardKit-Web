@@ -1,8 +1,7 @@
 ---
-permalink: /features
-layout: page-sidebar
-
 title: Features
+layout: page-sidebar
+permalink: /features
 
 sidebar-menu:
   title: Features

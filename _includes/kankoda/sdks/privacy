@@ -2,7 +2,7 @@
 {% assign url = include.url %}
 {% assign licensor = include.licensor | default: "Kankoda Sweden AB" %}
 
-*Last updated: 2025-06-05*
+*Last updated: 2026-08-31*
 
 
 ## Privacy Policy 

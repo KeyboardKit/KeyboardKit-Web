@@ -1,10 +1,16 @@
 <header role="banner">
   <div class="wrapper wide">
     {% if site.header.icon %}
-      <a class="brand-icon" href="/"><img src="{{site.header.icon}}" width="{{ site.header.icon-size | default: 25 }}" /></a>
+      <a class="brand-icon" href="/"><img src="{{site.header.icon}}" alt="{{ site.title }} icon" /></a>
+    {% endif %}
+
+    {% if site.header.logo %}
+      <a class="brand-logo" href="/"><img src="{{site.header.logo}}" alt="{{ site.title }} logotype" /></a>
     {% endif %}
     
-    <a href="/" class="brand">{{ site.header.title }}</a>
+    {% if site.header.title %}
+      <a href="/" class="brand">{{ site.header.title }}</a>
+    {% endif %}
 
     <button class="menu-toggle" aria-label="Toggle menu">
       <div class="menu-icon">

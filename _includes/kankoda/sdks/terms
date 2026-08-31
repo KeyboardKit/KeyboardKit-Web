@@ -2,7 +2,7 @@
 {% assign product-escaped = include.product | split: " " | join: "%20" %}
 {% assign show-title = include.show-title | default: 1 %}
 {% assign kankoda-url = include.company-url | default: "https://kankoda.com" %}
-{% assign privacy-url = include.cprivacy-url | default: "/privacy" %}
+{% assign privacy-url = include.privacy-url | default: "/privacy" %}
 {% assign custom-email = site.urls.email | append: "?subject=" | append: product-escaped | append: "%20-%20Custom%20Plan" %}
 
 

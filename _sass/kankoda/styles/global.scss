@@ -91,6 +91,14 @@ p {
   margin-bottom: var(--paragraph-spacing);
 }
 
+p.footnote {
+  font-size: 1em;
+}
+
+.grid + p.footnote {
+  margin-top: 20px;
+}
+
 
 // Wrappers
 

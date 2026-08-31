@@ -45,3 +45,7 @@ img.medium {
   border-radius: var(--radius-glass-panel);
   box-shadow: var(--shadow-default);
 }
+
+img.device {
+  max-width: 450px;
+}

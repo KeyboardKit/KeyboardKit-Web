@@ -25,11 +25,13 @@ description: The KeyboardKit app lets you try all KeyboardKit features on iPhone
     </div>
 </section>
 
-<section class="showcase blue split-list">
+<section class="showcase blue">
   <a name="features"></a>
+  <article class="wrapper wide split-list">
   {% for item in site.data.app-split-items %}
     {% include kankoda/split/split-item item=item %}
   {% endfor %}
+  </article>
 </section>
 
 <section class="showcase purple">
