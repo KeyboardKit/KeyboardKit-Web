@@ -4,11 +4,22 @@
   --bg-dark: #10111f;
   --bg-light: #FFFFFF;
 
+  --bg-texture: none;
+  --bg-texture-size: 550px;
+  --bg-texture-overlay: #fff0;
+
+  --bg-blue-subtle: #F5F9FE;
   --bg-blue: rgba(231, 239, 252, 0.7);
   --bg-green: rgba(229, 250, 229, 0.7);
   --bg-orange: rgba(252, 237, 220, 0.7);
   --bg-purple: rgba(235, 229, 249, 0.7);
   --bg-red: rgba(252, 231, 231, 0.7);
+
+  --header-bg: var(--bg);
+  --header-text: var(--text);
+  
+  --footer-bg: var(--bg);
+  --footer-text: var(--text);
 
   --border: rgba(0, 0, 0, 0.1);
   --border-glass: rgba(255,255,255,0.8);
@@ -17,7 +28,7 @@
   --duration-accordion: 0.3s;
   --duration-link: 0.4s;
 
-  --feature-table-even-row-color: #ffffff55;
+  --feature-table-even-row-color: #fff5;
   
   --glass-blue-text: #2d7ecf;
   --glass-green-text: #3d8f66;

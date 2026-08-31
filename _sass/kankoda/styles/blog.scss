@@ -43,7 +43,7 @@
     flex-wrap: nowrap;
     gap: 0.75rem;
     margin-bottom: 1.25rem;
-    color: rgba(0, 0, 0, var(--opacity-secondary));
+    color: var(--text-secondary);
   }
 
   &-date,

@@ -1,0 +1,10 @@
+{% assign count = include.count | default: 2 %}
+<article class="wrapper wide slide-in">
+  <h2>Latest News</h2>
+  <p>Follow the <a href="/blog">{{site.title}} Blog</a> for news & updates.</p>
+  <div class="grid col{{count}}">
+    {% for post in site.posts limit:count %}
+      {% include kankoda/components/image-link item=post %}
+    {% endfor %}
+  </div>
+</article>

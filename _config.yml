@@ -61,6 +61,7 @@ google-analytics:
 header:
   title: KeyboardKit
   icon: /assets/icon/header.png
+  icon-size: 25
   pages:
     - pages/info/about.md
     - pages/blog.md

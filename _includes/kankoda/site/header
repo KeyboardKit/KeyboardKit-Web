@@ -1,7 +1,7 @@
 <header role="banner">
   <div class="wrapper wide">
     {% if site.header.icon %}
-      <a class="brand-icon" href="/"><img src="{{site.header.icon}}" width="25" /></a>
+      <a class="brand-icon" href="/"><img src="{{site.header.icon}}" width="{{ site.header.icon-size | default: 25 }}" /></a>
     {% endif %}
     
     <a href="/" class="brand">{{ site.header.title }}</a>

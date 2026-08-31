@@ -3,6 +3,21 @@ html {
   scroll-behavior: smooth;
 }
 
+// Texture + overlay. Painted in its own fixed layer so it sits above the body
+// background (and any body glow, which renders at z-index -1) but behind all
+// content. Uses html::before to avoid clashing with body.glow's ::before/::after.
+html::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    linear-gradient(var(--bg-texture-overlay), var(--bg-texture-overlay)),
+    var(--bg-texture);
+  background-size: var(--bg-texture-size);
+}
+
 body {
   background-color: var(--bg);
   color: var(--text);

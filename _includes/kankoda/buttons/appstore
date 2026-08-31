@@ -1,0 +1,5 @@
+{% assign color = include.color | default: "white" %}
+{% assign url = include.url | default: site.urls.appstore %}
+{% assign name = include.name | default: site.title %}
+
+<a class="appstore scale" href="{{url}}" alt="Download {{name}}"><img src="/assets/kankoda/appstore-{{color}}.png" /></a>

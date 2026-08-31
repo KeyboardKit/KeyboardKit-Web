@@ -1,0 +1,5 @@
+{% capture default_alt %}Follow on {{include.type}}{% endcapture %}
+{% assign alt = include.alt | default: default_alt %}
+{% capture icon_name %}bi:{{include.type}}{% endcapture %}
+
+<a class="social" href="{{include.url}}" alt="{{alt}}">{% include kankoda/components/icon name=icon_name %}</a>

@@ -1,3 +1,11 @@
+a.appstore {
+  display: inline-block;
+
+  img {
+    width: 175px;
+  }
+}
+
 a.cta {
   display: inline-flex;
   align-items: center;
@@ -68,6 +76,7 @@ a.cta {
     color: var(--text-dark) !important;
   }
 }
+
 
 @media (prefers-reduced-motion: reduce) {
   a.cta {
