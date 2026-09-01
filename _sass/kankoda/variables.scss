@@ -53,6 +53,10 @@
 
   --grid-gap: 20px;
 
+  // Horizontal page gutter. Never tighter than 20px, so content keeps clear of
+  // the screen edge on phones, growing to 2rem on wide screens.
+  --gutter: clamp(20px, 4vw, 2rem);
+
   --line-height-body: 1.7;
 
   --opacity-secondary: 0.7;

@@ -10,7 +10,7 @@
       <a class="cta glass" href="{{include.item.url}}">Read More</a>
       {% endif %}
       {% if include.item.url_appstore %}
-      <a class="cta" href="{{include.item.url_appstore}}">Download From the App Store</a>
+      <a class="cta" href="{{include.item.url_appstore}}">Download on the App Store</a>
       {% endif %}
     </div>
   </div>

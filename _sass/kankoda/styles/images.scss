@@ -46,6 +46,11 @@ img.medium {
   box-shadow: var(--shadow-default);
 }
 
+// Cap the device mockup on wide screens, but let it shrink with its container
+// on narrow ones — `max-width` alone overrides minima's `img { max-width: 100% }`
+// and would force the image wider than the screen on phones.
 img.device {
+  width: 100%;
   max-width: 450px;
+  height: auto;
 }

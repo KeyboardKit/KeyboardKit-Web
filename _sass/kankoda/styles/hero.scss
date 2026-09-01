@@ -27,6 +27,10 @@
   margin-top: calc(-1 * var(--header-height, 60px));
   padding-top: var(--header-height, 60px);
   padding-bottom: var(--header-height, 60px);
+  // Same gutter as `.wrapper`, so hero content lines up with the header and
+  // the sections below instead of running into the screen edge.
+  padding-left: var(--gutter);
+  padding-right: var(--gutter);
 
   // Subtle background color for inspection
   background-color: rgba(0, 120, 255, 0.03);
@@ -45,9 +49,13 @@
     font-size: clamp(2.9rem, 8vw, 5rem);
     line-height: 1.08;
     margin: 0;
+    // Long unbroken product names shouldn't push the hero wider than the screen.
+    overflow-wrap: break-word;
 
     @media (max-width: 700px) {
-      font-size: 2.8rem;
+      // Scales with the viewport rather than sitting at a fixed size, so it
+      // still fits on the narrowest phones.
+      font-size: clamp(2rem, 9vw, 2.8rem);
     }
   }
 
