@@ -1,7 +1,7 @@
 ---
 title:  KeyboardKit 11 Documentation
 date:   2026-09-15 06:00:00 +0100
-tags:   general
+tags:   documentation
 
 assets: /assets/blog/26/0915/
 image: /assets/blog/26/0915/image.jpg
