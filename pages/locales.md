@@ -6,7 +6,7 @@ title: Locales
 
 redirect_from: /languages
   
-description: KeyboardKit supports 75+ locales
+description: KeyboardKit supports 80+ locales
 ---
 
 KeyboardKit supports **{{site.locales.count}}** locales (languages), which affects things like keyboard layout, callout actions, autocomplete suggestions, etc.

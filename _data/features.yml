@@ -11,7 +11,7 @@
   emoji:  🌐
   url:    /features/localization
   group:  core
-  text:   Type in <b>75 locales</b>, with fully localized assets and layouts.
+  text:   Type in <b>80+ locales</b>, with fully localized assets and layouts.
   docs:   https://docs.keyboardkit.com/documentation/keyboardkit/localization-article
   card:   
     tags:

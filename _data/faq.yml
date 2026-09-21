@@ -33,7 +33,7 @@
 - featured: 1
   tag: keyboardkit
   title: Which languages are supported?
-  text: KeyboardKit supports [75+ locales](/locales) out of the box, with locale-specific autocomplete, spell checking, callout actions, and keyboard layouts. You can also add support for additional languages.
+  text: KeyboardKit supports [80+ locales](/locales) out of the box, with locale-specific autocomplete, spell checking, callout actions, and keyboard layouts. You can also add support for additional languages.
 
 - tag: keyboardkit
   title: Is KeyboardKit open source?
@@ -51,7 +51,7 @@
 
 - tag: pro
   title: What features are included in KeyboardKit Pro?
-  text: KeyboardKit Pro unlocks many [pro features](/features), like autocomplete & predictions, 75+ locales, AI support, dictation, an emoji keyboard, in-keyboard typing, a full document reader, and much more.
+  text: KeyboardKit Pro unlocks many [pro features](/features), like autocomplete & predictions, 80+ locales, AI support, dictation, an emoji keyboard, in-keyboard typing, a full document reader, and much more.
 
 - tag: pro
   title: Can I try KeyboardKit Pro before purchasing?

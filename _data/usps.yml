@@ -8,7 +8,7 @@
 
 - icon: lucide:globe
   title: Multi-language
-  text: Support for <a href="/features/localization">75+ locales</a> and fully localized features.
+  text: Support for <a href="/features/localization">80+ locales</a> and fully localized features.
 
 - icon: lucide:tablet-smartphone
   title: Swift & SwiftUI

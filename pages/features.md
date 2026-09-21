@@ -21,9 +21,7 @@ KeyboardKit has many features and is free to start using. Upgrade to <a href="/p
 
 ## Languages
 
-KeyboardKit supports [{{site.locales.count}} languages](/locales).
-
-{{site.locales.flags}}
+KeyboardKit supports [{{site.locales.count}} languages](/locales), where each supported locale provides locale-specific layouts, secondary callout actions, and localized resources.
 
 
 ## Core Engine

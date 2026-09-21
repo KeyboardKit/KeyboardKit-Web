@@ -10,11 +10,7 @@ KeyboardKit makes it easy to create multi-language keyboards, and provides many 
 
 ## Locales
 
-KeyboardKit supports [{{site.locales.count}} languages (locales)](/locales).
-
-{{ site.locales.flags }}
-
-Each supported language has keyboard-specific information and capabilities, and localized strings that can be translated with the ``KKL10n`` enum.
+KeyboardKit supports [{{site.locales.count}} languages](/locales), where each supported locale provides locale-specific layouts, secondary callout actions, and localized resources.
 
 
 ## Extensions
