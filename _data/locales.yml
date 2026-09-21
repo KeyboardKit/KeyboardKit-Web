@@ -1,168 +1,89 @@
-- flag: 🇺🇸
-  name: English (Default)
+- English (Default)<br />&nbsp;
 
-- flag: 🇦🇱
-  name: Albanian
-- flag: 🏳️
-  name: Apache
-- flag: 🇦🇪
-  name: Arabic
-- flag: 🇦🇪
-  name: Arabic (PC)
-- flag: 🇦🇲
-  name: Armenian
-- flag: 🇦🇿
-  name: Azerbaijani
-- flag: 🇧🇾
-  name: Belarusian
-- flag: 🇧🇩
-  name: Bengali
-- flag: 🏳️
-  name: Blackfoot
-- flag: 🇧🇬
-  name: Bulgarian
+- Albanian
+- Apache
+- Arabic
+- Arabic (PC)
+- Armenian
+- Azerbaijani
+- Belarusian
+- Bengali
+- Blackfoot
+- Bulgarian
 
-- flag: 🇦🇩
-  name: Catalan
-- flag: 🏳️
-  name: Cherokee
-- flag: 🏳️
-  name: Chickasaw
-- flag: 🏳️
-  name: Chochenyo
-- flag: 🏳️
-  name: Chuvash
-- flag: 🇭🇷
-  name: Croatian
-- flag: 🇨🇿
-  name: Czech
-- flag: 🇩🇰
-  name: Danish
-- flag: 🇳🇱
-  name: Dutch
-- flag: 🇧🇪
-  name: Dutch (Belgium)
+- Catalan
+- Cherokee
+- Chickasaw
+- Chochenyo
+- Choctaw
+- Chuvash
+- Croatian
+- Czech
+- Danish
+- Dutch
+- Dutch (Belgium)
 
-- flag: 🇦🇺
-  name: English (Australia)
-- flag: 🇨🇦
-  name: English (Canada)
-- flag: 🇬🇧
-  name: English (UK)
-- flag: 🇺🇸
-  name: English (US)
-- flag: 🇪🇪
-  name: Estonian
-- flag: 🇫🇴
-  name: Faroese
-- flag: 🇵🇭
-  name: Filipino
-- flag: 🇫🇮
-  name: Finnish
-- flag: 🇫🇷
-  name: French
-- flag: 🇨🇦
-  name: French (Canada)
+- English (Australia)
+- English (Canada)
+- English (UK)
+- English (US)
+- Estonian
+- Faroese
+- Filipino
+- Finnish
+- French
+- French (Canada)
 
-- flag: 🇧🇪
-  name: French (Belgium)
-- flag: 🇨🇭
-  name: French (Switzerland)
-- flag: 🇬🇪
-  name: Georgian
-- flag: 🇩🇪
-  name: German
-- flag: 🇦🇹
-  name: German (Austria)
-- flag: 🇨🇭
-  name: German (Switzerland)
-- flag: 🇬🇷
-  name: Greek
-- flag: 🇺🇸
-  name: Hawaiian
-- flag: 🇮🇱
-  name: Hebrew (Israel)
-- flag: 🇭🇺
-  name: Hungarian
+- French (Belgium)
+- French (Switzerland)
+- Georgian
+- German
+- German (Austria)
+- German (Switzerland)
+- Greek
+- Hawaiian
+- Hebrew (Israel)
+- Hungarian
 
-- flag: 🇮🇸
-  name: Icelandic
-- flag: 🏳️
-  name: Inari Sami
-- flag: 🇮🇩
-  name: Indonesian
-- flag: 🇮🇪
-  name: Irish (Ireland)
-- flag: 🇮🇹
-  name: Italian
-- flag: 🇰🇿
-  name: Kazakh
-- flag: 🇹🇯
-  name: Kurdish, Sorani
-- flag: 🇹🇯
-  name: Kurdish, Sorani (Iraq)
-- flag: 🇹🇯
-  name: Kurdish, Sorani (PC)
-- flag: 🇱🇻
-  name: Latvian
+- Icelandic
+- Inari Sami
+- Indonesian
+- Irish (Ireland)
+- Italian
+- Kazakh
+- Kurdish, Sorani
+- Kurdish, Sorani (Iraq)
+- Kurdish, Sorani (PC)
+- Latvian
 
-- flag: 🇱🇹
-  name: Lithuanian
-- flag: 🇲🇰
-  name: Macedonian
-- flag: 🇲🇾
-  name: Malay
-- flag: 🇲🇹
-  name: Maltese
-- flag: 🇲🇳
-  name: Mongolian
-- flag: 🏳️
-  name: North Sámi
-- flag: 🇳🇴
-  name: Norwegian Bokmål
-- flag: 🇳🇴
-  name: Norwegian Nynorsk
-- flag: 🇮🇷
-  name: Persian
-- flag: 🇵🇱
-  name: Polish
+- Lithuanian
+- Macedonian
+- Malay
+- Maltese
+- Mongolian
+- North Sámi
+- Norwegian Bokmål
+- Norwegian Nynorsk
+- Persian
+- Polish
 
-- flag: 🇵🇹
-  name: Portuguese (Portugal)
-- flag: 🇧🇷
-  name: Portuguese (Brazil)
-- flag: 🇷🇴
-  name: Romanian
-- flag: 🇷🇺
-  name: Russian
-- flag: 🇷🇸
-  name: Serbian
-- flag: 🇷🇸
-  name: Serbian (Latin)
-- flag: 🇹🇯
-  name: Shughni Tajik
-- flag: 🇸🇰
-  name: Slovak
-- flag: 🇸🇮
-  name: Slovenian
-- flag: 🇪🇸
-  name: Spanish
+- Portuguese (Portugal)
+- Portuguese (Brazil)
+- Romanian
+- Russian
+- Serbian
+- Serbian (Latin)
+- Shughni Tajik
+- Slovak
+- Slovenian
+- Spanish
 
-- flag: 🇦🇷
-  name: Spanish (Latin America)
-- flag: 🇲🇽
-  name: Spanish (Mexico)
-- flag: 🇰🇪
-  name: Swahili
-- flag: 🇸🇪
-  name: Swedish
-- flag: 🇹🇷
-  name: Turkish
-- flag: 🇺🇦
-  name: Ukrainian
-- flag: 🇺🇿
-  name: Uzbek
-- flag: 🇻🇳
-  name: Vietnamese
-- flag: 🏴󠁧󠁢󠁷󠁬󠁳󠁿
-  name: Welsh
+- Spanish (Latin America)
+- Spanish (Mexico)
+- Swahili
+- Swedish
+- Turkish
+- Ukrainian
+- Uzbek
+- Vietnamese
+- Welsh

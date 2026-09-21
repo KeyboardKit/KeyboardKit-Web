@@ -17,7 +17,7 @@ Below is a list of all **{{site.locales.count}}** locales that KeyboardKit suppo
 
 <ul>
   {% for locale in site.data.locales %}
-  <li>{{ locale.flag }} {{ locale.name }}</li>
+  <li>{{ locale }}</li>
   {% endfor %}
 </ul>
 
