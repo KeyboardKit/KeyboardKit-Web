@@ -1,21 +1,35 @@
 - flag: 🇺🇸
   name: English (Default)
+
 - flag: 🇦🇱
   name: Albanian
+- flag: 🏳️
+  name: Apache
 - flag: 🇦🇪
   name: Arabic
 - flag: 🇦🇪
   name: Arabic (PC)
 - flag: 🇦🇲
   name: Armenian
+- flag: 🇦🇿
+  name: Azerbaijani
 - flag: 🇧🇾
   name: Belarusian
+- flag: 🇧🇩
+  name: Bengali
+- flag: 🏳️
+  name: Blackfoot
 - flag: 🇧🇬
   name: Bulgarian
+
 - flag: 🇦🇩
   name: Catalan
 - flag: 🏳️
   name: Cherokee
+- flag: 🏳️
+  name: Chickasaw
+- flag: 🏳️
+  name: Chochenyo
 - flag: 🏳️
   name: Chuvash
 - flag: 🇭🇷
@@ -28,6 +42,7 @@
   name: Dutch
 - flag: 🇧🇪
   name: Dutch (Belgium)
+
 - flag: 🇦🇺
   name: English (Australia)
 - flag: 🇨🇦
@@ -48,6 +63,7 @@
   name: French
 - flag: 🇨🇦
   name: French (Canada)
+
 - flag: 🇧🇪
   name: French (Belgium)
 - flag: 🇨🇭
@@ -68,6 +84,7 @@
   name: Hebrew (Israel)
 - flag: 🇭🇺
   name: Hungarian
+
 - flag: 🇮🇸
   name: Icelandic
 - flag: 🏳️
@@ -88,6 +105,7 @@
   name: Kurdish, Sorani (PC)
 - flag: 🇱🇻
   name: Latvian
+
 - flag: 🇱🇹
   name: Lithuanian
 - flag: 🇲🇰
@@ -108,6 +126,7 @@
   name: Persian
 - flag: 🇵🇱
   name: Polish
+
 - flag: 🇵🇹
   name: Portuguese (Portugal)
 - flag: 🇧🇷
@@ -128,14 +147,15 @@
   name: Slovenian
 - flag: 🇪🇸
   name: Spanish
+
 - flag: 🇦🇷
   name: Spanish (Latin America)
 - flag: 🇲🇽
   name: Spanish (Mexico)
-- flag: 🇸🇪
-  name: Swedish
 - flag: 🇰🇪
   name: Swahili
+- flag: 🇸🇪
+  name: Swedish
 - flag: 🇹🇷
   name: Turkish
 - flag: 🇺🇦
