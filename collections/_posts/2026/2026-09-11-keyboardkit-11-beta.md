@@ -1,13 +1,13 @@
 ---
 title:  KeyboardKit 11 Beta
 date:   2026-09-11 06:00:00 +0100
-tags:   releases essentials autocomplete dictation localization plugins settings
+tags:   releases essentials autocomplete dictation host-app localization plugins settings
 
 assets: /assets/blog/26/0911/
 image: /assets/versions/11_0-b.jpg
 image-show: 0
 
-release: https://github.com/KeyboardKit/KeyboardKit/releases/tag/11.0-b.1
+release: https://github.com/KeyboardKit/KeyboardKit/releases/tag/11.0-b.2
 ---
 
 KeyboardKit 11 Beta is out! This pre-release is a way for you to test the many coming changes in the next major version of KeyboardKit. Give it a try and [let us know what you think]({{site.urls.email}}).
@@ -30,19 +30,18 @@ And before we start discussing everything in KeyboardKit 11... yes, we count Plu
 
 ## Major Changes
 
-This version bumps the package to Swift 6.2 and strict concurrency, which means that many UI types are now @MainActor-bound. This makes the library code cleaner and safer to use.
+This version bumps the package to Swift 6.2 and strict concurrency, which means that many UI types are now `@MainActor`-bound. This makes the keyboard engine more stable and thread-safe.
 
-We have tried to limit @MainActor to types that directly need to use the controller or its text document proxy, and have made many more types than before `Sendable`. We're pretty happy with the result.
-
-As part of minimizing these effects on the library, we have moved all proxy logic from the `KeyboardContext` to a new `KeyboardControllerContext`, which is only available on supported platforms.
+We've tried to limit `@MainActor` to types that need to use the controller or its text document proxy, and have made more types `Sendable`. As part of minimizing the effects on the library, we have moved proxy logic from `KeyboardContext` to a new `KeyboardControllerContext`. This makes the base context more versatile.
 
 Strict concurrency is a major change to the library. We have tried to design the changes in a way that will affect you as little as possible, but don't hesitate to let us know if something doesn't sit right with you.
 
-Another big change is the new plugin architecture that allows us to move sensitive or complex code out of the library. 11.0 ships with two plugins - `KeyboardKitDictationPlugin` and `KeyboardKitHostPlugin`.
 
-The new dictation plugin makes it a LOT easier to set up dictation than before. You don't have to copy code for a speech recognizer since the plugin contains both the standard engine, the recognizer and the volume recorder.
+## Plugins
 
-Besides this, this release removes all deprecated code, streamlines the library design, and makes things make a lot more sense. We hope that you will like it as much as we do.
+Another big change is the new plugin architecture that allows us to move sensitive or complex code out of the library, as well as 3rd party integrations. 
+
+KeyboardKit 11 ships with two plugins - `KeyboardKitDictationPlugin` and `KeyboardKitHostPlugin` - as well as a `KeyboardKitAutocompletePlugin` placeholder that will ship in an upcoming version.
 
 
 ## Feature Updates
@@ -52,50 +51,109 @@ While many features have been adjusted to the concurrency changes mentioned abov
 
 ### 📦 Package
 
-The package now uses Swift 6.2 and strict concurrency, and includes a new `KeyboardKitHostPlugin`, and a `KeyboardKitDictationPlugin`.
+KeyboardKit 11 uses Swift 6.2 and strict concurrency, and defines brand new plugin products.
+
+* The package now uses Swift 6.2 and strict concurrency.
+* The package defines new `KeyboardKit...Plugin` products.
+* Many types are now `Sendable`, and those that need it `@MainActor`.
+* dSyms are now included in the package - no need for a separate download.
 
 ### 🌱 Essentials
 
-`KeyboardControllerContext` is a new context type, and all text document proxy logic is moved there from `KeyboardContext`. `KeyboardState` has a new `controllerContext` that lets you access this context.
+KeyboardKit 11 cleans up large parts of the library, and removes parts that were previously soft-deprecated.
 
-To separate styles from views (which are main actor), `Keyboard.Background` has been refactored to a plain view, with its style information moved to a new `Keyboard.BackgroundStyle`.
-
-### 💡 Autocomplete
-
-The `AutocompleteService` protocol has been adjusted for the concurrency update, and functions are now async. It also has a new `warmUp()` function that is called early, to avoid first keypress hangs.
-
-The `AutocompleteSuggestionType.unknown` case has been renamed to `.current`, since that name is more correct given how the service returns results.
-
-### 🎤 Dictation
-
-The `KeyboardKitDictationPlugin` is a new plugin that ships with the package. It contains all the code that requires permissions, which means that KeyboardKit library no longer requires any permissions on its own.
-
-The plugin makes it easier than ever to enable dictation. Since it contains a standard engine, a speech recognizer, and a volume recorder, you just have to setup the plugin to get started.
-
-The in-app dictation flow and its `.app` dictation method have been removed, since dictation is now performed in the keyboard. See [the docs]({{site.urls.docs}}) to make sure that your app supports the background audio mode.
+* `Keyboard.Background` and `Keyboard.BackgroundStyle` are now separated.
+* `KeyboardContext` has a new `localePresentationCase` that defaults to capitalized.
+* `KeyboardControllerContext` is a new context type for controller-specific state.
+* `KeyboardInputViewController` has a new `setPreferredKeyboardCase()` function.
+* `KeyboardInputViewController`'s setup function can now inject autocomplete engines.
+* `KeyboardInputViewController`'s setup function can now inject a host application resolver.
+* `KeyboardState` has a new `controllerContext` property of type `KeyboardControllerContext`.
 
 ### 🧩 Extensions
 
-The native `ProcessInfo` type is extended with a new `isLiquidGlassAvailable` property that makes it easy to detect if Liquid Glass is available.
+KeyboardKit 11 adds a bunch of new extensions, and cleans up old ones that are no longer used by the library.
+
+* `ProcessInfo` has a new `isLiquidGlassAvailable` extension.
+
+### 💡 Autocomplete
+
+The new `KeyboardKitAutocompletePlugin` is currently empty, but will be used to define additional autocomplete engines in future KeyboardKit versions.
+
+* `KeyboardKitAutocompletePlugin` is a new plugin package.
+* `AutocompleteContext` no longer uses dispatch queues to update itself.
+* `AutocompleteContext`'s `isLoading` has been removed.
+* `AutocompleteContext` has a new `controllerThrottleInterval` property.
+* `AutocompleteEngine` is now public and adjusted to align with the plugin.
+* `AutocompleteEngineWithDownloadSupport` is a new protocol.
+* `AutocompleteService` moves some logic to the engine protocol.
+* `AutocompleteService` has a new `supportedLocales` property.
+* `AutocompleteService` has a new `warmUp()` function.
+* `AutocompleteService.autocomplete(_:updating:)` is now async throws.
+* `AutocompleteSettings`' `isAutoLearnEnabled` has been removed.
+* `AutocompleteSettingsScreen` has been cleaned up and polished.
+* `AutocompleteSuggestion` now defines a new `.deleteBackwardsCount`.
+* `AutocompleteSuggestion`'s `.isUnknown` is renamed to `isCurrent`.
+* `AutocompleteSuggestionSource` is a new enum with known sources.
+* `StandardAutocompleteService` warms up its engine to avoid a launch hangs.
+* `StandardAutocompleteService` now honors the new delete backwards count.
+* `KeyboardInputViewController` will use the new context throttle to throttle autocomplete operations.
+
+### 🎤 Dictation
+
+The new `KeyboardKitDictationPlugin` makes it a LOT easier to set up dictation. You don't have to copy any code since the plugin contains everything, and must only add `Info.plist` permissions if you use it.
+
+* `KeyboardKitDictationPlugin` is a new plugin package.
+* `KeyboardKit` has ways to inject a dictation engine.
+* `DictationEngine` defines a standard implementation in the plugin.
+* `DictationMethod` is removed, since dictation now uses a single method.
+* `DictationVolumeRecorder` and `DictationSpeechRecognizer` are now in the plugin.
 
 ### 🏠 Host Application
 
-The `KeyboardKitHostApplication` plugin is a new plugin that can be loaded from the package. It makes all calls needed to resolve the host application, which means that KeyboardKit no longer contains any such code.
+The new `KeyboardKitHostPlugin` contains all host application bundle ID logic, including all sensitive system API usages. This means that the system API usage is not completely opt-in for developers.
+
+* `KeyboardKitHostApplication` is a new plugin package.
+* `KeyboardKit` has ways to inject a host application resolver.
 
 ### 🌐 Localization
 
-All screen localization types now use `LocalizedStringResource` instead of plain strings. This will make it easier for us to localize these screens, and for you to support more locales.
+KeyboardKit 11 view localization now uses `LocalizedStringResource` instead of `String`. This makes it easier to localize these parts, and will let us localize these components in more locales in later versions.
+
+* All screen localization types now use `LocalizedStringResource`.
 
 ### ⚙️ Settings
 
-To avoid binding the various settings types to `@MainActor`, some types have new initializers that let you pass in values, and `@MainActor`-specific ones with default parameter values, like `DeviceType.current`.
+KeyboardKit 11 has rewritten the settings store to work better with Swift concurrency.
 
+* `KeyboardSettings` uses a new thread-safe store resolver.
+* `KeyboardSettings` now requires a `deviceType` when created.
+* `KeyboardSettings` has new `resetStore(for:)` and `resetStore(forAppGroup:)` functions.
 
-## Breaking Changes
+### 🐛 Bug Fixes
 
-This version removes deprecated code and experiments, makes screens use `LocalizedStringResource`, and moves proxy logic from `KeyboardContext` to the new `KeyboardControllerContext`.
+* `KeyboardAction` adjusts the presentation for multi-char currencies like "kr".
+* `KeyboardInputViewController` now performs a new autocomplete when the locale changes.
 
-Finally, dictation now assumes that it's launched from the keyboard, started in the main app, and performed in the keyboard. For this to work, your app must [support background audio]({{site.urls.docs}}).
+### 🚨 Breaking Changes
+
+* All deprecated code has been removed.
+* `DictationMethod` has been removed.
+* `DictationSpeechRecognizer` has been removed.
+* `DictationVolumeRecorder` has been removed.
+* `GestureButtonScrollState` has been removed.
+* `KeyboardApp`'s `.keyboardSettingsKeyPrefix` has been removed.
+* `KeyboardContext` moves proxy logic to controller context.
+* `KeyboardContext` moves Liquid Glass logic to `ProcessInfo`.
+* `KeyboardContext`'s `.autocapitalizationTypeOverride` has been.
+* `KeyboardExperiment` has no active experiments.
+* `KeyboardExperimentContext` has been removed.
+* `KeyboardExperimentSettings` has been removed.
+* `KeyboardHostApplicationProvider` has been removed.
+* `KeyboardInputViewController` lifecycle functions have been reduced.
+* `KeyboardInputViewController` now syncs to its contexts, not the other way.
+* `KeyboardSettings.store` and `.storeKeyPrefix` are no longer mutable values.
+* `KeyboardInputViewController`'s `.originalTextDocumentProxy` is now fully internal.
 
 
 ## Release Process
