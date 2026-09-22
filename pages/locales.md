@@ -13,7 +13,7 @@ KeyboardKit supports **{{site.locales.count}}** locales (languages), which affec
 
 ## Supported Locales
 
-Below is a list of all **{{site.locales.count}}** locales that KeyboardKit supports:
+KeyboardKit supports the following **{{site.locales.count}}** locales:
 
 <ul>
   {% for locale in site.data.locales %}
