@@ -1,16 +1,19 @@
 #!/bin/bash
 
-# Creates a blog post and its asset folder, using today's date.
+# Creates a blog post, its asset folder and a header image, using today's date.
 #
-#   assets/blog/yy/mmdd/
+#   assets/blog/yy/mmdd/image.jpg
 #   collections/_posts/yyyy/yyyy-mm-dd-<title-slug>.md
 #
-# Usage: ./create-post --title "News in KeyboardKit 11"
+# Usage: ./create-post --title "News in KeyboardKit 11" [--tag swiftui]
 #        ./create-post -t "News in KeyboardKit 11"
+#
+# The tag defaults to "Blog", which is written as "general" to the post.
 
 set -e
 
 TITLE=""
+TAG="Blog"
 
 while [ $# -gt 0 ]; do
     case "$1" in
@@ -24,6 +27,14 @@ while [ $# -gt 0 ]; do
             ;;
         -t=*)
             TITLE="${1#*=}"
+            shift
+            ;;
+        --tag)
+            TAG="$2"
+            shift 2
+            ;;
+        --tag=*)
+            TAG="${1#*=}"
             shift
             ;;
         *)
@@ -49,6 +60,11 @@ if [ -z "$SLUG" ]; then
     exit 1
 fi
 
+POST_TAG=$(echo "$TAG" \
+    | tr '[:upper:]' '[:lower:]' \
+    | sed -E 's/[^a-z0-9]+/-/g; s/^-+//; s/-+$//')
+[ "$POST_TAG" = "blog" ] && POST_TAG="general"
+
 DATE=$(date +%Y-%m-%d)
 YYYY=$(date +%Y)
 YY=$(date +%y)
@@ -71,7 +87,7 @@ cat > "$POST" <<EOF
 ---
 title:  $TITLE
 date:   $DATE 06:00:00 +0100
-tags:   general
+tags:   $POST_TAG
 
 assets: /$FOLDER/
 image: /$FOLDER/image.jpg
@@ -82,3 +98,6 @@ Text here...
 EOF
 
 echo "Created $POST"
+
+"$(dirname "$0")/create-post-header" --title "$TITLE" --tag "$TAG" --date "$DATE" --output "$FOLDER" \
+    || echo "Warning: Could not create the header image. Run create-post-header manually."

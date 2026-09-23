@@ -1,0 +1,95 @@
+#!/bin/bash
+
+# Generates blog post header images, using Blog.sketch as template.
+#
+# Usage: ./create-post-header --title "News in KeyboardKit 11"
+#        ./create-post-header --title "News in KeyboardKit 11" --tag swiftui --date 2026-09-23 --output assets/blog/26/0923
+#        ./create-post-header --date 2026-09-20
+#        ./create-post-header --from 2026-09-01 --to 2026-09-23
+#        ./create-post-header --date 2026-09-20 --template path/to/Blog.sketch
+#
+# --title creates a header for a title and writes it as <output>/image.jpg.
+#   The tag defaults to "Blog", the date to today and the output to post-headers/output/images/yy/mmdd.
+#
+# --date and --from/--to regenerate headers for existing posts on that date or in that range,
+#   and rewrite each post's image.jpg in its assets/blog/yy/mmdd folder.
+#
+# --template overrides the default Blog.sketch template in iCloud.
+
+set -e
+
+usage() {
+    awk 'NR > 2 && /^#/ { sub(/^# ?/, ""); print; next } NR > 2 { exit }' "$0"
+    exit "${1:-1}"
+}
+
+TITLE=""
+TAG="Blog"
+DATE=""
+OUTPUT=""
+FROM=""
+TO=""
+TEMPLATE="$HOME/Library/Mobile Documents/WUGMZZ5K46~com~bohemiancoding~sketch/Documents/KeyboardKit/Blog.sketch"
+
+while [ $# -gt 0 ]; do
+    case "$1" in
+        --title|-t) TITLE="$2"; shift 2 ;;
+        --tag) TAG="$2"; shift 2 ;;
+        --date|-d) DATE="$2"; shift 2 ;;
+        --output|-o) OUTPUT="$2"; shift 2 ;;
+        --from) FROM="$2"; shift 2 ;;
+        --to) TO="$2"; shift 2 ;;
+        --template) TEMPLATE="$2"; shift 2 ;;
+        --title=*|--tag=*|--date=*|--output=*|--from=*|--to=*|--template=*)
+            KEY="${1%%=*}"; set -- "$KEY" "${1#*=}" "${@:2}" ;;
+        -h|--help) usage 0 ;;
+        *) echo "Unknown argument: $1"; usage ;;
+    esac
+done
+
+is_date() { [[ "$1" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]]; }
+
+if [ -n "$TITLE" ]; then
+    if [ -n "$FROM$TO" ]; then echo "--title can't be combined with --from/--to"; usage; fi
+    DATE="${DATE:-$(date +%Y-%m-%d)}"
+    is_date "$DATE" || { echo "Invalid date: $DATE"; usage; }
+    if [ -n "$OUTPUT" ]; then
+        mkdir -p "$OUTPUT"
+        OUTPUT="$(cd "$OUTPUT" && pwd)"
+    fi
+else
+    if [ -n "$DATE" ]; then
+        if [ -n "$FROM$TO" ]; then echo "--date can't be combined with --from/--to"; usage; fi
+        FROM="$DATE"; TO="$DATE"
+    fi
+    if [ -z "$FROM" ] || [ -z "$TO" ]; then echo "Provide a --title, a --date, or --from and --to"; usage; fi
+    is_date "$FROM" || { echo "Invalid date: $FROM"; usage; }
+    is_date "$TO" || { echo "Invalid date: $TO"; usage; }
+fi
+
+cd "$(dirname "$0")/post-headers"
+REPO="$(cd ../.. && pwd)"
+OUT="output"
+SKETCHTOOL="/Applications/Sketch.app/Contents/MacOS/sketchtool"
+[ -x "$SKETCHTOOL" ] || SKETCHTOOL="/Applications/Sketch.app/Contents/Resources/sketchtool/bin/sketchtool"
+
+rm -rf "$OUT" && mkdir -p "$OUT/images"
+
+if [ -n "$TITLE" ]; then
+    FOLDER="${DATE:2:2}/${DATE:5:2}${DATE:8:2}"
+    TARGET="${OUTPUT:-$(pwd)/$OUT/images/$FOLDER}/image.jpg"
+    python3 headers.py single "$TITLE" "$TAG" "$DATE" "$TARGET" "$OUT/posts.json"
+else
+    python3 headers.py prepare "$REPO" "$OUT/posts.json" "$FROM" "$TO"
+fi
+
+if [ "$(python3 -c "import json,sys; print(len(json.load(open(sys.argv[1]))))" "$OUT/posts.json")" = "0" ]; then
+    echo "No posts found between $FROM and $TO"
+    exit 1
+fi
+
+swift measure.swift "$OUT/posts.json" "$OUT/sizes.json" | tee "$OUT/sizes.log"
+python3 headers.py build "$TEMPLATE" "$OUT/posts.json" "$OUT/sizes.json" "$OUT/headers.sketch"
+"$SKETCHTOOL" export slices "$OUT/headers.sketch" --formats=jpg --output="$OUT/images"
+python3 headers.py install "$OUT/posts.json" "$OUT/images"
+echo "Done"
