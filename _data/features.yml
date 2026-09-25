@@ -9,9 +9,9 @@
 
 - title:  Localization
   emoji:  🌐
-  url:    /features/localization
+  url:    /languages
   group:  core
-  text:   Type in <b>80+ locales</b>, with fully localized assets and layouts.
+  text:   Support <b>111 languages</b>, with fully localized layouts & tools.
   docs:   https://docs.keyboardkit.com/documentation/keyboardkit/localization-article
   card:   
     tags:

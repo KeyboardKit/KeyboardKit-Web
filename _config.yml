@@ -23,7 +23,7 @@ assets: /assets/
 header_image: /assets/icon/header.png
 
 locales:
-  count:      88
+  count:      111
 
 urls:
   email:      mailto:info@keyboardkit.com

@@ -1,4 +1,5 @@
 <section class="hero glow">
+  <div class="glass tag rounded">Supports 110+ Languages</div>
   <img src="/assets/icon/icon.png" class="glass icon" />
   <h1>Build your own<br />custom keyboard.</h1>
   <h2>The leading Swift and SwiftUI custom iOS keyboard framework.</h2>
