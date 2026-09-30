@@ -15,7 +15,7 @@ iPhone Duo is here, and with it a bunch of new concepts and form factors. This p
 
 ## iPhone Duo
 
-Since we're fairly certain that you already know most about the [iPhone Duo]({{page.duo}}), we won't go through it in detail, but in short it's a smaller device that compensates for it's shorter height by moving the status bar to the right.
+Since you most probably already know most about the [iPhone Duo]({{page.duo}}), we won't go through it in detail, but in short it's a smaller device that compensates for it's shorter height by moving the status bar to the right.
 
 ![iPhone Duo Closed]({{page.assets}}/duo-closed.jpg)
 
@@ -28,45 +28,45 @@ Let's look at how the Duo's native keyboard behaves, and compare it to how Keybo
 
 ## Closed Keyboard
 
-When the Duo is closed, the keyboard more or less what you'd expect, although a couple of things stand out.
+When the Duo is closed, the keyboard is more or less what you'd expect, although a couple of things stand out.
 
 ![Native Keyboard]({{page.assets}}/1-native-closed.jpg)
 
-Notice how the keyboard takes up all the horizontal space, but how the globe and dictation keys merge with the keyboard, instead of being separate. Let's compare it with the KeyboardKit keyboard.
+Notice how the globe and dictation buttons are added to the keyboard's bottom row. This is a new behavior for iPhone, where FaceID devices add these buttons outside the keyboard area. Let's compare it with KeyboardKit.
 
 ![KeyboardKit Keyboard]({{page.assets}}/1-kk-closed.jpg)
 
-In comparison, KeyboardKit looks pretty good, although the keys are a bit too tall. However, it still behaves like on a regular device and doesn't add the globe and dictation keys to the bottom row.
+While the keyboard looks good, it still behaves like on a regular device and doesn't add these two buttons to the bottom row. Since the Duo also doesn't add them, we end up without the buttons altogether. This must be fixed.
 
 
 ## Folded Keyboard
 
-When the Duo is folded, we can immediately see a huge difference - the keyboard is split around the screen fold!
+When the Duo is folded, we can immediately see a big difference - the keyboard is split around the screen fold!
 
 ![Native Keyboard]({{page.assets}}/2-native-folded.jpg)
 
-Apple strongly recommends moving interactive elements away from the fold, and the keyboard is no exception. Also notice that the globe and dictation now live outside the keyboard. Let's compare it with KeyboardKit.
+Apple strongly recommends moving interactive elements away from the fold, and the keyboard is no exception. Also notice that the globe and dictation buttons are now outside the keyboard. Let's compare with KeyboardKit.
 
 ![KeyboardKit Keyboard]({{page.assets}}/2-kk-folded.jpg)
 
-In comparison, KeyboardKit looks odd. Since it still behaves like a regular device, it renders keys with the shorter landscape configuration. It also doesn't split the keyboard in two...but the globe and dictation keys are there.
+Since KeyboardKit still behaves like on a regular device, it renders with the landscape configuration, which leads to smaller keys. It also doesn't split the keyboard in two, but it *does* get the globe and dictation buttons.
 
 
 ## Open Keyboard
 
-When the Duo is open, things start behaving like normal again. We now get a solid keyboard, with the globen and dictation keys placed outside the keyboard.
+When the Duo is folded open, things start to behave like normal again. We get a solid landscape keyboard with the globe and dictation buttons placed outside the keyboard.
 
 ![Native Keyboard]({{page.assets}}/3-native-open.jpg)
 
-However, notice how the keyboard rows are a bit uneven, and have different width. Let's compare it with the old design, which is still used in the KeyboardKit keyboard.
+However, notice how the rows are a bit uneven, with different width. Let's compare it with the old design, which is still used in the KeyboardKit keyboard.
 
 ![KeyboardKit Keyboard]({{page.assets}}/3-kk-open.jpg)
 
-In comparison, KeyboardKit looks since behaves like on a regular device, with the shorter key height and smaller fond, and with all rows except the second being even in width.
+This works, but the keyboard behaves like on a regular device, with shorter keys, smaller font, and with all rows except the second being even in width.
 
 
 ## Conclusion
 
 The iPhone Duo forces us all to adjust our apps to its new form factors, and KeyboardKit is no different. We will tweak the keyboard layout and sizes to the new configurations, and start looking at a split layout.
 
-This work will begin after the KeyboardKit 11 release, which is scheduled for October 1. After that, we hope to get support out shortly.
+This work will begin after the KeyboardKit 11 release, which is scheduled for October 1. After that, we hope to get support out shortly after the Duo has been released.
