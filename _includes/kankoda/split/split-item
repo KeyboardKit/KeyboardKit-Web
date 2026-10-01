@@ -5,14 +5,14 @@
     {% endif %}
     <h2>{{ include.item.title | default: include.item.name }}</h2>
     <p>{{ include.item.text }}</p>
-    <div>
-      {% if include.item.url %}
-      <a class="cta glass" href="{{include.item.url}}">Read More</a>
-      {% endif %}
-      {% if include.item.url_appstore %}
-      <a class="cta" href="{{include.item.url_appstore}}">Download on the App Store</a>
-      {% endif %}
-    </div>
   </div>
   <img src="{{ include.item.split-image | default: include.item.image }}" />
+  <div class="split-actions">
+    {% if include.item.url %}
+    <a class="cta glass" href="{{include.item.url}}">Read More</a>
+    {% endif %}
+    {% if include.item.url_appstore %}
+    <a class="cta" href="{{include.item.url_appstore}}">Download</a>
+    {% endif %}
+  </div>
 </div>
