@@ -14,7 +14,8 @@ description: The KeyboardKit app lets you try all KeyboardKit features on iPhone
 
 <section class="hero glow">
   <div class="hero-content">
-      <div class="rounded glass tag">Custom Keyboard App for iPhone & iPad</div>
+      <div class="rounded glass tag">Custom Keyboard for iPhone & iPad</div>
+      <img src="/assets/icon/icon.png" class="glass icon" />
       <h1>KeyboardKit App</h1>
       <h2>Install KeyboardKit on your device, no code required.</h2>
       <p>{{ page.description }}</p>
