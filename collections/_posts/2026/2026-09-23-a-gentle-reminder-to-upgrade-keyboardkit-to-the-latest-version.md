@@ -1,5 +1,5 @@
 ---
-title:  A gentle reminder to upgrade KeyboardKit to the latest version
+title:  A gentle reminder to upgrade to the latest version
 date:   2026-09-23 06:00:00 +0100
 tags:   general
 
