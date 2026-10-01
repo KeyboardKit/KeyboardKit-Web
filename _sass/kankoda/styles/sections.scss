@@ -12,8 +12,11 @@ section.glow, section.showcase {
 //
 // These properties are deliberately scoped to the color classes rather than to
 // every `section`. A section used as a plain structural wrapper must stay
-// transparent, and `overflow: hidden` on an ancestor silently disables
-// `position: sticky` in its subtree.
+// transparent.
+//
+// Use `overflow: clip`, not `hidden`, to contain the glow. `hidden` makes the
+// section a scroll container, which silently disables `position: sticky` in
+// its subtree (e.g. the feature table header).
 
 section {
   &.blue,
@@ -26,7 +29,7 @@ section {
   &.dark,
   &.showcase {
     position: relative;
-    overflow: hidden;
+    overflow: clip;
     isolation: isolate;
   }
 
