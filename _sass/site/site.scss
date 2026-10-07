@@ -16,3 +16,11 @@ section.hero {
     }
   }
 }
+
+// Videos, played live by /js/videos/keyboardkit-videos.js
+
+.kk-video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin: 0 auto 2rem;
+}
