@@ -1,9 +1,11 @@
 <section class="hero glow">
-  <div class="glass tag rounded">Supports 110+ Languages</div>
+  <a href="/blog/2026/10/01/keyboardkit-11-is-out" class="glass tag rounded scale">
+    KeyboardKit 11 is out!
+  </a>
   <img src="/assets/icon/icon.png" class="glass icon" />
-  <h1>Build your own<br />custom keyboard.</h1>
-  <h2>The leading Swift and SwiftUI custom iOS keyboard framework.</h2>
-  <p>{{ page.description }}</p>
+  <h1>KeyboardKit</h1>
+  <h2>The leading Swift and SwiftUI custom keyboard framework.</h2>
+  <p>KeyboardKit lets you create amazing custom keyboards for iPhone and iPad.</p>
   <div>
     <a href="#content" class="cta glass">Learn More</a>
     <a href="{{site.urls.github}}" class="cta">GitHub</a>

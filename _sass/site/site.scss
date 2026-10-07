@@ -9,4 +9,10 @@ section.hero {
       width: 100px;
     }
   }
+
+  h1 {
+    @media (min-width: 701px) {
+      font-size: clamp(2.9rem, 7vw, 4.5rem);
+    }
+  }
 }
