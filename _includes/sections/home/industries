@@ -1,6 +1,9 @@
 <article class="wrapper wide slide-in">
   <h2>Industries</h2>
   <p>KeyboardKit powers innovation across a wide range of industries and use cases.</p>
+  {% comment %} Played live with the Remotion Player, see the keyboardkit-videos project. {% endcomment %}
+  <div class="kk-video" data-kk-video="language-technologies" aria-label="A custom keyboard autocompletes words and switches between English, Swedish and Ukrainian."></div>
+  <script src="{{ "/js/videos/keyboardkit-videos.js" | relative_url }}" defer></script>
   <div class="grid col4 carousel mobile">
     {% assign featured_industries = site.data.industries | where: "featured", true %}
     {% for industry in featured_industries %}
