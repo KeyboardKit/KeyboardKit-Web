@@ -1,6 +1,6 @@
 ---
 title:  Swift Concurrency with Matt Massicotte
-date:   2026-10-12 06:00:00 +0100
+date:   2026-10-20 06:00:00 +0100
 tags:   general
 
 permalink: /drafts/matt
