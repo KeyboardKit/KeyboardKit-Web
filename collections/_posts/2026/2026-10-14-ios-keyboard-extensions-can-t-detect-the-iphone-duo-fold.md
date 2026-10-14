@@ -75,6 +75,6 @@ These results are from the iPhone Duo simulator with iOS 27.1 (Xcode 27.1 RC). W
 
 ## Conclusion
 
-We have filed a feedback with Apple, asking for this information to be made available to keyboard extensions as well. If you file a feedback, please refer to [FEEDBACK ID]. Duplicates help Apple prioritize.
+We have filed a feedback with Apple, asking for this information to be made available to keyboard extensions as well. If you file a feedback, please refer to `FB25187339`. Duplicates help Apple prioritize.
 
 You can follow the progress in [this GitHub issue]({{page.github-issue}}).
