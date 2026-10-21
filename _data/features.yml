@@ -30,6 +30,9 @@
   group:  core
   text:   A fully customizable keyboard layout engine.
   docs:   https://docs.keyboardkit.com/documentation/keyboardkit/layout-article
+  card:   
+    tags:
+      - pro
 
 - title:  Feedback
   emoji:  🔉
