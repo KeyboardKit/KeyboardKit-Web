@@ -76,9 +76,9 @@ footer:
         - Home | /
         - About | /about
         - App | /app
-        - FAQ | /faq
         - Industries | /industries
         - Case Studies | /case-studies
+        - Partners | /partners
     - title: SDK
       links:
         - Features | /features
