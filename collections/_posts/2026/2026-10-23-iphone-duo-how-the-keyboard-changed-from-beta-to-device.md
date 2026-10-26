@@ -19,7 +19,7 @@ We finally have a physical iPhone Duo to test with, and it turns out that the ke
 
 In the iOS 27.1 simulator, the globe and dictation buttons are placed outside the keyboard area, much like how all Face ID iPhones behave.
 
-<div class="grid col3 images">
+<div class="grid col3">
 <img src="{{page.assets}}simulator-duo-closed.jpg" />
 <img src="{{page.assets}}simulator-duo-folded.jpg" />
 <img src="{{page.assets}}simulator-duo-open.jpg" />
@@ -32,7 +32,7 @@ Since the simulator provides these buttons in all three states, a custom keyboar
 
 It turns out that a physical iPhone Duo behaves differently. Instead of rendering the keys outside the keyboard, the globe button is added next to the emoji key, and the dictation button is added next to the space bar.
 
-<div class="grid col2 images">
+<div class="grid col2">
 <img src="{{page.assets}}device-duo-closed-portrait.jpg" />
 <img src="{{page.assets}}device-duo-open-portrait.jpg" />
 </div>

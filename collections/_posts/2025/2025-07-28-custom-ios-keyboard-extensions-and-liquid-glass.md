@@ -27,7 +27,7 @@ This may be due to the fact that the native keyboard was pretty broken in the fi
 
 This has improved in later beta updates, but the design is still pretty broken, where key heights and insets differ between languages, screen orientations, and device types:
 
-<div class="grid col2 images">
+<div class="grid col2">
     <img src="{{page.assets}}keyboard-english.jpg" title="A native English keyboard in iOS26" alt="A screenshot of a native English keyboard in iOS26" />
     <img src="{{page.assets}}keyboard-swedish.jpg" title="A native Swedish keyboard in iOS26" alt="A screenshot of a native Swedish keyboard in iOS26" />
 </div>
@@ -39,7 +39,7 @@ We hope these are temporary glitches and that the design will be consistent when
 
 KeyboardKit 9.9 will update its standard design to harmonize with Liquid Glass, as can be seen here:
 
-<div class="grid col3 images">
+<div class="grid col3">
     <img src="{{page.assets}}keyboardkit-liquid-light.png" alt="A screenshot of a KeyboardKit keyboard where the design is adjusted for Liquid Glass"/>
     <img src="{{page.assets}}keyboardkit-liquid-light-primary.png" alt="A screenshot of a KeyboardKit keyboard where the design is adjusted for Liquid Glass"/>
     <img src="{{page.assets}}keyboardkit-liquid-dark-primary.png" alt="A screenshot of a KeyboardKit keyboard where the design is adjusted for Liquid Glass"/>

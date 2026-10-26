@@ -26,7 +26,7 @@ KeyboardKit therefore has an App Group-synced `keyboardSettings` store that auto
 
 KeyboardKit Pro unlocks screen templates that can be used by the main app or within a keyboard:
 
-<div class="grid col2 images">
+<div class="grid col2">
     <div><img alt="A Home Screen" src="{{page.assets}}app-homescreen.jpg" /></div>
     <div><img alt="A Settings Screen" src="{{page.assets}}keyboard-settingsscreen.jpg" /></div>
     <div><img alt="A Locale Screen" src="{{page.assets}}autocomplete-settingsscreen.jpg" /></div>

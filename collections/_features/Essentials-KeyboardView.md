@@ -12,7 +12,7 @@ KeyboardKit has a ``KeyboardView`` that lets you mimic a native iOS keyboard wit
 
 The `KeyboardView` automatically applies all configurations and settings from the environment, and applies native-like gestures and callouts to all its keys.
 
-<div class="grid col2 images">
+<div class="grid col2">
     <div><img alt="An English KeyboardView" src="{{page.assets}}keyboardview-english.jpg" /></div>
     <div><img alt="A styled KeyboardView" src="{{page.assets}}keyboardview-swedish-theme.jpg" /></div>
 </div>
@@ -24,7 +24,7 @@ The `KeyboardView` is highly customizable and lets you use custom layouts, callo
 
 [KeyboardKit Pro][Pro] unlocks localized keyboard layouts and secondary actions for all [{{site.locales.count}} supported languages](/locales), as well as an emoji keyboard, iPad specific layouts and features, additional input toolbars, etc:
 
-<div class="grid col3 images">
+<div class="grid col3">
     <div><img alt="A styled KeyboardView" src="{{page.assets}}emojikeyboard.jpg" /></div>
     <div><img alt="A styled KeyboardView" src="{{page.assets}}keyboard-inputtoolbar.jpg" /></div>
     <div><img alt="A bottom row keyboard" src="{{page.assets}}keyboard-bottomrow.jpg" /></div>

@@ -21,14 +21,14 @@ KeyboardKit 11.1 adds support for `Khmer`, `Korean`, `Luxembourgish`, `Thai`, `X
 
 Khmer involved extending the diacritic capabilites, while Korean involved implementing a new Hangul engine. 
 
-<div class="grid col2 images">
+<div class="grid col2">
     <img src="{{page.assets}}khmer.jpg" alt="A Khmer keyboard" />
     <img src="{{page.assets}}korean.jpg" alt="A Korean keyboard" />
 </div>
 
 Thai uses two brand new layouts - `.thai4Row` and `.thai5Row` - and involved extending the action callout to be able to present its many signs in two rows.
 
-<div class="grid col2 images">
+<div class="grid col2">
     <img src="{{page.assets}}thai-5row.jpg" alt="A Thai 5-Row keyboard" />
     <img src="{{page.assets}}thai-4row.jpg" alt="A Thai 4-Row keyboard" />
 </div>
@@ -40,7 +40,7 @@ Adding support for these 6 new locales means that KeyboardKit now supports **{{s
 
 KeyboardKit 11.1 can detect iPhone Duo devices, and will adjust the keyboard layout and design to match the native Duo experience, both when the device is closed and open.
 
-<div class="grid col2 images">
+<div class="grid col2">
     <img src="{{page.assets}}duo-closed-portrait.jpg" alt="KeyboardKit on a closed Duo in portrait" />
     <img src="{{page.assets}}duo-closed-landscape.jpg" alt="KeyboardKit on a closed Duo in landscape" />
 </div>
@@ -56,7 +56,7 @@ The new `Keyboard.DuoDetector` is used by `KeyboardContext` to set a `isDuoDevic
 
 KeyboardKit 11.1 replaces the previously individual, but mutually exclusive keyboard placements with a single placement, which also adds support for split keyboard to all devices.
 
-<div class="grid col2 images">
+<div class="grid col2">
     <img src="{{page.assets}}duo-open-standard.jpg" alt="KeyboardKit on a open Duo in standard mode" />
     <img src="{{page.assets}}duo-open-split.jpg" alt="KeyboardKit on a open Duo in split mode" />
 </div>

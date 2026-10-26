@@ -25,7 +25,7 @@ Say hello to [Hayatar]({{page.appstore}}) - an Armenian keyboard built by Rotter
 
 Hayatar is a custom Armenian keyboard for iOS, that aims to improve the Armenian typing experience on iOS. 
 
-<div class="grid col3 slide-in images">
+<div class="grid col3 slide-in">
     <img src="{{page.assets}}screenshot-1.jpg" />
     <img src="{{page.assets}}screenshot-2.jpg" />
     <img src="{{page.assets}}screenshot-3.jpg" />

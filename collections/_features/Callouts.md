@@ -12,7 +12,7 @@ Callouts are an important part of the typing experience, where different callout
 
 Input callouts are used to highlight the currently pressed key, while action callouts are used to show secondary actions when a key is long pressed.
 
-<div class="grid col2 images">
+<div class="grid col2">
     <div><img alt="An input callout" src="{{page.assets}}callouts-inputcallout.jpg" /></div>
     <div><img alt="An action callout" src="{{page.assets}}callouts-actioncallout.jpg" /></div>
 </div>

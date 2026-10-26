@@ -28,7 +28,7 @@ Meet [Tapling]({{page.website}}) - a small companion that lives in your keyboard
 
 [Tapling]({{page.website}}) is a small companion that lives in your keyboard’s suggestion bar and taps along while you type. As you type you earn keycaps that can unlock items like furs, hats, and faces for your Tapling.
 
-<div class="grid col3 slide-in images">
+<div class="grid col3 slide-in">
     <img src="{{page.assets}}screenshot-1.png" />
     <img src="{{page.assets}}screenshot-2.png" />
     <img src="{{page.assets}}screenshot-3.png" />

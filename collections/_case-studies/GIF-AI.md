@@ -28,7 +28,7 @@ Say hi to [GIF AI Keyboard]({{page.appstore}}) - an innovative keyboard that let
 
 Are you picturing a funny situation in your mind, and want to share it with your peers? A GIF says more than a 1 000 words. Switch the keyboard, type your prompt, drop the GIF, and share the joy.
 
-<div class="grid col3 slide-in images">
+<div class="grid col3 slide-in">
     <img src="{{page.assets}}screenshot-1.jpg">
     <img src="{{page.assets}}screenshot-2.jpg">
     <img src="{{page.assets}}screenshot-3.jpg">

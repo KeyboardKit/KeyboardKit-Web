@@ -19,7 +19,7 @@ KeyboardKit Pro comes with many predefined themes, with various style variations
 <section class="themes">
 {% for theme in site.data.themes %}
     <h3>{{theme.name}}</h3>
-    <div class="grid col4 images">
+    <div class="grid col4">
     {% for style in theme.styles %}
       <img src="{{style.image}}" alt="Style preview" style="border-radius:10px" />
     {% endfor %}

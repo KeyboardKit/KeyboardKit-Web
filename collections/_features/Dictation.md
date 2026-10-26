@@ -15,7 +15,7 @@ KeyboardKit has dictation-related types and views, like the observable `Dictatio
 
 With dictation enabled, KeyboardKit will automatically open the main app from the keyboard to start dictation, then return to the keyboard to perform dictation:
 
-<div class="grid col2 images">
+<div class="grid col2">
     <span><img src="{{page.assets}}dictation-progressview.jpg" /></span>
     <span><img src="{{page.assets}}dictation-settingsscreen.jpg" /></span>
 </div>

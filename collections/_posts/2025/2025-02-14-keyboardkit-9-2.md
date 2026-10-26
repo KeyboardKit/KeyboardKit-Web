@@ -36,7 +36,7 @@ KeyboardKit 9.2 adds Colemak support, and enables it for locales that are compat
 
 KeyboardKit 9.2 makes it possible to use alternate keyboard layouts for locales that support it, and add many keyboards for locales that support QWERTY, AZERTY, QWERTZ & Colemak.
 
-<div class="grid col3 images">
+<div class="grid col3">
     <img src="{{page.assets}}screenshot-layouttype-1.jpg" />
     <img src="{{page.assets}}screenshot-layouttype-2.jpg" />
     <img src="{{page.assets}}screenshot-layouttype-3.jpg" />

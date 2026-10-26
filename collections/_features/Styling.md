@@ -60,7 +60,7 @@ KeyboardKit Pro emoji-specific, vectorized assets, like the ``.keyboardEmoji`` a
 
 KeyboardKit Pro unlocks a theme engine that makes easy to define and style keyboards with themes:
 
-<div class="grid col3 images">
+<div class="grid col3">
     <div><img alt="Standard Green Theme" src="{{site.assets}}/themes/theme-standard-green.jpg" /></div>
     <div><img alt="Swifty Blue Theme" src="{{site.assets}}/themes/theme-swifty-blue.jpg" /></div>
     <div><img alt="Cotton Candy Theme" src="{{site.assets}}/themes/theme-candyshop.jpg" /></div>

@@ -43,14 +43,14 @@ The ``KeyboardAppView`` can be used as the main app's root content view, and wil
 
 KeyboardKit Pro unlocks a ``HomeScreen`` template that can be used as the main app's root view, as well as a `Keyboard.SettingsScreen`, `Keyboard.LocaleSettingsScreen`, etc.:
 
-<div class="grid col2 images">
+<div class="grid col2">
     <span><img src="{{page.assets}}app-homescreen.jpg" /></span>
     <span><img src="{{page.assets}}app-settings.jpg" /></span>
 </div>
 
 Most features have their own settings screens that can be used in the main app and the keyboard:
 
-<div class="grid col2 images">
+<div class="grid col2">
     <span><img src="{{page.assets}}autocomplete-settingsscreen.jpg" /></span>
     <span><img src="{{page.assets}}fonts-settingsscreen.jpg" /></span>
 </div>

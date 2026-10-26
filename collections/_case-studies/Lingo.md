@@ -26,7 +26,7 @@ Say hello to [Lingo]({{page.appstore}}) – a cutting-edge keyboard app that mak
 
 Lingo is a smart keyboard that is designed to break down language barriers. With support for 100+ languages, Lingo lets you write and translate messages directly while typing. No app-switching required.
 
-<div class="grid col3 slide-in images">
+<div class="grid col3 slide-in">
     <img src="{{page.assets}}screenshot1.png" />
     <img src="{{page.assets}}screenshot2.png" />
     <img src="{{page.assets}}screenshot3.png" />

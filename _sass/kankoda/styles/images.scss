@@ -13,11 +13,14 @@ img.medium {
 }
 
 .page-content {
-  > p,
-  > div.images {
+  img {
+    border-radius: var(--radius-glass-panel);
+    box-shadow: var(--shadow-default);
+  }
+
+  .image-card-media.is-image {
     img {
-      border-radius: var(--radius-glass-panel);
-      box-shadow: var(--shadow-default);
+      border-radius: 1px !important; 
     }
   }
 
@@ -39,11 +42,6 @@ img.medium {
   > .images + p {
     margin-top: var(--page-content-media-gap);
   }
-}
-
-.page-content p img, div.images img, img.bordered {
-  border-radius: var(--radius-glass-panel);
-  box-shadow: var(--shadow-default);
 }
 
 // Cap the device mockup on wide screens, but let it shrink with its container
