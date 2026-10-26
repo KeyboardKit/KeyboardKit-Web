@@ -6,30 +6,18 @@ title: Partners
 
 sidebar-menu:
   title: Partners
+  data: partners
 
-image: /assets/headers/partners.jpg
-
-description: KeyboardKit is looking for partners to help grow sales, step in as product specialists during integration projects, and scale customer support.
+description: KeyboardKit is looking for partners to help grow sales, strengthen the team during integration projects, and scale customer support.
 ---
 
-{{page.description}}
+Since KeyboardKit is developed by a small team, we surround ourselves with experts in various fields, to expand our capabilities and provide you with the help you need when you need it.
 
+Whether you're an agency, consultancy, platform provider, or technology company, we'd love to explore how we can work together. [Contact us]({{site.urls.email}}) via email or schedule an intro call [here]({{site.urls.calendar}}).
 
-## Sales
-
-KeyboardKit has exclusively sold through in-bound sales. As we begin following up on leads and reaching out to potential customers, we'd love to team up with a sales partner.
-
-
-## Integration
-
-Once we start reaching out to potential customers, we need to be ready to assist with integration projects. We are therefore looking for partner teams that can help with these projects.
-
-
-## Customer Support
-
-As our [business license](/business) offering grows, we want to team up with external partners to scale customer support.
-
-
-## Contact Us
-
-Whether you're a consultancy, a platform provider, or a technology company, we'd love to explore how we could work together to scale the company. [Contact us]({{site.urls.email}}) via email or schedule an intro call [here]({{site.urls.calendar}}).
+<article class="split-list">
+    {% for item in site.data.partners %}
+    <a name="{{item.name}}"></a>
+    {% include kankoda/split/split-item item=item button-text="Visit Their Website" %}
+    {% endfor %}
+</article>

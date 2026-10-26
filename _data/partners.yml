@@ -1,27 +1,35 @@
 - name: CodeKeeper
-  eyebrow: Foo
-  text: Yeah
+  eyebrow: Software Escrow
+  image: /assets/partners/codekeeper.jpg
+  url: https://codekeeper.co
+  text: CodeKeeper provides audit-ready software escrows, backups, and continuity services, and is our partner for software escrow services.
 
 - name: Extended Brain
-  eyebrow: Foo
-  text: Yeah
+  eyebrow: Sales & Strategy
+  image: /assets/partners/extended-brain.jpg
+  url: https://extendedbrain.se
+  text: Extended Brain is a digital strategy company in Stocholm, Sweden, that assists us with sales strategies and analysis.
 
 - name: Langlot Research
-  eyebrow: Foo
-  text: Yeah
+  eyebrow: Language Technologies
+  image: /assets/partners/langlot.jpg
+  url: https://langlotresearch.com
+  text: Langlot Research is a software company in Stockholm, Sweden, who are experts in powerful language tools. We are currently integrating their Langlot prediction engine into KeyboardKit.
 
 - name: Lighthouse Growth
-  eyebrow: Foo
-  text: Yeah
+  eyebrow: Integration Support
+  image: /assets/partners/lighthouse.jpg
+  url: https://www.lighthouse-growth.com/en
+  text: Lighthouse Growth is a software company in Gdansk, Poland, that can help you integrate KeyboardKit into your product.
 
 - name: Golura
-  eyebrow: Foo
-  text: Yeah
+  eyebrow: UX & Design
+  image: /assets/partners/golura.jpg
+  url: /
+  text: Golura is a UX & Design company in Stockholm, Sweden, that assists us and our parent company Kankoda with web design and UX.
 
 - name: Sloboda Studio
-  eyebrow: Foo
-  text: Yeah
-
-- name: Snow Design
-  eyebrow: Foo
-  text: Yeah
+  eyebrow: Integration Support
+  image: /assets/partners/sloboda.jpg
+  url: https://sloboda-studio.com/
+  text: Sloboda Studio is a software company in Berlin, Germany, that can help you integrate KeyboardKit into your product.
