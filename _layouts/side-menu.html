@@ -1,7 +1,7 @@
 ---
 layout: plain
 
-instructions: To customize the side menu, add a "menu" value to the front-matter with an optional "title"
+instructions: To customize the side menu, add a "sidebar-menu" value to the front-matter with an optional "title". Set "data" to the name of a _data file to also list its items (by title or name) in the menu.
 ---
 
 {% assign menu = page.sidebar-menu %}
@@ -54,6 +54,12 @@ instructions: To customize the side menu, add a "menu" value to the front-matter
                   {% endif %}
                 {% endif %}
               {% endfor %}
+              {% if menu.data %}
+                {% for item in site.data[menu.data] %}
+                  {% assign item_title = item.title | default: item.name %}
+                  <li><a href="#{{ item_title | slugify }}">{{ item_title }}</a></li>
+                {% endfor %}
+              {% endif %}
               {% for item in page.side-menu-append %}
                 <li><a href="#{{ item.title | slugify }}">{{ item.title }}</a></li>
               {% endfor %}

@@ -25,6 +25,10 @@
     return headerHeight + 32;
   }
 
+  function documentTop(element) {
+    return element.getBoundingClientRect().top + window.scrollY;
+  }
+
   function setActiveLink(nextActiveLink) {
     if (!nextActiveLink || nextActiveLink === activeLink) return;
     activeLink = nextActiveLink;
@@ -71,8 +75,8 @@
     for (let index = 0; index < headings.length; index += 1) {
       const current = headings[index];
       const next = headings[index + 1];
-      const currentTop = current.heading.offsetTop;
-      const nextTop = next ? next.heading.offsetTop : Number.POSITIVE_INFINITY;
+      const currentTop = documentTop(current.heading);
+      const nextTop = next ? documentTop(next.heading) : Number.POSITIVE_INFINITY;
       const sectionBoundary = next ? currentTop + ((nextTop - currentTop) / 2) : Number.POSITIVE_INFINITY;
 
       if (scrollPosition < sectionBoundary) {
