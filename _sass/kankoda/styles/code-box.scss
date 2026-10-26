@@ -7,8 +7,10 @@ $code-box-text: #eef2ff;
 $code-box-muted: #8f93b4;
 $code-box-shadow: var(--shadow-default);
 
+// Kramdown wraps fenced code as `div.highlighter-rouge > div.highlight`. Only the
+// outer element is the box, so a `.highlight` inside a `.highlighter-rouge` is skipped.
 div.highlighter-rouge,
-div.highlight,
+div.highlight:not(.highlighter-rouge *),
 figure.highlight {
   display: block;
   width: 100%;
@@ -232,7 +234,7 @@ td code.highlighter-rouge {
 
 @media (max-width: 700px) {
   div.highlighter-rouge,
-  div.highlight,
+  div.highlight:not(.highlighter-rouge *),
   figure.highlight {
     border-radius: 1.25rem;
 

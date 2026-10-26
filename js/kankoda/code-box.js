@@ -4,7 +4,11 @@
  */
 
 (function() {
-  const blocks = document.querySelectorAll('div.highlighter-rouge, div.highlight, figure.highlight');
+  // Kramdown nests `div.highlight` inside `div.highlighter-rouge`; only the outer one is a box.
+  const blocks = Array.from(document.querySelectorAll('div.highlighter-rouge, div.highlight, figure.highlight'))
+    .filter(function(block) {
+      return !block.parentElement.closest('.highlighter-rouge, .highlight');
+    });
   if (!blocks.length) return;
 
   const aliases = {
