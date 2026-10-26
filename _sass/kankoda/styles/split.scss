@@ -50,6 +50,18 @@
     > :last-child {
       margin-bottom: 0;
     }
+
+    // The global heading margins would add to the gap above and make the space
+    // around the title larger than the one before the buttons. Let the gap alone
+    // space the eyebrow, title, text and buttons evenly.
+    > h2 {
+      margin-bottom: 0;
+
+      // Only when there's no eyebrow above it; `.eyebrow + h2` pulls it up tight.
+      &:first-child {
+        margin-top: 0;
+      }
+    }
   }
 
   // The call-to-action buttons. A flex row so they sit side by side and wrap
