@@ -55,7 +55,8 @@ instructions: To customize the side menu, add a "sidebar-menu" value to the fron
                 {% endif %}
               {% endfor %}
               {% if menu.data %}
-                {% for item in site.data[menu.data] %}
+                {% assign menu_items = site.data[menu.data] | where_exp: "item", "item.excluded != 1" %}
+                {% for item in menu_items %}
                   {% assign item_title = item.title | default: item.name %}
                   <li><a href="#{{ item_title | slugify }}">{{ item_title }}</a></li>
                 {% endfor %}

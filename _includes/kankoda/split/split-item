@@ -7,7 +7,7 @@
     <h2 id="{{ item_title | slugify }}">{{ item_title }}</h2>
     <p>{{ include.item.text }}</p>
   </div>
-  <img src="{{ include.item.split-image | default: include.item.image }}" />
+  <img src="{{ include.item.split-image | default: include.item.image }}" alt="{{ item_title }}" />
   <div class="split-actions">
     {% if include.item.url %}
     <a class="cta glass" href="{{include.item.url}}">{{ include.button-text | default: "Read More" }}</a>

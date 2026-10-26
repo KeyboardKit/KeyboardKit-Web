@@ -2,34 +2,35 @@
   eyebrow: Software Escrow
   image: /assets/partners/codekeeper.jpg
   url: https://codekeeper.co
-  text: CodeKeeper provides audit-ready software escrows, backups, and continuity services, and is our partner for software escrow services.
+  text: CodeKeeper provides audit-ready software escrows, backup, and continuity services, and is our partner for source code escrow.
 
 - name: Extended Brain
   eyebrow: Sales & Strategy
   image: /assets/partners/extended-brain.jpg
   url: https://extendedbrain.se
-  text: Extended Brain is a digital strategy company in Stocholm, Sweden, that assists us with sales strategies and analysis.
+  text: Extended Brain is a digital strategy company in Stockholm, Sweden, that assists us with sales strategies and analysis.
 
 - name: Langlot Research
   eyebrow: Language Technologies
   image: /assets/partners/langlot.jpg
   url: https://langlotresearch.com
-  text: Langlot Research is a software company in Stockholm, Sweden, who are experts in powerful language tools. We are currently integrating their Langlot prediction engine into KeyboardKit.
+  text: Langlot Research is a language technology company in Stockholm, Sweden. We are currently integrating their prediction engine into KeyboardKit.
 
 - name: Lighthouse Growth
   eyebrow: Integration Support
   image: /assets/partners/lighthouse.jpg
-  url: https://www.lighthouse-growth.com/en
-  text: Lighthouse Growth is a software company in Gdansk, Poland, that can help you integrate KeyboardKit into your product.
+  url: https://lighthouse-growth.com
+  text: Lighthouse Growth is a software company in Gdansk, Polandthat helps us with customer integration projects.
+  excluded: 1
 
 - name: Golura
   eyebrow: UX & Design
   image: /assets/partners/golura.jpg
-  url: /
-  text: Golura is a UX & Design company in Stockholm, Sweden, that assists us and our parent company Kankoda with web design and UX.
+  text: Golura is a UX and design company in Stockholm, Sweden, that assists us and our parent company Kankoda with web design and UX.
 
 - name: Sloboda Studio
   eyebrow: Integration Support
   image: /assets/partners/sloboda.jpg
-  url: https://sloboda-studio.com/
-  text: Sloboda Studio is a software company in Berlin, Germany, that can help you integrate KeyboardKit into your product.
+  url: https://sloboda-studio.com
+  text: Sloboda Studio is a software company in Berlin, Germany, that helps us with customer integration projects. Contact <a href="a.bodnar@sloboda-studio.com">Asia Bodnar, Head of Strategic Partnerships</a> for project inquiries.
+  excluded: 1
