@@ -1,18 +1,51 @@
 <article class="wrapper wide slide-in">
-  <h2>Industries</h2>
-  <p>KeyboardKit powers innovation across a wide range of industries and use cases.</p>
-  {% comment %} Played live with the Remotion Player, see the keyboardkit-videos project. {% endcomment %}
-  <div class="kk-video" data-kk-video="language-technologies" aria-label="A custom keyboard autocompletes words and switches between English, Swedish and Ukrainian."></div>
-  <script src="{{ "/js/videos/keyboardkit-videos.js" | relative_url }}" defer></script>
-  <div class="grid col4 carousel mobile">
-    {% assign featured_industries = site.data.industries | where: "featured", true %}
-    {% for industry in featured_industries %}
-    <div class="glass compact">
-      {% include kankoda/components/icon-badge name=industry.icon %}
-      <h4>{{ industry.title }}</h4>
-      <p>{{ industry.text }}</p>
-    </div>
-    {% endfor %}
+  <h2>Custom keyboards for every industry.</h2>
+  {% comment %} The product demo from the keyboardkit-videos project, rendered on this section's green. {% endcomment %}
+  <div class="kk-industries">
+    <video class="kk-industries-video" src="{{ "/assets/videos/industries.mp4" | relative_url }}" muted playsinline autoplay loop aria-label="A custom keyboard in nine industries, from language and AI to finance, media and fun."></video>
+    {% comment %} The industry chips float on the film, between the heading and the phone. {% endcomment %}
+    <div class="kk-industries-chips"></div>
   </div>
+  <style>
+    .kk-industries{position:relative;margin:24px 0 calc(clamp(4rem, 6vw, 5.5rem) - 36px - 5.74%)}
+    /* The video's edges fade out, so it melts into the section's soft glow. */
+    .kk-industries-video{display:block;width:100%;-webkit-mask-image:linear-gradient(to right,transparent,#000 5%,#000 95%,transparent),linear-gradient(to bottom,transparent,#000 7%,#000 93%,transparent);-webkit-mask-composite:source-in;mask-image:linear-gradient(to right,transparent,#000 5%,#000 95%,transparent),linear-gradient(to bottom,transparent,#000 7%,#000 93%,transparent);mask-composite:intersect}
+    /* The button sits in the film's empty band below the phone, on top of the fading edge. */
+    .kk-industries ~ .cta{position:relative;z-index:3}
+    .kk-industries-chips{position:absolute;top:-1.8%;left:0;right:0;display:flex;flex-wrap:wrap;justify-content:center;gap:8px;z-index:2}
+    .kk-industries-chips button{border:1px solid rgba(17,21,17,0.12);border-radius:999px;padding:9px 16px;font:500 15px/1 inherit;color:#48484A;cursor:pointer;background:rgba(255,255,255,0.7);transition:background-color .35s ease,color .35s ease,border-color .35s ease}
+    .kk-industries-chips button.on{color:#fff;font-weight:700;background:#1D1D1F;border-color:#1D1D1F}
+  </style>
+  <script>
+    (function () {
+      // The demo plays each industry for 300 frames at 30 fps, in this order.
+      var names = ["Language", "AI", "Voice", "Science", "Health", "Finance", "Child Protection", "Media", "Fun"];
+      var clip = 10;
+      var video = document.querySelector(".kk-industries-video");
+      var chips = document.querySelector(".kk-industries-chips");
+      names.forEach(function (name, i) {
+        var chip = document.createElement("button");
+        chip.textContent = name;
+        chip.addEventListener("click", function () {
+          video.currentTime = i * clip + 0.01;
+          video.play();
+          show(i);
+        });
+        chips.appendChild(chip);
+      });
+      var shown = -1;
+      function show(current) {
+        if (current === shown) return;
+        shown = current;
+        chips.querySelectorAll("button").forEach(function (chip, i) { chip.classList.toggle("on", i === current); });
+      }
+      // Follows the video every frame, so the chip changes exactly when the industry does.
+      function update() {
+        show(Math.floor(video.currentTime / clip) % names.length);
+        requestAnimationFrame(update);
+      }
+      requestAnimationFrame(update);
+    })();
+  </script>
   <a href="/industries" class="cta">View Industries</a>
 </article>
