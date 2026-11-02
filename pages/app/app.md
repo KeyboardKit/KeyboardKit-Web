@@ -26,6 +26,25 @@ description: The KeyboardKit app lets you try all KeyboardKit features on iPhone
     </div>
 </section>
 
+<section class="showcase">
+  <a name="reviews"></a>
+  <article class="wrapper wide slide-in">
+    <h2>Loved by our users.</h2>
+    <p>Here's what people say about the KeyboardKit app on the App Store.</p>
+    {% comment %}
+    TODO: Enable when the app has good metrics.
+    {% include sections/numeric-items %}
+    {% endcomment %}
+    <div class="wrapper">
+      <div class="grid col2">
+        {% for item in site.data.app-testimonials %}
+          {% include kankoda/components/testimonial quote=item.quote name=item.name %}
+        {% endfor %}
+      </div>
+    </div>
+  </article>
+</section>
+
 <section class="showcase blue">
   <a name="features"></a>
   <article class="wrapper wide split-list">

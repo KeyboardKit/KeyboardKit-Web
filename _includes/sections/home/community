@@ -3,8 +3,4 @@
   <p>KeyboardKit is used by indies, startups and enterprises, all over the world.</p>
   {% include sections/numeric-items %}
   {% include sections/home/testimonials %}
-  <div>
-    <a href="/industries" class="cta glass">Industries</a>
-    <a href="/case-studies" class="cta">Case Studies</a>
-  </div>
 </article>
