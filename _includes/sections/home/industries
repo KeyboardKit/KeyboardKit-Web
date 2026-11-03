@@ -1,16 +1,16 @@
 <article class="wrapper wide slide-in">
   <h2>Custom keyboards for every industry.</h2>
-  {% comment %} The product demo from the keyboardkit-videos project, rendered on this section's green. {% endcomment %}
+  {% comment %} The product demo from the keyboardkit-videos project, played live with the Remotion Player on a transparent canvas. {% endcomment %}
   <div class="kk-industries">
-    <video class="kk-industries-video" src="{{ "/assets/videos/industries.mp4" | relative_url }}" muted playsinline autoplay loop aria-label="A custom keyboard in nine industries, from language and AI to finance, media and fun."></video>
+    <div class="kk-industries-video" data-kk-video="product-demo" data-background="transparent" aria-label="A custom keyboard in nine industries, from language and AI to finance, media and fun."></div>
     {% comment %} The industry chips float on the film, between the heading and the phone. {% endcomment %}
     <div class="kk-industries-chips"></div>
   </div>
+  <script src="{{ "/js/videos/keyboardkit-videos.js" | relative_url }}" defer></script>
   <style>
-    .kk-industries{position:relative;margin:24px 0 calc(clamp(4rem, 6vw, 5.5rem) - 36px - 5.74%)}
-    /* The video's edges fade out, so it melts into the section's soft glow. */
-    .kk-industries-video{display:block;width:100%;-webkit-mask-image:linear-gradient(to right,transparent,#000 5%,#000 95%,transparent),linear-gradient(to bottom,transparent,#000 7%,#000 93%,transparent);-webkit-mask-composite:source-in;mask-image:linear-gradient(to right,transparent,#000 5%,#000 95%,transparent),linear-gradient(to bottom,transparent,#000 7%,#000 93%,transparent);mask-composite:intersect}
-    /* The button sits in the film's empty band below the phone, on top of the fading edge. */
+    .kk-industries{position:relative;width:100%;margin:24px 0 calc(clamp(4rem, 6vw, 5.5rem) - 36px - 5.74%)}
+    .kk-industries-video{display:block;width:100%}
+    /* The button sits in the film's empty band below the phone. */
     .kk-industries ~ .cta{position:relative;z-index:3}
     .kk-industries-chips{position:absolute;top:-1.8%;left:0;right:0;display:flex;flex-wrap:wrap;justify-content:center;gap:8px;z-index:2}
     .kk-industries-chips button{border:1px solid rgba(17,21,17,0.12);border-radius:999px;padding:9px 16px;font:500 15px/1 inherit;color:#48484A;cursor:pointer;background:rgba(255,255,255,0.7);transition:background-color .35s ease,color .35s ease,border-color .35s ease}
@@ -18,33 +18,28 @@
   </style>
   <script>
     (function () {
-      // The demo plays each industry for 300 frames at 30 fps, in this order.
+      // The demo plays each industry for 300 frames, in this order.
       var names = ["Language", "AI", "Voice", "Science", "Health", "Finance", "Child Protection", "Media", "Fun"];
-      var clip = 10;
+      var clip = 300;
       var video = document.querySelector(".kk-industries-video");
       var chips = document.querySelector(".kk-industries-chips");
-      names.forEach(function (name, i) {
-        var chip = document.createElement("button");
-        chip.textContent = name;
-        chip.addEventListener("click", function () {
-          video.currentTime = i * clip + 0.01;
-          video.play();
-          show(i);
-        });
-        chips.appendChild(chip);
-      });
       var shown = -1;
       function show(current) {
         if (current === shown) return;
         shown = current;
         chips.querySelectorAll("button").forEach(function (chip, i) { chip.classList.toggle("on", i === current); });
       }
-      // Follows the video every frame, so the chip changes exactly when the industry does.
-      function update() {
-        show(Math.floor(video.currentTime / clip) % names.length);
-        requestAnimationFrame(update);
-      }
-      requestAnimationFrame(update);
+      names.forEach(function (name, i) {
+        var chip = document.createElement("button");
+        chip.textContent = name;
+        chip.addEventListener("click", function () {
+          video.dispatchEvent(new CustomEvent("kk-seek", { detail: i * clip }));
+          show(i);
+        });
+        chips.appendChild(chip);
+      });
+      video.addEventListener("kk-frame", function (event) { show(Math.floor(event.detail / clip) % names.length); });
+      show(0);
     })();
   </script>
   <a href="/industries" class="cta">View Industries</a>
