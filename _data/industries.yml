@@ -1,12 +1,12 @@
 - featured: true
   icon: lucide:languages
   title: Language Technologies
-  text: Go beyond Apple's built-in language support. Serve underrepresented languages with richer tools, better layouts, and locale-aware features.
+  text: Go beyond the native language support. Serve underrepresented languages with richer tools, better layouts, and locale-aware features.
 
 - featured: true
   icon: lucide:sparkles
   title: Artificial Intelligence
-  text: Bring AI directly into the typing experience. Expose custom AI models and smart suggestions right where users write.
+  text: Bring AI into the typing experience. Expose custom AI models and offer smart actions and suggestions right where users write.
 
 - featured: true
   icon: lucide:mic
@@ -34,9 +34,20 @@
   text: Detect exposure to harmful content or signs of grooming or bullying in real time, helping keep children safer wherever they type.
 
 - featured: true
+  page-section: false
   icon: lucide:popcorn
   title: Media & Entertainment
   text: Build delightful keyboard experiences, like GIF keyboards, sticker packs, emoji tools, and custom fonts.
+
+- featured: false
+  icon: lucide:popcorn
+  title: Media
+  text: Let users play, pause and share from the keyboard, with link cards, now-playing controls and casting right where they type.
+
+- featured: false
+  icon: lucide:party-popper
+  title: Entertainment & Fun
+  text: Build delightful keyboard experiences, like GIF keyboards, sticker packs, emoji tools, and custom fonts, that users keep coming back to.
 
 - featured: true
   icon: lucide:accessibility
