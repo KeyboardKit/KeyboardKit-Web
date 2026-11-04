@@ -1,5 +1,11 @@
-{% comment %} One industry section on the industries page. The id matches the side menu link, which is the slugified title. {% endcomment %}
+{% comment %} One industry section on the industries page. The id matches the side menu link, which is the slugified title. The video, when the industry has one, plays live with the player script from the keyboardkit-videos project. {% endcomment %}
 <section class="slide-in">
-  <h2 id="{{ include.item.title | slugify }}">{{ include.item.title }}</h2>
+  <h2 id="{{ include.item.title | slugify }}" style="display:flex;align-items:center;gap:0.4em">
+    {% include kankoda/components/icon name=include.item.icon width="1em" height="1em" style="flex-shrink:0" %}
+    <span>{{ include.item.title }}</span>
+  </h2>
   <p>{{ include.item.text }}</p>
+  {% if include.item.video %}
+  <div class="kk-industry-video" data-kk-video="{{ include.item.video }}" data-intro data-background="transparent" aria-label="{{ include.item.title }}: a custom keyboard in use."></div>
+  {% endif %}
 </section>
