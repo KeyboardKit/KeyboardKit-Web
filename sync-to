@@ -2,45 +2,48 @@
 
 # Documentation:
 # This script syncs the web foundation to another folder.
+# Only files that are newer than their target are copied.
+# Target files that no longer exist in the source are removed.
 
 set -e  # Exit immediately if a command exits with non-zero status
 
 TARGET=$1
 
-rm -rf $TARGET/serve
-cp -r serve $TARGET
-rm -rf $TARGET/sync-to
-cp -r sync-to $TARGET
+if [ -z "$TARGET" ]; then
+  echo "Usage: ./sync-to <target-folder>"
+  exit 1
+fi
 
-rm -rf $TARGET/scripts
-cp -r scripts $TARGET
+# Sync a file or folder to the same path in the target.
+sync() {
+  if [ -d "$1" ]; then
+    mkdir -p "$TARGET/$1"
+    rsync -a --update --delete "$1/" "$TARGET/$1/"
+  else
+    mkdir -p "$TARGET/$(dirname "$1")"
+    rsync -a --update "$1" "$TARGET/$1"
+  fi
+}
 
-rm -rf $TARGET/_includes/kankoda
-cp -r _includes/kankoda $TARGET/_includes
+sync serve
+sync sync-to
 
-rm -rf $TARGET/_layouts/blog.html
-rm -rf $TARGET/_layouts/page.html
-rm -rf $TARGET/_layouts/page-sidebar.html
-rm -rf $TARGET/_layouts/plain.html
-rm -rf $TARGET/_layouts/post.html
-rm -rf $TARGET/_layouts/side-menu.html
-cp -r _layouts/blog.html $TARGET/_layouts/blog.html
-cp -r _layouts/page.html $TARGET/_layouts/page.html
-cp -r _layouts/page-sidebar.html $TARGET/_layouts/page-sidebar.html
-cp -r _layouts/plain.html $TARGET/_layouts/plain.html
-cp -r _layouts/post.html $TARGET/_layouts/post.html
-cp -r _layouts/side-menu.html $TARGET/_layouts/side-menu.html
+sync scripts
 
-rm -rf $TARGET/_sass/kankoda
-cp -r _sass/kankoda $TARGET/_sass
+sync _includes/kankoda
 
-rm -rf $TARGET/assets/kankoda
-cp -r assets/kankoda $TARGET/assets
+sync _layouts/blog.html
+sync _layouts/page.html
+sync _layouts/page-sidebar.html
+sync _layouts/plain.html
+sync _layouts/post.html
+sync _layouts/side-menu.html
 
-rm -rf $TARGET/js/kankoda
-rm -rf $TARGET/js/kankoda.js
-cp -r js/kankoda $TARGET/js
-cp -r js/kankoda.js $TARGET/js
+sync _sass/kankoda
 
-rm -rf $TARGET/assets/main.scss
-cp -r assets/main.scss $TARGET/assets
+sync assets/kankoda
+
+sync js/kankoda
+sync js/kankoda.js
+
+sync assets/main.scss
