@@ -8,6 +8,40 @@
   <style>
     .kk-industries{position:relative;width:100%;}
     .kk-industries-video{display:block;width:100%}
+    /* Debug only: add ?debug to the URL to get chips that jump to an industry. */
+    .kk-industries-chips{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-bottom:12px}
+    .kk-industries-chips button{border:1px solid rgba(17,21,17,0.12);border-radius:999px;padding:9px 16px;font:500 15px/1 inherit;color:#48484A;cursor:pointer;background:rgba(255,255,255,0.7);transition:background-color .35s ease,color .35s ease,border-color .35s ease}
+    .kk-industries-chips button.on{color:#fff;font-weight:700;background:#1D1D1F;border-color:#1D1D1F}
   </style>
+  <script>
+    (function () {
+      var on = false;
+      if (!on) return;
+      // The demo plays each industry for 300 frames, in this order.
+      var names = ["Language", "AI", "Voice", "Science", "Health", "Finance", "Child Protection", "Media", "Fun"];
+      var clip = 300;
+      var video = document.querySelector(".kk-industries-video");
+      var chips = document.createElement("div");
+      chips.className = "kk-industries-chips";
+      video.parentNode.insertBefore(chips, video);
+      var shown = -1;
+      function show(current) {
+        if (current === shown) return;
+        shown = current;
+        chips.querySelectorAll("button").forEach(function (chip, i) { chip.classList.toggle("on", i === current); });
+      }
+      names.forEach(function (name, i) {
+        var chip = document.createElement("button");
+        chip.textContent = name;
+        chip.addEventListener("click", function () {
+          video.dispatchEvent(new CustomEvent("kk-seek", { detail: i * clip }));
+          show(i);
+        });
+        chips.appendChild(chip);
+      });
+      video.addEventListener("kk-frame", function (event) { show(Math.floor(event.detail / clip) % names.length); });
+      show(0);
+    })();
+  </script>
   <a href="/industries" class="cta">View Industries</a>
 </article>
