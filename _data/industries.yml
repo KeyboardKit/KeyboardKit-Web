@@ -11,12 +11,12 @@
 - featured: true
   icon: lucide:mic
   title: Voice AI
-  text: Let users dictate text and trigger voice commands without leaving the keyboard — seamlessly integrated into any app.
+  text: Let users dictate text and trigger voice commands without leaving the keyboard, seamlessly integrated into any app.
 
 - featured: true
   icon: lucide:flask-conical
   title: Science & Research
-  text: Analyze typing patterns to surface behavioral insights — from cognitive load to early indicators of mental health changes.
+  text: Analyze typing patterns to surface behavioral insights, from cognitive load to early indicators of mental health changes.
 
 - featured: true
   icon: lucide:heart-pulse
@@ -26,7 +26,7 @@
 - featured: true
   icon: lucide:landmark
   title: Bank & Finance
-  text: Surface real-time financial data, sell triggers, and portfolio insights at the point of input — keeping traders and advisors informed as they work.
+  text: Surface real-time financial data, sell triggers, and portfolio insights at the point of input, keeping traders and advisors informed as they work.
 
 - featured: true
   icon: lucide:shield-alert
@@ -36,4 +36,9 @@
 - featured: true
   icon: lucide:popcorn
   title: Media & Entertainment
-  text: Build delightful keyboard experiences — GIF keyboards, sticker packs, emoji tools, custom fonts, and more — that users keep coming back to.
+  text: Build delightful keyboard experiences, like GIF keyboards, sticker packs, emoji tools, and custom fonts.
+
+- featured: true
+  icon: lucide:accessibility
+  title: Accessibility
+  text: Make typing work for everyone. Build keyboards with larger keys, high-contrast themes and simpler layouts for people who need it.
