@@ -20,6 +20,13 @@
       </div>
     </button>
 
+    {%- comment -%}
+      `header.pages` are always links in the header. `header.menu-pages` are optional: on desktop they
+      are shown in a hamburger menu (only if any are defined), on mobile they are listed in the
+      mobile menu after the pages, with a separator.
+    {%- endcomment -%}
+    {%- assign menu_pages = site.header.menu-pages -%}
+
     <nav>
       {%- for path in site.header.pages -%}
         {%- assign current-page = site.pages | where: "path", path | first -%}
@@ -27,6 +34,35 @@
           <a href="{{ current-page.url | relative_url }}">{{ current-page.title | escape }}</a>
         {%- endif -%}
       {%- endfor -%}
+      {%- if menu_pages.size > 0 -%}
+        <span class="nav-separator" role="separator"></span>
+        {%- for path in menu_pages -%}
+          {%- assign menu-page = site.pages | where: "path", path | first -%}
+          {%- if menu-page.title -%}
+            <a class="nav-menu-page" href="{{ menu-page.url | relative_url }}">{{ menu-page.title | escape }}</a>
+          {%- endif -%}
+        {%- endfor -%}
+      {%- endif -%}
     </nav>
+
+    {%- if menu_pages.size > 0 -%}
+      <div class="menu-pages">
+        <button class="menu-pages-toggle" aria-label="More pages" aria-haspopup="true" aria-expanded="false">
+          <div class="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </button>
+        <div class="menu-pages-dropdown">
+          {%- for path in menu_pages -%}
+            {%- assign menu-page = site.pages | where: "path", path | first -%}
+            {%- if menu-page.title -%}
+              <a href="{{ menu-page.url | relative_url }}">{{ menu-page.title | escape }}</a>
+            {%- endif -%}
+          {%- endfor -%}
+        </div>
+      </div>
+    {%- endif -%}
   </div>
 </header>
