@@ -1,0 +1,5 @@
+{% comment %} One industry section on the industries page. The id matches the side menu link, which is the slugified title. {% endcomment %}
+<section class="slide-in">
+  <h2 id="{{ include.item.title | slugify }}">{{ include.item.title }}</h2>
+  <p>{{ include.item.text }}</p>
+</section>

@@ -15,7 +15,7 @@
   </style>
   <script>
     (function () {
-      var on = true;
+      var on = false;
       if (!on) return;
       // The demo plays each industry for 300 frames, in this order.
       var names = ["Language", "AI", "Voice", "Science", "Health", "Finance", "Child Protection", "Media", "Fun", "Accessibility"];
