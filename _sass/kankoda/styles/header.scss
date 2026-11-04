@@ -1,3 +1,51 @@
+@mixin hamburger-icon {
+  .menu-icon {
+    display: block;
+    width: 24px;
+    height: 18px;
+    position: relative;
+
+    span {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: var(--header-text);
+      transition: all 0.3s ease;
+
+      &:nth-child(1) {
+        top: 0;
+      }
+
+      &:nth-child(2) {
+        top: 8px;
+      }
+
+      &:nth-child(3) {
+        top: 16px;
+      }
+    }
+  }
+
+  &.active .menu-icon {
+    span {
+      &:nth-child(1) {
+        top: 8px;
+        transform: rotate(45deg);
+      }
+
+      &:nth-child(2) {
+        opacity: 0;
+      }
+
+      &:nth-child(3) {
+        top: 8px;
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}
+
 header[role="banner"] {
   position: sticky;
   top: 0;
@@ -94,51 +142,73 @@ header[role="banner"] {
       display: block;
     }
 
-    .menu-icon {
-      display: block;
-      width: 24px;
-      height: 18px;
-      position: relative;
+    @include hamburger-icon;
+  }
 
-      span {
-        display: block;
-        position: absolute;
-        width: 100%;
-        height: 2px;
-        background-color: var(--header-text);
-        transition: all 0.3s ease;
+  // Menu pages: on desktop they sit in a hamburger dropdown after the links,
+  // and only when the config defines `header.menu-pages`. On mobile the
+  // hamburger is hidden and they are listed in the mobile menu after a separator.
+  .menu-pages {
+    position: relative;
+    margin-left: 1.5rem;
+    padding-left: 1rem;
+    border-left: solid 1px var(--border);
 
-        &:nth-child(1) {
-          top: 0;
-        }
+    @media (max-width: 700px) {
+      display: none;
+    }
+  }
 
-        &:nth-child(2) {
-          top: 8px;
-        }
+  .menu-pages-toggle {
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    color: var(--header-text);
 
-        &:nth-child(3) {
-          top: 16px;
-        }
-      }
+    @include hamburger-icon;
+  }
+
+  .menu-pages-dropdown {
+    display: none;
+    position: absolute;
+    top: calc(100% + 0.5rem);
+    right: 0;
+    min-width: 13rem;
+    padding: 0.5rem;
+    background-color: var(--header-bg);
+    border: solid 1px var(--border);
+    border-radius: var(--radius-glass-panel);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+
+    @media (prefers-color-scheme: dark) {
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
     }
 
-    &.active .menu-icon {
-      span {
-        &:nth-child(1) {
-          top: 8px;
-          transform: rotate(45deg);
-        }
+    &.open {
+      display: flex;
+      flex-direction: column;
+    }
 
-        &:nth-child(2) {
-          opacity: 0;
-        }
+    a {
+      padding: 0.6rem 1rem;
+      border-radius: var(--radius-glass-link);
+      text-decoration: none;
+      font-weight: 500;
+      white-space: nowrap;
 
-        &:nth-child(3) {
-          top: 8px;
-          transform: rotate(-45deg);
-        }
+      &:hover {
+        background-color: var(--border);
+        text-decoration: none;
       }
     }
+  }
+
+  // The mobile-only part of the nav: a separator and the menu pages.
+  nav .nav-separator,
+  nav .nav-menu-page {
+    display: none;
   }
 
   // Responsive navigation
@@ -165,6 +235,17 @@ header[role="banner"] {
 
       a {
         padding: 0.5rem 0;
+      }
+
+      .nav-separator {
+        display: block;
+        align-self: stretch;
+        height: 1px;
+        background-color: var(--border);
+      }
+
+      .nav-menu-page {
+        display: block;
       }
     }
   }

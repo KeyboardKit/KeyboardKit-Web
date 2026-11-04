@@ -14,6 +14,7 @@ Example:
 {% include_relative kankoda/faq.js %}
 {% include_relative kankoda/header.js %}
 {% include_relative kankoda/mobile-menu.js %}
+{% include_relative kankoda/menu-pages.js %}
 {% include_relative kankoda/footer.js %}
 {% include_relative kankoda/code-box.js %}
 {% include_relative kankoda/slide-in.js %}

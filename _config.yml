@@ -67,6 +67,17 @@ header:
     - pages/features.md
     - pages/pro/pro.html
     - pages/pricing.md
+  # Optional. Shown in a hamburger menu on desktop (no menu if empty), and
+  # after the pages, with a separator, in the mobile menu.
+  menu-pages:
+    - pages/app/app.md
+    - pages/case-studies.md
+    - pages/code/documentation.md
+    - pages/code/github.md
+    - pages/industries.md
+    - pages/partners.md
+    - pages/press.md
+    
 
 footer:
   # Sections with links defined as "Title | url" strings.
@@ -82,7 +93,7 @@ footer:
     - title: SDK
       links:
         - Features | /features
-        - KeyboardKit Pro | /pro
+        - Pro Features | /pro
         - Pricing | /pricing
         - Business Licenses | /business-licenses
         - Terms & Conditions | /pro/terms
@@ -95,7 +106,7 @@ footer:
         - Press | /press
     - title: Code
       links:
-        - GitHub | https://github.com/KeyboardKit/KeyboardKit
+        - GitHub | /github
         - Get Started | /get-started
         - Binaries & dSYMs | https://github.com/KeyboardKit/KeyboardKit-Binaries
         - Documentation | /documentation
