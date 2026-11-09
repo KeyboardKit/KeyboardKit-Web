@@ -143,7 +143,17 @@
   group:  ui
   text:   Type with unicode fonts. This is a <u>business feature</u>.
   docs:   https://docs.keyboardkit.com/documentation/keyboardkit/fonts-article
-  card:   
+  card:
+    tags:
+      - pro
+
+- title:  GIFs
+  emoji:  🎞️
+  url:    /features/gifs
+  group:  ui
+  text:   Search for and share GIFs. This is a <u>business feature</u>.
+  docs:   https://docs.keyboardkit.com/documentation/keyboardkit/gifs-article
+  card:
     tags:
       - pro
 
