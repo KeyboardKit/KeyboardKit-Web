@@ -28,8 +28,7 @@
 
 - name: Enterprise
   subtitle: Dedicated Support, Custom SLA & High Value.
-  price: from $50k
-  price_unit: year
+  price_month: Custom
   cta: Contact Us
   url: mailto:info@kankoda.com?subject=Business%License
   features:
