@@ -7,6 +7,7 @@
 #        ./create-post-header --date 2026-09-20
 #        ./create-post-header --from 2026-09-01 --to 2026-09-23
 #        ./create-post-header --date 2026-09-20 --template path/to/Blog.sketch
+#        ./create-post-header --date 2026-09-20 --quality 80
 #
 # --title creates a header for a title and writes it as <output>/image.jpg.
 #   The tag defaults to "Blog", the date to today and the output to post-headers/output/images/yy/mmdd.
@@ -15,6 +16,9 @@
 #   and rewrite each post's image.jpg in its assets/blog/yy/mmdd folder.
 #
 # --template overrides the default Blog.sketch template in iCloud.
+#
+# --quality sets the JPEG quality (0-100) of the exported images, and defaults to 70.
+#   Sketch exports JPEGs at 100, which makes them ~5x larger with no visible gain.
 
 set -e
 
@@ -29,6 +33,7 @@ DATE=""
 OUTPUT=""
 FROM=""
 TO=""
+QUALITY=70
 TEMPLATE="$HOME/Library/Mobile Documents/WUGMZZ5K46~com~bohemiancoding~sketch/Documents/KeyboardKit/Blog.sketch"
 
 while [ $# -gt 0 ]; do
@@ -40,12 +45,15 @@ while [ $# -gt 0 ]; do
         --from) FROM="$2"; shift 2 ;;
         --to) TO="$2"; shift 2 ;;
         --template) TEMPLATE="$2"; shift 2 ;;
-        --title=*|--tag=*|--date=*|--output=*|--from=*|--to=*|--template=*)
+        --quality|-q) QUALITY="$2"; shift 2 ;;
+        --title=*|--tag=*|--date=*|--output=*|--from=*|--to=*|--template=*|--quality=*)
             KEY="${1%%=*}"; set -- "$KEY" "${1#*=}" "${@:2}" ;;
         -h|--help) usage 0 ;;
         *) echo "Unknown argument: $1"; usage ;;
     esac
 done
+
+[[ "$QUALITY" =~ ^[0-9]+$ ]] && [ "$QUALITY" -le 100 ] || { echo "Invalid quality: $QUALITY (expected 0-100)"; usage; }
 
 is_date() { [[ "$1" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]]; }
 
@@ -91,5 +99,6 @@ fi
 swift measure.swift "$OUT/posts.json" "$OUT/sizes.json" | tee "$OUT/sizes.log"
 python3 headers.py build "$TEMPLATE" "$OUT/posts.json" "$OUT/sizes.json" "$OUT/headers.sketch"
 "$SKETCHTOOL" export slices "$OUT/headers.sketch" --formats=jpg --output="$OUT/images"
+find "$OUT/images" -name "*.jpg" -exec sips -s format jpeg -s formatOptions "$QUALITY" {} \; > /dev/null
 python3 headers.py install "$OUT/posts.json" "$OUT/images"
 echo "Done"
