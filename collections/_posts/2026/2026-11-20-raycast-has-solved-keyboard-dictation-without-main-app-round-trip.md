@@ -25,13 +25,13 @@ Since iOS keyboard extensions don't have mic access, developers have been forced
 Returning to the keyboard has been a pain, since Apple doesn't provide any system APIs for navigating back to the keyboard. This has forced apps to ask users to tap the top-leading back link. A truly horrible UX.
 
 
-## The workarounds
+## Workarounds
 
-KeyboardKit has supported keyboard dictation for a long time, and has many tools to streamline the process of setting it up and making it work in any custom keyboard.
+KeyboardKit has supported keyboard dictation for a long time, and has many tools to streamline the process of setting it up for any custom keyboard.
 
-KeyboardKit 10 replaced the old in-app dictation engine, where dictation was performed in the main app, with a proper in-keyboard solution that requires a single main app round-trip, after which the main app is kept alive in the background, using background audio mode.
+KeyboardKit 10 replaced the old in-app dictation engine, where dictation was performed on demand in the app, with a proper in-keyboard solution that requires a single main app round-trip, after which the app is kept alive in the background, using background audio mode.
 
-This works great, but it requires the developer to explicitly add background audio capabilities to the app, which require additional explanations in the App Store Connect submission. This approach also keeps the microphone active in the background while dictation is active, which is not great for the battery.
+This works great, but it requires the developer to add background audio capabilities to the app, which requires additional explanations in the App Store submission. It also keeps the microphone active after a dictation, until the user expliticly stops dictation (which requires a new round-trip), which is not great for the battery.
 
 
 ## The solution
