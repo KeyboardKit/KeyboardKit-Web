@@ -1,19 +1,22 @@
+{% assign _item = include.item %}
 <div class="split-container slide-in">
   <div>
-    {% if include.item.eyebrow %}
-    <p class="eyebrow">{{ include.item.eyebrow }}</p>
+    {% if _item.eyebrow %}
+    <p class="eyebrow">{{ _item.eyebrow }}</p>
     {% endif %}
-    {% assign item_title = include.item.title | default: include.item.name %}
+    {% assign item_title = _item.title | default: _item.name %}
     <h2 id="{{ item_title | slugify }}">{{ item_title }}</h2>
-    <p>{{ include.item.text }}</p>
+    <p>{{ _item.text }}</p>
   </div>
-  <img src="{{ include.item.split-image | default: include.item.image }}" alt="{{ item_title }}" />
+  <img src="{{ _item.split-image | default: _item.image | default: _item.icon }}" alt="{{ item_title }}" />
+
+  <img src="{{ _item.split-image | default: _item.image }}" alt="{{ item_title }}" />
   <div class="split-actions">
-    {% if include.item.url %}
-    <a class="cta glass" href="{{include.item.url}}">{{ include.button-text | default: "Read More" }}</a>
+    {% if _item.url %}
+    <a class="cta glass" href="{{_item.url}}">{{ include.button-text | default: "Read More" }}</a>
     {% endif %}
-    {% if include.item.url_appstore %}
-    <a class="cta" href="{{include.item.url_appstore}}">Download</a>
+    {% if _item.url_appstore %}
+    <a class="cta" href="{{_item.url_appstore}}">Download</a>
     {% endif %}
   </div>
 </div>

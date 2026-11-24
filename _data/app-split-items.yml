@@ -1,29 +1,29 @@
 - eyebrow: All Features
   title:   Every feature, ready to try
   text:    The KeyboardKit app uses <a href="/pro">KeyboardKit Pro</a> to enable autocomplete, dictation, emojis, fonts, themes, and AI support, so you can give it a try without writing a single line of code.
-  image:   /assets/screenshots/app-settings.png
+  image:   /assets/app/settings.png
 
 - eyebrow: Localization
   title:   Type in 110+ languages
   text:    The KeyboardKit app supports all <a href="/locales">supported languages</a>, including fully localized features, right on your own device.
-  image:   /assets/screenshots/app-locales.png
+  image:   /assets/app/locales.png
 
 - eyebrow: Themes
   title:   Style with themes
   text:    The KeyboardKit app comes with a range of built-in <a href="/features/themes">themes</a> and lets you create your own as well, so you can style the keyboard to your liking.
-  image:   /assets/screenshots/app-themes.png
+  image:   /assets/app/themes.png
 
 - eyebrow: Fonts
   title:   Type with custom fonts
   text:    The KeyboardKit app supports typing with custom, Unicode <a href="/features/fonts">fonts</a>, which encode the font into the text you type.
-  image:   /assets/screenshots/app-fonts.png
+  image:   /assets/app/fonts.png
 
 - eyebrow: Clipboard
   title:   Paste from the clipboard
   text:    The KeyboardKit app lets you paste directly from the system <a href="/features/clipboard">clipboard</a>, and save your most-used text as reusable clips.
-  image:   /assets/screenshots/app-clipboard.png
+  image:   /assets/app/clipboard.png
 
 - eyebrow: Customizable
   title:   Fully customizable
   text:    The KeyboardKit app lets you add extra buttons and toolbars, and lets you resize the keys, to make the keyboard truly your own.
-  image:   /assets/screenshots/app-accessibility.png
+  image:   /assets/app/accessibility.png
