@@ -1,0 +1,20 @@
+- eyebrow: Native Foundation
+  title:   A truly native keyboard
+  text:    Mimic the native iOS keyboard with a few lines of code, then make it your own. The keyboard engine comes with native features, and lets you customize everything with Swift & SwiftUI.
+  url:     /features
+  image:   /assets/app-home/blueprint.png
+  image-show: bottom
+
+- eyebrow: Localized
+  title:   Supports many languages
+  text:    Support <a href="/languages">110+ languages</a> with localized layouts and secondary actions, right-to-left support, and input engines like Vietnamese TELEX and Korean Hangul.
+  url:     /features
+  image:   /assets/app-home/localization.png
+  image-show: bottom
+
+- eyebrow: Smart Typing Tools
+  title:   Add intelligence to every tap
+  text:    Help your users type faster with <a href="/features/autocomplete">autocomplete</a>, predictions, and <a href="/features/dictation">dictation</a>. Read the full document and let users type prompts within the keyboard, to build powerful AI tools right where your users type.
+  url:     /features
+  image:   /assets/app-home/ai.png
+  image-show: bottom
