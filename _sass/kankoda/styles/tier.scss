@@ -17,6 +17,11 @@ div.glass.tier {
     position: absolute;
     top: 1rem;
     right: 1rem;
+    // Keep the base tag size wherever the tiers are placed. A hero, for
+    // instance, enlarges and spaces out its tags, which would otherwise make
+    // the badge bigger and push it down next to the tier name.
+    margin: 0;
+    padding: 0.18rem 0.42rem 0.22rem;
   }
 
   .tier-header {
