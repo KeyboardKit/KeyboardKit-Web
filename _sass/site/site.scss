@@ -17,6 +17,134 @@ section.hero {
   }
 }
 
+// Icon Glow
+
+// A pulsating glow that radiates from behind the hero icon. The color angles
+// match the icon, so that each color seems to shine out from its own edge.
+//
+// The layers use a negative z-index to end up behind the text and tag that
+// they spill over, so the wrapper must not create its own stacking context.
+//
+// A gradient with just a few stops changes slope abruptly at each stop, which
+// the eye picks up as lines. This generates a smooth bell curve instead, which
+// flattens out at both the center and the edge.
+//
+// GitHub Pages builds with an old Ruby Sass, so `@use` and `math.div` must not
+// be used here, even though they work locally.
+@function icon-glow-falloff($alpha) {
+  $stops: ();
+
+  @for $i from 0 through 20 {
+    $t: $i * 0.05;
+    $x: 1 - $t * $t;
+    $stops: append($stops, rgba(0, 0, 0, $alpha * $x * $x * $x) percentage($t), comma);
+  }
+
+  @return $stops;
+}
+
+.icon-glow {
+  // Overlapping, off-center lobes make the shape uneven, so that the twirl is
+  // visible. The lobes must end within the box, to avoid hard cuts.
+  --glow-shape:
+    radial-gradient(closest-side, #{icon-glow-falloff(1)}),
+    radial-gradient(36% 26% at 62% 32%, #{icon-glow-falloff(0.45)}),
+    radial-gradient(28% 34% at 68% 64%, #{icon-glow-falloff(0.45)}),
+    radial-gradient(34% 28% at 36% 68%, #{icon-glow-falloff(0.45)}),
+    radial-gradient(26% 34% at 30% 38%, #{icon-glow-falloff(0.45)});
+
+  position: relative;
+  display: grid;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    pointer-events: none;
+    border-radius: 50%;
+    background: conic-gradient(
+      #35c9e8,
+      #2fc95a 40deg,
+      #8fd32a 65deg,
+      #ffc400 90deg,
+      #ff8a10 120deg,
+      #ff4a3d 150deg,
+      #d94fd0 185deg,
+      #8a55f5 220deg,
+      #4a6cff 260deg,
+      #3d9bff 300deg,
+      #35c9e8
+    );
+    -webkit-mask-image: var(--glow-shape);
+    mask-image: var(--glow-shape);
+  }
+
+  // The wide, soft glow
+  &::before {
+    inset: -105%;
+    opacity: 0.4;
+  }
+
+  // The tight, intense glow
+  &::after {
+    inset: -40%;
+    opacity: 0.6;
+  }
+
+  // Only opacity and transforms are animated, to let the GPU do the work. The
+  // pulse and twirl have different durations, so they never repeat in sync.
+  @media (prefers-reduced-motion: no-preference) {
+    &::before,
+    &::after {
+      animation:
+        icon-glow-pulse 4.5s ease-in-out infinite alternate,
+        icon-glow-twirl 16s ease-in-out infinite alternate;
+      will-change: opacity, scale, transform;
+    }
+
+    &::before {
+      --glow-opacity-from: 0.2;
+      --glow-opacity-to: 0.5;
+    }
+
+    // Start the tight glow earlier, so the pulse travels outwards and the
+    // wide glow trails behind when twirling.
+    &::after {
+      --glow-opacity-from: 0.4;
+      --glow-opacity-to: 0.75;
+      animation-delay: -1.2s, -3s;
+    }
+  }
+}
+
+@keyframes icon-glow-pulse {
+  from {
+    opacity: var(--glow-opacity-from);
+    scale: 0.85;
+  }
+  to {
+    opacity: var(--glow-opacity-to);
+    scale: 1.1;
+  }
+}
+
+// Sway instead of spinning, to keep the colors close to the icon's own colors.
+@keyframes icon-glow-twirl {
+  0% {
+    transform: rotate(-28deg) skew(8deg, -4deg) scale(1.08, 0.92);
+  }
+  35% {
+    transform: rotate(6deg) skew(-9deg, 5deg) scale(0.92, 1.1);
+  }
+  65% {
+    transform: rotate(-8deg) skew(6deg, 8deg) scale(1.1, 0.96);
+  }
+  100% {
+    transform: rotate(30deg) skew(-6deg, -8deg) scale(0.94, 1.08);
+  }
+}
+
 // Videos, played live by /js/videos/keyboardkit-videos.js
 
 .kk-video {

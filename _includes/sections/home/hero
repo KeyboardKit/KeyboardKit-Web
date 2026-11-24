@@ -2,7 +2,9 @@
   <a href="/blog/2026/11/10/keyboardkit-11-2" class="glass tag rounded scale">
     <b>LATEST NEWS</b> - KeyboardKit 11.2 is out!
   </a>
-  <img src="/assets/icon/icon.png" class="glass icon" />
+  <div class="icon-glow">
+    <img src="/assets/icon/icon.png" class="glass icon" />
+  </div>
   <h1>KeyboardKit</h1>
   <h2>The leading Swift and SwiftUI custom keyboard framework.</h2>
   <p>KeyboardKit lets you create amazing custom keyboards for iPhone and iPad.</p>
