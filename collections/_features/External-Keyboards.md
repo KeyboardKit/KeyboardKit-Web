@@ -16,7 +16,7 @@ Custom keyboards stop functioning as expected when an external keyboard is conne
 For these reasons, many keyboards choose to collapse the keyboard and instead show a compact bottom bar with a limited set of features. KeyboardKit Pro makes this easy.
 
 
-## KeyboardKit Pro
+## Pro Features
 
 [KeyboardKit Pro][Pro] unlocks ways to detect if an external keyboard is connected, and if so lets you automatically collapse the keyboard to avoid strange behaviors.
 

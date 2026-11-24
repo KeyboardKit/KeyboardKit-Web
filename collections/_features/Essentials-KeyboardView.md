@@ -20,7 +20,7 @@ The `KeyboardView` automatically applies all configurations and settings from th
 The `KeyboardView` is highly customizable and lets you use custom layouts, callouts, keys, views, styles, and themes for any part of the keyboard.
 
 
-## KeyboardKit Pro
+## Pro Features
 
 [KeyboardKit Pro][Pro] unlocks localized keyboard layouts and secondary actions for all [{{site.locales.count}} supported languages](/locales), as well as an emoji keyboard, iPad specific layouts and features, additional input toolbars, etc:
 

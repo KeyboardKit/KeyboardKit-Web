@@ -10,7 +10,7 @@ KeyboardKit makes it easy to trigger and handle a rich set of Keyboard-specific 
 
 ## Actions
 
-KeyboardKit has a ``KeyboardAction`` enum that defines many keyboard-specific actions , like ``.character``, ``.backspace``, ``.nextLocale``, ``.nextKeyboard``, etc. It's also a namespace for action-related types.
+KeyboardKit has a ``KeyboardAction`` enum that defines many keyboard-specific actions , like ``.character``, ``.backspace``, ``.nextLocale``, ``.nextKeyboard``, etc.
 
 Keyboard actions can be used to type into the current text field, move the input cursor, open links, copy to and paste from the pasteboard, etc. Actions can be triggered by buttons, gestures, system events, or with code.
 

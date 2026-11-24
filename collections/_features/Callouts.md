@@ -18,12 +18,7 @@ Input callouts are used to highlight the currently pressed key, while action cal
 </div>
 
 
-## Namespace
-
-KeyboardKit has a ``Callout`` namespace with callout-related types and views, a ``CalloutContext``, auto-persisted ``CalloutSettings``, callout customizations, etc.
-
-
-## KeyboardKit Pro
+## Pro Features
 
 [KeyboardKit Pro][Pro] unlocks localized callout actions for all [{{site.locales.count}} supported languages](/locales), without you having to write any additional code to use them.
 

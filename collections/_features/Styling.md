@@ -5,17 +5,12 @@ hero:
   emoji: 🎨
 ---
 
-While iOS has limited ways to customize the look and feel of the native keyboard, KeyboardKit can be styled to great extent, using styles and themes.
-
-
-## Namespace
-
-KeyboardKit has a ``KeyboardStyle`` namespace that contains style-related types, styles and views, to let you style different parts of the keyboard.
+Unlike the native iOS keyboard, KeyboardKit can be styled and customized to great extent, using various styles, view modifiers, and themes.
 
 
 ## Colors & Images 
 
-KeyboardKit defines keyboard-specific ``Color`` and ``Image`` assets that can be used in any keyboard.
+KeyboardKit defines keyboard-specific ``Color`` and ``Image`` extension that can be used in any keyboard, like `Image.keyboard` and `Color.keyboardBackground`
 
 <div class="grid col2">
     <div><img alt="Image Extensions" src="{{page.assets}}styling-images.jpg" /></div>
@@ -23,20 +18,16 @@ KeyboardKit defines keyboard-specific ``Color`` and ``Image`` assets that can be
 </div>
 
 
-See the docs for info on how semi-transparent colors are used to work around a [system bug][Bug] in iOS.
+See the [online documentation]({{site.urls.docs}}) for info on how semi-transparent colors are used to handle a [system bug][Bug] in iOS.
 
 [Bug]: https://github.com/KeyboardKit/KeyboardKit/issues/305
 
 
-## Type Extensions
+## Emoji Icons
 
-Many KeyboardKit types define standard images, texts & colors. For instance:
+KeyboardKit Pro unlocks vectorized emoji assets, like the ``.keyboardEmoji`` and ``.emojiCategory(_:)``:
 
-```swift
-let context = KeyboardContext()
-let image = KeyboardAction.command.standardButtonImage(for: context) // Command icon
-let text = KeyboardAction.space.standardButtonText(for: context)     // KKL10n.space
-```
+<img alt="Emoji Images" src="{{page.assets}}images-emojis.jpg" />
 
 
 ## Style Modifiers
@@ -44,19 +35,7 @@ let text = KeyboardAction.space.standardButtonText(for: context)     // KKL10n.s
 Most KeyboardKit views have custom styles and style modifiers. For instance, the ``Keyboard.Button`` view has a  ``.keyboardButtonStyle(_:)`` view modifier that lets you customize the style of any button.
 
 
-## KeyboardKit Pro
-
-[KeyboardKit Pro][Pro] unlocks additional assets, and a theme engine that makes styling even easier.
-
-
-### Emoji Icons
-
-KeyboardKit Pro emoji-specific, vectorized assets, like the ``.keyboardEmoji`` and ``.emojiCategory(_:)``:
-
-<img alt="Emoji Images" src="{{page.assets}}images-emojis.jpg" />
-
-
-### Themes
+## Themes
 
 KeyboardKit Pro unlocks a theme engine that makes easy to define and style keyboards with themes:
 
@@ -67,6 +46,20 @@ KeyboardKit Pro unlocks a theme engine that makes easy to define and style keybo
 </div>
 
 See [themes](/features/themes) for more information about the KeyboardKit Pro theme engine and its various themes.
+
+
+## Type Extensions
+
+Many KeyboardKit types define standard images, texts and colors, which will be used by default. For instance:
+
+```swift
+let context = KeyboardContext()
+let image = KeyboardAction.command.standardButtonImage(for: context) // Command icon
+let text = KeyboardAction.space.standardButtonText(for: context)     // KKL10n.space
+```
+
+You can easily customize these values for the entire keyboard, or any individual views, using style modifiers.
+
 
 
 [Pro]: /pro

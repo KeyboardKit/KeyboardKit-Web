@@ -8,12 +8,14 @@ hero:
 KeyboardKit makes it easy to integrate with the system clipboard, where the user can paste directly from the system pasteboard, or from a list of custom clips.
 
 
-## Actions
+## System Clipboard
+
+KeyboardKit can integrate with the system clipboard, to allow you to paste texts and images in the pasteboard into the host app.
 
 You can use the `KeyboardAction.pasteFromClipboard` to trigger a clipboard integration operation that pastes texts from the clipboard into the current text field.
 
 
-## KeyboardKit Pro
+## Pro Features
 
 KeyboardKit Pro unlocks a ``Clipboard.SettingsScreen`` that can be used to manage clips in the main app, a `Clipboard.Keyboard` that can be used to paste from the keyboard, etc.:
 

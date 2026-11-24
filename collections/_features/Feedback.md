@@ -17,7 +17,12 @@ With feedback enabled, KeyboardKit will automatically trigger audio and haptic f
 <img src="{{page.assets}}feedback-settingsscreen.jpg" />
 
 
-## Feedback Services
+## Customizations
+
+You can customize which audio & haptic feedback to trigger, and even register your own audio files. You can also trigger feedback whenever you like, using the same feedback engine when the user is typing.
+
+
+## Services
 
 KeyboardKit has a `StandardActionHandler` that triggers feedback when handling actions, autocomplete suggestions, etc. You can subclass it to customize the feedback behavior, or just tweak the context and settings.
 

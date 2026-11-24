@@ -157,17 +157,17 @@
     tags:
       - pro
 
-- title:  Styling
+- title:  Styling & Themes
   emoji:  🎨
   url:    /features/styling
   group:  ui
-  text:   Style all keyboard views and components with rich styles.
+  text:   Style the keyboard with styles and custom themes.
   docs:   https://docs.keyboardkit.com/documentation/keyboardkit/styling-article
 
 - emoji: 🍭
   title:  Themes
   url:    /features/themes
-  group:  ui
+  # group:  ui
   text:   A theme engine that lets you style a keyboard with themes.
   docs:   https://docs.keyboardkit.com/documentation/keyboardkit/themes-article
   card:   

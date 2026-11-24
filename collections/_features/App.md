@@ -39,7 +39,7 @@ You can then use the value to set up your main app and keyboard extension to use
 The ``KeyboardAppView`` can be used as the main app's root content view, and will set up KeyboardKit in the same way as the ``KeyboardInputViewController``'s `setup(for:)` function does.
 
 
-## KeyboardKit Pro
+## Pro Features
 
 KeyboardKit Pro unlocks a ``HomeScreen`` template that can be used as the main app's root view, as well as a `Keyboard.SettingsScreen`, `Keyboard.LocaleSettingsScreen`, etc.:
 

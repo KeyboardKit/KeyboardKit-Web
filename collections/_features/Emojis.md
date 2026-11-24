@@ -42,7 +42,7 @@ EmojiVersion.v15.emojis       // 🫨🫸🫷🪿🫎🪼🫏🪽🪻🫛🫚�
 KeyboardKit will automatically filter out emoji versions that the current device doesn't support, to avoid that unsupported emojis appear in the emoji keyboard.
 
 
-## KeyboardKit Pro
+## Pro Features
 
 KeyboardKit Pro unlocks an `EmojiKeyboard` that mimics the native emoji keyboard, with complete support for emoji categories, skin tones, search, etc.
 

@@ -22,10 +22,6 @@ KeyboardKit has essential models, features and views, and a [KeyboardView]({{pag
 
 KeyboardKit's `KeyboardInputViewController` extends `UIInputViewController` with more features, and the `KeyboardAppView` can be used to set up a main app target with keyboard-related features.
 
-KeyboardKit has feature-specific namespaces, like `Keyboard`, `Autocomplete`, `Emojis`, `Feedback`, etc. Each namespace has its own observable state, settings, services, etc.
-
-The `Keyboard` namespace is designed to provide you with all the tools needed for the core keyboard engine, while the other namespaces provide additional features on top of this engine.
-
 
 ## Models & Utilities
 
@@ -34,9 +30,7 @@ The `Keyboard` namespace defines tons of essential models like `Diacritic`, `Key
 
 ## Observable State
 
-Each KeyboardKit feature has an observable context class, that contains observable state. For instance, the main `KeyboardContext` lets you get and set the current `locale`, and manage the overall keyboard state.
-
-Other contexts, like `AutocompleteContext` and `DictationContext` are used for their specific features, and contain `settings` properties that refer to auto-persisted, feature-specific settings.
+Each feature in KeyboardKit has an observable context class, that contains observable state. For instance, the main `KeyboardContext` lets you get and set the current `locale`, and manage the overall keyboard state.
 
 KeyboardKit injects all contexts into the environment, to let you easily access them as environment obejcts.
 

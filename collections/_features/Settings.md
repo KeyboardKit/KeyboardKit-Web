@@ -22,7 +22,7 @@ Many keyboard apps use the main app target to onboard the user, show the keyboar
 KeyboardKit therefore has an App Group-synced `keyboardSettings` store that automatically syncs data between the main app and its keyboard. Just set up an App Group, and KeyboardKit takes care of the rest.
 
 
-## KeyboardKit Pro
+## Pro Features
 
 KeyboardKit Pro unlocks screen templates that can be used by the main app or within a keyboard:
 

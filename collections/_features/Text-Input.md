@@ -10,13 +10,18 @@ Custom keyboards will by default only send typed text to the [host application](
 KeyboardKit Pro therefore adds ways to make it easy to automatically route text to text fields in the keyboard.
 
 
-## KeyboardKit Pro
+## Input Fields
 
 KeyboardKit Pro unlocks text input views that automatically register and unregister themselves as the main [text document proxy]({{site.terminology}}) when they receive and lose focus.
 
 All you have to do is to add a `KeyboardTextField` or `KeyboardTextView` to your keyboard, after which KeyboardKit will automatically type into the text field when it's selected.
 
 These views support `FocusState` and have a `focused` view modifier that lets you provide a custom done button that slides in when the view is focused.
+
+
+## Localization
+
+KeyboardKit Pro unlocks localized input engines, like Vietnamese TELEX, VNI, and VIQR, and Korean Hangul.
 
 
 [Pro]: /pro

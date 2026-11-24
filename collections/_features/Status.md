@@ -17,14 +17,11 @@ KeyboardKit has a ``KeyboardStatus`` namespace with status-related types, as wel
 
 The `KeyboardStatus.Label` can be used to easily show if a keyboard is enabled, if Full Access has been enabled, etc. It can also link the user directly to system settings, to enable these things.
 
-
-## KeyboardKit Pro
-
 KeyboardKit Pro unlocks additional status views & utilities, like a complete ``KeyboardStatus.Section``:
 
 <img width="450" alt="A keyboard status section" src="{{page.assets}}keyboardstatus-section.jpg" />
 
-The view is used by the [KeyboardApp HomeScreen](/features/app), and can be used as a standalone view as well.
+The view is used by [KeyboardApp HomeScreen](/features/app), and can be used as a standalone view in any part of your app.
 
 
 [Pro]: /pro
