@@ -9,10 +9,13 @@
                  The full image is shown if omitted.
   - image-show-ratio: Optional 0-100, how much of the image's height to show
                  with `image-show`. Can also be set on the item. Defaults to 60.
+  - image-bounce-on-appear: Optional, `true` to bounce the image out of the slit
+                 and back once when the item appears. Can also be set on the item.
 {% endcomment %}
 {% assign _item = include.item %}
 {% assign _show = include.image-show | default: _item.image-show %}
 {% assign _show_ratio = include.image-show-ratio | default: _item.image-show-ratio %}
+{% assign _bounce_on_appear = include.image-bounce-on-appear | default: _item.image-bounce-on-appear %}
 {% assign _image = _item.split-image | default: _item.image | default: _item.icon %}
 <div class="split-container slide-in">
   <div>
@@ -24,7 +27,7 @@
     <p>{{ _item.text }}</p>
   </div>
   {% if _show %}
-  <figure class="split-media show-{{ _show }}"{% if _show_ratio %} style="--split-show-track: {{ _show_ratio | divided_by: 100.0 }}fr"{% endif %}>
+  <figure class="split-media show-{{ _show }}{% if _bounce_on_appear %} bounce-on-appear{% endif %}"{% if _show_ratio %} style="--split-show-track: {{ _show_ratio | divided_by: 100.0 }}fr"{% endif %}>
     <img src="{{ _image }}" alt="{{ item_title }}" />
     <hr aria-hidden="true" />
   </figure>

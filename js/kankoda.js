@@ -18,6 +18,7 @@ Example:
 {% include_relative kankoda/footer.js %}
 {% include_relative kankoda/code-box.js %}
 {% include_relative kankoda/slide-in.js %}
+{% include_relative kankoda/split.js %}
 {% include_relative kankoda/side-menu.js %}
 {% include_relative kankoda/scroll-to-top.js %}
 {% include_relative kankoda/pagination.js %}
