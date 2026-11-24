@@ -20,7 +20,7 @@ description: The KeyboardKit app lets you try all KeyboardKit features on iPhone
       <h2>Install KeyboardKit on your device, no code required.</h2>
       <p>{{ page.description }}</p>
       <div>
-        <a href="{{site.urls.appstore}}" class="cta">Download on the App Store</a>
+        <a href="{{site.urls.appstore}}" class="cta">Download</a>
         <a href="#features" class="cta glass">Learn More</a>
       </div>
     </div>
