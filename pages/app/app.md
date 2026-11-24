@@ -49,7 +49,7 @@ description: The KeyboardKit app lets you try all KeyboardKit features on iPhone
   <a name="features"></a>
   <article class="wrapper wide split-list">
   {% for item in site.data.app-split-items %}
-    {% include kankoda/split/split-item item=item %}
+    {% include kankoda/split/split-item item=item image-show-ratio=50 %}
   {% endfor %}
   </article>
 </section>

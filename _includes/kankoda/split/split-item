@@ -1,4 +1,19 @@
+{% comment %}
+  A split item: eyebrow, title, text and buttons beside an image.
+
+  Parameters:
+  - item:        The item to show (eyebrow, title/name, text, image, url, url_appstore).
+  - button-text: Optional text for the "Read More" button.
+  - image-show:  Optional `top` or `bottom`, to only show that part of the image,
+                 like a device slid into a slit. Can also be set on the item.
+                 The full image is shown if omitted.
+  - image-show-ratio: Optional 0-100, how much of the image's height to show
+                 with `image-show`. Can also be set on the item. Defaults to 60.
+{% endcomment %}
 {% assign _item = include.item %}
+{% assign _show = include.image-show | default: _item.image-show %}
+{% assign _show_ratio = include.image-show-ratio | default: _item.image-show-ratio %}
+{% assign _image = _item.split-image | default: _item.image | default: _item.icon %}
 <div class="split-container slide-in">
   <div>
     {% if _item.eyebrow %}
@@ -8,9 +23,14 @@
     <h2 id="{{ item_title | slugify }}">{{ item_title }}</h2>
     <p>{{ _item.text }}</p>
   </div>
-  <img src="{{ _item.split-image | default: _item.image | default: _item.icon }}" alt="{{ item_title }}" />
-
-  <img src="{{ _item.split-image | default: _item.image }}" alt="{{ item_title }}" />
+  {% if _show %}
+  <figure class="split-media show-{{ _show }}"{% if _show_ratio %} style="--split-show-track: {{ _show_ratio | divided_by: 100.0 }}fr"{% endif %}>
+    <img src="{{ _image }}" alt="{{ item_title }}" />
+    <hr aria-hidden="true" />
+  </figure>
+  {% else %}
+  <img src="{{ _image }}" alt="{{ item_title }}" />
+  {% endif %}
   <div class="split-actions">
     {% if _item.url %}
     <a class="cta glass" href="{{_item.url}}">{{ include.button-text | default: "Read More" }}</a>

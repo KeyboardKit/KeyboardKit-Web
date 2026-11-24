@@ -98,11 +98,99 @@
   // shrunk along the column's main axis, which would squash it out of its
   // natural aspect ratio. The width pair caps it on wide screens while still
   // letting it scale down to fit narrow ones.
-  > img {
+  > img,
+  > .split-media {
     flex: none;
     width: 100%;
     max-width: 400px;
     height: auto;
+  }
+
+  // Cropped media (`.split-media.show-top` / `.show-bottom`): a figure that
+  // wraps the image and an `<hr>`, so only the top or bottom part of the image
+  // shows, like a device slid into a slit. The `<hr>` is the slit: a solid line
+  // on the cut edge, with a thin shadow along its full width that tapers into
+  // the line at both ends, as if the image were a card slid through it. The
+  // inline padding lets the slit run a little past the device.
+  //
+  // How much of the image shows is a share of its own height, set by
+  // `--split-show-track` (e.g. `0.6fr` for 60%; the include sets it from
+  // `image-show-ratio`). A grid row with a flex factor below 1 gets that share
+  // of its content's natural height, so the figure is cut at the exact
+  // percentage, whatever the image's size or aspect ratio. Browsers then
+  // re-apply the factor to the figure's now-known height, shrinking the row a
+  // second time, so an empty `auto` row follows to take up the rest, and the
+  // image spans both. It covers that shorter box, anchored to the kept edge.
+  > .split-media {
+    --split-show-track: 0.6fr;
+    // The slit line, solid so the image never shows through it, and the
+    // height and strength of the shadow it casts onto the image.
+    --split-slit-line: color-mix(in srgb, black 18%, var(--bg));
+    --split-slit-shadow-height: 4px;
+    --split-slit-shadow: rgba(0, 0, 0, 0.08);
+
+    position: relative;
+    display: grid;
+    grid-template-rows: var(--split-show-track) auto;
+    margin: 0;
+
+    > img {
+      display: block;
+      grid-row: 1 / -1;
+      box-sizing: border-box;
+      width: 100%;
+      // Fill the row rather than the image's natural height, and allow
+      // shrinking below it (a grid item's automatic minimum would forbid that).
+      height: 100%;
+      min-height: 0;
+      padding-inline: 4%;
+      object-fit: cover;
+    }
+
+    > hr {
+      position: absolute;
+      inset-inline: 0;
+      box-sizing: content-box;
+      height: var(--split-slit-shadow-height);
+      margin: 0;
+      border: 0;
+      // The line sits just outside the image (see the 1px offsets below). It
+      // snaps to whole pixels while the image edge doesn't, so this way any
+      // rounding leaves a hairline of background, never the image, beside it.
+      border-top: 1px solid var(--split-slit-line);
+      // An ellipse anchored at the top centre: tallest in the middle, narrowing
+      // to meet the line at the ends.
+      background: radial-gradient(
+        farthest-side at 50% 0,
+        var(--split-slit-shadow),
+        rgba(0, 0, 0, 0.05) 60%,
+        transparent
+      );
+      pointer-events: none;
+    }
+
+    // Top kept: the slit is at the bottom, its shadow falling up the device.
+    &.show-top {
+      > img {
+        object-position: top;
+      }
+
+      > hr {
+        bottom: -1px;
+        transform: scaleY(-1);
+      }
+    }
+
+    // Bottom kept: the slit is at the top, its shadow falling down the device.
+    &.show-bottom {
+      > img {
+        object-position: bottom;
+      }
+
+      > hr {
+        top: -1px;
+      }
+    }
   }
 
   // Side-by-side: two columns — copy and buttons stacked in one, the image in
@@ -122,6 +210,12 @@
       grid-column: 1;
       grid-row: 1;
       justify-items: start;
+
+      // Start the copy a little below the top of the image beside it, rather
+      // than flush with it.
+      > .eyebrow:first-child {
+        margin-top: var(--split-eyebrow-offset, 1.25rem);
+      }
     }
 
     .split-actions {
@@ -132,7 +226,8 @@
 
     // Image on the right (default): spans both rows, centred against them, and
     // capped so it never outgrows its column.
-    > img {
+    > img,
+    > .split-media {
       grid-column: 2;
       grid-row: 1 / span 2;
       align-self: center;
@@ -150,7 +245,8 @@
         grid-column: 2;
       }
 
-      > img {
+      > img,
+      > .split-media {
         grid-column: 1;
         justify-self: start;
       }
@@ -174,7 +270,8 @@
         grid-column: 2;
       }
 
-      > img {
+      > img,
+      > .split-media {
         grid-column: 1;
         justify-self: start;
       }
@@ -189,7 +286,8 @@
         grid-column: 1;
       }
 
-      > img {
+      > img,
+      > .split-media {
         grid-column: 2;
         justify-self: end;
       }

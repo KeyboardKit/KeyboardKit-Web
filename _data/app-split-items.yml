@@ -1,29 +1,47 @@
 - eyebrow: All Features
   title:   Every feature, ready to try
-  text:    The KeyboardKit app uses <a href="/pro">KeyboardKit Pro</a> to enable autocomplete, dictation, emojis, fonts, themes, and AI support, so you can give it a try without writing a single line of code.
+  text:    The KeyboardKit app uses <a href="/pro">KeyboardKit Pro</a> for autocomplete, AI support, dictation, emojis, fonts, GIFs, clipboard support, themes, and more, so you can try it without writing any code.
   image:   /assets/app/settings.png
+  image-show: bottom
 
 - eyebrow: Localization
   title:   Type in 110+ languages
-  text:    The KeyboardKit app supports all <a href="/locales">supported languages</a>, including fully localized features, right on your own device.
+  text:    The KeyboardKit app supports all <a href="/locales">supported languages</a>, including fully localized features like Vietnamese TELEX, VNI, and VIQR, Korean Hangul, advanced diacritics, and more.
   image:   /assets/app/locales.png
+  image-show: top
 
-- eyebrow: Themes
-  title:   Style with themes
-  text:    The KeyboardKit app comes with a range of built-in <a href="/features/themes">themes</a> and lets you create your own as well, so you can style the keyboard to your liking.
-  image:   /assets/app/themes.png
+- eyebrow: Buttons
+  title:   Add extra buttons
+  text:    The KeyboardKit app lets you add extra buttons and rows where you need them, and can trigger custom actions and system shortcuts.
+  image:   /assets/app/buttons.png
+  image-show: bottom
 
 - eyebrow: Fonts
   title:   Type with custom fonts
   text:    The KeyboardKit app supports typing with custom, Unicode <a href="/features/fonts">fonts</a>, which encode the font into the text you type.
   image:   /assets/app/fonts.png
+  image-show: top
 
 - eyebrow: Clipboard
   title:   Paste from the clipboard
   text:    The KeyboardKit app lets you paste directly from the system <a href="/features/clipboard">clipboard</a>, and save your most-used text as reusable clips.
   image:   /assets/app/clipboard.png
+  image-show: bottom
+
+- eyebrow: GIFs
+  title:   Send animated GIFs
+  text:    The KeyboardKit app lets you search and send animated GIFs directly from the keyboard.
+  image:   /assets/app/gifs.png
+  image-show: bottom
+
+- eyebrow: Themes
+  title:   Style with themes
+  text:    The KeyboardKit app comes with a range of built-in <a href="/features/themes">themes</a> and lets you create your own as well, so you can style the keyboard to your liking.
+  image:   /assets/app/themes.png
+  image-show: bottom
 
 - eyebrow: Customizable
   title:   Fully customizable
   text:    The KeyboardKit app lets you add extra buttons and toolbars, and lets you resize the keys, to make the keyboard truly your own.
   image:   /assets/app/accessibility.png
+  image-show: bottom
