@@ -1,7 +1,7 @@
 (function () {
   document.addEventListener("DOMContentLoaded", function () {
     const tagButtons = document.querySelectorAll(".blog .side-menu .tag[data-tag]");
-    const searchInput = document.querySelector(".blog-search");
+    const searchInput = document.querySelector(".blog-header .search-box");
     const posts = Array.from(document.querySelectorAll(".blog-post"));
     const paginationEl = document.querySelector(".pagination");
     if (!posts.length) return;
